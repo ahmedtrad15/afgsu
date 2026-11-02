@@ -1,0 +1,605 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFGSU 2 Occitanie · Toulouse, L’Union et intra · 385 € | Garde de Nuit</title>
+<meta name="description" content="AFGSU 2 en Occitanie : 21 h sur 3 jours en présentiel, 385 € TTC au lieu de 450 €, attestation valable 4 ans. Sessions à Toulouse et L’Union, intra dans votre établissement de Montpellier à Perpignan. Testez le scénario « chambre 12 ».">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Garde de Nuit">
+<meta property="og:title" content="Garde de Nuit · AFGSU 2 en Occitanie">
+<meta property="og:description" content="Il est 3 h, chambre 12… Quatre décisions pour réviser la chaîne protéger, évaluer, alerter, réanimer. Puis trois jours de pratique pour l’ancrer.">
+<!-- TODO og:image : visuel 1200×630 (écran de monitoring, tracé vert) depuis la médiathèque -->
+<meta name="theme-color" content="#0A0F14">
+<!-- PLACEHOLDER favicon : tracé ECG vert sur fond noir, 32×32 et 180×180 (médiathèque) -->
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--bg:#0A0F14;--bg2:#111922;--bg3:#18232F;--grn:#39FF88;--amb:#FFB020;--gry:#8A99A6;--txt:#DCE5EC;--line:#253241;--h:"Chakra Petch",ui-monospace,sans-serif;--b:"Barlow",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--txt);font:400 1.06rem/1.6 var(--b)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;background:repeating-linear-gradient(rgba(255,255,255,.028) 0 1px,transparent 1px 3px)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--h);font-weight:700;line-height:1.02;margin:0;letter-spacing:.01em}
+p{margin:0 0 1em}
+.sr{position:absolute;left:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--amb);outline-offset:3px}
+.skip{position:absolute;left:12px;top:-70px;background:var(--grn);color:var(--bg);padding:10px 14px;z-index:95;font-family:var(--h)}
+.skip:focus{top:12px}
+.w{max-width:1240px;margin:0 auto;padding:0 18px}
+.lbl{font:600 .72rem var(--h);letter-spacing:.14em;text-transform:uppercase;color:var(--gry)}
+.img-ph{position:relative;min-height:220px;border:1px solid var(--line);background:linear-gradient(transparent 49.5%,var(--line) 49.5% 50.5%,transparent 50.5%),linear-gradient(90deg,transparent 49.5%,var(--line) 49.5% 50.5%,transparent 50.5%),var(--bg2);display:flex;align-items:flex-end}
+.img-ph::after{content:"IMG · " attr(data-img);font:500 .74rem/1.4 var(--h);letter-spacing:.06em;color:var(--grn);background:var(--bg);padding:8px 10px;margin:10px;border:1px solid var(--line)}
+.logo-ph{width:34px;height:34px;min-height:0;border:2px solid var(--grn);background:var(--bg);flex:none}
+.logo-ph::after{display:none}
+/* status bar header */
+.top{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.top .w{display:flex;align-items:center;gap:12px;height:56px}
+.brand{display:flex;gap:10px;align-items:center;font:700 1.1rem var(--h);text-transform:uppercase;letter-spacing:.08em;text-decoration:none;color:var(--grn)}
+.top nav{display:none;gap:4px;margin-left:auto}
+.top nav a{font:600 .8rem var(--h);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:6px 10px;border:1px solid transparent;color:var(--gry)}
+.top nav a:hover{border-color:var(--grn);color:var(--grn)}
+.top .tel{margin-left:auto;font:700 1rem var(--h);letter-spacing:.06em;text-decoration:none;color:var(--amb)}
+@media (min-width:1000px){.top nav{display:flex}.top .tel{margin-left:16px}}
+/* softkey CTA */
+.key{display:inline-flex;align-items:center;gap:10px;font:700 .98rem var(--h);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:13px 18px;border:2px solid var(--grn);color:var(--grn);background:transparent;cursor:pointer;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
+.key::before{content:"";width:9px;height:9px;border-radius:50%;background:currentColor;box-shadow:0 0 0 0 currentColor;flex:none}
+.key:hover{background:rgba(57,255,136,.1);text-shadow:0 0 8px rgba(57,255,136,.6)}
+.key:hover::before{box-shadow:0 0 10px 2px currentColor}
+.key.amb{border-color:var(--amb);background:var(--amb);color:var(--bg)}
+.key.amb:hover{background:#ffc04d;text-shadow:none}
+.key.amb::before{background:var(--bg)}
+.key.gry{border-color:var(--gry);color:var(--txt)}
+/* hero */
+.hero{padding:16px 0 30px}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media (min-width:1000px){.hgrid{grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:30px;align-items:start}.hero{padding:34px 0 50px}}
+.stamp-t{display:flex;gap:10px;align-items:center;font:600 .78rem var(--h);letter-spacing:.14em;text-transform:uppercase;color:var(--gry);margin-bottom:8px}
+.stamp-t b{color:var(--grn);font-weight:700}
+.hero h1{font-size:clamp(1.85rem,5.4vw,3.7rem);color:#fff}
+.hero h1 .g{color:var(--grn)}
+.params{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:14px 0}
+.params>div{background:var(--bg2);padding:8px 10px}
+.params .v{font:700 1.7rem/1 var(--h);color:var(--grn);display:block;margin-top:4px}
+.params .v.a{color:var(--amb)}
+.params s{font:500 .95rem var(--h);color:var(--gry);text-decoration-color:var(--amb)}
+.params .tarif{grid-column:1/-1}
+.params .tarif small{font-size:.78rem;color:var(--gry);margin-left:6px}
+.hacts{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.ph{font:700 1.2rem var(--h);letter-spacing:.05em;text-decoration:none;color:var(--amb)}
+.ph small{display:block;font:500 .74rem var(--b);letter-spacing:0;color:var(--gry)}
+.screen{border:1px solid var(--line);background:var(--bg2)}
+.screen .bar{display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-bottom:1px solid var(--line)}
+.ecg{width:100%;height:auto;display:block;background-image:linear-gradient(rgba(57,255,136,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(57,255,136,.06) 1px,transparent 1px);background-size:25px 25px}
+#trace{fill:none;stroke:var(--grn);stroke-width:2.4;stroke-linejoin:round;filter:drop-shadow(0 0 3px rgba(57,255,136,.7))}
+#head{fill:#c9ffe0}
+.chan{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line)}
+.chan div{padding:8px 10px;border-right:1px solid var(--line)}
+.chan div:last-child{border-right:0}
+.chan b{display:block;font:700 1.3rem var(--h);color:var(--txt)}
+.freeze{font:600 .72rem var(--h);letter-spacing:.1em;text-transform:uppercase;background:none;border:1px solid var(--gry);color:var(--gry);padding:4px 8px;cursor:pointer}
+.hero .lede{color:var(--gry);margin-top:14px;max-width:56ch}
+/* sections */
+.sec{padding:66px 0;border-top:1px solid var(--line)}
+.sh{margin-bottom:28px;max-width:820px}
+.sh .lbl{display:block;margin-bottom:8px;color:var(--grn)}
+.sh h2{font-size:clamp(1.9rem,4.8vw,3.2rem);color:#fff}
+.sh p{color:var(--gry);margin-top:12px}
+.panel{border:1px solid var(--line);background:var(--bg2)}
+.panel .bar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 12px;border-bottom:1px solid var(--line)}
+/* scenario */
+.scn{display:grid;grid-template-columns:minmax(0,1fr);gap:0}
+@media (min-width:960px){.scn{grid-template-columns:minmax(0,7fr) minmax(0,4fr)}}
+.scn .main{padding:20px}
+.scn .side{border-top:1px solid var(--line);padding:16px}
+@media (min-width:960px){.scn .side{border-top:0;border-left:1px solid var(--line)}}
+.steps{display:flex;gap:4px;margin-bottom:16px}
+.steps i{flex:1;height:6px;background:var(--line)}
+.steps i.done{background:var(--grn)}
+.steps i.cur{background:var(--amb)}
+.sit{font:500 1.25rem/1.45 var(--b);color:#fff;margin-bottom:16px}
+.sit .clock{font:700 1rem var(--h);color:var(--amb);letter-spacing:.08em;display:block;margin-bottom:6px}
+.choices{display:grid;gap:8px}
+.choice{text-align:left;font:500 1.02rem/1.4 var(--b);color:var(--txt);background:var(--bg);border:1px solid var(--line);padding:12px 14px 12px 42px;cursor:pointer;position:relative}
+.choice::before{content:attr(data-k);position:absolute;left:12px;top:12px;font:700 .85rem var(--h);color:var(--gry)}
+.choice:hover:not(:disabled){border-color:var(--grn)}
+.choice.ko{border-color:var(--amb);color:var(--gry)}
+.choice.ok{border-color:var(--grn);background:rgba(57,255,136,.08)}
+.choice:disabled{cursor:default}
+.fb{margin-top:14px;padding:12px 14px;border-left:3px solid var(--gry);min-height:52px}
+.fb.ko{border-color:var(--amb);background:rgba(255,176,32,.07)}
+.fb.ok{border-color:var(--grn);background:rgba(57,255,136,.06)}
+.fb b{font-family:var(--h);letter-spacing:.06em}
+.chain{list-style:none;margin:0;padding:0;counter-reset:c}
+.chain li{counter-increment:c;display:grid;grid-template-columns:36px minmax(0,1fr);gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);color:var(--gry);font:600 .95rem var(--h);letter-spacing:.08em;text-transform:uppercase}
+.chain li::before{content:counter(c);display:grid;place-items:center;width:30px;height:30px;border:1px solid var(--line);font-size:.85rem}
+.chain li.on{color:var(--amb)}.chain li.on::before{border-color:var(--amb)}
+.chain li.done{color:var(--grn)}.chain li.done::before{border-color:var(--grn);background:rgba(57,255,136,.12)}
+.disc{font-size:.85rem;color:var(--gry);margin-top:14px}
+/* map + sessions */
+.mgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:960px){.mgrid{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}}
+.omap{width:100%;height:auto;display:block;background-image:linear-gradient(rgba(138,153,166,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(138,153,166,.07) 1px,transparent 1px);background-size:34px 34px}
+.omap .reg{fill:rgba(57,255,136,.04);stroke:var(--grn);stroke-width:1.8;filter:drop-shadow(0 0 4px rgba(57,255,136,.5))}
+.omap .link{fill:none;stroke:var(--amb);stroke-width:1.4;stroke-dasharray:4 6;opacity:.75}
+.omap .hq circle{fill:var(--grn)}
+.omap .hq .ring{fill:none;stroke:var(--grn);stroke-width:1.5}
+.omap .ic{fill:var(--bg);stroke:var(--gry);stroke-width:1.8}
+.omap text{font:600 15px var(--h);fill:var(--txt);letter-spacing:.05em;paint-order:stroke;stroke:var(--bg);stroke-width:4px}
+.omap .hqt{fill:var(--grn);font-size:18px;font-weight:700}
+.omap .it{fill:var(--gry);font-size:13px}
+.js .omap.pre .reg{stroke-dasharray:1;stroke-dashoffset:1}
+.omap .reg{transition:stroke-dashoffset 2s ease-in-out}
+.js .omap.pre .link{stroke-dashoffset:200;opacity:0}
+.omap .link{transition:stroke-dashoffset 1.4s ease-out,opacity .3s;transition-delay:calc(1.4s + var(--i) * .18s)}
+.omap .ring{transform-box:fill-box;transform-origin:center}
+.omap.go .ring{animation:pulse 2s ease-out 3}
+@keyframes pulse{from{transform:scale(1);opacity:1}to{transform:scale(3.4);opacity:0}}
+.rows{width:100%;border-collapse:collapse}
+.rows th,.rows td{border-bottom:1px solid var(--line);padding:12px 10px;text-align:left;vertical-align:top}
+.rows th{font:600 .7rem var(--h);letter-spacing:.14em;text-transform:uppercase;color:var(--gry)}
+.rows td b{font:700 1.15rem var(--h);color:#fff}
+.rows .st{color:var(--amb);font-size:.92rem}
+.rows a{font:700 .8rem var(--h);letter-spacing:.1em;text-transform:uppercase;color:var(--grn)}
+.ext{font-size:.88rem;color:var(--gry);margin-top:12px}
+/* channels (programme) */
+.chs{display:grid;gap:12px}
+.ch{display:grid;grid-template-columns:minmax(0,1fr);border:1px solid var(--line);background:var(--bg2)}
+@media (min-width:900px){.ch{grid-template-columns:200px minmax(0,1fr) 260px}}
+.ch .id{padding:14px;border-bottom:1px solid var(--line)}
+@media (min-width:900px){.ch .id{border-bottom:0;border-right:1px solid var(--line)}}
+.ch .id b{display:block;font:700 2.4rem/1 var(--h);color:var(--c)}
+.ch h3{font-size:1.4rem;color:#fff;padding:14px 14px 4px}
+.ch ul{margin:0;padding:0 14px 14px 32px;columns:1}
+@media (min-width:640px){.ch ul{columns:2;column-gap:28px}}
+.ch li{break-inside:avoid;color:var(--txt);margin-bottom:3px}
+.ch li::marker{color:var(--c)}
+.ch svg{width:100%;height:100%;min-height:90px;display:block;border-top:1px solid var(--line)}
+@media (min-width:900px){.ch svg{border-top:0;border-left:1px solid var(--line)}}
+.ch svg path{fill:none;stroke:var(--c);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.timeline{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;margin-top:16px}
+.timeline span{padding:8px 6px;font:600 .72rem/1.25 var(--h);letter-spacing:.06em;text-transform:uppercase;color:var(--bg);text-align:center}
+.tl-lab{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:6px;font:600 .75rem var(--h);color:var(--gry);letter-spacing:.1em;text-align:center}
+/* misc grids */
+.g2{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:900px){.g2{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0 0 14px}
+.tags li{font:600 .85rem var(--h);letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line);padding:6px 10px;background:var(--bg2)}
+.tags.a li{border-color:rgba(255,176,32,.5);color:var(--amb)}
+.kv{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+.kv div{border:1px solid var(--line);padding:14px;background:var(--bg2)}
+.kv h3{font-size:1.1rem;color:var(--grn);margin-bottom:6px;letter-spacing:.08em;text-transform:uppercase}
+.kv ul{margin:0;padding-left:18px}
+.cmp{width:100%;border-collapse:collapse;min-width:560px}
+.cmp-w{overflow-x:auto;position:relative;border:1px solid var(--line)}
+.cmp th,.cmp td{border-bottom:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}
+.cmp thead th{font:700 1.4rem var(--h)}
+.cmp thead th:nth-child(3){color:var(--grn);background:rgba(57,255,136,.05)}
+.cmp tbody th{font:600 .72rem var(--h);letter-spacing:.12em;text-transform:uppercase;color:var(--gry);width:18%}
+.cmp td:nth-child(3){background:rgba(57,255,136,.03)}
+.alarm{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border:1px solid var(--line)}
+@media (min-width:900px){.alarm{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}}
+.alarm>div{padding:18px}
+.alarm>div+div{border-top:1px solid var(--line)}
+@media (min-width:900px){.alarm>div+div{border-top:0;border-left:1px solid var(--line)}}
+.thr svg{width:100%;height:auto;display:block}
+.thr text{font:600 13px var(--h);fill:var(--gry);letter-spacing:.06em}
+.log{list-style:none;margin:0;padding:0;font:500 .92rem var(--b)}
+.log li{display:grid;grid-template-columns:100px minmax(0,1fr);gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.log time{font:700 .8rem var(--h);color:var(--amb);letter-spacing:.06em}
+.fin{display:grid;grid-template-columns:minmax(0,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+@media (min-width:760px){.fin{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.fin div{background:var(--bg2);padding:14px}
+.fin b{display:block;font:700 1.15rem var(--h);color:var(--grn);margin-bottom:4px}
+.fin p{margin:0;font-size:.95rem;color:var(--gry)}
+.voices{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+@media (min-width:860px){.voices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.voices figure{margin:0;border:1px solid var(--line);padding:16px;background:var(--bg2)}
+.voices blockquote{margin:0;font:600 1.15rem var(--h);color:#fff}
+.voices figcaption{margin-top:8px;font-size:.85rem;color:var(--gry)}
+.faq details{border:1px solid var(--line);margin-bottom:-1px;background:var(--bg2)}
+.faq summary{list-style:none;cursor:pointer;padding:14px 50px 14px 16px;font:600 1.08rem/1.35 var(--h);color:#fff;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:16px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--gry)}
+.faq details[open] summary::after{background:var(--grn);box-shadow:0 0 8px var(--grn)}
+.faq details div{padding:0 16px 16px;color:var(--gry);max-width:80ch}
+.faq details div p{margin:0}
+/* form */
+.fgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:960px){.fgrid{grid-template-columns:minmax(0,4fr) minmax(0,7fr)}}
+.lead{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;padding:18px}
+@media (min-width:640px){.lead{grid-template-columns:repeat(2,minmax(0,1fr))}.lead .full{grid-column:1/-1}}
+.lead label{display:block;font:600 .72rem var(--h);letter-spacing:.14em;text-transform:uppercase;color:var(--gry);margin-bottom:6px}
+.lead input,.lead select,.lead textarea{width:100%;font:500 1.02rem var(--b);color:#fff;background:var(--bg);border:1px solid var(--line);padding:12px;border-radius:0}
+.lead select option{background:var(--bg2)}
+.lead input:focus,.lead select:focus,.lead textarea:focus{border-color:var(--grn)}
+.lead textarea{min-height:90px}
+.lead input:user-invalid,.lead select:user-invalid{border-color:var(--amb);background:rgba(255,176,32,.06)}
+.lead .err{display:none;color:var(--amb);font:600 .78rem var(--h);letter-spacing:.06em;margin:6px 0 0}
+.lead input:user-invalid~.err,.lead select:user-invalid~.err{display:block}
+.lead .chk{display:flex;gap:12px;align-items:flex-start}
+.lead .chk input{width:20px;height:20px;flex:none;accent-color:var(--grn);margin-top:3px}
+.lead .chk label{font:400 .92rem/1.5 var(--b);letter-spacing:0;text-transform:none;color:var(--txt)}
+.ok{padding:24px;border:1px solid var(--grn);background:rgba(57,255,136,.05)}
+.ok h3{font-size:1.8rem;color:var(--grn);margin-bottom:8px}
+/* final, footer, sticky */
+.final{padding:70px 0;border-top:1px solid var(--line)}
+.final h2{font-size:clamp(2rem,6vw,4rem);color:#fff;max-width:18ch}
+.final h2 span{color:var(--grn)}
+.final .hacts{margin-top:22px}
+footer{border-top:1px solid var(--line);padding:24px 0 100px;font-size:.88rem;color:var(--gry)}
+footer .w{display:flex;flex-wrap:wrap;gap:12px 26px}
+footer nav{display:flex;gap:16px}
+@media (min-width:760px){footer{padding-bottom:24px}}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:1px;background:var(--line);border-top:1px solid var(--grn)}
+.sticky a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:54px;font:700 .95rem var(--h);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;background:var(--bg);color:var(--grn)}
+.sticky .b{background:var(--amb);color:var(--bg)}
+@media (min-width:760px){.sticky{display:none}}
+/* power-on reveal */
+.js [data-on]{opacity:0;transform:scaleY(.04);transform-origin:50% 50%}
+.js [data-on].in{opacity:1;transform:none;transition:transform .42s cubic-bezier(.2,.9,.2,1),opacity .2s}
+@media (prefers-reduced-motion:reduce){.js [data-on],.js [data-on].in{opacity:1;transform:none;transition:none}.js .omap.pre .reg,.js .omap.pre .link{stroke-dashoffset:0;opacity:.75}.omap .reg,.omap .link{transition:none}.omap.go .ring{animation:none}.freeze{display:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"EducationalOrganization","@id":"#org","name":"Garde de Nuit","description":"Formation aux gestes et soins d’urgence en Occitanie : AFGSU 2, AFGSU 1 et recyclage, à Toulouse, L’Union ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Occitanie"},"location":[
+{"@type":"Place","name":"Garde de Nuit · Toulouse","address":{"@type":"PostalAddress","addressLocality":"Toulouse","addressRegion":"Occitanie","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.60,"longitude":1.44}},
+{"@type":"Place","name":"Garde de Nuit · L’Union","address":{"@type":"PostalAddress","addressLocality":"L’Union","addressRegion":"Occitanie","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.66,"longitude":1.48}}]},
+{"@type":"Course","name":"AFGSU 2 · Occitanie","description":"Formation aux gestes et soins d’urgence de niveau 2 : 21 heures sur 3 jours en présentiel, urgences vitales, potentielles, collectives et SSE, attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
+"offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Toulouse ou L’Union (dates sur demande)"}}}
+]}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Montpellier, Nîmes, Perpignan : peut-on se former sans aller jusqu’à Toulouse ?","acceptedAnswer":{"@type":"Answer","text":"Oui, en intra : la session se tient dans votre établissement dès qu’un groupe de 10 à 12 est réuni. Pour une inscription individuelle, les sessions inter ont lieu à Toulouse ou à L’Union."}},{"@type":"Question","name":"Les sessions se déroulent-elles la nuit, comme le nom le laisse penser ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le nom fait écho à vos gardes, mais la formation se tient sur trois journées de 7 heures chacune."}},{"@type":"Question","name":"Pourquoi le scénario de la chambre 12 s’arrête-t-il au DAE ?","acceptedAnswer":{"@type":"Answer","text":"Parce qu’il illustre seulement les premières minutes. La formation va beaucoup plus loin : matériel du chariot, oxygénothérapie, urgences potentielles, situations sanitaires exceptionnelles."}},{"@type":"Question","name":"Faut-il savoir utiliser un DAE avant de venir ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le seul prérequis est d’appartenir au public visé ; l’utilisation du défibrillateur fait partie du module sur les urgences vitales."}},{"@type":"Question","name":"Le contenu du chariot d’urgence est-il abordé ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le matériel d’urgence, dont le chariot et l’oxygénothérapie, est travaillé dans le premier module."}},{"@type":"Question","name":"Préleveuse sanguine dans un laboratoire toulousain : niveau 1 ou 2 ?","acceptedAnswer":{"@type":"Answer","text":"Niveau 2. Les préleveurs sanguins figurent parmi les métiers admis à l’AFGSU 2."}},{"@type":"Question","name":"Assistant médical dans un cabinet d’Albi, suis-je concerné ?","acceptedAnswer":{"@type":"Answer","text":"Oui : le métier d’assistant médical ouvre l’accès au niveau 2. Une session à Toulouse ou un projet intra avec le cabinet sont tous deux possibles."}},{"@type":"Question","name":"Un établissement de l’Aude peut-il enchaîner plusieurs sessions intra ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Chaque session réunit 10 à 12 personnes ; on en programme autant que nécessaire pour couvrir vos équipes, sur devis."}},{"@type":"Question","name":"Relevage et traumatismes du rachis sont-ils réellement pratiqués ?","acceptedAnswer":{"@type":"Answer","text":"Oui, dans le module des urgences potentielles : traumatismes du rachis, immobilisation, relevage et brancardage s’y travaillent en situation."}},{"@type":"Question","name":"Pourquoi parler d’hygiène dans une formation aux urgences ?","acceptedAnswer":{"@type":"Answer","text":"Parce que le programme du niveau 2 intègre l’hygiène et le risque infectieux au module des urgences potentielles : un geste d’urgence reste un soin."}},{"@type":"Question","name":"Quel tarif pour l’agent qui tient l’accueil des urgences la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Sans fonction soignante, il relève de l’AFGSU 1 : deux jours (14 h) pour 290 € TTC, avec une attestation de quatre ans."}},{"@type":"Question","name":"Sous combien de temps suis-je rappelé après ma demande ?","acceptedAnswer":{"@type":"Answer","text":"Sous 48 heures pour vous proposer une date à Toulouse ou à L’Union, ou pour étudier votre projet intra."}},{"@type":"Question","name":"Les malaises des patients âgés sont-ils abordés ?","acceptedAnswer":{"@type":"Answer","text":"Les malaises font partie du module sur les urgences potentielles, avec le bilan et sa transmission. Le formateur adapte les mises en situation au public présent."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#ecran">Aller à l’écran principal</a>
+
+<header class="top">
+ <div class="w">
+  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Garde de Nuit (emplacement)" data-img="logo : tracé"></span>Garde de Nuit</a>
+  <nav aria-label="Écrans"><a href="#chambre12">Chambre 12</a><a href="#lieux">Lieux</a><a href="#canaux">Programme</a><a href="#seuil">Recyclage</a><a href="#saisie">Inscription</a></nav>
+  <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
+ </div>
+</header>
+
+<main id="ecran">
+<section class="hero" aria-labelledby="h1">
+ <div class="w hgrid">
+  <div>
+   <p class="stamp-t"><b>● Occitanie</b> Toulouse · L’Union · intra</p>
+   <h1 id="h1" data-atf="h1">03 h 00, ronde de nuit : <span class="g">AFGSU 2 en Occitanie</span>, à Toulouse et chez vous</h1>
+   <div class="params">
+    <div class="tarif" data-atf="price"><span class="lbl">Tarif inter</span><span class="v a"><s><span class="sr">Ancien tarif </span>450 €</s> 385 € TTC <small>· 4x sans frais</small></span></div>
+    <div data-atf="meta" style="grid-column:1/-1"><span class="lbl">Durée · format · validité</span><span class="v">21 h · 3 jours · valable 4 ans</span></div>
+   </div>
+   <div class="hacts">
+    <a class="key amb" data-atf="cta" href="#saisie" data-formation="AFGSU 2" data-centre="Toulouse">Réserver ma session à Toulouse</a>
+    <a class="ph" data-atf="phone" href="tel:+33780912335">07 80 91 23 35<small>Wafa décroche</small></a>
+   </div>
+  </div>
+  <div class="screen" data-on>
+   <div class="bar"><span class="lbl">Dérivation II · scope</span><button class="freeze" type="button" id="freeze" aria-pressed="false">Geler l’écran</button></div>
+   <svg class="ecg" id="ecg" viewBox="0 0 600 130" role="img" aria-label="Tracé ECG animé, rythme régulier"><path id="trace" d=""/><circle id="head" r="3.5" cx="-10" cy="-10"/></svg>
+   <div class="chan"><div><span class="lbl">Groupe</span><b>10–12</b></div><div><span class="lbl">Présentiel</span><b>100 %</b></div><div><span class="lbl">Attestation</span><b>CESU</b></div></div>
+  </div>
+ </div>
+ <div class="w"><p class="lede">Pour les équipes qui tiennent la nuit comme pour celles du jour : trois journées de pratique, en petit groupe, pour dérouler sans hésiter la chaîne protéger, évaluer, alerter, réanimer. Centres à Toulouse et à L’Union ; intra partout ailleurs, de Montpellier à Perpignan.</p></div>
+</section>
+
+<section class="sec" id="chambre12" aria-labelledby="h-c12">
+ <div class="w">
+  <div class="sh" data-on><span class="lbl">Scénario interactif</span><h2 id="h-c12">« Il est 3 h, chambre 12… »</h2><p>Quatre décisions, dans l’ordre où elles se présentent. Une erreur n’est pas grave : un retour vous explique pourquoi, et vous pouvez réessayer.</p></div>
+  <div class="panel scn" data-on>
+   <div class="main">
+    <div class="steps" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div id="scnBody" aria-live="polite"></div>
+   </div>
+   <aside class="side">
+    <span class="lbl">Chaîne de prise en charge</span>
+    <ol class="chain" id="chain"><li>Protéger</li><li>Évaluer</li><li>Alerter (15)</li><li>RCP + DAE</li></ol>
+    <p class="disc">Scénario pédagogique simplifié : il ne remplace ni la formation, ni les protocoles de votre établissement.</p>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="lieux" aria-labelledby="h-lieux">
+ <div class="w">
+  <div class="sh" data-on><span class="lbl">Télémétrie régionale</span><h2 id="h-lieux">Deux centres toulousains, une région entière en intra</h2></div>
+  <div class="mgrid">
+   <div class="panel" data-on>
+    <div class="bar"><span class="lbl">Occitanie · liaisons intra</span><span class="lbl" style="color:var(--grn)">● centre</span></div>
+    <svg class="omap pre" id="omap" viewBox="0 0 680 532" role="img" aria-labelledby="om-t om-d">
+     <title id="om-t">Carte de l’Occitanie</title><desc id="om-d">Toulouse et L’Union, centres de formation, reliés par des liaisons en pointillés aux villes où la formation peut se tenir en intra : Montpellier, Nîmes, Perpignan, Béziers, Carcassonne, Albi, Montauban, Rodez et Tarbes.</desc>
+     <path class="reg" pathLength="1" d="M46.7 456.5L149.4 428.7L245.7 475.1L280.4 493.7L309.9 502.9L406.2 512.2L466.5 504.8L448.6 475.1L449.8 438L457.5 382.3L502.5 348.9L534.6 326.7L560.2 304.4L602.6 315.5L650.1 271L656.5 215.3L656.5 156L598.8 150.4L566.7 104L496.1 39.1L431.9 48.4L342 104L303.5 39.1L245.7 20.5L187.9 57.6L155.9 104L110.9 196.8L72.4 206.1L46.7 233.9L27.5 289.6L17.2 345.2Z"/>
+     <g>
+      <path class="link" style="--i:0" d="M247 284 558 288"/><path class="link" style="--i:1" d="M247 284 619 245"/><path class="link" style="--i:2" d="M247 284 432 457"/><path class="link" style="--i:3" d="M247 284 473 338"/><path class="link" style="--i:4" d="M247 284 361 362"/><path class="link" style="--i:5" d="M247 284 336 228"/><path class="link" style="--i:6" d="M247 284 233 212"/><path class="link" style="--i:7" d="M247 284 389 150"/><path class="link" style="--i:8" d="M247 284 70 358"/>
+     </g>
+     <g><circle class="ic" cx="558" cy="288" r="6"/><text class="it" x="570" y="292">MONTPELLIER</text><circle class="ic" cx="619" cy="245" r="6"/><text class="it" x="604" y="228">NÎMES</text><circle class="ic" cx="432" cy="457" r="6"/><text class="it" x="446" y="462">PERPIGNAN</text><circle class="ic" cx="473" cy="338" r="6"/><text class="it" x="486" y="343">BÉZIERS</text><circle class="ic" cx="361" cy="362" r="6"/><text class="it" x="374" y="379">CARCASSONNE</text><circle class="ic" cx="336" cy="228" r="6"/><text class="it" x="349" y="232">ALBI</text><circle class="ic" cx="233" cy="212" r="6"/><text class="it" x="246" y="206">MONTAUBAN</text><circle class="ic" cx="389" cy="150" r="6"/><text class="it" x="402" y="154">RODEZ</text><circle class="ic" cx="70" cy="358" r="6"/><text class="it" x="58" y="384">TARBES</text></g>
+     <g class="hq"><circle class="ring" cx="244" cy="290" r="8"/><circle cx="244" cy="290" r="8"/><circle class="ring" cx="250" cy="278" r="7"/><circle cx="250" cy="278" r="7"/><text class="hqt" x="230" y="314" text-anchor="end">TOULOUSE</text><text class="hqt" x="262" y="262">L’UNION</text></g>
+    </svg>
+   </div>
+   <div data-on>
+    <div class="panel">
+     <div class="bar"><span class="lbl">Planning des sessions</span></div>
+     <table class="rows" id="rows"><caption class="sr">Sessions par centre</caption><thead><tr><th scope="col">Centre</th><th scope="col">Statut</th><th scope="col"><span class="sr">Action</span></th></tr></thead><tbody><tr><td colspan="3">Dates sur demande : 07 80 91 23 35</td></tr></tbody></table>
+    </div>
+    <p class="ext" id="ext"></p>
+    <div class="panel" style="margin-top:16px;padding:16px">
+     <span class="lbl" style="color:var(--amb)">Intra-établissement</span>
+     <p style="margin:8px 0 12px">Hôpital, clinique, EHPAD, cabinet, officine, centre de santé : nous venons former vos équipes de jour comme de nuit dans vos locaux, par groupes de 10 à 12, à Montpellier, Nîmes, Perpignan ou ailleurs en France. Devis sur demande.</p>
+     <a class="key" href="#saisie" data-formation="Intra" data-centre="Intra">Programmer une session intra</a>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="canaux" aria-labelledby="h-can">
+ <div class="w">
+  <div class="sh" data-on><span class="lbl">Programme · 21 h</span><h2 id="h-can">Trois canaux, un seul tracé</h2><p>Aucune heure en ligne : la formation se déroule en présentiel, et c’est en mise en situation simulée que tout se valide.</p></div>
+  <div class="chs">
+   <article class="ch" style="--c:var(--grn)" data-on><div class="id"><span class="lbl">Canal I</span><b>10 h 30</b></div><div><h3>Urgences vitales</h3><ul><li>Protection, alerte 15 / 112</li><li>Obstruction des voies aériennes</li><li>Hémorragies</li><li>Inconscient qui respire</li><li>Arrêt cardiaque, RCP, DAE</li><li>Chariot d’urgence, oxygénothérapie</li><li>Adulte, enfant, nourrisson</li></ul></div><svg viewBox="0 0 260 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 55h50l8-20 10 40 9-50 9 56 7-26h40l8-20 10 40 9-50 9 56 7-26h84"/></svg></article>
+   <article class="ch" style="--c:var(--amb)" data-on><div class="id"><span class="lbl">Canal II</span><b>7 h</b></div><div><h3>Urgences potentielles</h3><ul><li>Malaises</li><li>Traumatismes : os, peau, crâne, rachis</li><li>Brûlures</li><li>Immobilisation, relevage, brancardage</li><li>Accouchement inopiné</li><li>Hygiène, risque infectieux</li><li>Transmission du bilan</li></ul></div><svg viewBox="0 0 260 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50c20 0 20-18 40-18s20 36 40 36 20-36 40-36 20 36 40 36 20-36 40-36 20 18 40 18"/></svg></article>
+   <article class="ch" style="--c:var(--txt)" data-on><div class="id"><span class="lbl">Canal III</span><b>3 h 30</b></div><div><h3>Urgences collectives &amp; SSE</h3><ul><li>ORSAN</li><li>Plan blanc, plan bleu</li><li>Afflux de victimes</li><li>NRBC-E</li><li>Évacuation, confinement</li><li>Soutien médico-psychologique</li></ul></div><svg viewBox="0 0 260 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 45h30v-20h30v40h30v-30h30v20h30v-25h30v35h30v-20h30"/></svg></article>
+  </div>
+  <div data-on>
+   <div class="timeline" role="img" aria-label="Répartition indicative : jour 1, deux demi-journées d’urgences vitales ; jour 2, une demi-journée d’urgences vitales puis une d’urgences potentielles ; jour 3, une demi-journée d’urgences potentielles puis une de situations sanitaires exceptionnelles"><span style="background:var(--grn)">Vitales</span><span style="background:var(--grn)">Vitales</span><span style="background:var(--grn)">Vitales</span><span style="background:var(--amb)">Potentielles</span><span style="background:var(--amb)">Potentielles</span><span style="background:var(--txt)">SSE</span></div>
+   <div class="tl-lab"><span>Jour 1</span><span>Jour 2</span><span>Jour 3</span></div>
+   <p class="ext">Répartition indicative par demi-journée de 3 h 30.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="public" aria-labelledby="h-pub">
+ <div class="w g2">
+  <div data-on>
+   <div class="sh"><span class="lbl">Public</span><h2 id="h-pub">Qui peut prendre sa place dans le groupe</h2></div>
+   <ul class="tags"><li>Médecins</li><li>Infirmiers</li><li>Aides-soignants</li><li>Sages-femmes</li><li>Kinés</li><li>Pharmaciens</li><li>Préparateurs</li><li>Ambulanciers</li><li>Auxiliaires de puériculture</li><li>Manipulateurs radio</li><li>Chirurgiens-dentistes</li><li>Étudiants</li></ul>
+   <ul class="tags a"><li>AES / AMP</li><li>ARM</li><li>Assistants médicaux</li><li>Préleveurs sanguins</li><li>Auxiliaires ambulanciers</li></ul>
+   <p>Le socle : toute profession de santé inscrite à la 4e partie du Code de la santé publique, étudiants compris, à laquelle s’ajoutent les métiers en orange. Prérequis : faire partie de ce public ; nul besoin d’une AFGSU 1 au préalable.</p>
+  </div>
+  <div class="kv" data-on>
+   <div><h3>Pièces au dossier</h3><ul><li>Diplôme</li><li>Carte professionnelle</li><li>N° RPPS ou ADELI — à défaut, certificat de scolarité</li><li>Recyclage : précédente attestation</li></ul></div>
+   <div><h3>Validation</h3><p style="margin:0">Pas d’examen final distinct : l’évaluation est continue et la présence doit couvrir les 21 heures. C’est le CESU qui délivre l’attestation, dans le cadre de notre convention avec le CESU 93.</p></div>
+   <div><h3>Références</h3><p style="margin:0">Arrêté du 30 décembre 2014 modifié en 2019 et en 2021 ; équivalence PSC posée par l’arrêté du 23 août 2019 ; l’AFGSU 2 n’équivaut pas au SST.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="niveaux" aria-labelledby="h-niv">
+ <div class="w">
+  <div class="sh" data-on><span class="lbl">Paramétrage</span><h2 id="h-niv">AFGSU 1 ou AFGSU 2 : comparer les réglages</h2></div>
+  <div class="cmp-w" data-on>
+   <table class="cmp"><caption class="sr">Comparaison des deux niveaux</caption>
+    <thead><tr><td></td><th scope="col">AFGSU 1</th><th scope="col">AFGSU 2</th></tr></thead>
+    <tbody>
+     <tr><th scope="row">Public</th><td>Professionnels non soignants : accueil, secrétariat médical, fonctions administratives, logistiques ou techniques, en établissement de santé, médico-social ou en cabinet</td><td>Soignants de la 4e partie du CSP et leurs étudiants ; AES/AMP, ARM, assistants médicaux, préleveurs sanguins, auxiliaires ambulanciers</td></tr>
+     <tr><th scope="row">Durée</th><td>14 h · 2 jours</td><td>21 h · 3 jours</td></tr>
+     <tr><th scope="row">Contenu</th><td>Reconnaître urgence vitale et urgence potentielle, pratiquer les gestes adaptés, contribuer à la réponse collective</td><td>Gestes avancés, matériel d’urgence, urgences collectives et SSE</td></tr>
+     <tr><th scope="row">Validité</th><td>4 ans</td><td>4 ans · recyclage 7 h avant échéance</td></tr>
+     <tr><th scope="row">Tarif</th><td>290 € TTC</td><td><s>450 €</s> 385 € TTC</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <p style="margin-top:16px" data-on><a class="key gry" href="#saisie" data-formation="AFGSU 1">Basculer vers l’AFGSU 1</a></p>
+ </div>
+</section>
+
+<section class="sec" id="seuil" aria-labelledby="h-seuil">
+ <div class="w">
+  <div class="sh" data-on><span class="lbl">Recyclage · 7 h</span><h2 id="h-seuil">Seuil d’alarme : 6 mois avant l’échéance</h2><p>L’attestation reste valide quatre ans. Le recyclage de 7 heures doit être suivi avant la date d’expiration ; après, retour obligatoire aux 21 heures. Réglez votre alarme personnelle 3 à 6 mois avant, et gardez l’attestation actuelle pour l’inscription. Tarif du recyclage communiqué sur demande.</p></div>
+  <div class="alarm" data-on>
+   <div class="thr">
+    <svg viewBox="0 0 520 170" role="img" aria-labelledby="thr-t"><title id="thr-t">Courbe de validité sur quatre ans avec la zone d’alerte des six derniers mois</title>
+     <rect x="410" y="20" width="70" height="110" fill="rgba(255,176,32,.12)"/><path d="M410 20V130" stroke="var(--amb)" stroke-dasharray="4 4"/>
+     <path d="M30 40H480" stroke="var(--grn)" stroke-width="3"/><path d="M480 40V130H500" stroke="var(--amb)" stroke-width="3"/>
+     <path d="M30 130H500" stroke="var(--line)"/>
+     <text x="30" y="155">OBTENTION</text><text x="140" y="155">1 AN</text><text x="250" y="155">2 ANS</text><text x="360" y="155">3 ANS</text><text x="470" y="155">4 ANS</text>
+     <text x="414" y="14" style="fill:var(--amb)">SEUIL −6 MOIS</text>
+    </svg>
+    <p style="margin:12px 0 0"><a class="key amb" href="#saisie" data-formation="Recyclage AFGSU 2">Armer mon rappel de recyclage</a></p>
+   </div>
+   <div>
+    <span class="lbl">Journal des événements</span>
+    <ul class="log"><li><time>20/02/2026</time><span>Arrêté du 20 février 2026 : les étudiants infirmiers de la rentrée 2026 ne pourront être diplômés qu’avec une AFGSU 2 en cours de validité.</span></li><li><time>03/2026</time><span>Les recommandations ANCESU / SFMU paraissent dans une nouvelle version.</span></li><li><time>4 ANS</time><span>Durée de validité de l’attestation, AFGSU 1 comme AFGSU 2.</span></li></ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="financement" aria-labelledby="h-fin">
+ <div class="w">
+  <div class="sh" data-on><span class="lbl">Financement</span><h2 id="h-fin">Sources de prise en charge</h2></div>
+  <div class="fin" data-on>
+   <div><b>Employeur</b><p>Plan de développement des compétences.</p></div>
+   <div><b>OPCO</b><p>Établissements et cabinets du secteur privé.</p></div>
+   <div><b>ANFH</b><p>Agents de la fonction publique hospitalière.</p></div>
+   <div><b>FIF-PL</b><p>Professionnels libéraux, sous conditions.</p></div>
+   <div><b>Personnel</b><p>Paiement en 4 fois sans frais.</p></div>
+  </div>
+  <p class="ext" data-on>CPF : en principe non éligible à l’AFGSU. Mieux vaut le savoir avant de monter votre dossier.</p>
+ </div>
+</section>
+
+<section class="sec" id="avis" aria-labelledby="h-avis">
+ <div class="w">
+  <div class="sh" data-on><span class="lbl">Retours</span><h2 id="h-avis">Fin de garde : ils témoignent</h2></div>
+  <div class="voices">
+   <figure data-on><blockquote>[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · service · ville</figcaption></figure>
+   <figure data-on><blockquote>[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · service · ville</figcaption></figure>
+   <figure data-on><blockquote>[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · service · ville</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="h-faq">
+ <div class="w">
+  <div class="sh" data-on><span class="lbl">FAQ</span><h2 id="h-faq">Questions posées pendant les gardes</h2></div>
+  <div class="faq" data-on>
+   <details><summary data-faq-q>Montpellier, Nîmes, Perpignan : peut-on se former sans aller jusqu’à Toulouse ?</summary><div data-faq-a><p>Oui, en intra : la session se tient dans votre établissement dès qu’un groupe de 10 à 12 est réuni. Pour une inscription individuelle, les sessions inter ont lieu à Toulouse ou à L’Union.</p></div></details>
+   <details><summary data-faq-q>Les sessions se déroulent-elles la nuit, comme le nom le laisse penser ?</summary><div data-faq-a><p>Non. Le nom fait écho à vos gardes, mais la formation se tient sur trois journées de 7 heures chacune.</p></div></details>
+   <details><summary data-faq-q>Pourquoi le scénario de la chambre 12 s’arrête-t-il au DAE ?</summary><div data-faq-a><p>Parce qu’il illustre seulement les premières minutes. La formation va beaucoup plus loin : matériel du chariot, oxygénothérapie, urgences potentielles, situations sanitaires exceptionnelles.</p></div></details>
+   <details><summary data-faq-q>Faut-il savoir utiliser un DAE avant de venir ?</summary><div data-faq-a><p>Non. Le seul prérequis est d’appartenir au public visé ; l’utilisation du défibrillateur fait partie du module sur les urgences vitales.</p></div></details>
+   <details><summary data-faq-q>Le contenu du chariot d’urgence est-il abordé ?</summary><div data-faq-a><p>Oui. Le matériel d’urgence, dont le chariot et l’oxygénothérapie, est travaillé dans le premier module.</p></div></details>
+   <details><summary data-faq-q>Préleveuse sanguine dans un laboratoire toulousain : niveau 1 ou 2 ?</summary><div data-faq-a><p>Niveau 2. Les préleveurs sanguins figurent parmi les métiers admis à l’AFGSU 2.</p></div></details>
+   <details><summary data-faq-q>Assistant médical dans un cabinet d’Albi, suis-je concerné ?</summary><div data-faq-a><p>Oui : le métier d’assistant médical ouvre l’accès au niveau 2. Une session à Toulouse ou un projet intra avec le cabinet sont tous deux possibles.</p></div></details>
+   <details><summary data-faq-q>Un établissement de l’Aude peut-il enchaîner plusieurs sessions intra ?</summary><div data-faq-a><p>Oui. Chaque session réunit 10 à 12 personnes ; on en programme autant que nécessaire pour couvrir vos équipes, sur devis.</p></div></details>
+   <details><summary data-faq-q>Relevage et traumatismes du rachis sont-ils réellement pratiqués ?</summary><div data-faq-a><p>Oui, dans le module des urgences potentielles : traumatismes du rachis, immobilisation, relevage et brancardage s’y travaillent en situation.</p></div></details>
+   <details><summary data-faq-q>Pourquoi parler d’hygiène dans une formation aux urgences ?</summary><div data-faq-a><p>Parce que le programme du niveau 2 intègre l’hygiène et le risque infectieux au module des urgences potentielles : un geste d’urgence reste un soin.</p></div></details>
+   <details><summary data-faq-q>Quel tarif pour l’agent qui tient l’accueil des urgences la nuit ?</summary><div data-faq-a><p>Sans fonction soignante, il relève de l’AFGSU 1 : deux jours (14 h) pour 290 € TTC, avec une attestation de quatre ans.</p></div></details>
+   <details><summary data-faq-q>Sous combien de temps suis-je rappelé après ma demande ?</summary><div data-faq-a><p>Sous 48 heures pour vous proposer une date à Toulouse ou à L’Union, ou pour étudier votre projet intra.</p></div></details>
+   <details><summary data-faq-q>Les malaises des patients âgés sont-ils abordés ?</summary><div data-faq-a><p>Les malaises font partie du module sur les urgences potentielles, avec le bilan et sa transmission. Le formateur adapte les mises en situation au public présent.</p></div></details>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="saisie" aria-labelledby="h-sai">
+ <div class="w fgrid">
+  <div data-on>
+   <div class="sh"><span class="lbl">Saisie</span><h2 id="h-sai">Demande d’inscription</h2><p>Wafa reprend chaque demande : date à Toulouse ou à L’Union, projet intra, pièces et financement.</p></div>
+   <p><a class="ph" href="tel:+33780912335">07 80 91 23 35</a></p>
+   <div class="img-ph" role="img" aria-label="Photo à venir : poste de soins de nuit avec chariot d’urgence" data-img="poste de soins de nuit, chariot d’urgence et DAE à portée de main"></div>
+  </div>
+  <div class="panel" data-on>
+   <div class="bar"><span class="lbl">Formulaire</span><span class="lbl" style="color:var(--grn)">● en ligne</span></div>
+   <!-- TODO : relier le formulaire au service d'inscription (API CRM / e-mail). action="#" provisoire. -->
+   <form class="lead" action="#" method="post" data-lead id="lead">
+    <input type="hidden" name="formation" value="AFGSU 2">
+    <div class="full"><label for="s-nom">Nom &amp; prénom</label><input id="s-nom" name="nom" autocomplete="name" required aria-errormessage="s-nom-e"><p class="err" id="s-nom-e">Champ requis.</p></div>
+    <div><label for="s-tel">Téléphone</label><input id="s-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="s-tel-e"><p class="err" id="s-tel-e">Format 05 61 00 00 00.</p></div>
+    <div><label for="s-mail">Email</label><input id="s-mail" name="email" type="email" autocomplete="email" required aria-errormessage="s-mail-e"><p class="err" id="s-mail-e">Adresse non reconnue.</p></div>
+    <div><label for="s-pro">Profession</label><select id="s-pro" name="profession" required aria-errormessage="s-pro-e"><option value="">— sélection —</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="s-pro-e">Sélection requise.</p></div>
+    <div><label for="s-centre">Centre / ville</label><select id="s-centre" name="centre" required aria-errormessage="s-centre-e"><option value="">— sélection —</option><option>Toulouse</option><option>L’Union</option><option value="Intra">Intra (Montpellier, Nîmes, Perpignan…)</option></select><p class="err" id="s-centre-e">Sélection requise.</p></div>
+    <div class="full"><label for="s-msg">Message (facultatif)</label><textarea id="s-msg" name="message" placeholder="Disponibilités, roulements de nuit, nombre de collègues…"></textarea></div>
+    <div class="full chk"><input type="checkbox" id="s-rgpd" name="rgpd" required><label for="s-rgpd">Je donne mon accord pour que Garde de Nuit utilise ces données uniquement afin de répondre à ma demande. <a href="#">Charte de confidentialité</a></label></div>
+    <div class="full"><button class="key amb" type="submit">Transmettre la demande</button></div>
+   </form>
+   <div class="ok" data-success hidden tabindex="-1"><h3>Transmission reçue.</h3><p>Votre demande est enregistrée ; Wafa vous rappelle sous 48 h. Pour une question urgente : 07 80 91 23 35.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="final" aria-labelledby="h-final">
+ <div class="w">
+  <h2 id="h-final" data-on>Trois journées pour que <span>la nuit ne vous prenne pas de court.</span></h2>
+  <div class="hacts" data-on><a class="key amb" href="#saisie" data-formation="AFGSU 2">M’inscrire à la prochaine session</a><a class="ph" href="tel:+33780912335">07 80 91 23 35</a></div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="w">
+  <span>© 2026 Garde de Nuit by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Légal"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+ </div>
+</footer>
+
+<div class="sticky" data-sticky>
+ <a href="tel:+33780912335">Appeler</a>
+ <a class="b" href="#saisie" data-formation="AFGSU 2">Prendre ma garde</a>
+</div>
+
+<script>
+/* ===== SESSIONS : tableau unique à modifier (dates ISO [début, fin]) ===== */
+const SESSIONS = [
+  { ville: "Toulouse", dept: "31", region: "Occitanie", dates: [] },
+  { ville: "L’Union",  dept: "31", region: "Occitanie", dates: [] },
+  // Sessions confirmées hors Occitanie :
+  { ville: "Palaiseau", dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
+];
+const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+/* ======================================================================== */
+(() => {
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const D = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+  const t0 = new Date(); t0.setHours(0, 0, 0, 0);
+  const up = s => s.dates.filter(d => D(d[1]) >= t0);
+  const p2 = n => String(n).padStart(2, '0');
+  const f = ([a, b]) => { const A = D(a), B = D(b); return `${p2(A.getDate())}/${p2(A.getMonth() + 1)} → ${p2(B.getDate())}/${p2(B.getMonth() + 1)}/${B.getFullYear()}`; };
+  $('#rows tbody').innerHTML = SESSIONS.filter(s => s.region === 'Occitanie').map(s => { const u = up(s); return `<tr><td><b>${s.ville}</b> <span class="lbl">${s.dept}</span></td><td class="st">${u.length ? u.map(f).join('<br>') : SUR_DEMANDE}</td><td><a href="#saisie" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'Réserver' : 'Demander'}</a></td></tr>`; }).join('');
+  const ext = SESSIONS.filter(s => s.region !== 'Occitanie' && up(s).length);
+  if (ext.length) $('#ext').textContent = 'Hors région, sessions déjà confirmées : ' + ext.map(s => `${s.ville} (${s.dept}) ${up(s).map(f).join(' · ')}`).join(' ; ') + '.';
+
+  const form = $('#lead');
+  document.addEventListener('click', e => { const a = e.target.closest('a[data-formation],a[data-centre]'); if (!a) return; if (a.dataset.formation) form.elements.formation.value = a.dataset.formation; const c = a.dataset.centre; if (c && [...form.elements.centre.options].some(o => o.value === c)) form.elements.centre.value = c; });
+
+  /* mise sous tension */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -6% 0px' });
+  $$('[data-on]').forEach(el => io.observe(el));
+  const omap = $('#omap');
+  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { omap.classList.remove('pre'); omap.classList.add('go'); o.disconnect(); } }, { threshold: .3 }).observe(omap);
+
+  /* ECG en direct */
+  const N = 240, W = 600, base = 78, trace = $('#trace'), head = $('#head');
+  const beat = u => { if (u < .08) return 0; if (u < .16) return -7 * Math.sin(Math.PI * (u - .08) / .08); if (u < .22) return 0; if (u < .245) return 9 * (u - .22) / .025; if (u < .28) return 9 - 74 * (u - .245) / .035; if (u < .315) return -65 + 85 * (u - .28) / .035; if (u < .345) return 20 - 20 * (u - .315) / .03; if (u < .45) return 0; if (u < .6) return -14 * Math.sin(Math.PI * (u - .45) / .15); return 0; };
+  const ys = Array.from({ length: N }, (_, i) => base + beat((i % 60) / 60));
+  let hd = 0, ph = 0, acc = 0, last = 0, run = !RM, vis = true;
+  const draw = () => { let d = '', pen = false; for (let i = 0; i < N; i++) { const gap = (i - hd + N) % N; if (gap > 0 && gap < 10) { pen = false; continue; } const x = (i * W / (N - 1)).toFixed(1); d += (pen ? 'L' : 'M') + x + ' ' + ys[i].toFixed(1); pen = true; } trace.setAttribute('d', d); head.setAttribute('cx', (hd * W / (N - 1)).toFixed(1)); head.setAttribute('cy', ys[hd].toFixed(1)); };
+  const tick = t => { if (!run || !vis) { last = 0; return; } const dt = last ? Math.min(50, t - last) : 16; last = t; acc += dt * .1; while (acc >= 1) { acc--; hd = (hd + 1) % N; ph = (ph + 1) % 60; ys[hd] = base + beat(ph / 60); } draw(); requestAnimationFrame(tick); };
+  draw();
+  const fz = $('#freeze');
+  if (!RM) {
+    requestAnimationFrame(tick);
+    new IntersectionObserver(([e]) => { const w = vis; vis = e.isIntersecting; if (vis && !w && run) requestAnimationFrame(tick); }).observe($('#ecg'));
+    document.addEventListener('visibilitychange', () => { vis = !document.hidden; if (vis && run) requestAnimationFrame(tick); });
+    fz.addEventListener('click', () => { run = !run; fz.setAttribute('aria-pressed', !run); fz.textContent = run ? 'Geler l’écran' : 'Relancer l’écran'; if (run) requestAnimationFrame(tick); });
+  } else { head.style.display = 'none'; }
+
+  /* scénario « chambre 12 » */
+  const S = [
+    { k: 'Protéger', clock: '03:00', sit: 'En passant devant la chambre 12, vous trouvez M. R. allongé au sol près du lit. La lumière est éteinte, une flaque d’eau s’étale près du lavabo.', c: [
+      ['Allumer, écarter le danger (sol mouillé, obstacles), puis s’approcher', true, 'Exact : on sécurise la zone avant tout, pour la victime comme pour soi.'],
+      ['Se précipiter pour le remettre dans son lit', false, 'Pas tout à fait : on évite de mobiliser une victime avant de l’avoir évaluée, et le sol glissant vous met aussi en danger.'],
+      ['Partir chercher un collègue à l’autre bout du couloir', false, 'Pas encore : mieux vaut ne pas le laisser seul. Appelez à l’aide à voix haute ou par la sonnette tout en restant près de lui.'] ] },
+    { k: 'Évaluer', clock: '03:01', sit: 'La zone est sécurisée. M. R. ne répond ni à la voix ni quand vous lui touchez l’épaule.', c: [
+      ['Prendre sa tension artérielle', false, 'Pas en priorité : face à une personne qui ne réagit pas, la première question est de savoir si elle respire.'],
+      ['Libérer les voies aériennes et regarder s’il respire normalement', true, 'C’est ça : liberté des voies aériennes, puis appréciation de la respiration.'],
+      ['Patienter quelques minutes pour voir s’il revient à lui', false, 'Attendre fait perdre un temps précieux : on évalue tout de suite la respiration.'] ] },
+    { k: 'Alerter', clock: '03:02', sit: 'M. R. ne respire pas normalement.', c: [
+      ['Consigner l’heure dans le dossier avant toute chose', false, 'La traçabilité viendra ensuite : l’urgence, maintenant, c’est de déclencher les secours.'],
+      ['Donner l’alerte : faire appeler le 15 (ou le numéro d’urgence de l’établissement) et réclamer chariot et DAE', true, 'Oui : l’alerte part, et le matériel arrive pendant que vous restez auprès du patient.'],
+      ['Chercher ses antécédents dans le dossier pour comprendre', false, 'Compréhensible, mais ce n’est pas le moment : alerter et faire venir le matériel passent avant.'] ] },
+    { k: 'RCP + DAE', clock: '03:03', sit: 'L’alerte est donnée ; une collègue arrive avec le DAE.', c: [
+      ['Attendre le médecin avant de commencer le moindre geste', false, 'Chaque minute compte : la réanimation commence sans attendre l’arrivée du médecin.'],
+      ['Faire deux insufflations, puis patienter jusqu’à la pose du DAE', false, 'Chez l’adulte, on démarre par les compressions thoraciques ; le DAE est posé dès qu’il est disponible.'],
+      ['Débuter les compressions thoraciques, poser les électrodes du DAE dès son arrivée et suivre ses instructions', true, 'Parfait : compressions sans délai, défibrillateur dès que possible, et l’équipe prend le relais.'] ] }
+  ];
+  const body = $('#scnBody'), bars = $$('.steps i'), chain = $$('#chain li');
+  let st = 0;
+  const paint = () => { bars.forEach((b, i) => { b.className = i < st ? 'done' : i === st ? 'cur' : ''; }); chain.forEach((l, i) => { l.className = i < st ? 'done' : i === st ? 'on' : ''; }); };
+  const render = () => {
+    paint();
+    if (st >= S.length) { body.innerHTML = `<p class="sit"><span class="clock">03:04 · relais assuré</span>Protéger, évaluer, alerter, réanimer : vous avez déroulé la chaîne dans le bon ordre. Sur mannequin, avec le vrai matériel et un formateur, c’est là que ces décisions deviennent des réflexes.</p><p style="display:flex;flex-wrap:wrap;gap:10px"><a class="key amb" href="#saisie" data-formation="AFGSU 2">Passer à la pratique en session</a><button class="key gry" type="button" id="again">Rejouer le scénario</button></p>`; $('#again').addEventListener('click', () => { st = 0; render(); }); return; }
+    const s = S[st];
+    body.innerHTML = `<p class="sit"><span class="clock">${s.clock} · étape ${st + 1} sur 4 · ${s.k}</span>${s.sit}</p><div class="choices" role="group" aria-label="Votre décision">${s.c.map((c, i) => `<button type="button" class="choice" data-k="${'ABC'[i]}" data-i="${i}">${c[0]}</button>`).join('')}</div><div class="fb" id="fb"><span class="lbl">Retour</span><br>Choisissez une action.</div>`;
+    $$('.choice', body).forEach(b => b.addEventListener('click', () => {
+      const c = s.c[+b.dataset.i], fb = $('#fb');
+      if (c[1]) { b.classList.add('ok'); $$('.choice', body).forEach(x => x.disabled = true); fb.className = 'fb ok'; fb.innerHTML = `<b>BON RÉFLEXE.</b> ${c[2]}<br><button type="button" class="key" id="next" style="margin-top:10px">${st < 3 ? 'Étape suivante' : 'Voir la synthèse'}</button>`; $('#next').addEventListener('click', () => { st++; render(); const s2 = body.querySelector('.sit'); if (s2) { s2.tabIndex = -1; s2.focus(); } }); }
+      else { b.classList.add('ko'); b.disabled = true; fb.className = 'fb ko'; fb.innerHTML = `<b>À REVOIR.</b> ${c[2]} Essayez une autre option.`; }
+    }));
+  };
+  render();
+
+  /* formulaire */
+  const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
+  form.addEventListener('blur', e => sync(e.target), true);
+  form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    // TODO : POST des données vers l'outil d'inscription avant l'affichage de la confirmation.
+    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+  });
+})();
+</script>
+</body>
+</html>
