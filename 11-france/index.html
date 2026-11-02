@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
 <style>
-:root{--w:#FFFFFF;--navy:#0C3558;--navy2:#123F66;--navy3:#1B4C78;--teal:#12A9AF;--teal-d:#0B7F84;--yel:#FEC335;--red:#E63946;--ink:#0C3558;--mut:#4F6478;--line:#D7E0E8;--bg2:#F3F6F9;--s:"Schibsted Grotesk",system-ui,sans-serif;--n:"Newsreader",Georgia,serif}
+:root{--teal-t:#08696D;--w:#FFFFFF;--navy:#0C3558;--navy2:#123F66;--navy3:#1B4C78;--teal:#12A9AF;--teal-d:#0B7F84;--yel:#FEC335;--red:#E63946;--ink:#0C3558;--mut:#4F6478;--line:#D7E0E8;--bg2:#F3F6F9;--s:"Schibsted Grotesk",system-ui,sans-serif;--n:"Newsreader",Georgia,serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -68,7 +68,7 @@ p{margin:0 0 1em}
 .hero{padding:24px 0 40px;background:linear-gradient(180deg,var(--bg2),#fff 60%)}
 .hgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
 @media (min-width:1080px){.hgrid{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;align-items:start}.hero{padding:44px 0 60px}}
-.eyebrow{display:inline-flex;gap:8px;align-items:center;font:600 .78rem var(--s);letter-spacing:.08em;text-transform:uppercase;color:var(--teal-d);margin-bottom:10px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;font:600 .78rem var(--s);letter-spacing:.08em;text-transform:uppercase;color:var(--teal-t);margin-bottom:10px}
 .eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
 .hero h1{font-size:clamp(1.95rem,5vw,3.6rem)}
 .hero h1 .ed{font-style:italic;font-weight:400;letter-spacing:-.01em}
@@ -88,7 +88,7 @@ p{margin:0 0 1em}
 .wall .bar button{font:600 .75rem var(--s);background:transparent;color:#cfe0ee;border:1px solid var(--navy3);border-radius:4px;padding:4px 8px;cursor:pointer}
 .filters{display:flex;gap:6px;flex-wrap:wrap;padding:10px 14px;border-bottom:1px solid var(--navy3)}
 .filters button{font:600 .8rem var(--s);background:var(--navy2);color:#d7e6f2;border:1px solid var(--navy3);border-radius:999px;padding:6px 11px;cursor:pointer}
-.filters button[aria-pressed=true]{background:var(--teal);color:#fff;border-color:var(--teal)}
+.filters button[aria-pressed=true]{background:var(--teal-d);color:#fff;border-color:var(--teal)}
 .fmap{width:100%;height:auto;display:block}
 .fmap .fr{fill:#15456F;stroke:#2B5D88;stroke-width:1.5}
 .fmap .rg{fill:#1A5281;stroke:#3F79A8;stroke-width:1.2;transition:fill .35s,opacity .35s}
@@ -126,12 +126,12 @@ p{margin:0 0 1em}
 .ind div:last-child{border-right:0}
 .ind b{display:block;font:800 2.1rem/1 var(--s);letter-spacing:-.03em}
 .ind span{font-size:.86rem;color:var(--mut)}
-.ind .y b{color:var(--teal-d)}
+.ind .y b{color:var(--teal-t)}
 /* sections */
 .sec{padding:76px 0}
 .alt{background:var(--bg2)}
 .sh{max-width:800px;margin-bottom:30px}
-.sh .k{display:block;font:600 .78rem var(--s);letter-spacing:.08em;text-transform:uppercase;color:var(--teal-d);margin-bottom:10px}
+.sh .k{display:block;font:600 .78rem var(--s);letter-spacing:.08em;text-transform:uppercase;color:var(--teal-t);margin-bottom:10px}
 .sh h2{font-size:clamp(1.75rem,4.2vw,2.8rem)}
 .sh p{font:400 1.12rem/1.6 var(--n);color:var(--mut);margin-top:12px}
 /* sessions table */
@@ -143,7 +143,7 @@ p{margin:0 0 1em}
 .st{display:inline-flex;align-items:center;gap:6px;font:600 .85rem var(--s)}
 .st::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--teal)}
 .st.ask::before{background:var(--yel)}
-.tbl a{font-weight:700;color:var(--teal-d)}
+.tbl a{font-weight:700;color:var(--teal-t)}
 /* programme */
 .proto{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
 @media (min-width:960px){.proto{grid-template-columns:repeat(3,minmax(0,1fr))}}
@@ -151,7 +151,7 @@ p{margin:0 0 1em}
 @media (min-width:960px){.proto article{border-bottom:0;border-right:1px solid var(--line)}.proto article:last-child{border-right:0}}
 .proto .code{font:700 .78rem var(--s);letter-spacing:.08em;color:var(--mut)}
 .proto h3{font-size:1.35rem;margin:6px 0 2px}
-.proto .h{font:800 1.6rem var(--s);color:var(--teal-d)}
+.proto .h{font:800 1.6rem var(--s);color:var(--teal-t)}
 .proto ul{margin:12px 0 0;padding-left:18px}
 .proto li{margin-bottom:4px}
 .proto svg{width:64px;height:64px;float:right}
@@ -208,7 +208,7 @@ p{margin:0 0 1em}
 .cb .dp{font:500 .82rem var(--s);color:var(--mut)}
 .cb p{margin:0;font:400 1.04rem/1.55 var(--n);color:#2b4359}
 .cb .ss{font:600 .85rem var(--s);color:var(--navy)}
-.cb .ss a{display:inline-block;margin-top:6px;color:var(--teal-d)}
+.cb .ss a{display:inline-block;margin-top:6px;color:var(--teal-t)}
 .cb:target{background:#fffaf0;box-shadow:-12px 0 0 #fffaf0,12px 0 0 #fffaf0}
 /* intra */
 .intra{background:var(--navy);color:#fff;border-radius:10px;padding:30px;display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
@@ -230,11 +230,11 @@ p{margin:0 0 1em}
 .tl .ok{position:absolute;left:0;width:87.5%;top:30px;height:8px;border-radius:4px 0 0 4px;background:var(--teal)}
 .tl .win{position:absolute;left:87.5%;width:6.25%;top:22px;height:24px;border-radius:4px;background:var(--yel)}
 .tl .end{position:absolute;right:0;top:20px;width:3px;height:28px;background:var(--red)}
-.tl span{position:absolute;top:52px;font:600 .8rem var(--s);color:var(--mut);transform:translateX(-50%)}
+.tl span{position:absolute;top:52px;font:600 .8rem var(--s);color:var(--mut);transform:translateX(-50%);background:#fff;padding:0 3px}
 .tl .wl{top:0;font-weight:700;color:var(--navy)}
 .news{display:grid;gap:12px;margin-top:22px}
 .news div{border:1px solid var(--line);border-radius:8px;background:#fff;padding:14px 16px}
-.news b{display:block;font:700 .82rem var(--s);letter-spacing:.06em;text-transform:uppercase;color:var(--teal-d);margin-bottom:4px}
+.news b{display:block;font:700 .82rem var(--s);letter-spacing:.06em;text-transform:uppercase;color:var(--teal-t);margin-bottom:4px}
 /* voices + faq */
 .voices{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
 @media (min-width:860px){.voices{grid-template-columns:repeat(3,minmax(0,1fr))}}
@@ -263,7 +263,7 @@ p{margin:0 0 1em}
 .lead .err{display:none;color:#b3202c;font-size:.84rem;font-weight:600;margin:6px 0 0}
 .lead input:user-invalid~.err,.lead select:user-invalid~.err{display:block}
 .lead .chk{display:flex;gap:12px;align-items:flex-start}
-.lead .chk input{width:20px;height:20px;flex:none;accent-color:var(--teal-d);margin-top:3px}
+.lead .chk input{width:20px;height:20px;flex:none;accent-color:var(--teal-t);margin-top:3px}
 .lead .chk label{font:400 .92rem/1.5 var(--s)}
 .ok{background:#fff;border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:8px;padding:26px}
 .ok h3{font-size:1.6rem;margin-bottom:8px}
@@ -400,7 +400,7 @@ footer nav{display:flex;gap:16px}
 <section class="sec" id="sessions" aria-labelledby="h-ses">
  <div class="w">
   <div class="sh" data-rise><span class="k">Sessions</span><h2 id="h-ses">Le tableau des départs confirmés</h2><p>À ce jour, trois sessions inter sont arrêtées, toutes à Palaiseau. Partout ailleurs, la date se fixe avec vous : prochaine date sur demande — on vous rappelle sous 48 h.</p></div>
-  <div class="tbl-w" data-rise>
+  <div class="tbl-w" data-rise tabindex="0" role="region" aria-label="Tableau des sessions">
    <table class="tbl" id="sessTbl"><caption class="sr">Sessions AFGSU 2 confirmées</caption><thead><tr><th scope="col">Dates</th><th scope="col">Centre</th><th scope="col">Format</th><th scope="col">Statut</th><th scope="col"><span class="sr">Action</span></th></tr></thead>
     <tbody><tr><td>16 → 18 nov. 2026</td><td>Palaiseau (91)</td><td>Inter · 21 h</td><td><span class="st">Confirmée</span></td><td><a href="#inscription" data-centre="Palaiseau">S’inscrire</a></td></tr><tr><td>14 → 16 déc. 2026</td><td>Palaiseau (91)</td><td>Inter · 21 h</td><td><span class="st">Confirmée</span></td><td><a href="#inscription" data-centre="Palaiseau">S’inscrire</a></td></tr><tr><td>28 → 30 déc. 2026</td><td>Palaiseau (91)</td><td>Inter · 21 h</td><td><span class="st">Confirmée</span></td><td><a href="#inscription" data-centre="Palaiseau">S’inscrire</a></td></tr><tr><td>—</td><td>32 autres villes</td><td>Inter · 21 h</td><td><span class="st ask">Sur demande</span></td><td><a href="#villes">Voir les villes</a></td></tr></tbody>
    </table>
@@ -442,7 +442,7 @@ footer nav{display:flex;gap:16px}
 <section class="sec alt" id="comparatif" aria-labelledby="h-cmp">
  <div class="w">
   <div class="sh" data-rise><span class="k">Comparatif complet</span><h2 id="h-cmp">AFGSU 1 ou AFGSU 2 : le bon niveau pour chaque poste</h2></div>
-  <div class="tbl-w" data-rise>
+  <div class="tbl-w" data-rise tabindex="0" role="region" aria-label="Comparatif AFGSU 1 et AFGSU 2">
    <table class="cmp"><caption class="sr">Comparatif détaillé AFGSU 1 et AFGSU 2</caption>
     <thead><tr><td></td><th scope="col">AFGSU 1</th><th scope="col">AFGSU 2</th></tr></thead>
     <tbody>

@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
 <style>
-:root{--cream:#FFF4E0;--terra:#D2633B;--sea:#0F7C8C;--sun:#F4B63E;--ink:#2B1D17;--ink2:#5B4A40;--cream2:#F8E7C9;--h:"Syne",sans-serif;--b:"Manrope",system-ui,sans-serif}
+:root{--sea-d:#0C6E7B;--terra-d:#A9482A;--cream:#FFF4E0;--terra:#D2633B;--sea:#0F7C8C;--sun:#F4B63E;--ink:#2B1D17;--ink2:#5B4A40;--cream2:#F8E7C9;--h:"Syne",sans-serif;--b:"Manrope",system-ui,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -45,10 +45,10 @@ p{margin:0 0 1em}
 .top nav{display:none;gap:22px;margin-left:auto;font:700 .92rem var(--b)}
 .top nav a{text-decoration:none}
 .top nav a:hover{color:var(--sea)}
-.top .tel{margin-left:auto;font:800 1rem var(--h);text-decoration:none;color:var(--sea)}
+.top .tel{margin-left:auto;font:800 1rem var(--h);text-decoration:none;color:var(--sea-d)}
 @media (min-width:980px){.top nav{display:flex}.top .tel{margin-left:24px}}
 /* CTA: pill with overprint */
-.cta{position:relative;display:inline-flex;align-items:center;gap:10px;font:800 1.1rem var(--h);text-decoration:none;color:var(--cream);background:var(--sea);padding:14px 26px;border-radius:999px;border:0;cursor:pointer;box-shadow:5px 5px 0 var(--terra);transition:box-shadow .35s cubic-bezier(.3,1.5,.5,1)}
+.cta{position:relative;display:inline-flex;align-items:center;gap:10px;font:800 1.1rem var(--h);text-decoration:none;color:var(--cream);background:var(--sea-d);padding:14px 26px;border-radius:999px;border:0;cursor:pointer;box-shadow:5px 5px 0 var(--terra);transition:box-shadow .35s cubic-bezier(.3,1.5,.5,1)}
 .cta:hover{box-shadow:9px -4px 0 var(--terra)}
 .cta.sunny{background:var(--sun);color:var(--ink);box-shadow:5px 5px 0 var(--sea)}
 .cta.sunny:hover{box-shadow:9px -4px 0 var(--sea)}
@@ -57,7 +57,7 @@ p{margin:0 0 1em}
 /* hero */
 .hero{position:relative;overflow:hidden;padding:18px 0 40px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;position:relative;z-index:2}
-.kick{font:700 .8rem var(--b);letter-spacing:.14em;text-transform:uppercase;color:var(--sea);margin-bottom:10px}
+.kick{font:700 .8rem var(--b);letter-spacing:.14em;text-transform:uppercase;color:var(--sea-d);margin-bottom:10px}
 .hero h1{font-size:clamp(2.15rem,4.4vw,3.7rem)}
 .hero h1 .o{position:relative;display:inline-block}
 .hero h1 .o::after{content:"";position:absolute;left:-2%;right:-2%;bottom:.06em;height:.34em;background:var(--sun);mix-blend-mode:multiply;z-index:-1;border-radius:6px;transform:rotate(-1deg)}
@@ -89,8 +89,8 @@ p{margin:0 0 1em}
 .sec-h{max-width:780px;margin-bottom:34px}
 .sec-h h2{font-size:clamp(2.1rem,5.6vw,4rem)}
 .sec-h p{color:var(--ink2);margin-top:14px;max-width:62ch}
-.band{background:var(--sea);color:var(--cream)}
-.band .kick{color:var(--sun)}
+.band{background:var(--sea-d);color:var(--cream)}
+.band .kick{color:#FFE0A6}
 .band .sec-h p{color:#e7efe9}
 .sand{background:var(--cream2)}
 /* timeline scrubber */
@@ -135,7 +135,7 @@ p{margin:0 0 1em}
 .pmap .pop{transform-box:fill-box;transform-origin:center;transition:opacity .5s,transform .6s cubic-bezier(.3,1.6,.5,1);transition-delay:calc(var(--i) * .15s + .6s)}
 .sessbox{background:var(--cream);border-radius:28px;padding:22px;border:2px solid var(--ink)}
 .sessbox h3{font-size:1.8rem;margin-bottom:6px}
-.sessbox .st{font:700 1.05rem var(--b);color:var(--sea)}
+.sessbox .st{font:700 1.05rem var(--b);color:var(--sea-d)}
 .sessbox .ext{font-size:.92rem;color:var(--ink2);margin:10px 0 16px}
 /* intra */
 .intra-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
@@ -155,13 +155,13 @@ p{margin:0 0 1em}
 .posters{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
 @media (min-width:860px){.posters{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}}
 .post{border-radius:36px;padding:28px;position:relative;overflow:hidden}
-.post.a2{background:var(--sea);color:var(--cream)}
+.post.a2{background:var(--sea-d);color:var(--cream)}
 .post.a1{background:var(--cream2)}
 .post h3{font-size:clamp(2.6rem,6vw,4rem)}
 .post .pr{font:800 1.8rem var(--h);margin:8px 0 14px}
 .post.a2 .pr{color:var(--sun)}
 .post dl{margin:0}
-.post dt{font:800 .78rem var(--b);text-transform:uppercase;letter-spacing:.1em;margin-top:12px;opacity:.8}
+.post dt{font:800 .78rem var(--b);text-transform:uppercase;letter-spacing:.1em;margin-top:12px}
 .post dd{margin:2px 0 0}
 .post .disc{position:absolute;right:-50px;top:-50px;width:170px;height:170px;border-radius:50%;background:var(--sun);mix-blend-mode:multiply;opacity:.75}
 /* financing + recyclage */
@@ -222,7 +222,7 @@ footer nav{display:flex;gap:18px}
 .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:70;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:8px}
 .sticky a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;font:800 1rem var(--h);text-decoration:none;box-shadow:0 6px 18px rgba(43,29,23,.25)}
 .sticky .c{background:var(--cream);color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink),0 6px 18px rgba(43,29,23,.25)}
-.sticky .b{background:var(--sea);color:var(--cream)}
+.sticky .b{background:var(--sea-d);color:var(--cream)}
 @media (min-width:760px){.sticky{display:none}}
 @media (prefers-reduced-motion:reduce){.js [data-reg],.js [data-reg] .l1,.js [data-reg] .l2,.js [data-print]{opacity:1;transform:none;transition:none}.js [data-reg].in .l1,.js [data-reg].in .l2,.js [data-print].in{transition:none}.cta,.illu svg,.seg .prog i,.faq summary::after,.pmap .pop{transition:none}.js .pmap.pre .pop{opacity:1;transform:none}}
 </style>
@@ -378,7 +378,7 @@ footer nav{display:flex;gap:18px}
   <div class="sec-h" data-print><p class="kick">AFGSU 1 · AFGSU 2</p><h2 id="h-niv">Deux affiches, deux publics</h2></div>
   <div class="posters">
    <article class="post a2" data-print><span class="disc" aria-hidden="true"></span>
-    <h3>AFGSU 2</h3><p class="pr"><s style="opacity:.75;font-size:1.2rem">450 €</s> 385 € TTC</p>
+    <h3>AFGSU 2</h3><p class="pr"><s style="font-size:1.2rem;color:var(--cream)">450 €</s> 385 € TTC</p>
     <dl><dt>Public</dt><dd>Soignants de la 4e partie du CSP et leurs étudiants, AES/AMP, ARM, assistants médicaux, préleveurs, auxiliaires ambulanciers</dd><dt>Durée</dt><dd>21 h, trois jours</dd><dt>Niveau</dt><dd>Gestes avancés et risques collectifs</dd><dt>Validité</dt><dd>4 ans, renouvelée par 7 h de recyclage</dd></dl>
    </article>
    <article class="post a1" data-print>
@@ -539,11 +539,11 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
 
   /* curseur des trois jours */
   const SEG = [
-    { t: 'Jour 1 · matin', m: 'Urgences vitales', c: 'var(--terra)', done: 3.5, tot: 10.5, p: 'Le module des urgences vitales ouvre la formation, sur mannequins adulte, enfant et nourrisson.' },
-    { t: 'Jour 1 · après-midi', m: 'Urgences vitales', c: 'var(--terra)', done: 7, tot: 10.5, p: 'La première journée entière, soit 7 heures, reste consacrée à l’urgence vitale.' },
-    { t: 'Jour 2 · matin', m: 'Urgences vitales', c: 'var(--terra)', done: 10.5, tot: 10.5, p: 'Cette matinée boucle les 10 h 30 du premier module.' },
-    { t: 'Jour 2 · après-midi', m: 'Urgences potentielles', c: 'var(--sea)', done: 3.5, tot: 7, p: 'Bascule vers les urgences potentielles : ce qui peut s’aggraver si l’on ne fait rien.' },
-    { t: 'Jour 3 · matin', m: 'Urgences potentielles', c: 'var(--sea)', done: 7, tot: 7, p: 'Le troisième matin achève les 7 heures du deuxième module.' },
+    { t: 'Jour 1 · matin', m: 'Urgences vitales', c: 'var(--terra-d)', done: 3.5, tot: 10.5, p: 'Le module des urgences vitales ouvre la formation, sur mannequins adulte, enfant et nourrisson.' },
+    { t: 'Jour 1 · après-midi', m: 'Urgences vitales', c: 'var(--terra-d)', done: 7, tot: 10.5, p: 'La première journée entière, soit 7 heures, reste consacrée à l’urgence vitale.' },
+    { t: 'Jour 2 · matin', m: 'Urgences vitales', c: 'var(--terra-d)', done: 10.5, tot: 10.5, p: 'Cette matinée boucle les 10 h 30 du premier module.' },
+    { t: 'Jour 2 · après-midi', m: 'Urgences potentielles', c: 'var(--sea-d)', done: 3.5, tot: 7, p: 'Bascule vers les urgences potentielles : ce qui peut s’aggraver si l’on ne fait rien.' },
+    { t: 'Jour 3 · matin', m: 'Urgences potentielles', c: 'var(--sea-d)', done: 7, tot: 7, p: 'Le troisième matin achève les 7 heures du deuxième module.' },
     { t: 'Jour 3 · après-midi', m: 'Urgences collectives & SSE', c: 'var(--ink)', done: 3.5, tot: 3.5, p: 'Dernier temps : penser collectif, du plan blanc à l’afflux de victimes.' }
   ];
   const TOP = {

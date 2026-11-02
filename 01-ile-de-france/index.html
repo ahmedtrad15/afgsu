@@ -60,7 +60,7 @@ p{margin:0 0 1em}
 .btn.line .rd{background:var(--teal);color:#fff}
 /* line roundel codes */
 .code{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;font:700 1.1rem var(--m);flex:none}
-.c-red{background:var(--red);color:#fff}.c-teal{background:var(--teal);color:#fff}.c-amber{background:var(--amber);color:var(--ink)}.c-ink{background:var(--ink);color:var(--paper)}
+.c-red{background:#C42A24;color:#fff}.c-teal{background:#0B7268;color:#fff}.c-amber{background:var(--amber);color:var(--ink)}.c-ink{background:var(--ink);color:var(--paper)}
 /* signage headers */
 .sign{display:flex;align-items:center;gap:14px;background:var(--ink);color:var(--paper);padding:10px 18px 10px 10px;border-radius:6px;margin-bottom:28px}
 .sign h2{font-size:clamp(1.35rem,3.4vw,2.1rem);font-weight:600}
@@ -163,7 +163,7 @@ section{padding:64px 0}
 .day{display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:center;margin-bottom:10px;font:500 .85rem var(--m)}
 .bar{display:flex;height:34px;border-radius:17px;overflow:hidden;border:2px solid var(--ink)}
 .bar span{display:flex;align-items:center;padding:0 10px;font-size:.75rem;white-space:nowrap;overflow:hidden}
-.b1{background:var(--red);color:#fff;font-weight:600}.b2{background:var(--teal);color:#fff;font-weight:600}.b3{background:var(--amber);color:var(--ink)}
+.b1{background:#C42A24;color:#fff;font-weight:600}.b2{background:#0B7268;color:#fff;font-weight:600}.b3{background:var(--amber);color:var(--ink)}
 /* access */
 .chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 18px}
 .chips li{border:2px solid var(--ink);border-radius:999px;padding:5px 12px;font-weight:500;font-size:.95rem;background:#fff}
@@ -328,7 +328,7 @@ footer a{color:var(--paper)}
     <button class="pause" type="button" aria-pressed="false" id="pauseMap">Pause pouls</button>
    </div>
    <p class="hint">Faites glisser le plan pour voir Meaux →</p>
-   <div class="map-scroll">
+   <div class="map-scroll" tabindex="0" role="region" aria-label="Plan des stations, défilable horizontalement">
    <svg class="netmap pre" id="netmap" viewBox="0 0 820 480" role="img" aria-labelledby="mt md">
     <title id="mt">Plan des six centres AFGSU 2 franciliens</title>
     <desc id="md">Trois lignes relient Houilles, Paris, Noisy-le-Sec, Meaux, Choisy-le-Roi et Palaiseau, placés selon leur position géographique réelle, avec la Seine et la Marne.</desc>
@@ -463,7 +463,7 @@ footer a{color:var(--paper)}
 <section id="correspondance" aria-labelledby="h-cor" style="background:var(--paper2)">
  <div class="wrap">
   <header class="sign" data-arrive><span class="code c-ink" style="box-shadow:inset 0 0 0 3px var(--paper)">⇄</span><h2 id="h-cor">Correspondance : AFGSU 1 ou AFGSU 2 ?</h2></header>
-  <div class="cmp-wrap" data-arrive>
+  <div class="cmp-wrap" data-arrive tabindex="0" role="region" aria-label="Tableau comparatif AFGSU 1 et AFGSU 2">
    <table class="cmp">
     <caption class="sr">Comparatif AFGSU 1 et AFGSU 2</caption>
     <thead><tr><th scope="col"><span class="sr">Critère</span></th><th scope="col">AFGSU 1</th><th scope="col">AFGSU 2 · notre ligne principale</th></tr></thead>

@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add('js')</script>
 <style>
-:root{--snow:#F5F8FA;--deep:#1C3D5A;--red:#E0312F;--rock:#B9C4CC;--deep2:#2C5274;--mute:#4D6274;--h:"Unbounded",sans-serif;--b:"Nunito Sans",system-ui,sans-serif}
+:root{--red-t:#C42624;--snow:#F5F8FA;--deep:#1C3D5A;--red:#E0312F;--rock:#B9C4CC;--deep2:#2C5274;--mute:#4D6274;--h:"Unbounded",sans-serif;--b:"Nunito Sans",system-ui,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -45,8 +45,8 @@ p{margin:0 0 1em}
 .brand{display:flex;gap:10px;align-items:center;font:700 1.02rem var(--h);text-decoration:none;letter-spacing:-.01em}
 .top nav{display:none;gap:20px;margin-left:auto;font:600 .95rem var(--b)}
 .top nav a{text-decoration:none}
-.top nav a:hover{color:var(--red)}
-.top .tel{margin-left:auto;font:700 .95rem var(--h);text-decoration:none;color:var(--red);white-space:nowrap}
+.top nav a:hover{color:var(--red-t)}
+.top .tel{margin-left:auto;font:700 .95rem var(--h);text-decoration:none;color:var(--red-t);white-space:nowrap}
 @media (min-width:1000px){.top nav{display:flex}.top .tel{margin-left:22px}}
 @media (max-width:420px){.brand{font-size:.9rem}.top .tel{font-size:.82rem}}
 /* flag CTA */
@@ -121,7 +121,7 @@ p{margin:0 0 1em}
 /* sections */
 .sec{padding:76px 0;position:relative}
 .sh{max-width:760px;margin-bottom:30px}
-.sh .k{font:700 .76rem var(--h);letter-spacing:.08em;text-transform:uppercase;color:var(--red);display:block;margin-bottom:10px}
+.sh .k{font:700 .76rem var(--h);letter-spacing:.08em;text-transform:uppercase;color:var(--red-t);display:block;margin-bottom:10px}
 .sh h2{font-size:clamp(1.7rem,4.2vw,2.9rem)}
 .sh p{color:var(--mute);margin-top:12px}
 .alt-bg{background:#fff}
@@ -145,7 +145,7 @@ p{margin:0 0 1em}
 .sess div{padding:14px 0;border-bottom:1px solid var(--rock);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:center}
 .sess h3{font-size:1.3rem}
 .sess p{grid-column:1/-1;margin:0;color:var(--mute);font-size:.96rem}
-.sess a{font:700 .8rem var(--h);color:var(--red);grid-row:1;grid-column:2}
+.sess a{font:700 .8rem var(--h);color:var(--red-t);grid-row:1;grid-column:2}
 .ext{font-size:.9rem;color:var(--mute);margin-top:12px}
 .intra{background:var(--deep);color:var(--snow);padding:22px;margin-top:22px;position:relative;overflow:hidden}
 .intra h3{font-size:1.35rem;margin-bottom:8px}
@@ -158,7 +158,7 @@ p{margin:0 0 1em}
 @media (min-width:900px){.lv>div+div{border-top:0;border-left:1px solid var(--rock)}}
 .lv .tag{font:700 .74rem var(--h);letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
 .lv h3{font-size:2rem;margin:6px 0}
-.lv .pr{font:800 1.4rem var(--h);color:var(--red);margin-bottom:12px}
+.lv .pr{font:800 1.4rem var(--h);color:var(--red-t);margin-bottom:12px}
 .lv dl{margin:0;display:grid;grid-template-columns:100px minmax(0,1fr);gap:8px 12px}
 .lv dt{font:800 .8rem var(--b);text-transform:uppercase;letter-spacing:.08em;color:var(--mute);padding-top:2px}
 .lv dd{margin:0}
@@ -183,7 +183,7 @@ p{margin:0 0 1em}
 .prof text{font:700 12px var(--h);fill:var(--deep)}
 .news{display:grid;gap:12px;margin-top:20px}
 .news div{border:1px solid var(--rock);background:#fff;padding:14px 16px}
-.news b{font-family:var(--h);font-size:.9rem;display:block;margin-bottom:4px;color:var(--red)}
+.news b{font-family:var(--h);font-size:.9rem;display:block;margin-bottom:4px;color:var(--red-t)}
 /* fin */
 .fin{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-top:2px solid var(--deep)}
 @media (min-width:760px){.fin{grid-template-columns:repeat(5,minmax(0,1fr))}}
