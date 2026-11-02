@@ -1,0 +1,582 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFGSU 2 Provence-Alpes-Côte d’Azur · Aix-en-Provence & intra | Azur Gestes</title>
+<meta name="description" content="Formation AFGSU 2 en Provence-Alpes-Côte d’Azur : 21 h sur 3 jours, présentiel, 385 € TTC au lieu de 450 €, valable 4 ans. Sessions à Aix-en-Provence et formation intra dans votre établissement, de Marseille à Nice.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Azur Gestes">
+<meta property="og:title" content="Azur Gestes · AFGSU 2 en Provence-Alpes-Côte d’Azur">
+<meta property="og:description" content="Trois jours de pratique pour soignants, à Aix-en-Provence ou directement dans votre établissement. Explorez les trois jours avec le curseur.">
+<!-- TODO og:image : affiche 1200×630 (soleil + vagues, style riso) depuis la médiathèque -->
+<meta name="theme-color" content="#0F7C8C">
+<!-- PLACEHOLDER favicon : disque soleil jaune et vague bleue, 32×32 et 180×180 (médiathèque) -->
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--cream:#FFF4E0;--terra:#D2633B;--sea:#0F7C8C;--sun:#F4B63E;--ink:#2B1D17;--ink2:#5B4A40;--cream2:#F8E7C9;--h:"Syne",sans-serif;--b:"Manrope",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1.06rem/1.65 var(--b)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--h);font-weight:800;line-height:.98;margin:0;letter-spacing:-.02em}
+p{margin:0 0 1em}
+.sr{position:absolute;left:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--sea);outline-offset:4px;border-radius:6px}
+.skip{position:absolute;left:12px;top:-70px;background:var(--sea);color:var(--cream);padding:10px 14px;z-index:90;border-radius:20px}
+.skip:focus{top:12px}
+.grain{position:fixed;inset:0;pointer-events:none;z-index:80;opacity:.22;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .17 0 0 0 0 .11 0 0 0 0 .09 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E")}
+.w{max-width:1200px;margin:0 auto;padding:0 20px}
+.img-ph{position:relative;min-height:220px;border-radius:28px;background:radial-gradient(circle at 75% 25%,var(--sun) 0 18%,transparent 19%),linear-gradient(transparent 62%,rgba(15,124,140,.35) 62%),var(--cream2);display:flex;align-items:flex-end;overflow:hidden}
+.img-ph::after{content:attr(data-img);font:700 .78rem/1.35 var(--b);color:var(--ink);background:var(--cream);margin:14px;padding:8px 12px;border-radius:14px}
+.logo-ph{width:38px;height:38px;min-height:0;border-radius:50%;background:radial-gradient(circle at 50% 40%,var(--sun) 0 45%,var(--sea) 46%);flex:none}
+.logo-ph::after{display:none}
+/* header */
+.top{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:2px solid var(--ink)}
+.top .w{display:flex;align-items:center;gap:12px;height:60px}
+.brand{display:flex;gap:10px;align-items:center;font:800 1.3rem var(--h);text-decoration:none;letter-spacing:-.02em}
+.top nav{display:none;gap:22px;margin-left:auto;font:700 .92rem var(--b)}
+.top nav a{text-decoration:none}
+.top nav a:hover{color:var(--sea)}
+.top .tel{margin-left:auto;font:800 1rem var(--h);text-decoration:none;color:var(--sea)}
+@media (min-width:980px){.top nav{display:flex}.top .tel{margin-left:24px}}
+/* CTA: pill with overprint */
+.cta{position:relative;display:inline-flex;align-items:center;gap:10px;font:800 1.1rem var(--h);text-decoration:none;color:var(--cream);background:var(--sea);padding:14px 26px;border-radius:999px;border:0;cursor:pointer;box-shadow:5px 5px 0 var(--terra);transition:box-shadow .35s cubic-bezier(.3,1.5,.5,1)}
+.cta:hover{box-shadow:9px -4px 0 var(--terra)}
+.cta.sunny{background:var(--sun);color:var(--ink);box-shadow:5px 5px 0 var(--sea)}
+.cta.sunny:hover{box-shadow:9px -4px 0 var(--sea)}
+.cta.line{background:var(--cream);color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink),5px 5px 0 var(--sun)}
+.cta.line:hover{box-shadow:inset 0 0 0 2px var(--ink),9px -4px 0 var(--sun)}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:18px 0 40px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:20px;position:relative;z-index:2}
+.kick{font:700 .8rem var(--b);letter-spacing:.14em;text-transform:uppercase;color:var(--sea);margin-bottom:10px}
+.hero h1{font-size:clamp(2.15rem,4.4vw,3.7rem)}
+.hero h1 .o{position:relative;display:inline-block}
+.hero h1 .o::after{content:"";position:absolute;left:-2%;right:-2%;bottom:.06em;height:.34em;background:var(--sun);mix-blend-mode:multiply;z-index:-1;border-radius:6px;transform:rotate(-1deg)}
+.tagp{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:14px 0 4px}
+.tagp s{font:700 1.3rem var(--h);color:var(--ink2);text-decoration-color:var(--terra);text-decoration-thickness:3px}
+.tagp strong{font:800 2.8rem/1 var(--h);color:var(--ink)}
+.tagp small{flex-basis:100%;font-size:.88rem;color:var(--ink2)}
+.meta{display:inline-flex;gap:10px;align-items:center;font:700 1rem var(--b);background:var(--cream2);padding:6px 14px;border-radius:999px;margin:4px 0 14px}
+.meta i{width:12px;height:12px;border-radius:50%;background:var(--terra)}
+.acts{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center}
+.tel-h{font:800 1.25rem var(--h);text-decoration:none}
+.tel-h small{display:block;font:500 .8rem var(--b);color:var(--ink2)}
+.hero .lede{max-width:50ch;margin-top:18px;color:var(--ink2)}
+.poster{position:relative;width:100%;max-width:520px;margin:0 auto}
+.poster svg{width:100%;height:auto;display:block}
+@media (max-width:600px){.hero .kick{display:none}.hero h1{font-size:1.72rem;line-height:1.02}.tagp{margin-top:10px}.tagp strong{font-size:2.2rem}.tagp s{font-size:1.1rem}.tagp small{font-size:.8rem}.meta{margin:2px 0 10px;font-size:.92rem}.cta{font-size:1rem;padding:12px 20px}.brand{font-size:1.1rem;white-space:nowrap}.top .tel{display:none}.hero{padding-top:12px}}
+@media (min-width:980px){.hero{padding:48px 0 70px}.hero-grid{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:center;gap:40px}}
+.ov{mix-blend-mode:multiply}
+/* registration reveal */
+.js [data-reg] .l1{transform:translate(-14px,10px)}
+.js [data-reg] .l2{transform:translate(14px,-10px)}
+.js [data-reg]{opacity:0}
+.js [data-reg].in{opacity:1;transition:opacity .4s}
+.js [data-reg].in .l1,.js [data-reg].in .l2{transform:none;transition:transform 1.1s cubic-bezier(.2,.9,.3,1)}
+.js [data-print]{opacity:0;transform:translateY(16px)}
+.js [data-print].in{opacity:1;transform:none;transition:opacity .7s ease,transform .9s cubic-bezier(.2,.9,.3,1)}
+/* sections */
+.sec{padding:80px 0;position:relative}
+.sec-h{max-width:780px;margin-bottom:34px}
+.sec-h h2{font-size:clamp(2.1rem,5.6vw,4rem)}
+.sec-h p{color:var(--ink2);margin-top:14px;max-width:62ch}
+.band{background:var(--sea);color:var(--cream)}
+.band .kick{color:var(--sun)}
+.band .sec-h p{color:#e7efe9}
+.sand{background:var(--cream2)}
+/* timeline scrubber */
+.scrub{background:var(--cream);color:var(--ink);border-radius:36px;padding:22px;box-shadow:10px 10px 0 var(--terra)}
+.horizon{width:100%;height:auto;display:block}
+.horizon .arc{fill:none;stroke:var(--ink);stroke-width:2;stroke-dasharray:2 7;stroke-linecap:round}
+.horizon .sea-l{fill:var(--sea);opacity:.85}
+.horizon .dl{font:800 15px var(--h);fill:var(--ink)}
+.horizon #sunG circle{fill:var(--sun)}
+.horizon #sunG .r2{fill:var(--terra);mix-blend-mode:multiply}
+.scrub input[type=range]{width:100%;accent-color:var(--terra);margin:6px 0 4px;height:32px}
+.ticks{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;margin-bottom:16px}
+.ticks button{font:700 .78rem/1.2 var(--b);background:var(--cream2);border:0;border-radius:12px;padding:8px 4px;cursor:pointer;color:var(--ink)}
+.ticks button[aria-current=true]{background:var(--ink);color:var(--cream)}
+.seg{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:center}
+@media (min-width:860px){.seg{grid-template-columns:minmax(0,5fr) minmax(0,4fr)}}
+.seg h3{font-size:clamp(1.6rem,3.6vw,2.4rem)}
+.seg .mod{display:inline-block;font:800 .8rem var(--b);letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin:8px 0 10px;color:var(--cream)}
+.seg .prog{height:12px;border-radius:6px;background:var(--cream2);overflow:hidden;margin:8px 0 4px}
+.seg .prog i{display:block;height:100%;border-radius:6px;transition:width .5s ease}
+.seg ul{margin:10px 0 0;padding-left:18px;columns:1}
+@media (min-width:640px){.seg ul{columns:2;column-gap:24px}}
+.seg li{break-inside:avoid;margin-bottom:3px}
+.illu{position:relative;aspect-ratio:1;max-width:300px;width:100%;margin:0 auto}
+.illu svg{position:absolute;inset:0;width:100%;height:100%;opacity:0;transform:scale(.94);transition:opacity .45s ease,transform .6s cubic-bezier(.2,.9,.3,1)}
+.illu svg.on{opacity:1;transform:none}
+.illu svg .ov{mix-blend-mode:multiply}
+.snote{font-size:.85rem;color:var(--ink2);margin:14px 0 0}
+/* map */
+.mapwrap{display:grid;grid-template-columns:minmax(0,1fr);gap:26px;align-items:center}
+@media (min-width:960px){.mapwrap{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}}
+.pmap{width:100%;height:auto;display:block}
+.pmap .land1{fill:var(--sea);opacity:.9}
+.pmap .land2{fill:var(--terra);mix-blend-mode:multiply;opacity:.55}
+.pmap .wave{fill:none;stroke:var(--sea);stroke-width:3;stroke-linecap:round;opacity:.6}
+.pmap .ct{font:800 20px var(--h);fill:var(--ink);paint-order:stroke;stroke:var(--cream);stroke-width:5px}
+.pmap .it{font:700 14px var(--b);fill:var(--ink);paint-order:stroke;stroke:var(--cream);stroke-width:4px}
+.pmap .it tspan{fill:var(--terra);font-weight:800}
+.pmap .dot{fill:var(--cream);stroke:var(--ink);stroke-width:2.5}
+.pmap .hq{fill:var(--sun);stroke:var(--ink);stroke-width:3}
+.js .pmap.pre .pop{opacity:0;transform:scale(.4)}
+.pmap .pop{transform-box:fill-box;transform-origin:center;transition:opacity .5s,transform .6s cubic-bezier(.3,1.6,.5,1);transition-delay:calc(var(--i) * .15s + .6s)}
+.sessbox{background:var(--cream);border-radius:28px;padding:22px;border:2px solid var(--ink)}
+.sessbox h3{font-size:1.8rem;margin-bottom:6px}
+.sessbox .st{font:700 1.05rem var(--b);color:var(--sea)}
+.sessbox .ext{font-size:.92rem;color:var(--ink2);margin:10px 0 16px}
+/* intra */
+.intra-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+@media (min-width:960px){.intra-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.places{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0}
+.places li{background:var(--cream);color:var(--ink);font:700 .95rem var(--b);padding:8px 14px;border-radius:999px}
+.towns{font:800 clamp(1.6rem,4vw,2.6rem)/1.15 var(--h);color:var(--sun);margin:16px 0}
+.towns span{color:var(--cream);opacity:.6}
+/* cards-free lists */
+.two{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+@media (min-width:900px){.two{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:50px}}
+.roles{font:700 clamp(1.1rem,2.4vw,1.4rem)/1.6 var(--h)}
+.roles span:not(:last-child)::after{content:" / ";color:var(--terra)}
+.plain dt{font:800 1.1rem var(--h);margin-top:16px}
+.plain dd{margin:4px 0 0;color:var(--ink2)}
+/* compare */
+.posters{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+@media (min-width:860px){.posters{grid-template-columns:minmax(0,6fr) minmax(0,5fr)}}
+.post{border-radius:36px;padding:28px;position:relative;overflow:hidden}
+.post.a2{background:var(--sea);color:var(--cream)}
+.post.a1{background:var(--cream2)}
+.post h3{font-size:clamp(2.6rem,6vw,4rem)}
+.post .pr{font:800 1.8rem var(--h);margin:8px 0 14px}
+.post.a2 .pr{color:var(--sun)}
+.post dl{margin:0}
+.post dt{font:800 .78rem var(--b);text-transform:uppercase;letter-spacing:.1em;margin-top:12px;opacity:.8}
+.post dd{margin:2px 0 0}
+.post .disc{position:absolute;right:-50px;top:-50px;width:170px;height:170px;border-radius:50%;background:var(--sun);mix-blend-mode:multiply;opacity:.75}
+/* financing + recyclage */
+.fins{display:grid;grid-template-columns:minmax(0,1fr);gap:0;border-top:2px solid var(--ink)}
+@media (min-width:760px){.fins{grid-template-columns:repeat(5,minmax(0,1fr))}}
+.fins div{padding:18px 16px 18px 0;border-bottom:2px solid var(--ink)}
+.fins h3{font-size:1.4rem;margin-bottom:6px}
+.fins p{margin:0;color:var(--ink2);font-size:.96rem}
+.suns{display:flex;gap:10px;align-items:flex-end;margin:24px 0 8px;flex-wrap:wrap}
+.suns div{text-align:center;font:700 .85rem var(--b)}
+.suns svg{width:76px;height:76px;display:block;margin:0 auto 4px}
+.news{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;margin-top:30px}
+@media (min-width:860px){.news{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.news div{border-left:6px solid var(--sun);padding:6px 0 6px 16px}
+.news h3{font-size:1.25rem;margin-bottom:4px}
+/* voices / faq */
+.voices{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+@media (min-width:860px){.voices{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.voices blockquote{margin:0;font:700 clamp(1.4rem,3vw,2rem)/1.2 var(--h)}
+.voices figure{margin:0}
+.voices figcaption{color:var(--ink2);margin-top:10px;font-size:.9rem}
+.faq details{border-bottom:2px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 54px 18px 0;font:700 1.18rem/1.3 var(--h);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before,.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:32px;height:32px;margin-top:-16px;border-radius:50%}
+.faq summary::before{background:var(--sun)}
+.faq summary::after{background:var(--sea);mix-blend-mode:multiply;transform:translate(6px,-4px);transition:transform .3s}
+.faq details[open] summary::after{transform:none}
+.faq details div{padding:0 0 18px;color:var(--ink2);max-width:76ch}
+.faq details div p{margin:0}
+/* form */
+.fwrap{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+@media (min-width:960px){.fwrap{grid-template-columns:minmax(0,4fr) minmax(0,7fr)}}
+.lead{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;background:var(--cream);color:var(--ink);border-radius:36px;padding:26px}
+@media (min-width:640px){.lead{grid-template-columns:repeat(2,minmax(0,1fr))}.lead .full{grid-column:1/-1}}
+.lead label{display:block;font:800 .95rem var(--h);margin-bottom:6px}
+.lead input,.lead select,.lead textarea{width:100%;font:500 1rem var(--b);color:var(--ink);background:var(--cream2);border:0;border-bottom:3px solid var(--sea);border-radius:14px 14px 4px 4px;padding:12px 14px}
+.lead textarea{min-height:96px}
+.lead input:user-invalid,.lead select:user-invalid{border-bottom-color:#A8401F;background:#fbe1d4}
+.lead .err{display:none;color:#8E3418;font-size:.85rem;margin:6px 0 0;font-weight:700}
+.lead input:user-invalid~.err,.lead select:user-invalid~.err{display:block}
+.lead .chk{display:flex;gap:12px;align-items:flex-start}
+.lead .chk input{width:22px;height:22px;flex:none;accent-color:var(--sea);margin-top:3px}
+.lead .chk label{font:500 .92rem/1.5 var(--b)}
+.ok{background:var(--cream);color:var(--ink);border-radius:36px;padding:28px;text-align:left}
+.ok h3{font-size:2.4rem;margin:10px 0}
+.ok svg{width:110px;height:110px}
+/* final + footer + sticky */
+.final{padding:90px 0;position:relative;overflow:hidden}
+.final h2{font-size:clamp(2.4rem,7vw,5.6rem);max-width:13ch;position:relative;z-index:2}
+.final .acts{margin-top:28px;position:relative;z-index:2}
+.final .bigsun{position:absolute;right:-120px;top:20px;width:420px;height:420px;border-radius:50%;background:var(--sun);opacity:.9}
+.final .bigsea{position:absolute;right:-60px;top:240px;width:520px;height:240px;border-radius:50%;background:var(--sea);mix-blend-mode:multiply;opacity:.7}
+footer{border-top:2px solid var(--ink);padding:28px 0 104px;font-size:.9rem}
+footer .w{display:flex;flex-wrap:wrap;gap:12px 28px}
+footer nav{display:flex;gap:18px}
+@media (min-width:760px){footer{padding-bottom:28px}}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:70;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:8px}
+.sticky a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;font:800 1rem var(--h);text-decoration:none;box-shadow:0 6px 18px rgba(43,29,23,.25)}
+.sticky .c{background:var(--cream);color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink),0 6px 18px rgba(43,29,23,.25)}
+.sticky .b{background:var(--sea);color:var(--cream)}
+@media (min-width:760px){.sticky{display:none}}
+@media (prefers-reduced-motion:reduce){.js [data-reg],.js [data-reg] .l1,.js [data-reg] .l2,.js [data-print]{opacity:1;transform:none;transition:none}.js [data-reg].in .l1,.js [data-reg].in .l2,.js [data-print].in{transition:none}.cta,.illu svg,.seg .prog i,.faq summary::after,.pmap .pop{transition:none}.js .pmap.pre .pop{opacity:1;transform:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"EducationalOrganization","@id":"#org","name":"Azur Gestes","description":"Formations aux gestes et soins d’urgence en Provence-Alpes-Côte d’Azur : AFGSU 2, AFGSU 1 et recyclage, à Aix-en-Provence ou en intra dans toute la région.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Provence-Alpes-Côte d’Azur"},"location":[
+{"@type":"Place","name":"Azur Gestes · Aix-en-Provence","address":{"@type":"PostalAddress","addressLocality":"Aix-en-Provence","addressRegion":"Provence-Alpes-Côte d’Azur","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.53,"longitude":5.45}}]},
+{"@type":"Course","name":"AFGSU 2 en Provence-Alpes-Côte d’Azur","description":"21 heures de formation présentielle sur trois jours aux gestes et soins d’urgence de niveau 2 : urgences vitales, potentielles, collectives et SSE. Attestation délivrée par le CESU, valable 4 ans. Inter à Aix-en-Provence ou intra.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
+"offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Aix-en-Provence (dates sur demande)"}}}
+]}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le seul centre est à Aix : comment font les équipes niçoises ?","acceptedAnswer":{"@type":"Answer","text":"Deux options : venir à Aix-en-Provence pour une session inter, ou nous faire intervenir dans votre établissement à Nice, en intra, dès lors que vous réunissez un groupe de 10 à 12 professionnels."}},{"@type":"Question","name":"Clinique marseillaise : à partir de combien de salariés l’intra devient-il pertinent ?","acceptedAnswer":{"@type":"Answer","text":"Une session intra se construit pour 10 à 12 participants. Au-delà, on enchaîne plusieurs groupes ; en deçà, l’inscription en inter à Aix reste la solution naturelle."}},{"@type":"Question","name":"Le curseur des trois jours décrit-il le programme heure par heure ?","acceptedAnswer":{"@type":"Answer","text":"Non, il donne la répartition indicative par demi-journée : 7 h d’urgences vitales le premier jour, puis 3 h 30 par bloc. L’ordre précis des thèmes à l’intérieur d’un module reste fixé par le formateur."}},{"@type":"Question","name":"Infirmière libérale à Avignon, où suivre la formation ?","acceptedAnswer":{"@type":"Answer","text":"À Aix-en-Provence, en inter, à une date fixée sur demande. Si vous montez un groupe de 10 à 12 avec des consœurs et confrères, l’intra dans un cabinet ou un centre de santé est aussi envisageable."}},{"@type":"Question","name":"Chirurgien-dentiste à Cannes, l’AFGSU 2 s’adresse-t-elle à mon cabinet ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les chirurgiens-dentistes font partie du public. Votre assistante de cabinet, si elle n’a pas de fonction soignante, relève quant à elle de l’AFGSU 1."}},{"@type":"Question","name":"Comment se déroule la première journée ?","acceptedAnswer":{"@type":"Answer","text":"Elle est entièrement consacrée aux urgences vitales : sept heures de pratique, sur mannequins adulte, enfant et nourrisson, avec le matériel d’urgence."}},{"@type":"Question","name":"Pharmacien d’officine à Gap : la formation me concerne-t-elle ?","acceptedAnswer":{"@type":"Answer","text":"Oui, l’officine est bien concernée : pharmacien comme préparateur peuvent suivre le niveau 2. Une session intra sur place reste possible si l’effectif le permet."}},{"@type":"Question","name":"Inter ou intra, quelle différence concrète ?","acceptedAnswer":{"@type":"Answer","text":"En inter, vous rejoignez une session dans notre centre d’Aix, au tarif de 385 € TTC par personne. En intra, la session se déroule chez vous, pour votre équipe, et le prix est établi sur devis."}},{"@type":"Question","name":"Les dates d’Aix sont-elles publiées à l’avance ?","acceptedAnswer":{"@type":"Answer","text":"Elles sont ouvertes à la demande : prochaine date sur demande — on vous rappelle sous 48 h. Les seules sessions confirmées aujourd’hui ont lieu en Île-de-France."}},{"@type":"Question","name":"Et si je manque une demi-journée ?","acceptedAnswer":{"@type":"Answer","text":"La présence intégrale étant une condition de validation, une absence empêche la délivrance de l’attestation. Prévenez-nous le plus tôt possible pour trouver une solution."}},{"@type":"Question","name":"Kinésithérapeute à Nice, dois-je d’abord passer l’AFGSU 1 ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le niveau 2 est accessible directement aux professions de santé, sans étape préalable par le niveau 1."}},{"@type":"Question","name":"Auxiliaire de puériculture en crèche à Marseille, suis-je concernée ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Votre métier figure dans le public visé, et la conduite à tenir face à un nourrisson fait partie intégrante du module consacré à l’urgence vitale."}},{"@type":"Question","name":"L’arrêté du 20 février 2026 vise-t-il les infirmiers déjà en poste ?","acceptedAnswer":{"@type":"Answer","text":"Il concerne les étudiants entrés en formation à la rentrée 2026, pour qui une AFGSU 2 valide devient nécessaire à l’obtention du diplôme d’État."}}]}</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<a class="skip" href="#soleil">Aller à l’essentiel</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="i-rcp" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="var(--sun)"/><path class="ov" d="M30 230Q150 170 270 230V300H30Z" fill="var(--sea)"/><g class="ov"><rect x="118" y="40" width="26" height="120" rx="12" fill="var(--terra)"/><rect x="156" y="40" width="26" height="120" rx="12" fill="var(--terra)"/></g><rect x="104" y="150" width="92" height="42" rx="20" fill="var(--ink)"/><rect x="112" y="140" width="76" height="26" rx="13" fill="var(--cream)"/><path d="M60 110v40m-12-12 12 12 12-12M240 110v40m-12-12 12 12 12-12" stroke="var(--ink)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-dae" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="var(--sun)"/><rect class="ov" x="56" y="80" width="110" height="150" rx="22" fill="var(--sea)"/><rect x="66" y="90" width="110" height="150" rx="22" fill="none" stroke="var(--ink)" stroke-width="6"/><path d="M128 118 100 168h28l-18 46" fill="none" stroke="var(--cream)" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/><rect class="ov" x="198" y="70" width="58" height="70" rx="16" fill="var(--terra)"/><rect class="ov" x="198" y="168" width="58" height="70" rx="16" fill="var(--terra)"/><path d="M176 130c14 0 10-26 22-26M176 200c14 0 10-6 22-6" stroke="var(--ink)" stroke-width="5" fill="none"/></symbol>
+  <symbol id="i-o2" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="var(--sun)"/><rect class="ov" x="104" y="88" width="84" height="180" rx="40" fill="var(--sea)"/><rect x="112" y="80" width="84" height="180" rx="40" fill="none" stroke="var(--ink)" stroke-width="6"/><rect class="ov" x="104" y="128" width="92" height="22" fill="var(--terra)"/><path d="M136 80V52h36v28M126 40h56" stroke="var(--ink)" stroke-width="8" fill="none" stroke-linecap="round"/><circle cx="222" cy="52" r="18" fill="var(--cream)" stroke="var(--ink)" stroke-width="6"/></symbol>
+  <symbol id="i-bra" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="var(--sun)"/><rect class="ov" x="34" y="150" width="232" height="26" rx="13" fill="var(--sea)"/><path d="M70 176 52 236M230 176l18 60" stroke="var(--ink)" stroke-width="8" stroke-linecap="round"/><circle cx="52" cy="244" r="12" fill="var(--ink)"/><circle cx="248" cy="244" r="12" fill="var(--ink)"/><circle class="ov" cx="78" cy="124" r="24" fill="var(--terra)"/><rect class="ov" x="104" y="116" width="150" height="34" rx="16" fill="var(--terra)"/></symbol>
+  <symbol id="i-steth" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="var(--sun)"/><path class="ov" d="M96 56v66c0 34 24 58 54 58s54-24 54-58V56" fill="none" stroke="var(--sea)" stroke-width="16" stroke-linecap="round"/><path d="M150 180v34c0 26 20 44 44 44s40-18 40-40v-14" fill="none" stroke="var(--ink)" stroke-width="9" stroke-linecap="round"/><circle class="ov" cx="234" cy="190" r="26" fill="var(--terra)"/><circle cx="234" cy="190" r="12" fill="var(--cream)"/></symbol>
+  <symbol id="i-star" viewBox="0 0 300 300"><circle cx="150" cy="150" r="130" fill="var(--sun)"/><g transform="translate(150 150)"><path class="ov" d="M-20-110H20V-36L84-73 104-39 40-2 104 35 84 69 20 32V106H-20V32L-84 69-104 35-40-2-104-39-84-73-20-36Z" fill="var(--sea)"/><path d="M-6-90V90" stroke="var(--cream)" stroke-width="8" stroke-linecap="round"/><path class="ov" d="M-20-60c30 0 30 18 6 26s-24 22 8 26 26 22-4 26" fill="none" stroke="var(--terra)" stroke-width="10" stroke-linecap="round"/></g></symbol>
+ </defs>
+</svg>
+
+<header class="top">
+ <div class="w">
+  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Azur Gestes (emplacement)" data-img="logo : soleil Azur Gestes"></span>Azur Gestes</a>
+  <nav aria-label="Navigation"><a href="#trois-jours">Les 3 jours</a><a href="#aix">Aix &amp; carte</a><a href="#intra">Intra</a><a href="#faq">Questions</a><a href="#ecrire">Inscription</a></nav>
+  <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
+ </div>
+</header>
+
+<main id="soleil">
+<section class="hero" aria-labelledby="h1">
+ <div class="w hero-grid">
+  <div>
+   <p class="kick">Formation AFGSU 2 · Bouches-du-Rhône, Var, Alpes-Maritimes, Vaucluse, Alpes</p>
+   <h1 id="h1" data-atf="h1">Soignants du Sud, à vos gestes : <span class="o">AFGSU 2</span> en Provence-Alpes-Côte d’Azur</h1>
+   <p class="tagp" data-atf="price"><s><span class="sr">Au lieu de </span>450 €</s><strong>385 € TTC</strong><small>par personne, en inter à Aix · réglable en 4 fois sans frais</small></p>
+   <p class="meta" data-atf="meta"><i aria-hidden="true"></i>21 h · 3 jours · valable 4 ans</p>
+   <div class="acts">
+    <a class="cta" data-atf="cta" href="#ecrire" data-formation="AFGSU 2" data-centre="Aix-en-Provence">Réserver à Aix-en-Provence</a>
+    <a class="tel-h" data-atf="phone" href="tel:+33780912335">07 80 91 23 35<small>Wafa vous répond</small></a>
+   </div>
+   <p class="lede">Une adresse de formation à Aix-en-Provence, et surtout la possibilité de faire venir la session dans votre établissement, de Marseille à Nice, de Toulon à Gap. Trois jours de pratique en petit groupe, sans écran, pour tout le spectre de l’urgence.</p>
+  </div>
+  <div class="poster" data-reg>
+   <svg viewBox="0 0 400 420" role="img" aria-label="Affiche : un soleil se lève au-dessus de la mer, un cœur et un tracé ECG s’y superposent">
+    <g class="l1"><circle cx="210" cy="170" r="140" fill="var(--sun)"/></g>
+    <g class="l2"><path class="ov" d="M0 250Q50 222 100 250T200 250T300 250T400 250V420H0Z" fill="var(--sea)"/><path class="ov" d="M0 300Q50 272 100 300T200 300T300 300T400 300" fill="none" stroke="var(--cream)" stroke-width="6"/></g>
+    <g class="l1"><path class="ov" d="M210 238c-46-30-74-56-74-88a38 38 0 0 1 74-12 38 38 0 0 1 74 12c0 32-28 58-74 88z" fill="var(--terra)"/></g>
+    <path d="M40 176h96l12-30 16 58 14-44 10 16h182" fill="none" stroke="var(--ink)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="24" y="398" style="font:800 22px var(--h);fill:var(--cream)">21 h · 3 jours</text>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="sec band" id="trois-jours" aria-labelledby="h-3j">
+ <div class="w">
+  <div class="sec-h" data-print><p class="kick">Les trois jours, demi-journée par demi-journée</p><h2 id="h-3j">Faites glisser le soleil</h2><p>Du lever du premier jour au coucher du troisième : déplacez le curseur pour voir quel module occupe chaque demi-journée. Formation 100 % présentielle — la validation repose sur la pratique, en mises en situation simulées.</p></div>
+  <div class="scrub" data-print>
+   <svg class="horizon" viewBox="0 0 900 190" aria-hidden="true">
+    <path class="sea-l" d="M0 160Q75 148 150 160T300 160T450 160T600 160T750 160T900 160V190H0Z"/>
+    <path class="arc" d="M20 160A130 130 0 0 1 280 160"/><path class="arc" d="M320 160A130 130 0 0 1 580 160"/><path class="arc" d="M620 160A130 130 0 0 1 880 160"/>
+    <text class="dl" x="150" y="186" text-anchor="middle">Jour 1</text><text class="dl" x="450" y="186" text-anchor="middle">Jour 2</text><text class="dl" x="750" y="186" text-anchor="middle">Jour 3</text>
+    <g id="sunG"><circle r="22"/><circle class="r2" r="22" cx="5" cy="-4"/></g>
+   </svg>
+   <label class="sr" for="scrub">Moment de la formation</label>
+   <input type="range" id="scrub" min="0" max="599" step="10" value="0" aria-describedby="segTitle">
+   <div class="ticks" role="group" aria-label="Demi-journées">
+    <button type="button" data-v="50">J1 matin</button><button type="button" data-v="150">J1 après-midi</button><button type="button" data-v="250">J2 matin</button><button type="button" data-v="350">J2 après-midi</button><button type="button" data-v="450">J3 matin</button><button type="button" data-v="550">J3 après-midi</button>
+   </div>
+   <div class="seg" aria-live="polite">
+    <div id="segBody"><h3 id="segTitle">Jour 1 · matin</h3><p>Le module des urgences vitales ouvre la formation.</p></div>
+    <div class="illu" aria-hidden="true">
+     <svg viewBox="0 0 300 300" data-i="0" class="on"><use href="#i-rcp"/></svg><svg viewBox="0 0 300 300" data-i="1"><use href="#i-dae"/></svg><svg viewBox="0 0 300 300" data-i="2"><use href="#i-o2"/></svg><svg viewBox="0 0 300 300" data-i="3"><use href="#i-bra"/></svg><svg viewBox="0 0 300 300" data-i="4"><use href="#i-steth"/></svg><svg viewBox="0 0 300 300" data-i="5"><use href="#i-star"/></svg>
+    </div>
+   </div>
+   <p class="snote">Découpage donné à titre indicatif ; à l’intérieur de chaque module, l’ordre des thèmes est ajusté par le formateur.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="aix" aria-labelledby="h-aix">
+ <div class="w mapwrap">
+  <div data-reg>
+   <svg class="pmap pre" id="pmap" viewBox="0 0 680 590" role="img" aria-labelledby="pm-t pm-d">
+    <title id="pm-t">Carte de Provence-Alpes-Côte d’Azur façon affiche</title>
+    <desc id="pm-d">Aix-en-Provence, centre de formation, marqué d’un soleil ; Marseille, Toulon, Nice, Cannes, Avignon, Gap et Digne-les-Bains indiqués comme villes où la formation peut venir en intra.</desc>
+    <g class="l1"><path class="land1" d="M31.6 457.8L96.6 467.9L166.9 478.1L237.2 521.3L330.3 549.2L405.8 549.2L456.8 506L505.9 465.4L539.3 432.4L565.7 396.8L611.4 376.5L641.2 295.3L509.5 206.4L518.2 142.9L453.2 38.8L377.7 54.1L307.4 142.9L254.7 206.4L193.2 206.4L105.4 239.4L105.4 320.7L96.6 396.8Z"/></g>
+    <g class="l2"><path class="land2" d="M31.6 457.8L96.6 467.9L166.9 478.1L237.2 521.3L330.3 549.2L405.8 549.2L456.8 506L505.9 465.4L539.3 432.4L565.7 396.8L611.4 376.5L641.2 295.3L509.5 206.4L518.2 142.9L453.2 38.8L377.7 54.1L307.4 142.9L254.7 206.4L193.2 206.4L105.4 239.4L105.4 320.7L96.6 396.8Z" transform="translate(8 -6)"/></g>
+    <path class="wave" d="M80 560q20-10 40 0t40 0 40 0M260 576q20-10 40 0t40 0 40 0M450 520q20-10 40 0t40 0 40 0M560 560q20-10 40 0t40 0"/>
+    <g class="pop" style="--i:0"><circle class="hq" cx="246" cy="440" r="20"/><path d="M246 404v-12M246 488v-12M210 440h-12M294 440h-12M221 415l-8-8M279 473l-8-8M221 465l-8 8M279 407l-8 8" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/><text class="ct" x="274" y="412">Aix-en-Provence</text></g>
+    <g class="pop" style="--i:1"><circle class="dot" cx="232" cy="498" r="8"/><text class="it" x="214" y="522" text-anchor="end">Marseille <tspan>intra</tspan></text></g>
+    <g class="pop" style="--i:2"><circle class="dot" cx="330" cy="544" r="8"/><text class="it" x="346" y="549">Toulon <tspan>intra</tspan></text></g>
+    <g class="pop" style="--i:3"><circle class="dot" cx="564" cy="397" r="8"/><text class="it" x="578" y="402">Nice <tspan>intra</tspan></text></g>
+    <g class="pop" style="--i:4"><circle class="dot" cx="520" cy="435" r="8"/><text class="it" x="506" y="462" text-anchor="end">Cannes <tspan>intra</tspan></text></g>
+    <g class="pop" style="--i:5"><circle class="dot" cx="134" cy="333" r="8"/><text class="it" x="148" y="338">Avignon <tspan>intra</tspan></text></g>
+    <g class="pop" style="--i:6"><circle class="dot" cx="357" cy="178" r="8"/><text class="it" x="371" y="183">Gap <tspan>intra</tspan></text></g>
+    <g class="pop" style="--i:7"><circle class="dot" cx="385" cy="298" r="8"/><text class="it" x="399" y="303">Digne-les-Bains <tspan>intra</tspan></text></g>
+   </svg>
+  </div>
+  <div data-print>
+   <p class="kick">Sessions</p>
+   <h2 id="h-aix" style="font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px">Une adresse, et toute la région en intra</h2>
+   <div class="sessbox">
+    <h3 id="aixName">Aix-en-Provence <small style="font:700 1rem var(--b)">· 13</small></h3>
+    <p class="st" id="aixWhen">—</p>
+    <p class="ext" id="ext"></p>
+    <a class="cta sunny" href="#ecrire" data-formation="AFGSU 2" data-centre="Aix-en-Provence">Demander ma date aixoise</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec band" id="intra" aria-labelledby="h-intra">
+ <div class="w intra-grid">
+  <div data-print>
+   <p class="kick">Intra-établissement</p>
+   <h2 id="h-intra" style="font-size:clamp(2.2rem,6vw,4.4rem)">La formation vient à vous</h2>
+   <p class="towns">Marseille <span>·</span> Nice <span>·</span> Toulon <span>·</span> Avignon <span>·</span> Cannes <span>·</span> Gap</p>
+   <p>Avec un seul centre dans la région, l’intra est souvent la voie la plus simple : nous formons vos équipes dans vos locaux, en groupe de 10 à 12, sur les dates qui ménagent vos plannings. En Provence-Alpes-Côte d’Azur comme ailleurs en France. Tarif sur devis.</p>
+   <ul class="places"><li>Hôpital</li><li>Clinique</li><li>EHPAD</li><li>Cabinet</li><li>Officine</li><li>Centre de santé</li></ul>
+   <a class="cta sunny" href="#ecrire" data-formation="Intra" data-centre="Intra">Faire venir la formation chez nous</a>
+  </div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : formation au DAE dans une clinique" data-img="photo : infirmières d’une clinique en exercice DAE, lumière du matin dans la salle" data-print style="min-height:360px"></div>
+ </div>
+</section>
+
+<section class="sec" id="public" aria-labelledby="h-pub">
+ <div class="w two">
+  <div data-print>
+   <p class="kick">Pour qui</p>
+   <h2 id="h-pub" style="font-size:clamp(2rem,5vw,3.4rem);margin-bottom:18px">Les soignants, et ceux qui les rejoindront</h2>
+   <p class="roles"><span>médecins</span><span>infirmiers</span><span>aides-soignants</span><span>sages-femmes</span><span>kinésithérapeutes</span><span>pharmaciens</span><span>préparateurs</span><span>ambulanciers</span><span>auxiliaires de puériculture</span><span>manipulateurs radio</span><span>chirurgiens-dentistes</span><span>étudiants</span><span>AES / AMP</span><span>ARM</span><span>assistants médicaux</span><span>préleveurs sanguins</span><span>auxiliaires ambulanciers</span></p>
+   <p>Concrètement : l’ensemble des métiers de santé que range la 4e partie du Code de la santé publique, élèves et étudiants compris, plus les professions listées ci-dessus. L’entrée est directe : l’AFGSU 1 n’est demandée à personne.</p>
+  </div>
+  <dl class="plain" data-print>
+   <dt>Ce qu’on vous demandera</dt><dd>Trois justificatifs : diplôme, carte professionnelle, inscription RPPS ou ADELI, remplacés pour les étudiants par un certificat de scolarité. Pour un recyclage, s’y ajoute l’attestation en cours.</dd>
+   <dt>Comment on valide</dt><dd>Sur la durée : évaluation continue, présence intégrale, aucun examen final à part. Le CESU délivre l’attestation ; nous organisons la formation sous convention avec le CESU 93.</dd>
+   <dt>Ce que dit la réglementation</dt><dd>Arrêté du 30 décembre 2014, modifié en 2019 et 2021. L’attestation emporte l’équivalence PSC (arrêté du 23 août 2019) mais ne remplace pas le SST.</dd>
+  </dl>
+ </div>
+</section>
+
+<section class="sec sand" id="niveaux" aria-labelledby="h-niv">
+ <div class="w">
+  <div class="sec-h" data-print><p class="kick">AFGSU 1 · AFGSU 2</p><h2 id="h-niv">Deux affiches, deux publics</h2></div>
+  <div class="posters">
+   <article class="post a2" data-print><span class="disc" aria-hidden="true"></span>
+    <h3>AFGSU 2</h3><p class="pr"><s style="opacity:.75;font-size:1.2rem">450 €</s> 385 € TTC</p>
+    <dl><dt>Public</dt><dd>Soignants de la 4e partie du CSP et leurs étudiants, AES/AMP, ARM, assistants médicaux, préleveurs, auxiliaires ambulanciers</dd><dt>Durée</dt><dd>21 h, trois jours</dd><dt>Niveau</dt><dd>Gestes avancés et risques collectifs</dd><dt>Validité</dt><dd>4 ans, renouvelée par 7 h de recyclage</dd></dl>
+   </article>
+   <article class="post a1" data-print>
+    <h3>AFGSU 1</h3><p class="pr" style="color:var(--sea)">290 € TTC</p>
+    <dl><dt>Public</dt><dd>Celles et ceux qui ne soignent pas mais font tourner la structure — accueil, secrétariat médical, administration, logistique, technique — en santé, en médico-social ou en cabinet</dd><dt>Durée</dt><dd>14 h, deux jours</dd><dt>Objectif</dt><dd>Savoir identifier une urgence vitale ou potentielle, faire les gestes qui conviennent, participer à la réponse collective</dd><dt>Validité</dt><dd>4 ans</dd></dl>
+    <p style="margin:22px 0 0"><a class="cta line" href="#ecrire" data-formation="AFGSU 1">Voir l’AFGSU 1 pour l’accueil</a></p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="financer" aria-labelledby="h-fin">
+ <div class="w">
+  <div class="sec-h" data-print><p class="kick">Financement</p><h2 id="h-fin">Cinq façons de régler la note</h2></div>
+  <div class="fins" data-print>
+   <div><h3>L’employeur</h3><p>Via son plan de développement des compétences.</p></div>
+   <div><h3>L’OPCO</h3><p>Pour les salariés du privé, selon la branche.</p></div>
+   <div><h3>L’ANFH</h3><p>Pour les établissements publics hospitaliers.</p></div>
+   <div><h3>Le FIF-PL</h3><p>Pour les libéraux, si les conditions sont réunies.</p></div>
+   <div><h3>Vous</h3><p>En quatre versements, sans frais.</p></div>
+  </div>
+  <p style="margin-top:18px;font-weight:700" data-print>Et le CPF ? En principe, l’AFGSU n’y est pas éligible ; ne comptez pas dessus.</p>
+ </div>
+</section>
+
+<section class="sec sand" id="recyclage" aria-labelledby="h-rec">
+ <div class="w two">
+  <div data-print>
+   <p class="kick">Recyclage · 7 h</p>
+   <h2 id="h-rec" style="font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px">Quatre tours de soleil</h2>
+   <p>Une attestation, quatre années. Avant le coucher du quatrième soleil, un recyclage de 7 heures la remet à neuf ; passé ce délai, retour à la case départ : 21 heures. Réservez 3 à 6 mois à l’avance, attestation actuelle à l’appui — le tarif du recyclage vous est donné sur demande.</p>
+   <div class="suns" aria-label="Quatre années de validité ; la dernière contient la fenêtre de recyclage conseillée" role="img">
+    <div><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="var(--sun)"/></svg>An 1</div>
+    <div><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="var(--sun)"/></svg>An 2</div>
+    <div><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="var(--sun)"/></svg>An 3</div>
+    <div><svg viewBox="0 0 80 80"><circle cx="40" cy="44" r="30" fill="var(--sun)"/><path d="M0 52Q20 44 40 52T80 52V80H0Z" fill="var(--sea)" style="mix-blend-mode:multiply"/><path d="M58 18a30 30 0 0 1 10 22" stroke="var(--terra)" stroke-width="6" fill="none" stroke-linecap="round"/></svg>An 4 · recyclage</div>
+   </div>
+   <p style="margin-top:20px"><a class="cta" href="#ecrire" data-formation="Recyclage AFGSU 2">Planifier mon recyclage au bon moment</a></p>
+  </div>
+  <div data-print>
+   <div class="news">
+    <div><h3>20 février 2026</h3><p style="margin:0">Un arrêté conditionne désormais le diplôme d’État infirmier à une AFGSU 2 valide, pour les étudiants ayant fait leur rentrée en 2026.</p></div>
+    <div><h3>Mars 2026</h3><p style="margin:0">L’ANCESU et la SFMU publient de nouvelles recommandations.</p></div>
+   </div>
+   <div class="img-ph" role="img" aria-label="Photo à venir : mannequin nourrisson et mains d’une auxiliaire de puériculture" data-img="photo : gestes sur mannequin nourrisson, mains d’une auxiliaire de puériculture" style="margin-top:24px"></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="voix" aria-labelledby="h-voix">
+ <div class="w">
+  <div class="sec-h" data-print><p class="kick">Ils l’ont suivie</p><h2 id="h-voix">Retours de stagiaires</h2></div>
+  <div class="voices">
+   <figure data-print><blockquote>[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · métier · ville</figcaption></figure>
+   <figure data-print><blockquote>[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · métier · ville</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sec sand" id="faq" aria-labelledby="h-faq">
+ <div class="w">
+  <div class="sec-h" data-print><p class="kick">Questions fréquentes</p><h2 id="h-faq">On nous pose souvent ces questions, de la Durance à la Riviera</h2></div>
+  <div class="faq">
+   <details><summary data-faq-q>Le seul centre est à Aix : comment font les équipes niçoises ?</summary><div data-faq-a><p>Deux options : venir à Aix-en-Provence pour une session inter, ou nous faire intervenir dans votre établissement à Nice, en intra, dès lors que vous réunissez un groupe de 10 à 12 professionnels.</p></div></details>
+   <details><summary data-faq-q>Clinique marseillaise : à partir de combien de salariés l’intra devient-il pertinent ?</summary><div data-faq-a><p>Une session intra se construit pour 10 à 12 participants. Au-delà, on enchaîne plusieurs groupes ; en deçà, l’inscription en inter à Aix reste la solution naturelle.</p></div></details>
+   <details><summary data-faq-q>Le curseur des trois jours décrit-il le programme heure par heure ?</summary><div data-faq-a><p>Non, il donne la répartition indicative par demi-journée : 7 h d’urgences vitales le premier jour, puis 3 h 30 par bloc. L’ordre précis des thèmes à l’intérieur d’un module reste fixé par le formateur.</p></div></details>
+   <details><summary data-faq-q>Infirmière libérale à Avignon, où suivre la formation ?</summary><div data-faq-a><p>À Aix-en-Provence, en inter, à une date fixée sur demande. Si vous montez un groupe de 10 à 12 avec des consœurs et confrères, l’intra dans un cabinet ou un centre de santé est aussi envisageable.</p></div></details>
+   <details><summary data-faq-q>Chirurgien-dentiste à Cannes, l’AFGSU 2 s’adresse-t-elle à mon cabinet ?</summary><div data-faq-a><p>Oui, les chirurgiens-dentistes font partie du public. Votre assistante de cabinet, si elle n’a pas de fonction soignante, relève quant à elle de l’AFGSU 1.</p></div></details>
+   <details><summary data-faq-q>Comment se déroule la première journée ?</summary><div data-faq-a><p>Elle est entièrement consacrée aux urgences vitales : sept heures de pratique, sur mannequins adulte, enfant et nourrisson, avec le matériel d’urgence.</p></div></details>
+   <details><summary data-faq-q>Pharmacien d’officine à Gap : la formation me concerne-t-elle ?</summary><div data-faq-a><p>Oui, l’officine est bien concernée : pharmacien comme préparateur peuvent suivre le niveau 2. Une session intra sur place reste possible si l’effectif le permet.</p></div></details>
+   <details><summary data-faq-q>Inter ou intra, quelle différence concrète ?</summary><div data-faq-a><p>En inter, vous rejoignez une session dans notre centre d’Aix, au tarif de 385 € TTC par personne. En intra, la session se déroule chez vous, pour votre équipe, et le prix est établi sur devis.</p></div></details>
+   <details><summary data-faq-q>Les dates d’Aix sont-elles publiées à l’avance ?</summary><div data-faq-a><p>Elles sont ouvertes à la demande : prochaine date sur demande — on vous rappelle sous 48 h. Les seules sessions confirmées aujourd’hui ont lieu en Île-de-France.</p></div></details>
+   <details><summary data-faq-q>Et si je manque une demi-journée ?</summary><div data-faq-a><p>La présence intégrale étant une condition de validation, une absence empêche la délivrance de l’attestation. Prévenez-nous le plus tôt possible pour trouver une solution.</p></div></details>
+   <details><summary data-faq-q>Kinésithérapeute à Nice, dois-je d’abord passer l’AFGSU 1 ?</summary><div data-faq-a><p>Non. Le niveau 2 est accessible directement aux professions de santé, sans étape préalable par le niveau 1.</p></div></details>
+   <details><summary data-faq-q>Auxiliaire de puériculture en crèche à Marseille, suis-je concernée ?</summary><div data-faq-a><p>Oui. Votre métier figure dans le public visé, et la conduite à tenir face à un nourrisson fait partie intégrante du module consacré à l’urgence vitale.</p></div></details>
+   <details><summary data-faq-q>L’arrêté du 20 février 2026 vise-t-il les infirmiers déjà en poste ?</summary><div data-faq-a><p>Il concerne les étudiants entrés en formation à la rentrée 2026, pour qui une AFGSU 2 valide devient nécessaire à l’obtention du diplôme d’État.</p></div></details>
+  </div>
+ </div>
+</section>
+
+<section class="sec band" id="ecrire" aria-labelledby="h-form">
+ <div class="w fwrap">
+  <div data-print>
+   <p class="kick">Inscription</p>
+   <h2 id="h-form" style="font-size:clamp(2.2rem,6vw,4rem);margin-bottom:16px">Un message, et on s’occupe du reste</h2>
+   <p>Wafa reprend votre demande : date à Aix ou projet intra, pièces à fournir, financement. Réponse sous 48 h.</p>
+   <p><a class="tel-h" href="tel:+33780912335" style="color:var(--sun)">07 80 91 23 35</a></p>
+  </div>
+  <div data-print>
+   <!-- TODO : connecter le formulaire au service d'envoi (CRM, API ou e-mail). action="#" en attendant. -->
+   <form class="lead" action="#" method="post" data-lead id="lead">
+    <input type="hidden" name="formation" value="AFGSU 2">
+    <div class="full"><label for="a-nom">Nom &amp; prénom</label><input id="a-nom" name="nom" autocomplete="name" required aria-errormessage="a-nom-e"><p class="err" id="a-nom-e">Merci d’indiquer votre nom.</p></div>
+    <div><label for="a-tel">Téléphone</label><input id="a-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="a-tel-e"><p class="err" id="a-tel-e">Exemple : 04 42 00 00 00.</p></div>
+    <div><label for="a-mail">Email</label><input id="a-mail" name="email" type="email" autocomplete="email" required aria-errormessage="a-mail-e"><p class="err" id="a-mail-e">Cette adresse semble incomplète.</p></div>
+    <div><label for="a-pro">Profession</label><select id="a-pro" name="profession" required aria-errormessage="a-pro-e"><option value="">Votre profession</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="a-pro-e">Sélectionnez votre profession.</p></div>
+    <div><label for="a-centre">Centre / ville</label><select id="a-centre" name="centre" required aria-errormessage="a-centre-e"><option value="">Lieu souhaité</option><option>Aix-en-Provence</option><option value="Intra">Intra, dans notre établissement (toute la région)</option></select><p class="err" id="a-centre-e">Choisissez Aix ou l’intra.</p></div>
+    <div class="full"><label for="a-msg">Message (facultatif)</label><textarea id="a-msg" name="message" placeholder="Ville de votre établissement, nombre de personnes, disponibilités…"></textarea></div>
+    <div class="full chk"><input type="checkbox" id="a-rgpd" name="rgpd" required><label for="a-rgpd">J’accepte qu’Azur Gestes utilise ces informations pour me répondre au sujet de la formation, et pour rien d’autre. <a href="#">Vie privée</a></label></div>
+    <div class="full"><button class="cta" type="submit">Envoyer ma demande</button></div>
+   </form>
+   <div class="ok" data-success hidden tabindex="-1"><svg viewBox="0 0 110 110" aria-hidden="true"><circle cx="55" cy="50" r="36" fill="var(--sun)"/><path d="M0 74Q27 62 55 74T110 74V110H0Z" fill="var(--sea)" style="mix-blend-mode:multiply"/></svg><h3>Message reçu !</h3><p>Wafa revient vers vous sous 48 h pour fixer la date ou préparer le devis intra.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="final" aria-labelledby="h-final">
+ <span class="bigsun" aria-hidden="true"></span><span class="bigsea" aria-hidden="true"></span>
+ <div class="w">
+  <h2 id="h-final" data-print>Trois jours au soleil des bons gestes.</h2>
+  <div class="acts" data-print><a class="cta" href="#ecrire" data-formation="AFGSU 2">Je m’inscris à l’AFGSU 2</a><a class="tel-h" href="tel:+33780912335">07 80 91 23 35</a></div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="w">
+  <span>© 2026 Azur Gestes by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Légal"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+ </div>
+</footer>
+
+<div class="sticky" data-sticky>
+ <a class="c" href="tel:+33780912335">Appeler</a>
+ <a class="b" href="#ecrire" data-formation="AFGSU 2">Ma place à Aix</a>
+</div>
+
+<script>
+/* ===== SESSIONS : unique tableau à éditer (dates ISO [début, fin]) ===== */
+const SESSIONS = [
+  { ville: "Aix-en-Provence", dept: "13", region: "Provence-Alpes-Côte d'Azur", dates: [] },
+  // Sessions déjà confirmées hors région :
+  { ville: "Palaiseau", dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
+];
+const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+/* ====================================================================== */
+(() => {
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const MO = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  const D = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+  const now = new Date(); now.setHours(0, 0, 0, 0);
+  const up = s => s.dates.filter(d => D(d[1]) >= now);
+  const f = ([a, b]) => { const A = D(a), B = D(b); return `${A.getDate()}${A.getMonth() !== B.getMonth() ? ' ' + MO[A.getMonth()] : ''}–${B.getDate()} ${MO[B.getMonth()]}`; };
+  const aix = SESSIONS[0], ua = up(aix);
+  $('#aixWhen').textContent = ua.length ? 'Sessions : ' + ua.map(f).join(' · ') : SUR_DEMANDE;
+  const ext = SESSIONS.filter(s => s.region !== aix.region && up(s).length);
+  if (ext.length) $('#ext').textContent = 'Sessions déjà fixées hors région : ' + ext.map(s => `${s.ville} (${s.dept}), ${up(s).map(f).join(', ')} 2026`).join(' ; ') + '.';
+
+  const form = $('#lead');
+  document.addEventListener('click', e => { const a = e.target.closest('a[data-formation],a[data-centre]'); if (!a) return; if (a.dataset.formation) form.elements.formation.value = a.dataset.formation; const c = a.dataset.centre; if (c && [...form.elements.centre.options].some(o => o.value === c)) form.elements.centre.value = c; });
+
+  /* repérage (impression) */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  $$('[data-reg],[data-print]').forEach(el => io.observe(el));
+  const pmap = $('#pmap');
+  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { pmap.classList.remove('pre'); o.disconnect(); } }, { threshold: .3 }).observe(pmap);
+
+  /* curseur des trois jours */
+  const SEG = [
+    { t: 'Jour 1 · matin', m: 'Urgences vitales', c: 'var(--terra)', done: 3.5, tot: 10.5, p: 'Le module des urgences vitales ouvre la formation, sur mannequins adulte, enfant et nourrisson.' },
+    { t: 'Jour 1 · après-midi', m: 'Urgences vitales', c: 'var(--terra)', done: 7, tot: 10.5, p: 'La première journée entière, soit 7 heures, reste consacrée à l’urgence vitale.' },
+    { t: 'Jour 2 · matin', m: 'Urgences vitales', c: 'var(--terra)', done: 10.5, tot: 10.5, p: 'Cette matinée boucle les 10 h 30 du premier module.' },
+    { t: 'Jour 2 · après-midi', m: 'Urgences potentielles', c: 'var(--sea)', done: 3.5, tot: 7, p: 'Bascule vers les urgences potentielles : ce qui peut s’aggraver si l’on ne fait rien.' },
+    { t: 'Jour 3 · matin', m: 'Urgences potentielles', c: 'var(--sea)', done: 7, tot: 7, p: 'Le troisième matin achève les 7 heures du deuxième module.' },
+    { t: 'Jour 3 · après-midi', m: 'Urgences collectives & SSE', c: 'var(--ink)', done: 3.5, tot: 3.5, p: 'Dernier temps : penser collectif, du plan blanc à l’afflux de victimes.' }
+  ];
+  const TOP = {
+    'Urgences vitales': ['Protection et alerte (15 / 112)', 'Obstruction des voies aériennes', 'Hémorragies', 'Victime inconsciente qui respire', 'Arrêt cardiaque : RCP et DAE', 'Matériel d’urgence : chariot, oxygénothérapie'],
+    'Urgences potentielles': ['Malaises', 'Traumatismes osseux, cutanés, crâniens, du rachis', 'Brûlures', 'Immobilisation, relevage, brancardage', 'Accouchement inopiné', 'Hygiène et risque infectieux', 'Transmission du bilan'],
+    'Urgences collectives & SSE': ['ORSAN', 'Plan blanc, plan bleu', 'Afflux de victimes', 'NRBC-E', 'Évacuation, confinement', 'Soutien médico-psychologique']
+  };
+  const hh = h => (h % 1 ? Math.floor(h) + ' h 30' : h + ' h');
+  const range = $('#scrub'), body = $('#segBody'), sun = $('#sunG'), ills = $$('.illu svg'), ticks = $$('.ticks button');
+  let cur = -1;
+  const place = v => { const day = Math.min(2, Math.floor(v / 200)), t = (v - day * 200) / 200, cx = 150 + day * 300, a = Math.PI * (1 - t); sun.setAttribute('transform', `translate(${(cx + 130 * Math.cos(a)).toFixed(1)} ${(160 - 130 * Math.sin(a)).toFixed(1)})`); };
+  const show = v => {
+    place(v); const i = Math.min(5, Math.floor(v / 100));
+    range.setAttribute('aria-valuetext', SEG[i].t + ', ' + SEG[i].m);
+    if (i === cur) return; cur = i; const s = SEG[i];
+    body.innerHTML = `<h3 id="segTitle">${s.t}</h3><span class="mod" style="background:${s.c}">${s.m}</span><div class="prog" aria-hidden="true"><i style="width:${s.done / s.tot * 100}%;background:${s.c}"></i></div><p style="font-size:.85rem;margin:0 0 10px">${hh(s.done)} sur ${hh(s.tot)} du module à la fin de cette demi-journée</p><p>${s.p}</p><ul>${TOP[s.m].map(x => `<li>${x}</li>`).join('')}</ul>`;
+    ills.forEach((g, j) => g.classList.toggle('on', j === i));
+    ticks.forEach((b, j) => b.setAttribute('aria-current', j === i));
+  };
+  range.addEventListener('input', () => show(+range.value));
+  ticks.forEach(b => b.addEventListener('click', () => { range.value = b.dataset.v; show(+b.dataset.v); }));
+  show(0);
+
+  /* formulaire */
+  const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
+  form.addEventListener('blur', e => sync(e.target), true);
+  form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    // TODO : envoyer les données (fetch POST) vers l'outil d'inscription, puis confirmer.
+    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+  });
+})();
+</script>
+</body>
+</html>
