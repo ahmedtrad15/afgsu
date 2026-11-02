@@ -1,0 +1,677 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFGSU 2 Bretagne · Rennes, Cesson-Sévigné, Saint-Brieuc · 385 € | Phare Secours</title>
+<meta name="description" content="Formation AFGSU 2 en Bretagne pour soignants et étudiants en santé : 21 h sur 3 jours en présentiel, 385 € TTC au lieu de 450 €, attestation valable 4 ans. Centres à Rennes, Cesson-Sévigné et Saint-Brieuc, intra dans toute la région.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Phare Secours">
+<meta property="og:title" content="Phare Secours · AFGSU 2 en Bretagne, de Saint-Brieuc à Rennes">
+<meta property="og:description" content="Trois jours de mises en situation pour soignants et étudiants IFSI bretons. 385 € TTC, attestation CESU valable 4 ans. Métronome RCP en ligne.">
+<!-- TODO og:image : visuel 1200×630 (carte marine + faisceau) depuis la médiathèque -->
+<meta name="theme-color" content="#0B1F33">
+<!-- PLACEHOLDER favicon : phare orange sur fond marine, 32×32 et 180×180 (médiathèque) -->
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--night:#0B1F33;--night2:#0F2943;--orange:#FF6B1A;--foam:#E8F1F2;--slate:#6B7A86;--slate-l:#A9B8C3;--slate-d:#44515C;--hd:"Big Shoulders Display","Arial Narrow",sans-serif;--tx:"Karla",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--night);color:var(--foam);font:400 1.05rem/1.6 var(--tx)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--hd);text-transform:uppercase;line-height:.95;margin:0;letter-spacing:.01em}
+p{margin:0 0 1em}
+.sr{position:absolute;left:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.light :focus-visible{outline-color:var(--night)}
+.skip{position:absolute;left:12px;top:-70px;background:var(--orange);color:var(--night);padding:10px 14px;z-index:60;font-weight:700}
+.skip:focus{top:12px}
+.w{max-width:1220px;margin:0 auto;padding:0 18px}
+.img-ph{position:relative;min-height:220px;background:linear-gradient(var(--night2),var(--night2)) padding-box,repeating-linear-gradient(90deg,var(--orange) 0 14px,transparent 14px 28px) border-box;border:3px solid transparent;display:flex;align-items:flex-start}
+.img-ph::after{content:attr(data-img);font:700 .78rem/1.3 var(--tx);letter-spacing:.04em;text-transform:uppercase;color:var(--slate-l);padding:14px 16px;max-width:36ch}
+.light .img-ph{background:linear-gradient(#d5e3e6,#d5e3e6) padding-box,repeating-linear-gradient(90deg,var(--night) 0 14px,transparent 14px 28px) border-box}
+.light .img-ph::after{color:var(--slate-d)}
+.logo-ph{width:34px;height:34px;min-height:0;border-radius:50%;border:4px solid var(--orange);background:var(--night);flex:none}
+.logo-ph::after{display:none}
+/* header */
+.top{position:sticky;top:0;z-index:40;background:var(--night);border-bottom:1px solid rgba(232,241,242,.18)}
+.top .w{display:flex;align-items:center;gap:12px;height:58px}
+.brand{display:flex;align-items:center;gap:10px;font:800 1.45rem var(--hd);text-transform:uppercase;text-decoration:none;letter-spacing:.03em}
+.top nav{display:none;gap:22px;margin-left:auto;font:700 .95rem var(--hd);text-transform:uppercase;letter-spacing:.08em}
+.top nav a{text-decoration:none;opacity:.85}
+.top nav a:hover{opacity:1;color:var(--orange)}
+.top .tel{margin-left:auto;font:800 1.15rem var(--hd);letter-spacing:.06em;text-decoration:none;color:var(--orange)}
+@media (min-width:960px){.top nav{display:flex}.top .tel{margin-left:26px}}
+/* chamfer CTA */
+.cta{--c:14px;display:inline-flex;align-items:center;gap:12px;background:var(--orange);color:var(--night);font:800 1.2rem var(--hd);text-transform:uppercase;letter-spacing:.07em;text-decoration:none;padding:15px 24px;border:0;cursor:pointer;clip-path:polygon(var(--c) 0,100% 0,100% calc(100% - var(--c)),calc(100% - var(--c)) 100%,0 100%,0 var(--c));position:relative;overflow:hidden}
+.cta::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,transparent 30%,rgba(255,255,255,.55) 50%,transparent 70%);transform:translateX(-120%)}
+.cta:hover::after{transform:translateX(120%);transition:transform .6s ease}
+.cta.ghost{background:transparent;color:var(--foam);box-shadow:inset 0 0 0 3px var(--foam)}
+.cta.navy{background:var(--night);color:var(--foam)}
+.cta svg{width:20px;height:20px}
+.kick{font:700 .85rem var(--hd);text-transform:uppercase;letter-spacing:.2em;color:var(--orange);margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.kick::before{content:"";width:22px;height:3px;background:currentColor}
+.light .kick{color:#B4440B}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:18px 0 34px;background:radial-gradient(circle at 75% 20%,#123456 0,transparent 55%)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+.hero h1{font-size:clamp(2.3rem,9vw,5.2rem);font-weight:900}
+.hero h1 span{display:block;color:var(--orange)}
+.ports{font:700 1rem var(--hd);letter-spacing:.12em;text-transform:uppercase;color:var(--slate-l);margin:6px 0 0}
+.cartouche{border:3px double var(--foam);padding:10px 14px;margin-top:16px;max-width:440px;position:relative;background:var(--night)}
+.cartouche::before{content:"Cartouche · AFGSU 2";position:absolute;top:-11px;left:12px;background:var(--night);padding:0 8px;font:700 .72rem var(--hd);letter-spacing:.18em;text-transform:uppercase;color:var(--slate-l)}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin:0}
+.price s{font:700 1.4rem var(--hd);color:var(--slate-l);text-decoration-color:var(--orange);text-decoration-thickness:3px}
+.price b{font:900 2.9rem/1 var(--hd);color:var(--foam)}
+.price small{font-size:.82rem;color:var(--slate-l);flex-basis:100%}
+.meta{font:800 1.15rem var(--hd);letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin:4px 0 10px}
+.acts{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.ph{font:800 1.35rem var(--hd);letter-spacing:.05em;text-decoration:none}
+.ph small{display:block;font:400 .78rem var(--tx);letter-spacing:0;color:var(--slate-l)}
+.hero .lede{color:var(--slate-l);max-width:48ch;margin-top:18px}
+.chart-wrap{position:relative}
+.chart{width:100%;height:auto;display:block}
+.chart .grat{stroke:var(--foam);stroke-opacity:.09;stroke-width:1}
+.chart .glab{font:600 11px var(--tx);fill:var(--slate-l);letter-spacing:.06em}
+.chart .c1{fill:none;stroke:var(--foam);stroke-opacity:.18;stroke-linejoin:round}
+.chart .cw{fill:none;stroke:var(--night);stroke-linejoin:round}
+.chart .land{fill:#1D3854;stroke:none}
+.chart .bzh{fill:#27496A;stroke:var(--foam);stroke-width:1.5;stroke-dasharray:5 5;stroke-opacity:.6}
+.chart .coast{fill:none;stroke:var(--foam);stroke-width:1.6;stroke-linejoin:round}
+.chart .rock{fill:none;stroke:var(--slate-l);stroke-width:1.4}
+.chart .town circle.dot{fill:var(--orange);stroke:var(--night);stroke-width:2}
+.chart .town .halo{fill:var(--orange);opacity:0;transition:opacity 1.4s ease-out}
+.chart .town.lit .halo{opacity:.45;transition:opacity .15s}
+.chart .town text{font:800 19px var(--hd);fill:var(--foam);letter-spacing:.06em;text-transform:uppercase;paint-order:stroke;stroke:var(--night);stroke-width:4px}
+.chart .town .dep{font:600 12px var(--tx);fill:var(--slate-l)}
+.chart .minor{font:italic 400 12px var(--tx);fill:var(--slate-l)}
+.beam{mix-blend-mode:screen}
+.beam-ctl{position:absolute;right:6px;bottom:6px;font:700 .8rem var(--hd);letter-spacing:.1em;text-transform:uppercase;background:var(--night);color:var(--foam);border:2px solid var(--slate);padding:5px 10px;cursor:pointer}
+@media (min-width:980px){.hero{padding:44px 0 50px}.hero-grid{grid-template-columns:minmax(0,4fr) minmax(0,7fr);align-items:center;gap:36px}.chart-wrap{margin-right:-40px}.cartouche{padding:16px 20px}}
+/* flags divider */
+.flags{background:var(--foam);color:var(--night);padding:10px 0 4px;overflow:hidden}
+.flags svg{display:block;width:100%;max-width:820px;height:auto;margin:0 auto}
+.flags .fl{transform-box:fill-box;transform-origin:50% 0}
+.flags .lbl{font:800 12px var(--hd);fill:var(--slate-d);letter-spacing:.14em}
+@media (prefers-reduced-motion:no-preference){.flags .fl{animation:sway 2.4s ease-in-out 2}.flags .fl:nth-child(2n){animation-delay:-1.4s}.flags .fl:nth-child(3n){animation-delay:-2.6s}}
+@keyframes sway{0%,100%{transform:rotate(-2.5deg)}50%{transform:rotate(2.5deg)}}
+/* sections */
+.sec{padding:70px 0}
+.light{background:var(--foam);color:var(--night)}
+.sec-h h2{font-size:clamp(2.2rem,6vw,4.2rem);font-weight:900;margin-bottom:14px}
+.sec-h p{max-width:62ch;color:var(--slate-l)}
+.light .sec-h p,.light .mut{color:var(--slate-d)}
+.mut{color:var(--slate-l)}
+/* metronome */
+.metro-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:30px;align-items:center}
+@media (min-width:900px){.metro-grid{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}}
+.metro-box{background:var(--night2);border:3px solid var(--foam);padding:16px;position:relative}
+.metro-box .tag{position:absolute;top:-14px;left:14px;background:var(--orange);color:var(--night);font:800 .85rem var(--hd);letter-spacing:.12em;text-transform:uppercase;padding:3px 10px}
+.chest{width:100%;max-width:420px;height:auto;display:block;margin:6px auto 0}
+.chest .body{fill:#1D3854;stroke:var(--foam);stroke-width:3;stroke-linejoin:round}
+.chest .st{stroke:var(--slate-l);stroke-width:2;stroke-dasharray:4 5}
+.chest .zone{fill:var(--orange);opacity:.35}
+.chest .arm{fill:#2B5378;stroke:var(--foam);stroke-width:3}
+.chest .hand{fill:var(--foam);stroke:var(--night);stroke-width:2.5}
+#press,#thorax{transition:transform .14s cubic-bezier(.3,0,.4,1)}
+#thorax{transform-box:fill-box;transform-origin:50% 100%}
+.down #press{transform:translateY(12px)}
+.down #thorax{transform:scaleY(.95)}
+.readout{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0;text-align:center}
+.readout div{border:2px solid var(--slate);padding:8px 4px}
+.readout b{display:block;font:900 2.4rem/1 var(--hd);color:var(--foam)}
+.readout b.big{color:var(--orange)}
+.readout span{font:700 .72rem var(--hd);letter-spacing:.14em;text-transform:uppercase;color:var(--slate-l)}
+.phase{text-align:center;font:800 1.25rem var(--hd);letter-spacing:.1em;text-transform:uppercase;min-height:1.6em;color:var(--orange)}
+.ctrl{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;margin-top:10px}
+.ctrl label{font:700 .95rem var(--hd);letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.ctrl input[type=range]{accent-color:var(--orange);width:140px}
+.ctrl output{font:900 1.3rem var(--hd);min-width:3ch;color:var(--orange)}
+.small-btn{font:700 .85rem var(--hd);letter-spacing:.1em;text-transform:uppercase;background:none;color:var(--foam);border:2px solid var(--slate-l);padding:8px 12px;cursor:pointer}
+.small-btn[aria-pressed=true]{background:var(--foam);color:var(--night)}
+.disclaimer{border-left:4px solid var(--orange);padding:6px 0 6px 14px;font-weight:700;margin-top:16px}
+/* appareillages */
+.notices{display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.notices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.notice{border:2px solid var(--night);padding:16px;background:#fff;position:relative}
+.notice h3{font-size:2rem;font-weight:900}
+.notice .dp{font:700 .8rem var(--hd);letter-spacing:.16em;text-transform:uppercase;color:var(--slate-d)}
+.notice p{margin:10px 0 14px;font-size:.98rem}
+.notice a{font:800 1rem var(--hd);letter-spacing:.08em;text-transform:uppercase;color:#B4440B}
+.notice::before{content:"";position:absolute;right:12px;top:12px;width:16px;height:16px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px rgba(255,107,26,.25)}
+.palai{margin-top:22px;border-top:2px dashed var(--slate);padding-top:14px;font-size:.95rem;color:var(--slate-d)}
+/* log */
+.log-wrap{overflow-x:auto;position:relative;border:3px solid var(--foam)}
+.log{width:100%;border-collapse:collapse;min-width:620px}
+.log th,.log td{border:1px solid rgba(232,241,242,.25);padding:12px 14px;text-align:left;vertical-align:top}
+.log thead th{font:800 1rem var(--hd);letter-spacing:.12em;text-transform:uppercase;background:var(--night2)}
+.log tbody th{font:900 1.6rem var(--hd);width:110px}
+.log td b{display:block;font:800 1.1rem var(--hd);letter-spacing:.06em;text-transform:uppercase}
+.m1{border-left:6px solid var(--orange)!important}.m2{border-left:6px solid var(--foam)!important}.m3{border-left:6px solid var(--slate)!important}
+.mods{display:grid;gap:18px;margin-top:30px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.mods{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.mod{border-top:6px solid var(--k);background:var(--night2);padding:18px}
+.mod h3{font-size:1.8rem;font-weight:800}
+.mod .h{font:800 1.05rem var(--hd);letter-spacing:.1em;color:var(--orange);margin:4px 0 10px}
+.mod ul{margin:0;padding-left:18px}
+.mod li{margin-bottom:4px}
+.mod svg{width:76px;height:76px;float:right;margin:0 0 6px 10px}
+/* équipage */
+.crew{display:grid;gap:30px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.crew{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}}
+.roles{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:0 0 16px}
+.roles li{font:700 1rem var(--hd);letter-spacing:.07em;text-transform:uppercase;border:2px solid var(--night);padding:5px 10px}
+.roles.b li{border-style:dashed}
+.box3{display:grid;gap:14px}
+.box3 div{background:#fff;border-left:6px solid var(--orange);padding:14px 16px}
+.box3 h3{font-size:1.4rem;margin-bottom:6px}
+.box3 ul{margin:0;padding-left:18px}
+/* pennants */
+.pen{display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.pen{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pcard{border:3px solid var(--foam);padding:20px;position:relative}
+.pcard.main{border-color:var(--orange);background:var(--night2)}
+.pcard svg{width:110px;height:44px;display:block;margin-bottom:10px}
+.pcard h3{font-size:2.4rem;font-weight:900}
+.pcard .pr{font:900 2rem var(--hd);color:var(--orange);margin:6px 0 12px}
+.pcard dl{display:grid;grid-template-columns:110px minmax(0,1fr);gap:8px 12px;margin:0}
+.pcard dt{font:800 .9rem var(--hd);letter-spacing:.12em;text-transform:uppercase;color:var(--slate-l)}
+.pcard dd{margin:0}
+/* carénage */
+.car{display:grid;gap:30px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.car{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.gauge svg{width:100%;height:auto}
+.gauge text{font:700 14px var(--hd);letter-spacing:.08em;fill:var(--night);text-transform:uppercase}
+.news{background:var(--night);color:var(--foam);padding:18px;margin-top:20px}
+.news h3{font-size:1.5rem;color:var(--orange);margin-bottom:8px}
+/* financement */
+.fin{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.fin li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start;border-bottom:1px solid rgba(232,241,242,.2);padding:10px 0}
+.fin svg{width:40px;height:30px}
+.fin b{font:800 1.2rem var(--hd);letter-spacing:.06em;text-transform:uppercase;display:block}
+.cpf{margin-top:16px;color:var(--orange);font-weight:700}
+.split{display:grid;gap:34px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.split{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+/* intra */
+.intra-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;list-style:none;padding:0;margin:18px 0}
+.intra-list li{font:800 1.15rem var(--hd);letter-spacing:.08em;text-transform:uppercase;border:2px solid var(--night);padding:10px 12px;background:#fff}
+/* faq */
+.faq details{border-top:2px solid rgba(232,241,242,.3)}
+.faq details:last-child{border-bottom:2px solid rgba(232,241,242,.3)}
+.faq summary{list-style:none;cursor:pointer;padding:16px 44px 16px 0;font:800 1.3rem/1.15 var(--hd);letter-spacing:.04em;text-transform:uppercase;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:10px;font:900 2rem var(--hd);color:var(--orange);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details div{padding:0 0 18px;color:var(--slate-l);max-width:74ch}
+.faq details div p{margin:0}
+/* voices */
+.voices{display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:800px){.voices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.voices figure{margin:0;background:#fff;border:2px solid var(--night);padding:18px}
+.voices figcaption{font:700 .8rem var(--hd);letter-spacing:.14em;text-transform:uppercase;color:var(--slate-d);margin-top:8px}
+/* form */
+.radio{display:grid;gap:30px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.radio{grid-template-columns:minmax(0,4fr) minmax(0,7fr)}}
+.lead{border:3px solid var(--foam);padding:20px;display:grid;gap:16px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:640px){.lead{grid-template-columns:repeat(2,minmax(0,1fr))}.lead .full{grid-column:1/-1}}
+.lead label{display:block;font:800 .95rem var(--hd);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px;color:var(--slate-l)}
+.lead input,.lead select,.lead textarea{width:100%;font:400 1rem var(--tx);color:var(--foam);background:var(--night2);border:2px solid var(--slate);padding:12px;border-radius:0}
+.lead select option{color:var(--night);background:#fff}
+.lead textarea{min-height:96px}
+.lead input:focus,.lead select:focus,.lead textarea:focus{border-color:var(--foam)}
+.lead input:user-invalid,.lead select:user-invalid{border-color:var(--orange);background:#2a2024}
+.lead .err{display:none;color:var(--orange);font-size:.85rem;margin:5px 0 0;font-weight:700}
+.lead input:user-invalid~.err,.lead select:user-invalid~.err{display:block}
+.lead .chk{display:flex;gap:12px;align-items:flex-start}
+.lead .chk input{width:22px;height:22px;flex:none;margin-top:3px;accent-color:var(--orange)}
+.lead .chk label{font:400 .95rem/1.5 var(--tx);letter-spacing:0;text-transform:none;color:var(--foam)}
+.ok{border:3px solid var(--orange);padding:24px}
+.ok h3{font-size:2.4rem;color:var(--orange);margin-bottom:8px}
+/* final */
+.final{padding:70px 0;position:relative;overflow:hidden}
+.final h2{font-size:clamp(2.4rem,7vw,5rem);font-weight:900;max-width:14ch}
+.final h2 span{color:var(--orange)}
+.final .acts{margin-top:22px}
+footer{border-top:1px solid rgba(232,241,242,.2);padding:30px 0 104px;font-size:.9rem;color:var(--slate-l)}
+footer .w{display:flex;flex-wrap:wrap;gap:12px 28px}
+footer nav{display:flex;gap:18px}
+@media (min-width:760px){footer{padding-bottom:30px}}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);border-top:3px solid var(--orange);background:var(--night)}
+.sticky a{display:flex;align-items:center;justify-content:center;min-height:56px;font:800 1.2rem var(--hd);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
+.sticky .b{background:var(--orange);color:var(--night)}
+@media (min-width:760px){.sticky{display:none}}
+/* sweep reveal */
+.js [data-sweep]{-webkit-mask-image:linear-gradient(90deg,#000 45%,transparent 55%);mask-image:linear-gradient(90deg,#000 45%,transparent 55%);-webkit-mask-size:260% 100%;mask-size:260% 100%;-webkit-mask-position:100% 0;mask-position:100% 0}
+.js [data-sweep].in{-webkit-mask-position:0 0;mask-position:0 0;transition:mask-position 1.2s cubic-bezier(.4,.1,.2,1),-webkit-mask-position 1.2s cubic-bezier(.4,.1,.2,1)}
+.js [data-sweep].done{-webkit-mask-image:none;mask-image:none}
+@media (prefers-reduced-motion:reduce){.js [data-sweep],.js [data-sweep].in{-webkit-mask-image:none;mask-image:none;transition:none}.cta:hover::after{transition:none}#press,#thorax{transition:none}.down #press,.down #thorax{transform:none}.chart .town .halo{transition:none}.faq summary::after{transition:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"EducationalOrganization","@id":"#org","name":"Phare Secours","description":"Formation aux gestes et soins d’urgence en Bretagne : AFGSU 2, AFGSU 1 et recyclage pour soignants, étudiants et équipes non soignantes.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Bretagne"},"location":[
+{"@type":"Place","name":"Phare Secours · Rennes","address":{"@type":"PostalAddress","addressLocality":"Rennes","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.11,"longitude":-1.68}},
+{"@type":"Place","name":"Phare Secours · Cesson-Sévigné","address":{"@type":"PostalAddress","addressLocality":"Cesson-Sévigné","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.12,"longitude":-1.60}},
+{"@type":"Place","name":"Phare Secours · Saint-Brieuc","address":{"@type":"PostalAddress","addressLocality":"Saint-Brieuc","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.51,"longitude":-2.76}}]},
+{"@type":"Course","name":"AFGSU 2 Bretagne · formation aux gestes et soins d’urgence de niveau 2","description":"21 heures de formation en présentiel sur 3 jours pour professionnels et étudiants en santé : urgences vitales, urgences potentielles, urgences collectives et situations sanitaires exceptionnelles. Attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
+"offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Rennes, Cesson-Sévigné ou Saint-Brieuc (dates sur demande)"}}}
+]}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Étudiant·e en IFSI à Rennes ou à Saint-Brieuc : quand placer l’AFGSU 2 dans mon cursus ?","acceptedAnswer":{"@type":"Answer","text":"Si vous êtes entré·e en formation à la rentrée 2026, l’arrêté du 20 février 2026 fait de l’AFGSU 2 valide une condition du diplôme d’État infirmier. Comme elle reste valable quatre ans, vous pouvez la suivre dès maintenant : elle couvrira la date de votre diplôme."}},{"@type":"Question","name":"Les sessions inter acceptent-elles les étudiants ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les étudiants des professions de santé concernées font partie du public. Un certificat de scolarité remplace alors le numéro RPPS ou ADELI dans votre dossier."}},{"@type":"Question","name":"Rennes ou Cesson-Sévigné, qu’est-ce qui change ?","acceptedAnswer":{"@type":"Answer","text":"Rien sur le fond : même programme, mêmes 21 heures, même attestation. Les deux villes sont voisines, en Ille-et-Vilaine ; choisissez celle qui vous arrange pour le trajet."}},{"@type":"Question","name":"Je travaille dans le Finistère : Saint-Brieuc est-il mon centre le plus proche ?","acceptedAnswer":{"@type":"Answer","text":"Parmi nos trois centres bretons, c’est le plus à l’ouest. Si vous êtes plusieurs dans le même établissement, la formule intra vous évite le déplacement : nous venons sur place."}},{"@type":"Question","name":"Notre cabinet infirmier du Morbihan peut-il faire venir la formation ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les cabinets font partie des lieux d’intervention en intra. Il suffit de réunir un groupe de 10 à 12 professionnels ; nous établissons ensuite un devis."}},{"@type":"Question","name":"S’entraîner avec le métronome de cette page, est-ce suffisant ?","acceptedAnswer":{"@type":"Answer","text":"Non. Il aide à mémoriser une cadence, rien de plus. La position des mains, la profondeur, le relâchement et la coordination en équipe s’acquièrent sur mannequin, avec un formateur, pendant la session."}},{"@type":"Question","name":"Quelle cadence de compressions apprend-on chez l’adulte ?","acceptedAnswer":{"@type":"Answer","text":"Une fréquence comprise entre 100 et 120 par minute, avec une alternance de 30 compressions et 2 insufflations. La conduite à tenir chez l’enfant et le nourrisson est également travaillée."}},{"@type":"Question","name":"Comment les heures se répartissent-elles entre les modules ?","acceptedAnswer":{"@type":"Answer","text":"10 h 30 d’urgences vitales, 7 h d’urgences potentielles, 3 h 30 d’urgences collectives et de situations sanitaires exceptionnelles. Indicativement : une première journée entière sur l’urgence vitale, puis des demi-journées."}},{"@type":"Question","name":"Mon attestation a expiré pendant mon congé : le recyclage suffit-il ?","acceptedAnswer":{"@type":"Answer","text":"Malheureusement non. Les 7 heures de recyclage ne s’ouvrent qu’à une attestation encore en cours de validité. Après la date, il faut suivre de nouveau la formation complète de 21 heures, quelle que soit la raison du dépassement."}},{"@type":"Question","name":"Agent d’un hôpital public breton : vers qui me tourner pour le financement ?","acceptedAnswer":{"@type":"Answer","text":"Vers le service formation de votre établissement : la prise en charge passe par le plan de développement des compétences, avec l’ANFH pour la fonction publique hospitalière."}},{"@type":"Question","name":"Étudiant, je paie seul : quelles facilités ?","acceptedAnswer":{"@type":"Answer","text":"Le règlement en 4 fois sans frais. Inutile en revanche de compter sur le CPF, qui en principe ne couvre pas l’AFGSU."}},{"@type":"Question","name":"L’attestation vaut-elle PSC ? Et SST ?","acceptedAnswer":{"@type":"Answer","text":"PSC, oui : l’équivalence est prévue par l’arrêté du 23 août 2019. SST, non : ce sont deux dispositifs distincts, sans équivalence entre eux."}},{"@type":"Question","name":"Le personnel d’accueil d’une clinique de Saint-Brieuc peut-il se former aussi ?","acceptedAnswer":{"@type":"Answer","text":"Oui, avec l’AFGSU 1 : 14 heures sur deux jours, 290 € TTC, valable quatre ans. Elle est conçue pour les fonctions non soignantes des établissements."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#cap">Sauter la navigation</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="fA" viewBox="0 0 60 40"><path d="M0 0H60L44 20 60 40H0Z" fill="var(--night)"/><rect width="28" height="40" fill="#fff"/><path d="M0 0H60L44 20 60 40H0Z" fill="none" stroke="var(--night)" stroke-width="2"/></symbol>
+  <symbol id="fC" viewBox="0 0 60 40"><rect width="60" height="40" fill="var(--night)"/><rect y="8" width="60" height="24" fill="#fff"/><rect y="16" width="60" height="8" fill="var(--orange)"/></symbol>
+  <symbol id="fD" viewBox="0 0 60 40"><rect width="60" height="40" fill="var(--slate)"/><rect y="10" width="60" height="20" fill="var(--night)"/></symbol>
+  <symbol id="fE" viewBox="0 0 60 40"><rect width="60" height="20" fill="var(--night)"/><rect y="20" width="60" height="20" fill="var(--orange)"/></symbol>
+  <symbol id="fF" viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff" stroke="var(--night)" stroke-width="2"/><path d="M30 4 56 20 30 36 4 20Z" fill="var(--orange)"/></symbol>
+  <symbol id="fG" viewBox="0 0 60 40"><rect width="60" height="40" fill="var(--slate)"/><path d="M10 0h10v40H10zM30 0h10v40H30zM50 0h10v40H50z" fill="var(--night)"/></symbol>
+  <symbol id="fO" viewBox="0 0 60 40"><rect width="60" height="40" fill="var(--slate)"/><path d="M0 40 60 0V40Z" fill="var(--orange)"/></symbol>
+  <symbol id="fP" viewBox="0 0 60 40"><rect width="60" height="40" fill="var(--night)"/><rect x="18" y="12" width="24" height="16" fill="#fff"/></symbol>
+  <symbol id="fR" viewBox="0 0 60 40"><rect width="60" height="40" fill="var(--orange)"/><path d="M26 0h8v40h-8zM0 16h60v8H0z" fill="var(--slate)"/></symbol>
+  <symbol id="fS" viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff" stroke="var(--night)" stroke-width="2"/><rect x="18" y="12" width="24" height="16" fill="var(--night)"/></symbol>
+  <symbol id="fU" viewBox="0 0 60 40"><rect width="60" height="40" fill="#fff" stroke="var(--night)" stroke-width="2"/><path d="M0 0h30v20H0zM30 20h30v20H30z" fill="var(--orange)"/></symbol>
+  <symbol id="star" viewBox="0 0 100 100"><g fill="var(--orange)" stroke="var(--night)" stroke-width="3" stroke-linejoin="round"><path d="M42 6h16v30l26-15 8 14-26 15 26 15-8 14-26-15v30H42V64L16 79 8 65l26-15L8 35l8-14 26 15Z"/></g><path d="M50 22v58M44 32c8 0 12 4 6 8s-6 8 2 10 6 8-2 10-4 8 2 10" fill="none" stroke="var(--foam)" stroke-width="3.5" stroke-linecap="round"/></symbol>
+  <symbol id="o2" viewBox="0 0 100 100"><rect x="30" y="26" width="40" height="66" rx="16" fill="var(--foam)" stroke="var(--night)" stroke-width="3"/><rect x="30" y="40" width="40" height="10" fill="var(--orange)"/><path d="M42 26v-10h16v10M38 10h24" fill="none" stroke="var(--night)" stroke-width="4" stroke-linecap="round"/><circle cx="80" cy="16" r="9" fill="var(--foam)" stroke="var(--night)" stroke-width="3"/></symbol>
+  <symbol id="stretch" viewBox="0 0 100 100"><path d="M6 52h88" stroke="var(--foam)" stroke-width="6" stroke-linecap="round"/><path d="M20 52 12 76M80 52l8 24" stroke="var(--foam)" stroke-width="4"/><circle cx="12" cy="80" r="5" fill="var(--orange)"/><circle cx="88" cy="80" r="5" fill="var(--orange)"/><circle cx="22" cy="36" r="8" fill="var(--orange)" stroke="var(--night)" stroke-width="2"/><rect x="32" y="34" width="54" height="14" rx="6" fill="var(--foam)" stroke="var(--night)" stroke-width="2"/></symbol>
+ </defs>
+</svg>
+
+<header class="top">
+ <div class="w">
+  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Phare Secours (emplacement)" data-img="logo : phare stylisé Phare Secours"></span>Phare Secours</a>
+  <nav aria-label="Sommaire"><a href="#metronome">Métronome</a><a href="#appareillages">Sessions</a><a href="#journal">Programme</a><a href="#carenage">Recyclage</a><a href="#radio">Contact</a></nav>
+  <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
+ </div>
+</header>
+
+<main id="cap">
+<section class="hero" aria-labelledby="h1">
+ <div class="w hero-grid">
+  <div>
+   <h1 id="h1" data-atf="h1">Gardez le rythme, tenez le cap : <span>AFGSU 2 en Bretagne</span></h1>
+   <p class="ports">Rennes · Cesson-Sévigné · Saint-Brieuc</p>
+   <div class="cartouche">
+    <p class="price" data-atf="price"><s><span class="sr">Ancien tarif : </span>450 €</s> <b>385 € TTC</b><small>par stagiaire, sessions inter · règlement possible en 4x sans frais</small></p>
+    <p class="meta" data-atf="meta">21 h · 3 jours · valable 4 ans</p>
+    <div class="acts">
+     <a class="cta" data-atf="cta" href="#radio" data-formation="AFGSU 2">Réserver ma place à bord</a>
+     <a class="ph" data-atf="phone" href="tel:+33780912335">07 80 91 23 35<small>Wafa, ligne dédiée AFGSU</small></a>
+    </div>
+   </div>
+   <p class="lede">Soignants, étudiants en IFSI, équipes de la côte comme de l’intérieur des terres : trois jours de pratique, en groupe de 10 à 12, pour des gestes fiables quand la situation se gâte. Aucune partie à distance — tout se valide en mise en situation.</p>
+  </div>
+  <div class="chart-wrap">
+   <svg class="chart" id="chart" viewBox="0 0 728 442" role="img" aria-labelledby="ct cd">
+    <title id="ct">Carte marine de la Bretagne et de nos trois centres</title>
+    <desc id="cd">Un phare placé au cap Fréhel balaie la carte et illumine tour à tour Saint-Brieuc, Rennes et Cesson-Sévigné.</desc>
+    <defs>
+     <path id="frp" d="M1333.7 -517.5L1397 -415.9L1458.5 -438.8L1523.5 -367.7L1620.1 -309.3L1616.6 -235.6L1730.8 -278.8L1743.1 -278.8L1736 -189.9L1836.2 -144.2L1924 -113.8L2004.8 -106.1L2069.8 -30L2134.8 -24.9L2222.6 0.5L2328.1 20.8L2257.8 114.7L2219.1 241.7L2220.9 371.2L2143.6 406.7L2108.5 414.3L2020.6 533.7L1959.1 660.6L1967.9 724.1L2029.4 660.6L2082.1 668.2L2124.3 792.7L2092.6 818L2134.8 927.2L2052.2 1000.8L2117.2 1104.9L2108.5 1168.4L2240.2 1257.3L2210.4 1338.5L2164.7 1358.8L2138.3 1394.4L2104.9 1427.4L2055.8 1468L2004.8 1511.2L1929.3 1511.2L1836.2 1483.3L1765.9 1440.1L1695.6 1429.9L1630.6 1419.8L1572.6 1404.5L1537.5 1435L1493.6 1465.5L1432.1 1511.2L1421.6 1587.4L1419.8 1638.1L1444.4 1678.8L1361.8 1688.9L1230.1 1676.2L1189.7 1663.5L1142.2 1638.1L1010.5 1574.7L869.9 1612.7L764.5 1567L641.6 1523.9L574.8 1442.6L613.5 1414.7L632.8 1333.5L667.9 1155.7L667.9 1117.6L682 1028.8L699.5 884.1L676.7 876.4L703.1 871.4L676.7 736.8L624 673.3L571.3 647.9L546.7 597.2L509.8 533.7L527.4 495.6L501 452.4L439.5 444.8L395.6 394L339.4 399.1L295.5 335.6L202.4 300.1L119.8 317.9L56.6 256.9L88.2 203.6L47.8 183.3L49.5 127.4L88.2 109.7L188.3 81.7L281.4 56.3L360.5 69L400.9 127.4L479.9 94.4L536.2 102.1L620.5 109.7L606.4 53.8L562.5 -88.4L544.9 -169.6L602.9 -151.8L666.2 -156.9L685.5 -75.7L782.1 -75.7L843.6 -60.4L940.2 -96L905.1 -111.2L922.6 -164.5L952.5 -179.8L1077.2 -222.9L1129.9 -255.9L1168.6 -291.5L1163.3 -342.3L1168.6 -426.1L1165.1 -461.6L1212.5 -484.5L1303.9 -504.8Z"/>
+     <radialGradient id="bg" cx="0" cy="0.5" r="1"><stop offset="0" stop-color="#FFE3C9" stop-opacity=".75"/><stop offset=".6" stop-color="#FF6B1A" stop-opacity=".18"/><stop offset="1" stop-color="#FF6B1A" stop-opacity="0"/></radialGradient>
+    </defs>
+    <g aria-hidden="true">
+     <path class="grat" d="M0 394H728M0 267H728M0 140H728M0 13H728M9 0V442M185 0V442M360 0V442M536 0V442M712 0V442"/>
+     <text class="glab" x="4" y="262">48°N</text><text class="glab" x="4" y="135">48°30′</text><text class="glab" x="4" y="389">47°30′</text>
+     <text class="glab" x="189" y="436">4°O</text><text class="glab" x="364" y="436">3°O</text><text class="glab" x="540" y="436">2°O</text>
+     <use href="#frp" class="c1" stroke-width="64"/><use href="#frp" class="cw" stroke-width="61"/>
+     <use href="#frp" class="c1" stroke-width="40"/><use href="#frp" class="cw" stroke-width="37"/>
+     <use href="#frp" class="c1" stroke-width="18"/><use href="#frp" class="cw" stroke-width="15"/>
+     <use href="#frp" class="land"/>
+     <path class="bzh" d="M699.5 127.4L699.5 216.3L667.9 317.9L597.6 338.2L501 381.3L457.1 406.7L395.6 394L339.4 399.1L295.5 335.6L202.4 300.1L119.8 317.9L56.6 256.9L88.2 203.6L47.8 183.3L49.5 127.4L88.2 109.7L188.3 81.7L281.4 56.3L360.5 69L400.9 127.4L479.9 94.4L536.2 102.1L620.5 109.7Z"/>
+     <use href="#frp" class="coast"/>
+     <path class="rock" d="M60 120l6 6m0-6-6 6M118 316l6 6m0-6-6 6M300 64l6 6m0-6-6 6M250 380l6 6m0-6-6 6M600 30l6 6m0-6-6 6M36 230l6 6m0-6-6 6"/>
+     <text class="minor" x="98.7" y="190.9">Brest</text>
+     <text class="minor" x="158.5" y="287.4">Quimper</text>
+     <text class="minor" x="281.4" y="348.3">Lorient</text>
+     <text class="minor" x="386.8" y="368.6">Vannes</text>
+     <text class="minor" x="438" y="40">Manche</text>
+     <text class="minor" x="60" y="345">Océan Atlantique</text>
+     <g transform="translate(70 300)"><circle r="34" fill="none" stroke="var(--foam)" stroke-opacity=".35"/><circle r="24" fill="none" stroke="var(--foam)" stroke-opacity=".2" stroke-dasharray="2 4"/><path d="M0-40 6-6 40 0 6 6 0 40-6 6-40 0-6-6Z" fill="var(--foam)" fill-opacity=".25" stroke="var(--foam)" stroke-opacity=".6"/><path d="M0-40 6-6 0 0Z" fill="var(--orange)"/><text y="-46" text-anchor="middle" class="glab">N</text></g>
+    </g>
+    <g class="beam" id="beam" aria-hidden="true"><path d="M480 94 L1230 -24 L1230 212 Z" fill="url(#bg)"/></g>
+    <g id="towns">
+     <g class="town" data-t="Saint-Brieuc"><circle class="halo" cx="402.6" cy="137.6" r="26"/><circle class="dot" cx="402.6" cy="137.6" r="8"/><text x="330" y="168">Saint-Brieuc <tspan class="dep">22</tspan></text></g>
+     <g class="town" data-t="Rennes"><circle class="halo" cx="592.4" cy="239.2" r="26"/><circle class="dot" cx="592.4" cy="239.2" r="8"/><text x="520" y="268">Rennes <tspan class="dep">35</tspan></text></g>
+     <g class="town" data-t="Cesson-Sévigné"><circle class="halo" cx="606.4" cy="236.6" r="26"/><circle class="dot" cx="606.4" cy="236.6" r="8"/><text x="722" y="212" text-anchor="end">Cesson-Sévigné <tspan class="dep">35</tspan></text></g>
+    </g>
+    <g aria-hidden="true" transform="translate(480 94)"><path d="M-6 0 -4-26H4L6 0Z" fill="var(--foam)" stroke="var(--night)" stroke-width="1.5"/><path d="M-5-8H5M-4.5-17h9" stroke="var(--orange)" stroke-width="4"/><rect x="-5" y="-33" width="10" height="7" fill="var(--orange)"/><text x="10" y="-30" class="glab">Cap Fréhel</text></g>
+   </svg>
+   <button class="beam-ctl" id="beamBtn" type="button" aria-pressed="false">Éteindre le phare</button>
+  </div>
+ </div>
+</section>
+
+<div class="flags" aria-hidden="true"><svg viewBox="0 0 820 74"><path d="M10 8Q410 26 810 8" fill="none" stroke="var(--night)" stroke-width="2"/><g transform="translate(250 6)"><use class="fl" href="#fA" x="0" y="10" width="54" height="36"/><use class="fl" href="#fF" x="66" y="12" width="54" height="36"/><use class="fl" href="#fG" x="132" y="13" width="54" height="36"/><use class="fl" href="#fS" x="198" y="12" width="54" height="36"/><use class="fl" href="#fU" x="264" y="10" width="54" height="36"/><text class="lbl" x="27" y="62" text-anchor="middle">A</text><text class="lbl" x="93" y="64" text-anchor="middle">F</text><text class="lbl" x="159" y="65" text-anchor="middle">G</text><text class="lbl" x="225" y="64" text-anchor="middle">S</text><text class="lbl" x="291" y="62" text-anchor="middle">U</text></g></svg></div>
+
+<section class="sec" id="metronome" aria-labelledby="h-met">
+ <div class="w metro-grid">
+  <div class="sec-h" data-sweep>
+   <p class="kick">Outil d’entraînement</p>
+   <h2 id="h-met">Métronome RCP : cadence 110</h2>
+   <p>Lancez la cadence et laissez vos mains apprendre le tempo : de 100 à 120 compressions par minute, par cycles de 30 compressions pour 2 insufflations chez l’adulte. Le réglage par défaut est fixé à 110.</p>
+   <p class="disclaimer">Outil pédagogique, ne remplace pas la formation.</p>
+   <p class="mut">La précision du geste — position des mains, profondeur, relâchement complet — se travaille sur mannequin, avec un formateur, pendant les trois jours.</p>
+  </div>
+  <div class="metro-box" id="metroBox">
+   <span class="tag">30 : 2</span>
+   <svg class="chest" viewBox="0 0 420 260" role="img" aria-label="Victime allongée vue de profil, bras du sauveteur tendus et mains posées au centre de la poitrine">
+    <path d="M10 244H410" stroke="var(--slate-l)" stroke-width="3" stroke-linecap="round"/>
+    <g id="thorax"><circle class="body" cx="58" cy="206" r="26"/><path class="body" d="M84 200C104 190 128 182 160 178 200 172 250 172 292 180 326 186 360 198 410 204V244H44C62 240 78 232 84 222Z"/><ellipse class="zone" cx="226" cy="180" rx="28" ry="7"/></g>
+    <g id="press"><path class="arm" d="M212 0H240L238 158H214Z"/><rect class="hand" x="196" y="154" width="60" height="22" rx="10"/><rect class="hand" x="202" y="146" width="48" height="16" rx="8"/><path d="M212 152v8M222 150v10M232 150v10M242 152v8" stroke="var(--night)" stroke-width="2"/></g>
+   </svg>
+   <div class="phase" id="mPhase" aria-live="polite">Prêt</div>
+   <div class="readout"><div><b class="big" id="mCount">0</b><span>Compressions / 30</span></div><div><b id="mBreath">0</b><span>Insufflations / 2</span></div><div><b id="mCycle">0</b><span>Cycles</span></div></div>
+   <div class="ctrl">
+    <button class="cta" type="button" id="mStart">Démarrer</button>
+    <label for="bpm">Cadence <input type="range" id="bpm" min="100" max="120" step="1" value="110"><output id="bpmOut" for="bpm">110</output>/min</label>
+    <button class="small-btn" type="button" id="mSound" aria-pressed="false">Son : coupé</button>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sec light" id="appareillages" aria-labelledby="h-app">
+ <div class="w">
+  <div class="sec-h" data-sweep><p class="kick">Sessions</p><h2 id="h-app">Prochains appareillages</h2><p>Trois ports d’attache en Bretagne. Les dates s’y ouvrent à la demande : un appel, et la session se construit avec vous.</p></div>
+  <div class="notices" id="notices"><noscript><p>Dates sur demande à Rennes, Cesson-Sévigné et Saint-Brieuc : 07 80 91 23 35.</p></noscript></div>
+  <p class="palai" id="palai"></p>
+ </div>
+</section>
+
+<section class="sec" id="journal" aria-labelledby="h-jour">
+ <div class="w">
+  <div class="sec-h" data-sweep><p class="kick">Programme</p><h2 id="h-jour">Journal de bord des trois jours</h2><p>Six quarts de 3 h 30, uniquement en présentiel. Pas de module en ligne : chaque compétence se valide en pratique, en situation simulée.</p></div>
+  <div class="log-wrap" data-sweep>
+   <table class="log">
+    <caption class="sr">Répartition indicative des modules par demi-journée</caption>
+    <thead><tr><th scope="col">Jour</th><th scope="col">Quart du matin · 3 h 30</th><th scope="col">Quart de l’après-midi · 3 h 30</th></tr></thead>
+    <tbody>
+     <tr><th scope="row">J1</th><td class="m1"><b>Urgences vitales</b>Protection, alerte, obstruction, hémorragies</td><td class="m1"><b>Urgences vitales</b>Inconscience, arrêt cardiaque, RCP et DAE</td></tr>
+     <tr><th scope="row">J2</th><td class="m1"><b>Urgences vitales</b>Matériel d’urgence, pédiatrie, nourrisson</td><td class="m2"><b>Urgences potentielles</b>Malaises, traumatismes, brûlures</td></tr>
+     <tr><th scope="row">J3</th><td class="m2"><b>Urgences potentielles</b>Relevage, accouchement inopiné, bilan</td><td class="m3"><b>Urgences collectives</b>ORSAN, plans, NRBC-E</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <p class="mut" style="margin-top:10px;font-size:.9rem">Découpage indicatif : 7 h le premier jour, puis deux demi-journées par module.</p>
+  <div class="mods">
+   <article class="mod" style="--k:var(--orange)" data-sweep><svg aria-hidden="true"><use href="#star"/></svg><h3>Urgences vitales</h3><p class="h">10 h 30</p><ul><li>Protection, alerte au 15 / 112</li><li>Obstruction des voies aériennes</li><li>Hémorragies</li><li>Victime inconsciente qui respire</li><li>Arrêt cardiaque, RCP + DAE</li><li>Chariot d’urgence, oxygénothérapie</li></ul><p class="mut" style="margin:10px 0 0;font-size:.92rem">Adulte, enfant et nourrisson.</p></article>
+   <article class="mod" style="--k:var(--foam)" data-sweep><svg aria-hidden="true"><use href="#stretch"/></svg><h3>Urgences potentielles</h3><p class="h">7 h</p><ul><li>Malaises</li><li>Traumatismes : os, peau, crâne, rachis</li><li>Brûlures</li><li>Immobilisation, relevage, brancardage</li><li>Accouchement inopiné</li><li>Hygiène et risque infectieux</li><li>Transmission du bilan</li></ul></article>
+   <article class="mod" style="--k:var(--slate)" data-sweep><svg aria-hidden="true"><use href="#o2"/></svg><h3>Urgences collectives &amp; SSE</h3><p class="h">3 h 30</p><ul><li>Dispositif ORSAN</li><li>Plan blanc et plan bleu</li><li>Afflux de victimes</li><li>Risque NRBC-E</li><li>Évacuation, confinement</li><li>Soutien médico-psychologique</li></ul></article>
+  </div>
+ </div>
+</section>
+
+<div class="flags" aria-hidden="true"><svg viewBox="0 0 820 74"><path d="M10 8Q410 26 810 8" fill="none" stroke="var(--night)" stroke-width="2"/><g transform="translate(316 6)"><use class="fl" href="#fR" x="0" y="11" width="54" height="36"/><use class="fl" href="#fC" x="66" y="13" width="54" height="36"/><use class="fl" href="#fP" x="132" y="13" width="54" height="36"/><text class="lbl" x="27" y="64" text-anchor="middle">R</text><text class="lbl" x="93" y="66" text-anchor="middle">C</text><text class="lbl" x="159" y="66" text-anchor="middle">P</text></g></svg></div>
+
+<section class="sec light" id="equipage" aria-labelledby="h-eq">
+ <div class="w crew">
+  <div data-sweep>
+   <p class="kick">Public &amp; prérequis</p>
+   <h2 id="h-eq" style="font-size:clamp(2.2rem,6vw,4rem);font-weight:900;margin-bottom:16px">Qui embarque ?</h2>
+   <p>Tout l’équipage soignant défini par la 4e partie du Code de la santé publique, et ses étudiants : les promotions d’IFSI bretonnes y ont toute leur place.</p>
+   <ul class="roles"><li>Médecins</li><li>Infirmiers</li><li>Aides-soignants</li><li>Sages-femmes</li><li>Kinés</li><li>Pharmaciens</li><li>Préparateurs</li><li>Ambulanciers</li><li>Auxiliaires de puériculture</li><li>Manipulateurs radio</li><li>Chirurgiens-dentistes</li><li>Étudiants</li></ul>
+   <p>Et aussi :</p>
+   <ul class="roles b"><li>AES / AMP</li><li>ARM</li><li>Assistants médicaux</li><li>Préleveurs sanguins</li><li>Auxiliaires ambulanciers</li></ul>
+   <p><strong>Prérequis :</strong> appartenir à ce public. Personne n’a besoin de l’AFGSU 1 pour s’inscrire au niveau 2.</p>
+  </div>
+  <div class="box3">
+   <div data-sweep><h3>À fournir</h3><ul><li>Diplôme</li><li>Carte professionnelle</li><li>RPPS / ADELI, ou certificat de scolarité pour les étudiants</li><li>Recyclage : l’attestation précédente</li></ul></div>
+   <div data-sweep><h3>Validation</h3><p style="margin:0">Évaluation continue, sans examen final séparé, avec une exigence : être présent·e sur la totalité des 21 heures. L’attestation est remise par le CESU ; notre organisation fonctionne sous convention avec le CESU 93.</p></div>
+   <div data-sweep><h3>Cadre</h3><p style="margin:0">Arrêté du 30 décembre 2014 modifié en 2019 puis 2021. Équivalence PSC acquise (arrêté du 23 août 2019) ; aucune équivalence avec le SST.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="pavillons" aria-labelledby="h-pav">
+ <div class="w">
+  <div class="sec-h" data-sweep><p class="kick">AFGSU 1 ou 2</p><h2 id="h-pav">Deux flammes, deux équipages</h2><p>Le niveau 2 est hissé pour les soignants. Le niveau 1 l’est pour celles et ceux qui travaillent à leurs côtés sans soigner.</p></div>
+  <div class="pen">
+   <article class="pcard main" data-sweep>
+    <svg viewBox="0 0 110 44" aria-hidden="true"><path d="M2 2 108 22 2 42Z" fill="var(--night)" stroke="var(--foam)" stroke-width="2"/><circle cx="30" cy="22" r="8" fill="var(--foam)"/></svg>
+    <h3>AFGSU 2</h3><p class="pr"><s style="color:var(--slate-l);font-size:1.3rem">450 €</s> 385 € TTC</p>
+    <dl><dt>Public</dt><dd>Professions de santé (4e partie du CSP) et étudiants, plus AES/AMP, ARM, assistants médicaux, préleveurs, auxiliaires ambulanciers</dd><dt>Durée</dt><dd>21 h sur 3 jours</dd><dt>Niveau</dt><dd>Gestes avancés et risques collectifs</dd><dt>Validité</dt><dd>4 ans, puis recyclage de 7 h</dd></dl>
+   </article>
+   <article class="pcard" data-sweep>
+    <svg viewBox="0 0 110 44" aria-hidden="true"><path d="M2 2 108 22 2 42Z" fill="#fff" stroke="var(--foam)" stroke-width="2"/><circle cx="30" cy="22" r="8" fill="var(--orange)"/></svg>
+    <h3>AFGSU 1</h3><p class="pr">290 € TTC</p>
+    <dl><dt>Public</dt><dd>Accueil, secrétariat, fonctions administratives, logistiques et techniques des établissements de santé, médico-sociaux et des cabinets</dd><dt>Durée</dt><dd>14 h sur 2 jours</dd><dt>Objectif</dt><dd>Repérer l’urgence vitale ou potentielle, poser les gestes qui conviennent, contribuer à la réponse collective</dd><dt>Validité</dt><dd>4 ans</dd></dl>
+    <p style="margin:18px 0 0"><a class="cta ghost" href="#radio" data-formation="AFGSU 1">Hisser l’AFGSU 1 pour mon équipe</a></p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<div class="flags" aria-hidden="true"><svg viewBox="0 0 820 74"><path d="M10 8Q410 26 810 8" fill="none" stroke="var(--night)" stroke-width="2"/><g transform="translate(316 6)"><use class="fl" href="#fD" x="0" y="11" width="54" height="36"/><use class="fl" href="#fA" x="66" y="13" width="54" height="36"/><use class="fl" href="#fE" x="132" y="13" width="54" height="36"/><text class="lbl" x="27" y="64" text-anchor="middle">D</text><text class="lbl" x="93" y="66" text-anchor="middle">A</text><text class="lbl" x="159" y="66" text-anchor="middle">E</text></g></svg></div>
+
+<section class="sec light" id="carenage" aria-labelledby="h-car">
+ <div class="w car">
+  <div data-sweep>
+   <p class="kick">Recyclage · 7 h</p>
+   <h2 id="h-car" style="font-size:clamp(2.2rem,6vw,4rem);font-weight:900;margin-bottom:16px">Le carénage des quatre ans</h2>
+   <p>Comme une coque, l’attestation s’entretient : elle vaut quatre ans, et se prolonge par un recyclage de 7 heures suivi <strong>avant</strong> sa date d’expiration. Une fois l’échéance dépassée, retour au chantier complet : les 21 heures.</p>
+   <p>Notre conseil : réservez 3 à 6 mois avant l’échéance, avec l’attestation en cours. Le tarif du recyclage vous est indiqué sur demande.</p>
+   <a class="cta navy" href="#radio" data-formation="Recyclage AFGSU 2">Programmer mon carénage</a>
+   <div class="news"><h3>À noter en 2026</h3><p>Arrêté du 20 février 2026 : l’AFGSU 2 en cours de validité devient une condition du diplôme d’État infirmier pour les étudiants entrés à la rentrée 2026. Les nouvelles recommandations ANCESU/SFMU ont été publiées en mars 2026.</p></div>
+  </div>
+  <div class="gauge" data-sweep>
+   <svg viewBox="0 0 420 300" role="img" aria-labelledby="gt">
+    <title id="gt">Jauge de validité : quatre ans, avec la zone de recyclage conseillée de 6 à 3 mois avant l’échéance</title>
+    <path d="M50 250A160 160 0 0 1 370 250" fill="none" stroke="#c6d6da" stroke-width="34"/>
+    <path d="M50 250A160 160 0 0 1 370 250" fill="none" stroke="var(--night)" stroke-width="34" stroke-dasharray="440 600" pathLength="503"/>
+    <path d="M50 250A160 160 0 0 1 370 250" fill="none" stroke="var(--orange)" stroke-width="34" stroke-dasharray="0 440 32 600" pathLength="503"/>
+    <g stroke="var(--night)" stroke-width="3"><path d="M50 250h-14M210 90v-14M370 250h14"/></g>
+    <text x="30" y="282">Obtention</text><text x="210" y="62" text-anchor="middle">2 ans</text><text x="390" y="282" text-anchor="end">4 ans</text>
+    <text x="210" y="226" text-anchor="middle" style="font-size:20px">Zone orange :</text>
+    <text x="210" y="250" text-anchor="middle">réserver le recyclage</text>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="financer" aria-labelledby="h-fin">
+ <div class="w split">
+  <div data-sweep>
+   <p class="kick">Financement</p>
+   <h2 id="h-fin" style="font-size:clamp(2.2rem,6vw,4rem);font-weight:900;margin-bottom:16px">Qui affrète la formation ?</h2>
+   <ul class="fin">
+    <li><svg aria-hidden="true"><use href="#fE"/></svg><div><b>Employeur</b>Dans le cadre du plan de développement des compétences.</div></li>
+    <li><svg aria-hidden="true"><use href="#fC"/></svg><div><b>OPCO</b>Pour les salariés des structures privées, selon votre branche.</div></li>
+    <li><svg aria-hidden="true"><use href="#fP"/></svg><div><b>ANFH</b>Côté fonction publique hospitalière.</div></li>
+    <li><svg aria-hidden="true"><use href="#fF"/></svg><div><b>FIF-PL</b>Pour les libéraux, sous réserve de ses critères.</div></li>
+    <li><svg aria-hidden="true"><use href="#fU"/></svg><div><b>À titre personnel</b>Étudiants et indépendants compris, avec paiement en 4x sans frais.</div></li>
+   </ul>
+   <p class="cpf">CPF : en principe non éligible pour l’AFGSU. Nous ne vous le ferons pas miroiter.</p>
+  </div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires posant les électrodes d’un DAE" data-img="photo : étudiante IFSI posant les électrodes d’un DAE sur mannequin, formateur à genoux" data-sweep></div>
+ </div>
+</section>
+
+<section class="sec light" id="intra" aria-labelledby="h-intra">
+ <div class="w split">
+  <div class="img-ph" role="img" aria-label="Photo à venir : équipe d’EHPAD en exercice de relevage" data-img="photo : équipe soignante d’un EHPAD breton en exercice de relevage, couloir lumineux" data-sweep></div>
+  <div data-sweep>
+   <p class="kick">Intra-établissement</p>
+   <h2 id="h-intra" style="font-size:clamp(2.2rem,6vw,4rem);font-weight:900;margin-bottom:16px">Nous accostons chez vous</h2>
+   <p>Du Finistère au pays de Fougères, la session vient à votre équipe : 10 à 12 participants, vos locaux, vos horaires, un devis établi selon votre projet. Partout en France aussi.</p>
+   <ul class="intra-list"><li>Hôpital</li><li>Clinique</li><li>EHPAD</li><li>Cabinet</li><li>Officine</li><li>Centre de santé</li></ul>
+   <a class="cta navy" href="#radio" data-formation="Intra" data-centre="Intra">Chiffrer une session intra</a>
+  </div>
+ </div>
+</section>
+
+<div class="flags" aria-hidden="true"><svg viewBox="0 0 820 74"><path d="M10 8Q410 26 810 8" fill="none" stroke="var(--night)" stroke-width="2"/><g transform="translate(283 6)"><use class="fl" href="#fC" x="0" y="11" width="54" height="36"/><use class="fl" href="#fE" x="66" y="13" width="54" height="36"/><use class="fl" href="#fS" x="132" y="13" width="54" height="36"/><use class="fl" href="#fU" x="198" y="12" width="54" height="36"/><text class="lbl" x="27" y="64" text-anchor="middle">C</text><text class="lbl" x="93" y="66" text-anchor="middle">E</text><text class="lbl" x="159" y="66" text-anchor="middle">S</text><text class="lbl" x="225" y="65" text-anchor="middle">U</text></g></svg></div>
+
+<section class="sec" id="faq" aria-labelledby="h-faq">
+ <div class="w">
+  <div class="sec-h" data-sweep><p class="kick">Questions de quart</p><h2 id="h-faq">Vous nous demandez</h2></div>
+  <div class="faq">
+   <details><summary data-faq-q>Étudiant·e en IFSI à Rennes ou à Saint-Brieuc : quand placer l’AFGSU 2 dans mon cursus ?</summary><div data-faq-a><p>Si vous êtes entré·e en formation à la rentrée 2026, l’arrêté du 20 février 2026 fait de l’AFGSU 2 valide une condition du diplôme d’État infirmier. Comme elle reste valable quatre ans, vous pouvez la suivre dès maintenant : elle couvrira la date de votre diplôme.</p></div></details>
+   <details><summary data-faq-q>Les sessions inter acceptent-elles les étudiants ?</summary><div data-faq-a><p>Oui. Les étudiants des professions de santé concernées font partie du public. Un certificat de scolarité remplace alors le numéro RPPS ou ADELI dans votre dossier.</p></div></details>
+   <details><summary data-faq-q>Rennes ou Cesson-Sévigné, qu’est-ce qui change ?</summary><div data-faq-a><p>Rien sur le fond : même programme, mêmes 21 heures, même attestation. Les deux villes sont voisines, en Ille-et-Vilaine ; choisissez celle qui vous arrange pour le trajet.</p></div></details>
+   <details><summary data-faq-q>Je travaille dans le Finistère : Saint-Brieuc est-il mon centre le plus proche ?</summary><div data-faq-a><p>Parmi nos trois centres bretons, c’est le plus à l’ouest. Si vous êtes plusieurs dans le même établissement, la formule intra vous évite le déplacement : nous venons sur place.</p></div></details>
+   <details><summary data-faq-q>Notre cabinet infirmier du Morbihan peut-il faire venir la formation ?</summary><div data-faq-a><p>Oui, les cabinets font partie des lieux d’intervention en intra. Il suffit de réunir un groupe de 10 à 12 professionnels ; nous établissons ensuite un devis.</p></div></details>
+   <details><summary data-faq-q>S’entraîner avec le métronome de cette page, est-ce suffisant ?</summary><div data-faq-a><p>Non. Il aide à mémoriser une cadence, rien de plus. La position des mains, la profondeur, le relâchement et la coordination en équipe s’acquièrent sur mannequin, avec un formateur, pendant la session.</p></div></details>
+   <details><summary data-faq-q>Quelle cadence de compressions apprend-on chez l’adulte ?</summary><div data-faq-a><p>Une fréquence comprise entre 100 et 120 par minute, avec une alternance de 30 compressions et 2 insufflations. La conduite à tenir chez l’enfant et le nourrisson est également travaillée.</p></div></details>
+   <details><summary data-faq-q>Comment les heures se répartissent-elles entre les modules ?</summary><div data-faq-a><p>10 h 30 d’urgences vitales, 7 h d’urgences potentielles, 3 h 30 d’urgences collectives et de situations sanitaires exceptionnelles. Indicativement : une première journée entière sur l’urgence vitale, puis des demi-journées.</p></div></details>
+   <details><summary data-faq-q>Mon attestation a expiré pendant mon congé : le recyclage suffit-il ?</summary><div data-faq-a><p>Malheureusement non. Les 7 heures de recyclage ne s’ouvrent qu’à une attestation encore en cours de validité. Après la date, il faut suivre de nouveau la formation complète de 21 heures, quelle que soit la raison du dépassement.</p></div></details>
+   <details><summary data-faq-q>Agent d’un hôpital public breton : vers qui me tourner pour le financement ?</summary><div data-faq-a><p>Vers le service formation de votre établissement : la prise en charge passe par le plan de développement des compétences, avec l’ANFH pour la fonction publique hospitalière.</p></div></details>
+   <details><summary data-faq-q>Étudiant, je paie seul : quelles facilités ?</summary><div data-faq-a><p>Le règlement en 4 fois sans frais. Inutile en revanche de compter sur le CPF, qui en principe ne couvre pas l’AFGSU.</p></div></details>
+   <details><summary data-faq-q>L’attestation vaut-elle PSC ? Et SST ?</summary><div data-faq-a><p>PSC, oui : l’équivalence est prévue par l’arrêté du 23 août 2019. SST, non : ce sont deux dispositifs distincts, sans équivalence entre eux.</p></div></details>
+   <details><summary data-faq-q>Le personnel d’accueil d’une clinique de Saint-Brieuc peut-il se former aussi ?</summary><div data-faq-a><p>Oui, avec l’AFGSU 1 : 14 heures sur deux jours, 290 € TTC, valable quatre ans. Elle est conçue pour les fonctions non soignantes des établissements.</p></div></details>
+  </div>
+ </div>
+</section>
+
+<section class="sec light" id="voix" aria-labelledby="h-voix">
+ <div class="w">
+  <div class="sec-h" data-sweep><p class="kick">Retours de stagiaires</p><h2 id="h-voix">Paroles d’équipage</h2></div>
+  <div class="voices">
+   <figure data-sweep><blockquote style="margin:0">[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · métier · ville</figcaption></figure>
+   <figure data-sweep><blockquote style="margin:0">[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · métier · ville</figcaption></figure>
+   <figure data-sweep><blockquote style="margin:0">[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · métier · ville</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="radio" aria-labelledby="h-radio">
+ <div class="w radio">
+  <div data-sweep>
+   <p class="kick">Inscription</p>
+   <h2 id="h-radio" style="font-size:clamp(2.2rem,6vw,4rem);font-weight:900;margin-bottom:16px">Appel radio : à vous</h2>
+   <p class="mut">Indiquez votre port d’attache et votre métier. Wafa reprend contact pour fixer la date, vérifier les pièces et le financement.</p>
+   <p><a class="ph" href="tel:+33780912335">07 80 91 23 35</a></p>
+   <svg viewBox="0 0 200 200" width="160" height="160" aria-hidden="true"><use href="#star"/></svg>
+  </div>
+  <div>
+   <!-- TODO : connecter l'envoi réel (API CRM ou service e-mail) ; action="#" provisoire. -->
+   <form class="lead" action="#" method="post" data-lead id="lead">
+    <input type="hidden" name="formation" value="AFGSU 2">
+    <div class="full"><label for="l-nom">Nom &amp; prénom</label><input id="l-nom" name="nom" autocomplete="name" required aria-errormessage="l-nom-e"><p class="err" id="l-nom-e">Merci de renseigner votre identité.</p></div>
+    <div><label for="l-tel">Téléphone</label><input id="l-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="l-tel-e"><p class="err" id="l-tel-e">Numéro incomplet (ex. 02 99 00 00 00).</p></div>
+    <div><label for="l-mail">Email</label><input id="l-mail" name="email" type="email" autocomplete="email" required aria-errormessage="l-mail-e"><p class="err" id="l-mail-e">Adresse e-mail non valide.</p></div>
+    <div><label for="l-pro">Profession</label><select id="l-pro" name="profession" required aria-errormessage="l-pro-e"><option value="">À préciser</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé (IFSI, IFAS…)</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="l-pro-e">Choisissez un métier.</p></div>
+    <div><label for="l-centre">Centre / ville</label><select id="l-centre" name="centre" required aria-errormessage="l-centre-e"><option value="">Port d’attache</option><option>Rennes</option><option>Cesson-Sévigné</option><option>Saint-Brieuc</option><option value="Intra">Intra · dans notre établissement</option></select><p class="err" id="l-centre-e">Sélectionnez une ville.</p></div>
+    <div class="full"><label for="l-msg">Message (facultatif)</label><textarea id="l-msg" name="message" placeholder="Disponibilités, IFSI, financement, taille du groupe…"></textarea></div>
+    <div class="full chk"><input type="checkbox" id="l-rgpd" name="rgpd" required><label for="l-rgpd">J’accepte que Phare Secours traite ces données afin de répondre à ma demande d’inscription, sans autre usage. <a href="#">Protection des données</a></label></div>
+    <div class="full"><button class="cta" type="submit">Envoyer l’appel</button></div>
+   </form>
+   <div class="ok" data-success hidden tabindex="-1">
+    <h3>Message reçu. Terminé.</h3>
+    <p>Votre demande est entre de bonnes mains : Wafa vous rappelle pour confirmer la session. Pour gagner du temps, gardez sous la main votre diplôme ou votre certificat de scolarité.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="final" aria-labelledby="h-final">
+ <div class="w">
+  <h2 id="h-final" data-sweep>Trois jours à bord, <span>quatre ans de cap.</span></h2>
+  <div class="acts" data-sweep>
+   <a class="cta" href="#radio" data-formation="AFGSU 2">Embarquer pour 385 €</a>
+   <a class="ph" href="tel:+33780912335">07 80 91 23 35</a>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="w">
+  <span>© 2026 Phare Secours by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Pages légales"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+ </div>
+</footer>
+
+<div class="sticky" data-sticky>
+ <a href="tel:+33780912335">Appeler</a>
+ <a class="b" href="#radio" data-formation="AFGSU 2">Embarquer</a>
+</div>
+
+<script>
+/* ===== SESSIONS : tableau unique, à compléter (dates ISO [début, fin]) ===== */
+const SESSIONS = [
+  { ville: "Rennes",         dept: "35", region: "Bretagne", dates: [] },
+  { ville: "Cesson-Sévigné", dept: "35", region: "Bretagne", dates: [] },
+  { ville: "Saint-Brieuc",   dept: "22", region: "Bretagne", dates: [] },
+  // Dates confirmées hors Bretagne (mentionnées en complément) :
+  { ville: "Palaiseau",      dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
+];
+const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+/* ========================================================================== */
+(() => {
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const MO = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+  const D = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+  const t0 = new Date(); t0.setHours(0, 0, 0, 0);
+  const up = s => s.dates.filter(d => D(d[1]) >= t0);
+  const fmt = ([a, b]) => { const A = D(a), B = D(b); return `${A.getDate()}${A.getMonth() !== B.getMonth() ? ' ' + MO[A.getMonth()] : ''}–${B.getDate()} ${MO[B.getMonth()]} ${B.getFullYear()}`; };
+
+  $('#notices').innerHTML = SESSIONS.filter(s => s.region === 'Bretagne').map(s => { const u = up(s); return `<article class="notice"><p class="dp">Port d’attache · ${s.dept}</p><h3>${s.ville}</h3><p>${u.length ? u.map(fmt).join('<br>') : SUR_DEMANDE}</p><a href="#radio" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'Réserver' : 'Demander une date'} →</a></article>`; }).join('');
+  const ext = SESSIONS.filter(s => s.region !== 'Bretagne' && up(s).length);
+  if (ext.length) $('#palai').textContent = 'Pour info, des sessions sont déjà fixées hors Bretagne : ' + ext.map(s => `${s.ville} (${s.dept}) — ${up(s).map(fmt).join(', ')}`).join(' ; ') + '.';
+
+  const form = $('#lead');
+  document.addEventListener('click', e => { const a = e.target.closest('a[data-formation],a[data-centre]'); if (!a) return; if (a.dataset.formation) form.elements.formation.value = a.dataset.formation; const c = a.dataset.centre; if (c && [...form.elements.centre.options].some(o => o.value === c)) form.elements.centre.value = c; });
+
+  /* balayage à l'apparition */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { const el = e.target; el.classList.add('in'); io.unobserve(el); setTimeout(() => el.classList.add('done'), 1300); } }), { rootMargin: '0px 0px -8% 0px' });
+  $$('[data-sweep]').forEach(el => io.observe(el));
+
+  /* phare */
+  const beam = $('#beam'), LX = 480, LY = 94;
+  const towns = $$('.town').map(g => { const c = $('.dot', g); return { g, a: Math.atan2(+c.getAttribute('cy') - LY, +c.getAttribute('cx') - LX) * 180 / Math.PI }; });
+  let ang = 150, on = !RM, vis = true, last = 0;
+  const setBeam = () => { beam.setAttribute('transform', `rotate(${ang.toFixed(2)} ${LX} ${LY})`); towns.forEach(t => { const d = Math.abs(((ang - t.a) % 360 + 540) % 360 - 180); t.g.classList.toggle('lit', d < 11); }); };
+  const spin = ts => { if (!on || !vis) { last = 0; return; } const dt = last ? Math.min(50, ts - last) : 16; last = ts; ang = (ang + dt * 0.04) % 360; setBeam(); requestAnimationFrame(spin); };
+  const bb = $('#beamBtn');
+  if (RM) { beam.setAttribute('transform', `rotate(${towns[1].a} ${LX} ${LY})`); towns.forEach(t => t.g.classList.add('lit')); bb.hidden = true; }
+  else {
+    setBeam(); requestAnimationFrame(spin);
+    new IntersectionObserver(([e]) => { const w = vis; vis = e.isIntersecting; if (vis && !w && on) requestAnimationFrame(spin); }).observe($('#chart'));
+    bb.addEventListener('click', () => { on = !on; bb.setAttribute('aria-pressed', !on); bb.textContent = on ? 'Éteindre le phare' : 'Rallumer le phare'; beam.style.display = on ? '' : 'none'; if (on) requestAnimationFrame(spin); else towns.forEach(t => t.g.classList.add('lit')); });
+  }
+
+  /* métronome RCP */
+  const box = $('#metroBox'), startB = $('#mStart'), bpm = $('#bpm'), out = $('#bpmOut'), snd = $('#mSound');
+  const cEl = $('#mCount'), bEl = $('#mBreath'), cyEl = $('#mCycle'), ph = $('#mPhase');
+  let run = false, count = 0, breaths = 0, cycles = 0, nextT = 0, phase = 'comp', breathEnd = 0, ctx = null, sound = false, raf = 0;
+  bpm.addEventListener('input', () => { out.value = bpm.value; out.textContent = bpm.value; });
+  snd.addEventListener('click', () => { sound = !sound; snd.setAttribute('aria-pressed', sound); snd.textContent = sound ? 'Son : activé' : 'Son : coupé'; if (sound && !ctx) { try { ctx = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { } } });
+  const click = hi => { if (!sound || !ctx) return; const o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.value = hi ? 1320 : 880; g.gain.setValueAtTime(.25, ctx.currentTime); g.gain.exponentialRampToValueAtTime(.001, ctx.currentTime + .06); o.connect(g).connect(ctx.destination); o.start(); o.stop(ctx.currentTime + .07); };
+  const beat = () => { count++; cEl.textContent = count; click(count === 30); if (!RM) { box.classList.add('down'); setTimeout(() => box.classList.remove('down'), 60000 / bpm.value * .45); } ph.textContent = 'Compressions'; if (count === 30) { phase = 'breath'; breaths = 0; breathEnd = performance.now() + 4000; } };
+  const loop = now => {
+    if (!run) return;
+    if (phase === 'comp') { if (now >= nextT) { beat(); nextT += 60000 / bpm.value; if (nextT < now) nextT = now + 60000 / bpm.value; } }
+    else { const left = breathEnd - now, b = left > 2000 ? 1 : 2; if (b !== breaths) { breaths = b; bEl.textContent = b; ph.textContent = `Insufflation ${b} sur 2`; } if (left <= 0) { cycles++; cyEl.textContent = cycles; count = 0; cEl.textContent = 0; bEl.textContent = 0; phase = 'comp'; nextT = now; } }
+    raf = requestAnimationFrame(loop);
+  };
+  startB.addEventListener('click', () => {
+    run = !run; startB.textContent = run ? 'Arrêter' : 'Démarrer';
+    if (run) { if (ctx && ctx.state === 'suspended') ctx.resume(); count = 0; breaths = 0; phase = 'comp'; cEl.textContent = 0; bEl.textContent = 0; nextT = performance.now(); raf = requestAnimationFrame(loop); }
+    else { cancelAnimationFrame(raf); box.classList.remove('down'); ph.textContent = 'En pause'; }
+  });
+  document.addEventListener('visibilitychange', () => { if (document.hidden && run) startB.click(); });
+
+  /* formulaire */
+  const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
+  form.addEventListener('blur', e => sync(e.target), true);
+  form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    // TODO : POST des données vers l'outil de gestion des inscriptions avant confirmation.
+    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+  });
+})();
+</script>
+</body>
+</html>
