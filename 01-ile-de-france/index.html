@@ -1,0 +1,745 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFGSU 2 Île-de-France · 21 h, 385 € · Palaiseau, Paris, Meaux… | Ligne Vitale</title>
+<meta name="description" content="AFGSU 2 en Île-de-France : 21 h en présentiel sur 3 jours, 385 € TTC au lieu de 450 €, attestation valable 4 ans. Sessions confirmées à Palaiseau ; Paris, Noisy-le-Sec, Choisy-le-Roi, Houilles et Meaux sur demande.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Ligne Vitale">
+<meta property="og:title" content="Ligne Vitale · AFGSU 2 en Île-de-France, six centres sur une même ligne">
+<meta property="og:description" content="Trois jours de pratique, groupes de 10 à 12, attestation délivrée par le CESU. 385 € TTC au lieu de 450 €. Départs confirmés à Palaiseau.">
+<!-- TODO og:image : visuel 1200×630 (plan des lignes Ligne Vitale) à ajouter depuis la médiathèque -->
+<meta name="theme-color" content="#14161A">
+<!-- PLACEHOLDER favicon : roundel « V » Ligne Vitale, 32×32 et 180×180 (médiathèque) -->
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--paper:#F4F1EA;--paper2:#EBE6DA;--ink:#14161A;--ink2:#43464D;--red:#E2362F;--teal:#0E8A7E;--amber:#E8B23A;--rule:rgba(20,22,26,.16);--f:"Familjen Grotesk",system-ui,sans-serif;--m:"IBM Plex Mono",ui-monospace,monospace;--gut:20px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.55 var(--f)}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-weight:700;letter-spacing:-.02em;line-height:1.05;margin:0}
+p{margin:0 0 1em}
+.sr{position:absolute;left:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.board,.cmp-wrap,.map-scroll{position:relative}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:2px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:var(--paper);padding:10px 14px;z-index:99;font-family:var(--m)}
+.skip:focus{top:12px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gut)}
+.mono{font-family:var(--m)}
+/* placeholders */
+.img-ph{position:relative;background:repeating-linear-gradient(135deg,var(--paper2) 0 10px,#e2dccd 10px 20px);border:2px solid var(--ink);display:flex;align-items:flex-end;min-height:180px}
+.img-ph::after{content:attr(data-img);font:500 .75rem/1.35 var(--m);background:var(--ink);color:var(--paper);padding:6px 9px;margin:10px}
+.logo-ph{width:38px;height:38px;min-height:0;border-radius:50%;border:3px solid var(--ink);background:var(--paper);display:grid;place-items:center;flex:none}
+.logo-ph::after{content:"logo";margin:0;padding:0;background:none;color:var(--ink2);font-size:.6rem}
+/* header */
+.top{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:3px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:58px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:1.15rem;letter-spacing:-.02em}
+.nav{display:none;margin-left:auto;gap:22px;font:500 .85rem var(--m);text-transform:uppercase;letter-spacing:.04em}
+.nav a{text-decoration:none;padding:6px 0;background:linear-gradient(var(--red),var(--red)) 0 100%/0 3px no-repeat;transition:background-size .3s}
+.nav a:hover{background-size:100% 3px}
+.top-tel{margin-left:auto;font:600 .9rem var(--m);text-decoration:none;white-space:nowrap}
+@media (min-width:900px){.nav{display:flex}.top-tel{margin-left:28px}}
+/* CTA shape: ink pill + roundel */
+.btn{display:inline-flex;align-items:center;gap:12px;min-height:50px;padding:6px 22px 6px 6px;border-radius:999px;background:var(--ink);color:var(--paper);font-weight:700;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;font-family:var(--f);transition:transform .2s}
+.btn .rd{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--amber);color:var(--ink);font:700 .95rem var(--m);transition:transform .35s cubic-bezier(.3,1.4,.5,1)}
+.btn:hover .rd{transform:translateX(4px) rotate(-90deg)}
+.btn.alt{background:var(--amber);color:var(--ink)}
+.btn.alt .rd{background:var(--ink);color:var(--amber)}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 3px var(--ink)}
+.btn.line .rd{background:var(--teal);color:#fff}
+/* line roundel codes */
+.code{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:50%;font:700 1.1rem var(--m);flex:none}
+.c-red{background:var(--red);color:#fff}.c-teal{background:var(--teal);color:#fff}.c-amber{background:var(--amber);color:var(--ink)}.c-ink{background:var(--ink);color:var(--paper)}
+/* signage headers */
+.sign{display:flex;align-items:center;gap:14px;background:var(--ink);color:var(--paper);padding:10px 18px 10px 10px;border-radius:6px;margin-bottom:28px}
+.sign h2{font-size:clamp(1.35rem,3.4vw,2.1rem);font-weight:600}
+.sign .dir{margin-left:auto;font:500 .78rem var(--m);text-transform:uppercase;letter-spacing:.06em;opacity:.8;display:none}
+@media (min-width:700px){.sign .dir{display:block}}
+section{padding:64px 0}
+.lede{font-size:1.15rem;color:var(--ink2);max-width:62ch}
+/* hero */
+.hero{padding:22px 0 40px}
+.hero-grid{display:grid;gap:26px;grid-template-columns:minmax(0,1fr)}.hero-grid>*,.split>*,.guichet>*{min-width:0}
+.eyebrow{font:500 .78rem var(--m);text-transform:uppercase;letter-spacing:.06em;color:var(--ink2);display:flex;gap:8px;align-items:center;margin-bottom:10px}
+.eyebrow i{display:inline-block;width:26px;height:6px;border-radius:3px;background:var(--red)}
+.hero h1{font-size:clamp(1.85rem,5.4vw,4rem)}
+.hero h1 .r{color:var(--ink);background:linear-gradient(transparent 62%,var(--amber) 62% 90%,transparent 90%)}
+.ticket{margin-top:16px;background:#fff;border:3px solid var(--ink);border-radius:14px;padding:14px 16px;position:relative;max-width:470px}
+.ticket::before,.ticket::after{content:"";position:absolute;width:20px;height:20px;border-radius:50%;background:var(--paper);border:3px solid var(--ink);top:50%;margin-top:-10px}
+.ticket::before{left:-12px;clip-path:inset(0 0 0 50%)}.ticket::after{right:-12px;clip-path:inset(0 50% 0 0)}
+.t-head{font:600 .66rem var(--m);gap:8px;text-transform:uppercase;letter-spacing:.08em;display:flex;justify-content:space-between;color:var(--ink2);border-bottom:2px dashed var(--rule);padding-bottom:6px;margin-bottom:8px}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 12px}
+.price s{font:500 1.1rem var(--m);color:var(--ink2);text-decoration-thickness:2px;text-decoration-color:var(--red)}
+.price strong{font-size:2.3rem;letter-spacing:-.03em;line-height:1}
+.price small{font:500 .78rem var(--m);color:var(--ink2)}
+.meta{font:600 .9rem var(--m);margin:8px 0 12px;display:flex;gap:8px;align-items:center;white-space:nowrap}
+.meta::before{content:"";width:10px;height:10px;border-radius:50%;border:3px solid var(--teal)}
+.t-act{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+.tel{font:600 1.05rem var(--m);text-decoration:none;border-bottom:3px solid var(--teal)}
+.tel small{display:block;font-size:.7rem;font-weight:500;color:var(--ink2);border:0}
+.hero-lede{margin-top:18px}
+.hero-lede p{color:var(--ink2);max-width:52ch}
+@media (min-width:1000px){.hero{padding:44px 0 56px}.hero-grid{grid-template-columns:5fr 7fr;gap:44px;align-items:start}.ticket{padding:18px 22px}.price strong{font-size:2.8rem}}
+/* map */
+.mapbox{background:#fff;border:3px solid var(--ink);border-radius:16px;overflow:hidden}
+.map-bar{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:2px solid var(--ink);font:500 .78rem var(--m)}
+.map-bar .legend{display:flex;gap:10px;flex-wrap:wrap}
+.map-bar .legend span{display:inline-flex;align-items:center;gap:5px}
+.map-bar .legend b{width:18px;height:6px;border-radius:3px;display:inline-block}
+.pause{margin-left:auto;font:500 .75rem var(--m);background:none;border:2px solid var(--ink);border-radius:999px;padding:4px 10px;cursor:pointer;color:var(--ink)}
+.map-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.netmap{display:block;width:100%;min-width:620px;height:auto}
+.netmap .river{fill:none;stroke:#cfe3e0;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+.netmap .rlab{font:italic 500 13px var(--m);fill:#5b8f89}
+.netmap .ring{fill:none;stroke:var(--ink);stroke-width:1.5;stroke-dasharray:3 6;opacity:.45}
+.netmap .ringlab{font:500 11px var(--m);fill:var(--ink2);letter-spacing:.08em}
+.netmap .ln{fill:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round}
+.netmap .draw{stroke-dasharray:1;stroke-dashoffset:0}
+.js .netmap.pre .draw{stroke-dashoffset:1}
+.netmap .draw{transition:stroke-dashoffset 1.6s cubic-bezier(.6,0,.2,1)}
+.st{cursor:pointer}
+.st circle.o{fill:#fff;stroke:var(--ink);stroke-width:4.5;transition:r .25s}
+.st:hover circle.o,.st.on circle.o{r:15}
+.st.on circle.o{fill:var(--amber)}
+.st .hit{fill:transparent}
+.st text{font:600 17px var(--f);fill:var(--ink);paint-order:stroke;stroke:#fff;stroke-width:5px;stroke-linejoin:round}
+.st .tag{font:500 11px var(--m);fill:var(--ink2)}
+.ping{fill:none;stroke:var(--ink);stroke-width:2.5;opacity:0}
+.ping.go{animation:ping .9s ease-out}
+@keyframes ping{from{opacity:.8;r:12}to{opacity:0;r:30}}
+.conf{fill:none;stroke:var(--amber);stroke-width:4}
+.blip .b0{fill:none;stroke:#fff;stroke-width:7;stroke-linejoin:round;stroke-linecap:round}
+.blip .b1{fill:none;stroke:var(--ink);stroke-width:2.6;stroke-linejoin:round;stroke-linecap:round}
+.stations{display:flex;flex-wrap:wrap;gap:8px;padding:12px 14px;border-top:2px solid var(--ink)}
+.stations button{font:600 .9rem var(--f);border:2px solid var(--ink);background:var(--paper);border-radius:999px;padding:7px 12px 7px 8px;display:inline-flex;align-items:center;gap:7px;cursor:pointer;color:var(--ink)}
+.stations button i{width:12px;height:12px;border-radius:50%;border:3px solid var(--ink);background:#fff}
+.stations button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.stations button[aria-pressed=true] i{background:var(--amber);border-color:var(--amber)}
+.panel{padding:16px 18px;border-top:3px solid var(--ink);background:var(--paper);min-height:120px}
+.panel h3{font-size:1.4rem;margin-bottom:4px}
+.panel .pl{font:500 .8rem var(--m);color:var(--ink2);margin-bottom:10px}
+.panel ul{list-style:none;padding:0;margin:0 0 14px;font:500 .95rem var(--m)}
+.panel li{padding:4px 0;border-bottom:1px dashed var(--rule)}
+.panel .empty{color:var(--ink2);font:500 .9rem var(--m)}
+.hint{font:500 .75rem var(--m);color:var(--ink2);padding:6px 14px 0}
+@media (min-width:700px){.hint{display:none}}
+/* departure board */
+.board{background:var(--ink);color:var(--paper);border-radius:12px;padding:8px;overflow-x:auto}
+.board table{width:100%;border-collapse:separate;border-spacing:0 6px;font:500 .92rem var(--m);min-width:560px}
+.board th{text-align:left;font-weight:500;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#b9bcc2;padding:6px 10px}
+.board td{background:#23262c;padding:11px 10px;color:var(--amber);white-space:nowrap}
+.board td:first-child{border-radius:6px 0 0 6px}.board td:last-child{border-radius:0 6px 6px 0}
+.board .ok{color:#7fe0c9}.board .ask{color:#d7d9dd}
+.board a{color:var(--paper);font-weight:600}
+.board-note{font:500 .85rem var(--m);color:var(--ink2);margin-top:12px}
+.split{display:grid;gap:28px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.split{grid-template-columns:minmax(0,7fr) minmax(0,5fr);align-items:start}}
+/* programme */
+.lines{display:grid;gap:26px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.lines{grid-template-columns:repeat(3,1fr)}}
+.mod{background:#fff;border-top:10px solid var(--c);padding:20px 20px 10px;border-radius:0 0 12px 12px}
+.mod header{display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.mod h3{font-size:1.25rem}
+.mod .dur{font:600 .85rem var(--m);color:var(--ink2)}
+.stops{list-style:none;margin:0;padding:0 0 0 6px;position:relative}
+.stops::before{content:"";position:absolute;left:12px;top:10px;bottom:16px;width:7px;border-radius:4px;background:var(--c)}
+.stops li{position:relative;padding:5px 0 12px 34px;line-height:1.35}
+.stops li::before{content:"";position:absolute;left:5px;top:6px;width:13px;height:13px;border-radius:50%;background:#fff;border:4px solid var(--ink)}
+.mod .note{font:500 .8rem var(--m);color:var(--ink2);border-top:1px dashed var(--rule);padding-top:10px}
+.pg{width:64px;height:64px;color:var(--ink);background:var(--paper2);border-radius:12px;padding:6px;flex:none}
+.tt{margin-top:34px;background:#fff;border-radius:12px;padding:18px}
+.tt h3{font-size:1.05rem;margin-bottom:12px}
+.day{display:grid;grid-template-columns:70px 1fr;gap:10px;align-items:center;margin-bottom:10px;font:500 .85rem var(--m)}
+.bar{display:flex;height:34px;border-radius:17px;overflow:hidden;border:2px solid var(--ink)}
+.bar span{display:flex;align-items:center;padding:0 10px;font-size:.75rem;white-space:nowrap;overflow:hidden}
+.b1{background:var(--red);color:#fff;font-weight:600}.b2{background:var(--teal);color:#fff;font-weight:600}.b3{background:var(--amber);color:var(--ink)}
+/* access */
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 18px}
+.chips li{border:2px solid var(--ink);border-radius:999px;padding:5px 12px;font-weight:500;font-size:.95rem;background:#fff}
+.chips.soft li{border-style:dashed;background:transparent}
+.cols{display:grid;gap:26px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:900px){.cols{grid-template-columns:repeat(3,1fr)}}
+.card-plain{border-top:3px solid var(--ink);padding-top:14px}
+.card-plain h3{font-size:1.15rem;margin-bottom:8px}
+.card-plain ul{padding-left:18px;margin:0}
+/* comparison */
+.cmp{width:100%;border-collapse:collapse;background:#fff;font-size:.98rem}
+.cmp th,.cmp td{padding:13px 14px;border-bottom:2px solid var(--paper);text-align:left;vertical-align:top}
+.cmp thead th{font:600 .8rem var(--m);text-transform:uppercase;letter-spacing:.06em}
+.cmp thead th:nth-child(2){background:var(--paper2)}
+.cmp thead th:nth-child(3){background:var(--ink);color:var(--paper)}
+.cmp tbody th{font:500 .8rem var(--m);color:var(--ink2);width:22%}
+.cmp td:nth-child(3){font-weight:500;box-shadow:inset 4px 0 0 var(--red)}
+.cmp-wrap{overflow-x:auto;border:3px solid var(--ink);border-radius:12px}
+.cmp-wrap table{min-width:560px}
+.cmp-foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:18px}
+/* financing */
+.fin{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.fin li{display:grid;grid-template-columns:56px 1fr;gap:14px;padding:14px 0;border-bottom:2px solid var(--ink);align-items:start}
+.fin li:first-child{border-top:2px solid var(--ink)}
+.fin b{display:block;font-size:1.1rem}
+.fin .code{width:40px;height:40px;font-size:.8rem}
+.warn{background:var(--ink);color:var(--paper);padding:14px 16px;border-radius:10px;font:500 .9rem/1.5 var(--m);margin-top:18px}
+/* intra */
+.intra{background:var(--ink);color:var(--paper)}
+.intra .lede{color:#cfd1d5}
+.intra .sign{background:var(--paper);color:var(--ink)}
+.places{list-style:none;padding:0;margin:20px 0;display:flex;flex-wrap:wrap;gap:8px}
+.places li{border:2px solid var(--paper);border-radius:6px;padding:6px 12px;font:500 .9rem var(--m)}
+.intra .img-ph{border-color:var(--paper)}
+/* recyclage */
+.timeline{position:relative;margin:30px 0 10px;padding-top:40px}
+.timeline svg{width:100%;height:auto;display:block}
+.tl-text{font:500 13px var(--m);fill:var(--ink)}
+.tl-big{font:700 15px var(--f);fill:var(--ink)}
+.news{border-left:10px solid var(--teal);background:#fff;padding:16px 18px;border-radius:0 10px 10px 0;margin-top:26px}
+.news h3{font-size:1.1rem;margin-bottom:8px}
+.news p{margin:0 0 .5em}
+/* voices */
+.voices{display:grid;gap:18px}
+@media (min-width:800px){.voices{grid-template-columns:repeat(3,1fr)}}
+.voice{border:2px dashed var(--ink);border-radius:12px;padding:18px;background:#fff}
+.voice p{font-size:1.05rem;margin-bottom:10px}
+.voice span{font:500 .8rem var(--m);color:var(--ink2)}
+/* faq */
+.faq{border-top:3px solid var(--ink)}
+.q{border-bottom:2px solid var(--ink)}
+.q summary{list-style:none;cursor:pointer;padding:16px 46px 16px 0;font-weight:600;font-size:1.08rem;position:relative}
+.q summary::-webkit-details-marker{display:none}
+.q summary::after{content:"";position:absolute;right:6px;top:50%;width:22px;height:22px;margin-top:-11px;border-radius:50%;border:4px solid var(--ink);background:#fff;transition:background .2s}
+.q[open] summary::after{background:var(--red);border-color:var(--red)}
+.q div{padding:0 0 16px;color:var(--ink2);max-width:75ch}
+.q div p{margin:0}
+/* form */
+.guichet{display:grid;gap:30px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:960px){.guichet{grid-template-columns:4fr 6fr}}
+form{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:20px}
+.fg{display:grid;gap:16px}
+@media (min-width:640px){.fg{grid-template-columns:1fr 1fr}.full{grid-column:1/-1}}
+label{display:block;font:600 .8rem var(--m);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
+input,select,textarea{width:100%;font:500 1rem var(--f);padding:12px;border:2px solid var(--ink);border-radius:8px;background:var(--paper);color:var(--ink)}
+textarea{min-height:96px;resize:vertical}
+input:user-invalid,select:user-invalid{border-color:var(--red);background:#fdeceb}
+.err{display:none;font:500 .78rem var(--m);color:#a3221c;margin-top:5px}
+input:user-invalid~.err,select:user-invalid~.err{display:block}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}
+.chk input{width:22px;height:22px;flex:none;margin-top:2px;accent-color:var(--ink)}
+.chk label{font:400 .92rem/1.45 var(--f);text-transform:none;letter-spacing:0;margin:0}
+.ok-box{border:3px solid var(--ink);border-radius:16px;background:#fff;padding:24px;position:relative;overflow:hidden}
+.ok-box h3{font-size:1.6rem;margin:10px 0}
+.ok-box .stub{font:600 .8rem var(--m);text-transform:uppercase;letter-spacing:.08em;border-bottom:2px dashed var(--rule);padding-bottom:8px}
+/* final */
+.final{padding:56px 0;border-top:3px solid var(--ink)}
+.final .wrap{display:grid;gap:22px;align-items:center}
+@media (min-width:900px){.final .wrap{grid-template-columns:1fr auto}}
+.final h2{font-size:clamp(1.8rem,4.6vw,3.2rem)}
+.final svg{width:100%;max-width:520px;height:auto}
+/* footer */
+footer{background:var(--ink);color:var(--paper);padding:34px 0 100px;font:500 .85rem var(--m)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center}
+footer nav{display:flex;gap:18px;margin-left:auto}
+footer a{color:var(--paper)}
+@media (min-width:760px){footer{padding-bottom:34px}}
+/* sticky bar */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1.4fr;gap:8px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink)}
+.sticky a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:46px;border-radius:999px;font-weight:700;text-decoration:none}
+.sticky .s-call{background:transparent;color:var(--paper);box-shadow:inset 0 0 0 2px var(--paper)}
+.sticky .s-book{background:var(--amber);color:var(--ink)}
+@media (min-width:760px){.sticky{display:none}}
+/* motion: arrivals */
+.js [data-arrive]{opacity:0;transform:translateX(-32px)}
+.js [data-arrive].in{opacity:1;transform:none;transition:opacity .5s ease-out,transform .7s cubic-bezier(.15,.85,.25,1.04)}
+@media (prefers-reduced-motion:reduce){.js [data-arrive]{opacity:1;transform:none}.ping.go{animation:none}.btn .rd,.nav a{transition:none}.netmap .draw{transition:none}.js .netmap.pre .draw{stroke-dashoffset:0}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"EducationalOrganization","@id":"#org","name":"Ligne Vitale","description":"Organisme de formation aux gestes et soins d'urgence en Île-de-France : AFGSU 2, AFGSU 1 et recyclage, en inter ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Île-de-France"},"location":[
+{"@type":"Place","name":"Ligne Vitale · Palaiseau","address":{"@type":"PostalAddress","streetAddress":"4 allée des Garays","postalCode":"91120","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.71,"longitude":2.25}},
+{"@type":"Place","name":"Ligne Vitale · Paris","address":{"@type":"PostalAddress","addressLocality":"Paris","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.86,"longitude":2.35}},
+{"@type":"Place","name":"Ligne Vitale · Noisy-le-Sec","address":{"@type":"PostalAddress","addressLocality":"Noisy-le-Sec","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.89,"longitude":2.46}},
+{"@type":"Place","name":"Ligne Vitale · Choisy-le-Roi","address":{"@type":"PostalAddress","addressLocality":"Choisy-le-Roi","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.76,"longitude":2.41}},
+{"@type":"Place","name":"Ligne Vitale · Houilles","address":{"@type":"PostalAddress","addressLocality":"Houilles","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.93,"longitude":2.19}},
+{"@type":"Place","name":"Ligne Vitale · Meaux","address":{"@type":"PostalAddress","addressLocality":"Meaux","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.96,"longitude":2.88}}]},
+{"@type":"Course","name":"AFGSU 2 · Attestation de Formation aux Gestes et Soins d'Urgence de niveau 2 (Île-de-France)","description":"21 heures en présentiel sur 3 jours : urgences vitales, urgences potentielles, urgences collectives et situations sanitaires exceptionnelles. Groupes de 10 à 12. Attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","educationalCredentialAwarded":"Attestation de Formation aux Gestes et Soins d'Urgence de niveau 2","provider":{"@id":"#org"},
+"offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements","availability":"https://schema.org/InStock"},
+"hasCourseInstance":[
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-11-16","endDate":"2026-11-18","location":{"@type":"Place","name":"Palaiseau","address":"4 allée des Garays, 91120 Palaiseau"}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-12-14","endDate":"2026-12-16","location":{"@type":"Place","name":"Palaiseau","address":"4 allée des Garays, 91120 Palaiseau"}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-12-28","endDate":"2026-12-30","location":{"@type":"Place","name":"Palaiseau","address":"4 allée des Garays, 91120 Palaiseau"}}]}
+]}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Je travaille de nuit dans un service parisien : puis-je enchaîner les trois jours après une garde ?","acceptedAnswer":{"@type":"Answer","text":"C’est déconseillé. La présence est exigée sur l’intégralité des 21 heures et l’évaluation est continue : vos gestes sont observés du premier au dernier jour. Posez les trois jours ou calez-les sur une période de repos, vous en tirerez bien davantage."}},{"@type":"Question","name":"J’habite en Essonne mais j’exerce dans le Val-de-Marne : quelle station choisir ?","acceptedAnswer":{"@type":"Answer","text":"Palaiseau (91) propose les seules dates déjà fixées. Choisy-le-Roi (94) peut ouvrir une session sur demande : indiquez vos disponibilités dans le formulaire et nous revenons vers vous sous 48 h."}},{"@type":"Question","name":"Les dates de Palaiseau sont-elles définitives ?","acceptedAnswer":{"@type":"Answer","text":"Oui : 16→18 novembre, 14→16 décembre et 28→30 décembre 2026, au 4 allée des Garays, 91120 Palaiseau. Ce sont les trois sessions inter confirmées à ce jour."}},{"@type":"Question","name":"Comment obtenir une date à Paris, Houilles, Meaux, Noisy-le-Sec ou Choisy-le-Roi ?","acceptedAnswer":{"@type":"Answer","text":"Ces stations fonctionnent sur demande. Laissez votre profession et vos créneaux possibles : Wafa vous rappelle sous 48 h avec une proposition, ou vous oriente vers Palaiseau si c’est plus rapide pour vous."}},{"@type":"Question","name":"Aide-soignante en EHPAD dans les Yvelines, suis-je concernée par le niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les aides-soignants appartiennent au public de l’AFGSU 2, et vous pouvez y entrer directement : aucune AFGSU 1 préalable n’est demandée."}},{"@type":"Question","name":"Notre clinique de Seine-Saint-Denis veut former un service entier : comment ça se passe ?","acceptedAnswer":{"@type":"Answer","text":"En intra : nous intervenons dans vos locaux, par groupes de 10 à 12, sur un planning construit avec l’encadrement. Le tarif est établi sur devis selon le nombre de groupes et vos contraintes."}},{"@type":"Question","name":"Mon attestation arrive à échéance au printemps : quand réserver le recyclage ?","acceptedAnswer":{"@type":"Answer","text":"Dès l’automne précédent, idéalement. Nous conseillons de s’inscrire 3 à 6 mois avant l’échéance pour suivre les 7 heures de recyclage sans courir après une place."}},{"@type":"Question","name":"Et si la date d’expiration est déjà passée ?","acceptedAnswer":{"@type":"Answer","text":"Le recyclage de 7 h n’est alors plus possible : il faut suivre à nouveau la formation complète de 21 h. Raison de plus pour noter l’échéance dès aujourd’hui."}},{"@type":"Question","name":"Étudiante en IFSI en Île-de-France, qu’est-ce que l’arrêté du 20 février 2026 change pour moi ?","acceptedAnswer":{"@type":"Answer","text":"Si vous êtes entrée en formation à la rentrée 2026, une AFGSU 2 valide est exigée pour obtenir votre diplôme d’État infirmier. Votre certificat de scolarité suffit pour l’inscription."}},{"@type":"Question","name":"Qui signe l’attestation remise en fin de session ?","acceptedAnswer":{"@type":"Answer","text":"Le CESU. La formation est organisée sous convention avec le CESU 93, dans le cadre de l’arrêté du 30 décembre 2014 modifié en 2019 et 2021."}},{"@type":"Question","name":"Je suis agent d’un hôpital public francilien : qui peut financer ?","acceptedAnswer":{"@type":"Answer","text":"Votre établissement, via son plan de développement des compétences, avec souvent l’appui de l’ANFH, l’organisme de la fonction publique hospitalière. Le service formation saura vous dire quelle enveloppe mobiliser."}},{"@type":"Question","name":"Infirmier libéral à Paris, comment financer mes trois jours ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL peut intervenir, sous conditions. Sinon, vous pouvez financer vous-même et régler en 4x sans frais. Le CPF, lui, n’est en principe pas mobilisable pour l’AFGSU."}},{"@type":"Question","name":"L’AFGSU 2 couvre-t-elle aussi le SST demandé dans mon cabinet ?","acceptedAnswer":{"@type":"Answer","text":"Non. Elle ouvre l’équivalence PSC (arrêté du 23 août 2019), mais elle n’est pas équivalente au SST, qui relève d’un autre dispositif."}},{"@type":"Question","name":"Notre secrétaire médicale à Meaux voudrait se former aussi : laquelle choisir ?","acceptedAnswer":{"@type":"Answer","text":"L’AFGSU 1 : 14 heures sur 2 jours, 290 € TTC, valable 4 ans. Elle s’adresse justement aux personnels non soignants des cabinets et des structures de santé."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="pg-rcp" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M26 6v22M38 6v22"/><rect x="19" y="28" width="26" height="10" rx="5"/><path d="M6 54Q32 40 58 54"/><path d="M11 18v13m-4-4 4 4 4-4M53 18v13m-4-4 4 4 4-4"/></g></symbol>
+  <symbol id="pg-dae" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="18" width="30" height="36" rx="6"/><path d="M23 26l-6 11h8l-5 10"/><rect x="45" y="8" width="14" height="18" rx="4"/><rect x="45" y="38" width="14" height="18" rx="4"/><path d="M35 26c5 0 5-9 10-9M35 46c5 0 5 1 10 1"/></g></symbol>
+  <symbol id="pg-brancard" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 36h56"/><circle cx="14" cy="22" r="5"/><path d="M24 28h26"/><path d="M14 36l-3 12M50 36l3 12"/><circle cx="11" cy="53" r="3"/><circle cx="53" cy="53" r="3"/></g></symbol>
+  <symbol id="pg-o2" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"><rect x="21" y="20" width="22" height="38" rx="9"/><path d="M27 20v-7h10v7M24 8h16"/><circle cx="50" cy="12" r="5"/><path d="M40 10h5M21 32h22"/></g></symbol>
+ </defs>
+</svg>
+
+<header class="top">
+ <div class="wrap">
+  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Ligne Vitale (emplacement)" data-img="logo : roundel Ligne Vitale, 40×40"></span>Ligne Vitale</a>
+  <nav class="nav" aria-label="Sections">
+   <a href="#plan">Plan</a><a href="#departs">Départs</a><a href="#parcours">Parcours</a><a href="#intra">Intra</a><a href="#guichet">Guichet</a>
+  </nav>
+  <a class="top-tel" href="tel:+33780912335" aria-label="Appeler la ligne AFGSU au 07 80 91 23 35">07 80 91 23 35</a>
+ </div>
+</header>
+
+<main id="contenu">
+<section class="hero" id="plan" aria-labelledby="h1">
+ <div class="wrap hero-grid">
+  <div>
+   <p class="eyebrow"><i></i>Plan de réseau · formation AFGSU 2</p>
+   <h1 id="h1" data-atf="h1">Six stations, une même ligne de soins : <span class="r">l’AFGSU 2 en Île-de-France</span></h1>
+   <div class="ticket">
+    <div class="t-head"><span>Titre AFGSU 2 · inter</span><span>Validité 4 ans</span></div>
+    <p class="price" data-atf="price"><s><span class="sr">Prix habituel : </span>450 €</s> <strong>385 € TTC</strong> <small>par participant · 4x sans frais</small></p>
+    <p class="meta" data-atf="meta">21 h · 3 jours · valable 4 ans</p>
+    <div class="t-act">
+     <a class="btn" data-atf="cta" href="#guichet" data-formation="AFGSU 2"><span class="rd" aria-hidden="true">V</span>Réserver mon départ</a>
+     <a class="tel" data-atf="phone" href="tel:+33780912335">07 80 91 23 35<small>Wafa, ligne AFGSU</small></a>
+    </div>
+   </div>
+   <div class="hero-lede">
+    <p>Trois jours de pratique en groupe de 10 à 12 soignants pour reprendre l’urgence vitale, l’urgence potentielle et la réponse collective, sans aucun module à distance. Les départs sont confirmés à Palaiseau ; Paris, Noisy-le-Sec, Choisy-le-Roi, Houilles et Meaux ouvrent une date à la demande.</p>
+   </div>
+  </div>
+
+  <div class="mapbox" id="carte">
+   <div class="map-bar">
+    <div class="legend" aria-hidden="true"><span><b style="background:var(--red)"></b>V1</span><span><b style="background:var(--teal)"></b>V2</span><span><b style="background:var(--amber)"></b>V3 rocade</span></div>
+    <button class="pause" type="button" aria-pressed="false" id="pauseMap">Pause pouls</button>
+   </div>
+   <p class="hint">Faites glisser le plan pour voir Meaux →</p>
+   <div class="map-scroll">
+   <svg class="netmap pre" id="netmap" viewBox="0 0 820 480" role="img" aria-labelledby="mt md">
+    <title id="mt">Plan des six centres AFGSU 2 franciliens</title>
+    <desc id="md">Trois lignes relient Houilles, Paris, Noisy-le-Sec, Meaux, Choisy-le-Roi et Palaiseau, placés selon leur position géographique réelle, avec la Seine et la Marne.</desc>
+    <path class="river" d="M427.5 483.3L386.9 436.4L354.5 383.7L338.3 360.2L330.2 319.2L330.2 289.9L305.8 272.4L289.6 257.1L265.3 246.6L241 248.9L228.8 260.6L208.5 284.1L188.3 278.2L184.2 248.9L196.4 219.6L220.7 196.2L257.2 196.2L273.4 184.5L281.5 166.9L241 155.2L208.5 149.3L176.1 166.9L151.8 190.3L127.5 213.8L95 207.9L78.8 166.9L54.5 131.7"/>
+    <path class="river" d="M776.1 96.6L719.4 137.6L686.9 149.3L654.5 166.9L622.1 213.8L581.5 231.3L532.9 231.3L492.3 237.2L451.8 254.8L427.5 278.2L411.2 307.5L395 325.1L370.7 319.2L346.4 301.6L330.2 289.9"/>
+    <text class="rlab" x="386.9" y="395.4">Seine</text>
+    <text class="rlab" x="516.6" y="251.3">Marne</text>
+    <ellipse class="ring" cx="290" cy="250" rx="86" ry="47"/>
+    <text class="ringlab" x="226" y="292">PARIS INTRA-MUROS</text>
+    <g id="lines">
+     <path id="lV1" class="ln draw" stroke="var(--red)" pathLength="1" d="M160 167L242 249L344 249L379 214L637 214L719 132"/>
+     <path id="lV2" class="ln draw" stroke="var(--teal)" pathLength="1" d="M209 425L290 344L290 249"/>
+     <path id="lV3" class="ln draw" stroke="var(--amber)" pathLength="1" d="M160 167L160 376L209 425L279 425L338 366L430 366L430 265L379 214"/>
+    </g>
+    <g id="blips" aria-hidden="true"></g>
+    <circle class="conf" cx="209" cy="425" r="22" aria-hidden="true"/>
+    <g id="stationsSvg">
+     <g class="st" data-st="Houilles"><circle class="ping" cx="160" cy="167" r="12"/><circle class="hit" cx="160" cy="167" r="26"/><circle class="o" cx="160" cy="167" r="11"/><text x="146" y="152" text-anchor="end">Houilles</text></g>
+     <g class="st" data-st="Paris"><circle class="ping" cx="290" cy="249" r="12"/><circle class="hit" cx="290" cy="249" r="26"/><circle class="o" cx="290" cy="249" r="11"/><text x="306" y="238">Paris</text></g>
+     <g class="st" data-st="Noisy-le-Sec"><circle class="ping" cx="379" cy="214" r="12"/><circle class="hit" cx="379" cy="214" r="26"/><circle class="o" cx="379" cy="214" r="11"/><text x="379" y="190" text-anchor="middle">Noisy-le-Sec</text></g>
+     <g class="st" data-st="Meaux"><circle class="ping" cx="719" cy="132" r="12"/><circle class="hit" cx="719" cy="132" r="26"/><circle class="o" cx="719" cy="132" r="11"/><text x="719" y="108" text-anchor="middle">Meaux</text></g>
+     <g class="st" data-st="Choisy-le-Roi"><circle class="ping" cx="338" cy="366" r="12"/><circle class="hit" cx="338" cy="366" r="26"/><circle class="o" cx="338" cy="366" r="11"/><text x="338" y="398" text-anchor="middle">Choisy-le-Roi</text></g>
+     <g class="st" data-st="Palaiseau"><circle class="ping" cx="209" cy="425" r="12"/><circle class="hit" cx="209" cy="425" r="26"/><circle class="o" cx="209" cy="425" r="11"/><text x="244" y="452">Palaiseau</text><text class="tag" x="244" y="468">dates confirmées</text></g>
+    </g>
+    <g aria-hidden="true" transform="translate(770 420)"><path d="M0 34V0m-8 10 8-10 8 10" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="0" y="52" text-anchor="middle" class="ringlab">N</text></g>
+   </svg>
+   </div>
+   <div class="stations" role="group" aria-label="Choisir une station">
+    <button type="button" data-st="Palaiseau" aria-pressed="false"><i></i>Palaiseau</button>
+    <button type="button" data-st="Paris" aria-pressed="false"><i></i>Paris</button>
+    <button type="button" data-st="Noisy-le-Sec" aria-pressed="false"><i></i>Noisy-le-Sec</button>
+    <button type="button" data-st="Choisy-le-Roi" aria-pressed="false"><i></i>Choisy-le-Roi</button>
+    <button type="button" data-st="Houilles" aria-pressed="false"><i></i>Houilles</button>
+    <button type="button" data-st="Meaux" aria-pressed="false"><i></i>Meaux</button>
+   </div>
+   <div class="panel" id="panel" aria-live="polite">
+    <p class="empty">Touchez une station sur le plan : son adresse, ses prochains départs et la réservation s’affichent ici.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="departs" aria-labelledby="h-dep">
+ <div class="wrap">
+  <header class="sign" data-arrive><span class="code c-amber">D</span><h2 id="h-dep">Prochains départs</h2><span class="dir">Inter · 21 h</span></header>
+  <div class="split">
+   <div data-arrive>
+    <div class="board" id="board" role="region" aria-label="Tableau des sessions" tabindex="0"><noscript><p style="padding:12px">Sessions confirmées à Palaiseau : 16→18 nov., 14→16 déc. et 28→30 déc. 2026. Autres stations : appelez le 07 80 91 23 35.</p></noscript></div>
+    <p class="board-note">Toutes les sessions confirmées se tiennent au 4 allée des Garays, 91120 Palaiseau. Pour les autres stations : prochaine date sur demande — on vous rappelle sous 48 h.</p>
+   </div>
+   <div data-arrive>
+    <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires en mise en situation sur mannequin adulte" data-img="photo : binôme de stagiaires en compressions sur mannequin adulte, salle de Palaiseau" style="min-height:300px"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="parcours" aria-labelledby="h-par" style="background:var(--paper2)">
+ <div class="wrap">
+  <header class="sign" data-arrive><span class="code c-red">P</span><h2 id="h-par">Le parcours : trois modules, zéro écran</h2><span class="dir">10 h 30 + 7 h + 3 h 30</span></header>
+  <p class="lede" data-arrive>Présentiel uniquement. Ici, pas d’e-learning : la validation se joue sur vos gestes et vos décisions en mise en situation simulée, observés tout au long des trois jours.</p>
+  <div class="lines">
+   <article class="mod" style="--c:var(--red)" data-arrive>
+    <header><svg class="pg" aria-hidden="true"><use href="#pg-rcp"/></svg><div><h3>Urgences vitales</h3><span class="dur">Module 1 · 10 h 30</span></div></header>
+    <ol class="stops">
+     <li>Protection, puis alerte au 15 ou au 112</li>
+     <li>Obstruction des voies aériennes</li>
+     <li>Hémorragies</li>
+     <li>Victime inconsciente qui respire</li>
+     <li>Arrêt cardiaque : RCP et DAE</li>
+     <li>Matériel d’urgence : chariot, oxygénothérapie</li>
+    </ol>
+    <p class="note">Chaque geste est travaillé chez l’adulte, l’enfant et le nourrisson.</p>
+   </article>
+   <article class="mod" style="--c:var(--teal)" data-arrive>
+    <header><svg class="pg" aria-hidden="true"><use href="#pg-brancard"/></svg><div><h3>Urgences potentielles</h3><span class="dur">Module 2 · 7 h</span></div></header>
+    <ol class="stops">
+     <li>Malaises</li>
+     <li>Traumatismes osseux, cutanés, crâniens, du rachis</li>
+     <li>Brûlures</li>
+     <li>Immobilisation, relevage, brancardage</li>
+     <li>Accouchement inopiné</li>
+     <li>Hygiène et risque infectieux</li>
+     <li>Transmission du bilan</li>
+    </ol>
+   </article>
+   <article class="mod" style="--c:var(--amber)" data-arrive>
+    <header><svg class="pg" aria-hidden="true"><use href="#pg-o2"/></svg><div><h3>Urgences collectives &amp; SSE</h3><span class="dur">Module 3 · 3 h 30</span></div></header>
+    <ol class="stops">
+     <li>Dispositif ORSAN</li>
+     <li>Plan blanc, plan bleu</li>
+     <li>Afflux de victimes</li>
+     <li>Risques NRBC-E</li>
+     <li>Évacuation, confinement</li>
+     <li>Soutien médico-psychologique</li>
+    </ol>
+   </article>
+  </div>
+  <div class="tt" data-arrive>
+   <h3>Horaire indicatif des trois jours</h3>
+   <div class="day"><span>Jour 1</span><div class="bar"><span class="b1" style="flex:2">7 h · urgences vitales</span></div></div>
+   <div class="day"><span>Jour 2</span><div class="bar"><span class="b1" style="flex:1">3 h 30 · vitales</span><span class="b2" style="flex:1">3 h 30 · potentielles</span></div></div>
+   <div class="day"><span>Jour 3</span><div class="bar"><span class="b2" style="flex:1">3 h 30 · potentielles</span><span class="b3" style="flex:1">3 h 30 · SSE</span></div></div>
+  </div>
+ </div>
+</section>
+
+<section id="acces" aria-labelledby="h-acc">
+ <div class="wrap">
+  <header class="sign" data-arrive><span class="code c-teal">A</span><h2 id="h-acc">Accès réservé : qui monte dans cette rame ?</h2></header>
+  <div class="split">
+   <div data-arrive>
+    <p class="lede">Les professionnels de santé inscrits à la 4e partie du Code de la santé publique, ainsi que leurs étudiants :</p>
+    <ul class="chips">
+     <li>Médecins</li><li>Infirmiers</li><li>Aides-soignants</li><li>Sages-femmes</li><li>Kinésithérapeutes</li><li>Pharmaciens</li><li>Préparateurs en pharmacie</li><li>Ambulanciers</li><li>Auxiliaires de puériculture</li><li>Manipulateurs radio</li><li>Chirurgiens-dentistes</li><li>…</li>
+    </ul>
+    <p>Également admis :</p>
+    <ul class="chips soft">
+     <li>AES / AMP</li><li>Assistants de régulation médicale</li><li>Assistants médicaux</li><li>Préleveurs sanguins</li><li>Auxiliaires ambulanciers</li>
+    </ul>
+   </div>
+   <div class="img-ph" role="img" aria-label="Photo à venir : chariot d’urgence ouvert" data-img="photo : chariot d’urgence ouvert, tiroirs étiquetés, bouteille O2 fixée" style="min-height:260px" data-arrive></div>
+  </div>
+  <div class="cols" style="margin-top:34px">
+   <div class="card-plain" data-arrive><h3>Prérequis</h3><p>Faire partie du public visé, rien de plus. L’AFGSU 1 n’est pas une étape obligatoire avant le niveau 2.</p></div>
+   <div class="card-plain" data-arrive><h3>Pièces à présenter</h3><ul><li>Diplôme</li><li>Carte professionnelle</li><li>N° RPPS / ADELI ou certificat de scolarité</li><li>Pour un recyclage : l’attestation précédente</li></ul></div>
+   <div class="card-plain" data-arrive><h3>Validation &amp; cadre</h3><p>Évaluation continue, présence intégrale exigée, aucun examen final séparé. L’attestation est délivrée par le CESU, la formation étant organisée sous convention avec le CESU 93. Cadre : arrêté du 30 décembre 2014 modifié (2019, 2021). Équivalence PSC (arrêté du 23 août 2019) ; pas d’équivalence SST.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="correspondance" aria-labelledby="h-cor" style="background:var(--paper2)">
+ <div class="wrap">
+  <header class="sign" data-arrive><span class="code c-ink" style="box-shadow:inset 0 0 0 3px var(--paper)">⇄</span><h2 id="h-cor">Correspondance : AFGSU 1 ou AFGSU 2 ?</h2></header>
+  <div class="cmp-wrap" data-arrive>
+   <table class="cmp">
+    <caption class="sr">Comparatif AFGSU 1 et AFGSU 2</caption>
+    <thead><tr><th scope="col"><span class="sr">Critère</span></th><th scope="col">AFGSU 1</th><th scope="col">AFGSU 2 · notre ligne principale</th></tr></thead>
+    <tbody>
+     <tr><th scope="row">Pour qui</th><td>Personnels non soignants des structures de santé, médico-sociales ou des cabinets : accueil, secrétariat médical, administratif, logistique, technique…</td><td>Professionnels de santé de la 4e partie du CSP et leurs étudiants ; AES/AMP, ARM, assistants médicaux, préleveurs sanguins, auxiliaires ambulanciers</td></tr>
+     <tr><th scope="row">Durée</th><td>14 h · 2 jours</td><td>21 h · 3 jours</td></tr>
+     <tr><th scope="row">Objectif</th><td>Identifier une urgence vitale ou potentielle, réaliser les gestes adaptés, participer à la réponse à une urgence collective</td><td>Gestes avancés avec matériel (chariot, DAE, O2) et risques collectifs, SSE comprises</td></tr>
+     <tr><th scope="row">Validité</th><td>4 ans</td><td>4 ans, prolongés par un recyclage de 7 h</td></tr>
+     <tr><th scope="row">Tarif inter</th><td>290 € TTC</td><td><s>450 €</s> 385 € TTC</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="cmp-foot" data-arrive>
+   <a class="btn line" href="#guichet" data-formation="AFGSU 1"><span class="rd" aria-hidden="true">1</span>Orienter un collègue vers l’AFGSU 1</a>
+   <p style="margin:0;color:var(--ink2);max-width:46ch">Accueil, secrétariat, logistique : le niveau 1 leur est destiné, le niveau 2 reste réservé aux soignants.</p>
+  </div>
+ </div>
+</section>
+
+<section id="financement" aria-labelledby="h-fin">
+ <div class="wrap split">
+  <div>
+   <header class="sign" data-arrive><span class="code c-teal">€</span><h2 id="h-fin">Qui règle le billet ?</h2></header>
+   <ul class="fin" data-arrive>
+    <li><span class="code c-ink">EMP</span><div><b>Votre employeur</b>Au titre du plan de développement des compétences.</div></li>
+    <li><span class="code c-teal">OP</span><div><b>L’OPCO de votre structure</b>Selon les règles de prise en charge de votre branche.</div></li>
+    <li><span class="code c-red">FPH</span><div><b>L’ANFH</b>Pour les agents de la fonction publique hospitalière.</div></li>
+    <li><span class="code c-amber">LIB</span><div><b>Le FIF-PL</b>Pour les professionnels libéraux, sous conditions.</div></li>
+    <li><span class="code c-ink">4x</span><div><b>Vous-même</b>Avec la possibilité de régler en 4x sans frais.</div></li>
+   </ul>
+   <p class="warn" data-arrive>Côté CPF : l’AFGSU n’y est en principe pas éligible. Nous ne le promettons donc jamais.</p>
+  </div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : défibrillateur et électrodes posés sur un mannequin" data-img="photo : DAE de formation, électrodes posées sur mannequin, gros plan" style="min-height:340px" data-arrive></div>
+ </div>
+</section>
+
+<section class="intra" id="intra" aria-labelledby="h-int">
+ <div class="wrap split">
+  <div>
+   <header class="sign" data-arrive><span class="code c-amber">IN</span><h2 id="h-int">Une rame affrétée pour votre établissement</h2></header>
+   <p class="lede" data-arrive>Nous venons former vos équipes dans vos murs, partout en Île-de-France comme ailleurs en France. Groupes de 10 à 12, planning bâti autour de vos roulements, tarif sur devis.</p>
+   <ul class="places" data-arrive><li>Hôpital</li><li>Clinique</li><li>EHPAD</li><li>Cabinet</li><li>Officine</li><li>Centre de santé</li></ul>
+   <a class="btn alt" href="#guichet" data-formation="Intra" data-centre="Intra" data-arrive><span class="rd" aria-hidden="true">+</span>Affréter une session intra</a>
+  </div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : formation dans un couloir de service" data-img="photo : formatrice et équipe de nuit en simulation dans un couloir de service" style="min-height:300px" data-arrive></div>
+ </div>
+</section>
+
+<section id="recyclage" aria-labelledby="h-rec">
+ <div class="wrap">
+  <header class="sign" data-arrive><span class="code c-red">R</span><h2 id="h-rec">Dernier départ avant expiration</h2><span class="dir">Recyclage · 7 h</span></header>
+  <p class="lede" data-arrive>L’attestation tient 4 ans. Le recyclage de 7 h se suit avant l’échéance ; passé ce terminus, seul le parcours complet de 21 h permet de repartir. Le bon moment pour réserver : 3 à 6 mois avant.</p>
+  <div class="timeline" data-arrive>
+   <svg viewBox="0 0 900 150" role="img" aria-labelledby="tlt">
+    <title id="tlt">Ligne du temps : obtention, quatre ans de validité, fenêtre de recyclage de 3 à 6 mois avant l’échéance, puis expiration</title>
+    <rect x="700" y="42" width="58" height="40" rx="20" fill="var(--amber)"/>
+    <path d="M30 62H800" stroke="var(--ink)" stroke-width="10" stroke-linecap="round"/>
+    <path d="M800 62H880" stroke="var(--red)" stroke-width="10" stroke-dasharray="2 14" stroke-linecap="round"/>
+    <g fill="#fff" stroke="var(--ink)" stroke-width="5"><circle cx="30" cy="62" r="13"/><circle cx="230" cy="62" r="9"/><circle cx="420" cy="62" r="9"/><circle cx="610" cy="62" r="9"/><circle cx="800" cy="62" r="15"/></g>
+    <text class="tl-big" x="30" y="26" text-anchor="start">Obtention</text>
+    <text class="tl-text" x="230" y="104" text-anchor="middle">1 an</text><text class="tl-text" x="420" y="104" text-anchor="middle">2 ans</text><text class="tl-text" x="610" y="104" text-anchor="middle">3 ans</text>
+    <text class="tl-big" x="729" y="26" text-anchor="middle">Fenêtre conseillée : 3 à 6 mois</text>
+    <text class="tl-big" x="800" y="110" text-anchor="middle">4 ans</text>
+    <text class="tl-text" x="800" y="132" text-anchor="middle">après : 21 h à refaire</text>
+   </svg>
+  </div>
+  <div class="split" style="margin-top:20px">
+   <div data-arrive>
+    <p>Pour vous inscrire, joignez l’attestation en cours. Le tarif du recyclage vous est communiqué sur simple demande.</p>
+    <a class="btn" href="#guichet" data-formation="Recyclage AFGSU 2"><span class="rd" aria-hidden="true">7h</span>Caler mon recyclage avant l’échéance</a>
+   </div>
+   <aside class="news" data-arrive>
+    <h3>Ce qui change en 2026</h3>
+    <p>Arrêté du 20 février 2026 : une AFGSU 2 en cours de validité est exigée pour le diplôme d’État infirmier, pour les étudiants entrés en formation à la rentrée 2026.</p>
+    <p>Mars 2026 : publication des nouvelles recommandations ANCESU / SFMU.</p>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<section id="voix" aria-labelledby="h-voix" style="background:var(--paper2)">
+ <div class="wrap">
+  <header class="sign" data-arrive><span class="code c-ink">“</span><h2 id="h-voix">Carnet de bord des voyageurs</h2></header>
+  <div class="voices">
+   <figure class="voice" data-arrive style="margin:0"><p>[Avis stagiaire à insérer]</p><span>Prénom · profession · station</span></figure>
+   <figure class="voice" data-arrive style="margin:0"><p>[Avis stagiaire à insérer]</p><span>Prénom · profession · station</span></figure>
+   <figure class="voice" data-arrive style="margin:0"><p>[Avis stagiaire à insérer]</p><span>Prénom · profession · station</span></figure>
+  </div>
+ </div>
+</section>
+
+<section id="questions" aria-labelledby="h-faq">
+ <div class="wrap">
+  <header class="sign" data-arrive><span class="code c-teal">?</span><h2 id="h-faq">Au guichet, on nous demande souvent…</h2></header>
+  <div class="faq">
+   <details class="q"><summary data-faq-q>Je travaille de nuit dans un service parisien : puis-je enchaîner les trois jours après une garde ?</summary><div data-faq-a><p>C’est déconseillé. La présence est exigée sur l’intégralité des 21 heures et l’évaluation est continue : vos gestes sont observés du premier au dernier jour. Posez les trois jours ou calez-les sur une période de repos, vous en tirerez bien davantage.</p></div></details>
+   <details class="q"><summary data-faq-q>J’habite en Essonne mais j’exerce dans le Val-de-Marne : quelle station choisir ?</summary><div data-faq-a><p>Palaiseau (91) propose les seules dates déjà fixées. Choisy-le-Roi (94) peut ouvrir une session sur demande : indiquez vos disponibilités dans le formulaire et nous revenons vers vous sous 48 h.</p></div></details>
+   <details class="q"><summary data-faq-q>Les dates de Palaiseau sont-elles définitives ?</summary><div data-faq-a><p>Oui : 16→18 novembre, 14→16 décembre et 28→30 décembre 2026, au 4 allée des Garays, 91120 Palaiseau. Ce sont les trois sessions inter confirmées à ce jour.</p></div></details>
+   <details class="q"><summary data-faq-q>Comment obtenir une date à Paris, Houilles, Meaux, Noisy-le-Sec ou Choisy-le-Roi ?</summary><div data-faq-a><p>Ces stations fonctionnent sur demande. Laissez votre profession et vos créneaux possibles : Wafa vous rappelle sous 48 h avec une proposition, ou vous oriente vers Palaiseau si c’est plus rapide pour vous.</p></div></details>
+   <details class="q"><summary data-faq-q>Aide-soignante en EHPAD dans les Yvelines, suis-je concernée par le niveau 2 ?</summary><div data-faq-a><p>Oui. Les aides-soignants appartiennent au public de l’AFGSU 2, et vous pouvez y entrer directement : aucune AFGSU 1 préalable n’est demandée.</p></div></details>
+   <details class="q"><summary data-faq-q>Notre clinique de Seine-Saint-Denis veut former un service entier : comment ça se passe ?</summary><div data-faq-a><p>En intra : nous intervenons dans vos locaux, par groupes de 10 à 12, sur un planning construit avec l’encadrement. Le tarif est établi sur devis selon le nombre de groupes et vos contraintes.</p></div></details>
+   <details class="q"><summary data-faq-q>Mon attestation arrive à échéance au printemps : quand réserver le recyclage ?</summary><div data-faq-a><p>Dès l’automne précédent, idéalement. Nous conseillons de s’inscrire 3 à 6 mois avant l’échéance pour suivre les 7 heures de recyclage sans courir après une place.</p></div></details>
+   <details class="q"><summary data-faq-q>Et si la date d’expiration est déjà passée ?</summary><div data-faq-a><p>Le recyclage de 7 h n’est alors plus possible : il faut suivre à nouveau la formation complète de 21 h. Raison de plus pour noter l’échéance dès aujourd’hui.</p></div></details>
+   <details class="q"><summary data-faq-q>Étudiante en IFSI en Île-de-France, qu’est-ce que l’arrêté du 20 février 2026 change pour moi ?</summary><div data-faq-a><p>Si vous êtes entrée en formation à la rentrée 2026, une AFGSU 2 valide est exigée pour obtenir votre diplôme d’État infirmier. Votre certificat de scolarité suffit pour l’inscription.</p></div></details>
+   <details class="q"><summary data-faq-q>Qui signe l’attestation remise en fin de session ?</summary><div data-faq-a><p>Le CESU. La formation est organisée sous convention avec le CESU 93, dans le cadre de l’arrêté du 30 décembre 2014 modifié en 2019 et 2021.</p></div></details>
+   <details class="q"><summary data-faq-q>Je suis agent d’un hôpital public francilien : qui peut financer ?</summary><div data-faq-a><p>Votre établissement, via son plan de développement des compétences, avec souvent l’appui de l’ANFH, l’organisme de la fonction publique hospitalière. Le service formation saura vous dire quelle enveloppe mobiliser.</p></div></details>
+   <details class="q"><summary data-faq-q>Infirmier libéral à Paris, comment financer mes trois jours ?</summary><div data-faq-a><p>Le FIF-PL peut intervenir, sous conditions. Sinon, vous pouvez financer vous-même et régler en 4x sans frais. Le CPF, lui, n’est en principe pas mobilisable pour l’AFGSU.</p></div></details>
+   <details class="q"><summary data-faq-q>L’AFGSU 2 couvre-t-elle aussi le SST demandé dans mon cabinet ?</summary><div data-faq-a><p>Non. Elle ouvre l’équivalence PSC (arrêté du 23 août 2019), mais elle n’est pas équivalente au SST, qui relève d’un autre dispositif.</p></div></details>
+   <details class="q"><summary data-faq-q>Notre secrétaire médicale à Meaux voudrait se former aussi : laquelle choisir ?</summary><div data-faq-a><p>L’AFGSU 1 : 14 heures sur 2 jours, 290 € TTC, valable 4 ans. Elle s’adresse justement aux personnels non soignants des cabinets et des structures de santé.</p></div></details>
+  </div>
+ </div>
+</section>
+
+<section id="guichet" aria-labelledby="h-gui" style="background:var(--paper2)">
+ <div class="wrap">
+  <header class="sign" data-arrive><span class="code c-amber">G</span><h2 id="h-gui">Guichet de réservation</h2><span class="dir">Réponse sous 48 h</span></header>
+  <div class="guichet">
+   <div data-arrive>
+    <p class="lede">Une demande, une station, et Wafa confirme avec vous la date, le financement et les pièces à préparer.</p>
+    <p class="mono" style="font-size:.95rem">Ligne AFGSU directe<br><a class="tel" href="tel:+33780912335">07 80 91 23 35</a></p>
+    <svg viewBox="0 0 300 120" width="300" aria-hidden="true" style="margin-top:20px;max-width:100%"><path d="M0 70h70l12-34 16 64 12-46 9 16h181" fill="none" stroke="var(--red)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="70" cy="70" r="9" fill="#fff" stroke="var(--ink)" stroke-width="4"/><circle cx="210" cy="70" r="9" fill="#fff" stroke="var(--ink)" stroke-width="4"/></svg>
+   </div>
+   <div data-arrive>
+    <!-- TODO : brancher l'envoi du formulaire (endpoint CRM / e-mail). action="#" volontairement neutre. -->
+    <form action="#" method="post" data-lead id="lead">
+     <input type="hidden" name="formation" value="AFGSU 2">
+     <div class="fg">
+      <div class="full"><label for="f-nom">Nom &amp; prénom</label><input id="f-nom" name="nom" autocomplete="name" required aria-errormessage="e-nom"><p class="err" id="e-nom">Indiquez vos nom et prénom.</p></div>
+      <div><label for="f-tel">Téléphone</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="e-tel"><p class="err" id="e-tel">Format attendu : 06 12 34 56 78.</p></div>
+      <div><label for="f-mail">Email</label><input id="f-mail" name="email" type="email" autocomplete="email" required aria-errormessage="e-mail"><p class="err" id="e-mail">Adresse e-mail incomplète.</p></div>
+      <div><label for="f-pro">Profession</label><select id="f-pro" name="profession" required aria-errormessage="e-pro"><option value="">Sélectionner…</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="e-pro">Choisissez votre profession.</p></div>
+      <div><label for="f-centre">Centre / ville</label><select id="f-centre" name="centre" required aria-errormessage="e-centre"><option value="">Sélectionner…</option><option value="Palaiseau">Palaiseau (91) · dates confirmées</option><option value="Paris">Paris (75)</option><option value="Noisy-le-Sec">Noisy-le-Sec (93)</option><option value="Choisy-le-Roi">Choisy-le-Roi (94)</option><option value="Houilles">Houilles (78)</option><option value="Meaux">Meaux (77)</option><option value="Intra">Intra · dans mon établissement</option></select><p class="err" id="e-centre">Choisissez une station.</p></div>
+      <div class="full"><label for="f-msg">Message (facultatif)</label><textarea id="f-msg" name="message" placeholder="Disponibilités, financement envisagé, nombre de collègues…"></textarea></div>
+      <div class="full chk"><input type="checkbox" id="f-rgpd" name="rgpd" required><label for="f-rgpd">J’autorise Ligne Vitale à utiliser ces coordonnées uniquement pour traiter ma demande de formation et me recontacter. <a href="#">Confidentialité</a></label></div>
+      <div class="full"><button class="btn" type="submit"><span class="rd" aria-hidden="true">OK</span>Envoyer ma demande au guichet</button></div>
+     </div>
+    </form>
+    <div class="ok-box" data-success hidden tabindex="-1">
+     <p class="stub">Demande émise · Ligne Vitale</p>
+     <h3>C’est noté, votre trajet est en préparation.</h3>
+     <p>Wafa vous recontacte pour confirmer la station, la date et les pièces à apporter. Besoin d’aller plus vite ? <a class="tel" href="tel:+33780912335">07 80 91 23 35</a></p>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="final" aria-labelledby="h-fin2">
+ <div class="wrap">
+  <div>
+   <h2 id="h-fin2">Prochain arrêt : votre attestation AFGSU 2.</h2>
+   <p class="lede" style="margin-top:12px">385 € TTC au lieu de 450 €, 21 heures, et quatre ans de gestes à jour.</p>
+   <a class="btn alt" href="#guichet" data-formation="AFGSU 2"><span class="rd" aria-hidden="true">→</span>Composter mon inscription</a>
+  </div>
+  <svg viewBox="0 0 520 120" aria-hidden="true"><path d="M10 60h120l14-40 18 80 14-56 10 16h120" fill="none" stroke="var(--teal)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M306 60h204" stroke="var(--teal)" stroke-width="9" stroke-linecap="round"/><g fill="#fff" stroke="var(--ink)" stroke-width="5"><circle cx="10" cy="60" r="10"/><circle cx="306" cy="60" r="10"/><circle cx="505" cy="60" r="14"/></g></svg>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span>© 2026 Ligne Vitale by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Informations légales"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+ </div>
+</footer>
+
+<div class="sticky" data-sticky>
+ <a class="s-call" href="tel:+33780912335">Appeler</a>
+ <a class="s-book" href="#guichet" data-formation="AFGSU 2">Prendre la ligne</a>
+</div>
+
+<script>
+/* ===== SESSIONS : seule source à modifier (dates ISO début/fin) ===== */
+const SESSIONS = [
+  { ville: "Palaiseau",     dept: "91", nom: "Essonne",           adresse: "4 allée des Garays, 91120 Palaiseau", lignes: "V2 · V3", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] },
+  { ville: "Paris",         dept: "75", nom: "Paris",             adresse: "", lignes: "V1 · V2", dates: [] },
+  { ville: "Noisy-le-Sec",  dept: "93", nom: "Seine-Saint-Denis", adresse: "", lignes: "V1 · V3", dates: [] },
+  { ville: "Choisy-le-Roi", dept: "94", nom: "Val-de-Marne",      adresse: "", lignes: "V3",      dates: [] },
+  { ville: "Houilles",      dept: "78", nom: "Yvelines",          adresse: "", lignes: "V1 · V3", dates: [] },
+  { ville: "Meaux",         dept: "77", nom: "Seine-et-Marne",    adresse: "", lignes: "V1",      dates: [] }
+];
+const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+/* ==================================================================== */
+(() => {
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const MOIS = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+  const today = new Date(); today.setHours(0,0,0,0);
+  const parse = s => { const [y,m,d] = s.split('-').map(Number); return new Date(y, m-1, d); };
+  const futur = st => st.dates.filter(([, b]) => parse(b) >= today);
+  const range = ([a, b]) => { const A = parse(a), B = parse(b); return A.getMonth() === B.getMonth() ? `${A.getDate()} → ${B.getDate()} ${MOIS[B.getMonth()]} ${B.getFullYear()}` : `${A.getDate()} ${MOIS[A.getMonth()]} → ${B.getDate()} ${MOIS[B.getMonth()]} ${B.getFullYear()}`; };
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const form = $('#lead');
+
+  /* préremplissage depuis les CTA */
+  const preset = (centre, formation) => {
+    if (formation) form.elements.formation.value = formation;
+    if (centre && [...form.elements.centre.options].some(o => o.value === centre)) form.elements.centre.value = centre;
+  };
+  document.addEventListener('click', e => { const a = e.target.closest('a[data-formation],a[data-centre]'); if (a) preset(a.dataset.centre, a.dataset.formation); });
+
+  /* tableau des départs */
+  const board = $('#board');
+  const rows = [];
+  SESSIONS.forEach(s => futur(s).forEach(d => rows.push({ s, d, k: d[0] })));
+  rows.sort((a, b) => a.k.localeCompare(b.k));
+  let html = '<table><thead><tr><th scope="col">Dates</th><th scope="col">Station</th><th scope="col">Format</th><th scope="col">État</th><th scope="col"><span class="sr">Action</span></th></tr></thead><tbody>';
+  rows.forEach(r => { html += `<tr><td class="fl">${range(r.d)}</td><td class="fl">${r.s.ville.toUpperCase()} ${r.s.dept}</td><td>Inter · 21 h</td><td class="ok">Confirmé</td><td><a href="#guichet" data-centre="${r.s.ville}" data-formation="AFGSU 2">Réserver</a></td></tr>`; });
+  SESSIONS.filter(s => !futur(s).length).forEach(s => { html += `<tr><td>—</td><td class="fl">${s.ville.toUpperCase()} ${s.dept}</td><td>Inter · 21 h</td><td class="ask">Sur demande</td><td><a href="#guichet" data-centre="${s.ville}" data-formation="AFGSU 2">Demander</a></td></tr>`; });
+  board.innerHTML = html + '</tbody></table>';
+
+  /* panneau station */
+  const panel = $('#panel');
+  const pick = name => {
+    const s = SESSIONS.find(x => x.ville === name); if (!s) return;
+    $$('.st').forEach(g => g.classList.toggle('on', g.dataset.st === name));
+    $$('.stations button').forEach(b => b.setAttribute('aria-pressed', b.dataset.st === name));
+    const f = futur(s);
+    panel.innerHTML = `<h3>${s.ville} · ${s.nom} (${s.dept})</h3><p class="pl">Lignes ${s.lignes} — ${s.adresse || 'lieu exact précisé à la confirmation de la session'}</p>` +
+      (f.length ? `<ul>${f.map(d => `<li>${range(d)} · inter · 21 h</li>`).join('')}</ul>` : `<p class="empty" style="margin-bottom:14px">${SUR_DEMANDE}</p>`) +
+      `<a class="btn" href="#guichet" data-centre="${s.ville}" data-formation="AFGSU 2"><span class="rd" aria-hidden="true">V</span>Réserver à cette station</a>`;
+  };
+  $$('.st').forEach(g => g.addEventListener('click', () => pick(g.dataset.st)));
+  $$('.stations button').forEach(b => b.addEventListener('click', () => pick(b.dataset.st)));
+
+  /* apparitions */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
+  $$('[data-arrive]').forEach(el => io.observe(el));
+
+  /* tracé des lignes + pouls ECG */
+  const map = $('#netmap');
+  requestAnimationFrame(() => map.classList.remove('pre'));
+  const NS = 'http://www.w3.org/2000/svg', blipsG = $('#blips');
+  const SHAPE = 'M-18 0h8l3-9 4 17 3-13 2 5h16';
+  const blips = $$('#lines path').map((p, i) => {
+    const g = document.createElementNS(NS, 'g'); g.setAttribute('class', 'blip');
+    g.innerHTML = `<path class="b0" d="${SHAPE}"/><path class="b1" d="${SHAPE}"/>`; blipsG.append(g);
+    return { p, g, L: p.getTotalLength(), s: i * 140, dir: 1 };
+  });
+  const stPts = $$('.st').map(g => { const c = $('.o', g); return { x: +c.getAttribute('cx'), y: +c.getAttribute('cy'), ping: $('.ping', g), last: 0 }; });
+  let running = !RM, visible = true, prev = 0;
+  const place = b => { const pt = b.p.getPointAtLength(b.s), q = b.p.getPointAtLength(Math.min(b.L, Math.max(0, b.s + b.dir))); const a = Math.atan2(q.y - pt.y, q.x - pt.x) * 57.3; b.g.setAttribute('transform', `translate(${pt.x.toFixed(1)} ${pt.y.toFixed(1)}) rotate(${a.toFixed(1)})`); return pt; };
+  const tick = t => {
+    const dt = prev ? Math.min(60, t - prev) : 16; prev = t;
+    blips.forEach(b => {
+      b.s += b.dir * dt * 0.11; if (b.s >= b.L) { b.s = b.L; b.dir = -1; } else if (b.s <= 0) { b.s = 0; b.dir = 1; }
+      const pt = place(b);
+      stPts.forEach(st => { if (Math.hypot(st.x - pt.x, st.y - pt.y) < 6 && t - st.last > 900) { st.last = t; st.ping.classList.remove('go'); void st.ping.getBBox(); st.ping.classList.add('go'); } });
+    });
+    if (running && visible) requestAnimationFrame(tick); else prev = 0;
+  };
+  const btn = $('#pauseMap');
+  if (RM) { blipsG.style.display = 'none'; btn.hidden = true; }
+  else {
+    blips.forEach(place);
+    new IntersectionObserver(([e]) => { const was = visible; visible = e.isIntersecting; if (visible && !was && running) requestAnimationFrame(tick); }).observe(map);
+    btn.addEventListener('click', () => { running = !running; btn.setAttribute('aria-pressed', !running); btn.textContent = running ? 'Pause pouls' : 'Relancer le pouls'; if (running) requestAnimationFrame(tick); });
+    requestAnimationFrame(tick);
+  }
+
+  /* volets du tableau (effet palettes) */
+  if (!RM) {
+    const CH = 'ABCDEFGHIJKLMNOPRSTUVYZ0123456789';
+    const flap = () => $$('.fl', board).forEach((td, i) => { const txt = td.textContent; let n = 0; const id = setInterval(() => { n++; td.textContent = n > 8 + i % 4 ? txt : txt.replace(/[^\s→·]/g, () => CH[Math.random() * CH.length | 0]); if (n > 8 + i % 4) clearInterval(id); }, 45); });
+    const bo = new IntersectionObserver(([e]) => { if (e.isIntersecting) { flap(); bo.disconnect(); } }, { threshold: .4 }); bo.observe(board);
+  }
+
+  /* formulaire */
+  const sync = el => el.matches && el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
+  form.addEventListener('blur', e => sync(e.target), true);
+  form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    // TODO : envoyer les données (fetch POST vers l'endpoint retenu) avant d'afficher la confirmation.
+    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+  });
+})();
+</script>
+</body>
+</html>
