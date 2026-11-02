@@ -1,0 +1,576 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AFGSU 2 Centre-Val de Loire · Orléans, Tours, Bourges · 21 h | Carnet de Gestes</title>
+<meta name="description" content="AFGSU 2 en Centre-Val de Loire : 21 h en présentiel sur 3 jours, 385 € TTC au lieu de 450 €, valable 4 ans. Centres d’Orléans, Tours et Bourges, intra possible. Trouvez votre financement et cochez les pièces à fournir.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Carnet de Gestes">
+<meta property="og:title" content="Carnet de Gestes · AFGSU 2 en Centre-Val de Loire">
+<meta property="og:description" content="Le carnet d’une formatrice : programme, financement selon votre statut, liste des pièces à cocher. Orléans, Tours, Bourges.">
+<!-- TODO og:image : visuel 1200×630 (carnet ouvert, croquis au crayon, surligneur) depuis la médiathèque -->
+<meta name="theme-color" content="#2B4C9B">
+<!-- PLACEHOLDER favicon : carnet à spirale avec trait jaune, 32×32 et 180×180 (médiathèque) -->
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Libre+Franklin:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{--paper:#FBF8F1;--graph:#2C2C2C;--ink:#2B4C9B;--hi:#FFE36E;--soft:#5E5E5E;--dot:#d9d3c4;--l:"Lora",Georgia,serif;--f:"Libre Franklin",system-ui,sans-serif;--c:"Caveat",cursive}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#EFEAE0;color:var(--graph);font:400 1.05rem/1.65 var(--f)}
+a{color:inherit}
+h1,h2,h3{font-family:var(--l);font-weight:700;line-height:1.12;margin:0}
+p{margin:0 0 1em}
+.sr{position:absolute;left:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px dashed var(--ink);outline-offset:4px}
+.skip{position:absolute;left:12px;top:-70px;background:var(--ink);color:#fff;padding:10px 14px;z-index:90}
+.skip:focus{top:12px}
+.note{font-family:var(--c);font-weight:500;color:var(--ink);font-size:1.45rem;line-height:1.15}
+.hl{background:linear-gradient(100deg,transparent 0 2%,var(--hi) 2% 97%,transparent 97%) 0 70%/0% 62% no-repeat;padding:0 .12em;transition:background-size .9s cubic-bezier(.6,.1,.3,1)}
+.hl.in,.no-js .hl{background-size:100% 62%}
+.notebook{max-width:1200px;margin:0 auto;overflow-x:clip;background:var(--paper) radial-gradient(var(--dot) 1px,transparent 1.4px) 0 0/22px 22px;box-shadow:0 2px 0 #e2dccf,0 30px 50px -40px rgba(0,0,0,.35);position:relative}
+.notebook::before{content:"";position:absolute;top:0;bottom:0;left:52px;border-left:2px solid rgba(43,76,155,.35)}
+@media (min-width:1000px){.notebook::after{content:"";position:absolute;top:0;bottom:0;left:50%;width:40px;margin-left:-20px;background:linear-gradient(90deg,transparent,rgba(0,0,0,.05) 45%,rgba(0,0,0,.09) 50%,rgba(0,0,0,.05) 55%,transparent);pointer-events:none}}
+.pg{padding:0 18px 0 70px;position:relative}
+@media (min-width:1000px){.pg{padding:0 50px 0 90px}}
+.img-ph{position:relative;min-height:200px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 20px -14px rgba(0,0,0,.4);transform:rotate(-1.2deg);display:flex;align-items:flex-end;padding:12px 12px 40px}
+.img-ph::before{content:"";position:absolute;top:-12px;left:50%;width:90px;height:24px;margin-left:-45px;background:rgba(255,227,110,.75);transform:rotate(2deg)}
+.img-ph::after{content:"photo à coller : " attr(data-img);font:500 1.3rem/1.15 var(--c);color:var(--soft)}
+.logo-ph{width:30px;height:36px;min-height:0;padding:0;transform:none;border:2px solid var(--graph);border-radius:3px;background:var(--paper);box-shadow:none;flex:none}
+.logo-ph::before,.logo-ph::after{display:none}
+/* header */
+.top{position:sticky;top:0;z-index:50;background:#EFEAE0;border-bottom:1px solid #d8d1c2}
+.top .in{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px;height:58px;padding:0 18px}
+.brand{display:flex;align-items:center;gap:10px;font:700 1.2rem var(--l);text-decoration:none}
+.top nav{display:none;gap:20px;margin-left:auto;font:500 .95rem var(--f)}
+.top nav a{text-decoration:none;background:linear-gradient(var(--hi),var(--hi)) 0 85%/0 40% no-repeat;transition:background-size .3s}
+.top nav a:hover{background-size:100% 40%}
+.top .tel{margin-left:auto;font:700 1rem var(--f);text-decoration:none;color:var(--ink);white-space:nowrap}
+@media (min-width:980px){.top nav{display:flex}.top .tel{margin-left:22px}}
+/* sketch CTA */
+.sk{display:inline-flex;align-items:center;gap:10px;font:700 1.02rem var(--f);text-decoration:none;color:var(--graph);background:linear-gradient(100deg,var(--hi),var(--hi)) 0 0/0% 100% no-repeat,#fff;border:2px solid var(--graph);border-radius:255px 18px 225px 16px/16px 225px 18px 255px;padding:13px 24px;cursor:pointer;transition:background-size .45s cubic-bezier(.6,.1,.3,1),transform .3s}
+.sk:hover{background-size:100% 100%,auto;transform:rotate(-.6deg)}
+.sk.pri{background:linear-gradient(100deg,var(--hi),var(--hi)) 0 0/100% 100% no-repeat}
+.sk.pri:hover{background:linear-gradient(100deg,#ffd93a,#ffd93a) 0 0/100% 100% no-repeat}
+.sk.ink{border-color:var(--ink);color:var(--ink)}
+.sk svg{width:22px;height:14px}
+.pnum{position:absolute;right:20px;top:18px;font:500 1.3rem var(--c);color:var(--soft)}
+/* hero */
+.hero{padding:22px 0 34px}
+.hgrid{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media (min-width:1000px){.hgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px}.hero{padding:50px 0 60px}}
+.date-line{font:500 1.35rem var(--c);color:var(--soft);margin-bottom:4px}
+.hero h1{font-size:clamp(1.9rem,5.4vw,3.6rem)}
+.pricebox{position:relative;margin:16px 0 8px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
+.pricebox s{font:600 1.25rem var(--l);color:var(--soft);text-decoration:none;position:relative}
+.pricebox s::after{content:"";position:absolute;left:-4px;right:-4px;top:50%;height:3px;background:var(--ink);transform:rotate(-8deg);border-radius:2px}
+.pricebox strong{font:700 2.5rem/1 var(--l)}
+.pricebox .note{font-size:1.25rem}
+.metaln{font:700 1rem var(--f);margin:6px 0 14px}
+.hacts{display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+.tel-n{text-decoration:none;font:700 1.15rem var(--f);color:var(--ink)}
+.tel-n span{display:block;font:500 1.2rem var(--c);color:var(--soft)}
+.hero .lead-p{font:500 1.12rem/1.6 var(--l);color:var(--soft);max-width:48ch;margin-top:18px}
+.sketch{width:100%;height:auto;display:block}
+.sketch path,.sketch circle,.sketch rect,.sketch ellipse{fill:none;stroke:var(--graph);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.sketch .b{stroke:var(--ink)}
+.sketch .h{stroke:var(--hi);stroke-width:14;opacity:.85}
+.sketch .ghost{stroke-width:.9;opacity:.55}
+.js .sketch.drw path,.js .sketch.drw circle,.js .sketch.drw ellipse,.js .sketch.drw rect{stroke-dasharray:1;stroke-dashoffset:1}
+.sketch.drw.in path,.sketch.drw.in circle,.sketch.drw.in ellipse,.sketch.drw.in rect{stroke-dashoffset:0;transition:stroke-dashoffset 2.4s ease-in-out}
+.marg{position:relative}
+.marg .note{display:block;transform:rotate(-2deg)}
+/* sections */
+.sec{padding:56px 0;border-top:1px dashed #cfc7b6;position:relative}
+.sh{margin-bottom:26px;max-width:760px}
+.sh .note{display:block;margin-bottom:6px}
+.sh h2{font-size:clamp(1.75rem,4.2vw,2.7rem)}
+.sh p{color:var(--soft);margin-top:10px}
+.spread{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+@media (min-width:1000px){.spread{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:80px}}
+/* map + agenda */
+.cmap{width:100%;height:auto;display:block;max-width:520px}
+.cmap .reg{fill:none;stroke:var(--graph);stroke-width:1.8;stroke-linejoin:round}
+.cmap .reg2{fill:none;stroke:var(--graph);stroke-width:.8;opacity:.5;stroke-linejoin:round}
+.cmap .loire{fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round}
+.cmap .circ{fill:none;stroke:var(--hi);stroke-width:10;opacity:.9}
+.cmap .dot{fill:var(--graph)}
+.cmap .od{fill:#fff;stroke:var(--graph);stroke-width:1.5}
+.cmap .lab{font:700 30px var(--c);fill:var(--graph)}
+.cmap .sm{font:500 21px var(--c);fill:var(--soft)}
+.cmap .riv{font:500 22px var(--c);fill:var(--ink)}
+.js .cmap.pre .reg,.js .cmap.pre .reg2,.js .cmap.pre .loire{stroke-dasharray:1;stroke-dashoffset:1}
+.cmap .reg,.cmap .reg2,.cmap .loire{transition:stroke-dashoffset 2.6s ease-in-out}
+.js .cmap.pre .circ{stroke-dasharray:1;stroke-dashoffset:1}
+.cmap .circ{transition:stroke-dashoffset .8s ease calc(2s + var(--i) * .35s)}
+.agenda{list-style:none;margin:0;padding:0}
+.agenda li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 12px;padding:14px 0;border-bottom:1px solid #d8d1c2;align-items:baseline}
+.agenda b{font:700 1.4rem var(--l)}
+.agenda b small{font:500 1.2rem var(--c);color:var(--soft);margin-left:6px}
+.agenda span{grid-column:1/-1;color:var(--soft);font-size:.98rem}
+.agenda a{grid-row:1;grid-column:2;font:700 1.35rem var(--c);color:var(--ink)}
+.postit{background:var(--hi);padding:16px 18px;transform:rotate(1.5deg);box-shadow:0 10px 18px -12px rgba(0,0,0,.45);margin-top:22px;max-width:380px}
+.postit p{margin:0;font:500 1.3rem/1.2 var(--c);color:var(--graph)}
+/* programme */
+.mods{display:grid;grid-template-columns:minmax(0,1fr);gap:32px}
+@media (min-width:1000px){.mods{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}}
+.mod h3{font-size:1.45rem;margin-bottom:4px}
+.mod .hrs{font:700 1.5rem var(--c);color:var(--ink)}
+.mod ul{list-style:none;margin:10px 0 0;padding:0}
+.mod li{padding:4px 0 4px 26px;position:relative}
+.mod li::before{content:"";position:absolute;left:4px;top:13px;width:12px;height:2px;background:var(--graph);transform:rotate(-8deg)}
+.mod .sketch{max-width:240px;margin-bottom:10px}
+.mod .note{font-size:1.25rem;display:block;margin-top:8px;transform:rotate(-1.5deg)}
+.days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px;text-align:center}
+.days div{border:2px solid var(--graph);border-radius:12px 40px 14px 38px/38px 14px 40px 12px;padding:12px 8px}
+.days b{display:block;font:700 1.5rem var(--c);color:var(--ink)}
+.days span{font-size:.92rem}
+/* finder */
+.finder{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+@media (min-width:1000px){.finder{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:70px}}
+.status{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;padding:0;border:0}
+.status legend{font:700 1.05rem var(--l);margin-bottom:10px;padding:0}
+.status label{position:relative;cursor:pointer}
+.status input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.status span{display:inline-block;padding:9px 14px;border:2px solid var(--graph);border-radius:20px 6px 22px 8px/8px 22px 6px 20px;font:500 .98rem var(--f);background:#fff;transition:background .25s}
+.status input:checked+span{background:var(--hi);font-weight:700}
+.status input:focus-visible+span{outline:2px dashed var(--ink);outline-offset:3px}
+.route{background:#fff;border:1px solid #d8d1c2;padding:18px;box-shadow:0 14px 26px -22px rgba(0,0,0,.5);position:relative;min-height:170px}
+.route::before{content:"";position:absolute;top:-10px;left:24px;width:70px;height:20px;background:rgba(43,76,155,.18);transform:rotate(-3deg)}
+.route h3{font-size:1.3rem;margin-bottom:6px}
+.route ol{margin:8px 0 0;padding-left:22px}
+.route .note{font-size:1.25rem;display:block;margin-top:10px}
+.checklist{list-style:none;margin:0;padding:0}
+.checklist li{border-bottom:1px solid #d8d1c2}
+.checklist label{display:flex;gap:12px;align-items:flex-start;padding:10px 0;cursor:pointer}
+.checklist input{appearance:none;-webkit-appearance:none;width:24px;height:24px;flex:none;border:2px solid var(--graph);border-radius:4px 7px 5px 6px;background:#fff;margin:2px 0 0;cursor:pointer;display:grid;place-items:center}
+.checklist input::after{content:"";width:14px;height:8px;border-left:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(-45deg) scale(0);transform-origin:center;margin-top:-4px;transition:transform .2s}
+.checklist input:checked::after{transform:rotate(-45deg) scale(1)}
+.checklist input:checked+span{text-decoration:line-through;text-decoration-color:var(--ink);color:var(--soft)}
+.checklist small{display:block;color:var(--soft);font-size:.85rem}
+.bar{height:16px;border:2px solid var(--graph);border-radius:10px 4px 9px 5px;margin:16px 0 6px;background:#fff;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--hi);transition:width .4s}
+.recy{display:flex;gap:10px;align-items:center;margin:4px 0 12px;font-size:.95rem}
+.recy input{width:20px;height:20px;accent-color:var(--ink)}
+.done{display:none;margin-top:14px}
+.done.on{display:block}
+/* comparison */
+.vs{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;position:relative}
+@media (min-width:900px){.vs{grid-template-columns:minmax(0,1fr) 70px minmax(0,1fr)}}
+.vs .col{padding:4px 0}
+.vs h3{font-size:1.8rem}
+.vs .pr{font:700 1.6rem var(--c);color:var(--ink);margin:4px 0 10px}
+.vs dl{margin:0}
+.vs dt{font:700 .78rem var(--f);text-transform:uppercase;letter-spacing:.08em;color:var(--soft);margin-top:10px}
+.vs dd{margin:2px 0 0}
+.vs .mid{display:grid;place-items:center}
+.vs .mid span{font:700 2rem var(--c);width:64px;height:64px;display:grid;place-items:center;border:2px solid var(--graph);border-radius:46% 54% 50% 50%/52% 46% 54% 48%;background:#fff}
+/* public */
+.who{columns:1;column-gap:30px;margin:0;padding:0;list-style:none}
+@media (min-width:700px){.who{columns:2}}
+.who li{padding:5px 0;break-inside:avoid;border-bottom:1px dotted #cfc7b6}
+.pin{background:#fff;border:1px solid #d8d1c2;padding:16px 18px;transform:rotate(-.8deg);margin-bottom:16px}
+.pin h3{font-size:1.15rem;margin-bottom:6px}
+/* recyclage calendar */
+.cal4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:20px 0}
+.cal4 div{border:2px solid var(--graph);border-radius:6px 10px 7px 12px;padding:10px 8px;text-align:center;background:#fff;position:relative}
+.cal4 b{display:block;font:700 1.6rem var(--c)}
+.cal4 .last{background:linear-gradient(100deg,transparent 40%,var(--hi) 40%)}
+.cal4 .last::after{content:"recyclage ici !";position:absolute;left:50%;top:100%;transform:translateX(-50%) rotate(-3deg);font:700 1.25rem var(--c);color:var(--ink);white-space:nowrap;margin-top:4px}
+/* fin, intra */
+.fin{list-style:none;margin:0;padding:0;counter-reset:f}
+.fin li{counter-increment:f;padding:10px 0 10px 40px;position:relative;border-bottom:1px solid #d8d1c2}
+.fin li::before{content:counter(f);position:absolute;left:0;top:4px;font:700 1.8rem var(--c);color:var(--ink)}
+/* voices + faq */
+.voices{display:grid;grid-template-columns:minmax(0,1fr);gap:20px}
+@media (min-width:860px){.voices{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.voices figure{margin:0;background:#fff;padding:16px;border:1px solid #d8d1c2;transform:rotate(var(--r,-1deg))}
+.voices blockquote{margin:0;font:500 1.15rem/1.4 var(--l)}
+.voices figcaption{font:500 1.2rem var(--c);color:var(--soft);margin-top:8px}
+.faq details{border-bottom:1px solid #d8d1c2}
+.faq summary{list-style:none;cursor:pointer;padding:16px 40px 16px 0;font:600 1.1rem/1.4 var(--l);position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:6px;font:700 2rem var(--c);color:var(--ink);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details div{padding:0 0 16px;color:var(--soft);max-width:76ch}
+.faq details div p{margin:0}
+/* form */
+.lead{display:grid;grid-template-columns:minmax(0,1fr);gap:18px}
+@media (min-width:640px){.lead{grid-template-columns:repeat(2,minmax(0,1fr))}.lead .full{grid-column:1/-1}}
+.lead label{display:block;font:700 .92rem var(--f);margin-bottom:4px}
+.lead input,.lead select,.lead textarea{width:100%;font:500 1.05rem var(--f);color:var(--graph);background:transparent;border:0;border-bottom:2px solid var(--graph);padding:8px 2px;border-radius:0}
+.lead select{background:#fff;border:2px solid var(--graph);border-radius:8px 3px 9px 4px;padding:9px}
+.lead textarea{border:2px solid var(--graph);border-radius:8px 3px 9px 4px;min-height:96px;padding:10px;background:#fff}
+.lead input:user-invalid,.lead select:user-invalid{border-color:#a8281f;background:rgba(255,227,110,.35)}
+.lead .err{display:none;font:700 1.2rem var(--c);color:#a8281f;margin:2px 0 0}
+.lead input:user-invalid~.err,.lead select:user-invalid~.err{display:block}
+.lead .chk{display:flex;gap:12px;align-items:flex-start}
+.lead .chk input{width:22px;height:22px;flex:none;accent-color:var(--ink);margin-top:3px}
+.lead .chk label{font:400 .95rem/1.5 var(--f)}
+.ok{background:#fff;padding:24px;border:1px solid #d8d1c2;transform:rotate(-.6deg)}
+.ok .note{font-size:2.2rem;display:block}
+/* final, footer, sticky */
+.final{padding:60px 0 70px;border-top:1px dashed #cfc7b6}
+.final h2{font-size:clamp(1.9rem,5vw,3.2rem);max-width:20ch}
+.final .hacts{margin-top:22px}
+footer{max-width:1200px;margin:0 auto;padding:24px 18px 100px;font-size:.9rem;color:var(--soft);display:flex;flex-wrap:wrap;gap:12px 26px}
+footer nav{display:flex;gap:16px}
+@media (min-width:760px){footer{padding-bottom:24px}}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:8px;padding:8px 10px;background:#EFEAE0;border-top:1px solid #d8d1c2}
+.sticky a{display:flex;align-items:center;justify-content:center;min-height:46px;font:700 1rem var(--f);text-decoration:none;border:2px solid var(--graph);border-radius:180px 14px 160px 12px/12px 160px 14px 180px;background:#fff}
+.sticky .b{background:var(--hi)}
+@media (min-width:760px){.sticky{display:none}}
+/* reveal: jotted */
+.js [data-jot]{opacity:0;transform:translateY(12px)}
+.js [data-jot].in{opacity:1;transform:none;transition:opacity .6s ease,transform .7s ease}
+@media (prefers-reduced-motion:reduce){.js [data-jot],.js [data-jot].in{opacity:1;transform:none;transition:none}.hl{background-size:100% 62%;transition:none}.js .sketch.drw path,.js .sketch.drw circle,.js .sketch.drw ellipse,.js .sketch.drw rect{stroke-dashoffset:0}.sketch.drw.in path,.sketch.drw.in circle,.sketch.drw.in ellipse,.sketch.drw.in rect{transition:none}.js .cmap.pre .reg,.js .cmap.pre .reg2,.js .cmap.pre .loire,.js .cmap.pre .circ{stroke-dashoffset:0}.cmap .reg,.cmap .reg2,.cmap .loire,.cmap .circ,.sk,.bar i,.checklist input::after,.faq summary::after,.top nav a{transition:none}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"EducationalOrganization","@id":"#org","name":"Carnet de Gestes","description":"Formation aux gestes et soins d’urgence en Centre-Val de Loire : AFGSU 2, AFGSU 1 et recyclage, en inter à Orléans, Tours et Bourges ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Centre-Val de Loire"},"location":[
+{"@type":"Place","name":"Carnet de Gestes · Orléans","address":{"@type":"PostalAddress","addressLocality":"Orléans","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.90,"longitude":1.91}},
+{"@type":"Place","name":"Carnet de Gestes · Tours","address":{"@type":"PostalAddress","addressLocality":"Tours","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.39,"longitude":0.69}},
+{"@type":"Place","name":"Carnet de Gestes · Bourges","address":{"@type":"PostalAddress","addressLocality":"Bourges","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.08,"longitude":2.40}}]},
+{"@type":"Course","name":"AFGSU 2 · Centre-Val de Loire","description":"Formation aux gestes et soins d’urgence de niveau 2 : 21 heures en présentiel sur 3 jours, trois modules, évaluation continue, attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
+"offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Orléans, Tours ou Bourges (dates sur demande)"}}}
+]}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le carnet de financement remplace-t-il l’avis de mon service formation ?","acceptedAnswer":{"@type":"Answer","text":"Non, c’est une orientation. La décision de prise en charge revient toujours au financeur : employeur, OPCO, ANFH ou FIF-PL."}},{"@type":"Question","name":"Qui monte le dossier de prise en charge : moi ou mon employeur ?","acceptedAnswer":{"@type":"Answer","text":"Lorsque l’employeur finance, c’est le plus souvent lui, ou son service formation, qui engage la démarche. En libéral ou en financement personnel, c’est à vous de la faire."}},{"@type":"Question","name":"Infirmière libérale à Bourges : le FIF-PL couvre-t-il toute la formation ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL intervient sous conditions, selon ses propres critères. Le reste éventuel peut être réglé personnellement, en 4 fois sans frais."}},{"@type":"Question","name":"En reconversion, encore en formation : quelles pièces fournir ?","acceptedAnswer":{"@type":"Answer","text":"Si vous êtes étudiant d’une des professions concernées, un certificat de scolarité remplace le numéro RPPS ou ADELI et la carte professionnelle. Choisissez « Étudiant » dans le carnet pour voir la liste."}},{"@type":"Question","name":"Plusieurs étudiants de l’IFSI d’Orléans peuvent-ils s’inscrire ensemble ?","acceptedAnswer":{"@type":"Answer","text":"Oui : un groupe compte de 10 à 12 personnes, il y a donc de la place pour plusieurs camarades de promo. Prévenez-nous à l’avance pour que la date convienne à tout le monde."}},{"@type":"Question","name":"Mon ancien numéro ADELI a laissé place au RPPS : lequel indiquer ?","acceptedAnswer":{"@type":"Answer","text":"Celui dont vous disposez : les deux identifiants sont acceptés pour l’inscription."}},{"@type":"Question","name":"Pour un recyclage, qu’est-ce qui change dans la liste des pièces ?","acceptedAnswer":{"@type":"Answer","text":"La liste s’allonge d’une ligne : votre attestation AFGSU 2 encore valide. Cochez « Je viens pour un recyclage » dans le carnet : elle apparaît automatiquement."}},{"@type":"Question","name":"Je travaille dans le Loiret mais j’habite en Essonne : Orléans ou Palaiseau ?","acceptedAnswer":{"@type":"Answer","text":"Les deux sont possibles. Palaiseau a déjà des dates confirmées ; à Orléans, la date se fixe à la demande. Choisissez selon votre calendrier."}},{"@type":"Question","name":"Faut-il des connaissances en oxygénothérapie avant de venir ?","acceptedAnswer":{"@type":"Answer","text":"Non : il suffit de faire partie du public visé. L’oxygénothérapie est enseignée dans le module sur les urgences vitales, avec le chariot d’urgence."}},{"@type":"Question","name":"Préparateur dans un hôpital public d’Orléans : quelle case cocher dans le carnet ?","acceptedAnswer":{"@type":"Answer","text":"« Hospitalier public » : votre financement passe par le plan de développement des compétences de l’établissement, avec l’ANFH."}},{"@type":"Question","name":"Kinésithérapeute salarié d’un centre privé de rééducation : quel statut choisir ?","acceptedAnswer":{"@type":"Answer","text":"« Salarié du privé » : l’employeur finance au titre de son plan de développement des compétences, en lien avec son OPCO."}},{"@type":"Question","name":"Le paiement en quatre fois s’applique-t-il au tarif inter ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les 385 € TTC par participant peuvent être réglés en quatre fois sans frais."}},{"@type":"Question","name":"Que se passe-t-il une fois ma demande envoyée ?","acceptedAnswer":{"@type":"Answer","text":"Wafa vous rappelle pour arrêter la ville et la date, vérifier vos pièces et caler le financement. Pour Orléans, Tours ou Bourges, comptez un rappel sous 48 h."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#carnet">Ouvrir le carnet</a>
+
+<header class="top">
+ <div class="in">
+  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Carnet de Gestes (emplacement)" data-img="logo : carnet"></span>Carnet de Gestes</a>
+  <nav aria-label="Onglets du carnet"><a href="#agenda">Agenda</a><a href="#programme">Programme</a><a href="#financement">Financement</a><a href="#questions">Questions</a><a href="#inscription">Inscription</a></nav>
+  <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
+ </div>
+</header>
+
+<main id="carnet" class="notebook">
+ <section class="pg hero" aria-labelledby="h1">
+  <span class="pnum" aria-hidden="true">p. 1</span>
+  <div class="hgrid">
+   <div>
+    <p class="date-line" aria-hidden="true">Orléans · Tours · Bourges —</p>
+    <h1 id="h1" data-atf="h1">Noté, souligné, retenu : <span class="hl">l’AFGSU 2 en Centre-Val de Loire</span></h1>
+    <p class="pricebox" data-atf="price"><s><span class="sr">Tarif barré : </span>450 €</s><strong>385 € TTC</strong><span class="note">par personne, en inter · 4x sans frais</span></p>
+    <p class="metaln" data-atf="meta">21 h · 3 jours · valable 4 ans</p>
+    <div class="hacts">
+     <a class="sk pri" data-atf="cta" href="#inscription" data-formation="AFGSU 2">Réserver à Orléans, Tours ou Bourges</a>
+     <a class="tel-n" data-atf="phone" href="tel:+33780912335">07 80 91 23 35<span>demandez Wafa</span></a>
+    </div>
+    <p class="lead-p">Trois jours en présentiel, un groupe de 10 à 12, et un carnet qui se remplit de gestes : ce que j’explique aux soignants du Loiret, de Touraine et du Berry tient dans ces pages.</p>
+   </div>
+   <div class="marg">
+    <svg class="sketch drw" viewBox="0 0 320 200" role="img" aria-label="Croquis au crayon d’une personne en position latérale de sécurité">
+     <path class="h" pathLength="1" d="M40 150H280"/>
+     <path pathLength="1" d="M14 146H300"/><path class="ghost" pathLength="1" d="M18 149H296"/>
+     <circle pathLength="1" cx="62" cy="118" r="17"/><circle class="ghost" pathLength="1" cx="63" cy="119" r="18"/>
+     <path pathLength="1" d="M79 114C104 102 144 100 180 106 192 108 196 120 188 128 152 134 112 134 80 128"/>
+     <path pathLength="1" d="M90 130C76 138 58 142 36 142"/>
+     <path pathLength="1" d="M100 106 110 84 72 104"/>
+     <path pathLength="1" d="M186 124 254 132 292 134"/>
+     <path pathLength="1" d="M184 112 212 138 248 128"/>
+     <path class="b" pathLength="1" d="M150 60C170 40 210 40 226 58"/><path class="b" pathLength="1" d="M222 48 226 58 214 60"/>
+    </svg>
+    <span class="note">← PLS : la victime inconsciente qui respire, module 1</span>
+    <div class="img-ph" role="img" aria-label="Photo à venir : formatrice montrant la PLS" data-img="formatrice montrant la PLS à un groupe d’aides-soignants" style="margin-top:22px"></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="pg sec" id="agenda" aria-labelledby="h-ag">
+  <span class="pnum" aria-hidden="true">p. 2</span>
+  <div class="spread">
+   <div data-jot>
+    <div class="sh"><span class="note">où ? quand ?</span><h2 id="h-ag">L’agenda des trois villes</h2><p>Les sessions s’organisent à la demande dans chacune des trois villes. Écrivez-nous, on vous rappelle.</p></div>
+    <ul class="agenda" id="agendaList"><noscript><li>Dates sur demande : 07 80 91 23 35</li></noscript></ul>
+    <div class="postit" id="postit" hidden><p id="postitTxt"></p></div>
+   </div>
+   <div data-jot>
+    <svg class="cmap pre" id="cmap" viewBox="0 0 520 590" role="img" aria-labelledby="cm-t cm-d">
+     <title id="cm-t">Croquis de la région Centre-Val de Loire</title><desc id="cm-d">Contour de la région au crayon, la Loire à l’encre bleue passant par Orléans, Blois et Tours ; Orléans, Tours et Bourges entourés au surligneur ; Chartres, Dreux, Blois et Châteauroux notés pour l’intra.</desc>
+     <path class="reg" pathLength="1" d="M22.4 415.1L45.7 381.4L45.7 291.6L107.9 291.6L157.6 257.9L146.7 156.8L162.2 78.2L216.6 26.6L247.7 67L286.6 100.7L325.4 134.4L395.4 141.1L473.1 174.8L496.4 201.8L501 291.6L473.1 359L491.7 426.4L465.3 482.5L418.7 471.3L368.9 556.6L247.7 561.1L170 527.4L115.6 482.5L61.2 437.6Z"/>
+     <path class="reg2" pathLength="1" d="M22.4 415.1L45.7 381.4L45.7 291.6L107.9 291.6L157.6 257.9L146.7 156.8L162.2 78.2L216.6 26.6L247.7 67L286.6 100.7L325.4 134.4L395.4 141.1L473.1 174.8L496.4 201.8L501 291.6L473.1 359L491.7 426.4L465.3 482.5L418.7 471.3L368.9 556.6L247.7 561.1L170 527.4L115.6 482.5L61.2 437.6Z" transform="translate(3 2)"/>
+     <path class="loire" pathLength="1" d="M473.1 359L462.2 309.6L440.4 282.6L423.3 271.4L384.5 253.4L341 228.7L311.4 224.2L278.8 239.9L255.5 257.9L221.3 293.9L185.6 320.8L166.9 334.3L121.8 338.8L76.8 352.2L37.9 368"/>
+     <text class="riv" x="372" y="269.1">la Loire</text>
+     <path class="circ" style="--i:0" pathLength="1" d="M311 196c26 0 38 14 36 28s-18 26-38 26-36-12-35-28 14-26 37-26"/>
+     <path class="circ" style="--i:1" pathLength="1" d="M122 311c26 0 38 14 36 28s-18 26-38 26-36-12-35-28 14-26 37-26"/>
+     <path class="circ" style="--i:2" pathLength="1" d="M388 380c26 0 38 14 36 28s-18 26-38 26-36-12-35-28 14-26 37-26"/>
+     <circle class="dot" cx="311" cy="224" r="6"/><circle class="dot" cx="122" cy="339" r="6"/><circle class="dot" cx="388" cy="408" r="6"/>
+     <text class="lab" x="356" y="214">Orléans</text><text class="lab" x="40" y="392">Tours</text><text class="lab" x="344" y="418" text-anchor="end">Bourges</text>
+     <circle class="od" cx="246" cy="101" r="5"/><text class="sm" x="258" y="106">Chartres (intra)</text>
+     <circle class="od" cx="228" cy="36" r="5"/><text class="sm" x="240" y="42">Dreux (intra)</text>
+     <circle class="od" cx="221" cy="294" r="5"/><text class="sm" x="150" y="276">Blois (intra)</text>
+     <circle class="od" cx="277" cy="469" r="5"/><text class="sm" x="289" y="474">Châteauroux (intra)</text>
+    </svg>
+   </div>
+  </div>
+ </section>
+
+ <section class="pg sec" id="programme" aria-labelledby="h-prog">
+  <span class="pnum" aria-hidden="true">p. 3</span>
+  <div class="sh" data-jot><span class="note">à retenir : rien en ligne, tout en pratique</span><h2 id="h-prog">Le programme, module par module</h2><p>Formation <span class="hl">uniquement en présentiel</span> : la validation repose sur la pratique et les mises en situation simulées, pas sur un questionnaire à distance.</p></div>
+  <div class="mods">
+   <div class="mod" data-jot>
+    <svg class="sketch drw" viewBox="0 0 240 140" aria-hidden="true"><rect pathLength="1" x="20" y="34" width="80" height="94" rx="10"/><path class="b" pathLength="1" d="M66 50 50 82h18l-10 30"/><rect pathLength="1" x="136" y="20" width="42" height="48" rx="8"/><rect pathLength="1" x="136" y="84" width="42" height="48" rx="8"/><path pathLength="1" d="M100 60c18 0 18-18 36-18M100 108c18 0 18 0 36 0"/><path class="ghost" pathLength="1" d="M22 36h80"/></svg>
+    <h3>Urgences vitales</h3><span class="hrs">10 h 30</span>
+    <ul><li>Protection, alerte au 15 ou au 112</li><li>Obstruction des voies aériennes</li><li>Hémorragies</li><li>Victime inconsciente qui respire</li><li>Arrêt cardiaque : RCP et DAE</li><li>Chariot d’urgence et oxygénothérapie</li></ul>
+    <span class="note">→ adulte, enfant, nourrisson : on fait les trois !</span>
+   </div>
+   <div class="mod" data-jot>
+    <svg class="sketch drw" viewBox="0 0 240 140" aria-hidden="true"><rect pathLength="1" x="40" y="16" width="120" height="96" rx="6"/><path pathLength="1" d="M40 48h120M40 80h120"/><path class="b" pathLength="1" d="M90 28h20M90 60h20M90 92h20"/><circle pathLength="1" cx="58" cy="124" r="9"/><circle pathLength="1" cx="142" cy="124" r="9"/><path pathLength="1" d="M160 24h26v-12"/><path class="ghost" pathLength="1" d="M42 18h120"/></svg>
+    <h3>Urgences potentielles</h3><span class="hrs">7 h</span>
+    <ul><li>Malaises</li><li>Traumatismes osseux, cutanés, crâniens, du rachis</li><li>Brûlures</li><li>Immobilisation, relevage, brancardage</li><li>Accouchement inopiné</li><li>Hygiène et risque infectieux</li><li>Transmission du bilan</li></ul>
+   </div>
+   <div class="mod" data-jot>
+    <svg class="sketch drw" viewBox="0 0 240 140" aria-hidden="true"><path pathLength="1" d="M60 70c-14-34 10-58 36-58s48 22 40 50"/><path pathLength="1" d="M96 12v20M136 64v66M56 70v60"/><path pathLength="1" d="M56 130h80"/><circle class="b" pathLength="1" cx="186" cy="56" r="26"/><path class="b" pathLength="1" d="M186 40v32M170 56h32"/></svg>
+    <h3>Urgences collectives &amp; SSE</h3><span class="hrs">3 h 30</span>
+    <ul><li>Dispositif ORSAN</li><li>Plan blanc et plan bleu</li><li>Afflux de victimes</li><li>Risque NRBC-E</li><li>Évacuation, confinement</li><li>Soutien médico-psychologique</li></ul>
+   </div>
+  </div>
+  <div class="days" data-jot>
+   <div><b>J1</b><span>7 h d’urgences vitales</span></div>
+   <div><b>J2</b><span>3 h 30 vitales + 3 h 30 potentielles</span></div>
+   <div><b>J3</b><span>3 h 30 potentielles + 3 h 30 SSE</span></div>
+  </div>
+  <p class="note" style="margin-top:12px;font-size:1.2rem">(découpage indicatif)</p>
+ </section>
+
+ <section class="pg sec" id="financement" aria-labelledby="h-fin">
+  <span class="pnum" aria-hidden="true">p. 4</span>
+  <div class="sh" data-jot><span class="note">l’outil que je donne à tous mes stagiaires</span><h2 id="h-fin">Votre financement, puis vos pièces à cocher</h2><p>Indiquez votre statut : la voie de financement qui vous correspond s’affiche, puis la liste des documents à préparer. Cochez au fur et à mesure.</p></div>
+  <div class="finder">
+   <div data-jot>
+    <fieldset class="status" id="status">
+     <legend>1. Votre statut</legend>
+     <label><input type="radio" name="st" value="hosp"><span>Hospitalier public</span></label>
+     <label><input type="radio" name="st" value="prive"><span>Salarié du privé</span></label>
+     <label><input type="radio" name="st" value="lib"><span>Libéral</span></label>
+     <label><input type="radio" name="st" value="etu"><span>Étudiant</span></label>
+     <label><input type="radio" name="st" value="part"><span>Particulier (je paie moi-même)</span></label>
+    </fieldset>
+    <div class="route" id="route" aria-live="polite"><h3>2. Votre voie de financement</h3><p style="color:var(--soft);margin:0">Choisissez un statut ci-dessus.</p></div>
+   </div>
+   <div data-jot>
+    <p style="font:700 1.05rem var(--l);margin-bottom:6px">3. Vos pièces à fournir</p>
+    <label class="recy"><input type="checkbox" id="isRecy"> Je viens pour un recyclage (7 h)</label>
+    <ul class="checklist" id="checklist"><li><label><input type="checkbox" disabled><span>Choisissez d’abord votre statut.</span></label></li></ul>
+    <div class="bar" role="progressbar" aria-label="Dossier complété" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="bar"><i></i></div>
+    <p class="note" id="count" style="font-size:1.3rem">0 pièce cochée</p>
+    <div class="done" id="done"><p class="note" style="font-size:1.6rem">Dossier prêt !</p><a class="sk pri" href="#inscription" id="sendDossier" data-formation="AFGSU 2">Envoyer ma demande avec ce dossier</a></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="pg sec" id="public" aria-labelledby="h-pub">
+  <span class="pnum" aria-hidden="true">p. 5</span>
+  <div class="spread">
+   <div data-jot>
+    <div class="sh"><span class="note">qui peut venir ?</span><h2 id="h-pub">Le public, sans oublier personne</h2></div>
+    <ul class="who"><li>Médecins</li><li>Infirmiers</li><li>Aides-soignants</li><li>Sages-femmes</li><li>Masseurs-kinésithérapeutes</li><li>Pharmaciens</li><li>Préparateurs en pharmacie</li><li>Ambulanciers</li><li>Auxiliaires de puériculture</li><li>Manipulateurs radio</li><li>Chirurgiens-dentistes</li><li>et leurs étudiants</li><li><span class="hl">AES / AMP</span></li><li><span class="hl">Assistants de régulation médicale</span></li><li><span class="hl">Assistants médicaux</span></li><li><span class="hl">Préleveurs sanguins</span></li><li><span class="hl">Auxiliaires ambulanciers</span></li></ul>
+    <p style="margin-top:14px">Autrement dit, les professions de santé visées par la 4e partie du Code de la santé publique, élargies aux métiers surlignés. <strong>Prérequis :</strong> appartenir à ce public — l’AFGSU 1 n’a pas à précéder le niveau 2.</p>
+   </div>
+   <div data-jot>
+    <div class="pin"><h3>Validation</h3><p style="margin:0">Aucun examen final séparé : on vous évalue tout au long des trois jours, à condition d’être là du début à la fin. L’attestation est délivrée par le CESU ; la formation, elle, est organisée sous convention avec le CESU 93.</p></div>
+    <div class="pin" style="transform:rotate(.7deg)"><h3>Cadre</h3><p style="margin:0">Arrêté du 30 décembre 2014 modifié en 2019 et 2021. Équivalence PSC accordée par l’arrêté du 23 août 2019 ; pas d’équivalence SST.</p></div>
+    <span class="note">→ et pour l’accueil, le secrétariat ? voir page suivante</span>
+   </div>
+  </div>
+ </section>
+
+ <section class="pg sec" id="niveaux" aria-labelledby="h-niv">
+  <span class="pnum" aria-hidden="true">p. 6</span>
+  <div class="sh" data-jot><span class="note">souvent confondus…</span><h2 id="h-niv">AFGSU 1 et AFGSU 2, côte à côte</h2></div>
+  <div class="vs" data-jot>
+   <div class="col"><h3>AFGSU 2</h3><p class="pr"><s style="text-decoration-color:var(--ink)">450 €</s> → 385 € TTC</p>
+    <dl><dt>Pour</dt><dd>Les soignants (4e partie du CSP) et leurs étudiants ; AES/AMP, ARM, assistants médicaux, préleveurs sanguins, auxiliaires ambulanciers</dd><dt>Durée</dt><dd>21 h, trois jours</dd><dt>Niveau</dt><dd>Gestes avancés et risques collectifs</dd><dt>Validité</dt><dd>Quatre ans ; ensuite, 7 h de recyclage</dd></dl></div>
+   <div class="mid" aria-hidden="true"><span>vs</span></div>
+   <div class="col"><h3>AFGSU 1</h3><p class="pr">290 € TTC</p>
+    <dl><dt>Pour</dt><dd>Celles et ceux qui ne soignent pas : accueil, secrétariat médical, administration, logistique et technique, dans les structures de santé, médico-sociales ou les cabinets</dd><dt>Durée</dt><dd>14 h, deux jours</dd><dt>Objectif</dt><dd>Détecter qu’une situation est urgente (vitale ou potentielle), y répondre par les gestes appropriés et épauler l’équipe face à une urgence collective</dd><dt>Validité</dt><dd>4 ans</dd></dl>
+    <p style="margin:18px 0 0"><a class="sk ink" href="#inscription" data-formation="AFGSU 1">Noter l’AFGSU 1 pour l’accueil</a></p></div>
+  </div>
+ </section>
+
+ <section class="pg sec" id="recyclage" aria-labelledby="h-rec">
+  <span class="pnum" aria-hidden="true">p. 7</span>
+  <div class="spread">
+   <div data-jot>
+    <div class="sh"><span class="note">à mettre dans votre agenda</span><h2 id="h-rec">Le recyclage, avant la date</h2></div>
+    <p>Une attestation se garde quatre ans. Le recyclage de 7 heures la prolonge <span class="hl">si vous le suivez avant que la date ne soit passée</span> ; le lendemain, il faut refaire les 21 heures. Mon conseil : prenez date 3 à 6 mois avant l’échéance, attestation actuelle en main. Pour le prix du recyclage, il suffit de nous le demander.</p>
+    <div class="cal4" aria-label="Quatre années de validité ; le recyclage se place à la fin de la quatrième" role="img"><div><b>an 1</b></div><div><b>an 2</b></div><div><b>an 3</b></div><div class="last"><b>an 4</b></div></div>
+    <p style="margin-top:44px"><a class="sk" href="#inscription" data-formation="Recyclage AFGSU 2">Inscrire mon recyclage au carnet</a></p>
+   </div>
+   <div data-jot>
+    <div class="postit" style="transform:rotate(-2deg)"><p>20 février 2026 : un arrêté rend l’AFGSU 2 valide indispensable au DE infirmier pour la promo entrée en 2026.</p></div>
+    <div class="postit" style="transform:rotate(2.5deg);background:#fff3b0"><p>Mars 2026 : nouvelles recos ANCESU / SFMU publiées.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="pg sec" id="intra" aria-labelledby="h-intra">
+  <span class="pnum" aria-hidden="true">p. 8</span>
+  <div class="spread">
+   <div data-jot>
+    <div class="sh"><span class="note">on se déplace</span><h2 id="h-intra">L’intra : la formation dans vos murs</h2></div>
+    <p>Hôpital, clinique, EHPAD, cabinet, officine, centre de santé : de Chartres à Châteauroux, de Dreux à Blois, nous formons vos équipes sur place, par groupes de 10 à 12, aux dates que vous fixez. Partout en France également. Tarif établi sur devis.</p>
+    <a class="sk pri" href="#inscription" data-formation="Intra" data-centre="Intra">Recevoir un devis pour l’établissement</a>
+   </div>
+   <div data-jot>
+    <p style="font:700 1.05rem var(--l)">Qui finance quoi, en bref :</p>
+    <ol class="fin"><li><strong>Employeur</strong> — plan de développement des compétences</li><li><strong>OPCO</strong> — pour les structures privées</li><li><strong>ANFH</strong> — fonction publique hospitalière</li><li><strong>FIF-PL</strong> — libéraux, sous conditions</li><li><strong>Vous-même</strong> — en 4x sans frais</li></ol>
+    <p class="note" style="margin-top:10px">CPF ? En principe, il ne finance pas l’AFGSU.</p>
+   </div>
+  </div>
+ </section>
+
+ <section class="pg sec" id="voix" aria-labelledby="h-voix">
+  <span class="pnum" aria-hidden="true">p. 9</span>
+  <div class="sh" data-jot><span class="note">mots laissés en fin de session</span><h2 id="h-voix">Ce qu’ils en disent</h2></div>
+  <div class="voices">
+   <figure data-jot style="--r:-1.2deg"><blockquote>[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · métier · ville</figcaption></figure>
+   <figure data-jot style="--r:.8deg"><blockquote>[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · métier · ville</figcaption></figure>
+   <figure data-jot style="--r:-.5deg"><blockquote>[Avis stagiaire à insérer]</blockquote><figcaption>Prénom · métier · ville</figcaption></figure>
+  </div>
+ </section>
+
+ <section class="pg sec" id="questions" aria-labelledby="h-faq">
+  <span class="pnum" aria-hidden="true">p. 10</span>
+  <div class="sh" data-jot><span class="note">les questions qu’on me pose le plus</span><h2 id="h-faq">Questions de stagiaires</h2></div>
+  <div class="faq" data-jot>
+   <details><summary data-faq-q>Le carnet de financement remplace-t-il l’avis de mon service formation ?</summary><div data-faq-a><p>Non, c’est une orientation. La décision de prise en charge revient toujours au financeur : employeur, OPCO, ANFH ou FIF-PL.</p></div></details>
+   <details><summary data-faq-q>Qui monte le dossier de prise en charge : moi ou mon employeur ?</summary><div data-faq-a><p>Lorsque l’employeur finance, c’est le plus souvent lui, ou son service formation, qui engage la démarche. En libéral ou en financement personnel, c’est à vous de la faire.</p></div></details>
+   <details><summary data-faq-q>Infirmière libérale à Bourges : le FIF-PL couvre-t-il toute la formation ?</summary><div data-faq-a><p>Le FIF-PL intervient sous conditions, selon ses propres critères. Le reste éventuel peut être réglé personnellement, en 4 fois sans frais.</p></div></details>
+   <details><summary data-faq-q>En reconversion, encore en formation : quelles pièces fournir ?</summary><div data-faq-a><p>Si vous êtes étudiant d’une des professions concernées, un certificat de scolarité remplace le numéro RPPS ou ADELI et la carte professionnelle. Choisissez « Étudiant » dans le carnet pour voir la liste.</p></div></details>
+   <details><summary data-faq-q>Plusieurs étudiants de l’IFSI d’Orléans peuvent-ils s’inscrire ensemble ?</summary><div data-faq-a><p>Oui : un groupe compte de 10 à 12 personnes, il y a donc de la place pour plusieurs camarades de promo. Prévenez-nous à l’avance pour que la date convienne à tout le monde.</p></div></details>
+   <details><summary data-faq-q>Mon ancien numéro ADELI a laissé place au RPPS : lequel indiquer ?</summary><div data-faq-a><p>Celui dont vous disposez : les deux identifiants sont acceptés pour l’inscription.</p></div></details>
+   <details><summary data-faq-q>Pour un recyclage, qu’est-ce qui change dans la liste des pièces ?</summary><div data-faq-a><p>La liste s’allonge d’une ligne : votre attestation AFGSU 2 encore valide. Cochez « Je viens pour un recyclage » dans le carnet : elle apparaît automatiquement.</p></div></details>
+   <details><summary data-faq-q>Je travaille dans le Loiret mais j’habite en Essonne : Orléans ou Palaiseau ?</summary><div data-faq-a><p>Les deux sont possibles. Palaiseau a déjà des dates confirmées ; à Orléans, la date se fixe à la demande. Choisissez selon votre calendrier.</p></div></details>
+   <details><summary data-faq-q>Faut-il des connaissances en oxygénothérapie avant de venir ?</summary><div data-faq-a><p>Non : il suffit de faire partie du public visé. L’oxygénothérapie est enseignée dans le module sur les urgences vitales, avec le chariot d’urgence.</p></div></details>
+   <details><summary data-faq-q>Préparateur dans un hôpital public d’Orléans : quelle case cocher dans le carnet ?</summary><div data-faq-a><p>« Hospitalier public » : votre financement passe par le plan de développement des compétences de l’établissement, avec l’ANFH.</p></div></details>
+   <details><summary data-faq-q>Kinésithérapeute salarié d’un centre privé de rééducation : quel statut choisir ?</summary><div data-faq-a><p>« Salarié du privé » : l’employeur finance au titre de son plan de développement des compétences, en lien avec son OPCO.</p></div></details>
+   <details><summary data-faq-q>Le paiement en quatre fois s’applique-t-il au tarif inter ?</summary><div data-faq-a><p>Oui, les 385 € TTC par participant peuvent être réglés en quatre fois sans frais.</p></div></details>
+   <details><summary data-faq-q>Que se passe-t-il une fois ma demande envoyée ?</summary><div data-faq-a><p>Wafa vous rappelle pour arrêter la ville et la date, vérifier vos pièces et caler le financement. Pour Orléans, Tours ou Bourges, comptez un rappel sous 48 h.</p></div></details>
+  </div>
+ </section>
+
+ <section class="pg sec" id="inscription" aria-labelledby="h-ins">
+  <span class="pnum" aria-hidden="true">p. 11</span>
+  <div class="spread">
+   <div data-jot>
+    <div class="sh"><span class="note">dernière page à remplir</span><h2 id="h-ins">Votre inscription</h2><p>Quelques lignes suffisent. Wafa reprend tout avec vous par téléphone.</p></div>
+    <p><a class="tel-n" href="tel:+33780912335">07 80 91 23 35<span>ligne AFGSU</span></a></p>
+    <div class="img-ph" role="img" aria-label="Photo à venir : carnet ouvert sur une table de formation" data-img="carnet ouvert, mannequin nourrisson et feutre surligneur sur la table" style="transform:rotate(1.2deg)"></div>
+   </div>
+   <div data-jot>
+    <!-- TODO : connecter l'envoi du formulaire (CRM ou service e-mail). action="#" en attendant. -->
+    <form class="lead" action="#" method="post" data-lead id="lead">
+     <input type="hidden" name="formation" value="AFGSU 2">
+     <div class="full"><label for="n-nom">Nom &amp; prénom</label><input id="n-nom" name="nom" autocomplete="name" required aria-errormessage="n-nom-e"><p class="err" id="n-nom-e">oublié : votre nom !</p></div>
+     <div><label for="n-tel">Téléphone</label><input id="n-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="n-tel-e"><p class="err" id="n-tel-e">10 chiffres, ex. 02 38 00 00 00</p></div>
+     <div><label for="n-mail">Email</label><input id="n-mail" name="email" type="email" autocomplete="email" required aria-errormessage="n-mail-e"><p class="err" id="n-mail-e">il manque quelque chose…</p></div>
+     <div><label for="n-pro">Profession</label><select id="n-pro" name="profession" required aria-errormessage="n-pro-e"><option value="">Choisissez</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="n-pro-e">quelle profession ?</p></div>
+     <div><label for="n-centre">Centre / ville</label><select id="n-centre" name="centre" required aria-errormessage="n-centre-e"><option value="">Choisissez</option><option>Orléans</option><option>Tours</option><option>Bourges</option><option value="Intra">Intra, dans notre établissement</option></select><p class="err" id="n-centre-e">quelle ville ?</p></div>
+     <div class="full"><label for="n-msg">Message (facultatif)</label><textarea id="n-msg" name="message" placeholder="Statut, financement envisagé, disponibilités…"></textarea></div>
+     <div class="full chk"><input type="checkbox" id="n-rgpd" name="rgpd" required><label for="n-rgpd">J’accepte que Carnet de Gestes utilise ces informations pour traiter ma demande, sans autre usage. <a href="#">Informations RGPD</a></label></div>
+     <div class="full"><button class="sk pri" type="submit">Envoyer ma page d’inscription</button></div>
+    </form>
+    <div class="ok" data-success hidden tabindex="-1"><span class="note">C’est noté !</span><p style="margin:8px 0 0">Wafa vous téléphone pour caler ensemble ville, date et prise en charge. Une question d’ici là : 07 80 91 23 35.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="pg final" aria-labelledby="h-final">
+  <h2 id="h-final" data-jot>Dernière ligne du carnet : <span class="hl">trois jours pour des gestes qui tiennent.</span></h2>
+  <div class="hacts" data-jot><a class="sk pri" href="#inscription" data-formation="AFGSU 2">Je m’inscris pour 385 €</a><a class="tel-n" href="tel:+33780912335">07 80 91 23 35</a></div>
+ </section>
+</main>
+
+<footer>
+ <span>© 2026 Carnet de Gestes by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+ <nav aria-label="Pages légales"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+</footer>
+
+<div class="sticky" data-sticky>
+ <a href="tel:+33780912335">Appeler</a>
+ <a class="b" href="#inscription" data-formation="AFGSU 2">Noter ma place</a>
+</div>
+
+<script>
+/* ===== SESSIONS : tableau unique à tenir à jour (dates ISO [début, fin]) ===== */
+const SESSIONS = [
+  { ville: "Orléans", dept: "45", region: "Centre-Val de Loire", dates: [] },
+  { ville: "Tours",   dept: "37", region: "Centre-Val de Loire", dates: [] },
+  { ville: "Bourges", dept: "18", region: "Centre-Val de Loire", dates: [] },
+  // Hors région, déjà confirmées :
+  { ville: "Palaiseau", dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
+];
+const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+/* =========================================================================== */
+(() => {
+  const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const MO = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  const D = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+  const T = new Date(); T.setHours(0, 0, 0, 0);
+  const up = s => s.dates.filter(d => D(d[1]) >= T);
+  const f = ([a, b]) => { const A = D(a), B = D(b); return `${A.getDate()}${A.getMonth() !== B.getMonth() ? ' ' + MO[A.getMonth()] : ''} → ${B.getDate()} ${MO[B.getMonth()]}`; };
+  $('#agendaList').innerHTML = SESSIONS.filter(s => s.region === 'Centre-Val de Loire').map(s => { const u = up(s); return `<li><b>${s.ville}<small>(${s.dept})</small></b><a href="#inscription" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'réserver' : 'demander'} →</a><span>${u.length ? u.map(f).join(' · ') : SUR_DEMANDE}</span></li>`; }).join('');
+  const ext = SESSIONS.filter(s => s.region !== 'Centre-Val de Loire' && up(s).length);
+  if (ext.length) { $('#postit').hidden = false; $('#postitTxt').textContent = 'Dates déjà confirmées hors région : ' + ext.map(s => `${s.ville} (${s.dept}) — ${up(s).map(f).join(', ')}`).join(' ; ') + '.'; }
+
+  const form = $('#lead');
+  document.addEventListener('click', e => { const a = e.target.closest('a[data-formation],a[data-centre]'); if (!a) return; if (a.dataset.formation) form.elements.formation.value = a.dataset.formation; const c = a.dataset.centre; if (c && [...form.elements.centre.options].some(o => o.value === c)) form.elements.centre.value = c; if (a.dataset.msg) form.elements.message.value = a.dataset.msg; });
+
+  /* crayon & surligneur */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -10% 0px' });
+  $$('[data-jot], .hl, .sketch.drw').forEach(el => io.observe(el));
+  const cmap = $('#cmap');
+  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { cmap.classList.remove('pre'); o.disconnect(); } }, { threshold: .3 }).observe(cmap);
+
+  /* financement + pièces */
+  const ROUTES = {
+    hosp: { t: 'Hospitalier public', s: ['Contactez le service formation de votre établissement.', 'La formation s’inscrit au plan de développement des compétences.', 'L’ANFH accompagne la fonction publique hospitalière.'], n: 'à demander tôt : les plans se bouclent à l’avance' },
+    prive: { t: 'Salarié du privé', s: ['Parlez-en à votre employeur ou à votre responsable RH.', 'Prise en charge au titre du plan de développement des compétences.', 'L’OPCO de la branche peut y contribuer.'], n: 'clinique, EHPAD privé, transport sanitaire, officine…' },
+    lib: { t: 'Libéral', s: ['Vérifiez votre éligibilité au FIF-PL (prise en charge sous conditions).', 'Le complément éventuel se règle personnellement.', 'Paiement possible en 4 fois sans frais.'], n: 'gardez vos justificatifs de paiement' },
+    etu: { t: 'Étudiant', s: ['Financement personnel le plus souvent.', 'Paiement possible en 4 fois sans frais.', 'Votre certificat de scolarité remplace la carte professionnelle.'], n: 'promo de la rentrée 2026 en IFSI ? AFGSU 2 valide exigée pour le DE' },
+    part: { t: 'Particulier', s: ['Vous réglez vous-même les 385 € TTC.', 'Paiement possible en 4 fois sans frais.', 'Vous devez appartenir au public de l’AFGSU 2.'], n: 'le CPF n’est en principe pas éligible' }
+  };
+  const DOCS = s => s === 'etu' ? [['Certificat de scolarité', 'de l’année en cours']] : [['Diplôme', 'copie lisible'], ['Carte professionnelle', ''], ['Numéro RPPS ou ADELI', 'celui dont vous disposez']];
+  const route = $('#route'), list = $('#checklist'), bar = $('#bar'), cnt = $('#count'), done = $('#done'), recy = $('#isRecy');
+  let cur = null;
+  const refresh = () => { const boxes = $$('input', list), n = boxes.filter(b => b.checked).length, pct = boxes.length ? Math.round(n / boxes.length * 100) : 0; $('i', bar).style.width = pct + '%'; bar.setAttribute('aria-valuenow', pct); cnt.textContent = `${n} pièce${n > 1 ? 's' : ''} cochée${n > 1 ? 's' : ''} sur ${boxes.length}`; done.classList.toggle('on', boxes.length > 0 && n === boxes.length); $('#sendDossier').dataset.msg = `Statut : ${ROUTES[cur].t}. Dossier prêt (${boxes.map(b => b.dataset.doc).join(', ')}).${recy.checked ? ' Demande de recyclage.' : ''}`; $('#sendDossier').dataset.formation = recy.checked ? 'Recyclage AFGSU 2' : 'AFGSU 2'; };
+  const build = () => {
+    if (!cur) return; const r = ROUTES[cur];
+    route.innerHTML = `<h3>2. ${r.t} : votre voie de financement</h3><ol>${r.s.map(x => `<li>${x}</li>`).join('')}</ol><span class="note">→ ${r.n}</span>`;
+    const docs = DOCS(cur).concat(recy.checked ? [['Attestation AFGSU 2 en cours', 'indispensable pour le recyclage']] : []);
+    list.innerHTML = docs.map(([d, h], i) => `<li><label><input type="checkbox" data-doc="${d}" id="doc${i}"><span>${d}${h ? `<small>${h}</small>` : ''}</span></label></li>`).join('');
+    refresh();
+  };
+  $('#status').addEventListener('change', e => { cur = e.target.value; build(); });
+  recy.addEventListener('change', build);
+  list.addEventListener('change', () => cur && refresh());
+
+  /* formulaire */
+  const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
+  form.addEventListener('blur', e => sync(e.target), true);
+  form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    // TODO : envoyer la page d'inscription (fetch POST) au service de gestion avant de confirmer.
+    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+  });
+})();
+</script>
+</body>
+</html>
