@@ -1,8 +1,16 @@
 Dossier médias — Formation AFGSU Occitanie
 
-Déposez ici les photos avec exactement ces noms : la page les affiche automatiquement à la place des emplacements prévus (format conseillé : JPG, 1600 px de large, < 250 Ko).
+Photos utilisées par la page (chacune en deux largeurs, le navigateur choisit la bonne) :
+  afgsu-electrodes-dae-mannequin-1280.jpg
+  afgsu-electrodes-dae-mannequin-640.jpg
+  afgsu-equipe-rcp-ballon-1000.jpg
+  afgsu-equipe-rcp-ballon-640.jpg
+  afgsu-formatrice-ballon-masque-1000.jpg
+  afgsu-formatrice-ballon-masque-640.jpg
+  afgsu-mannequin-ambulance-oxygene-600.jpg
+  afgsu-mannequin-ambulance-oxygene-700.jpg
 
-photo-01.jpg  —  poste de soins de nuit, chariot d’urgence et DAE à portée de main
+Pour changer une photo : remplacez les deux fichiers en gardant exactement les mêmes noms (JPG, même orientation, moins de 200 Ko de préférence). Les textes alternatifs (alt) sont dans index.html : pensez à les adapter si le sujet de la photo change.
 
-Déjà présents : logo.svg / logo.png (logo complet, texte clair pour fond sombre), logo-fond-clair.png (texte foncé pour fond clair), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
+Également présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
 Pour une image de partage (og:image), ajoutez og-image.jpg (1200 × 630) et décommentez la ligne correspondante dans le <head>.

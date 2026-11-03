@@ -1,9 +1,18 @@
 Dossier médias — Formation AFGSU Centre-Val de Loire
 
-Déposez ici les photos avec exactement ces noms : la page les affiche automatiquement à la place des emplacements prévus (format conseillé : JPG, 1600 px de large, < 250 Ko).
+Photos utilisées par la page (chacune en deux largeurs, le navigateur choisit la bonne) :
+  afgsu-compressions-gros-plan-1000.jpg
+  afgsu-compressions-gros-plan-640.jpg
+  afgsu-formatrice-ballon-masque-1000.jpg
+  afgsu-formatrice-ballon-masque-640.jpg
+  afgsu-prise-tension-mannequin-640.jpg
+  afgsu-prise-tension-mannequin-800.jpg
+  afgsu-question-en-session-1000.jpg
+  afgsu-question-en-session-640.jpg
+  afgsu-rcp-nourrisson-equipe-1000.jpg
+  afgsu-rcp-nourrisson-equipe-640.jpg
 
-photo-01.jpg  —  formatrice montrant la PLS à un groupe d’aides-soignants
-photo-02.jpg  —  carnet ouvert, mannequin nourrisson et feutre surligneur sur la table
+Pour changer une photo : remplacez les deux fichiers en gardant exactement les mêmes noms (JPG, même orientation, moins de 200 Ko de préférence). Les textes alternatifs (alt) sont dans index.html : pensez à les adapter si le sujet de la photo change.
 
-Déjà présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
+Également présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
 Pour une image de partage (og:image), ajoutez og-image.jpg (1200 × 630) et décommentez la ligne correspondante dans le <head>.

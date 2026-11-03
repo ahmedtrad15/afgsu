@@ -1,9 +1,18 @@
 Dossier médias — Formation AFGSU Bretagne
 
-Déposez ici les photos avec exactement ces noms : la page les affiche automatiquement à la place des emplacements prévus (format conseillé : JPG, 1600 px de large, < 250 Ko).
+Photos utilisées par la page (chacune en deux largeurs, le navigateur choisit la bonne) :
+  afgsu-compressions-gros-plan-1000.jpg
+  afgsu-compressions-gros-plan-640.jpg
+  afgsu-compressions-tapis-rouge-1000.jpg
+  afgsu-compressions-tapis-rouge-640.jpg
+  afgsu-formatrice-pose-electrodes-dae-1000.jpg
+  afgsu-formatrice-pose-electrodes-dae-640.jpg
+  afgsu-rcp-equipe-a-genoux-1000.jpg
+  afgsu-rcp-equipe-a-genoux-640.jpg
+  afgsu-rcp-nourrisson-equipe-1000.jpg
+  afgsu-rcp-nourrisson-equipe-640.jpg
 
-photo-01.jpg  —  étudiante IFSI posant les électrodes d’un DAE sur mannequin, formateur à genoux
-photo-02.jpg  —  équipe soignante d’un EHPAD breton en exercice de relevage, couloir lumineux
+Pour changer une photo : remplacez les deux fichiers en gardant exactement les mêmes noms (JPG, même orientation, moins de 200 Ko de préférence). Les textes alternatifs (alt) sont dans index.html : pensez à les adapter si le sujet de la photo change.
 
-Déjà présents : logo.svg / logo.png (logo complet, texte clair pour fond sombre), logo-fond-clair.png (texte foncé pour fond clair), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
+Également présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
 Pour une image de partage (og:image), ajoutez og-image.jpg (1200 × 630) et décommentez la ligne correspondante dans le <head>.

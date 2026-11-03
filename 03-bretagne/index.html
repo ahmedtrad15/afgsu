@@ -265,6 +265,12 @@ footer nav{display:flex;gap:18px}
 .pcard h3{font-size:1.9rem;font-weight:800}.mod h3{font-size:1.5rem}.notice h3{font-size:1.7rem;font-weight:800}.ok h3{font-size:1.9rem}
 .faq summary{font:700 1.05rem/1.45 var(--tx);text-transform:none;letter-spacing:0}.faq summary::after{top:6px}
 .readout b{font-size:2rem}
+
+/* photos */
+.img-ph.has-img{overflow:hidden}.img-ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.phs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}.phs figure{margin:0;min-width:0}.phs figure:first-child{grid-column:1/-1}.phs img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.phs figcaption{margin-top:7px;font-size:.85rem;line-height:1.35}
+@media (min-width:760px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.phs figure:first-child{grid-column:auto}.phs img{aspect-ratio:4/3}}
+.phs img{border:3px solid var(--foam)}.phs figcaption{font:700 .82rem var(--hd);letter-spacing:.08em;text-transform:uppercase;color:var(--foam)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -328,7 +334,7 @@ footer nav{display:flex;gap:18px}
   <div class="chart-wrap">
    <svg class="chart" id="chart" viewBox="0 0 728 442" role="img" aria-labelledby="ct cd">
     <title id="ct">Carte marine de la Bretagne et de nos trois centres</title>
-    <desc id="cd">Un phare placé au cap Fréhel balaie la carte et illumine tour à tour Saint-Brieuc, Rennes et Cesson-Sévigné.</desc>
+    <desc id="cd">Un phare placé au cap Fréhel éclaire Saint-Brieuc, Rennes et Cesson-Sévigné.</desc>
     <defs>
      <path id="frp" d="M1333.7 -517.5L1397 -415.9L1458.5 -438.8L1523.5 -367.7L1620.1 -309.3L1616.6 -235.6L1730.8 -278.8L1743.1 -278.8L1736 -189.9L1836.2 -144.2L1924 -113.8L2004.8 -106.1L2069.8 -30L2134.8 -24.9L2222.6 0.5L2328.1 20.8L2257.8 114.7L2219.1 241.7L2220.9 371.2L2143.6 406.7L2108.5 414.3L2020.6 533.7L1959.1 660.6L1967.9 724.1L2029.4 660.6L2082.1 668.2L2124.3 792.7L2092.6 818L2134.8 927.2L2052.2 1000.8L2117.2 1104.9L2108.5 1168.4L2240.2 1257.3L2210.4 1338.5L2164.7 1358.8L2138.3 1394.4L2104.9 1427.4L2055.8 1468L2004.8 1511.2L1929.3 1511.2L1836.2 1483.3L1765.9 1440.1L1695.6 1429.9L1630.6 1419.8L1572.6 1404.5L1537.5 1435L1493.6 1465.5L1432.1 1511.2L1421.6 1587.4L1419.8 1638.1L1444.4 1678.8L1361.8 1688.9L1230.1 1676.2L1189.7 1663.5L1142.2 1638.1L1010.5 1574.7L869.9 1612.7L764.5 1567L641.6 1523.9L574.8 1442.6L613.5 1414.7L632.8 1333.5L667.9 1155.7L667.9 1117.6L682 1028.8L699.5 884.1L676.7 876.4L703.1 871.4L676.7 736.8L624 673.3L571.3 647.9L546.7 597.2L509.8 533.7L527.4 495.6L501 452.4L439.5 444.8L395.6 394L339.4 399.1L295.5 335.6L202.4 300.1L119.8 317.9L56.6 256.9L88.2 203.6L47.8 183.3L49.5 127.4L88.2 109.7L188.3 81.7L281.4 56.3L360.5 69L400.9 127.4L479.9 94.4L536.2 102.1L620.5 109.7L606.4 53.8L562.5 -88.4L544.9 -169.6L602.9 -151.8L666.2 -156.9L685.5 -75.7L782.1 -75.7L843.6 -60.4L940.2 -96L905.1 -111.2L922.6 -164.5L952.5 -179.8L1077.2 -222.9L1129.9 -255.9L1168.6 -291.5L1163.3 -342.3L1168.6 -426.1L1165.1 -461.6L1212.5 -484.5L1303.9 -504.8Z"/>
      <radialGradient id="bg" cx="0" cy="0.5" r="1"><stop offset="0" stop-color="#FFE3C9" stop-opacity=".75"/><stop offset=".6" stop-color="#FF6B1A" stop-opacity=".18"/><stop offset="1" stop-color="#FF6B1A" stop-opacity="0"/></radialGradient>
@@ -360,7 +366,6 @@ footer nav{display:flex;gap:18px}
     </g>
     <g aria-hidden="true" transform="translate(480 94)"><path d="M-6 0 -4-26H4L6 0Z" fill="var(--foam)" stroke="var(--night)" stroke-width="1.5"/><path d="M-5-8H5M-4.5-17h9" stroke="var(--orange)" stroke-width="4"/><rect x="-5" y="-33" width="10" height="7" fill="var(--orange)"/><text x="10" y="-30" class="glab">Cap Fréhel</text></g>
    </svg>
-   <button class="beam-ctl" id="beamBtn" type="button" aria-pressed="false">Éteindre le phare</button>
   </div>
  </div>
 </section>
@@ -421,6 +426,11 @@ footer nav{display:flex;gap:18px}
    <article class="mod" style="--k:var(--orange)" data-sweep><svg aria-hidden="true"><use href="#star"/></svg><h3>Urgences vitales</h3><p class="h">10 h 30</p><ul><li>Protection, alerte au 15 / 112</li><li>Obstruction des voies aériennes</li><li>Hémorragies</li><li>Victime inconsciente qui respire</li><li>Arrêt cardiaque, RCP + DAE</li><li>Chariot d’urgence, oxygénothérapie</li></ul><p class="mut" style="margin:10px 0 0;font-size:.92rem">Adulte, enfant et nourrisson.</p></article>
    <article class="mod" style="--k:var(--foam)" data-sweep><svg aria-hidden="true"><use href="#stretch"/></svg><h3>Urgences potentielles</h3><p class="h">7 h</p><ul><li>Malaises</li><li>Traumatismes : os, peau, crâne, rachis</li><li>Brûlures</li><li>Immobilisation, relevage, brancardage</li><li>Accouchement inopiné</li><li>Hygiène et risque infectieux</li><li>Transmission du bilan</li></ul></article>
    <article class="mod" style="--k:var(--slate)" data-sweep><svg aria-hidden="true"><use href="#o2"/></svg><h3>Urgences collectives &amp; SSE</h3><p class="h">3 h 30</p><ul><li>Dispositif ORSAN</li><li>Plan blanc et plan bleu</li><li>Afflux de victimes</li><li>Risque NRBC-E</li><li>Évacuation, confinement</li><li>Soutien médico-psychologique</li></ul></article>
+  </div>
+  <div class="phs" data-sweep>
+    <figure><img src="media/afgsu-compressions-gros-plan-640.jpg" srcset="media/afgsu-compressions-gros-plan-640.jpg 640w, media/afgsu-compressions-gros-plan-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 100vw" width="1000" height="686" alt="Compressions sur mannequin, mains croisées, vue rapprochée" loading="lazy" decoding="async"><figcaption>Quart 1 · compressions au bon rythme</figcaption></figure>
+    <figure><img src="media/afgsu-rcp-nourrisson-equipe-640.jpg" srcset="media/afgsu-rcp-nourrisson-equipe-640.jpg 640w, media/afgsu-rcp-nourrisson-equipe-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="667" alt="Équipe penchée sur un mannequin nourrisson, ventilation au masque" loading="lazy" decoding="async"><figcaption>Quart 2 · nourrisson, gestes adaptés</figcaption></figure>
+    <figure><img src="media/afgsu-compressions-tapis-rouge-640.jpg" srcset="media/afgsu-compressions-tapis-rouge-640.jpg 640w, media/afgsu-compressions-tapis-rouge-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="750" alt="Deux stagiaires masqués sur un tapis rouge, l’un comprime le thorax du mannequin" loading="lazy" decoding="async"><figcaption>Quart 3 · on se relaie avant de s’épuiser</figcaption></figure>
   </div>
  </div>
 </section>
@@ -504,13 +514,13 @@ footer nav{display:flex;gap:18px}
    </ul>
    <p class="cpf">CPF : en principe non éligible pour l’AFGSU. Nous ne vous le ferons pas miroiter.</p>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires posant les électrodes d’un DAE" data-file="media/photo-01.jpg" data-img="photo : étudiante IFSI posant les électrodes d’un DAE sur mannequin, formateur à genoux" data-sweep></div>
+  <div class="img-ph has-img" data-sweep><img src="media/afgsu-formatrice-pose-electrodes-dae-640.jpg" srcset="media/afgsu-formatrice-pose-electrodes-dae-640.jpg 640w, media/afgsu-formatrice-pose-electrodes-dae-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="665" alt="Une formatrice pose les électrodes d’un défibrillateur sur un mannequin devant des étudiants en blouse" loading="lazy" decoding="async"></div>
  </div>
 </section>
 
 <section class="sec light" id="intra" aria-labelledby="h-intra">
  <div class="w split">
-  <div class="img-ph" role="img" aria-label="Photo à venir : équipe d’EHPAD en exercice de relevage" data-file="media/photo-02.jpg" data-img="photo : équipe soignante d’un EHPAD breton en exercice de relevage, couloir lumineux" data-sweep></div>
+  <div class="img-ph has-img" data-sweep><img src="media/afgsu-rcp-equipe-a-genoux-640.jpg" srcset="media/afgsu-rcp-equipe-a-genoux-640.jpg 640w, media/afgsu-rcp-equipe-a-genoux-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="665" alt="Quatre soignants agenouillés autour d’un mannequin, l’un d’eux en compressions" loading="lazy" decoding="async"></div>
   <div data-sweep>
    <p class="kick">Intra-établissement</p>
    <h2 id="h-intra" style="font-size:clamp(2.2rem,6vw,4rem);font-weight:900;margin-bottom:16px">Nous accostons chez vous</h2>
@@ -622,8 +632,6 @@ const SUR_DEMANDE = "Nous contacter";
 /* ========================================================================== */
 (() => {
 
-  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
-  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
@@ -646,16 +654,7 @@ const SUR_DEMANDE = "Nous contacter";
   /* phare */
   const beam = $('#beam'), LX = 480, LY = 94;
   const towns = $$('.town').map(g => { const c = $('.dot', g); return { g, a: Math.atan2(+c.getAttribute('cy') - LY, +c.getAttribute('cx') - LX) * 180 / Math.PI }; });
-  let ang = 150, on = !RM, vis = true, last = 0;
-  const setBeam = () => { beam.setAttribute('transform', `rotate(${ang.toFixed(2)} ${LX} ${LY})`); towns.forEach(t => { const d = Math.abs(((ang - t.a) % 360 + 540) % 360 - 180); t.g.classList.toggle('lit', d < 11); }); };
-  const spin = ts => { if (!on || !vis) { last = 0; return; } const dt = last ? Math.min(50, ts - last) : 16; last = ts; ang = (ang + dt * 0.04) % 360; setBeam(); requestAnimationFrame(spin); };
-  const bb = $('#beamBtn');
-  if (RM) { beam.setAttribute('transform', `rotate(${towns[1].a} ${LX} ${LY})`); towns.forEach(t => t.g.classList.add('lit')); bb.hidden = true; }
-  else {
-    setBeam(); requestAnimationFrame(spin);
-    new IntersectionObserver(([e]) => { const w = vis; vis = e.isIntersecting; if (vis && !w && on) requestAnimationFrame(spin); }).observe($('#chart'));
-    bb.addEventListener('click', () => { on = !on; bb.setAttribute('aria-pressed', !on); bb.textContent = on ? 'Éteindre le phare' : 'Rallumer le phare'; beam.style.display = on ? '' : 'none'; if (on) requestAnimationFrame(spin); else towns.forEach(t => t.g.classList.add('lit')); });
-  }
+  beam.setAttribute('transform', `rotate(${towns[1].a} ${LX} ${LY})`); towns.forEach(t => t.g.classList.add('lit'));
 
   /* métronome RCP */
   const box = $('#metroBox'), startB = $('#mStart'), bpm = $('#bpm'), out = $('#bpmOut'), snd = $('#mSound');

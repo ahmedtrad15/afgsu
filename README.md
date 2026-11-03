@@ -4,12 +4,14 @@ Each folder is a standalone site:
 
 - `index.html`: HTML, CSS and vanilla JS inline. Google Fonts is the only external dependency.
 - `mentions-legales.html` and `cgv.html`: the legal pages linked from the footer.
-- `media/`: logos, favicons, and the slot for your photos.
+- `media/`: logos, favicons and the site's photos.
+
+The `photos-sources/` folder at the root holds the original uploaded photos. It is not part of any site: don't deploy it.
 
 | Folder | Site name | Concept | Signature interactive |
 |---|---|---|---|
 | `01-ile-de-france` | Formation AFGSU Île-de-France | Transit plan (5 stations) | Clickable station map + full departures board |
-| `02-pays-de-la-loire` | Formation AFGSU Pays de la Loire | The Loire turns into an ECG as you scroll | « Quel niveau pour moi ? » quiz |
+| `02-pays-de-la-loire` | Formation AFGSU Pays de la Loire | The Loire as one thread, from the coast to Le Mans | « Quel niveau pour moi ? » quiz |
 | `03-bretagne` | Formation AFGSU Bretagne | Night nautical chart, lighthouse | CPR metronome |
 | `04-grand-est` | Formation AFGSU Grand Est | Engraved anatomical plates | Body explorer |
 | `05-hauts-de-france` | Formation AFGSU Hauts-de-France | Brick / block industrial | Intra team planner |
@@ -19,6 +21,10 @@ Each folder is a standalone site:
 | `09-auvergne-rhone-alpes` | Formation AFGSU Auvergne-Rhône-Alpes | Mountain rescue | Scroll-driven altimeter |
 | `10-centre-val-de-loire` | Formation AFGSU Centre-Val de Loire | Trainer's notebook | Financing finder + document checklist |
 | `11-france` | Formation AFGSU France | Regulation-room dashboard | National map + city/postcode search, 32 anchors `#afgsu-2-[ville]` |
+
+## Maps
+
+The regional maps (`01`–`10`) are static: no line drawing, pulses or moving beam. Only the national map in `11-france` is animated (pulses, network lines, region filter), with a pause button and a reduced-motion fallback.
 
 ## Sessions
 
@@ -42,7 +48,10 @@ Each `media/` folder contains:
 
 - `logo.svg`, `logo.png` (full logo), `logo-mark.svg` (symbol only), `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`.
 - `logo-fond-clair.png`: a dark-text version, for `03`, `05` and `08`.
-- `LISEZ-MOI.txt`: the list of photos to supply. Drop `photo-01.jpg`, `photo-02.jpg`… into `media/` with exactly those names and the page shows them automatically in place of the placeholders.
+- `afgsu-….jpg`: the site's photos, web-compressed, each in two widths (`-640`/`-1280`, or `-600`/`-1000` for portrait shots). The page picks the right width with `srcset`.
+- `LISEZ-MOI.txt`: the list of photos used by that site. To change a photo, replace both files and keep exactly the same names, then adapt the `alt` text in `index.html` if the subject changes.
+
+Each site shows 4 to 6 photos: its existing photo slots, plus a strip of 3 captioned photos (4 on `11`) in its programme section (`09`: in « La cordée »). No two sites open with the same photo, and no photo appears on more than two sites. Two uploads are not used: `recyclage-afgsu1.png` (351 px wide, too small) and `formation-afgsu.jpg` (first-aid-kit product shot).
 
 ## Still to do
 

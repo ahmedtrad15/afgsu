@@ -94,7 +94,8 @@ p{margin:0 0 1em}
 .step .dept{font:500 .8rem var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--loire)}
 .step .when{font:italic 400 1rem var(--serif);border-left:3px solid var(--coral);padding-left:12px;margin:14px 0}
 .step:last-child{min-height:80vh}
-.ecg-static{display:none}
+.ecg-static{display:block}
+@media (max-width:979px){.stage{position:relative;top:auto}}
 @media (min-width:980px){
  .voyage{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:0 40px;max-width:1240px;margin:0 auto;padding:0 20px}
  .left{display:block}
@@ -273,6 +274,12 @@ footer.site nav{display:flex;gap:18px}
 .mod .num{font-size:3rem}.mod h3{font-size:clamp(1.3rem,2.4vw,1.7rem);font-weight:500}
 .rive h3{font-size:1.6rem}.rive .p{font-size:1.7rem}.result h3{font-size:clamp(1.4rem,3vw,1.9rem)}
 .final h2{font-size:clamp(1.7rem,3.6vw,2.6rem);font-weight:500}blockquote{font-size:1.25rem}.faq summary{font-size:1.1rem}
+
+/* photos */
+.img-ph.has-img{overflow:hidden}.img-ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.phs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}.phs figure{margin:0;min-width:0}.phs figure:first-child{grid-column:1/-1}.phs img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.phs figcaption{margin-top:7px;font-size:.85rem;line-height:1.35}
+@media (min-width:760px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.phs figure:first-child{grid-column:auto}.phs img{aspect-ratio:4/3}}
+.phs img{border-radius:28px 28px 28px 6px}.phs figcaption{font:italic 400 .98rem/1.4 var(--serif);color:var(--mute)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -289,7 +296,7 @@ footer.site nav{display:flex;gap:18px}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"J’ai fait ma rentrée en IFSI à Nantes en septembre 2026 : l’AFGSU 2 conditionne-t-elle mon diplôme ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Depuis l’arrêté du 20 février 2026, les étudiants entrés à la rentrée 2026 doivent détenir une AFGSU 2 valide pour obtenir le diplôme d’État infirmier. Pensez à la planifier pendant votre cursus, avec votre certificat de scolarité comme justificatif."}},{"@type":"Question","name":"Kinésithérapeute libéral en Mayenne, faut-il aller jusqu’à Angers ou au Mans ?","acceptedAnswer":{"@type":"Answer","text":"Ce sont les deux villes les plus proches de la Mayenne parmi nos centres. Si plusieurs collègues de votre maison de santé sont intéressés, une session intra dans vos locaux peut aussi s’envisager."}},{"@type":"Question","name":"J’exerce sur la côte vendéenne : où se former sans monter à Nantes ?","acceptedAnswer":{"@type":"Answer","text":"À Saint-Gilles-Croix-de-Vie. Les dates y sont ouvertes à la demande : laissez vos disponibilités et nous vous rappelons sous 48 h avec une proposition."}},{"@type":"Question","name":"Pourquoi aucune date n’apparaît pour Nantes, Angers ou Le Mans ?","acceptedAnswer":{"@type":"Answer","text":"Parce que les sessions des Pays de la Loire s’organisent au cas par cas, en fonction des inscrits : contactez-nous par téléphone ou via le formulaire, et nous lançons la démarche avec vous."}},{"@type":"Question","name":"Notre EHPAD sarthois compte des aides-soignants et du personnel d’accueil : une même session pour tous ?","acceptedAnswer":{"@type":"Answer","text":"Non, ce sont deux formations distinctes. Les aides-soignants suivent l’AFGSU 2 (21 h), le personnel d’accueil l’AFGSU 1 (14 h). Les deux peuvent être organisées en intra dans l’établissement, par groupes de 10 à 12."}},{"@type":"Question","name":"Préparatrice en pharmacie à Angers, ai-je accès au niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les préparateurs en pharmacie font partie des professions visées. Vous pouvez vous inscrire directement à l’AFGSU 2."}},{"@type":"Question","name":"Je suis assistante de régulation médicale : niveau 1 ou niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Niveau 2. Les assistants de régulation médicale figurent dans le public de l’AFGSU 2, au même titre que les assistants médicaux ou les préleveurs sanguins."}},{"@type":"Question","name":"Mon AFGSU 2 date de 2023 : à quel moment programmer le recyclage ?","acceptedAnswer":{"@type":"Answer","text":"Elle reste valable quatre ans, donc jusqu’en 2027 à la date anniversaire. Visez une inscription 3 à 6 mois avant cette échéance : le recyclage de 7 h doit impérativement être suivi avant qu’elle ne tombe."}},{"@type":"Question","name":"Concrètement, que couvre le module sur les situations sanitaires exceptionnelles ?","acceptedAnswer":{"@type":"Answer","text":"En 3 h 30 : le dispositif ORSAN, le plan blanc et le plan bleu, l’afflux de victimes, les risques NRBC-E, l’évacuation et le confinement, ainsi que le soutien médico-psychologique."}},{"@type":"Question","name":"Une partie de la formation peut-elle se faire en ligne ?","acceptedAnswer":{"@type":"Answer","text":"Non. L’AFGSU 2 se suit entièrement en présentiel : sa validation repose sur la pratique et les mises en situation simulées, impossibles à reproduire à distance."}},{"@type":"Question","name":"Y a-t-il un examen le dernier jour ?","acceptedAnswer":{"@type":"Answer","text":"Pas d’examen final séparé. Le formateur évalue en continu, sur les trois jours, et la présence doit être intégrale pour que l’attestation soit délivrée."}},{"@type":"Question","name":"Ambulancier dans une entreprise privée de Loire-Atlantique, qui peut payer ma formation ?","acceptedAnswer":{"@type":"Answer","text":"C’est d’abord à votre employeur de la prévoir dans son plan de développement des compétences, éventuellement épaulé par l’OPCO de la branche. Un financement personnel reste possible, en 4x sans frais."}},{"@type":"Question","name":"Puis-je utiliser mon compte CPF ?","acceptedAnswer":{"@type":"Answer","text":"En principe, non : l’AFGSU n’est pas éligible au CPF. Les solutions passent plutôt par l’employeur, l’OPCO, l’ANFH ou le FIF-PL selon votre situation."}}]}</script>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><path d="M32 4C49 4 60 15 60 31S50 60 31 60 4 49 4 32 15 4 32 4Z" fill="#E86A50"/><path d="M10 36q5-7 10 0t8 0l4-13 5 22 4-13 3 4h10" fill="none" stroke="#12263A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><path d="M32 4C49 4 60 15 60 31S50 60 31 60 4 49 4 32 15 4 32 4Z" fill="#E86A50"/><path d="M8 46c7 0 9-9 16-9s9 7 15 5 6-9 8-12" fill="none" stroke="#12263A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M46 13v14M39 20h14" stroke="#FFFFFF" stroke-width="4.8" stroke-linecap="round"/></symbol></svg>
 <a class="skip" href="#main">Passer au contenu</a>
 <header class="hd">
  <div class="w">
@@ -357,7 +364,7 @@ footer.site nav{display:flex;gap:18px}
  <div class="stage" id="stage">
   <svg viewBox="0 0 640 610" role="img" aria-labelledby="st-t st-d" preserveAspectRatio="xMidYMid meet">
    <title id="st-t">Carte des Pays de la Loire et tracé de la Loire jusqu’au Mans</title>
-   <desc id="st-d">Une ligne continue relie Saint-Gilles-Croix-de-Vie, Nantes, Angers et Le Mans en suivant la côte, la Loire, la Maine et la Sarthe, puis se transforme en tracé ECG.</desc>
+   <desc id="st-d">Une ligne continue relie Saint-Gilles-Croix-de-Vie, Nantes, Angers et Le Mans en suivant la côte, la Loire, la Maine et la Sarthe ; un tracé ECG souligne la carte.</desc>
    <g aria-hidden="true">
     <path class="sea" d="M0 380q20-8 40 0t40 0M0 420q20-8 40 0t40 0M0 460q20-8 40 0t40 0M0 500q20-8 40 0t40 0M0 540q20-8 40 0t40 0M30 580q20-8 40 0t40 0"/>
     <path class="reg" d="M23.5 340.8L41.1 302.7L85 277.3L181.6 234.2L251.9 213.9L283.5 112.3L283.5 23.4L383.7 31.1L489.1 48.8L541.8 79.3L620.8 112.3L633.1 226.6L576.9 264.6L506.6 264.6L506.6 366.2L480.3 404.3L418.8 429.7L366.1 531.2L339.8 594.7L260.7 602.3L208 569.3L155.3 543.9L130.7 493.2L93.8 429.7L111.4 391.6L85 348.4Z"/>
@@ -377,8 +384,7 @@ footer.site nav{display:flex;gap:18px}
    </g>
    <path class="ecg-static" d="M40 590h120l10-24 12 40 10-30 8 14h420" fill="none" stroke="var(--coral)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"/>
   </svg>
-  <button class="stop" type="button" id="stopAnim" aria-pressed="false">Figer le tracé</button>
-  <p class="cap" id="cap" aria-live="polite">Faites défiler : le fil remonte de la côte vers Le Mans.</p>
+  <p class="cap" id="cap" aria-live="polite">De Saint-Gilles-Croix-de-Vie au Mans, par Nantes et Angers.</p>
  </div>
 </section>
 
@@ -446,7 +452,7 @@ footer.site nav{display:flex;gap:18px}
     <span class="num" aria-hidden="true">3</span>
     <div><h3>Urgences collectives &amp; situations sanitaires exceptionnelles</h3><p class="h">3 h 30 · penser à plusieurs</p>
     <p class="topics">ORSAN<b>·</b>plan blanc<b>·</b>plan bleu<b>·</b>afflux de victimes<b>·</b>NRBC-E<b>·</b>évacuation et confinement<b>·</b>soutien médico-psychologique</p></div>
-    <div class="img-ph" role="img" aria-label="Photo à venir : exercice d’afflux de victimes" data-file="media/photo-01.jpg" data-img="photo : exercice d’afflux de victimes, tri sur brancards, gilets de couleur" style="min-height:170px"></div>
+    <div class="img-ph has-img" style="min-height:170px"><img src="media/afgsu-binomes-massage-cardiaque-640.jpg" srcset="media/afgsu-binomes-massage-cardiaque-640.jpg 640w, media/afgsu-binomes-massage-cardiaque-1280.jpg 1280w" sizes="(min-width: 960px) 46vw, 100vw" width="1280" height="960" alt="Plusieurs binômes s’exercent au massage cardiaque sur des tapis, sacs de matériel ouverts au sol" loading="lazy" decoding="async"></div>
    </article>
   </div>
   <div class="days">
@@ -455,6 +461,11 @@ footer.site nav{display:flex;gap:18px}
    <div class="day" data-rise><h4>Jour 3</h4><p>3 h 30 d’urgences potentielles, puis 3 h 30 consacrées aux situations sanitaires exceptionnelles.</p></div>
   </div>
   <p class="mute" style="margin-top:16px;font-size:.9rem">Répartition indicative, ajustée par le formateur selon le groupe.</p>
+  <div class="phs" data-rise>
+    <figure><img src="media/afgsu-compressions-tapis-exterieur-600.jpg" srcset="media/afgsu-compressions-tapis-exterieur-600.jpg 600w, media/afgsu-compressions-tapis-exterieur-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 100vw" width="1000" height="1500" alt="Compressions thoraciques sur un mannequin posé sur un tapis violet, dans l’herbe" loading="lazy" decoding="async" style="object-position:center 40%"><figcaption>Compressions : bras tendus, épaules à l’aplomb.</figcaption></figure>
+    <figure><img src="media/afgsu-rcp-equipe-a-genoux-640.jpg" srcset="media/afgsu-rcp-equipe-a-genoux-640.jpg 640w, media/afgsu-rcp-equipe-a-genoux-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Soignants à genoux autour d’un mannequin posé au sol, massage cardiaque en cours" loading="lazy" decoding="async"><figcaption>Relais au massage, sans temps mort.</figcaption></figure>
+    <figure><img src="media/afgsu-mannequin-simulation-intube-640.jpg" srcset="media/afgsu-mannequin-simulation-intube-640.jpg 640w, media/afgsu-mannequin-simulation-intube-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="667" alt="Mannequin haute-fidélité intubé et relié à son ballon de ventilation" loading="lazy" decoding="async"><figcaption>Voies aériennes et ventilation au ballon.</figcaption></figure>
+  </div>
  </div>
 </section>
 
@@ -548,7 +559,7 @@ footer.site nav{display:flex;gap:18px}
    <p class="where">De Cholet à Laval, de La Roche-sur-Yon à Saumur, et partout en France.</p>
    <a class="peb" href="#ecrire" data-formation="Intra" data-centre="Intra">Recevoir un devis pour mon équipe</a>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : formation en EHPAD" data-file="media/photo-02.jpg" data-img="photo : relevage d’un résident simulé dans une chambre d’EHPAD, deux aides-soignantes" data-rise></div>
+  <div class="img-ph has-img" data-rise><img src="media/afgsu-equipe-rcp-ballon-640.jpg" srcset="media/afgsu-equipe-rcp-ballon-640.jpg 640w, media/afgsu-equipe-rcp-ballon-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="665" alt="Une équipe en blouse ventile et comprime un mannequin adulte allongé sur une table" loading="lazy" decoding="async"></div>
  </div>
 </section>
 
@@ -652,8 +663,6 @@ const SUR_DEMANDE = "Nous contacter";
 /* ========================================================================== */
 (() => {
 
-  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
-  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const M = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
@@ -693,25 +702,7 @@ const SUR_DEMANDE = "Nous contacter";
     cities.forEach(c => { c.g.classList.toggle('lit', prog >= c.f - .005); c.g.style.opacity = 1 - e * .85; });
     $('.reg').style.opacity = 1 - e * .7; $('#ghost').style.opacity = .55 * (1 - e);
   };
-  let frozen = false, ticking = false, lastStep = -1;
-  const update = () => {
-    ticking = false; if (frozen) return;
-    const r = steps.getBoundingClientRect(), vh = innerHeight;
-    const p = Math.min(1, Math.max(0, (vh * .55 - r.top) / r.height));
-    const k = Math.min(4, Math.floor(p * 5)), u = p * 5 - k;
-    let prog, morph = 0;
-    if (k < 4) prog = (k ? order[k - 1] : 0) + ((order[k]) - (k ? order[k - 1] : 0)) * Math.min(1, u * 1.4);
-    else { prog = 1; morph = Math.min(1, u * 1.6); }
-    draw(prog, morph);
-    if (k !== lastStep) { lastStep = k; cap.textContent = k < 4 ? `Étape ${k + 1} sur 5 : ${['Saint-Gilles-Croix-de-Vie', 'Nantes', 'Angers', 'Le Mans'][k]}` : 'Étape 5 sur 5 : la Loire devient un tracé ECG'; }
-  };
-  if (RM) { draw(1, 0); cities.forEach(c => c.g.classList.add('lit')); cap.textContent = 'De Saint-Gilles-Croix-de-Vie au Mans, par Nantes et Angers.'; }
-  else {
-    draw(0.02, 0);
-    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
-    addEventListener('resize', update); update();
-    $('#stopAnim').addEventListener('click', e => { frozen = !frozen; e.currentTarget.setAttribute('aria-pressed', frozen); e.currentTarget.textContent = frozen ? 'Reprendre le tracé' : 'Figer le tracé'; if (frozen) { draw(1, 0); cities.forEach(c => c.g.classList.add('lit')); } else update(); });
-  }
+  draw(1, 0); cities.forEach(c => c.g.classList.add('lit'));
 
   /* quiz « Quel niveau pour moi ? » */
   const quiz = $('#quiz'), qs = $$('[data-q]', quiz), next_ = $('#qnext'), prev = $('#qprev'), res = $('#qres'), bars = $$('.qbar i', quiz);

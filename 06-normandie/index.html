@@ -253,6 +253,12 @@ footer nav{display:flex;gap:16px}
 /* affinage typographique */
 .hero h1{font-size:clamp(1.75rem,3.6vw,2.7rem)}.sh h2{font-size:clamp(1.5rem,3vw,2.2rem)}
 .final h2{font-size:clamp(1.6rem,3.2vw,2.4rem)}.ok h3{font-size:1.8rem}.price .ent{font-size:1.8rem}
+
+/* photos */
+.img-ph.has-img{overflow:hidden}.img-ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.phs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}.phs figure{margin:0;min-width:0}.phs figure:first-child{grid-column:1/-1}.phs img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.phs figcaption{margin-top:7px;font-size:.85rem;line-height:1.35}
+@media (min-width:760px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.phs figure:first-child{grid-column:auto}.phs img{aspect-ratio:4/3}}
+.phs img{border:1px solid var(--ink)}.phs figcaption{font:400 .78rem/1.45 var(--m);color:var(--mut)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -269,7 +275,7 @@ footer nav{display:flex;gap:16px}
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ambulancier au Havre : pourquoi le niveau 2 plutôt que le niveau 1 ?","acceptedAnswer":{"@type":"Answer","text":"Parce que les ambulanciers appartiennent aux professions de santé visées par l’AFGSU 2. Le niveau 1, lui, est conçu pour les personnels qui n’exercent pas de soin."}},{"@type":"Question","name":"Notre société de transport sanitaire à Caen emploie des auxiliaires ambulanciers : sont-ils admis ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les auxiliaires ambulanciers figurent explicitement dans le public de l’AFGSU 2. Ils s’inscrivent avec les mêmes pièces que leurs collègues."}},{"@type":"Question","name":"La transmission du bilan est-elle travaillée concrètement ?","acceptedAnswer":{"@type":"Answer","text":"Oui : elle fait partie du module sur les urgences potentielles, et l’alerte au 15 ou au 112 ouvre le module sur les urgences vitales. Les deux sont mises en pratique lors des mises en situation simulées."}},{"@type":"Question","name":"Je travaille en SSIAD dans l’Eure : Évreux est-il mon centre ?","acceptedAnswer":{"@type":"Answer","text":"C’est le centre normand situé dans l’Eure. Pour une date, nous contacter : nous vous rappelons sous 48 h."}},{"@type":"Question","name":"Le simulateur affiche « urgent » : que dois-je faire ?","acceptedAnswer":{"@type":"Answer","text":"Il vous reste moins de six mois : contactez-nous sans attendre pour réserver le recyclage de 7 h, qui doit être terminé avant la date d’échéance. Le calcul est indicatif ; seule la date portée sur votre attestation fait foi."}},{"@type":"Question","name":"Une tolérance existe-t-elle après la date d’expiration ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le lendemain de l’échéance, le recyclage n’est plus accessible : il faut repasser par les 21 heures de la formation initiale."}},{"@type":"Question","name":"Manipulatrice radio à Rouen : le programme est-il le même pour moi ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les manipulateurs radio font partie du public, et les trois modules sont communs à toutes les professions inscrites, des urgences vitales aux situations sanitaires exceptionnelles."}},{"@type":"Question","name":"Sage-femme libérale dans le Calvados, quelles aides pour financer ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL, sous conditions, ou un financement personnel réglable en 4x sans frais. Le CPF n’entre en principe pas en ligne de compte pour l’AFGSU."}},{"@type":"Question","name":"L’accouchement inopiné est-il abordé pour toutes les professions ?","acceptedAnswer":{"@type":"Answer","text":"Oui, il figure au programme du module sur les urgences potentielles, suivi par l’ensemble du groupe, quel que soit le métier de chacun."}},{"@type":"Question","name":"Combien de temps pour obtenir une session à Caen-Mondeville ?","acceptedAnswer":{"@type":"Answer","text":"Il suffit de nous contacter : après votre appel ou votre formulaire, nous revenons vers vous sous 48 h avec une proposition de date."}},{"@type":"Question","name":"Notre officine de Cherbourg compte quatre préparateurs : l’intra est-il adapté ?","acceptedAnswer":{"@type":"Answer","text":"L’intra se construit pour un groupe de 10 à 12. Avec quatre personnes, une inscription en inter, par exemple à Caen-Mondeville, est souvent plus simple ; parlons-en au téléphone."}},{"@type":"Question","name":"Quels documents envoyer pour un recyclage ?","acceptedAnswer":{"@type":"Answer","text":"L’attestation AFGSU 2 en cours de validité, en plus des pièces habituelles : diplôme, carte professionnelle et numéro RPPS ou ADELI."}},{"@type":"Question","name":"Élève aide-soignant en IFAS à Caen : la formation m’est-elle ouverte ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les étudiants des professions de santé concernées peuvent s’inscrire. Votre certificat de scolarité tient lieu de justificatif professionnel."}}]}</script>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><rect x="6" y="6" width="52" height="52" rx="5" fill="#FAFAF7" stroke="#222222" stroke-width="3.2"/><path d="M13 35h8l4-8 5 16 6-23 4 11h10" fill="none" stroke="#2448A8" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="51" cy="13" r="3.5" fill="#C8323C"/></symbol></svg>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><rect x="6" y="10" width="46" height="46" rx="6" fill="#FAFAF7" stroke="#222222" stroke-width="3.4"/><path d="M16 33l9 9 21-24" fill="none" stroke="#2448A8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M54 4v12M48 10h12" stroke="#C8323C" stroke-width="3.6" stroke-linecap="round"/></symbol></svg>
 <a class="skip" href="#fiche">Atteindre la fiche</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="tick" viewBox="0 0 16 16"><path d="M2.5 8.5 6.5 12.5 13.5 3.5"/></symbol><symbol id="cross" viewBox="0 0 16 16"><path d="M3 3 13 13M13 3 3 13"/></symbol></defs></svg>
 
@@ -309,7 +315,7 @@ footer nav{display:flex;gap:16px}
   <div class="grid2">
    <div class="mapbox" data-carbon>
     <span class="lbl">Schéma de situation · Normandie</span>
-    <svg class="nmap pre" id="nmap" viewBox="0 0 700 520" role="img" aria-labelledby="nm-t nm-d">
+    <svg class="nmap" id="nmap" viewBox="0 0 700 520" role="img" aria-labelledby="nm-t nm-d">
      <title id="nm-t">Schéma de la Normandie et des quatre centres</title><desc id="nm-d">Contour de la région en pointillés bleus, Seine, et quatre cases cochées : Le Havre, Rouen, Évreux et Caen-Mondeville.</desc>
      <path class="reg" d="M609.9 24.9L557.2 57.9L432.5 101L402.6 116.3L385.1 169.6L420.2 184.8L323.6 220.4L262.1 205.1L165.5 205.1L146.2 123.9L82.9 129L24.9 111.2L42.5 192.4L86.4 334.6L100.5 390.5L179.5 408.2L279.7 415.9L385.1 433.6L437.8 464.1L516.8 497.1L534.4 408.2L595.9 349.8L631 306.7L648.6 273.7L666.2 235.6L669.7 179.7L682 103.6L622.2 52.8Z"/>
      <path class="seine" d="M385.1 177.2L420.2 179.7L450.1 174.7L499.3 184.8L529.1 197.5L560.8 182.3L578.3 205.1L615.2 233.1L627.5 271.1L652.1 286.4"/>
@@ -324,7 +330,7 @@ footer nav{display:flex;gap:16px}
    <div data-carbon>
     <table class="slots" id="slots"><caption class="sr">Créneaux par centre</caption><thead><tr><th scope="col">Centre</th><th scope="col">Prochaine session</th><th scope="col">Action</th></tr></thead><tbody><tr><td colspan="3">Dates : nous contacter au 07 80 91 23 35</td></tr></tbody></table>
     <p class="ext" id="ext"></p>
-    <div class="img-ph" role="img" aria-label="Photo à venir : transmission d’un bilan par téléphone en simulation" data-file="media/photo-01.jpg" data-img="binôme en simulation transmettant un bilan au téléphone, fiche à la main" style="margin-top:16px"></div>
+    <div class="img-ph has-img" style="margin-top:16px"><img src="media/afgsu-prise-tension-mannequin-640.jpg" srcset="media/afgsu-prise-tension-mannequin-640.jpg 640w, media/afgsu-prise-tension-mannequin-800.jpg 800w" sizes="(min-width: 960px) 46vw, 100vw" width="800" height="533" alt="Prise de tension au brassard sur le bras d’un mannequin, tablette de suivi en arrière-plan" loading="lazy" decoding="async"></div>
    </div>
   </div>
  </section>
@@ -350,6 +356,11 @@ footer nav{display:flex;gap:16px}
   </div>
   <table class="daytab" data-carbon><caption class="sr">Répartition indicative par jour</caption><thead><tr><th scope="col">Jour</th><th scope="col">Matin (3 h 30)</th><th scope="col">Après-midi (3 h 30)</th></tr></thead><tbody><tr><th scope="row">J1</th><td>Urgences vitales</td><td>Urgences vitales</td></tr><tr><th scope="row">J2</th><td>Urgences vitales</td><td>Urgences potentielles</td></tr><tr><th scope="row">J3</th><td>Urgences potentielles</td><td>Urgences collectives &amp; SSE</td></tr></tbody></table>
   <p class="ext">Répartition indicative.</p>
+  <div class="phs" data-carbon>
+    <figure><img src="media/afgsu-equipe-rcp-mannequin-adulte-640.jpg" srcset="media/afgsu-equipe-rcp-mannequin-adulte-640.jpg 640w, media/afgsu-equipe-rcp-mannequin-adulte-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 100vw" width="1000" height="665" alt="Équipe en blouse autour d’un mannequin adulte : insufflation au ballon et compressions" loading="lazy" decoding="async"><figcaption>Fig. 1 — RCP à plusieurs, rôles répartis.</figcaption></figure>
+    <figure><img src="media/afgsu-equipe-mannequin-nourrisson-640.jpg" srcset="media/afgsu-equipe-mannequin-nourrisson-640.jpg 640w, media/afgsu-equipe-mannequin-nourrisson-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Soignants penchés sur un mannequin nourrisson posé sur une table" loading="lazy" decoding="async"><figcaption>Fig. 2 — Nourrisson : gestes adaptés.</figcaption></figure>
+    <figure><img src="media/afgsu-salle-formation-soignants-640.jpg" srcset="media/afgsu-salle-formation-soignants-640.jpg 640w, media/afgsu-salle-formation-soignants-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Soignants assis en salle de formation, l’un d’eux lève la main" loading="lazy" decoding="async"><figcaption>Fig. 3 — Temps d’échange en salle.</figcaption></figure>
+  </div>
  </section>
 
  <section class="pad sec" id="identification" aria-labelledby="h-id">
@@ -498,8 +509,6 @@ const SUR_DEMANDE = "Nous contacter";
 /* ======================================================================== */
 (() => {
 
-  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
-  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
@@ -519,8 +528,6 @@ const SUR_DEMANDE = "Nous contacter";
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
   $$('[data-carbon],[data-stamp],.ecg-paper,.ticks').forEach(el => io.observe(el));
   $$('.ticks').forEach(ul => $$('.cb path', ul).forEach((p, i) => p.style.transitionDelay = (0.5 + i * 0.18) + 's'));
-  const nmap = $('#nmap');
-  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { nmap.classList.remove('pre'); o.disconnect(); } }, { threshold: .3 }).observe(nmap);
 
   /* simulateur de validité */
   const inp = $('#dObt'), res = $('#simRes');

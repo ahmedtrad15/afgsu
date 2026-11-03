@@ -240,6 +240,12 @@ footer nav{display:flex;gap:16px}
 /* affinage typographique */
 .hero h1{font-size:clamp(1.75rem,3.6vw,2.7rem)}.sh h2{font-size:clamp(1.5rem,3vw,2.2rem)}
 .final h2{font-size:clamp(1.6rem,3.4vw,2.4rem)}.pricebox strong{font-size:2.1rem}
+
+/* photos */
+.img-ph.has-img{overflow:hidden}.img-ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.phs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}.phs figure{margin:0;min-width:0}.phs figure:first-child{grid-column:1/-1}.phs img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.phs figcaption{margin-top:7px;font-size:.85rem;line-height:1.35}
+@media (min-width:760px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.phs figure:first-child{grid-column:auto}.phs img{aspect-ratio:4/3}}
+.phs figure{background:#fff;padding:10px 10px 6px;box-shadow:0 8px 20px -14px rgba(0,0,0,.4);transform:rotate(-1deg)}.phs figure:nth-child(2){transform:rotate(1.1deg)}.phs figcaption{font:400 1.25rem/1.2 var(--c);color:var(--ink);margin-top:4px}.img-ph.has-img{min-height:300px}.img-ph>img{inset:12px 12px 40px;width:calc(100% - 24px);height:calc(100% - 52px)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -294,7 +300,7 @@ footer nav{display:flex;gap:16px}
      <path class="b" pathLength="1" d="M150 60C170 40 210 40 226 58"/><path class="b" pathLength="1" d="M222 48 226 58 214 60"/>
     </svg>
     <span class="note">← PLS : la victime inconsciente qui respire, module 1</span>
-    <div class="img-ph" role="img" aria-label="Photo à venir : formatrice montrant la PLS" data-file="media/photo-01.jpg" data-img="formatrice montrant la PLS à un groupe d’aides-soignants" style="margin-top:22px"></div>
+    <div class="img-ph has-img" style="margin-top:22px"><img src="media/afgsu-formatrice-ballon-masque-640.jpg" srcset="media/afgsu-formatrice-ballon-masque-640.jpg 640w, media/afgsu-formatrice-ballon-masque-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="667" alt="Une formatrice présente un masque à oxygène à un groupe assis autour d’une table" fetchpriority="high" decoding="async"></div>
    </div>
   </div>
  </section>
@@ -308,7 +314,7 @@ footer nav{display:flex;gap:16px}
     <div class="postit" id="postit" hidden><p id="postitTxt"></p></div>
    </div>
    <div data-jot>
-    <svg class="cmap pre" id="cmap" viewBox="0 0 520 590" role="img" aria-labelledby="cm-t cm-d">
+    <svg class="cmap" id="cmap" viewBox="0 0 520 590" role="img" aria-labelledby="cm-t cm-d">
      <title id="cm-t">Croquis de la région Centre-Val de Loire</title><desc id="cm-d">Contour de la région au crayon, la Loire à l’encre bleue passant par Orléans, Blois et Tours ; Orléans, Tours et Bourges entourés au surligneur ; Chartres, Dreux, Blois et Châteauroux notés pour l’intra.</desc>
      <path class="reg" pathLength="1" d="M22.4 415.1L45.7 381.4L45.7 291.6L107.9 291.6L157.6 257.9L146.7 156.8L162.2 78.2L216.6 26.6L247.7 67L286.6 100.7L325.4 134.4L395.4 141.1L473.1 174.8L496.4 201.8L501 291.6L473.1 359L491.7 426.4L465.3 482.5L418.7 471.3L368.9 556.6L247.7 561.1L170 527.4L115.6 482.5L61.2 437.6Z"/>
      <path class="reg2" pathLength="1" d="M22.4 415.1L45.7 381.4L45.7 291.6L107.9 291.6L157.6 257.9L146.7 156.8L162.2 78.2L216.6 26.6L247.7 67L286.6 100.7L325.4 134.4L395.4 141.1L473.1 174.8L496.4 201.8L501 291.6L473.1 359L491.7 426.4L465.3 482.5L418.7 471.3L368.9 556.6L247.7 561.1L170 527.4L115.6 482.5L61.2 437.6Z" transform="translate(3 2)"/>
@@ -355,6 +361,11 @@ footer nav{display:flex;gap:16px}
    <div><b>J3</b><span>3 h 30 potentielles + 3 h 30 SSE</span></div>
   </div>
   <p class="note" style="margin-top:12px;font-size:1.2rem">(découpage indicatif)</p>
+  <div class="phs" data-jot>
+    <figure><img src="media/afgsu-compressions-gros-plan-640.jpg" srcset="media/afgsu-compressions-gros-plan-640.jpg 640w, media/afgsu-compressions-gros-plan-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 100vw" width="1000" height="686" alt="Mains en compressions sur un mannequin, fiche de secours posée à côté" loading="lazy" decoding="async"><figcaption>compressions : on compte à voix haute</figcaption></figure>
+    <figure><img src="media/afgsu-question-en-session-640.jpg" srcset="media/afgsu-question-en-session-640.jpg 640w, media/afgsu-question-en-session-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Professionnels de santé en session, une participante lève la main" loading="lazy" decoding="async"><figcaption>ici, toutes les questions sont bonnes</figcaption></figure>
+    <figure><img src="media/afgsu-prise-tension-mannequin-640.jpg" srcset="media/afgsu-prise-tension-mannequin-640.jpg 640w, media/afgsu-prise-tension-mannequin-800.jpg 800w" sizes="(min-width: 760px) 31vw, 50vw" width="800" height="533" alt="Mesure de la tension artérielle sur un mannequin avec un brassard" loading="lazy" decoding="async"><figcaption>le bilan : tension, pouls, respiration</figcaption></figure>
+  </div>
  </section>
 
  <section class="pg sec" id="financement" aria-labelledby="h-fin">
@@ -480,7 +491,7 @@ footer nav{display:flex;gap:16px}
    <div data-jot>
     <div class="sh"><span class="note">dernière page à remplir</span><h2 id="h-ins">Votre inscription</h2><p>Quelques lignes suffisent. Wafa reprend tout avec vous par téléphone.</p></div>
     <p><a class="tel-n" href="tel:+33780912335">07 80 91 23 35<span>ligne AFGSU</span></a></p>
-    <div class="img-ph" role="img" aria-label="Photo à venir : carnet ouvert sur une table de formation" data-file="media/photo-02.jpg" data-img="carnet ouvert, mannequin nourrisson et feutre surligneur sur la table" style="transform:rotate(1.2deg)"></div>
+    <div class="img-ph has-img" style="transform:rotate(1.2deg)"><img src="media/afgsu-rcp-nourrisson-equipe-640.jpg" srcset="media/afgsu-rcp-nourrisson-equipe-640.jpg 640w, media/afgsu-rcp-nourrisson-equipe-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="667" alt="Trois soignants penchés sur un mannequin nourrisson, l’un tient le masque de ventilation" loading="lazy" decoding="async"></div>
    </div>
    <div data-jot>
     <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
@@ -532,8 +543,6 @@ const SUR_DEMANDE = "Nous contacter";
 /* =========================================================================== */
 (() => {
 
-  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
-  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
@@ -551,8 +560,6 @@ const SUR_DEMANDE = "Nous contacter";
   /* crayon & surligneur */
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -10% 0px' });
   $$('[data-jot], .hl, .sketch.drw').forEach(el => io.observe(el));
-  const cmap = $('#cmap');
-  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { cmap.classList.remove('pre'); o.disconnect(); } }, { threshold: .3 }).observe(cmap);
 
   /* financement + pièces */
   const ROUTES = {

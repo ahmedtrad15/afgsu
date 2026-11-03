@@ -238,6 +238,12 @@ h1,h2,h3{font-weight:700}.hero h1{font-size:clamp(1.65rem,3.2vw,2.6rem)}
 .post h3{font-size:clamp(2rem,3.6vw,2.6rem)}.tagp strong{font-size:2.2rem}.seg h3{font-size:clamp(1.3rem,2.6vw,1.8rem)}
 .voices blockquote{font-size:clamp(1.15rem,2vw,1.4rem)}.ok h3{font-size:1.9rem}.cta{font-size:1rem}
 .faq summary{font:600 1.06rem/1.4 var(--b)}.fins h3{font-size:1.2rem}.poster text{font-size:20px}
+
+/* photos */
+.img-ph.has-img{overflow:hidden}.img-ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.phs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}.phs figure{margin:0;min-width:0}.phs figure:first-child{grid-column:1/-1}.phs img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.phs figcaption{margin-top:7px;font-size:.85rem;line-height:1.35}
+@media (min-width:760px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.phs figure:first-child{grid-column:auto}.phs img{aspect-ratio:4/3}}
+.phs img{border-radius:24px}.phs figcaption{font:600 .92rem var(--b);color:var(--cream)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -322,13 +328,18 @@ h1,h2,h3{font-weight:700}.hero h1{font-size:clamp(1.65rem,3.2vw,2.6rem)}
    </div>
    <p class="snote">Découpage donné à titre indicatif ; à l’intérieur de chaque module, l’ordre des thèmes est ajusté par le formateur.</p>
   </div>
+  <div class="phs" data-print>
+    <figure><img src="media/afgsu-mains-thorax-mannequin-600.jpg" srcset="media/afgsu-mains-thorax-mannequin-600.jpg 600w, media/afgsu-mains-thorax-mannequin-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 100vw" width="1000" height="1500" alt="Mains posées l’une sur l’autre sur un mannequin, tapis violet dans l’herbe" loading="lazy" decoding="async" style="object-position:center 55%"><figcaption>Matin : les mains se placent.</figcaption></figure>
+    <figure><img src="media/afgsu-soignante-briefing-equipe-640.jpg" srcset="media/afgsu-soignante-briefing-equipe-640.jpg 640w, media/afgsu-soignante-briefing-equipe-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Une soignante tient un dossier vert, son équipe assise derrière elle" loading="lazy" decoding="async"><figcaption>Midi : on fait le point.</figcaption></figure>
+    <figure><img src="media/afgsu-rcp-a-genoux-dae-640.jpg" srcset="media/afgsu-rcp-a-genoux-dae-640.jpg 640w, media/afgsu-rcp-a-genoux-dae-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Relais au massage cardiaque à trois, défibrillateur de formation déplié au sol" loading="lazy" decoding="async"><figcaption>Après-midi : on se relaie.</figcaption></figure>
+  </div>
  </div>
 </section>
 
 <section class="sec" id="aix" aria-labelledby="h-aix">
  <div class="w mapwrap">
   <div data-reg>
-   <svg class="pmap pre" id="pmap" viewBox="0 0 680 590" role="img" aria-labelledby="pm-t pm-d">
+   <svg class="pmap" id="pmap" viewBox="0 0 680 590" role="img" aria-labelledby="pm-t pm-d">
     <title id="pm-t">Carte de Provence-Alpes-Côte d’Azur façon affiche</title>
     <desc id="pm-d">Aix-en-Provence, centre de formation, marqué d’un soleil ; Marseille, Toulon, Nice, Cannes, Avignon, Gap et Digne-les-Bains indiqués comme villes où la formation peut venir en intra.</desc>
     <g class="l1"><path class="land1" d="M31.6 457.8L96.6 467.9L166.9 478.1L237.2 521.3L330.3 549.2L405.8 549.2L456.8 506L505.9 465.4L539.3 432.4L565.7 396.8L611.4 376.5L641.2 295.3L509.5 206.4L518.2 142.9L453.2 38.8L377.7 54.1L307.4 142.9L254.7 206.4L193.2 206.4L105.4 239.4L105.4 320.7L96.6 396.8Z"/></g>
@@ -367,7 +378,7 @@ h1,h2,h3{font-weight:700}.hero h1{font-size:clamp(1.65rem,3.2vw,2.6rem)}
    <ul class="places"><li>Hôpital</li><li>Clinique</li><li>EHPAD</li><li>Cabinet</li><li>Officine</li><li>Centre de santé</li></ul>
    <a class="cta sunny" href="#ecrire" data-formation="Intra" data-centre="Intra">Faire venir la formation chez nous</a>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : formation au DAE dans une clinique" data-file="media/photo-01.jpg" data-img="photo : infirmières d’une clinique en exercice DAE, lumière du matin dans la salle" data-print style="min-height:360px"></div>
+  <div class="img-ph has-img" data-print style="min-height:360px"><img src="media/afgsu-dae-formation-compressions-600.jpg" srcset="media/afgsu-dae-formation-compressions-600.jpg 600w, media/afgsu-dae-formation-compressions-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="1333" alt="Une stagiaire comprime le thorax d’un mannequin, défibrillateur de formation ouvert à ses côtés" loading="lazy" decoding="async" style="object-position:center 62%"></div>
  </div>
 </section>
 
@@ -437,7 +448,7 @@ h1,h2,h3{font-weight:700}.hero h1{font-size:clamp(1.65rem,3.2vw,2.6rem)}
     <div><h3>20 février 2026</h3><p style="margin:0">Un arrêté conditionne désormais le diplôme d’État infirmier à une AFGSU 2 valide, pour les étudiants ayant fait leur rentrée en 2026.</p></div>
     <div><h3>Mars 2026</h3><p style="margin:0">L’ANCESU et la SFMU publient de nouvelles recommandations.</p></div>
    </div>
-   <div class="img-ph" role="img" aria-label="Photo à venir : mannequin nourrisson et mains d’une auxiliaire de puériculture" data-file="media/photo-02.jpg" data-img="photo : gestes sur mannequin nourrisson, mains d’une auxiliaire de puériculture" style="margin-top:24px"></div>
+   <div class="img-ph has-img" style="margin-top:24px"><img src="media/afgsu-ventilation-nourrisson-masque-640.jpg" srcset="media/afgsu-ventilation-nourrisson-masque-640.jpg 640w, media/afgsu-ventilation-nourrisson-masque-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="667" alt="Ventilation au masque sur un mannequin nourrisson, plusieurs mains autour" loading="lazy" decoding="async"></div>
   </div>
  </div>
 </section>
@@ -534,8 +545,6 @@ const SUR_DEMANDE = "Nous contacter";
 /* ====================================================================== */
 (() => {
 
-  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
-  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
@@ -554,8 +563,6 @@ const SUR_DEMANDE = "Nous contacter";
   /* repérage (impression) */
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
   $$('[data-reg],[data-print]').forEach(el => io.observe(el));
-  const pmap = $('#pmap');
-  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { pmap.classList.remove('pre'); o.disconnect(); } }, { threshold: .3 }).observe(pmap);
 
   /* curseur des trois jours */
   const SEG = [

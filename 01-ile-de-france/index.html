@@ -107,7 +107,6 @@ section{padding:64px 0}
 .netmap .ln{fill:none;stroke-width:10;stroke-linecap:round;stroke-linejoin:round}
 .netmap .draw{stroke-dasharray:1;stroke-dashoffset:0}
 .js .netmap.pre .draw{stroke-dashoffset:1}
-.netmap .draw{transition:stroke-dashoffset 1.6s cubic-bezier(.6,0,.2,1)}
 .st{cursor:pointer}
 .st circle.o{fill:#fff;stroke:var(--ink);stroke-width:4.5;transition:r .25s}
 .st:hover circle.o,.st.on circle.o{r:15}
@@ -273,6 +272,12 @@ footer a{color:var(--paper)}
 .intra .sign{background:transparent;color:var(--paper);border-color:var(--paper)}.intra .sign .dir{color:#cfd1d5}
 .price strong{font-size:2.1rem}@media (min-width:1000px){.price strong{font-size:2.4rem}}
 .final h2{font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:600}.mod h3{font-size:1.15rem}.q summary{font-size:1.02rem}
+
+/* photos */
+.img-ph.has-img{overflow:hidden}.img-ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.phs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}.phs figure{margin:0;min-width:0}.phs figure:first-child{grid-column:1/-1}.phs img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.phs figcaption{margin-top:7px;font-size:.85rem;line-height:1.35}
+@media (min-width:760px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.phs figure:first-child{grid-column:auto}.phs img{aspect-ratio:4/3}}
+
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -355,11 +360,10 @@ footer a{color:var(--paper)}
   <div class="mapbox" id="carte">
    <div class="map-bar">
     <div class="legend" aria-hidden="true"><span><b style="background:var(--red)"></b>V1</span><span><b style="background:var(--teal)"></b>V2</span><span><b style="background:var(--amber)"></b>V3 rocade</span></div>
-    <button class="pause" type="button" aria-pressed="false" id="pauseMap">Pause pouls</button>
    </div>
    <p class="hint">Faites glisser le plan pour voir Pontault-Combault →</p>
    <div class="map-scroll" tabindex="0" role="region" aria-label="Plan des stations, défilable horizontalement">
-   <svg class="netmap pre" id="netmap" viewBox="0 0 680 480" role="img" aria-labelledby="mt md">
+   <svg class="netmap" id="netmap" viewBox="0 0 680 480" role="img" aria-labelledby="mt md">
     <title id="mt">Plan des cinq centres AFGSU 2 franciliens</title>
     <desc id="md">Trois lignes relient Houilles, Noisy-le-Sec, Pontault-Combault, Choisy-le-Roi et Palaiseau, placés selon leur position géographique réelle, avec la Seine, la Marne et Paris intra-muros en repère.</desc>
     <path class="river" d="M427.5 483.3L386.9 436.4L354.5 383.7L338.3 360.2L330.2 319.2L330.2 289.9L305.8 272.4L289.6 257.1L265.3 246.6L241 248.9L228.8 260.6L208.5 284.1L188.3 278.2L184.2 248.9L196.4 219.6L220.7 196.2L257.2 196.2L273.4 184.5L281.5 166.9L241 155.2L208.5 149.3L176.1 166.9L151.8 190.3L127.5 213.8L95 207.9L78.8 166.9L54.5 131.7"/>
@@ -373,14 +377,14 @@ footer a{color:var(--paper)}
      <path id="lV2" class="ln draw" stroke="var(--teal)" pathLength="1" d="M209 425L279 425L338 366L500 366L500 319"/>
      <path id="lV3" class="ln draw" stroke="var(--amber)" pathLength="1" d="M160 167L160 376L209 425L290 344L290 303L379 214"/>
     </g>
-    <g id="blips" aria-hidden="true"></g>
+    
     <circle class="conf" cx="209" cy="425" r="22" aria-hidden="true"/>
     <g id="stationsSvg">
-     <g class="st" data-st="Houilles"><circle class="ping" cx="160" cy="167" r="12"/><circle class="hit" cx="160" cy="167" r="26"/><circle class="o" cx="160" cy="167" r="11"/><text x="146" y="152" text-anchor="end">Houilles</text></g>
-     <g class="st" data-st="Noisy-le-Sec"><circle class="ping" cx="379" cy="214" r="12"/><circle class="hit" cx="379" cy="214" r="26"/><circle class="o" cx="379" cy="214" r="11"/><text x="392" y="198">Noisy-le-Sec</text></g>
-     <g class="st" data-st="Pontault-Combault"><circle class="ping" cx="500" cy="319" r="12"/><circle class="hit" cx="500" cy="319" r="26"/><circle class="o" cx="500" cy="319" r="11"/><text x="518" y="314">Pontault-</text><text x="518" y="333">Combault</text></g>
-     <g class="st" data-st="Choisy-le-Roi"><circle class="ping" cx="338" cy="366" r="12"/><circle class="hit" cx="338" cy="366" r="26"/><circle class="o" cx="338" cy="366" r="11"/><text x="352" y="394">Choisy-le-Roi</text></g>
-     <g class="st" data-st="Palaiseau"><circle class="ping" cx="209" cy="425" r="12"/><circle class="hit" cx="209" cy="425" r="26"/><circle class="o" cx="209" cy="425" r="11"/><text x="244" y="452">Palaiseau</text><text class="tag" x="244" y="468">11 sessions programmées</text></g>
+     <g class="st" data-st="Houilles"><circle class="hit" cx="160" cy="167" r="26"/><circle class="o" cx="160" cy="167" r="11"/><text x="146" y="152" text-anchor="end">Houilles</text></g>
+     <g class="st" data-st="Noisy-le-Sec"><circle class="hit" cx="379" cy="214" r="26"/><circle class="o" cx="379" cy="214" r="11"/><text x="392" y="198">Noisy-le-Sec</text></g>
+     <g class="st" data-st="Pontault-Combault"><circle class="hit" cx="500" cy="319" r="26"/><circle class="o" cx="500" cy="319" r="11"/><text x="518" y="314">Pontault-</text><text x="518" y="333">Combault</text></g>
+     <g class="st" data-st="Choisy-le-Roi"><circle class="hit" cx="338" cy="366" r="26"/><circle class="o" cx="338" cy="366" r="11"/><text x="352" y="394">Choisy-le-Roi</text></g>
+     <g class="st" data-st="Palaiseau"><circle class="hit" cx="209" cy="425" r="26"/><circle class="o" cx="209" cy="425" r="11"/><text x="244" y="452">Palaiseau</text><text class="tag" x="244" y="468">11 sessions programmées</text></g>
     </g>
     <g aria-hidden="true" transform="translate(640 420)"><path d="M0 34V0m-8 10 8-10 8 10" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="0" y="52" text-anchor="middle" class="ringlab">N</text></g>
    </svg>
@@ -408,7 +412,7 @@ footer a{color:var(--paper)}
     <p class="board-note">Adresses : Palaiseau, 4 allée des Garays (91120) · Choisy-le-Roi, 16 avenue Jean Jaurès (94600) · Noisy-le-Sec, 9 rue Saint-Just (93130). Pontault-Combault : lieu précisé avec la convocation. Houilles : nous contacter.</p>
    </div>
    <div data-arrive>
-    <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires en mise en situation sur mannequin adulte" data-file="media/photo-01.jpg" data-img="photo : binôme de stagiaires en compressions sur mannequin adulte, salle de Palaiseau" style="min-height:300px"></div>
+    <div class="img-ph has-img" style="min-height:300px"><img src="media/afgsu-rcp-a-genoux-dae-640.jpg" srcset="media/afgsu-rcp-a-genoux-dae-640.jpg 640w, media/afgsu-rcp-a-genoux-dae-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="665" alt="Trois soignants à genoux autour d’un mannequin adulte : massage cardiaque, défibrillateur de formation ouvert à côté" loading="lazy" decoding="async"></div>
    </div>
   </div>
  </div>
@@ -478,7 +482,7 @@ footer a{color:var(--paper)}
      <li>AES / AMP</li><li>Assistants de régulation médicale</li><li>Assistants médicaux</li><li>Préleveurs sanguins</li><li>Auxiliaires ambulanciers</li>
     </ul>
    </div>
-   <div class="img-ph" role="img" aria-label="Photo à venir : chariot d’urgence ouvert" data-file="media/photo-02.jpg" data-img="photo : chariot d’urgence ouvert, tiroirs étiquetés, bouteille O2 fixée" style="min-height:260px" data-arrive></div>
+   <div class="img-ph has-img" style="min-height:260px" data-arrive><img src="media/afgsu-mannequin-simulation-intube-640.jpg" srcset="media/afgsu-mannequin-simulation-intube-640.jpg 640w, media/afgsu-mannequin-simulation-intube-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="667" alt="Mannequin de simulation intubé, masque et ballon de ventilation branchés" loading="lazy" decoding="async"></div>
   </div>
   <div class="cols" style="margin-top:34px">
    <div class="card-plain" data-arrive><h3>Prérequis</h3><p>Faire partie du public visé, rien de plus. L’AFGSU 1 n’est pas une étape obligatoire avant le niveau 2.</p></div>
@@ -524,7 +528,7 @@ footer a{color:var(--paper)}
    </ul>
    <p class="warn" data-arrive>Côté CPF : l’AFGSU n’y est en principe pas éligible. Nous ne le promettons donc jamais.</p>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : défibrillateur et électrodes posés sur un mannequin" data-file="media/photo-03.jpg" data-img="photo : DAE de formation, électrodes posées sur mannequin, gros plan" style="min-height:340px" data-arrive></div>
+  <div class="img-ph has-img" style="min-height:340px" data-arrive><img src="media/afgsu-electrodes-dae-mannequin-640.jpg" srcset="media/afgsu-electrodes-dae-mannequin-640.jpg 640w, media/afgsu-electrodes-dae-mannequin-1280.jpg 1280w" sizes="(min-width: 960px) 46vw, 100vw" width="1280" height="853" alt="Gros plan sur les électrodes d’un défibrillateur collées sur le thorax d’un mannequin" loading="lazy" decoding="async"></div>
  </div>
 </section>
 
@@ -536,7 +540,7 @@ footer a{color:var(--paper)}
    <ul class="places" data-arrive><li>Hôpital</li><li>Clinique</li><li>EHPAD</li><li>Cabinet</li><li>Officine</li><li>Centre de santé</li></ul>
    <a class="btn alt" href="#guichet" data-formation="Intra" data-centre="Intra" data-arrive><span class="rd" aria-hidden="true">+</span>Affréter une session intra</a>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : formation dans un couloir de service" data-file="media/photo-04.jpg" data-img="photo : formatrice et équipe de nuit en simulation dans un couloir de service" style="min-height:300px" data-arrive></div>
+  <div class="img-ph has-img" style="min-height:300px" data-arrive><img src="media/afgsu-formateur-insufflation-ballon-640.jpg" srcset="media/afgsu-formateur-insufflation-ballon-640.jpg 640w, media/afgsu-formateur-insufflation-ballon-1000.jpg 1000w" sizes="(min-width: 960px) 46vw, 100vw" width="1000" height="665" alt="Un formateur en tenue bleue explique l’insufflation au ballon à trois stagiaires agenouillés" loading="lazy" decoding="async"></div>
  </div>
 </section>
 
@@ -681,8 +685,6 @@ const SUR_DEMANDE = "Nous contacter";
 /* ==================================================================== */
 (() => {
 
-  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
-  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const MOIS = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
   const today = new Date(); today.setHours(0,0,0,0);
@@ -726,37 +728,6 @@ const SUR_DEMANDE = "Nous contacter";
   /* apparitions */
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
   $$('[data-arrive]').forEach(el => io.observe(el));
-
-  /* tracé des lignes + pouls ECG */
-  const map = $('#netmap');
-  requestAnimationFrame(() => map.classList.remove('pre'));
-  const NS = 'http://www.w3.org/2000/svg', blipsG = $('#blips');
-  const SHAPE = 'M-18 0h8l3-9 4 17 3-13 2 5h16';
-  const blips = $$('#lines path').map((p, i) => {
-    const g = document.createElementNS(NS, 'g'); g.setAttribute('class', 'blip');
-    g.innerHTML = `<path class="b0" d="${SHAPE}"/><path class="b1" d="${SHAPE}"/>`; blipsG.append(g);
-    return { p, g, L: p.getTotalLength(), s: i * 140, dir: 1 };
-  });
-  const stPts = $$('.st').map(g => { const c = $('.o', g); return { x: +c.getAttribute('cx'), y: +c.getAttribute('cy'), ping: $('.ping', g), last: 0 }; });
-  let running = !RM, visible = true, prev = 0;
-  const place = b => { const pt = b.p.getPointAtLength(b.s), q = b.p.getPointAtLength(Math.min(b.L, Math.max(0, b.s + b.dir))); const a = Math.atan2(q.y - pt.y, q.x - pt.x) * 57.3; b.g.setAttribute('transform', `translate(${pt.x.toFixed(1)} ${pt.y.toFixed(1)}) rotate(${a.toFixed(1)})`); return pt; };
-  const tick = t => {
-    const dt = prev ? Math.min(60, t - prev) : 16; prev = t;
-    blips.forEach(b => {
-      b.s += b.dir * dt * 0.11; if (b.s >= b.L) { b.s = b.L; b.dir = -1; } else if (b.s <= 0) { b.s = 0; b.dir = 1; }
-      const pt = place(b);
-      stPts.forEach(st => { if (Math.hypot(st.x - pt.x, st.y - pt.y) < 6 && t - st.last > 900) { st.last = t; st.ping.classList.remove('go'); void st.ping.getBBox(); st.ping.classList.add('go'); } });
-    });
-    if (running && visible) requestAnimationFrame(tick); else prev = 0;
-  };
-  const btn = $('#pauseMap');
-  if (RM) { blipsG.style.display = 'none'; btn.hidden = true; }
-  else {
-    blips.forEach(place);
-    new IntersectionObserver(([e]) => { const was = visible; visible = e.isIntersecting; if (visible && !was && running) requestAnimationFrame(tick); }).observe(map);
-    btn.addEventListener('click', () => { running = !running; btn.setAttribute('aria-pressed', !running); btn.textContent = running ? 'Pause pouls' : 'Relancer le pouls'; if (running) requestAnimationFrame(tick); });
-    requestAnimationFrame(tick);
-  }
 
   /* volets du tableau (effet palettes) */
   if (!RM) {

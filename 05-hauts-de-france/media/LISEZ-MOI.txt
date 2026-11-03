@@ -1,8 +1,16 @@
 Dossier médias — Formation AFGSU Hauts-de-France
 
-Déposez ici les photos avec exactement ces noms : la page les affiche automatiquement à la place des emplacements prévus (format conseillé : JPG, 1600 px de large, < 250 Ko).
+Photos utilisées par la page (chacune en deux largeurs, le navigateur choisit la bonne) :
+  afgsu-binomes-massage-cardiaque-1280.jpg
+  afgsu-binomes-massage-cardiaque-640.jpg
+  afgsu-compressions-couverture-survie-1280.jpg
+  afgsu-compressions-couverture-survie-640.jpg
+  afgsu-massage-cardiaque-trio-dae-1000.jpg
+  afgsu-massage-cardiaque-trio-dae-640.jpg
+  afgsu-question-en-session-1000.jpg
+  afgsu-question-en-session-640.jpg
 
-photo-01.jpg  —  équipe d’EHPAD autour d’un mannequin, salle d’animation transformée en salle de formation
+Pour changer une photo : remplacez les deux fichiers en gardant exactement les mêmes noms (JPG, même orientation, moins de 200 Ko de préférence). Les textes alternatifs (alt) sont dans index.html : pensez à les adapter si le sujet de la photo change.
 
-Déjà présents : logo.svg / logo.png (logo complet, texte clair pour fond sombre), logo-fond-clair.png (texte foncé pour fond clair), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
+Également présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
 Pour une image de partage (og:image), ajoutez og-image.jpg (1200 × 630) et décommentez la ligne correspondante dans le <head>.

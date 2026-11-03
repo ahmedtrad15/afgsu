@@ -1,9 +1,18 @@
 Dossier médias — Formation AFGSU Pays de la Loire
 
-Déposez ici les photos avec exactement ces noms : la page les affiche automatiquement à la place des emplacements prévus (format conseillé : JPG, 1600 px de large, < 250 Ko).
+Photos utilisées par la page (chacune en deux largeurs, le navigateur choisit la bonne) :
+  afgsu-binomes-massage-cardiaque-1280.jpg
+  afgsu-binomes-massage-cardiaque-640.jpg
+  afgsu-compressions-tapis-exterieur-1000.jpg
+  afgsu-compressions-tapis-exterieur-600.jpg
+  afgsu-equipe-rcp-ballon-1000.jpg
+  afgsu-equipe-rcp-ballon-640.jpg
+  afgsu-mannequin-simulation-intube-1000.jpg
+  afgsu-mannequin-simulation-intube-640.jpg
+  afgsu-rcp-equipe-a-genoux-1000.jpg
+  afgsu-rcp-equipe-a-genoux-640.jpg
 
-photo-01.jpg  —  exercice d’afflux de victimes, tri sur brancards, gilets de couleur
-photo-02.jpg  —  relevage d’un résident simulé dans une chambre d’EHPAD, deux aides-soignantes
+Pour changer une photo : remplacez les deux fichiers en gardant exactement les mêmes noms (JPG, même orientation, moins de 200 Ko de préférence). Les textes alternatifs (alt) sont dans index.html : pensez à les adapter si le sujet de la photo change.
 
-Déjà présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
+Également présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
 Pour une image de partage (og:image), ajoutez og-image.jpg (1200 × 630) et décommentez la ligne correspondante dans le <head>.

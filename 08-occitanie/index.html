@@ -255,6 +255,12 @@ footer nav{display:flex;gap:16px}
 /* affinage typographique */
 .hero h1{font-size:clamp(1.7rem,3.4vw,2.6rem)}.sh h2{font-size:clamp(1.6rem,3.2vw,2.3rem)}
 .final h2{font-size:clamp(1.8rem,3.8vw,2.7rem)}.params .v{font-size:1.45rem}.ok h3{font-size:1.6rem}
+
+/* photos */
+.img-ph.has-img{overflow:hidden}.img-ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.phs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}.phs figure{margin:0;min-width:0}.phs figure:first-child{grid-column:1/-1}.phs img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.phs figcaption{margin-top:7px;font-size:.85rem;line-height:1.35}
+@media (min-width:760px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.phs figure:first-child{grid-column:auto}.phs img{aspect-ratio:4/3}}
+.phs img{border:1px solid var(--line);filter:saturate(.85)}.phs figcaption{font:600 .76rem var(--h);letter-spacing:.1em;text-transform:uppercase;color:var(--grn)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -327,7 +333,7 @@ footer nav{display:flex;gap:16px}
   <div class="mgrid">
    <div class="panel" data-on>
     <div class="bar"><span class="lbl">Occitanie · liaisons intra</span><span class="lbl" style="color:var(--grn)">● centre</span></div>
-    <svg class="omap pre" id="omap" viewBox="0 0 680 532" role="img" aria-labelledby="om-t om-d">
+    <svg class="omap" id="omap" viewBox="0 0 680 532" role="img" aria-labelledby="om-t om-d">
      <title id="om-t">Carte de l’Occitanie</title><desc id="om-d">Toulouse et L’Union, centres de formation, reliés par des liaisons en pointillés aux villes où la formation peut se tenir en intra : Montpellier, Nîmes, Perpignan, Béziers, Carcassonne, Albi, Montauban, Rodez et Tarbes.</desc>
      <path class="reg" pathLength="1" d="M46.7 456.5L149.4 428.7L245.7 475.1L280.4 493.7L309.9 502.9L406.2 512.2L466.5 504.8L448.6 475.1L449.8 438L457.5 382.3L502.5 348.9L534.6 326.7L560.2 304.4L602.6 315.5L650.1 271L656.5 215.3L656.5 156L598.8 150.4L566.7 104L496.1 39.1L431.9 48.4L342 104L303.5 39.1L245.7 20.5L187.9 57.6L155.9 104L110.9 196.8L72.4 206.1L46.7 233.9L27.5 289.6L17.2 345.2Z"/>
      <g>
@@ -365,6 +371,11 @@ footer nav{display:flex;gap:16px}
    <div class="timeline" role="img" aria-label="Répartition indicative : jour 1, deux demi-journées d’urgences vitales ; jour 2, une demi-journée d’urgences vitales puis une d’urgences potentielles ; jour 3, une demi-journée d’urgences potentielles puis une de situations sanitaires exceptionnelles"><span style="background:var(--grn)">Vitales</span><span style="background:var(--grn)">Vitales</span><span style="background:var(--grn)">Vitales</span><span style="background:var(--amb)">Potentielles</span><span style="background:var(--amb)">Potentielles</span><span style="background:var(--txt)">SSE</span></div>
    <div class="tl-lab"><span>Jour 1</span><span>Jour 2</span><span>Jour 3</span></div>
    <p class="ext">Répartition indicative par demi-journée de 3 h 30.</p>
+  </div>
+  <div class="phs" data-on>
+    <figure><img src="media/afgsu-electrodes-dae-mannequin-640.jpg" srcset="media/afgsu-electrodes-dae-mannequin-640.jpg 640w, media/afgsu-electrodes-dae-mannequin-1280.jpg 1280w" sizes="(min-width: 760px) 31vw, 100vw" width="1280" height="853" alt="Électrodes d’un défibrillateur collées sur un mannequin, appareil allumé en arrière-plan" loading="lazy" decoding="async"><figcaption>CH 1 · défibrillation</figcaption></figure>
+    <figure><img src="media/afgsu-equipe-rcp-ballon-640.jpg" srcset="media/afgsu-equipe-rcp-ballon-640.jpg 640w, media/afgsu-equipe-rcp-ballon-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Équipe en blouse : un soignant ventile au ballon pendant qu’un autre comprime" loading="lazy" decoding="async"><figcaption>CH 2 · ventilation et compressions</figcaption></figure>
+    <figure><img src="media/afgsu-formatrice-ballon-masque-640.jpg" srcset="media/afgsu-formatrice-ballon-masque-640.jpg 640w, media/afgsu-formatrice-ballon-masque-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="667" alt="Une formatrice montre un masque à oxygène à des salariés en tenue de travail" loading="lazy" decoding="async"><figcaption>CH 3 · matériel d’urgence expliqué</figcaption></figure>
   </div>
  </div>
 </section>
@@ -477,7 +488,7 @@ footer nav{display:flex;gap:16px}
   <div data-on>
    <div class="sh"><span class="lbl">Saisie</span><h2 id="h-sai">Demande d’inscription</h2><p>Wafa reprend chaque demande : date à Toulouse ou à L’Union, projet intra, pièces et financement.</p></div>
    <p><a class="ph" href="tel:+33780912335">07 80 91 23 35</a></p>
-   <div class="img-ph" role="img" aria-label="Photo à venir : poste de soins de nuit avec chariot d’urgence" data-file="media/photo-01.jpg" data-img="poste de soins de nuit, chariot d’urgence et DAE à portée de main"></div>
+   <div class="img-ph has-img"><img src="media/afgsu-mannequin-ambulance-oxygene-600.jpg" srcset="media/afgsu-mannequin-ambulance-oxygene-600.jpg 600w, media/afgsu-mannequin-ambulance-oxygene-700.jpg 700w" sizes="(min-width: 960px) 46vw, 100vw" width="700" height="1243" alt="Mannequin sous masque à oxygène, sanglé sur un brancard dans une ambulance" loading="lazy" decoding="async" style="object-position:center 68%"></div>
   </div>
   <div class="panel" data-on>
    <div class="bar"><span class="lbl">Formulaire</span><span class="lbl" style="color:var(--grn)">● en ligne</span></div>
@@ -533,8 +544,6 @@ const SUR_DEMANDE = "Nous contacter";
 /* ======================================================================== */
 (() => {
 
-  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
-  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const D = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -552,8 +561,6 @@ const SUR_DEMANDE = "Nous contacter";
   /* mise sous tension */
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -6% 0px' });
   $$('[data-on]').forEach(el => io.observe(el));
-  const omap = $('#omap');
-  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { omap.classList.remove('pre'); omap.classList.add('go'); o.disconnect(); } }, { threshold: .3 }).observe(omap);
 
   /* ECG en direct */
   const N = 240, W = 600, base = 78, trace = $('#trace'), head = $('#head');

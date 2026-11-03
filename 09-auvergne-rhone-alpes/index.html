@@ -249,6 +249,12 @@ footer nav{display:flex;gap:16px}
 h1,h2,h3{font-weight:600}.hero h1{font-size:clamp(1.6rem,3.2vw,2.5rem)}.sh h2{font-size:clamp(1.4rem,2.8vw,2rem)}
 .camp h3{font-size:clamp(1.15rem,2.2vw,1.45rem)}.lv h3{font-size:1.6rem}.final h2{font-size:clamp(1.6rem,3.4vw,2.4rem)}
 .pz strong{font-size:2rem;font-weight:700}.faq summary{font:700 1.04rem/1.4 var(--b)}.flag{font-size:.9rem}.lv .pr{font-size:1.2rem}
+
+/* photos */
+.img-ph.has-img{overflow:hidden}.img-ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.phs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:30px}.phs figure{margin:0;min-width:0}.phs figure:first-child{grid-column:1/-1}.phs img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.phs figcaption{margin-top:7px;font-size:.85rem;line-height:1.35}
+@media (min-width:760px){.phs{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.phs figure:first-child{grid-column:auto}.phs img{aspect-ratio:4/3}}
+.phs img{border:6px solid #fff;border-radius:4px;box-shadow:0 12px 26px -18px rgba(28,61,90,.7)}.phs figcaption{font:700 .9rem var(--b);color:var(--deep)}.pub>.phs{grid-column:1/-1}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
@@ -363,7 +369,7 @@ h1,h2,h3{font-weight:600}.hero h1{font-size:clamp(1.6rem,3.2vw,2.5rem)}.sh h2{fo
   <div class="sh" data-up><span class="k">Carte des accès</span><h2 id="h-carte">Deux points de départ, toute la région accessible en intra</h2></div>
   <div class="mgrid">
    <div data-up>
-    <svg class="amap pre" id="amap" viewBox="0 0 700 510" role="img" aria-labelledby="am-t am-d">
+    <svg class="amap" id="amap" viewBox="0 0 700 510" role="img" aria-labelledby="am-t am-d">
      <title id="am-t">Carte topographique stylisée d’Auvergne-Rhône-Alpes</title><desc id="am-d">Drapeaux rouges sur Annecy et le Sud de Lyon, centres de formation ; cercles blancs sur Grenoble, Clermont-Ferrand, Saint-Étienne, Chambéry, Valence et Bourg-en-Bresse, où la formation est possible en intra.</desc>
      <defs><clipPath id="regclip"><path d="M91.7 19.3L144.4 19.3L230 76.4L263 124.1L315.7 114.5L378.9 137.4L447.4 72.6L526.5 95.5L552.9 86L559.4 133.6L605.6 86L645.1 91.7L676.7 185L653 204L684.6 285.9L622.7 341.1L566 352.6L513.3 419.2L473.8 466.8L427.7 466.8L361.8 491.6L302.5 485.9L269.6 438.3L197.1 371.6L131.2 381.1L39 438.3L20.6 371.6L39 285.9L65.4 228.8L78.5 171.7L49.5 91.7Z"/></clipPath></defs>
      <path class="reg" d="M91.7 19.3L144.4 19.3L230 76.4L263 124.1L315.7 114.5L378.9 137.4L447.4 72.6L526.5 95.5L552.9 86L559.4 133.6L605.6 86L645.1 91.7L676.7 185L653 204L684.6 285.9L622.7 341.1L566 352.6L513.3 419.2L473.8 466.8L427.7 466.8L361.8 491.6L302.5 485.9L269.6 438.3L197.1 371.6L131.2 381.1L39 438.3L20.6 371.6L39 285.9L65.4 228.8L78.5 171.7L49.5 91.7Z"/>
@@ -415,6 +421,11 @@ h1,h2,h3{font-weight:600}.hero h1{font-size:clamp(1.6rem,3.2vw,2.5rem)}.sh h2{fo
    <div><h3>Prérequis</h3><p style="margin:0">Être membre de la cordée ci-contre, c’est-à-dire relever des professions de santé de la 4e partie du Code de la santé publique ou des métiers associés. Pas d’AFGSU 1 à présenter.</p></div>
    <div><h3>Justificatifs</h3><ul><li>Diplôme</li><li>Carte professionnelle</li><li>Identifiant RPPS / ADELI (étudiants : certificat de scolarité)</li><li>Recyclage : attestation précédente</li></ul></div>
    <div><h3>Cadre réglementaire</h3><p style="margin:0">Arrêté du 30 décembre 2014 (modifié en 2019 et 2021). Équivalence PSC prévue par l’arrêté du 23 août 2019 ; aucune équivalence avec le SST.</p></div>
+  </div>
+  <div class="phs" data-up>
+    <figure><img src="media/afgsu-equipe-rcp-mannequin-adulte-640.jpg" srcset="media/afgsu-equipe-rcp-mannequin-adulte-640.jpg 640w, media/afgsu-equipe-rcp-mannequin-adulte-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 100vw" width="1000" height="665" alt="Groupe en blouse blanche autour d’un mannequin : ballon d’insufflation et massage cardiaque" loading="lazy" decoding="async"><figcaption>Camp 1 : l’arrêt cardiaque</figcaption></figure>
+    <figure><img src="media/afgsu-formateur-tableau-equipe-640.jpg" srcset="media/afgsu-formateur-tableau-equipe-640.jpg 640w, media/afgsu-formateur-tableau-equipe-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Un formateur montre un schéma au tableau à des soignants assis" loading="lazy" decoding="async"><figcaption>Camp 2 : comprendre avant d’agir</figcaption></figure>
+    <figure><img src="media/afgsu-soignante-briefing-equipe-640.jpg" srcset="media/afgsu-soignante-briefing-equipe-640.jpg 640w, media/afgsu-soignante-briefing-equipe-1000.jpg 1000w" sizes="(min-width: 760px) 31vw, 50vw" width="1000" height="665" alt="Une soignante en tunique verte, dossier à la main, devant ses collègues" loading="lazy" decoding="async"><figcaption>Camp 3 : préparer l’équipe</figcaption></figure>
   </div>
  </div>
 </section>
@@ -492,7 +503,7 @@ h1,h2,h3{font-weight:600}.hero h1{font-size:clamp(1.6rem,3.2vw,2.5rem)}.sh h2{fo
   <div data-up>
    <div class="sh"><span class="k">Carnet de course</span><h2 id="h-car">Inscrivez-vous à la prochaine cordée</h2><p>Wafa vous rappelle pour choisir entre Annecy, le Sud de Lyon et l’intra, puis vérifier les justificatifs et le financement.</p></div>
    <p><a class="tl" href="tel:+33780912335">07 80 91 23 35</a></p>
-   <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires sur un exercice de brancardage" data-file="media/photo-01.jpg" data-img="photo : quatre stagiaires portant un brancard lors d’un exercice, gestes coordonnés"></div>
+   <div class="img-ph has-img"><img src="media/afgsu-secouristes-exterieur-mannequin-600.jpg" srcset="media/afgsu-secouristes-exterieur-mannequin-600.jpg 600w, media/afgsu-secouristes-exterieur-mannequin-800.jpg 800w" sizes="(min-width: 960px) 46vw, 100vw" width="800" height="1200" alt="Deux secouristes prennent en charge un mannequin allongé sur la chaussée, sac d’urgence rouge au sol" loading="lazy" decoding="async" style="object-position:center 62%"></div>
   </div>
   <div data-up>
    <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
@@ -548,8 +559,6 @@ const SUR_DEMANDE = "Nous contacter";
 /* =========================================================================== */
 (() => {
 
-  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
-  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
@@ -571,8 +580,6 @@ const SUR_DEMANDE = "Nous contacter";
   /* révélations */
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
   $$('[data-up]').forEach(el => io.observe(el));
-  const amap = $('#amap');
-  new IntersectionObserver(([e], o) => { if (e.isIntersecting) { amap.classList.remove('pre'); o.disconnect(); } }, { threshold: .3 }).observe(amap);
 
   /* altimètre : ascension pilotée par le défilement */
   const camps = $('#camps'), altv = $('#altv'), fill = $('#gfill'), dots = $$('#gauge b'), cs = $$('.camp', camps), MAX = 2100;
