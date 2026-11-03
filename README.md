@@ -1,48 +1,51 @@
-# AFGSU 2: 11 landing sites (10 regional + 1 national)
+# Formation AFGSU: 11 sites (10 regional + 1 national)
 
-Each folder is one standalone site: a single `index.html` with inline CSS, vanilla JS and inline SVG. Google Fonts is the only external dependency. Content is in French (fr-FR).
+Each folder is a standalone site:
 
-| Folder | Brand | Concept | Signature interactive |
+- `index.html`: HTML, CSS and vanilla JS inline. Google Fonts is the only external dependency.
+- `mentions-legales.html` and `cgv.html`: the legal pages linked from the footer.
+- `media/`: logos, favicons, and the slot for your photos.
+
+| Folder | Site name | Concept | Signature interactive |
 |---|---|---|---|
-| `01-ile-de-france` | Ligne Vitale | Transit-network plan, ECG blips on the lines | Clickable station map (address, sessions, « Réserver à cette station ») |
-| `02-pays-de-la-loire` | Estuaire Réa | Editorial river guide; the Loire turns into an ECG as you scroll | « Quel niveau pour moi ? » 3-question quiz |
-| `03-bretagne` | Phare Secours | Night nautical chart, lighthouse beam, signal flags | CPR metronome (100–120/min, 30:2) |
-| `04-grand-est` | Planche 21 | Engraved anatomical plates, Pl. I–III | Body explorer (front/back, 5 zones → modules) |
-| `05-hauts-de-france` | Nord Réflexe | Industrial brutalism, brick, hazard tape, block map | Intra team planner (sessions/days, no price) |
-| `06-normandie` | Fiche Bilan | Medical transmission form, VALIDÉ stamps | Validity simulator (expiry, countdown, urgent < 6 months) |
-| `07-provence-alpes-cote-d-azur` | Azur Gestes | Risograph poster, grain, overprint | 3-day timeline scrubber |
-| `08-occitanie` | Garde de Nuit | Night-shift patient monitor, live ECG | « Il est 3 h, chambre 12… » branching scenario |
-| `09-auvergne-rhone-alpes` | Relief Urgences | Mountain rescue, contour lines | Scroll-driven altimeter, camps unlock modules |
-| `10-centre-val-de-loire` | Carnet de Gestes | Trainer's notebook, pencil sketches, highlighter | Financing finder + document checklist |
-| `11-france` | Réseau AFGSU France | Regulation-room dashboard | National map (pulses, network, region filter) + city/postcode search, 33 city anchors `#afgsu-2-[ville]` |
+| `01-ile-de-france` | Formation AFGSU Île-de-France | Transit plan (5 stations) | Clickable station map + full departures board |
+| `02-pays-de-la-loire` | Formation AFGSU Pays de la Loire | The Loire turns into an ECG as you scroll | « Quel niveau pour moi ? » quiz |
+| `03-bretagne` | Formation AFGSU Bretagne | Night nautical chart, lighthouse | CPR metronome |
+| `04-grand-est` | Formation AFGSU Grand Est | Engraved anatomical plates | Body explorer |
+| `05-hauts-de-france` | Formation AFGSU Hauts-de-France | Brick / block industrial | Intra team planner |
+| `06-normandie` | Formation AFGSU Normandie | Medical transmission form | Validity simulator |
+| `07-provence-alpes-cote-d-azur` | Formation AFGSU Provence-Alpes-Côte d’Azur | Risograph poster | 3-day timeline scrubber |
+| `08-occitanie` | Formation AFGSU Occitanie | Night-shift monitor | « Il est 3 h, chambre 12… » scenario |
+| `09-auvergne-rhone-alpes` | Formation AFGSU Auvergne-Rhône-Alpes | Mountain rescue | Scroll-driven altimeter |
+| `10-centre-val-de-loire` | Formation AFGSU Centre-Val de Loire | Trainer's notebook | Financing finder + document checklist |
+| `11-france` | Formation AFGSU France | Regulation-room dashboard | National map + city/postcode search, 32 anchors `#afgsu-2-[ville]` |
 
-## Editing sessions
+## Sessions
 
-Each site's script starts with a single `SESSIONS` array (ISO dates `[start, end]`), followed by the `SUR_DEMANDE` text. Add or remove dates there and nothing else. Past sessions are hidden automatically. Cities with no future dates show « Prochaine date sur demande — on vous rappelle sous 48 h ».
+Each site's script starts with a single `SESSIONS` array (ISO dates `[start, end]`). Past sessions disappear on their own. A centre with no future date shows « Nous contacter ».
 
-Regional sites outside Île-de-France also carry the Palaiseau entry, so they can mention the confirmed sessions as an out-of-region option.
+- **Île-de-France** (`01` and `11`): Palaiseau (4 allée des Garays, 91120), Choisy-le-Roi (16 avenue Jean Jaurès, 94600), Noisy-le-Sec (9 rue Saint-Just, 93130), Pontault-Combault (77) and Houilles (78, « Nous contacter »). There are 21 sessions from November 2026 to March 2027. Paris and Meaux have been removed.
+- **All other regions:** « Nous contacter ».
+- When dates change, also update the JSON-LD `hasCourseInstance` list in `01` and `11`. It is static in the HTML: one `CourseInstance` per session.
 
-On `11-france`, the city cards (`data-sess="Ville"`) and the sessions table are rebuilt from the array. The static HTML inside them is only the no-JS fallback. **If dates change, also update the `hasCourseInstance` entries in the JSON-LD `Course`** (they are static on 01 and 11).
+## Forms (Web3Forms)
 
-## Still to do before going live
+Every form posts to `https://api.web3forms.com/submit` with the access key `e4285b81-3704-4ac4-b5dc-411014b21fd4`.
 
-- **Forms:** every form is `action="#"` with a `TODO` comment where the submit handler should POST the data. The hidden field `formation` is pre-filled by the CTAs (AFGSU 2 / AFGSU 1 / Recyclage / Intra). `centre` is pre-selected where relevant, and some tools pre-fill `message`.
-- **Media:** photos are `div.img-ph[data-img="…"]` (the label says what to shoot). Logos are `.logo-ph`. The favicon is `<link rel="icon" href="data:,">` under a `PLACEHOLDER favicon` comment. `og:image` is a `TODO` comment in each `<head>`.
-- **National → regional links:** `11-france` links to `https://afgsu2-<region>.example/`. Replace these URLs (search for `.example`).
-- **Canonical URLs:** none are set (no domains yet).
-- **Legal pages:** footer links « Mentions légales », « CGV » and « Accessibilité » point to `#`.
+- JS sends the data with `fetch` and shows the inline confirmation, or an error message with the phone number if the send fails.
+- Without JS, the native form still submits to Web3Forms.
+- Hidden fields: `subject`, `from_name` (the site name), `formation` (pre-filled by the buttons: AFGSU 2 / AFGSU 1 / Recyclage / Intra), and a `botcheck` anti-spam honeypot.
 
-## Content rules applied
+## Media
 
-- Facts come only from the brief. There are no reviews (only « [Avis stagiaire à insérer] »), no stats or ratings, and no partnerships. CPF is always described as « en principe non éligible ». The recyclage price is « sur demande » because it isn't in the brief.
-- « DIGIVODA » and the e-mail appear only in each footer.
-- Copy is unique per site: a checker compared every sentence, CTA label and FAQ entry across the 11 sites (exact and near-duplicate). The only shared wording is the fixed facts: course module names, legal references, the profession list in the form selects, and the required « sur demande » sentence.
+Each `media/` folder contains:
 
-## Checks performed
+- `logo.svg`, `logo.png` (full logo), `logo-mark.svg` (symbol only), `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png`.
+- `logo-fond-clair.png`: a dark-text version, for `03`, `05` and `08`.
+- `LISEZ-MOI.txt`: the list of photos to supply. Drop `photo-01.jpg`, `photo-02.jpg`… into `media/` with exactly those names and the page shows them automatically in place of the placeholders.
 
-- Size: 55–70 KB per regional site, 116 KB for the national site (excluding fonts).
-- At 375×667, the price (450 € struck → 385 € TTC), « 21 h · 3 jours · valable 4 ans », the primary CTA and the phone number are all visible without scrolling, above the sticky bar. There is no horizontal scroll.
-- Forms: an empty submit is blocked by native validation, and a valid submit shows the inline success state. Errors use `:user-invalid` with `aria-invalid` kept in sync.
-- `prefers-reduced-motion: reduce`: no animation runs. Long-running animations (01, 03, 08, 11) also have a pause button.
-- axe-core (WCAG 2.1 A/AA) reports 0 violations on all 11 sites at desktop and mobile widths. Brand colours are kept for graphics; slightly darker variants are used where small text needed AA contrast.
-- JSON-LD on every site: `EducationalOrganization` (with the centres), `Course` (385 EUR, PT21H) and `FAQPage` (the same questions as the visible FAQ).
+## Still to do
+
+- **Mentions légales & CGV:** the pages exist and are linked from every footer, but **they don't contain DIGIVODA's text yet** (this environment couldn't reach digivoda.com). Once the texts are available they get inserted into all 22 pages at once.
+- `og:image`: add `media/og-image.jpg` (1200 × 630) and un-comment the line in each `<head>`.
+- National → regional links: replace the `.example` URLs in `11-france`.

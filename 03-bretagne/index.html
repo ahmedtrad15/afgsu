@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFGSU 2 Bretagne · Rennes, Cesson-Sévigné, Saint-Brieuc · 385 € | Phare Secours</title>
+<title>AFGSU 2 Bretagne · Rennes, Cesson-Sévigné, Saint-Brieuc · 385 € | Formation AFGSU Bretagne</title>
 <meta name="description" content="Formation AFGSU 2 en Bretagne pour soignants et étudiants en santé : 21 h sur 3 jours en présentiel, 385 € TTC au lieu de 450 €, attestation valable 4 ans. Centres à Rennes, Cesson-Sévigné et Saint-Brieuc, intra dans toute la région.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Phare Secours">
-<meta property="og:title" content="Phare Secours · AFGSU 2 en Bretagne, de Saint-Brieuc à Rennes">
+<meta property="og:site_name" content="Formation AFGSU Bretagne">
+<meta property="og:title" content="Formation AFGSU Bretagne · AFGSU 2 en Bretagne, de Saint-Brieuc à Rennes">
 <meta property="og:description" content="Trois jours de mises en situation pour soignants et étudiants IFSI bretons. 385 € TTC, attestation CESU valable 4 ans. Métronome RCP en ligne.">
-<!-- TODO og:image : visuel 1200×630 (carte marine + faisceau) depuis la médiathèque -->
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#0B1F33">
-<!-- PLACEHOLDER favicon : phare orange sur fond marine, 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;800;900&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
@@ -38,8 +40,6 @@ p{margin:0 0 1em}
 .img-ph::after{content:attr(data-img);font:700 .78rem/1.3 var(--tx);letter-spacing:.04em;text-transform:uppercase;color:var(--slate-l);padding:14px 16px;max-width:36ch}
 .light .img-ph{background:linear-gradient(#d5e3e6,#d5e3e6) padding-box,repeating-linear-gradient(90deg,var(--night) 0 14px,transparent 14px 28px) border-box}
 .light .img-ph::after{color:var(--slate-d)}
-.logo-ph{width:34px;height:34px;min-height:0;border-radius:50%;border:4px solid var(--orange);background:var(--night);flex:none}
-.logo-ph::after{display:none}
 /* header */
 .top{position:sticky;top:0;z-index:40;background:var(--night);border-bottom:1px solid rgba(232,241,242,.18)}
 .top .w{display:flex;align-items:center;gap:12px;height:58px}
@@ -252,21 +252,35 @@ footer nav{display:flex;gap:18px}
 .js [data-sweep].in{-webkit-mask-position:0 0;mask-position:0 0;transition:mask-position 1.2s cubic-bezier(.4,.1,.2,1),-webkit-mask-position 1.2s cubic-bezier(.4,.1,.2,1)}
 .js [data-sweep].done{-webkit-mask-image:none;mask-image:none}
 @media (prefers-reduced-motion:reduce){.js [data-sweep],.js [data-sweep].in{-webkit-mask-image:none;mask-image:none;transition:none}.cta:hover::after{transition:none}#press,#thorax{transition:none}.down #press,.down #thorax{transform:none}.chart .town .halo{transition:none}.faq summary::after{transition:none}}
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#FF9A5C;grid-column:1/-1}
+#palai:empty,#ext:empty,#elsewhere:empty{display:none}
+/* affinage typographique */
+.hero h1{font-size:clamp(2rem,5.2vw,3.4rem);font-weight:800}.price b{font-size:2.3rem}
+.sec-h h2,#h-eq,#h-car,#h-fin,#h-intra,#h-radio{font-size:clamp(1.8rem,3.8vw,2.6rem)!important;font-weight:800!important}
+.final h2{font-size:clamp(1.9rem,4.4vw,3rem);font-weight:800}
+.pcard h3{font-size:1.9rem;font-weight:800}.mod h3{font-size:1.5rem}.notice h3{font-size:1.7rem;font-weight:800}.ok h3{font-size:1.9rem}
+.faq summary{font:700 1.05rem/1.45 var(--tx);text-transform:none;letter-spacing:0}.faq summary::after{top:6px}
+.readout b{font-size:2rem}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Phare Secours","description":"Formation aux gestes et soins d’urgence en Bretagne : AFGSU 2, AFGSU 1 et recyclage pour soignants, étudiants et équipes non soignantes.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Bretagne"},"location":[
-{"@type":"Place","name":"Phare Secours · Rennes","address":{"@type":"PostalAddress","addressLocality":"Rennes","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.11,"longitude":-1.68}},
-{"@type":"Place","name":"Phare Secours · Cesson-Sévigné","address":{"@type":"PostalAddress","addressLocality":"Cesson-Sévigné","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.12,"longitude":-1.60}},
-{"@type":"Place","name":"Phare Secours · Saint-Brieuc","address":{"@type":"PostalAddress","addressLocality":"Saint-Brieuc","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.51,"longitude":-2.76}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Bretagne","description":"Formation aux gestes et soins d’urgence en Bretagne : AFGSU 2, AFGSU 1 et recyclage pour soignants, étudiants et équipes non soignantes.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Bretagne"},"location":[
+{"@type":"Place","name":"Formation AFGSU Bretagne · Rennes","address":{"@type":"PostalAddress","addressLocality":"Rennes","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.11,"longitude":-1.68}},
+{"@type":"Place","name":"Formation AFGSU Bretagne · Cesson-Sévigné","address":{"@type":"PostalAddress","addressLocality":"Cesson-Sévigné","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.12,"longitude":-1.60}},
+{"@type":"Place","name":"Formation AFGSU Bretagne · Saint-Brieuc","address":{"@type":"PostalAddress","addressLocality":"Saint-Brieuc","addressRegion":"Bretagne","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.51,"longitude":-2.76}}]},
 {"@type":"Course","name":"AFGSU 2 Bretagne · formation aux gestes et soins d’urgence de niveau 2","description":"21 heures de formation en présentiel sur 3 jours pour professionnels et étudiants en santé : urgences vitales, urgences potentielles, urgences collectives et situations sanitaires exceptionnelles. Attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
-"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Rennes, Cesson-Sévigné ou Saint-Brieuc (dates sur demande)"}}}
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Rennes, Cesson-Sévigné ou Saint-Brieuc (dates : nous contacter)"}}}
 ]}
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Étudiant·e en IFSI à Rennes ou à Saint-Brieuc : quand placer l’AFGSU 2 dans mon cursus ?","acceptedAnswer":{"@type":"Answer","text":"Si vous êtes entré·e en formation à la rentrée 2026, l’arrêté du 20 février 2026 fait de l’AFGSU 2 valide une condition du diplôme d’État infirmier. Comme elle reste valable quatre ans, vous pouvez la suivre dès maintenant : elle couvrira la date de votre diplôme."}},{"@type":"Question","name":"Les sessions inter acceptent-elles les étudiants ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les étudiants des professions de santé concernées font partie du public. Un certificat de scolarité remplace alors le numéro RPPS ou ADELI dans votre dossier."}},{"@type":"Question","name":"Rennes ou Cesson-Sévigné, qu’est-ce qui change ?","acceptedAnswer":{"@type":"Answer","text":"Rien sur le fond : même programme, mêmes 21 heures, même attestation. Les deux villes sont voisines, en Ille-et-Vilaine ; choisissez celle qui vous arrange pour le trajet."}},{"@type":"Question","name":"Je travaille dans le Finistère : Saint-Brieuc est-il mon centre le plus proche ?","acceptedAnswer":{"@type":"Answer","text":"Parmi nos trois centres bretons, c’est le plus à l’ouest. Si vous êtes plusieurs dans le même établissement, la formule intra vous évite le déplacement : nous venons sur place."}},{"@type":"Question","name":"Notre cabinet infirmier du Morbihan peut-il faire venir la formation ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les cabinets font partie des lieux d’intervention en intra. Il suffit de réunir un groupe de 10 à 12 professionnels ; nous établissons ensuite un devis."}},{"@type":"Question","name":"S’entraîner avec le métronome de cette page, est-ce suffisant ?","acceptedAnswer":{"@type":"Answer","text":"Non. Il aide à mémoriser une cadence, rien de plus. La position des mains, la profondeur, le relâchement et la coordination en équipe s’acquièrent sur mannequin, avec un formateur, pendant la session."}},{"@type":"Question","name":"Quelle cadence de compressions apprend-on chez l’adulte ?","acceptedAnswer":{"@type":"Answer","text":"Une fréquence comprise entre 100 et 120 par minute, avec une alternance de 30 compressions et 2 insufflations. La conduite à tenir chez l’enfant et le nourrisson est également travaillée."}},{"@type":"Question","name":"Comment les heures se répartissent-elles entre les modules ?","acceptedAnswer":{"@type":"Answer","text":"10 h 30 d’urgences vitales, 7 h d’urgences potentielles, 3 h 30 d’urgences collectives et de situations sanitaires exceptionnelles. Indicativement : une première journée entière sur l’urgence vitale, puis des demi-journées."}},{"@type":"Question","name":"Mon attestation a expiré pendant mon congé : le recyclage suffit-il ?","acceptedAnswer":{"@type":"Answer","text":"Malheureusement non. Les 7 heures de recyclage ne s’ouvrent qu’à une attestation encore en cours de validité. Après la date, il faut suivre de nouveau la formation complète de 21 heures, quelle que soit la raison du dépassement."}},{"@type":"Question","name":"Agent d’un hôpital public breton : vers qui me tourner pour le financement ?","acceptedAnswer":{"@type":"Answer","text":"Vers le service formation de votre établissement : la prise en charge passe par le plan de développement des compétences, avec l’ANFH pour la fonction publique hospitalière."}},{"@type":"Question","name":"Étudiant, je paie seul : quelles facilités ?","acceptedAnswer":{"@type":"Answer","text":"Le règlement en 4 fois sans frais. Inutile en revanche de compter sur le CPF, qui en principe ne couvre pas l’AFGSU."}},{"@type":"Question","name":"L’attestation vaut-elle PSC ? Et SST ?","acceptedAnswer":{"@type":"Answer","text":"PSC, oui : l’équivalence est prévue par l’arrêté du 23 août 2019. SST, non : ce sont deux dispositifs distincts, sans équivalence entre eux."}},{"@type":"Question","name":"Le personnel d’accueil d’une clinique de Saint-Brieuc peut-il se former aussi ?","acceptedAnswer":{"@type":"Answer","text":"Oui, avec l’AFGSU 1 : 14 heures sur deux jours, 290 € TTC, valable quatre ans. Elle est conçue pour les fonctions non soignantes des établissements."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#0B1F33"/><path d="M36 13 60 5V25Z" fill="#FF6B1A" opacity=".85"/><path d="M26 54 28.5 18h7L38 54Z" fill="#E8F1F2"/><path d="M27.6 30h8.8M27 41h10" stroke="#FF6B1A" stroke-width="4.5"/><rect x="28" y="10" width="8" height="8" fill="#FF6B1A"/><path d="M18 55h28" stroke="#E8F1F2" stroke-width="3" stroke-linecap="round"/></symbol></svg>
 <a class="skip" href="#cap">Sauter la navigation</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
  <defs>
@@ -289,7 +303,7 @@ footer nav{display:flex;gap:18px}
 
 <header class="top">
  <div class="w">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Phare Secours (emplacement)" data-img="logo : phare stylisé Phare Secours"></span>Phare Secours</a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Bretagne</span></span></a>
   <nav aria-label="Sommaire"><a href="#metronome">Métronome</a><a href="#appareillages">Sessions</a><a href="#journal">Programme</a><a href="#carenage">Recyclage</a><a href="#radio">Contact</a></nav>
   <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
  </div>
@@ -383,7 +397,7 @@ footer nav{display:flex;gap:18px}
 <section class="sec light" id="appareillages" aria-labelledby="h-app">
  <div class="w">
   <div class="sec-h" data-sweep><p class="kick">Sessions</p><h2 id="h-app">Prochains appareillages</h2><p>Trois ports d’attache en Bretagne. Les dates s’y ouvrent à la demande : un appel, et la session se construit avec vous.</p></div>
-  <div class="notices" id="notices"><noscript><p>Dates sur demande à Rennes, Cesson-Sévigné et Saint-Brieuc : 07 80 91 23 35.</p></noscript></div>
+  <div class="notices" id="notices"><noscript><p>Dates : nous contacter au 07 80 91 23 35.</p></noscript></div>
   <p class="palai" id="palai"></p>
  </div>
 </section>
@@ -410,8 +424,6 @@ footer nav{display:flex;gap:18px}
   </div>
  </div>
 </section>
-
-<div class="flags" aria-hidden="true"><svg viewBox="0 0 820 74"><path d="M10 8Q410 26 810 8" fill="none" stroke="var(--night)" stroke-width="2"/><g transform="translate(316 6)"><use class="fl" href="#fR" x="0" y="11" width="54" height="36"/><use class="fl" href="#fC" x="66" y="13" width="54" height="36"/><use class="fl" href="#fP" x="132" y="13" width="54" height="36"/><text class="lbl" x="27" y="64" text-anchor="middle">R</text><text class="lbl" x="93" y="66" text-anchor="middle">C</text><text class="lbl" x="159" y="66" text-anchor="middle">P</text></g></svg></div>
 
 <section class="sec light" id="equipage" aria-labelledby="h-eq">
  <div class="w crew">
@@ -492,13 +504,13 @@ footer nav{display:flex;gap:18px}
    </ul>
    <p class="cpf">CPF : en principe non éligible pour l’AFGSU. Nous ne vous le ferons pas miroiter.</p>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires posant les électrodes d’un DAE" data-img="photo : étudiante IFSI posant les électrodes d’un DAE sur mannequin, formateur à genoux" data-sweep></div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires posant les électrodes d’un DAE" data-file="media/photo-01.jpg" data-img="photo : étudiante IFSI posant les électrodes d’un DAE sur mannequin, formateur à genoux" data-sweep></div>
  </div>
 </section>
 
 <section class="sec light" id="intra" aria-labelledby="h-intra">
  <div class="w split">
-  <div class="img-ph" role="img" aria-label="Photo à venir : équipe d’EHPAD en exercice de relevage" data-img="photo : équipe soignante d’un EHPAD breton en exercice de relevage, couloir lumineux" data-sweep></div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : équipe d’EHPAD en exercice de relevage" data-file="media/photo-02.jpg" data-img="photo : équipe soignante d’un EHPAD breton en exercice de relevage, couloir lumineux" data-sweep></div>
   <div data-sweep>
    <p class="kick">Intra-établissement</p>
    <h2 id="h-intra" style="font-size:clamp(2.2rem,6vw,4rem);font-weight:900;margin-bottom:16px">Nous accostons chez vous</h2>
@@ -508,8 +520,6 @@ footer nav{display:flex;gap:18px}
   </div>
  </div>
 </section>
-
-<div class="flags" aria-hidden="true"><svg viewBox="0 0 820 74"><path d="M10 8Q410 26 810 8" fill="none" stroke="var(--night)" stroke-width="2"/><g transform="translate(283 6)"><use class="fl" href="#fC" x="0" y="11" width="54" height="36"/><use class="fl" href="#fE" x="66" y="13" width="54" height="36"/><use class="fl" href="#fS" x="132" y="13" width="54" height="36"/><use class="fl" href="#fU" x="198" y="12" width="54" height="36"/><text class="lbl" x="27" y="64" text-anchor="middle">C</text><text class="lbl" x="93" y="66" text-anchor="middle">E</text><text class="lbl" x="159" y="66" text-anchor="middle">S</text><text class="lbl" x="225" y="65" text-anchor="middle">U</text></g></svg></div>
 
 <section class="sec" id="faq" aria-labelledby="h-faq">
  <div class="w">
@@ -553,8 +563,12 @@ footer nav{display:flex;gap:18px}
    <svg viewBox="0 0 200 200" width="160" height="160" aria-hidden="true"><use href="#star"/></svg>
   </div>
   <div>
-   <!-- TODO : connecter l'envoi réel (API CRM ou service e-mail) ; action="#" provisoire. -->
-   <form class="lead" action="#" method="post" data-lead id="lead">
+   <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+   <form class="lead" action="https://api.web3forms.com/submit" method="POST" data-lead id="lead">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Bretagne">
+    <input type="hidden" name="from_name" value="Formation AFGSU Bretagne">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <input type="hidden" name="formation" value="AFGSU 2">
     <div class="full"><label for="l-nom">Nom &amp; prénom</label><input id="l-nom" name="nom" autocomplete="name" required aria-errormessage="l-nom-e"><p class="err" id="l-nom-e">Merci de renseigner votre identité.</p></div>
     <div><label for="l-tel">Téléphone</label><input id="l-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="l-tel-e"><p class="err" id="l-tel-e">Numéro incomplet (ex. 02 99 00 00 00).</p></div>
@@ -562,8 +576,9 @@ footer nav{display:flex;gap:18px}
     <div><label for="l-pro">Profession</label><select id="l-pro" name="profession" required aria-errormessage="l-pro-e"><option value="">À préciser</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé (IFSI, IFAS…)</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="l-pro-e">Choisissez un métier.</p></div>
     <div><label for="l-centre">Centre / ville</label><select id="l-centre" name="centre" required aria-errormessage="l-centre-e"><option value="">Port d’attache</option><option>Rennes</option><option>Cesson-Sévigné</option><option>Saint-Brieuc</option><option value="Intra">Intra · dans notre établissement</option></select><p class="err" id="l-centre-e">Sélectionnez une ville.</p></div>
     <div class="full"><label for="l-msg">Message (facultatif)</label><textarea id="l-msg" name="message" placeholder="Disponibilités, IFSI, financement, taille du groupe…"></textarea></div>
-    <div class="full chk"><input type="checkbox" id="l-rgpd" name="rgpd" required><label for="l-rgpd">J’accepte que Phare Secours traite ces données afin de répondre à ma demande d’inscription, sans autre usage. <a href="#">Protection des données</a></label></div>
+    <div class="full chk"><input type="checkbox" id="l-rgpd" name="rgpd" required><label for="l-rgpd">J’accepte que Formation AFGSU Bretagne traite ces données afin de répondre à ma demande d’inscription, sans autre usage. <a href="#">Protection des données</a></label></div>
     <div class="full"><button class="cta" type="submit">Envoyer l’appel</button></div>
+    <p class="send-err" role="alert" data-send-err hidden>Transmission interrompue. Relancez l’envoi ou passez par la ligne téléphonique. 07 80 91 23 35.</p>
    </form>
    <div class="ok" data-success hidden tabindex="-1">
     <h3>Message reçu. Terminé.</h3>
@@ -586,8 +601,8 @@ footer nav{display:flex;gap:18px}
 
 <footer>
  <div class="w">
-  <span>© 2026 Phare Secours by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
-  <nav aria-label="Pages légales"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+  <span>© 2026 Formation AFGSU Bretagne by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Pages légales"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
  </div>
 </footer>
 
@@ -602,12 +617,13 @@ const SESSIONS = [
   { ville: "Rennes",         dept: "35", region: "Bretagne", dates: [] },
   { ville: "Cesson-Sévigné", dept: "35", region: "Bretagne", dates: [] },
   { ville: "Saint-Brieuc",   dept: "22", region: "Bretagne", dates: [] },
-  // Dates confirmées hors Bretagne (mentionnées en complément) :
-  { ville: "Palaiseau",      dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* ========================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
@@ -616,7 +632,7 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const up = s => s.dates.filter(d => D(d[1]) >= t0);
   const fmt = ([a, b]) => { const A = D(a), B = D(b); return `${A.getDate()}${A.getMonth() !== B.getMonth() ? ' ' + MO[A.getMonth()] : ''}–${B.getDate()} ${MO[B.getMonth()]} ${B.getFullYear()}`; };
 
-  $('#notices').innerHTML = SESSIONS.filter(s => s.region === 'Bretagne').map(s => { const u = up(s); return `<article class="notice"><p class="dp">Port d’attache · ${s.dept}</p><h3>${s.ville}</h3><p>${u.length ? u.map(fmt).join('<br>') : SUR_DEMANDE}</p><a href="#radio" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'Réserver' : 'Demander une date'} →</a></article>`; }).join('');
+  $('#notices').innerHTML = SESSIONS.filter(s => s.region === 'Bretagne').map(s => { const u = up(s); return `<article class="notice"><p class="dp">Port d’attache · ${s.dept}</p><h3>${s.ville}</h3><p>${u.length ? u.map(fmt).join('<br>') : SUR_DEMANDE}</p><a href="#radio" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'Réserver' : 'Nous contacter'} →</a></article>`; }).join('');
   const ext = SESSIONS.filter(s => s.region !== 'Bretagne' && up(s).length);
   if (ext.length) $('#palai').textContent = 'Pour info, des sessions sont déjà fixées hors Bretagne : ' + ext.map(s => `${s.ville} (${s.dept}) — ${up(s).map(fmt).join(', ')}`).join(' ; ') + '.';
 
@@ -666,10 +682,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : POST des données vers l'outil de gestion des inscriptions avant confirmation.
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>

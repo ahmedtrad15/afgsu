@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Formation AFGSU 2 Pays de la Loire · Nantes, Angers, Le Mans, Saint-Gilles | Estuaire Réa</title>
+<title>Formation AFGSU 2 Pays de la Loire · Nantes, Angers, Le Mans, Saint-Gilles | Formation AFGSU Pays de la Loire</title>
 <meta name="description" content="AFGSU 2 en Pays de la Loire, de la côte vendéenne au Mans : 21 h sur 3 jours en présentiel, 385 € TTC (au lieu de 450 €), valable 4 ans. Centres à Nantes, Angers, Le Mans et Saint-Gilles-Croix-de-Vie, intra partout dans la région.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Estuaire Réa">
-<meta property="og:title" content="Estuaire Réa · l’AFGSU 2 le long de la Loire">
+<meta property="og:site_name" content="Formation AFGSU Pays de la Loire">
+<meta property="og:title" content="Formation AFGSU Pays de la Loire · l’AFGSU 2 le long de la Loire">
 <meta property="og:description" content="Quatre villes, un même niveau d’exigence : trois jours de pratique pour soignants, attestation CESU valable 4 ans, 385 € TTC.">
-<!-- TODO og:image : visuel 1200×630 (tracé Loire → ECG) depuis la médiathèque -->
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#12263A">
-<!-- PLACEHOLDER favicon : galet corail « ER », 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,400;1,9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -36,8 +38,6 @@ p{margin:0 0 1em}
 .w{max-width:1200px;margin:0 auto;padding:0 20px}
 .img-ph{position:relative;background:radial-gradient(circle at 30% 30%,#d9cbb2,transparent 60%),var(--sand2);border-radius:46% 54% 40% 60%/40% 44% 56% 60%;min-height:220px;display:grid;place-items:center;text-align:center;padding:30px}
 .img-ph::after{content:attr(data-img);font:italic 400 .9rem/1.4 var(--serif);color:var(--navy);max-width:28ch}
-.logo-ph{width:44px;height:30px;min-height:0;padding:0;border-radius:50% 50% 46% 54%/60% 60% 40% 40%;background:var(--coral);flex:none}
-.logo-ph::after{content:"logo";font:600 .6rem var(--sans);color:var(--navy)}
 /* header */
 .hd{position:sticky;top:0;z-index:30;background:var(--sand);border-bottom:1px solid rgba(18,38,58,.15)}
 .hd .w{display:flex;align-items:center;gap:12px;height:58px}
@@ -259,26 +259,41 @@ footer.site nav{display:flex;gap:18px}
  .ecg-static{display:block}
  .stage .stop{display:none}
 }
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#B3261E;grid-column:1/-1}
+#palai:empty,#ext:empty,#elsewhere:empty{display:none}
+/* affinage typographique */
+.hero h1{font-size:clamp(1.75rem,3.8vw,2.9rem);font-weight:500}.hero h1 em{font-weight:400}
+.tag strong{font-size:2.2rem;font-weight:700}
+.sec-h h2,#h-pub,#h-intra,#h-form{font-size:clamp(1.6rem,3.2vw,2.3rem)!important;font-weight:500}
+.step h2{font-size:clamp(1.4rem,2.6vw,1.8rem)}.step .n{font-size:2.4rem}
+.mod .num{font-size:3rem}.mod h3{font-size:clamp(1.3rem,2.4vw,1.7rem);font-weight:500}
+.rive h3{font-size:1.6rem}.rive .p{font-size:1.7rem}.result h3{font-size:clamp(1.4rem,3vw,1.9rem)}
+.final h2{font-size:clamp(1.7rem,3.6vw,2.6rem);font-weight:500}blockquote{font-size:1.25rem}.faq summary{font-size:1.1rem}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Estuaire Réa","description":"Formations aux gestes et soins d’urgence en Pays de la Loire : AFGSU 2, AFGSU 1 et recyclage, en inter-établissements ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Pays de la Loire"},"location":[
-{"@type":"Place","name":"Estuaire Réa · Nantes","address":{"@type":"PostalAddress","addressLocality":"Nantes","addressRegion":"Pays de la Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.22,"longitude":-1.55}},
-{"@type":"Place","name":"Estuaire Réa · Angers","address":{"@type":"PostalAddress","addressLocality":"Angers","addressRegion":"Pays de la Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.47,"longitude":-0.55}},
-{"@type":"Place","name":"Estuaire Réa · Le Mans","address":{"@type":"PostalAddress","addressLocality":"Le Mans","addressRegion":"Pays de la Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.00,"longitude":0.20}},
-{"@type":"Place","name":"Estuaire Réa · Saint-Gilles-Croix-de-Vie","address":{"@type":"PostalAddress","addressLocality":"Saint-Gilles-Croix-de-Vie","addressRegion":"Pays de la Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":46.70,"longitude":-1.94}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Pays de la Loire","description":"Formations aux gestes et soins d’urgence en Pays de la Loire : AFGSU 2, AFGSU 1 et recyclage, en inter-établissements ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Pays de la Loire"},"location":[
+{"@type":"Place","name":"Formation AFGSU Pays de la Loire · Nantes","address":{"@type":"PostalAddress","addressLocality":"Nantes","addressRegion":"Pays de la Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.22,"longitude":-1.55}},
+{"@type":"Place","name":"Formation AFGSU Pays de la Loire · Angers","address":{"@type":"PostalAddress","addressLocality":"Angers","addressRegion":"Pays de la Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.47,"longitude":-0.55}},
+{"@type":"Place","name":"Formation AFGSU Pays de la Loire · Le Mans","address":{"@type":"PostalAddress","addressLocality":"Le Mans","addressRegion":"Pays de la Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.00,"longitude":0.20}},
+{"@type":"Place","name":"Formation AFGSU Pays de la Loire · Saint-Gilles-Croix-de-Vie","address":{"@type":"PostalAddress","addressLocality":"Saint-Gilles-Croix-de-Vie","addressRegion":"Pays de la Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":46.70,"longitude":-1.94}}]},
 {"@type":"Course","name":"AFGSU 2 en Pays de la Loire · gestes et soins d’urgence de niveau 2","description":"Formation de 21 heures sur 3 jours en présentiel pour professionnels de santé : urgences vitales, urgences potentielles, urgences collectives et SSE. Attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
-"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Nantes, Angers, Le Mans, Saint-Gilles-Croix-de-Vie (dates sur demande)"}}}
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Nantes, Angers, Le Mans, Saint-Gilles-Croix-de-Vie (dates : nous contacter)"}}}
 ]}
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"J’ai fait ma rentrée en IFSI à Nantes en septembre 2026 : l’AFGSU 2 conditionne-t-elle mon diplôme ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Depuis l’arrêté du 20 février 2026, les étudiants entrés à la rentrée 2026 doivent détenir une AFGSU 2 valide pour obtenir le diplôme d’État infirmier. Pensez à la planifier pendant votre cursus, avec votre certificat de scolarité comme justificatif."}},{"@type":"Question","name":"Kinésithérapeute libéral en Mayenne, faut-il aller jusqu’à Angers ou au Mans ?","acceptedAnswer":{"@type":"Answer","text":"Ce sont les deux villes les plus proches de la Mayenne parmi nos centres. Si plusieurs collègues de votre maison de santé sont intéressés, une session intra dans vos locaux peut aussi s’envisager."}},{"@type":"Question","name":"J’exerce sur la côte vendéenne : où se former sans monter à Nantes ?","acceptedAnswer":{"@type":"Answer","text":"À Saint-Gilles-Croix-de-Vie. Les dates y sont ouvertes à la demande : laissez vos disponibilités et nous vous rappelons sous 48 h avec une proposition."}},{"@type":"Question","name":"Pourquoi aucune date n’apparaît pour Nantes, Angers ou Le Mans ?","acceptedAnswer":{"@type":"Answer","text":"Parce que les sessions y sont programmées sur demande, en fonction des inscrits. Les seules dates confirmées à ce jour se tiennent à Palaiseau, en Essonne. Pour les Pays de la Loire, un appel ou le formulaire suffit à lancer la démarche."}},{"@type":"Question","name":"Notre EHPAD sarthois compte des aides-soignants et du personnel d’accueil : une même session pour tous ?","acceptedAnswer":{"@type":"Answer","text":"Non, ce sont deux formations distinctes. Les aides-soignants suivent l’AFGSU 2 (21 h), le personnel d’accueil l’AFGSU 1 (14 h). Les deux peuvent être organisées en intra dans l’établissement, par groupes de 10 à 12."}},{"@type":"Question","name":"Préparatrice en pharmacie à Angers, ai-je accès au niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les préparateurs en pharmacie font partie des professions visées. Vous pouvez vous inscrire directement à l’AFGSU 2."}},{"@type":"Question","name":"Je suis assistante de régulation médicale : niveau 1 ou niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Niveau 2. Les assistants de régulation médicale figurent dans le public de l’AFGSU 2, au même titre que les assistants médicaux ou les préleveurs sanguins."}},{"@type":"Question","name":"Mon AFGSU 2 date de 2023 : à quel moment programmer le recyclage ?","acceptedAnswer":{"@type":"Answer","text":"Elle reste valable quatre ans, donc jusqu’en 2027 à la date anniversaire. Visez une inscription 3 à 6 mois avant cette échéance : le recyclage de 7 h doit impérativement être suivi avant qu’elle ne tombe."}},{"@type":"Question","name":"Concrètement, que couvre le module sur les situations sanitaires exceptionnelles ?","acceptedAnswer":{"@type":"Answer","text":"En 3 h 30 : le dispositif ORSAN, le plan blanc et le plan bleu, l’afflux de victimes, les risques NRBC-E, l’évacuation et le confinement, ainsi que le soutien médico-psychologique."}},{"@type":"Question","name":"Une partie de la formation peut-elle se faire en ligne ?","acceptedAnswer":{"@type":"Answer","text":"Non. L’AFGSU 2 se suit entièrement en présentiel : sa validation repose sur la pratique et les mises en situation simulées, impossibles à reproduire à distance."}},{"@type":"Question","name":"Y a-t-il un examen le dernier jour ?","acceptedAnswer":{"@type":"Answer","text":"Pas d’examen final séparé. Le formateur évalue en continu, sur les trois jours, et la présence doit être intégrale pour que l’attestation soit délivrée."}},{"@type":"Question","name":"Ambulancier dans une entreprise privée de Loire-Atlantique, qui peut payer ma formation ?","acceptedAnswer":{"@type":"Answer","text":"C’est d’abord à votre employeur de la prévoir dans son plan de développement des compétences, éventuellement épaulé par l’OPCO de la branche. Un financement personnel reste possible, en 4x sans frais."}},{"@type":"Question","name":"Puis-je utiliser mon compte CPF ?","acceptedAnswer":{"@type":"Answer","text":"En principe, non : l’AFGSU n’est pas éligible au CPF. Les solutions passent plutôt par l’employeur, l’OPCO, l’ANFH ou le FIF-PL selon votre situation."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"J’ai fait ma rentrée en IFSI à Nantes en septembre 2026 : l’AFGSU 2 conditionne-t-elle mon diplôme ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Depuis l’arrêté du 20 février 2026, les étudiants entrés à la rentrée 2026 doivent détenir une AFGSU 2 valide pour obtenir le diplôme d’État infirmier. Pensez à la planifier pendant votre cursus, avec votre certificat de scolarité comme justificatif."}},{"@type":"Question","name":"Kinésithérapeute libéral en Mayenne, faut-il aller jusqu’à Angers ou au Mans ?","acceptedAnswer":{"@type":"Answer","text":"Ce sont les deux villes les plus proches de la Mayenne parmi nos centres. Si plusieurs collègues de votre maison de santé sont intéressés, une session intra dans vos locaux peut aussi s’envisager."}},{"@type":"Question","name":"J’exerce sur la côte vendéenne : où se former sans monter à Nantes ?","acceptedAnswer":{"@type":"Answer","text":"À Saint-Gilles-Croix-de-Vie. Les dates y sont ouvertes à la demande : laissez vos disponibilités et nous vous rappelons sous 48 h avec une proposition."}},{"@type":"Question","name":"Pourquoi aucune date n’apparaît pour Nantes, Angers ou Le Mans ?","acceptedAnswer":{"@type":"Answer","text":"Parce que les sessions des Pays de la Loire s’organisent au cas par cas, en fonction des inscrits : contactez-nous par téléphone ou via le formulaire, et nous lançons la démarche avec vous."}},{"@type":"Question","name":"Notre EHPAD sarthois compte des aides-soignants et du personnel d’accueil : une même session pour tous ?","acceptedAnswer":{"@type":"Answer","text":"Non, ce sont deux formations distinctes. Les aides-soignants suivent l’AFGSU 2 (21 h), le personnel d’accueil l’AFGSU 1 (14 h). Les deux peuvent être organisées en intra dans l’établissement, par groupes de 10 à 12."}},{"@type":"Question","name":"Préparatrice en pharmacie à Angers, ai-je accès au niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les préparateurs en pharmacie font partie des professions visées. Vous pouvez vous inscrire directement à l’AFGSU 2."}},{"@type":"Question","name":"Je suis assistante de régulation médicale : niveau 1 ou niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Niveau 2. Les assistants de régulation médicale figurent dans le public de l’AFGSU 2, au même titre que les assistants médicaux ou les préleveurs sanguins."}},{"@type":"Question","name":"Mon AFGSU 2 date de 2023 : à quel moment programmer le recyclage ?","acceptedAnswer":{"@type":"Answer","text":"Elle reste valable quatre ans, donc jusqu’en 2027 à la date anniversaire. Visez une inscription 3 à 6 mois avant cette échéance : le recyclage de 7 h doit impérativement être suivi avant qu’elle ne tombe."}},{"@type":"Question","name":"Concrètement, que couvre le module sur les situations sanitaires exceptionnelles ?","acceptedAnswer":{"@type":"Answer","text":"En 3 h 30 : le dispositif ORSAN, le plan blanc et le plan bleu, l’afflux de victimes, les risques NRBC-E, l’évacuation et le confinement, ainsi que le soutien médico-psychologique."}},{"@type":"Question","name":"Une partie de la formation peut-elle se faire en ligne ?","acceptedAnswer":{"@type":"Answer","text":"Non. L’AFGSU 2 se suit entièrement en présentiel : sa validation repose sur la pratique et les mises en situation simulées, impossibles à reproduire à distance."}},{"@type":"Question","name":"Y a-t-il un examen le dernier jour ?","acceptedAnswer":{"@type":"Answer","text":"Pas d’examen final séparé. Le formateur évalue en continu, sur les trois jours, et la présence doit être intégrale pour que l’attestation soit délivrée."}},{"@type":"Question","name":"Ambulancier dans une entreprise privée de Loire-Atlantique, qui peut payer ma formation ?","acceptedAnswer":{"@type":"Answer","text":"C’est d’abord à votre employeur de la prévoir dans son plan de développement des compétences, éventuellement épaulé par l’OPCO de la branche. Un financement personnel reste possible, en 4x sans frais."}},{"@type":"Question","name":"Puis-je utiliser mon compte CPF ?","acceptedAnswer":{"@type":"Answer","text":"En principe, non : l’AFGSU n’est pas éligible au CPF. Les solutions passent plutôt par l’employeur, l’OPCO, l’ANFH ou le FIF-PL selon votre situation."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><path d="M32 4C49 4 60 15 60 31S50 60 31 60 4 49 4 32 15 4 32 4Z" fill="#E86A50"/><path d="M10 36q5-7 10 0t8 0l4-13 5 22 4-13 3 4h10" fill="none" stroke="#12263A" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
 <a class="skip" href="#main">Passer au contenu</a>
 <header class="hd">
  <div class="w">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Estuaire Réa (emplacement)" data-img="logo : galet Estuaire Réa"></span>Estuaire Réa</a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Pays de la Loire</span></span></a>
   <nav aria-label="Navigation principale"><a class="wv" href="#voyage">Le fil</a><a class="wv" href="#niveau">Quel niveau ?</a><a class="wv" href="#programme">Programme</a><a class="wv" href="#intra">Intra</a><a class="wv" href="#ecrire">Inscription</a></nav>
   <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
  </div>
@@ -370,7 +385,7 @@ footer.site nav{display:flex;gap:18px}
 <section class="sec" id="calendrier" aria-labelledby="h-cal">
  <div class="w">
   <div class="sec-h" data-rise><p class="kick">Calendrier</p><h2 id="h-cal">Prochaines sessions, <em>ville par ville</em></h2></div>
-  <div class="cal" id="cal" data-rise><noscript><p>Dates sur demande dans nos quatre villes : appelez le 07 80 91 23 35.</p></noscript></div>
+  <div class="cal" id="cal" data-rise><noscript><p>Dates : nous contacter au 07 80 91 23 35.</p></noscript></div>
   <p class="elsewhere" id="elsewhere"></p>
  </div>
 </section>
@@ -431,7 +446,7 @@ footer.site nav{display:flex;gap:18px}
     <span class="num" aria-hidden="true">3</span>
     <div><h3>Urgences collectives &amp; situations sanitaires exceptionnelles</h3><p class="h">3 h 30 · penser à plusieurs</p>
     <p class="topics">ORSAN<b>·</b>plan blanc<b>·</b>plan bleu<b>·</b>afflux de victimes<b>·</b>NRBC-E<b>·</b>évacuation et confinement<b>·</b>soutien médico-psychologique</p></div>
-    <div class="img-ph" role="img" aria-label="Photo à venir : exercice d’afflux de victimes" data-img="photo : exercice d’afflux de victimes, tri sur brancards, gilets de couleur" style="min-height:170px"></div>
+    <div class="img-ph" role="img" aria-label="Photo à venir : exercice d’afflux de victimes" data-file="media/photo-01.jpg" data-img="photo : exercice d’afflux de victimes, tri sur brancards, gilets de couleur" style="min-height:170px"></div>
    </article>
   </div>
   <div class="days">
@@ -533,7 +548,7 @@ footer.site nav{display:flex;gap:18px}
    <p class="where">De Cholet à Laval, de La Roche-sur-Yon à Saumur, et partout en France.</p>
    <a class="peb" href="#ecrire" data-formation="Intra" data-centre="Intra">Recevoir un devis pour mon équipe</a>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : formation en EHPAD" data-img="photo : relevage d’un résident simulé dans une chambre d’EHPAD, deux aides-soignantes" data-rise></div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : formation en EHPAD" data-file="media/photo-02.jpg" data-img="photo : relevage d’un résident simulé dans une chambre d’EHPAD, deux aides-soignantes" data-rise></div>
  </div>
 </section>
 
@@ -554,7 +569,7 @@ footer.site nav{display:flex;gap:18px}
    <details><summary data-faq-q>J’ai fait ma rentrée en IFSI à Nantes en septembre 2026 : l’AFGSU 2 conditionne-t-elle mon diplôme ?</summary><div data-faq-a><p>Oui. Depuis l’arrêté du 20 février 2026, les étudiants entrés à la rentrée 2026 doivent détenir une AFGSU 2 valide pour obtenir le diplôme d’État infirmier. Pensez à la planifier pendant votre cursus, avec votre certificat de scolarité comme justificatif.</p></div></details>
    <details><summary data-faq-q>Kinésithérapeute libéral en Mayenne, faut-il aller jusqu’à Angers ou au Mans ?</summary><div data-faq-a><p>Ce sont les deux villes les plus proches de la Mayenne parmi nos centres. Si plusieurs collègues de votre maison de santé sont intéressés, une session intra dans vos locaux peut aussi s’envisager.</p></div></details>
    <details><summary data-faq-q>J’exerce sur la côte vendéenne : où se former sans monter à Nantes ?</summary><div data-faq-a><p>À Saint-Gilles-Croix-de-Vie. Les dates y sont ouvertes à la demande : laissez vos disponibilités et nous vous rappelons sous 48 h avec une proposition.</p></div></details>
-   <details><summary data-faq-q>Pourquoi aucune date n’apparaît pour Nantes, Angers ou Le Mans ?</summary><div data-faq-a><p>Parce que les sessions y sont programmées sur demande, en fonction des inscrits. Les seules dates confirmées à ce jour se tiennent à Palaiseau, en Essonne. Pour les Pays de la Loire, un appel ou le formulaire suffit à lancer la démarche.</p></div></details>
+   <details><summary data-faq-q>Pourquoi aucune date n’apparaît pour Nantes, Angers ou Le Mans ?</summary><div data-faq-a><p>Parce que les sessions des Pays de la Loire s’organisent au cas par cas, en fonction des inscrits : contactez-nous par téléphone ou via le formulaire, et nous lançons la démarche avec vous.</p></div></details>
    <details><summary data-faq-q>Notre EHPAD sarthois compte des aides-soignants et du personnel d’accueil : une même session pour tous ?</summary><div data-faq-a><p>Non, ce sont deux formations distinctes. Les aides-soignants suivent l’AFGSU 2 (21 h), le personnel d’accueil l’AFGSU 1 (14 h). Les deux peuvent être organisées en intra dans l’établissement, par groupes de 10 à 12.</p></div></details>
    <details><summary data-faq-q>Préparatrice en pharmacie à Angers, ai-je accès au niveau 2 ?</summary><div data-faq-a><p>Oui, les préparateurs en pharmacie font partie des professions visées. Vous pouvez vous inscrire directement à l’AFGSU 2.</p></div></details>
    <details><summary data-faq-q>Je suis assistante de régulation médicale : niveau 1 ou niveau 2 ?</summary><div data-faq-a><p>Niveau 2. Les assistants de régulation médicale figurent dans le public de l’AFGSU 2, au même titre que les assistants médicaux ou les préleveurs sanguins.</p></div></details>
@@ -577,8 +592,12 @@ footer.site nav{display:flex;gap:18px}
    <p style="font:600 1.3rem var(--sans)"><a href="tel:+33780912335" style="text-decoration:none">07 80 91 23 35</a></p>
   </div>
   <div>
-   <!-- TODO : relier ce formulaire à l'outil d'envoi (CRM, webhook ou e-mail). action="#" pour l'instant. -->
-   <form class="f" action="#" method="post" data-lead id="lead" style="background:var(--sand);color:var(--navy);border-radius:28px;padding:26px">
+   <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+   <form class="f" action="https://api.web3forms.com/submit" method="POST" data-lead id="lead" style="background:var(--sand);color:var(--navy);border-radius:28px;padding:26px">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Pays de la Loire">
+    <input type="hidden" name="from_name" value="Formation AFGSU Pays de la Loire">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <input type="hidden" name="formation" value="AFGSU 2">
     <div class="full"><label for="nom">Nom &amp; prénom</label><input id="nom" name="nom" autocomplete="name" required aria-errormessage="nom-e"><p class="err" id="nom-e">Ce champ nous permet de vous appeler par votre nom.</p></div>
     <div><label for="tel">Téléphone</label><input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="tel-e"><p class="err" id="tel-e">Dix chiffres, par exemple 02 40 00 00 00.</p></div>
@@ -586,8 +605,9 @@ footer.site nav{display:flex;gap:18px}
     <div><label for="profession">Profession</label><select id="profession" name="profession" required aria-errormessage="pro-e"><option value="">Votre métier…</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="pro-e">Sélectionnez une profession dans la liste.</p></div>
     <div><label for="centre">Centre / ville</label><select id="centre" name="centre" required aria-errormessage="centre-e"><option value="">Ville souhaitée…</option><option>Nantes</option><option>Angers</option><option>Le Mans</option><option>Saint-Gilles-Croix-de-Vie</option><option value="Intra">Intra, dans notre établissement</option></select><p class="err" id="centre-e">Indiquez une ville ou l’intra.</p></div>
     <div class="full"><label for="message">Message (facultatif)</label><textarea id="message" name="message" placeholder="Vos disponibilités, votre financement, le nombre de personnes…"></textarea></div>
-    <div class="full chk"><input type="checkbox" id="rgpd" name="rgpd" required><label for="rgpd">J’accepte qu’Estuaire Réa conserve ces informations le temps de traiter ma demande et me contacte à ce sujet. <a href="#">En savoir plus</a></label></div>
+    <div class="full chk"><input type="checkbox" id="rgpd" name="rgpd" required><label for="rgpd">J’accepte que Formation AFGSU Pays de la Loire conserve ces informations le temps de traiter ma demande et me contacte à ce sujet. <a href="#">En savoir plus</a></label></div>
     <div class="full"><button class="peb" type="submit">Transmettre ma demande</button></div>
+   <p class="send-err" role="alert" data-send-err hidden>Votre demande n’a pas pu partir. Patientez un instant puis renvoyez-la, ou téléphonez-nous. 07 80 91 23 35.</p>
    </form>
    <div class="okmsg" data-success hidden tabindex="-1">
     <h3>Bien reçu.</h3>
@@ -610,8 +630,8 @@ footer.site nav{display:flex;gap:18px}
 
 <footer class="site">
  <div class="w">
-  <span>© 2026 Estuaire Réa by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
-  <nav aria-label="Liens légaux"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+  <span>© 2026 Formation AFGSU Pays de la Loire by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Liens légaux"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
  </div>
 </footer>
 
@@ -627,12 +647,13 @@ const SESSIONS = [
   { ville: "Nantes",                    dept: "44", region: "Pays de la Loire", dates: [] },
   { ville: "Angers",                    dept: "49", region: "Pays de la Loire", dates: [] },
   { ville: "Le Mans",                   dept: "72", region: "Pays de la Loire", dates: [] },
-  // Sessions déjà confirmées hors région (affichées en complément) :
-  { ville: "Palaiseau", dept: "91", region: "Île-de-France", adresse: "4 allée des Garays, 91120 Palaiseau", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* ========================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const M = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
@@ -643,7 +664,7 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const LOCAL = SESSIONS.filter(s => s.region === 'Pays de la Loire');
 
   /* calendrier */
-  $('#cal').innerHTML = LOCAL.map(s => { const n = next(s); return `<div class="cal-row"><div><span class="d">${s.dept}</span><h3>${s.ville}</h3></div><p>${n.length ? n.map(fr).join(' · ') : SUR_DEMANDE}</p><a class="wv" href="#ecrire" data-centre="${s.ville}" data-formation="AFGSU 2">${n.length ? 'Réserver' : 'Demander une date'}</a></div>`; }).join('');
+  $('#cal').innerHTML = LOCAL.map(s => { const n = next(s); return `<div class="cal-row"><div><span class="d">${s.dept}</span><h3>${s.ville}</h3></div><p>${n.length ? n.map(fr).join(' · ') : SUR_DEMANDE}</p><a class="wv" href="#ecrire" data-centre="${s.ville}" data-formation="AFGSU 2">${n.length ? 'Réserver' : 'Nous contacter'}</a></div>`; }).join('');
   const ext = SESSIONS.filter(s => s.region !== 'Pays de la Loire' && next(s).length);
   if (ext.length) $('#elsewhere').textContent = 'Mobile pour quelques jours ? Des sessions sont déjà confirmées hors région : ' + ext.map(s => `${s.ville} (${s.dept}), ${next(s).map(fr).join(', ')}`).join(' ; ') + '.';
   $$('[data-when]').forEach(p => { const s = LOCAL.find(x => x.ville === p.closest('[data-city]').dataset.city); const n = s ? next(s) : []; p.textContent = n.length ? 'Sessions : ' + n.map(fr).join(', ') : SUR_DEMANDE; });
@@ -717,10 +738,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : transmettre les champs (fetch POST) au service d'inscription, puis confirmer.
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>

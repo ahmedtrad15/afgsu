@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFGSU 2 Centre-Val de Loire · Orléans, Tours, Bourges · 21 h | Carnet de Gestes</title>
+<title>AFGSU 2 Centre-Val de Loire · Orléans, Tours, Bourges · 21 h | Formation AFGSU Centre-Val de Loire</title>
 <meta name="description" content="AFGSU 2 en Centre-Val de Loire : 21 h en présentiel sur 3 jours, 385 € TTC au lieu de 450 €, valable 4 ans. Centres d’Orléans, Tours et Bourges, intra possible. Trouvez votre financement et cochez les pièces à fournir.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Carnet de Gestes">
-<meta property="og:title" content="Carnet de Gestes · AFGSU 2 en Centre-Val de Loire">
+<meta property="og:site_name" content="Formation AFGSU Centre-Val de Loire">
+<meta property="og:title" content="Formation AFGSU Centre-Val de Loire · AFGSU 2 en Centre-Val de Loire">
 <meta property="og:description" content="Le carnet d’une formatrice : programme, financement selon votre statut, liste des pièces à cocher. Orléans, Tours, Bourges.">
-<!-- TODO og:image : visuel 1200×630 (carnet ouvert, croquis au crayon, surligneur) depuis la médiathèque -->
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#2B4C9B">
-<!-- PLACEHOLDER favicon : carnet à spirale avec trait jaune, 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Libre+Franklin:wght@400;500;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
@@ -43,9 +45,7 @@ p{margin:0 0 1em}
 .img-ph{position:relative;min-height:200px;background:#fff;border:1px solid #ddd;box-shadow:0 8px 20px -14px rgba(0,0,0,.4);transform:rotate(-1.2deg);display:flex;align-items:flex-end;padding:12px 12px 40px}
 .img-ph::before{content:"";position:absolute;top:-12px;left:50%;width:90px;height:24px;margin-left:-45px;background:rgba(255,227,110,.75);transform:rotate(2deg)}
 .img-ph::after{content:"photo à coller : " attr(data-img);font:500 1.3rem/1.15 var(--c);color:var(--soft)}
-.logo-ph{width:30px;height:36px;min-height:0;padding:0;transform:none;border:2px solid var(--graph);border-radius:3px;background:var(--paper);box-shadow:none;flex:none}
-.logo-ph::before,.logo-ph::after{display:none}
-/* header */
+.logo-ph::before,/* header */
 .top{position:sticky;top:0;z-index:50;background:#EFEAE0;border-bottom:1px solid #d8d1c2}
 .top .in{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px;height:58px;padding:0 18px}
 .brand{display:flex;align-items:center;gap:10px;font:700 1.2rem var(--l);text-decoration:none}
@@ -231,26 +231,36 @@ footer nav{display:flex;gap:16px}
 .js [data-jot]{opacity:0;transform:translateY(12px)}
 .js [data-jot].in{opacity:1;transform:none;transition:opacity .6s ease,transform .7s ease}
 @media (prefers-reduced-motion:reduce){.js [data-jot],.js [data-jot].in{opacity:1;transform:none;transition:none}.hl{background-size:100% 62%;transition:none}.js .sketch.drw path,.js .sketch.drw circle,.js .sketch.drw ellipse,.js .sketch.drw rect{stroke-dashoffset:0}.sketch.drw.in path,.sketch.drw.in circle,.sketch.drw.in ellipse,.sketch.drw.in rect{transition:none}.js .cmap.pre .reg,.js .cmap.pre .reg2,.js .cmap.pre .loire,.js .cmap.pre .circ{stroke-dashoffset:0}.cmap .reg,.cmap .reg2,.cmap .loire,.cmap .circ,.sk,.bar i,.checklist input::after,.faq summary::after,.top nav a{transition:none}}
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#B3261E;grid-column:1/-1}
+#palai:empty,#ext:empty,#elsewhere:empty{display:none}
+/* affinage typographique */
+.hero h1{font-size:clamp(1.75rem,3.6vw,2.7rem)}.sh h2{font-size:clamp(1.5rem,3vw,2.2rem)}
+.final h2{font-size:clamp(1.6rem,3.4vw,2.4rem)}.pricebox strong{font-size:2.1rem}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Carnet de Gestes","description":"Formation aux gestes et soins d’urgence en Centre-Val de Loire : AFGSU 2, AFGSU 1 et recyclage, en inter à Orléans, Tours et Bourges ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Centre-Val de Loire"},"location":[
-{"@type":"Place","name":"Carnet de Gestes · Orléans","address":{"@type":"PostalAddress","addressLocality":"Orléans","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.90,"longitude":1.91}},
-{"@type":"Place","name":"Carnet de Gestes · Tours","address":{"@type":"PostalAddress","addressLocality":"Tours","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.39,"longitude":0.69}},
-{"@type":"Place","name":"Carnet de Gestes · Bourges","address":{"@type":"PostalAddress","addressLocality":"Bourges","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.08,"longitude":2.40}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Centre-Val de Loire","description":"Formation aux gestes et soins d’urgence en Centre-Val de Loire : AFGSU 2, AFGSU 1 et recyclage, en inter à Orléans, Tours et Bourges ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Centre-Val de Loire"},"location":[
+{"@type":"Place","name":"Formation AFGSU Centre-Val de Loire · Orléans","address":{"@type":"PostalAddress","addressLocality":"Orléans","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.90,"longitude":1.91}},
+{"@type":"Place","name":"Formation AFGSU Centre-Val de Loire · Tours","address":{"@type":"PostalAddress","addressLocality":"Tours","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.39,"longitude":0.69}},
+{"@type":"Place","name":"Formation AFGSU Centre-Val de Loire · Bourges","address":{"@type":"PostalAddress","addressLocality":"Bourges","addressRegion":"Centre-Val de Loire","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":47.08,"longitude":2.40}}]},
 {"@type":"Course","name":"AFGSU 2 · Centre-Val de Loire","description":"Formation aux gestes et soins d’urgence de niveau 2 : 21 heures en présentiel sur 3 jours, trois modules, évaluation continue, attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
-"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Orléans, Tours ou Bourges (dates sur demande)"}}}
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Orléans, Tours ou Bourges (dates : nous contacter)"}}}
 ]}
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le carnet de financement remplace-t-il l’avis de mon service formation ?","acceptedAnswer":{"@type":"Answer","text":"Non, c’est une orientation. La décision de prise en charge revient toujours au financeur : employeur, OPCO, ANFH ou FIF-PL."}},{"@type":"Question","name":"Qui monte le dossier de prise en charge : moi ou mon employeur ?","acceptedAnswer":{"@type":"Answer","text":"Lorsque l’employeur finance, c’est le plus souvent lui, ou son service formation, qui engage la démarche. En libéral ou en financement personnel, c’est à vous de la faire."}},{"@type":"Question","name":"Infirmière libérale à Bourges : le FIF-PL couvre-t-il toute la formation ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL intervient sous conditions, selon ses propres critères. Le reste éventuel peut être réglé personnellement, en 4 fois sans frais."}},{"@type":"Question","name":"En reconversion, encore en formation : quelles pièces fournir ?","acceptedAnswer":{"@type":"Answer","text":"Si vous êtes étudiant d’une des professions concernées, un certificat de scolarité remplace le numéro RPPS ou ADELI et la carte professionnelle. Choisissez « Étudiant » dans le carnet pour voir la liste."}},{"@type":"Question","name":"Plusieurs étudiants de l’IFSI d’Orléans peuvent-ils s’inscrire ensemble ?","acceptedAnswer":{"@type":"Answer","text":"Oui : un groupe compte de 10 à 12 personnes, il y a donc de la place pour plusieurs camarades de promo. Prévenez-nous à l’avance pour que la date convienne à tout le monde."}},{"@type":"Question","name":"Mon ancien numéro ADELI a laissé place au RPPS : lequel indiquer ?","acceptedAnswer":{"@type":"Answer","text":"Celui dont vous disposez : les deux identifiants sont acceptés pour l’inscription."}},{"@type":"Question","name":"Pour un recyclage, qu’est-ce qui change dans la liste des pièces ?","acceptedAnswer":{"@type":"Answer","text":"La liste s’allonge d’une ligne : votre attestation AFGSU 2 encore valide. Cochez « Je viens pour un recyclage » dans le carnet : elle apparaît automatiquement."}},{"@type":"Question","name":"Je travaille dans le Loiret mais j’habite en Essonne : Orléans ou Palaiseau ?","acceptedAnswer":{"@type":"Answer","text":"Les deux sont possibles. Palaiseau a déjà des dates confirmées ; à Orléans, la date se fixe à la demande. Choisissez selon votre calendrier."}},{"@type":"Question","name":"Faut-il des connaissances en oxygénothérapie avant de venir ?","acceptedAnswer":{"@type":"Answer","text":"Non : il suffit de faire partie du public visé. L’oxygénothérapie est enseignée dans le module sur les urgences vitales, avec le chariot d’urgence."}},{"@type":"Question","name":"Préparateur dans un hôpital public d’Orléans : quelle case cocher dans le carnet ?","acceptedAnswer":{"@type":"Answer","text":"« Hospitalier public » : votre financement passe par le plan de développement des compétences de l’établissement, avec l’ANFH."}},{"@type":"Question","name":"Kinésithérapeute salarié d’un centre privé de rééducation : quel statut choisir ?","acceptedAnswer":{"@type":"Answer","text":"« Salarié du privé » : l’employeur finance au titre de son plan de développement des compétences, en lien avec son OPCO."}},{"@type":"Question","name":"Le paiement en quatre fois s’applique-t-il au tarif inter ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les 385 € TTC par participant peuvent être réglés en quatre fois sans frais."}},{"@type":"Question","name":"Que se passe-t-il une fois ma demande envoyée ?","acceptedAnswer":{"@type":"Answer","text":"Wafa vous rappelle pour arrêter la ville et la date, vérifier vos pièces et caler le financement. Pour Orléans, Tours ou Bourges, comptez un rappel sous 48 h."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le carnet de financement remplace-t-il l’avis de mon service formation ?","acceptedAnswer":{"@type":"Answer","text":"Non, c’est une orientation. La décision de prise en charge revient toujours au financeur : employeur, OPCO, ANFH ou FIF-PL."}},{"@type":"Question","name":"Qui monte le dossier de prise en charge : moi ou mon employeur ?","acceptedAnswer":{"@type":"Answer","text":"Lorsque l’employeur finance, c’est le plus souvent lui, ou son service formation, qui engage la démarche. En libéral ou en financement personnel, c’est à vous de la faire."}},{"@type":"Question","name":"Infirmière libérale à Bourges : le FIF-PL couvre-t-il toute la formation ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL intervient sous conditions, selon ses propres critères. Le reste éventuel peut être réglé personnellement, en 4 fois sans frais."}},{"@type":"Question","name":"En reconversion, encore en formation : quelles pièces fournir ?","acceptedAnswer":{"@type":"Answer","text":"Si vous êtes étudiant d’une des professions concernées, un certificat de scolarité remplace le numéro RPPS ou ADELI et la carte professionnelle. Choisissez « Étudiant » dans le carnet pour voir la liste."}},{"@type":"Question","name":"Plusieurs étudiants de l’IFSI d’Orléans peuvent-ils s’inscrire ensemble ?","acceptedAnswer":{"@type":"Answer","text":"Oui : un groupe compte de 10 à 12 personnes, il y a donc de la place pour plusieurs camarades de promo. Prévenez-nous à l’avance pour que la date convienne à tout le monde."}},{"@type":"Question","name":"Mon ancien numéro ADELI a laissé place au RPPS : lequel indiquer ?","acceptedAnswer":{"@type":"Answer","text":"Celui dont vous disposez : les deux identifiants sont acceptés pour l’inscription."}},{"@type":"Question","name":"Pour un recyclage, qu’est-ce qui change dans la liste des pièces ?","acceptedAnswer":{"@type":"Answer","text":"La liste s’allonge d’une ligne : votre attestation AFGSU 2 encore valide. Cochez « Je viens pour un recyclage » dans le carnet : elle apparaît automatiquement."}},{"@type":"Question","name":"Je travaille dans le Loiret mais j’habite en Essonne : Orléans ou Palaiseau ?","acceptedAnswer":{"@type":"Answer","text":"Les deux sont possibles : Palaiseau, en Essonne, affiche un planning de sessions programmées ; pour Orléans, contactez-nous et nous fixons une date avec vous."}},{"@type":"Question","name":"Faut-il des connaissances en oxygénothérapie avant de venir ?","acceptedAnswer":{"@type":"Answer","text":"Non : il suffit de faire partie du public visé. L’oxygénothérapie est enseignée dans le module sur les urgences vitales, avec le chariot d’urgence."}},{"@type":"Question","name":"Préparateur dans un hôpital public d’Orléans : quelle case cocher dans le carnet ?","acceptedAnswer":{"@type":"Answer","text":"« Hospitalier public » : votre financement passe par le plan de développement des compétences de l’établissement, avec l’ANFH."}},{"@type":"Question","name":"Kinésithérapeute salarié d’un centre privé de rééducation : quel statut choisir ?","acceptedAnswer":{"@type":"Answer","text":"« Salarié du privé » : l’employeur finance au titre de son plan de développement des compétences, en lien avec son OPCO."}},{"@type":"Question","name":"Le paiement en quatre fois s’applique-t-il au tarif inter ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les 385 € TTC par participant peuvent être réglés en quatre fois sans frais."}},{"@type":"Question","name":"Que se passe-t-il une fois ma demande envoyée ?","acceptedAnswer":{"@type":"Answer","text":"Wafa vous rappelle pour arrêter la ville et la date, vérifier vos pièces et caler le financement. Pour Orléans, Tours ou Bourges, comptez un rappel sous 48 h."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><rect x="13" y="5" width="44" height="54" rx="5" fill="#FBF8F1" stroke="#2C2C2C" stroke-width="2.8"/><path d="M8 14h9M8 25h9M8 36h9M8 47h9" stroke="#2C2C2C" stroke-width="2.8" stroke-linecap="round"/><path d="M23 45h28" stroke="#FFE36E" stroke-width="9" stroke-linecap="round"/><path d="M36 13v21M25.5 23.5h21" stroke="#2B4C9B" stroke-width="5.5" stroke-linecap="round"/></symbol></svg>
 <a class="skip" href="#carnet">Ouvrir le carnet</a>
 
 <header class="top">
  <div class="in">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Carnet de Gestes (emplacement)" data-img="logo : carnet"></span>Carnet de Gestes</a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Centre-Val de Loire</span></span></a>
   <nav aria-label="Onglets du carnet"><a href="#agenda">Agenda</a><a href="#programme">Programme</a><a href="#financement">Financement</a><a href="#questions">Questions</a><a href="#inscription">Inscription</a></nav>
   <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
  </div>
@@ -284,7 +294,7 @@ footer nav{display:flex;gap:16px}
      <path class="b" pathLength="1" d="M150 60C170 40 210 40 226 58"/><path class="b" pathLength="1" d="M222 48 226 58 214 60"/>
     </svg>
     <span class="note">← PLS : la victime inconsciente qui respire, module 1</span>
-    <div class="img-ph" role="img" aria-label="Photo à venir : formatrice montrant la PLS" data-img="formatrice montrant la PLS à un groupe d’aides-soignants" style="margin-top:22px"></div>
+    <div class="img-ph" role="img" aria-label="Photo à venir : formatrice montrant la PLS" data-file="media/photo-01.jpg" data-img="formatrice montrant la PLS à un groupe d’aides-soignants" style="margin-top:22px"></div>
    </div>
   </div>
  </section>
@@ -294,7 +304,7 @@ footer nav{display:flex;gap:16px}
   <div class="spread">
    <div data-jot>
     <div class="sh"><span class="note">où ? quand ?</span><h2 id="h-ag">L’agenda des trois villes</h2><p>Les sessions s’organisent à la demande dans chacune des trois villes. Écrivez-nous, on vous rappelle.</p></div>
-    <ul class="agenda" id="agendaList"><noscript><li>Dates sur demande : 07 80 91 23 35</li></noscript></ul>
+    <ul class="agenda" id="agendaList"><noscript><li>Dates : nous contacter au 07 80 91 23 35.</li></noscript></ul>
     <div class="postit" id="postit" hidden><p id="postitTxt"></p></div>
    </div>
    <div data-jot>
@@ -455,7 +465,7 @@ footer nav{display:flex;gap:16px}
    <details><summary data-faq-q>Plusieurs étudiants de l’IFSI d’Orléans peuvent-ils s’inscrire ensemble ?</summary><div data-faq-a><p>Oui : un groupe compte de 10 à 12 personnes, il y a donc de la place pour plusieurs camarades de promo. Prévenez-nous à l’avance pour que la date convienne à tout le monde.</p></div></details>
    <details><summary data-faq-q>Mon ancien numéro ADELI a laissé place au RPPS : lequel indiquer ?</summary><div data-faq-a><p>Celui dont vous disposez : les deux identifiants sont acceptés pour l’inscription.</p></div></details>
    <details><summary data-faq-q>Pour un recyclage, qu’est-ce qui change dans la liste des pièces ?</summary><div data-faq-a><p>La liste s’allonge d’une ligne : votre attestation AFGSU 2 encore valide. Cochez « Je viens pour un recyclage » dans le carnet : elle apparaît automatiquement.</p></div></details>
-   <details><summary data-faq-q>Je travaille dans le Loiret mais j’habite en Essonne : Orléans ou Palaiseau ?</summary><div data-faq-a><p>Les deux sont possibles. Palaiseau a déjà des dates confirmées ; à Orléans, la date se fixe à la demande. Choisissez selon votre calendrier.</p></div></details>
+   <details><summary data-faq-q>Je travaille dans le Loiret mais j’habite en Essonne : Orléans ou Palaiseau ?</summary><div data-faq-a><p>Les deux sont possibles : Palaiseau, en Essonne, affiche un planning de sessions programmées ; pour Orléans, contactez-nous et nous fixons une date avec vous.</p></div></details>
    <details><summary data-faq-q>Faut-il des connaissances en oxygénothérapie avant de venir ?</summary><div data-faq-a><p>Non : il suffit de faire partie du public visé. L’oxygénothérapie est enseignée dans le module sur les urgences vitales, avec le chariot d’urgence.</p></div></details>
    <details><summary data-faq-q>Préparateur dans un hôpital public d’Orléans : quelle case cocher dans le carnet ?</summary><div data-faq-a><p>« Hospitalier public » : votre financement passe par le plan de développement des compétences de l’établissement, avec l’ANFH.</p></div></details>
    <details><summary data-faq-q>Kinésithérapeute salarié d’un centre privé de rééducation : quel statut choisir ?</summary><div data-faq-a><p>« Salarié du privé » : l’employeur finance au titre de son plan de développement des compétences, en lien avec son OPCO.</p></div></details>
@@ -470,11 +480,15 @@ footer nav{display:flex;gap:16px}
    <div data-jot>
     <div class="sh"><span class="note">dernière page à remplir</span><h2 id="h-ins">Votre inscription</h2><p>Quelques lignes suffisent. Wafa reprend tout avec vous par téléphone.</p></div>
     <p><a class="tel-n" href="tel:+33780912335">07 80 91 23 35<span>ligne AFGSU</span></a></p>
-    <div class="img-ph" role="img" aria-label="Photo à venir : carnet ouvert sur une table de formation" data-img="carnet ouvert, mannequin nourrisson et feutre surligneur sur la table" style="transform:rotate(1.2deg)"></div>
+    <div class="img-ph" role="img" aria-label="Photo à venir : carnet ouvert sur une table de formation" data-file="media/photo-02.jpg" data-img="carnet ouvert, mannequin nourrisson et feutre surligneur sur la table" style="transform:rotate(1.2deg)"></div>
    </div>
    <div data-jot>
-    <!-- TODO : connecter l'envoi du formulaire (CRM ou service e-mail). action="#" en attendant. -->
-    <form class="lead" action="#" method="post" data-lead id="lead">
+    <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+    <form class="lead" action="https://api.web3forms.com/submit" method="POST" data-lead id="lead">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Centre-Val de Loire">
+    <input type="hidden" name="from_name" value="Formation AFGSU Centre-Val de Loire">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
      <input type="hidden" name="formation" value="AFGSU 2">
      <div class="full"><label for="n-nom">Nom &amp; prénom</label><input id="n-nom" name="nom" autocomplete="name" required aria-errormessage="n-nom-e"><p class="err" id="n-nom-e">oublié : votre nom !</p></div>
      <div><label for="n-tel">Téléphone</label><input id="n-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="n-tel-e"><p class="err" id="n-tel-e">10 chiffres, ex. 02 38 00 00 00</p></div>
@@ -482,8 +496,9 @@ footer nav{display:flex;gap:16px}
      <div><label for="n-pro">Profession</label><select id="n-pro" name="profession" required aria-errormessage="n-pro-e"><option value="">Choisissez</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="n-pro-e">quelle profession ?</p></div>
      <div><label for="n-centre">Centre / ville</label><select id="n-centre" name="centre" required aria-errormessage="n-centre-e"><option value="">Choisissez</option><option>Orléans</option><option>Tours</option><option>Bourges</option><option value="Intra">Intra, dans notre établissement</option></select><p class="err" id="n-centre-e">quelle ville ?</p></div>
      <div class="full"><label for="n-msg">Message (facultatif)</label><textarea id="n-msg" name="message" placeholder="Statut, financement envisagé, disponibilités…"></textarea></div>
-     <div class="full chk"><input type="checkbox" id="n-rgpd" name="rgpd" required><label for="n-rgpd">J’accepte que Carnet de Gestes utilise ces informations pour traiter ma demande, sans autre usage. <a href="#">Informations RGPD</a></label></div>
+     <div class="full chk"><input type="checkbox" id="n-rgpd" name="rgpd" required><label for="n-rgpd">J’accepte que Formation AFGSU Centre-Val de Loire utilise ces informations pour traiter ma demande, sans autre usage. <a href="#">Informations RGPD</a></label></div>
      <div class="full"><button class="sk pri" type="submit">Envoyer ma page d’inscription</button></div>
+     <p class="send-err" role="alert" data-send-err hidden>La page n’est pas partie. Renvoyez-la dans un instant, ou téléphonez. 07 80 91 23 35.</p>
     </form>
     <div class="ok" data-success hidden tabindex="-1"><span class="note">C’est noté !</span><p style="margin:8px 0 0">Wafa vous téléphone pour caler ensemble ville, date et prise en charge. Une question d’ici là : 07 80 91 23 35.</p></div>
    </div>
@@ -497,8 +512,8 @@ footer nav{display:flex;gap:16px}
 </main>
 
 <footer>
- <span>© 2026 Carnet de Gestes by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
- <nav aria-label="Pages légales"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+ <span>© 2026 Formation AFGSU Centre-Val de Loire by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+ <nav aria-label="Pages légales"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
 </footer>
 
 <div class="sticky" data-sticky>
@@ -512,12 +527,13 @@ const SESSIONS = [
   { ville: "Orléans", dept: "45", region: "Centre-Val de Loire", dates: [] },
   { ville: "Tours",   dept: "37", region: "Centre-Val de Loire", dates: [] },
   { ville: "Bourges", dept: "18", region: "Centre-Val de Loire", dates: [] },
-  // Hors région, déjà confirmées :
-  { ville: "Palaiseau", dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* =========================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
@@ -525,7 +541,7 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const T = new Date(); T.setHours(0, 0, 0, 0);
   const up = s => s.dates.filter(d => D(d[1]) >= T);
   const f = ([a, b]) => { const A = D(a), B = D(b); return `${A.getDate()}${A.getMonth() !== B.getMonth() ? ' ' + MO[A.getMonth()] : ''} → ${B.getDate()} ${MO[B.getMonth()]}`; };
-  $('#agendaList').innerHTML = SESSIONS.filter(s => s.region === 'Centre-Val de Loire').map(s => { const u = up(s); return `<li><b>${s.ville}<small>(${s.dept})</small></b><a href="#inscription" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'réserver' : 'demander'} →</a><span>${u.length ? u.map(f).join(' · ') : SUR_DEMANDE}</span></li>`; }).join('');
+  $('#agendaList').innerHTML = SESSIONS.filter(s => s.region === 'Centre-Val de Loire').map(s => { const u = up(s); return `<li><b>${s.ville}<small>(${s.dept})</small></b><a href="#inscription" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'réserver' : 'contacter'} →</a><span>${u.length ? u.map(f).join(' · ') : SUR_DEMANDE}</span></li>`; }).join('');
   const ext = SESSIONS.filter(s => s.region !== 'Centre-Val de Loire' && up(s).length);
   if (ext.length) { $('#postit').hidden = false; $('#postitTxt').textContent = 'Dates déjà confirmées hors région : ' + ext.map(s => `${s.ville} (${s.dept}) — ${up(s).map(f).join(', ')}`).join(' ; ') + '.'; }
 
@@ -565,10 +581,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : envoyer la page d'inscription (fetch POST) au service de gestion avant de confirmer.
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>

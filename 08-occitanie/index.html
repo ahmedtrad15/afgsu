@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFGSU 2 Occitanie · Toulouse, L’Union et intra · 385 € | Garde de Nuit</title>
+<title>AFGSU 2 Occitanie · Toulouse, L’Union et intra · 385 € | Formation AFGSU Occitanie</title>
 <meta name="description" content="AFGSU 2 en Occitanie : 21 h sur 3 jours en présentiel, 385 € TTC au lieu de 450 €, attestation valable 4 ans. Sessions à Toulouse et L’Union, intra dans votre établissement de Montpellier à Perpignan. Testez le scénario « chambre 12 ».">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Garde de Nuit">
-<meta property="og:title" content="Garde de Nuit · AFGSU 2 en Occitanie">
+<meta property="og:site_name" content="Formation AFGSU Occitanie">
+<meta property="og:title" content="Formation AFGSU Occitanie · AFGSU 2 en Occitanie">
 <meta property="og:description" content="Il est 3 h, chambre 12… Quatre décisions pour réviser la chaîne protéger, évaluer, alerter, réanimer. Puis trois jours de pratique pour l’ancrer.">
-<!-- TODO og:image : visuel 1200×630 (écran de monitoring, tracé vert) depuis la médiathèque -->
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#0A0F14">
-<!-- PLACEHOLDER favicon : tracé ECG vert sur fond noir, 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -37,8 +39,6 @@ p{margin:0 0 1em}
 .lbl{font:600 .72rem var(--h);letter-spacing:.14em;text-transform:uppercase;color:var(--gry)}
 .img-ph{position:relative;min-height:220px;border:1px solid var(--line);background:linear-gradient(transparent 49.5%,var(--line) 49.5% 50.5%,transparent 50.5%),linear-gradient(90deg,transparent 49.5%,var(--line) 49.5% 50.5%,transparent 50.5%),var(--bg2);display:flex;align-items:flex-end}
 .img-ph::after{content:"IMG · " attr(data-img);font:500 .74rem/1.4 var(--h);letter-spacing:.06em;color:var(--grn);background:var(--bg);padding:8px 10px;margin:10px;border:1px solid var(--line)}
-.logo-ph{width:34px;height:34px;min-height:0;border:2px solid var(--grn);background:var(--bg);flex:none}
-.logo-ph::after{display:none}
 /* status bar header */
 .top{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
 .top .w{display:flex;align-items:center;gap:12px;height:56px}
@@ -246,25 +246,35 @@ footer nav{display:flex;gap:16px}
 .js [data-on]{opacity:0;transform:scaleY(.04);transform-origin:50% 50%}
 .js [data-on].in{opacity:1;transform:none;transition:transform .42s cubic-bezier(.2,.9,.2,1),opacity .2s}
 @media (prefers-reduced-motion:reduce){.js [data-on],.js [data-on].in{opacity:1;transform:none;transition:none}.js .omap.pre .reg,.js .omap.pre .link{stroke-dashoffset:0;opacity:.75}.omap .reg,.omap .link{transition:none}.omap.go .ring{animation:none}.freeze{display:none}}
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#FFB020;grid-column:1/-1}
+#palai:empty,#ext:empty,#elsewhere:empty{display:none}
+/* affinage typographique */
+.hero h1{font-size:clamp(1.7rem,3.4vw,2.6rem)}.sh h2{font-size:clamp(1.6rem,3.2vw,2.3rem)}
+.final h2{font-size:clamp(1.8rem,3.8vw,2.7rem)}.params .v{font-size:1.45rem}.ok h3{font-size:1.6rem}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Garde de Nuit","description":"Formation aux gestes et soins d’urgence en Occitanie : AFGSU 2, AFGSU 1 et recyclage, à Toulouse, L’Union ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Occitanie"},"location":[
-{"@type":"Place","name":"Garde de Nuit · Toulouse","address":{"@type":"PostalAddress","addressLocality":"Toulouse","addressRegion":"Occitanie","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.60,"longitude":1.44}},
-{"@type":"Place","name":"Garde de Nuit · L’Union","address":{"@type":"PostalAddress","addressLocality":"L’Union","addressRegion":"Occitanie","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.66,"longitude":1.48}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Occitanie","description":"Formation aux gestes et soins d’urgence en Occitanie : AFGSU 2, AFGSU 1 et recyclage, à Toulouse, L’Union ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Occitanie"},"location":[
+{"@type":"Place","name":"Formation AFGSU Occitanie · Toulouse","address":{"@type":"PostalAddress","addressLocality":"Toulouse","addressRegion":"Occitanie","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.60,"longitude":1.44}},
+{"@type":"Place","name":"Formation AFGSU Occitanie · L’Union","address":{"@type":"PostalAddress","addressLocality":"L’Union","addressRegion":"Occitanie","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.66,"longitude":1.48}}]},
 {"@type":"Course","name":"AFGSU 2 · Occitanie","description":"Formation aux gestes et soins d’urgence de niveau 2 : 21 heures sur 3 jours en présentiel, urgences vitales, potentielles, collectives et SSE, attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
-"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Toulouse ou L’Union (dates sur demande)"}}}
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Toulouse ou L’Union (dates : nous contacter)"}}}
 ]}
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Montpellier, Nîmes, Perpignan : peut-on se former sans aller jusqu’à Toulouse ?","acceptedAnswer":{"@type":"Answer","text":"Oui, en intra : la session se tient dans votre établissement dès qu’un groupe de 10 à 12 est réuni. Pour une inscription individuelle, les sessions inter ont lieu à Toulouse ou à L’Union."}},{"@type":"Question","name":"Les sessions se déroulent-elles la nuit, comme le nom le laisse penser ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le nom fait écho à vos gardes, mais la formation se tient sur trois journées de 7 heures chacune."}},{"@type":"Question","name":"Pourquoi le scénario de la chambre 12 s’arrête-t-il au DAE ?","acceptedAnswer":{"@type":"Answer","text":"Parce qu’il illustre seulement les premières minutes. La formation va beaucoup plus loin : matériel du chariot, oxygénothérapie, urgences potentielles, situations sanitaires exceptionnelles."}},{"@type":"Question","name":"Faut-il savoir utiliser un DAE avant de venir ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le seul prérequis est d’appartenir au public visé ; l’utilisation du défibrillateur fait partie du module sur les urgences vitales."}},{"@type":"Question","name":"Le contenu du chariot d’urgence est-il abordé ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le matériel d’urgence, dont le chariot et l’oxygénothérapie, est travaillé dans le premier module."}},{"@type":"Question","name":"Préleveuse sanguine dans un laboratoire toulousain : niveau 1 ou 2 ?","acceptedAnswer":{"@type":"Answer","text":"Niveau 2. Les préleveurs sanguins figurent parmi les métiers admis à l’AFGSU 2."}},{"@type":"Question","name":"Assistant médical dans un cabinet d’Albi, suis-je concerné ?","acceptedAnswer":{"@type":"Answer","text":"Oui : le métier d’assistant médical ouvre l’accès au niveau 2. Une session à Toulouse ou un projet intra avec le cabinet sont tous deux possibles."}},{"@type":"Question","name":"Un établissement de l’Aude peut-il enchaîner plusieurs sessions intra ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Chaque session réunit 10 à 12 personnes ; on en programme autant que nécessaire pour couvrir vos équipes, sur devis."}},{"@type":"Question","name":"Relevage et traumatismes du rachis sont-ils réellement pratiqués ?","acceptedAnswer":{"@type":"Answer","text":"Oui, dans le module des urgences potentielles : traumatismes du rachis, immobilisation, relevage et brancardage s’y travaillent en situation."}},{"@type":"Question","name":"Pourquoi parler d’hygiène dans une formation aux urgences ?","acceptedAnswer":{"@type":"Answer","text":"Parce que le programme du niveau 2 intègre l’hygiène et le risque infectieux au module des urgences potentielles : un geste d’urgence reste un soin."}},{"@type":"Question","name":"Quel tarif pour l’agent qui tient l’accueil des urgences la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Sans fonction soignante, il relève de l’AFGSU 1 : deux jours (14 h) pour 290 € TTC, avec une attestation de quatre ans."}},{"@type":"Question","name":"Sous combien de temps suis-je rappelé après ma demande ?","acceptedAnswer":{"@type":"Answer","text":"Sous 48 heures pour vous proposer une date à Toulouse ou à L’Union, ou pour étudier votre projet intra."}},{"@type":"Question","name":"Les malaises des patients âgés sont-ils abordés ?","acceptedAnswer":{"@type":"Answer","text":"Les malaises font partie du module sur les urgences potentielles, avec le bilan et sa transmission. Le formateur adapte les mises en situation au public présent."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><rect x="4" y="8" width="56" height="42" rx="7" fill="#0A0F14" stroke="#39FF88" stroke-width="2.6"/><path d="M10 31h12l4-10 5 19 4-13 3 4h16" fill="none" stroke="#39FF88" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="51" cy="17" r="3" fill="#FFB020"/><path d="M22 57h20" stroke="#8A99A6" stroke-width="3.2" stroke-linecap="round"/></symbol></svg>
 <a class="skip" href="#ecran">Aller à l’écran principal</a>
 
 <header class="top">
  <div class="w">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Garde de Nuit (emplacement)" data-img="logo : tracé"></span>Garde de Nuit</a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Occitanie</span></span></a>
   <nav aria-label="Écrans"><a href="#chambre12">Chambre 12</a><a href="#lieux">Lieux</a><a href="#canaux">Programme</a><a href="#seuil">Recyclage</a><a href="#saisie">Inscription</a></nav>
   <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
  </div>
@@ -330,7 +340,7 @@ footer nav{display:flex;gap:16px}
    <div data-on>
     <div class="panel">
      <div class="bar"><span class="lbl">Planning des sessions</span></div>
-     <table class="rows" id="rows"><caption class="sr">Sessions par centre</caption><thead><tr><th scope="col">Centre</th><th scope="col">Statut</th><th scope="col"><span class="sr">Action</span></th></tr></thead><tbody><tr><td colspan="3">Dates sur demande : 07 80 91 23 35</td></tr></tbody></table>
+     <table class="rows" id="rows"><caption class="sr">Sessions par centre</caption><thead><tr><th scope="col">Centre</th><th scope="col">Statut</th><th scope="col"><span class="sr">Action</span></th></tr></thead><tbody><tr><td colspan="3">Dates : nous contacter au 07 80 91 23 35</td></tr></tbody></table>
     </div>
     <p class="ext" id="ext"></p>
     <div class="panel" style="margin-top:16px;padding:16px">
@@ -467,12 +477,16 @@ footer nav{display:flex;gap:16px}
   <div data-on>
    <div class="sh"><span class="lbl">Saisie</span><h2 id="h-sai">Demande d’inscription</h2><p>Wafa reprend chaque demande : date à Toulouse ou à L’Union, projet intra, pièces et financement.</p></div>
    <p><a class="ph" href="tel:+33780912335">07 80 91 23 35</a></p>
-   <div class="img-ph" role="img" aria-label="Photo à venir : poste de soins de nuit avec chariot d’urgence" data-img="poste de soins de nuit, chariot d’urgence et DAE à portée de main"></div>
+   <div class="img-ph" role="img" aria-label="Photo à venir : poste de soins de nuit avec chariot d’urgence" data-file="media/photo-01.jpg" data-img="poste de soins de nuit, chariot d’urgence et DAE à portée de main"></div>
   </div>
   <div class="panel" data-on>
    <div class="bar"><span class="lbl">Formulaire</span><span class="lbl" style="color:var(--grn)">● en ligne</span></div>
-   <!-- TODO : relier le formulaire au service d'inscription (API CRM / e-mail). action="#" provisoire. -->
-   <form class="lead" action="#" method="post" data-lead id="lead">
+   <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+   <form class="lead" action="https://api.web3forms.com/submit" method="POST" data-lead id="lead">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Occitanie">
+    <input type="hidden" name="from_name" value="Formation AFGSU Occitanie">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <input type="hidden" name="formation" value="AFGSU 2">
     <div class="full"><label for="s-nom">Nom &amp; prénom</label><input id="s-nom" name="nom" autocomplete="name" required aria-errormessage="s-nom-e"><p class="err" id="s-nom-e">Champ requis.</p></div>
     <div><label for="s-tel">Téléphone</label><input id="s-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="s-tel-e"><p class="err" id="s-tel-e">Format 05 61 00 00 00.</p></div>
@@ -480,8 +494,9 @@ footer nav{display:flex;gap:16px}
     <div><label for="s-pro">Profession</label><select id="s-pro" name="profession" required aria-errormessage="s-pro-e"><option value="">— sélection —</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="s-pro-e">Sélection requise.</p></div>
     <div><label for="s-centre">Centre / ville</label><select id="s-centre" name="centre" required aria-errormessage="s-centre-e"><option value="">— sélection —</option><option>Toulouse</option><option>L’Union</option><option value="Intra">Intra (Montpellier, Nîmes, Perpignan…)</option></select><p class="err" id="s-centre-e">Sélection requise.</p></div>
     <div class="full"><label for="s-msg">Message (facultatif)</label><textarea id="s-msg" name="message" placeholder="Disponibilités, roulements de nuit, nombre de collègues…"></textarea></div>
-    <div class="full chk"><input type="checkbox" id="s-rgpd" name="rgpd" required><label for="s-rgpd">Je donne mon accord pour que Garde de Nuit utilise ces données uniquement afin de répondre à ma demande. <a href="#">Charte de confidentialité</a></label></div>
+    <div class="full chk"><input type="checkbox" id="s-rgpd" name="rgpd" required><label for="s-rgpd">Je donne mon accord pour que Formation AFGSU Occitanie utilise ces données uniquement afin de répondre à ma demande. <a href="#">Charte de confidentialité</a></label></div>
     <div class="full"><button class="key amb" type="submit">Transmettre la demande</button></div>
+    <p class="send-err" role="alert" data-send-err hidden>Échec de transmission. Renvoyez la demande ou utilisez la ligne téléphonique. 07 80 91 23 35.</p>
    </form>
    <div class="ok" data-success hidden tabindex="-1"><h3>Transmission reçue.</h3><p>Votre demande est enregistrée ; Wafa vous rappelle sous 48 h. Pour une question urgente : 07 80 91 23 35.</p></div>
   </div>
@@ -498,8 +513,8 @@ footer nav{display:flex;gap:16px}
 
 <footer>
  <div class="w">
-  <span>© 2026 Garde de Nuit by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
-  <nav aria-label="Légal"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+  <span>© 2026 Formation AFGSU Occitanie by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Légal"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
  </div>
 </footer>
 
@@ -513,12 +528,13 @@ footer nav{display:flex;gap:16px}
 const SESSIONS = [
   { ville: "Toulouse", dept: "31", region: "Occitanie", dates: [] },
   { ville: "L’Union",  dept: "31", region: "Occitanie", dates: [] },
-  // Sessions confirmées hors Occitanie :
-  { ville: "Palaiseau", dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* ======================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const D = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
@@ -526,7 +542,7 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const up = s => s.dates.filter(d => D(d[1]) >= t0);
   const p2 = n => String(n).padStart(2, '0');
   const f = ([a, b]) => { const A = D(a), B = D(b); return `${p2(A.getDate())}/${p2(A.getMonth() + 1)} → ${p2(B.getDate())}/${p2(B.getMonth() + 1)}/${B.getFullYear()}`; };
-  $('#rows tbody').innerHTML = SESSIONS.filter(s => s.region === 'Occitanie').map(s => { const u = up(s); return `<tr><td><b>${s.ville}</b> <span class="lbl">${s.dept}</span></td><td class="st">${u.length ? u.map(f).join('<br>') : SUR_DEMANDE}</td><td><a href="#saisie" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'Réserver' : 'Demander'}</a></td></tr>`; }).join('');
+  $('#rows tbody').innerHTML = SESSIONS.filter(s => s.region === 'Occitanie').map(s => { const u = up(s); return `<tr><td><b>${s.ville}</b> <span class="lbl">${s.dept}</span></td><td class="st">${u.length ? u.map(f).join('<br>') : SUR_DEMANDE}</td><td><a href="#saisie" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'Réserver' : 'Contacter'}</a></td></tr>`; }).join('');
   const ext = SESSIONS.filter(s => s.region !== 'Occitanie' && up(s).length);
   if (ext.length) $('#ext').textContent = 'Hors région, sessions déjà confirmées : ' + ext.map(s => `${s.ville} (${s.dept}) ${up(s).map(f).join(' · ')}`).join(' ; ') + '.';
 
@@ -594,10 +610,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : POST des données vers l'outil d'inscription avant l'affichage de la confirmation.
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>

@@ -1,0 +1,9 @@
+Dossier médias — Formation AFGSU France
+
+Déposez ici les photos avec exactement ces noms : la page les affiche automatiquement à la place des emplacements prévus (format conseillé : JPG, 1600 px de large, < 250 Ko).
+
+photo-01.jpg  —  exercice d’afflux de victimes dans un hall d’hôpital, équipe en gilets, poste de tri
+photo-02.jpg  —  salle de formation prête, mannequins adulte, enfant, nourrisson alignés, DAE de formation
+
+Déjà présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
+Pour une image de partage (og:image), ajoutez og-image.jpg (1200 × 630) et décommentez la ligne correspondante dans le <head>.

@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFGSU 2 Provence-Alpes-Côte d’Azur · Aix-en-Provence & intra | Azur Gestes</title>
+<title>AFGSU 2 Provence-Alpes-Côte d’Azur · Aix-en-Provence & intra | Formation AFGSU Provence-Alpes-Côte d’Azur</title>
 <meta name="description" content="Formation AFGSU 2 en Provence-Alpes-Côte d’Azur : 21 h sur 3 jours, présentiel, 385 € TTC au lieu de 450 €, valable 4 ans. Sessions à Aix-en-Provence et formation intra dans votre établissement, de Marseille à Nice.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Azur Gestes">
-<meta property="og:title" content="Azur Gestes · AFGSU 2 en Provence-Alpes-Côte d’Azur">
+<meta property="og:site_name" content="Formation AFGSU Provence-Alpes-Côte d’Azur">
+<meta property="og:title" content="Formation AFGSU Provence-Alpes-Côte d’Azur · AFGSU 2 en Provence-Alpes-Côte d’Azur">
 <meta property="og:description" content="Trois jours de pratique pour soignants, à Aix-en-Provence ou directement dans votre établissement. Explorez les trois jours avec le curseur.">
-<!-- TODO og:image : affiche 1200×630 (soleil + vagues, style riso) depuis la médiathèque -->
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#0F7C8C">
-<!-- PLACEHOLDER favicon : disque soleil jaune et vague bleue, 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
@@ -36,8 +38,6 @@ p{margin:0 0 1em}
 .w{max-width:1200px;margin:0 auto;padding:0 20px}
 .img-ph{position:relative;min-height:220px;border-radius:28px;background:radial-gradient(circle at 75% 25%,var(--sun) 0 18%,transparent 19%),linear-gradient(transparent 62%,rgba(15,124,140,.35) 62%),var(--cream2);display:flex;align-items:flex-end;overflow:hidden}
 .img-ph::after{content:attr(data-img);font:700 .78rem/1.35 var(--b);color:var(--ink);background:var(--cream);margin:14px;padding:8px 12px;border-radius:14px}
-.logo-ph{width:38px;height:38px;min-height:0;border-radius:50%;background:radial-gradient(circle at 50% 40%,var(--sun) 0 45%,var(--sea) 46%);flex:none}
-.logo-ph::after{display:none}
 /* header */
 .top{position:sticky;top:0;z-index:50;background:var(--cream);border-bottom:2px solid var(--ink)}
 .top .w{display:flex;align-items:center;gap:12px;height:60px}
@@ -225,19 +225,33 @@ footer nav{display:flex;gap:18px}
 .sticky .b{background:var(--sea-d);color:var(--cream)}
 @media (min-width:760px){.sticky{display:none}}
 @media (prefers-reduced-motion:reduce){.js [data-reg],.js [data-reg] .l1,.js [data-reg] .l2,.js [data-print]{opacity:1;transform:none;transition:none}.js [data-reg].in .l1,.js [data-reg].in .l2,.js [data-print].in{transition:none}.cta,.illu svg,.seg .prog i,.faq summary::after,.pmap .pop{transition:none}.js .pmap.pre .pop{opacity:1;transform:none}}
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#B3261E;grid-column:1/-1}
+#palai:empty,#ext:empty,#elsewhere:empty{display:none}
+/* affinage typographique */
+h1,h2,h3{font-weight:700}.hero h1{font-size:clamp(1.65rem,3.2vw,2.6rem)}
+.sec-h h2,#h-aix,#h-intra,#h-pub,#h-rec,#h-form{font-size:clamp(1.6rem,3.2vw,2.4rem)!important}
+.towns{font-size:clamp(1.15rem,2.2vw,1.5rem);color:#FFE0A6}.final h2{font-size:clamp(1.8rem,4vw,2.8rem)}
+.post h3{font-size:clamp(2rem,3.6vw,2.6rem)}.tagp strong{font-size:2.2rem}.seg h3{font-size:clamp(1.3rem,2.6vw,1.8rem)}
+.voices blockquote{font-size:clamp(1.15rem,2vw,1.4rem)}.ok h3{font-size:1.9rem}.cta{font-size:1rem}
+.faq summary{font:600 1.06rem/1.4 var(--b)}.fins h3{font-size:1.2rem}.poster text{font-size:20px}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Azur Gestes","description":"Formations aux gestes et soins d’urgence en Provence-Alpes-Côte d’Azur : AFGSU 2, AFGSU 1 et recyclage, à Aix-en-Provence ou en intra dans toute la région.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Provence-Alpes-Côte d’Azur"},"location":[
-{"@type":"Place","name":"Azur Gestes · Aix-en-Provence","address":{"@type":"PostalAddress","addressLocality":"Aix-en-Provence","addressRegion":"Provence-Alpes-Côte d’Azur","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.53,"longitude":5.45}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Provence-Alpes-Côte d’Azur","description":"Formations aux gestes et soins d’urgence en Provence-Alpes-Côte d’Azur : AFGSU 2, AFGSU 1 et recyclage, à Aix-en-Provence ou en intra dans toute la région.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Provence-Alpes-Côte d’Azur"},"location":[
+{"@type":"Place","name":"Formation AFGSU Provence-Alpes-Côte d’Azur · Aix-en-Provence","address":{"@type":"PostalAddress","addressLocality":"Aix-en-Provence","addressRegion":"Provence-Alpes-Côte d’Azur","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":43.53,"longitude":5.45}}]},
 {"@type":"Course","name":"AFGSU 2 en Provence-Alpes-Côte d’Azur","description":"21 heures de formation présentielle sur trois jours aux gestes et soins d’urgence de niveau 2 : urgences vitales, potentielles, collectives et SSE. Attestation délivrée par le CESU, valable 4 ans. Inter à Aix-en-Provence ou intra.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
-"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Aix-en-Provence (dates sur demande)"}}}
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Aix-en-Provence (dates : nous contacter)"}}}
 ]}
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le seul centre est à Aix : comment font les équipes niçoises ?","acceptedAnswer":{"@type":"Answer","text":"Deux options : venir à Aix-en-Provence pour une session inter, ou nous faire intervenir dans votre établissement à Nice, en intra, dès lors que vous réunissez un groupe de 10 à 12 professionnels."}},{"@type":"Question","name":"Clinique marseillaise : à partir de combien de salariés l’intra devient-il pertinent ?","acceptedAnswer":{"@type":"Answer","text":"Une session intra se construit pour 10 à 12 participants. Au-delà, on enchaîne plusieurs groupes ; en deçà, l’inscription en inter à Aix reste la solution naturelle."}},{"@type":"Question","name":"Le curseur des trois jours décrit-il le programme heure par heure ?","acceptedAnswer":{"@type":"Answer","text":"Non, il donne la répartition indicative par demi-journée : 7 h d’urgences vitales le premier jour, puis 3 h 30 par bloc. L’ordre précis des thèmes à l’intérieur d’un module reste fixé par le formateur."}},{"@type":"Question","name":"Infirmière libérale à Avignon, où suivre la formation ?","acceptedAnswer":{"@type":"Answer","text":"À Aix-en-Provence, en inter, à une date fixée sur demande. Si vous montez un groupe de 10 à 12 avec des consœurs et confrères, l’intra dans un cabinet ou un centre de santé est aussi envisageable."}},{"@type":"Question","name":"Chirurgien-dentiste à Cannes, l’AFGSU 2 s’adresse-t-elle à mon cabinet ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les chirurgiens-dentistes font partie du public. Votre assistante de cabinet, si elle n’a pas de fonction soignante, relève quant à elle de l’AFGSU 1."}},{"@type":"Question","name":"Comment se déroule la première journée ?","acceptedAnswer":{"@type":"Answer","text":"Elle est entièrement consacrée aux urgences vitales : sept heures de pratique, sur mannequins adulte, enfant et nourrisson, avec le matériel d’urgence."}},{"@type":"Question","name":"Pharmacien d’officine à Gap : la formation me concerne-t-elle ?","acceptedAnswer":{"@type":"Answer","text":"Oui, l’officine est bien concernée : pharmacien comme préparateur peuvent suivre le niveau 2. Une session intra sur place reste possible si l’effectif le permet."}},{"@type":"Question","name":"Inter ou intra, quelle différence concrète ?","acceptedAnswer":{"@type":"Answer","text":"En inter, vous rejoignez une session dans notre centre d’Aix, au tarif de 385 € TTC par personne. En intra, la session se déroule chez vous, pour votre équipe, et le prix est établi sur devis."}},{"@type":"Question","name":"Les dates d’Aix sont-elles publiées à l’avance ?","acceptedAnswer":{"@type":"Answer","text":"Elles sont ouvertes à la demande : prochaine date sur demande — on vous rappelle sous 48 h. Les seules sessions confirmées aujourd’hui ont lieu en Île-de-France."}},{"@type":"Question","name":"Et si je manque une demi-journée ?","acceptedAnswer":{"@type":"Answer","text":"La présence intégrale étant une condition de validation, une absence empêche la délivrance de l’attestation. Prévenez-nous le plus tôt possible pour trouver une solution."}},{"@type":"Question","name":"Kinésithérapeute à Nice, dois-je d’abord passer l’AFGSU 1 ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le niveau 2 est accessible directement aux professions de santé, sans étape préalable par le niveau 1."}},{"@type":"Question","name":"Auxiliaire de puériculture en crèche à Marseille, suis-je concernée ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Votre métier figure dans le public visé, et la conduite à tenir face à un nourrisson fait partie intégrante du module consacré à l’urgence vitale."}},{"@type":"Question","name":"L’arrêté du 20 février 2026 vise-t-il les infirmiers déjà en poste ?","acceptedAnswer":{"@type":"Answer","text":"Il concerne les étudiants entrés en formation à la rentrée 2026, pour qui une AFGSU 2 valide devient nécessaire à l’obtention du diplôme d’État."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le seul centre est à Aix : comment font les équipes niçoises ?","acceptedAnswer":{"@type":"Answer","text":"Deux options : venir à Aix-en-Provence pour une session inter, ou nous faire intervenir dans votre établissement à Nice, en intra, dès lors que vous réunissez un groupe de 10 à 12 professionnels."}},{"@type":"Question","name":"Clinique marseillaise : à partir de combien de salariés l’intra devient-il pertinent ?","acceptedAnswer":{"@type":"Answer","text":"Une session intra se construit pour 10 à 12 participants. Au-delà, on enchaîne plusieurs groupes ; en deçà, l’inscription en inter à Aix reste la solution naturelle."}},{"@type":"Question","name":"Le curseur des trois jours décrit-il le programme heure par heure ?","acceptedAnswer":{"@type":"Answer","text":"Non, il donne la répartition indicative par demi-journée : 7 h d’urgences vitales le premier jour, puis 3 h 30 par bloc. L’ordre précis des thèmes à l’intérieur d’un module reste fixé par le formateur."}},{"@type":"Question","name":"Infirmière libérale à Avignon, où suivre la formation ?","acceptedAnswer":{"@type":"Answer","text":"À Aix-en-Provence, en inter, à une date fixée sur demande. Si vous montez un groupe de 10 à 12 avec des consœurs et confrères, l’intra dans un cabinet ou un centre de santé est aussi envisageable."}},{"@type":"Question","name":"Chirurgien-dentiste à Cannes, l’AFGSU 2 s’adresse-t-elle à mon cabinet ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les chirurgiens-dentistes font partie du public. Votre assistante de cabinet, si elle n’a pas de fonction soignante, relève quant à elle de l’AFGSU 1."}},{"@type":"Question","name":"Comment se déroule la première journée ?","acceptedAnswer":{"@type":"Answer","text":"Elle est entièrement consacrée aux urgences vitales : sept heures de pratique, sur mannequins adulte, enfant et nourrisson, avec le matériel d’urgence."}},{"@type":"Question","name":"Pharmacien d’officine à Gap : la formation me concerne-t-elle ?","acceptedAnswer":{"@type":"Answer","text":"Oui, l’officine est bien concernée : pharmacien comme préparateur peuvent suivre le niveau 2. Une session intra sur place reste possible si l’effectif le permet."}},{"@type":"Question","name":"Inter ou intra, quelle différence concrète ?","acceptedAnswer":{"@type":"Answer","text":"En inter, vous rejoignez une session dans notre centre d’Aix, au tarif de 385 € TTC par personne. En intra, la session se déroule chez vous, pour votre équipe, et le prix est établi sur devis."}},{"@type":"Question","name":"Les dates d’Aix sont-elles publiées à l’avance ?","acceptedAnswer":{"@type":"Answer","text":"Aucun calendrier n’est publié pour Aix : un appel ou un message, et vous recevez une proposition de date dans les 48 heures."}},{"@type":"Question","name":"Et si je manque une demi-journée ?","acceptedAnswer":{"@type":"Answer","text":"La présence intégrale étant une condition de validation, une absence empêche la délivrance de l’attestation. Prévenez-nous le plus tôt possible pour trouver une solution."}},{"@type":"Question","name":"Kinésithérapeute à Nice, dois-je d’abord passer l’AFGSU 1 ?","acceptedAnswer":{"@type":"Answer","text":"Non. Le niveau 2 est accessible directement aux professions de santé, sans étape préalable par le niveau 1."}},{"@type":"Question","name":"Auxiliaire de puériculture en crèche à Marseille, suis-je concernée ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Votre métier figure dans le public visé, et la conduite à tenir face à un nourrisson fait partie intégrante du module consacré à l’urgence vitale."}},{"@type":"Question","name":"L’arrêté du 20 février 2026 vise-t-il les infirmiers déjà en poste ?","acceptedAnswer":{"@type":"Answer","text":"Il concerne les étudiants entrés en formation à la rentrée 2026, pour qui une AFGSU 2 valide devient nécessaire à l’obtention du diplôme d’État."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><circle cx="32" cy="29" r="25" fill="#F4B63E"/><path d="M4 40q7-6 14 0t14 0 14 0 14 0V60H4Z" fill="#0F7C8C"/><path d="M32 41c-8-5-12-9-12-14a6 6 0 0 1 12-2 6 6 0 0 1 12 2c0 5-4 9-12 14z" fill="#D2633B"/></symbol></svg>
 <div class="grain" aria-hidden="true"></div>
 <a class="skip" href="#soleil">Aller à l’essentiel</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -253,7 +267,7 @@ footer nav{display:flex;gap:18px}
 
 <header class="top">
  <div class="w">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Azur Gestes (emplacement)" data-img="logo : soleil Azur Gestes"></span>Azur Gestes</a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Provence-Alpes-Côte d’Azur</span></span></a>
   <nav aria-label="Navigation"><a href="#trois-jours">Les 3 jours</a><a href="#aix">Aix &amp; carte</a><a href="#intra">Intra</a><a href="#faq">Questions</a><a href="#ecrire">Inscription</a></nav>
   <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
  </div>
@@ -337,7 +351,7 @@ footer nav{display:flex;gap:18px}
     <h3 id="aixName">Aix-en-Provence <small style="font:700 1rem var(--b)">· 13</small></h3>
     <p class="st" id="aixWhen">—</p>
     <p class="ext" id="ext"></p>
-    <a class="cta sunny" href="#ecrire" data-formation="AFGSU 2" data-centre="Aix-en-Provence">Demander ma date aixoise</a>
+    <a class="cta sunny" href="#ecrire" data-formation="AFGSU 2" data-centre="Aix-en-Provence">Nous contacter pour Aix</a>
    </div>
   </div>
  </div>
@@ -353,7 +367,7 @@ footer nav{display:flex;gap:18px}
    <ul class="places"><li>Hôpital</li><li>Clinique</li><li>EHPAD</li><li>Cabinet</li><li>Officine</li><li>Centre de santé</li></ul>
    <a class="cta sunny" href="#ecrire" data-formation="Intra" data-centre="Intra">Faire venir la formation chez nous</a>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : formation au DAE dans une clinique" data-img="photo : infirmières d’une clinique en exercice DAE, lumière du matin dans la salle" data-print style="min-height:360px"></div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : formation au DAE dans une clinique" data-file="media/photo-01.jpg" data-img="photo : infirmières d’une clinique en exercice DAE, lumière du matin dans la salle" data-print style="min-height:360px"></div>
  </div>
 </section>
 
@@ -423,7 +437,7 @@ footer nav{display:flex;gap:18px}
     <div><h3>20 février 2026</h3><p style="margin:0">Un arrêté conditionne désormais le diplôme d’État infirmier à une AFGSU 2 valide, pour les étudiants ayant fait leur rentrée en 2026.</p></div>
     <div><h3>Mars 2026</h3><p style="margin:0">L’ANCESU et la SFMU publient de nouvelles recommandations.</p></div>
    </div>
-   <div class="img-ph" role="img" aria-label="Photo à venir : mannequin nourrisson et mains d’une auxiliaire de puériculture" data-img="photo : gestes sur mannequin nourrisson, mains d’une auxiliaire de puériculture" style="margin-top:24px"></div>
+   <div class="img-ph" role="img" aria-label="Photo à venir : mannequin nourrisson et mains d’une auxiliaire de puériculture" data-file="media/photo-02.jpg" data-img="photo : gestes sur mannequin nourrisson, mains d’une auxiliaire de puériculture" style="margin-top:24px"></div>
   </div>
  </div>
 </section>
@@ -450,7 +464,7 @@ footer nav{display:flex;gap:18px}
    <details><summary data-faq-q>Comment se déroule la première journée ?</summary><div data-faq-a><p>Elle est entièrement consacrée aux urgences vitales : sept heures de pratique, sur mannequins adulte, enfant et nourrisson, avec le matériel d’urgence.</p></div></details>
    <details><summary data-faq-q>Pharmacien d’officine à Gap : la formation me concerne-t-elle ?</summary><div data-faq-a><p>Oui, l’officine est bien concernée : pharmacien comme préparateur peuvent suivre le niveau 2. Une session intra sur place reste possible si l’effectif le permet.</p></div></details>
    <details><summary data-faq-q>Inter ou intra, quelle différence concrète ?</summary><div data-faq-a><p>En inter, vous rejoignez une session dans notre centre d’Aix, au tarif de 385 € TTC par personne. En intra, la session se déroule chez vous, pour votre équipe, et le prix est établi sur devis.</p></div></details>
-   <details><summary data-faq-q>Les dates d’Aix sont-elles publiées à l’avance ?</summary><div data-faq-a><p>Elles sont ouvertes à la demande : prochaine date sur demande — on vous rappelle sous 48 h. Les seules sessions confirmées aujourd’hui ont lieu en Île-de-France.</p></div></details>
+   <details><summary data-faq-q>Les dates d’Aix sont-elles publiées à l’avance ?</summary><div data-faq-a><p>Aucun calendrier n’est publié pour Aix : un appel ou un message, et vous recevez une proposition de date dans les 48 heures.</p></div></details>
    <details><summary data-faq-q>Et si je manque une demi-journée ?</summary><div data-faq-a><p>La présence intégrale étant une condition de validation, une absence empêche la délivrance de l’attestation. Prévenez-nous le plus tôt possible pour trouver une solution.</p></div></details>
    <details><summary data-faq-q>Kinésithérapeute à Nice, dois-je d’abord passer l’AFGSU 1 ?</summary><div data-faq-a><p>Non. Le niveau 2 est accessible directement aux professions de santé, sans étape préalable par le niveau 1.</p></div></details>
    <details><summary data-faq-q>Auxiliaire de puériculture en crèche à Marseille, suis-je concernée ?</summary><div data-faq-a><p>Oui. Votre métier figure dans le public visé, et la conduite à tenir face à un nourrisson fait partie intégrante du module consacré à l’urgence vitale.</p></div></details>
@@ -468,8 +482,12 @@ footer nav{display:flex;gap:18px}
    <p><a class="tel-h" href="tel:+33780912335" style="color:var(--sun)">07 80 91 23 35</a></p>
   </div>
   <div data-print>
-   <!-- TODO : connecter le formulaire au service d'envoi (CRM, API ou e-mail). action="#" en attendant. -->
-   <form class="lead" action="#" method="post" data-lead id="lead">
+   <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+   <form class="lead" action="https://api.web3forms.com/submit" method="POST" data-lead id="lead">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Provence-Alpes-Côte d’Azur">
+    <input type="hidden" name="from_name" value="Formation AFGSU Provence-Alpes-Côte d’Azur">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <input type="hidden" name="formation" value="AFGSU 2">
     <div class="full"><label for="a-nom">Nom &amp; prénom</label><input id="a-nom" name="nom" autocomplete="name" required aria-errormessage="a-nom-e"><p class="err" id="a-nom-e">Merci d’indiquer votre nom.</p></div>
     <div><label for="a-tel">Téléphone</label><input id="a-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="a-tel-e"><p class="err" id="a-tel-e">Exemple : 04 42 00 00 00.</p></div>
@@ -477,8 +495,9 @@ footer nav{display:flex;gap:18px}
     <div><label for="a-pro">Profession</label><select id="a-pro" name="profession" required aria-errormessage="a-pro-e"><option value="">Votre profession</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="a-pro-e">Sélectionnez votre profession.</p></div>
     <div><label for="a-centre">Centre / ville</label><select id="a-centre" name="centre" required aria-errormessage="a-centre-e"><option value="">Lieu souhaité</option><option>Aix-en-Provence</option><option value="Intra">Intra, dans notre établissement (toute la région)</option></select><p class="err" id="a-centre-e">Choisissez Aix ou l’intra.</p></div>
     <div class="full"><label for="a-msg">Message (facultatif)</label><textarea id="a-msg" name="message" placeholder="Ville de votre établissement, nombre de personnes, disponibilités…"></textarea></div>
-    <div class="full chk"><input type="checkbox" id="a-rgpd" name="rgpd" required><label for="a-rgpd">J’accepte qu’Azur Gestes utilise ces informations pour me répondre au sujet de la formation, et pour rien d’autre. <a href="#">Vie privée</a></label></div>
+    <div class="full chk"><input type="checkbox" id="a-rgpd" name="rgpd" required><label for="a-rgpd">J’accepte que Formation AFGSU Provence-Alpes-Côte d’Azur utilise ces informations pour me répondre au sujet de la formation, et pour rien d’autre. <a href="#">Vie privée</a></label></div>
     <div class="full"><button class="cta" type="submit">Envoyer ma demande</button></div>
+    <p class="send-err" role="alert" data-send-err hidden>Oups, le message s’est perdu en route. Renvoyez-le ou appelez-nous. 07 80 91 23 35.</p>
    </form>
    <div class="ok" data-success hidden tabindex="-1"><svg viewBox="0 0 110 110" aria-hidden="true"><circle cx="55" cy="50" r="36" fill="var(--sun)"/><path d="M0 74Q27 62 55 74T110 74V110H0Z" fill="var(--sea)" style="mix-blend-mode:multiply"/></svg><h3>Message reçu !</h3><p>Wafa revient vers vous sous 48 h pour fixer la date ou préparer le devis intra.</p></div>
   </div>
@@ -496,8 +515,8 @@ footer nav{display:flex;gap:18px}
 
 <footer>
  <div class="w">
-  <span>© 2026 Azur Gestes by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
-  <nav aria-label="Légal"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+  <span>© 2026 Formation AFGSU Provence-Alpes-Côte d’Azur by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Légal"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
  </div>
 </footer>
 
@@ -510,12 +529,13 @@ footer nav{display:flex;gap:18px}
 /* ===== SESSIONS : unique tableau à éditer (dates ISO [début, fin]) ===== */
 const SESSIONS = [
   { ville: "Aix-en-Provence", dept: "13", region: "Provence-Alpes-Côte d'Azur", dates: [] },
-  // Sessions déjà confirmées hors région :
-  { ville: "Palaiseau", dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* ====================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
@@ -571,10 +591,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : envoyer les données (fetch POST) vers l'outil d'inscription, puis confirmer.
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>

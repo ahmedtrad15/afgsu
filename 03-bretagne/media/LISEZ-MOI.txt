@@ -1,0 +1,9 @@
+Dossier médias — Formation AFGSU Bretagne
+
+Déposez ici les photos avec exactement ces noms : la page les affiche automatiquement à la place des emplacements prévus (format conseillé : JPG, 1600 px de large, < 250 Ko).
+
+photo-01.jpg  —  étudiante IFSI posant les électrodes d’un DAE sur mannequin, formateur à genoux
+photo-02.jpg  —  équipe soignante d’un EHPAD breton en exercice de relevage, couloir lumineux
+
+Déjà présents : logo.svg / logo.png (logo complet, texte clair pour fond sombre), logo-fond-clair.png (texte foncé pour fond clair), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
+Pour une image de partage (og:image), ajoutez og-image.jpg (1200 × 630) et décommentez la ligne correspondante dans le <head>.

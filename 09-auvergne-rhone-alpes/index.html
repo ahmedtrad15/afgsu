@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFGSU 2 Auvergne-Rhône-Alpes · Annecy, Sud de Lyon, intra | Relief Urgences</title>
+<title>AFGSU 2 Auvergne-Rhône-Alpes · Annecy, Sud de Lyon, intra | Formation AFGSU Auvergne-Rhône-Alpes</title>
 <meta name="description" content="AFGSU 2 en Auvergne-Rhône-Alpes : 21 h sur 3 jours en présentiel, 385 € TTC au lieu de 450 €, valable 4 ans. Centres d’Annecy et du Sud de Lyon, intra dans votre établissement de Grenoble à Clermont-Ferrand.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Relief Urgences">
-<meta property="og:title" content="Relief Urgences · l’AFGSU 2 en Auvergne-Rhône-Alpes">
+<meta property="og:site_name" content="Formation AFGSU Auvergne-Rhône-Alpes">
+<meta property="og:title" content="Formation AFGSU Auvergne-Rhône-Alpes · l’AFGSU 2 en Auvergne-Rhône-Alpes">
 <meta property="og:description" content="Camp de base, sommet, refuge : suivez l’ascension des trois modules de l’AFGSU 2, à Annecy, au Sud de Lyon ou dans votre établissement.">
-<!-- TODO og:image : visuel 1200×630 (courbes de niveau + drapeau rouge) depuis la médiathèque -->
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#1C3D5A">
-<!-- PLACEHOLDER favicon : sommet stylisé et drapeau rouge, 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,600;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
@@ -37,8 +39,6 @@ p{margin:0 0 1em}
 .topo path{fill:none;stroke:var(--rock);stroke-width:1.2;opacity:.7}
 .img-ph{position:relative;min-height:220px;border-radius:4px;background:repeating-radial-gradient(circle at 30% 40%,transparent 0 14px,rgba(185,196,204,.55) 14px 15px),#e9eef2;display:flex;align-items:flex-end}
 .img-ph::after{content:"Visuel · " attr(data-img);font:600 .8rem/1.4 var(--b);color:var(--deep);background:var(--snow);padding:8px 12px;margin:12px;border-left:4px solid var(--red)}
-.logo-ph{width:36px;height:36px;min-height:0;background:var(--deep);clip-path:polygon(50% 8%,96% 92%,4% 92%);flex:none}
-.logo-ph::after{display:none}
 /* header */
 .top{position:sticky;top:0;z-index:50;background:rgba(245,248,250,.97);border-bottom:1px solid var(--rock)}
 .top .w{display:flex;align-items:center;gap:12px;height:58px}
@@ -239,25 +239,36 @@ footer nav{display:flex;gap:16px}
 .js [data-up]{opacity:0;transform:translateY(26px) scale(.985)}
 .js [data-up].in{opacity:1;transform:none;transition:opacity .7s ease,transform .9s cubic-bezier(.16,.84,.3,1)}
 @media (prefers-reduced-motion:reduce){.js [data-up],.js [data-up].in{opacity:1;transform:none;transition:none}.flag,.camp,.camp .pole,.amap .fl,.amap #mtopo path,.faq summary::after{transition:none}.js .amap.pre .fl{transform:none}.js .amap.pre #mtopo path{stroke-dashoffset:0}.flag:hover{transform:none}}
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#B3261E;grid-column:1/-1}
+#palai:empty,#ext:empty,#elsewhere:empty{display:none}
+/* affinage typographique */
+h1,h2,h3{font-weight:600}.hero h1{font-size:clamp(1.6rem,3.2vw,2.5rem)}.sh h2{font-size:clamp(1.4rem,2.8vw,2rem)}
+.camp h3{font-size:clamp(1.15rem,2.2vw,1.45rem)}.lv h3{font-size:1.6rem}.final h2{font-size:clamp(1.6rem,3.4vw,2.4rem)}
+.pz strong{font-size:2rem;font-weight:700}.faq summary{font:700 1.04rem/1.4 var(--b)}.flag{font-size:.9rem}.lv .pr{font-size:1.2rem}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Relief Urgences","description":"Formation aux gestes et soins d’urgence en Auvergne-Rhône-Alpes : AFGSU 2, AFGSU 1 et recyclage, à Annecy, au Sud de Lyon ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Auvergne-Rhône-Alpes"},"location":[
-{"@type":"Place","name":"Relief Urgences · Annecy","address":{"@type":"PostalAddress","addressLocality":"Annecy","addressRegion":"Auvergne-Rhône-Alpes","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":45.90,"longitude":6.13}},
-{"@type":"Place","name":"Relief Urgences · Sud de Lyon","address":{"@type":"PostalAddress","addressLocality":"Sud de Lyon (69)","addressRegion":"Auvergne-Rhône-Alpes","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":45.70,"longitude":4.85}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Auvergne-Rhône-Alpes","description":"Formation aux gestes et soins d’urgence en Auvergne-Rhône-Alpes : AFGSU 2, AFGSU 1 et recyclage, à Annecy, au Sud de Lyon ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Auvergne-Rhône-Alpes"},"location":[
+{"@type":"Place","name":"Formation AFGSU Auvergne-Rhône-Alpes · Annecy","address":{"@type":"PostalAddress","addressLocality":"Annecy","addressRegion":"Auvergne-Rhône-Alpes","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":45.90,"longitude":6.13}},
+{"@type":"Place","name":"Formation AFGSU Auvergne-Rhône-Alpes · Sud de Lyon","address":{"@type":"PostalAddress","addressLocality":"Sud de Lyon (69)","addressRegion":"Auvergne-Rhône-Alpes","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":45.70,"longitude":4.85}}]},
 {"@type":"Course","name":"AFGSU 2 en Auvergne-Rhône-Alpes","description":"Formation de 21 heures sur 3 jours, exclusivement présentielle, aux gestes et soins d’urgence de niveau 2. Attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
-"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Annecy ou Sud de Lyon (dates sur demande)"}}}
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Annecy ou Sud de Lyon (dates : nous contacter)"}}}
 ]}
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Cabinet médical de station en Savoie : la formation peut-elle monter jusqu’à nous ?","acceptedAnswer":{"@type":"Answer","text":"Oui, en intra, dès lors que vous réunissez 10 à 12 professionnels, éventuellement avec d’autres soignants de la station. Les dates se calent avec vous, saisons comprises."}},{"@type":"Question","name":"J’exerce dans le Chablais : Annecy est-il le centre le plus proche ?","acceptedAnswer":{"@type":"Answer","text":"Oui, parmi nos deux centres de la région, Annecy (74) est le plus accessible depuis le Chablais. Prochaine date sur demande — on vous rappelle sous 48 h."}},{"@type":"Question","name":"Infirmier en Isère, je choisis Annecy ou le Sud de Lyon ?","acceptedAnswer":{"@type":"Answer","text":"Les deux conviennent : même programme, même attestation. Prenez celui qui vous fait le moins de route, ou étudions une session intra à Grenoble si votre établissement réunit un groupe."}},{"@type":"Question","name":"Combien de temps dure le recyclage ?","acceptedAnswer":{"@type":"Answer","text":"7 heures, soit une journée, à suivre impérativement avant la date d’expiration de l’attestation en cours."}},{"@type":"Question","name":"Les groupes inter mélangent-ils plusieurs professions ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Une session inter réunit 10 à 12 professionnels du public visé, souvent de métiers différents : médecins, infirmiers, aides-soignants, ambulanciers… Une richesse pour les mises en situation."}},{"@type":"Question","name":"Étudiant en médecine à Clermont-Ferrand, puis-je m’inscrire ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les étudiants des professions de santé font partie du public. Fournissez votre certificat de scolarité à la place du numéro RPPS."}},{"@type":"Question","name":"Peut-on s’inscrire à plusieurs collègues sur une même session inter ?","acceptedAnswer":{"@type":"Answer","text":"Oui, dans la limite d’un groupe de 10 à 12 participants. Au-delà, une session intra rien que pour votre équipe devient souvent plus pertinente."}},{"@type":"Question","name":"Le tarif de 385 € s’applique-t-il aussi en intra ?","acceptedAnswer":{"@type":"Answer","text":"Non. 385 € TTC (au lieu de 450 €) est le prix par participant en session inter. L’intra fait l’objet d’un devis, établi selon votre projet."}},{"@type":"Question","name":"Que recouvrent exactement les « urgences potentielles » ?","acceptedAnswer":{"@type":"Answer","text":"Des situations qui ne menacent pas immédiatement la vie mais peuvent s’aggraver : malaises, traumatismes, brûlures, accouchement inopiné. Le module (7 h) inclut aussi immobilisation, relevage, brancardage, hygiène et transmission du bilan."}},{"@type":"Question","name":"Après l’AFGSU 1, une secrétaire peut-elle passer au niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Non : l’AFGSU 2 est réservée aux professions de santé et aux métiers listés. Pour une secrétaire, l’AFGSU 1 reste le bon niveau, à renouveler tous les quatre ans."}},{"@type":"Question","name":"Un hôpital de la Loire peut-il réunir plusieurs services dans la même session intra ?","acceptedAnswer":{"@type":"Answer","text":"Oui, pourvu que les participants appartiennent au public de l’AFGSU 2 et que le groupe compte 10 à 12 personnes. Le planning se construit avec vos cadres."}},{"@type":"Question","name":"Pourquoi l’altimètre de cette page s’arrête-t-il à 2 100 mètres ?","acceptedAnswer":{"@type":"Answer","text":"C’est une image : 100 mètres par heure de formation, soit 2 100 mètres pour les 21 heures de l’AFGSU 2."}},{"@type":"Question","name":"Que reçoit-on en arrivant « au sommet » ?","acceptedAnswer":{"@type":"Answer","text":"L’attestation AFGSU 2 délivrée par le CESU, valable quatre ans, qui vaut aussi équivalence PSC. Elle n’ouvre pas d’équivalence SST."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Cabinet médical de station en Savoie : la formation peut-elle monter jusqu’à nous ?","acceptedAnswer":{"@type":"Answer","text":"Oui, en intra, dès lors que vous réunissez 10 à 12 professionnels, éventuellement avec d’autres soignants de la station. Les dates se calent avec vous, saisons comprises."}},{"@type":"Question","name":"J’exerce dans le Chablais : Annecy est-il le centre le plus proche ?","acceptedAnswer":{"@type":"Answer","text":"Oui, parmi nos deux centres de la région, Annecy (74) est le plus accessible depuis le Chablais. Pour connaître la prochaine date, contactez-nous : nous rappelons sous 48 h."}},{"@type":"Question","name":"Infirmier en Isère, je choisis Annecy ou le Sud de Lyon ?","acceptedAnswer":{"@type":"Answer","text":"Les deux conviennent : même programme, même attestation. Prenez celui qui vous fait le moins de route, ou étudions une session intra à Grenoble si votre établissement réunit un groupe."}},{"@type":"Question","name":"Combien de temps dure le recyclage ?","acceptedAnswer":{"@type":"Answer","text":"7 heures, soit une journée, à suivre impérativement avant la date d’expiration de l’attestation en cours."}},{"@type":"Question","name":"Les groupes inter mélangent-ils plusieurs professions ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Une session inter réunit 10 à 12 professionnels du public visé, souvent de métiers différents : médecins, infirmiers, aides-soignants, ambulanciers… Une richesse pour les mises en situation."}},{"@type":"Question","name":"Étudiant en médecine à Clermont-Ferrand, puis-je m’inscrire ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les étudiants des professions de santé font partie du public. Fournissez votre certificat de scolarité à la place du numéro RPPS."}},{"@type":"Question","name":"Peut-on s’inscrire à plusieurs collègues sur une même session inter ?","acceptedAnswer":{"@type":"Answer","text":"Oui, dans la limite d’un groupe de 10 à 12 participants. Au-delà, une session intra rien que pour votre équipe devient souvent plus pertinente."}},{"@type":"Question","name":"Le tarif de 385 € s’applique-t-il aussi en intra ?","acceptedAnswer":{"@type":"Answer","text":"Non. 385 € TTC (au lieu de 450 €) est le prix par participant en session inter. L’intra fait l’objet d’un devis, établi selon votre projet."}},{"@type":"Question","name":"Que recouvrent exactement les « urgences potentielles » ?","acceptedAnswer":{"@type":"Answer","text":"Des situations qui ne menacent pas immédiatement la vie mais peuvent s’aggraver : malaises, traumatismes, brûlures, accouchement inopiné. Le module (7 h) inclut aussi immobilisation, relevage, brancardage, hygiène et transmission du bilan."}},{"@type":"Question","name":"Après l’AFGSU 1, une secrétaire peut-elle passer au niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Non : l’AFGSU 2 est réservée aux professions de santé et aux métiers listés. Pour une secrétaire, l’AFGSU 1 reste le bon niveau, à renouveler tous les quatre ans."}},{"@type":"Question","name":"Un hôpital de la Loire peut-il réunir plusieurs services dans la même session intra ?","acceptedAnswer":{"@type":"Answer","text":"Oui, pourvu que les participants appartiennent au public de l’AFGSU 2 et que le groupe compte 10 à 12 personnes. Le planning se construit avec vos cadres."}},{"@type":"Question","name":"Pourquoi l’altimètre de cette page s’arrête-t-il à 2 100 mètres ?","acceptedAnswer":{"@type":"Answer","text":"C’est une image : 100 mètres par heure de formation, soit 2 100 mètres pour les 21 heures de l’AFGSU 2."}},{"@type":"Question","name":"Que reçoit-on en arrivant « au sommet » ?","acceptedAnswer":{"@type":"Answer","text":"L’attestation AFGSU 2 délivrée par le CESU, valable quatre ans, qui vaut aussi équivalence PSC. Elle n’ouvre pas d’équivalence SST."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><path d="M3 58 26 20 36 34 43 25 61 58Z" fill="#1C3D5A"/><path d="M26 20 19.5 30.5 26 28.5 30 32.5 33 29Z" fill="#F5F8FA"/><path d="M26 21V4" stroke="#1C3D5A" stroke-width="2.6"/><path d="M26 4h13l-3.5 4.5L39 13H26Z" fill="#E0312F"/></symbol></svg>
 <a class="skip" href="#depart">Rejoindre le contenu</a>
 
 <header class="top">
  <div class="w">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Relief Urgences (emplacement)" data-img="logo : sommet"></span>Relief Urgences</a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Auvergne-Rhône-Alpes</span></span></a>
   <nav aria-label="Itinéraire"><a href="#ascension">L’ascension</a><a href="#carte">Carte</a><a href="#niveaux">Niveaux</a><a href="#refuge">Refuge</a><a href="#carnet">Inscription</a></nav>
   <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
  </div>
@@ -369,7 +380,7 @@ footer nav{display:flex;gap:16px}
     </svg>
    </div>
    <div data-up>
-    <div class="sess" id="sess"><noscript><p>Dates sur demande : 07 80 91 23 35</p></noscript></div>
+    <div class="sess" id="sess"><noscript><p>Dates : nous contacter au 07 80 91 23 35.</p></noscript></div>
     <p class="ext" id="ext"></p>
     <div class="intra">
      <h3>L’intra, voie normale de la région</h3>
@@ -460,7 +471,7 @@ footer nav{display:flex;gap:16px}
   <div class="sh" data-up><span class="k">Questions avant le départ</span><h2 id="h-faq">De la Haute-Savoie à l’Auvergne, vos questions</h2></div>
   <div class="faq">
    <details><summary data-faq-q>Cabinet médical de station en Savoie : la formation peut-elle monter jusqu’à nous ?</summary><div data-faq-a><p>Oui, en intra, dès lors que vous réunissez 10 à 12 professionnels, éventuellement avec d’autres soignants de la station. Les dates se calent avec vous, saisons comprises.</p></div></details>
-   <details><summary data-faq-q>J’exerce dans le Chablais : Annecy est-il le centre le plus proche ?</summary><div data-faq-a><p>Oui, parmi nos deux centres de la région, Annecy (74) est le plus accessible depuis le Chablais. Prochaine date sur demande — on vous rappelle sous 48 h.</p></div></details>
+   <details><summary data-faq-q>J’exerce dans le Chablais : Annecy est-il le centre le plus proche ?</summary><div data-faq-a><p>Oui, parmi nos deux centres de la région, Annecy (74) est le plus accessible depuis le Chablais. Pour connaître la prochaine date, contactez-nous : nous rappelons sous 48 h.</p></div></details>
    <details><summary data-faq-q>Infirmier en Isère, je choisis Annecy ou le Sud de Lyon ?</summary><div data-faq-a><p>Les deux conviennent : même programme, même attestation. Prenez celui qui vous fait le moins de route, ou étudions une session intra à Grenoble si votre établissement réunit un groupe.</p></div></details>
    <details><summary data-faq-q>Combien de temps dure le recyclage ?</summary><div data-faq-a><p>7 heures, soit une journée, à suivre impérativement avant la date d’expiration de l’attestation en cours.</p></div></details>
    <details><summary data-faq-q>Les groupes inter mélangent-ils plusieurs professions ?</summary><div data-faq-a><p>Oui. Une session inter réunit 10 à 12 professionnels du public visé, souvent de métiers différents : médecins, infirmiers, aides-soignants, ambulanciers… Une richesse pour les mises en situation.</p></div></details>
@@ -481,11 +492,15 @@ footer nav{display:flex;gap:16px}
   <div data-up>
    <div class="sh"><span class="k">Carnet de course</span><h2 id="h-car">Inscrivez-vous à la prochaine cordée</h2><p>Wafa vous rappelle pour choisir entre Annecy, le Sud de Lyon et l’intra, puis vérifier les justificatifs et le financement.</p></div>
    <p><a class="tl" href="tel:+33780912335">07 80 91 23 35</a></p>
-   <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires sur un exercice de brancardage" data-img="photo : quatre stagiaires portant un brancard lors d’un exercice, gestes coordonnés"></div>
+   <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires sur un exercice de brancardage" data-file="media/photo-01.jpg" data-img="photo : quatre stagiaires portant un brancard lors d’un exercice, gestes coordonnés"></div>
   </div>
   <div data-up>
-   <!-- TODO : brancher l'envoi (service d'e-mail transactionnel ou CRM). action="#" provisoire. -->
-   <form class="lead" action="#" method="post" data-lead id="lead">
+   <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+   <form class="lead" action="https://api.web3forms.com/submit" method="POST" data-lead id="lead">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Auvergne-Rhône-Alpes">
+    <input type="hidden" name="from_name" value="Formation AFGSU Auvergne-Rhône-Alpes">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <input type="hidden" name="formation" value="AFGSU 2">
     <div class="full"><label for="c-nom">Nom &amp; prénom</label><input id="c-nom" name="nom" autocomplete="name" required aria-errormessage="c-nom-e"><p class="err" id="c-nom-e">Indiquez votre nom complet.</p></div>
     <div><label for="c-tel">Téléphone</label><input id="c-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="c-tel-e"><p class="err" id="c-tel-e">Exemple : 04 50 00 00 00.</p></div>
@@ -493,8 +508,9 @@ footer nav{display:flex;gap:16px}
     <div><label for="c-pro">Profession</label><select id="c-pro" name="profession" required aria-errormessage="c-pro-e"><option value="">Choisir…</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="c-pro-e">Profession manquante.</p></div>
     <div><label for="c-centre">Centre / ville</label><select id="c-centre" name="centre" required aria-errormessage="c-centre-e"><option value="">Choisir…</option><option>Annecy</option><option>Sud de Lyon</option><option value="Intra">Intra · dans notre établissement</option></select><p class="err" id="c-centre-e">Point de départ manquant.</p></div>
     <div class="full"><label for="c-msg">Message (facultatif)</label><textarea id="c-msg" name="message" placeholder="Votre ville, vos disponibilités, la taille du groupe…"></textarea></div>
-    <div class="full chk"><input type="checkbox" id="c-rgpd" name="rgpd" required><label for="c-rgpd">J’accepte que Relief Urgences traite ces informations pour organiser ma formation et revenir vers moi. <a href="#">Politique de données</a></label></div>
+    <div class="full chk"><input type="checkbox" id="c-rgpd" name="rgpd" required><label for="c-rgpd">J’accepte que Formation AFGSU Auvergne-Rhône-Alpes traite ces informations pour organiser ma formation et revenir vers moi. <a href="#">Politique de données</a></label></div>
     <div class="full"><button class="flag" type="submit">Envoyer mon carnet</button></div>
+    <p class="send-err" role="alert" data-send-err hidden>Le carnet n’a pas pu être envoyé. Retentez l’envoi, ou appelez-nous. 07 80 91 23 35.</p>
    </form>
    <div class="ok" data-success hidden tabindex="-1"><h3>Carnet bien reçu.</h3><p>Wafa vous rappelle pour fixer le point de départ et la date. Une question entre-temps : 07 80 91 23 35.</p></div>
   </div>
@@ -512,8 +528,8 @@ footer nav{display:flex;gap:16px}
 
 <footer>
  <div class="w">
-  <span>© 2026 Relief Urgences by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
-  <nav aria-label="Légal"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+  <span>© 2026 Formation AFGSU Auvergne-Rhône-Alpes by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Légal"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
  </div>
 </footer>
 
@@ -527,12 +543,13 @@ footer nav{display:flex;gap:16px}
 const SESSIONS = [
   { ville: "Annecy",      dept: "74", region: "Auvergne-Rhône-Alpes", dates: [] },
   { ville: "Sud de Lyon", dept: "69", region: "Auvergne-Rhône-Alpes", dates: [] },
-  // Hors région, sessions confirmées :
-  { ville: "Palaiseau",   dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* =========================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
@@ -540,7 +557,7 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const T = new Date(); T.setHours(0, 0, 0, 0);
   const up = s => s.dates.filter(d => D(d[1]) >= T);
   const f = ([a, b]) => { const A = D(a), B = D(b); return `${A.getDate()}${A.getMonth() !== B.getMonth() ? ' ' + MO[A.getMonth()] : ''}–${B.getDate()} ${MO[B.getMonth()]} ${B.getFullYear()}`; };
-  $('#sess').innerHTML = SESSIONS.filter(s => s.region === 'Auvergne-Rhône-Alpes').map(s => { const u = up(s); return `<div><h3>${s.ville} <small style="font:600 .8rem var(--b);color:var(--mute)">${s.dept}</small></h3><a href="#carnet" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'Réserver' : 'Demander'} →</a><p>${u.length ? u.map(f).join(' · ') : SUR_DEMANDE}</p></div>`; }).join('');
+  $('#sess').innerHTML = SESSIONS.filter(s => s.region === 'Auvergne-Rhône-Alpes').map(s => { const u = up(s); return `<div><h3>${s.ville} <small style="font:600 .8rem var(--b);color:var(--mute)">${s.dept}</small></h3><a href="#carnet" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'Réserver' : 'Contacter'} →</a><p>${u.length ? u.map(f).join(' · ') : SUR_DEMANDE}</p></div>`; }).join('');
   const ext = SESSIONS.filter(s => s.region !== 'Auvergne-Rhône-Alpes' && up(s).length);
   if (ext.length) $('#ext').textContent = 'Sessions déjà confirmées hors région : ' + ext.map(s => `${s.ville} (${s.dept}), ${up(s).map(f).join(', ')}`).join(' ; ') + '.';
 
@@ -579,10 +596,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : envoyer les données (fetch POST) avant d'afficher la confirmation.
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>

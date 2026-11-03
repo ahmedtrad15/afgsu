@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFGSU 2 Hauts-de-France · Lille, Amiens, Beauvais · 385 € | Nord Réflexe</title>
+<title>AFGSU 2 Hauts-de-France · Lille, Amiens, Beauvais · 385 € | Formation AFGSU Hauts-de-France</title>
 <meta name="description" content="AFGSU 2 dans les Hauts-de-France : 21 h sur 3 jours, en présentiel, 385 € TTC au lieu de 450 €, valable 4 ans. Centres à Lille, Croix, Villeneuve-d'Ascq, Amiens et Beauvais. Intra pour EHPAD, cliniques et hôpitaux : calculez vos sessions.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Nord Réflexe">
-<meta property="og:title" content="Nord Réflexe · AFGSU 2 en Hauts-de-France">
+<meta property="og:site_name" content="Formation AFGSU Hauts-de-France">
+<meta property="og:title" content="Formation AFGSU Hauts-de-France · AFGSU 2 en Hauts-de-France">
 <meta property="og:description" content="Trois jours, des gestes répétés jusqu’au réflexe. 385 € TTC en inter, intra sur devis pour vos équipes d’EHPAD et de soins.">
-<!-- TODO og:image : visuel 1200×630 (brique + bande de signalisation) depuis la médiathèque -->
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#1B1B1B">
-<!-- PLACEHOLDER favicon : bloc jaune « NR » sur noir, 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Public+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
@@ -36,8 +38,6 @@ p{margin:0 0 1em}
 .w{max-width:1260px;margin:0 auto;padding:0 18px}
 .img-ph{position:relative;min-height:240px;border:4px solid var(--blk);background:repeating-linear-gradient(45deg,var(--off) 0 18px,#e3e0d8 18px 36px);display:flex;align-items:flex-end}
 .img-ph::after{content:attr(data-img);background:var(--blk);color:var(--yel);font:600 .8rem/1.35 var(--t);text-transform:uppercase;letter-spacing:.04em;padding:8px 10px;margin:0}
-.logo-ph{width:40px;height:40px;min-height:0;border:3px solid var(--yel);background:var(--blk);flex:none}
-.logo-ph::after{display:none}
 /* header */
 .top{position:sticky;top:0;z-index:40;background:var(--blk);color:var(--off)}
 .top .w{display:flex;align-items:center;gap:12px;height:58px}
@@ -256,23 +256,40 @@ footer nav{display:flex;gap:16px}
 .js [data-slam]{opacity:0;transform:translateY(-26px)}
 .js [data-slam].in{opacity:1;transform:none;transition:opacity .25s ease-out,transform .5s cubic-bezier(.3,1.6,.55,1)}
 @media (prefers-reduced-motion:reduce){.js [data-slam]{opacity:1;transform:none}.js [data-slam].in{transition:none}.btn{transition:none}.js .bmap.wait .cells rect,.js .bmap.wait .hit{opacity:1}.bmap.go .cells rect,.bmap.go .hit,.bmap.go .pulse{animation:none}}
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#B3261E;grid-column:1/-1}
+#palai:empty,#ext:empty,#elsewhere:empty{display:none}
+/* affinage typographique */
+.hero h1{font-size:clamp(2rem,5.4vw,3.8rem);text-shadow:2px 2px 0 var(--blk)}
+.sec-h h2{font-size:clamp(1.8rem,4vw,2.8rem)}
+#h-pub,#h-dem{font-size:clamp(1.8rem,4vw,2.8rem)!important;text-shadow:2px 2px 0 var(--blk)!important}
+.facts b{font-size:clamp(1.8rem,3.6vw,2.6rem)}.mod .hh{font-size:clamp(2.2rem,4.2vw,3rem)}.mod h3{font-size:1.5rem}
+.cmp h3{font-size:2.2rem}.cmp .pr{font-size:1.7rem}.ok h3{font-size:2.2rem}
+.final h2{font-size:clamp(2rem,4.6vw,3.2rem);text-shadow:2px 2px 0 var(--blk)}
+.btn{font-size:1.12rem;padding:12px 20px}.price strong{font-size:2.5rem}.meta{font-size:1.15rem}.ph{font-size:1.3rem}.top .tel{font-size:1.1rem}
+.voices blockquote{font:600 1.1rem/1.45 var(--t);text-transform:none}.faq summary{font-weight:700;font-size:1.02rem}
+.tape span{font-size:1.05rem}.chips li{font-size:1rem}.sticky a{font-size:1.15rem}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Nord Réflexe","description":"Formation aux gestes et soins d’urgence dans les Hauts-de-France : AFGSU 2, AFGSU 1 et recyclage, en inter et en intra (EHPAD, cliniques, hôpitaux, cabinets).","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Hauts-de-France"},"location":[
-{"@type":"Place","name":"Nord Réflexe · Lille","address":{"@type":"PostalAddress","addressLocality":"Lille","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":50.63,"longitude":3.06}},
-{"@type":"Place","name":"Nord Réflexe · Croix","address":{"@type":"PostalAddress","addressLocality":"Croix","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":50.68,"longitude":3.15}},
-{"@type":"Place","name":"Nord Réflexe · Villeneuve-d’Ascq","address":{"@type":"PostalAddress","addressLocality":"Villeneuve-d’Ascq","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":50.62,"longitude":3.14}},
-{"@type":"Place","name":"Nord Réflexe · Amiens","address":{"@type":"PostalAddress","addressLocality":"Amiens","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":49.89,"longitude":2.30}},
-{"@type":"Place","name":"Nord Réflexe · Beauvais","address":{"@type":"PostalAddress","addressLocality":"Beauvais","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":49.43,"longitude":2.08}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Hauts-de-France","description":"Formation aux gestes et soins d’urgence dans les Hauts-de-France : AFGSU 2, AFGSU 1 et recyclage, en inter et en intra (EHPAD, cliniques, hôpitaux, cabinets).","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Hauts-de-France"},"location":[
+{"@type":"Place","name":"Formation AFGSU Hauts-de-France · Lille","address":{"@type":"PostalAddress","addressLocality":"Lille","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":50.63,"longitude":3.06}},
+{"@type":"Place","name":"Formation AFGSU Hauts-de-France · Croix","address":{"@type":"PostalAddress","addressLocality":"Croix","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":50.68,"longitude":3.15}},
+{"@type":"Place","name":"Formation AFGSU Hauts-de-France · Villeneuve-d’Ascq","address":{"@type":"PostalAddress","addressLocality":"Villeneuve-d’Ascq","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":50.62,"longitude":3.14}},
+{"@type":"Place","name":"Formation AFGSU Hauts-de-France · Amiens","address":{"@type":"PostalAddress","addressLocality":"Amiens","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":49.89,"longitude":2.30}},
+{"@type":"Place","name":"Formation AFGSU Hauts-de-France · Beauvais","address":{"@type":"PostalAddress","addressLocality":"Beauvais","addressRegion":"Hauts-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":49.43,"longitude":2.08}}]},
 {"@type":"Course","name":"AFGSU 2 — Hauts-de-France","description":"Formation de 21 heures sur 3 jours, en présentiel, aux gestes et soins d’urgence de niveau 2 : urgences vitales, potentielles, collectives et SSE. Attestation CESU valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
-"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Lille, Croix, Villeneuve-d’Ascq, Amiens ou Beauvais (dates sur demande)"}}}
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Lille, Croix, Villeneuve-d’Ascq, Amiens ou Beauvais (dates : nous contacter)"}}}
 ]}
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Directrice d’EHPAD dans le Pas-de-Calais : combien de sessions pour former 30 soignants ?","acceptedAnswer":{"@type":"Answer","text":"Avec des groupes de 10 à 12, comptez trois sessions de trois jours, soit neuf journées de formation sur site. Le planificateur de cette page fait le calcul pour vous ; le devis suit sur demande."}},{"@type":"Question","name":"Comment former l’équipe de nuit sans désorganiser les plannings ?","acceptedAnswer":{"@type":"Answer","text":"En intra, les dates sont fixées avec vous. Répartir les soignants sur plusieurs sessions permet de garder du monde en poste, sachant que chaque stagiaire doit être présent sur ses trois jours complets."}},{"@type":"Question","name":"Nos agents de service et l’équipe de lingerie : quelle formation leur correspond ?","acceptedAnswer":{"@type":"Answer","text":"L’AFGSU 1. Elle s’adresse aux personnels non soignants, dont les fonctions logistiques et techniques : 14 heures, 290 € TTC en inter, valable quatre ans."}},{"@type":"Question","name":"Les AES et AMP de notre EHPAD peuvent-ils suivre le niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les accompagnants éducatifs et sociaux et les aides médico-psychologiques font partie du public de l’AFGSU 2."}},{"@type":"Question","name":"Le plan bleu est-il traité pendant la formation ?","acceptedAnswer":{"@type":"Answer","text":"Oui, dans le troisième module consacré aux urgences collectives et aux situations sanitaires exceptionnelles, aux côtés du plan blanc, d’ORSAN et de l’afflux de victimes. Un repère utile pour les établissements médico-sociaux."}},{"@type":"Question","name":"Lille, Croix et Villeneuve-d’Ascq sont voisines : pourquoi trois centres ?","acceptedAnswer":{"@type":"Answer","text":"Pour que chacun, dans la métropole, choisisse l’adresse la plus simple d’accès. Programme, durée et attestation sont identiques d’un centre à l’autre."}},{"@type":"Question","name":"Je travaille à Amiens : une date peut-elle s’ouvrir près de chez moi ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les sessions d’Amiens s’organisent à la demande. Laissez vos coordonnées : nous vous rappelons sous 48 h pour en discuter."}},{"@type":"Question","name":"EHPAD dans l’Oise : session à Beauvais ou dans nos locaux ?","acceptedAnswer":{"@type":"Answer","text":"Pour une ou deux personnes, une session à Beauvais suffit. À partir d’un groupe de 10 à 12, l’intra dans votre établissement devient généralement plus simple à organiser."}},{"@type":"Question","name":"EHPAD privé ou public : qui finance l’intra ?","acceptedAnswer":{"@type":"Answer","text":"En structure privée, le plan de développement des compétences, avec l’appui possible de votre OPCO. En établissement public relevant de la fonction publique hospitalière, l’ANFH est l’interlocuteur habituel."}},{"@type":"Question","name":"Notre infirmier coordinateur a laissé passer l’échéance d’un mois : recyclage possible ?","acceptedAnswer":{"@type":"Answer","text":"Non. Une fois la date d’expiration passée, même de peu, il doit refaire la formation complète de 21 heures. D’où l’intérêt de noter l’échéance et de s’y prendre 3 à 6 mois avant."}},{"@type":"Question","name":"Cette attestation peut-elle remplacer le SST pour nos agents ?","acceptedAnswer":{"@type":"Answer","text":"Non, l’AFGSU 2 n’est pas équivalente au SST. Elle donne en revanche l’équivalence PSC."}},{"@type":"Question","name":"Que doivent apporter nos salariés le premier jour ?","acceptedAnswer":{"@type":"Answer","text":"Ce qui est demandé à l’inscription : leur diplôme, leur carte professionnelle et leur identifiant RPPS ou ADELI ; pour les étudiants, le certificat de scolarité en tient lieu. Ceux qui viennent en recyclage apportent aussi leur attestation en cours."}},{"@type":"Question","name":"Le planificateur affiche-t-il un prix ?","acceptedAnswer":{"@type":"Answer","text":"Non, volontairement. Il chiffre des sessions et des journées ; le tarif intra dépend de votre projet et vous est transmis sur devis."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><rect width="64" height="64" fill="#1B1B1B"/><path d="M24 8h16v16h16v16H40v16H24V40H8V24h16z" fill="#F5C400"/><path d="M24 24h16v16H24z" fill="#B5462B"/><path d="M24 32h16M32 24v8M28 32v8M36 32v8" stroke="#1B1B1B" stroke-width="1.5"/></symbol></svg>
 <a class="skip" href="#go">Direct au contenu</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
  <defs>
@@ -284,7 +301,7 @@ footer nav{display:flex;gap:16px}
 
 <header class="top">
  <div class="w">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Nord Réflexe (emplacement)" data-img="logo : bloc NR"></span>Nord Réflexe</a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Hauts-de-France</span></span></a>
   <nav aria-label="Menu"><a href="#centres">Centres</a><a href="#programme">Programme</a><a href="#planif">Planificateur intra</a><a href="#faq">FAQ</a><a href="#demande">Demande</a></nav>
   <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
  </div>
@@ -348,7 +365,7 @@ footer nav{display:flex;gap:16px}
      <text x="214" y="356">Lille</text><text x="458" y="161">Croix</text><text x="420" y="452" text-anchor="end">Villeneuve-d’Ascq</text>
      <text x="20" y="40" style="font-size:18px;fill:#bdb9b0">Zoom ×13 · même projection</text>
     </svg>
-    <ul class="centres" id="centresList" style="margin-top:20px"><noscript><li>Dates sur demande : 07 80 91 23 35</li></noscript></ul>
+    <ul class="centres" id="centresList" style="margin-top:20px"><noscript><li>Dates : nous contacter au 07 80 91 23 35.</li></noscript></ul>
     <p class="extra" id="extra"></p>
    </div>
   </div>
@@ -380,7 +397,7 @@ footer nav{display:flex;gap:16px}
     <div class="row"><label for="n2">Soignants · AFGSU 2<small>3 jours par session</small></label><div class="step"><button type="button" data-d="-1" data-for="n2" aria-label="Retirer un soignant AFGSU 2">−</button><input id="n2" type="number" min="0" max="500" value="24" inputmode="numeric"><button type="button" data-d="1" data-for="n2" aria-label="Ajouter un soignant AFGSU 2">+</button></div></div>
     <div class="row"><label for="nr">Soignants · recyclage<small>7 h, 1 jour par session</small></label><div class="step"><button type="button" data-d="-1" data-for="nr" aria-label="Retirer un soignant en recyclage">−</button><input id="nr" type="number" min="0" max="500" value="0" inputmode="numeric"><button type="button" data-d="1" data-for="nr" aria-label="Ajouter un soignant en recyclage">+</button></div></div>
     <div class="row"><label for="n1">Non-soignants · AFGSU 1<small>2 jours par session</small></label><div class="step"><button type="button" data-d="-1" data-for="n1" aria-label="Retirer un non-soignant">−</button><input id="n1" type="number" min="0" max="500" value="10" inputmode="numeric"><button type="button" data-d="1" data-for="n1" aria-label="Ajouter un non-soignant">+</button></div></div>
-    <div class="img-ph" role="img" aria-label="Photo à venir : équipe d’EHPAD en formation" data-img="photo : équipe d’EHPAD autour d’un mannequin, salle d’animation transformée en salle de formation" style="min-height:180px;border-color:var(--off)"></div>
+    <div class="img-ph" role="img" aria-label="Photo à venir : équipe d’EHPAD en formation" data-file="media/photo-01.jpg" data-img="photo : équipe d’EHPAD autour d’un mannequin, salle d’animation transformée en salle de formation" style="min-height:180px;border-color:var(--off)"></div>
    </form>
    <div class="out" id="planOut" aria-live="polite"></div>
   </div>
@@ -490,8 +507,12 @@ footer nav{display:flex;gap:16px}
    <a class="ph" href="tel:+33780912335" style="font-size:2.2rem;text-shadow:3px 3px 0 var(--blk)">07 80 91 23 35</a>
   </div>
   <div data-slam>
-   <!-- TODO : relier au back-office d'inscription (POST JSON vers l'API ou service e-mail). action="#" pour l'instant. -->
-   <form class="lead" action="#" method="post" data-lead id="lead">
+   <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+   <form class="lead" action="https://api.web3forms.com/submit" method="POST" data-lead id="lead">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Hauts-de-France">
+    <input type="hidden" name="from_name" value="Formation AFGSU Hauts-de-France">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <input type="hidden" name="formation" value="AFGSU 2">
     <div class="full"><label for="d-nom">Nom &amp; prénom</label><input id="d-nom" name="nom" autocomplete="name" required aria-errormessage="d-nom-e"><p class="err" id="d-nom-e">Obligatoire.</p></div>
     <div><label for="d-tel">Téléphone</label><input id="d-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="d-tel-e"><p class="err" id="d-tel-e">10 chiffres, ex. 03 20 00 00 00.</p></div>
@@ -499,8 +520,9 @@ footer nav{display:flex;gap:16px}
     <div><label for="d-pro">Profession</label><select id="d-pro" name="profession" required aria-errormessage="d-pro-e"><option value="">Choisir</option><option>Médecin</option><option>Infirmier·ère</option><option>Infirmier·ère coordinateur·rice</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option><option>Direction / cadre (projet intra)</option></select><p class="err" id="d-pro-e">Choisir une profession.</p></div>
     <div><label for="d-centre">Centre / ville</label><select id="d-centre" name="centre" required aria-errormessage="d-centre-e"><option value="">Choisir</option><option>Lille</option><option>Croix</option><option>Villeneuve-d’Ascq</option><option>Amiens</option><option>Beauvais</option><option value="Intra">Intra · dans notre établissement</option></select><p class="err" id="d-centre-e">Choisir un centre.</p></div>
     <div class="full"><label for="d-msg">Message (facultatif)</label><textarea id="d-msg" name="message" placeholder="Effectifs, contraintes de planning, financement…"></textarea></div>
-    <div class="full chk"><input type="checkbox" id="d-rgpd" name="rgpd" required><label for="d-rgpd">J’accepte que Nord Réflexe utilise mes coordonnées pour traiter cette demande, et uniquement pour cela. <a href="#">Données personnelles</a></label></div>
+    <div class="full chk"><input type="checkbox" id="d-rgpd" name="rgpd" required><label for="d-rgpd">J’accepte que Formation AFGSU Hauts-de-France utilise mes coordonnées pour traiter cette demande, et uniquement pour cela. <a href="#">Données personnelles</a></label></div>
     <div class="full sub"><button class="btn" type="submit">Envoyer la demande</button></div>
+    <p class="send-err" role="alert" data-send-err hidden>Envoi impossible pour le moment. Réessayez ou appelez directement. 07 80 91 23 35.</p>
    </form>
    <div class="ok" data-success hidden tabindex="-1"><h3>Reçu.</h3><p style="font-weight:700">Votre demande est enregistrée. Wafa vous rappelle pour caler la date et le lieu. Pressé ? 07 80 91 23 35.</p></div>
   </div>
@@ -517,8 +539,8 @@ footer nav{display:flex;gap:16px}
 
 <footer>
  <div class="w">
-  <span>© 2026 Nord Réflexe by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
-  <nav aria-label="Légal"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+  <span>© 2026 Formation AFGSU Hauts-de-France by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Légal"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
  </div>
 </footer>
 
@@ -535,12 +557,13 @@ const SESSIONS = [
   { ville: "Villeneuve-d’Ascq", dept: "59", region: "Hauts-de-France", dates: [] },
   { ville: "Amiens",            dept: "80", region: "Hauts-de-France", dates: [] },
   { ville: "Beauvais",          dept: "60", region: "Hauts-de-France", dates: [] },
-  // Hors région, sessions confirmées :
-  { ville: "Palaiseau",         dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* ======================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MO = ['JANV.','FÉVR.','MARS','AVR.','MAI','JUIN','JUIL.','AOÛT','SEPT.','OCT.','NOV.','DÉC.'];
@@ -548,7 +571,7 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const T = new Date(); T.setHours(0, 0, 0, 0);
   const nxt = s => s.dates.filter(d => D(d[1]) >= T);
   const ff = ([a, b]) => { const A = D(a), B = D(b); return `${A.getDate()}${A.getMonth() !== B.getMonth() ? ' ' + MO[A.getMonth()] : ''}→${B.getDate()} ${MO[B.getMonth()]} ${B.getFullYear()}`; };
-  $('#centresList').innerHTML = SESSIONS.filter(s => s.region === 'Hauts-de-France').map(s => { const n = nxt(s); return `<li><b>${s.ville}<small>${s.dept}</small></b><a href="#demande" data-centre="${s.ville}" data-formation="AFGSU 2">${n.length ? 'Réserver' : 'Demander'}</a><span>${n.length ? n.map(ff).join(' · ') : SUR_DEMANDE}</span></li>`; }).join('');
+  $('#centresList').innerHTML = SESSIONS.filter(s => s.region === 'Hauts-de-France').map(s => { const n = nxt(s); return `<li><b>${s.ville}<small>${s.dept}</small></b><a href="#demande" data-centre="${s.ville}" data-formation="AFGSU 2">${n.length ? 'Réserver' : 'Contacter'}</a><span>${n.length ? n.map(ff).join(' · ') : SUR_DEMANDE}</span></li>`; }).join('');
   const ext = SESSIONS.filter(s => s.region !== 'Hauts-de-France' && nxt(s).length);
   if (ext.length) $('#extra').textContent = 'Déjà confirmé hors région : ' + ext.map(s => `${s.ville} (${s.dept}) ${nxt(s).map(ff).join(', ')}`).join(' ; ') + '.';
 
@@ -594,10 +617,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : soumettre les champs (fetch) au service d'inscription avant d'afficher « Reçu ».
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>

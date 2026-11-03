@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFGSU 2 Île-de-France · 21 h, 385 € · Palaiseau, Paris, Meaux… | Ligne Vitale</title>
-<meta name="description" content="AFGSU 2 en Île-de-France : 21 h en présentiel sur 3 jours, 385 € TTC au lieu de 450 €, attestation valable 4 ans. Sessions confirmées à Palaiseau ; Paris, Noisy-le-Sec, Choisy-le-Roi, Houilles et Meaux sur demande.">
+<title>Formation AFGSU 2 en Île-de-France · Palaiseau, Choisy-le-Roi, Noisy-le-Sec, Pontault-Combault | Formation AFGSU Île-de-France</title>
+<meta name="description" content="AFGSU 2 en Île-de-France : 21 h en présentiel sur 3 jours, 385 € TTC au lieu de 450 €, attestation valable 4 ans. Sessions programmées à Palaiseau, Choisy-le-Roi, Noisy-le-Sec et Pontault-Combault ; Houilles sur contact.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Ligne Vitale">
-<meta property="og:title" content="Ligne Vitale · AFGSU 2 en Île-de-France, six centres sur une même ligne">
-<meta property="og:description" content="Trois jours de pratique, groupes de 10 à 12, attestation délivrée par le CESU. 385 € TTC au lieu de 450 €. Départs confirmés à Palaiseau.">
-<!-- TODO og:image : visuel 1200×630 (plan des lignes Ligne Vitale) à ajouter depuis la médiathèque -->
+<meta property="og:site_name" content="Formation AFGSU Île-de-France">
+<meta property="og:title" content="Formation AFGSU Île-de-France · cinq centres sur une même ligne">
+<meta property="og:description" content="Trois jours de pratique, groupes de 10 à 12, attestation délivrée par le CESU. 385 € TTC au lieu de 450 €. Sessions programmées à Palaiseau, Choisy-le-Roi, Noisy-le-Sec et Pontault-Combault.">
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#14161A">
-<!-- PLACEHOLDER favicon : roundel « V » Ligne Vitale, 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -39,8 +41,6 @@ p{margin:0 0 1em}
 /* placeholders */
 .img-ph{position:relative;background:repeating-linear-gradient(135deg,var(--paper2) 0 10px,#e2dccd 10px 20px);border:2px solid var(--ink);display:flex;align-items:flex-end;min-height:180px}
 .img-ph::after{content:attr(data-img);font:500 .75rem/1.35 var(--m);background:var(--ink);color:var(--paper);padding:6px 9px;margin:10px}
-.logo-ph{width:38px;height:38px;min-height:0;border-radius:50%;border:3px solid var(--ink);background:var(--paper);display:grid;place-items:center;flex:none}
-.logo-ph::after{content:"logo";margin:0;padding:0;background:none;color:var(--ink2);font-size:.6rem}
 /* header */
 .top{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:3px solid var(--ink)}
 .top .wrap{display:flex;align-items:center;gap:14px;height:58px}
@@ -135,7 +135,7 @@ section{padding:64px 0}
 .hint{font:500 .75rem var(--m);color:var(--ink2);padding:6px 14px 0}
 @media (min-width:700px){.hint{display:none}}
 /* departure board */
-.board{background:var(--ink);color:var(--paper);border-radius:12px;padding:8px;overflow-x:auto}
+.board{background:var(--ink);color:var(--paper);border-radius:12px;padding:8px;overflow:auto;max-height:560px}
 .board table{width:100%;border-collapse:separate;border-spacing:0 6px;font:500 .92rem var(--m);min-width:560px}
 .board th{text-align:left;font-weight:500;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#b9bcc2;padding:6px 10px}
 .board td{background:#23262c;padding:11px 10px;color:var(--amber);white-space:nowrap}
@@ -261,27 +261,57 @@ footer a{color:var(--paper)}
 .js [data-arrive]{opacity:0;transform:translateX(-32px)}
 .js [data-arrive].in{opacity:1;transform:none;transition:opacity .5s ease-out,transform .7s cubic-bezier(.15,.85,.25,1.04)}
 @media (prefers-reduced-motion:reduce){.js [data-arrive]{opacity:1;transform:none}.ping.go{animation:none}.btn .rd,.nav a{transition:none}.netmap .draw{transition:none}.js .netmap.pre .draw{stroke-dashoffset:0}}
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#B3261E;grid-column:1/-1}
+/* affinage typographique */
+.hero h1{font-size:clamp(1.75rem,3.6vw,2.8rem);font-weight:600}
+.sign{background:transparent;color:var(--ink);padding:0 0 10px;border-radius:0;border-bottom:3px solid var(--ink)}
+.sign h2{font-size:clamp(1.3rem,2.6vw,1.75rem)}.sign .dir{opacity:1;color:var(--ink2)}
+.intra .sign{background:transparent;color:var(--paper);border-color:var(--paper)}.intra .sign .dir{color:#cfd1d5}
+.price strong{font-size:2.1rem}@media (min-width:1000px){.price strong{font-size:2.4rem}}
+.final h2{font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:600}.mod h3{font-size:1.15rem}.q summary{font-size:1.02rem}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Ligne Vitale","description":"Organisme de formation aux gestes et soins d'urgence en Île-de-France : AFGSU 2, AFGSU 1 et recyclage, en inter ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Île-de-France"},"location":[
-{"@type":"Place","name":"Ligne Vitale · Palaiseau","address":{"@type":"PostalAddress","streetAddress":"4 allée des Garays","postalCode":"91120","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.71,"longitude":2.25}},
-{"@type":"Place","name":"Ligne Vitale · Paris","address":{"@type":"PostalAddress","addressLocality":"Paris","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.86,"longitude":2.35}},
-{"@type":"Place","name":"Ligne Vitale · Noisy-le-Sec","address":{"@type":"PostalAddress","addressLocality":"Noisy-le-Sec","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.89,"longitude":2.46}},
-{"@type":"Place","name":"Ligne Vitale · Choisy-le-Roi","address":{"@type":"PostalAddress","addressLocality":"Choisy-le-Roi","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.76,"longitude":2.41}},
-{"@type":"Place","name":"Ligne Vitale · Houilles","address":{"@type":"PostalAddress","addressLocality":"Houilles","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.93,"longitude":2.19}},
-{"@type":"Place","name":"Ligne Vitale · Meaux","address":{"@type":"PostalAddress","addressLocality":"Meaux","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.96,"longitude":2.88}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Île-de-France","description":"Organisme de formation aux gestes et soins d'urgence en Île-de-France : AFGSU 2, AFGSU 1 et recyclage, en inter ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Île-de-France"},"location":[
+{"@type":"Place","name":"Formation AFGSU Île-de-France · Palaiseau","address":{"@type":"PostalAddress","streetAddress":"4 allée des Garays","postalCode":"91120","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.71,"longitude":2.25}},
+{"@type":"Place","name":"Formation AFGSU Île-de-France · Choisy-le-Roi","address":{"@type":"PostalAddress","streetAddress":"16 avenue Jean Jaurès","postalCode":"94600","addressLocality":"Choisy-le-Roi","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.76,"longitude":2.41}},
+{"@type":"Place","name":"Formation AFGSU Île-de-France · Noisy-le-Sec","address":{"@type":"PostalAddress","streetAddress":"9 rue Saint-Just","postalCode":"93130","addressLocality":"Noisy-le-Sec","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.89,"longitude":2.46}},
+{"@type":"Place","name":"Formation AFGSU Île-de-France · Pontault-Combault","address":{"@type":"PostalAddress","addressLocality":"Pontault-Combault","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.80,"longitude":2.61}},
+{"@type":"Place","name":"Formation AFGSU Île-de-France · Houilles","address":{"@type":"PostalAddress","addressLocality":"Houilles","addressRegion":"Île-de-France","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.93,"longitude":2.19}}]},
 {"@type":"Course","name":"AFGSU 2 · Attestation de Formation aux Gestes et Soins d'Urgence de niveau 2 (Île-de-France)","description":"21 heures en présentiel sur 3 jours : urgences vitales, urgences potentielles, urgences collectives et situations sanitaires exceptionnelles. Groupes de 10 à 12. Attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","educationalCredentialAwarded":"Attestation de Formation aux Gestes et Soins d'Urgence de niveau 2","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements","availability":"https://schema.org/InStock"},
 "hasCourseInstance":[
-{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-11-16","endDate":"2026-11-18","location":{"@type":"Place","name":"Palaiseau","address":"4 allée des Garays, 91120 Palaiseau"}},
-{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-12-14","endDate":"2026-12-16","location":{"@type":"Place","name":"Palaiseau","address":"4 allée des Garays, 91120 Palaiseau"}},
-{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-12-28","endDate":"2026-12-30","location":{"@type":"Place","name":"Palaiseau","address":"4 allée des Garays, 91120 Palaiseau"}}]}
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-11-18","endDate":"2026-11-20","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-12-14","endDate":"2026-12-16","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2026-12-28","endDate":"2026-12-30","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-01-11","endDate":"2027-01-13","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-01-11","endDate":"2027-01-13","location":{"@type":"Place","name":"Noisy-le-Sec","address":{"@type":"PostalAddress","addressLocality":"Noisy-le-Sec","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"9 rue Saint-Just","postalCode":"93130"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-01-11","endDate":"2027-01-13","location":{"@type":"Place","name":"Pontault-Combault","address":{"@type":"PostalAddress","addressLocality":"Pontault-Combault","addressRegion":"Île-de-France","addressCountry":"FR"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-01-18","endDate":"2027-01-20","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-02-01","endDate":"2027-02-03","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-02-01","endDate":"2027-02-03","location":{"@type":"Place","name":"Choisy-le-Roi","address":{"@type":"PostalAddress","addressLocality":"Choisy-le-Roi","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"16 avenue Jean Jaurès","postalCode":"94600"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-02-15","endDate":"2027-02-17","location":{"@type":"Place","name":"Noisy-le-Sec","address":{"@type":"PostalAddress","addressLocality":"Noisy-le-Sec","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"9 rue Saint-Just","postalCode":"93130"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-02-15","endDate":"2027-02-17","location":{"@type":"Place","name":"Pontault-Combault","address":{"@type":"PostalAddress","addressLocality":"Pontault-Combault","addressRegion":"Île-de-France","addressCountry":"FR"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-02-22","endDate":"2027-02-24","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-02-22","endDate":"2027-02-24","location":{"@type":"Place","name":"Choisy-le-Roi","address":{"@type":"PostalAddress","addressLocality":"Choisy-le-Roi","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"16 avenue Jean Jaurès","postalCode":"94600"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-03-03","endDate":"2027-03-05","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-03-03","endDate":"2027-03-05","location":{"@type":"Place","name":"Choisy-le-Roi","address":{"@type":"PostalAddress","addressLocality":"Choisy-le-Roi","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"16 avenue Jean Jaurès","postalCode":"94600"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-03-08","endDate":"2027-03-10","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-03-15","endDate":"2027-03-17","location":{"@type":"Place","name":"Noisy-le-Sec","address":{"@type":"PostalAddress","addressLocality":"Noisy-le-Sec","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"9 rue Saint-Just","postalCode":"93130"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-03-15","endDate":"2027-03-17","location":{"@type":"Place","name":"Pontault-Combault","address":{"@type":"PostalAddress","addressLocality":"Pontault-Combault","addressRegion":"Île-de-France","addressCountry":"FR"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-03-17","endDate":"2027-03-19","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-03-17","endDate":"2027-03-19","location":{"@type":"Place","name":"Choisy-le-Roi","address":{"@type":"PostalAddress","addressLocality":"Choisy-le-Roi","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"16 avenue Jean Jaurès","postalCode":"94600"}}},
+{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","startDate":"2027-03-22","endDate":"2027-03-24","location":{"@type":"Place","name":"Palaiseau","address":{"@type":"PostalAddress","addressLocality":"Palaiseau","addressRegion":"Île-de-France","addressCountry":"FR","streetAddress":"4 allée des Garays","postalCode":"91120"}}}]}
 ]}
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Je travaille de nuit dans un service parisien : puis-je enchaîner les trois jours après une garde ?","acceptedAnswer":{"@type":"Answer","text":"C’est déconseillé. La présence est exigée sur l’intégralité des 21 heures et l’évaluation est continue : vos gestes sont observés du premier au dernier jour. Posez les trois jours ou calez-les sur une période de repos, vous en tirerez bien davantage."}},{"@type":"Question","name":"J’habite en Essonne mais j’exerce dans le Val-de-Marne : quelle station choisir ?","acceptedAnswer":{"@type":"Answer","text":"Palaiseau (91) propose les seules dates déjà fixées. Choisy-le-Roi (94) peut ouvrir une session sur demande : indiquez vos disponibilités dans le formulaire et nous revenons vers vous sous 48 h."}},{"@type":"Question","name":"Les dates de Palaiseau sont-elles définitives ?","acceptedAnswer":{"@type":"Answer","text":"Oui : 16→18 novembre, 14→16 décembre et 28→30 décembre 2026, au 4 allée des Garays, 91120 Palaiseau. Ce sont les trois sessions inter confirmées à ce jour."}},{"@type":"Question","name":"Comment obtenir une date à Paris, Houilles, Meaux, Noisy-le-Sec ou Choisy-le-Roi ?","acceptedAnswer":{"@type":"Answer","text":"Ces stations fonctionnent sur demande. Laissez votre profession et vos créneaux possibles : Wafa vous rappelle sous 48 h avec une proposition, ou vous oriente vers Palaiseau si c’est plus rapide pour vous."}},{"@type":"Question","name":"Aide-soignante en EHPAD dans les Yvelines, suis-je concernée par le niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les aides-soignants appartiennent au public de l’AFGSU 2, et vous pouvez y entrer directement : aucune AFGSU 1 préalable n’est demandée."}},{"@type":"Question","name":"Notre clinique de Seine-Saint-Denis veut former un service entier : comment ça se passe ?","acceptedAnswer":{"@type":"Answer","text":"En intra : nous intervenons dans vos locaux, par groupes de 10 à 12, sur un planning construit avec l’encadrement. Le tarif est établi sur devis selon le nombre de groupes et vos contraintes."}},{"@type":"Question","name":"Mon attestation arrive à échéance au printemps : quand réserver le recyclage ?","acceptedAnswer":{"@type":"Answer","text":"Dès l’automne précédent, idéalement. Nous conseillons de s’inscrire 3 à 6 mois avant l’échéance pour suivre les 7 heures de recyclage sans courir après une place."}},{"@type":"Question","name":"Et si la date d’expiration est déjà passée ?","acceptedAnswer":{"@type":"Answer","text":"Le recyclage de 7 h n’est alors plus possible : il faut suivre à nouveau la formation complète de 21 h. Raison de plus pour noter l’échéance dès aujourd’hui."}},{"@type":"Question","name":"Étudiante en IFSI en Île-de-France, qu’est-ce que l’arrêté du 20 février 2026 change pour moi ?","acceptedAnswer":{"@type":"Answer","text":"Si vous êtes entrée en formation à la rentrée 2026, une AFGSU 2 valide est exigée pour obtenir votre diplôme d’État infirmier. Votre certificat de scolarité suffit pour l’inscription."}},{"@type":"Question","name":"Qui signe l’attestation remise en fin de session ?","acceptedAnswer":{"@type":"Answer","text":"Le CESU. La formation est organisée sous convention avec le CESU 93, dans le cadre de l’arrêté du 30 décembre 2014 modifié en 2019 et 2021."}},{"@type":"Question","name":"Je suis agent d’un hôpital public francilien : qui peut financer ?","acceptedAnswer":{"@type":"Answer","text":"Votre établissement, via son plan de développement des compétences, avec souvent l’appui de l’ANFH, l’organisme de la fonction publique hospitalière. Le service formation saura vous dire quelle enveloppe mobiliser."}},{"@type":"Question","name":"Infirmier libéral à Paris, comment financer mes trois jours ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL peut intervenir, sous conditions. Sinon, vous pouvez financer vous-même et régler en 4x sans frais. Le CPF, lui, n’est en principe pas mobilisable pour l’AFGSU."}},{"@type":"Question","name":"L’AFGSU 2 couvre-t-elle aussi le SST demandé dans mon cabinet ?","acceptedAnswer":{"@type":"Answer","text":"Non. Elle ouvre l’équivalence PSC (arrêté du 23 août 2019), mais elle n’est pas équivalente au SST, qui relève d’un autre dispositif."}},{"@type":"Question","name":"Notre secrétaire médicale à Meaux voudrait se former aussi : laquelle choisir ?","acceptedAnswer":{"@type":"Answer","text":"L’AFGSU 1 : 14 heures sur 2 jours, 290 € TTC, valable 4 ans. Elle s’adresse justement aux personnels non soignants des cabinets et des structures de santé."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Je travaille de nuit dans un service parisien : puis-je enchaîner les trois jours après une garde ?","acceptedAnswer":{"@type":"Answer","text":"C’est déconseillé. La présence est exigée sur l’intégralité des 21 heures et l’évaluation est continue : vos gestes sont observés du premier au dernier jour. Posez les trois jours ou calez-les sur une période de repos, vous en tirerez bien davantage."}},{"@type":"Question","name":"J’habite en Essonne mais j’exerce dans le Val-de-Marne : quelle station choisir ?","acceptedAnswer":{"@type":"Answer","text":"Les deux départements ont leur station avec des dates programmées : Palaiseau (91), au 4 allée des Garays, et Choisy-le-Roi (94), au 16 avenue Jean Jaurès. Choisissez celle qui colle le mieux à votre planning."}},{"@type":"Question","name":"Combien de sessions sont programmées à Palaiseau ?","acceptedAnswer":{"@type":"Answer","text":"Onze sessions inter, de novembre 2026 à mars 2027, au 4 allée des Garays, 91120 Palaiseau. Le tableau des départs les liste toutes, avec celles de Choisy-le-Roi, Noisy-le-Sec et Pontault-Combault."}},{"@type":"Question","name":"Et si je préfère me former à Houilles ?","acceptedAnswer":{"@type":"Answer","text":"Houilles n’a pas encore de date au planning : contactez-nous au 07 80 91 23 35 ou via le formulaire. Nous étudions une session avec vous, ou vous orientons vers la station programmée la plus pratique."}},{"@type":"Question","name":"Aide-soignante en EHPAD dans les Yvelines, suis-je concernée par le niveau 2 ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les aides-soignants appartiennent au public de l’AFGSU 2, et vous pouvez y entrer directement : aucune AFGSU 1 préalable n’est demandée."}},{"@type":"Question","name":"Notre clinique de Seine-Saint-Denis veut former un service entier : comment ça se passe ?","acceptedAnswer":{"@type":"Answer","text":"En intra : nous intervenons dans vos locaux, par groupes de 10 à 12, sur un planning construit avec l’encadrement. Le tarif est établi sur devis selon le nombre de groupes et vos contraintes."}},{"@type":"Question","name":"Mon attestation arrive à échéance au printemps : quand réserver le recyclage ?","acceptedAnswer":{"@type":"Answer","text":"Dès l’automne précédent, idéalement. Nous conseillons de s’inscrire 3 à 6 mois avant l’échéance pour suivre les 7 heures de recyclage sans courir après une place."}},{"@type":"Question","name":"Et si la date d’expiration est déjà passée ?","acceptedAnswer":{"@type":"Answer","text":"Le recyclage de 7 h n’est alors plus possible : il faut suivre à nouveau la formation complète de 21 h. Raison de plus pour noter l’échéance dès aujourd’hui."}},{"@type":"Question","name":"Étudiante en IFSI en Île-de-France, qu’est-ce que l’arrêté du 20 février 2026 change pour moi ?","acceptedAnswer":{"@type":"Answer","text":"Si vous êtes entrée en formation à la rentrée 2026, une AFGSU 2 valide est exigée pour obtenir votre diplôme d’État infirmier. Votre certificat de scolarité suffit pour l’inscription."}},{"@type":"Question","name":"Qui signe l’attestation remise en fin de session ?","acceptedAnswer":{"@type":"Answer","text":"Le CESU. La formation est organisée sous convention avec le CESU 93, dans le cadre de l’arrêté du 30 décembre 2014 modifié en 2019 et 2021."}},{"@type":"Question","name":"Je suis agent d’un hôpital public francilien : qui peut financer ?","acceptedAnswer":{"@type":"Answer","text":"Votre établissement, via son plan de développement des compétences, avec souvent l’appui de l’ANFH, l’organisme de la fonction publique hospitalière. Le service formation saura vous dire quelle enveloppe mobiliser."}},{"@type":"Question","name":"Infirmier libéral à Paris, comment financer mes trois jours ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL peut intervenir, sous conditions. Sinon, vous pouvez financer vous-même et régler en 4x sans frais. Le CPF, lui, n’est en principe pas mobilisable pour l’AFGSU."}},{"@type":"Question","name":"L’AFGSU 2 couvre-t-elle aussi le SST demandé dans mon cabinet ?","acceptedAnswer":{"@type":"Answer","text":"Non. Elle ouvre l’équivalence PSC (arrêté du 23 août 2019), mais elle n’est pas équivalente au SST, qui relève d’un autre dispositif."}},{"@type":"Question","name":"Notre secrétaire médicale à Meaux voudrait se former aussi : laquelle choisir ?","acceptedAnswer":{"@type":"Answer","text":"L’AFGSU 1 : 14 heures sur 2 jours, 290 € TTC, valable 4 ans. Elle s’adresse justement aux personnels non soignants des cabinets et des structures de santé."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><circle cx="32" cy="32" r="25" fill="#F4F1EA" stroke="#E2362F" stroke-width="8"/><rect x="2" y="24" width="60" height="16" rx="3" fill="#14161A"/><path d="M9 32h13l4-6 5 12 4-9 3 3h17" fill="none" stroke="#E8B23A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></symbol></svg>
 <a class="skip" href="#contenu">Aller au contenu</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
  <defs>
@@ -294,7 +324,7 @@ footer a{color:var(--paper)}
 
 <header class="top">
  <div class="wrap">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Ligne Vitale (emplacement)" data-img="logo : roundel Ligne Vitale, 40×40"></span>Ligne Vitale</a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Île-de-France</span></span></a>
   <nav class="nav" aria-label="Sections">
    <a href="#plan">Plan</a><a href="#departs">Départs</a><a href="#parcours">Parcours</a><a href="#intra">Intra</a><a href="#guichet">Guichet</a>
   </nav>
@@ -307,7 +337,7 @@ footer a{color:var(--paper)}
  <div class="wrap hero-grid">
   <div>
    <p class="eyebrow"><i></i>Plan de réseau · formation AFGSU 2</p>
-   <h1 id="h1" data-atf="h1">Six stations, une même ligne de soins : <span class="r">l’AFGSU 2 en Île-de-France</span></h1>
+   <h1 id="h1" data-atf="h1">Cinq stations, une même ligne de soins : <span class="r">l’AFGSU 2 en Île-de-France</span></h1>
    <div class="ticket">
     <div class="t-head"><span>Titre AFGSU 2 · inter</span><span>Validité 4 ans</span></div>
     <p class="price" data-atf="price"><s><span class="sr">Prix habituel : </span>450 €</s> <strong>385 € TTC</strong> <small>par participant · 4x sans frais</small></p>
@@ -318,7 +348,7 @@ footer a{color:var(--paper)}
     </div>
    </div>
    <div class="hero-lede">
-    <p>Trois jours de pratique en groupe de 10 à 12 soignants pour reprendre l’urgence vitale, l’urgence potentielle et la réponse collective, sans aucun module à distance. Les départs sont confirmés à Palaiseau ; Paris, Noisy-le-Sec, Choisy-le-Roi, Houilles et Meaux ouvrent une date à la demande.</p>
+    <p>Trois jours de pratique en groupe de 10 à 12 soignants pour reprendre l’urgence vitale, l’urgence potentielle et la réponse collective, sans aucun module à distance. Des départs sont programmés à Palaiseau, Choisy-le-Roi, Noisy-le-Sec et Pontault-Combault ; pour Houilles, il suffit de nous contacter.</p>
    </div>
   </div>
 
@@ -327,42 +357,40 @@ footer a{color:var(--paper)}
     <div class="legend" aria-hidden="true"><span><b style="background:var(--red)"></b>V1</span><span><b style="background:var(--teal)"></b>V2</span><span><b style="background:var(--amber)"></b>V3 rocade</span></div>
     <button class="pause" type="button" aria-pressed="false" id="pauseMap">Pause pouls</button>
    </div>
-   <p class="hint">Faites glisser le plan pour voir Meaux →</p>
+   <p class="hint">Faites glisser le plan pour voir Pontault-Combault →</p>
    <div class="map-scroll" tabindex="0" role="region" aria-label="Plan des stations, défilable horizontalement">
-   <svg class="netmap pre" id="netmap" viewBox="0 0 820 480" role="img" aria-labelledby="mt md">
-    <title id="mt">Plan des six centres AFGSU 2 franciliens</title>
-    <desc id="md">Trois lignes relient Houilles, Paris, Noisy-le-Sec, Meaux, Choisy-le-Roi et Palaiseau, placés selon leur position géographique réelle, avec la Seine et la Marne.</desc>
+   <svg class="netmap pre" id="netmap" viewBox="0 0 680 480" role="img" aria-labelledby="mt md">
+    <title id="mt">Plan des cinq centres AFGSU 2 franciliens</title>
+    <desc id="md">Trois lignes relient Houilles, Noisy-le-Sec, Pontault-Combault, Choisy-le-Roi et Palaiseau, placés selon leur position géographique réelle, avec la Seine, la Marne et Paris intra-muros en repère.</desc>
     <path class="river" d="M427.5 483.3L386.9 436.4L354.5 383.7L338.3 360.2L330.2 319.2L330.2 289.9L305.8 272.4L289.6 257.1L265.3 246.6L241 248.9L228.8 260.6L208.5 284.1L188.3 278.2L184.2 248.9L196.4 219.6L220.7 196.2L257.2 196.2L273.4 184.5L281.5 166.9L241 155.2L208.5 149.3L176.1 166.9L151.8 190.3L127.5 213.8L95 207.9L78.8 166.9L54.5 131.7"/>
     <path class="river" d="M776.1 96.6L719.4 137.6L686.9 149.3L654.5 166.9L622.1 213.8L581.5 231.3L532.9 231.3L492.3 237.2L451.8 254.8L427.5 278.2L411.2 307.5L395 325.1L370.7 319.2L346.4 301.6L330.2 289.9"/>
     <text class="rlab" x="386.9" y="395.4">Seine</text>
     <text class="rlab" x="516.6" y="251.3">Marne</text>
     <ellipse class="ring" cx="290" cy="250" rx="86" ry="47"/>
-    <text class="ringlab" x="226" y="292">PARIS INTRA-MUROS</text>
+    <text class="ringlab" x="214" y="236">PARIS</text>
     <g id="lines">
-     <path id="lV1" class="ln draw" stroke="var(--red)" pathLength="1" d="M160 167L242 249L344 249L379 214L637 214L719 132"/>
-     <path id="lV2" class="ln draw" stroke="var(--teal)" pathLength="1" d="M209 425L290 344L290 249"/>
-     <path id="lV3" class="ln draw" stroke="var(--amber)" pathLength="1" d="M160 167L160 376L209 425L279 425L338 366L430 366L430 265L379 214"/>
+     <path id="lV1" class="ln draw" stroke="var(--red)" pathLength="1" d="M160 167L332 167L379 214L395 214L500 319"/>
+     <path id="lV2" class="ln draw" stroke="var(--teal)" pathLength="1" d="M209 425L279 425L338 366L500 366L500 319"/>
+     <path id="lV3" class="ln draw" stroke="var(--amber)" pathLength="1" d="M160 167L160 376L209 425L290 344L290 303L379 214"/>
     </g>
     <g id="blips" aria-hidden="true"></g>
     <circle class="conf" cx="209" cy="425" r="22" aria-hidden="true"/>
     <g id="stationsSvg">
      <g class="st" data-st="Houilles"><circle class="ping" cx="160" cy="167" r="12"/><circle class="hit" cx="160" cy="167" r="26"/><circle class="o" cx="160" cy="167" r="11"/><text x="146" y="152" text-anchor="end">Houilles</text></g>
-     <g class="st" data-st="Paris"><circle class="ping" cx="290" cy="249" r="12"/><circle class="hit" cx="290" cy="249" r="26"/><circle class="o" cx="290" cy="249" r="11"/><text x="306" y="238">Paris</text></g>
-     <g class="st" data-st="Noisy-le-Sec"><circle class="ping" cx="379" cy="214" r="12"/><circle class="hit" cx="379" cy="214" r="26"/><circle class="o" cx="379" cy="214" r="11"/><text x="379" y="190" text-anchor="middle">Noisy-le-Sec</text></g>
-     <g class="st" data-st="Meaux"><circle class="ping" cx="719" cy="132" r="12"/><circle class="hit" cx="719" cy="132" r="26"/><circle class="o" cx="719" cy="132" r="11"/><text x="719" y="108" text-anchor="middle">Meaux</text></g>
-     <g class="st" data-st="Choisy-le-Roi"><circle class="ping" cx="338" cy="366" r="12"/><circle class="hit" cx="338" cy="366" r="26"/><circle class="o" cx="338" cy="366" r="11"/><text x="338" y="398" text-anchor="middle">Choisy-le-Roi</text></g>
-     <g class="st" data-st="Palaiseau"><circle class="ping" cx="209" cy="425" r="12"/><circle class="hit" cx="209" cy="425" r="26"/><circle class="o" cx="209" cy="425" r="11"/><text x="244" y="452">Palaiseau</text><text class="tag" x="244" y="468">dates confirmées</text></g>
+     <g class="st" data-st="Noisy-le-Sec"><circle class="ping" cx="379" cy="214" r="12"/><circle class="hit" cx="379" cy="214" r="26"/><circle class="o" cx="379" cy="214" r="11"/><text x="392" y="198">Noisy-le-Sec</text></g>
+     <g class="st" data-st="Pontault-Combault"><circle class="ping" cx="500" cy="319" r="12"/><circle class="hit" cx="500" cy="319" r="26"/><circle class="o" cx="500" cy="319" r="11"/><text x="518" y="314">Pontault-</text><text x="518" y="333">Combault</text></g>
+     <g class="st" data-st="Choisy-le-Roi"><circle class="ping" cx="338" cy="366" r="12"/><circle class="hit" cx="338" cy="366" r="26"/><circle class="o" cx="338" cy="366" r="11"/><text x="352" y="394">Choisy-le-Roi</text></g>
+     <g class="st" data-st="Palaiseau"><circle class="ping" cx="209" cy="425" r="12"/><circle class="hit" cx="209" cy="425" r="26"/><circle class="o" cx="209" cy="425" r="11"/><text x="244" y="452">Palaiseau</text><text class="tag" x="244" y="468">11 sessions programmées</text></g>
     </g>
-    <g aria-hidden="true" transform="translate(770 420)"><path d="M0 34V0m-8 10 8-10 8 10" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="0" y="52" text-anchor="middle" class="ringlab">N</text></g>
+    <g aria-hidden="true" transform="translate(640 420)"><path d="M0 34V0m-8 10 8-10 8 10" fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><text x="0" y="52" text-anchor="middle" class="ringlab">N</text></g>
    </svg>
    </div>
    <div class="stations" role="group" aria-label="Choisir une station">
     <button type="button" data-st="Palaiseau" aria-pressed="false"><i></i>Palaiseau</button>
-    <button type="button" data-st="Paris" aria-pressed="false"><i></i>Paris</button>
-    <button type="button" data-st="Noisy-le-Sec" aria-pressed="false"><i></i>Noisy-le-Sec</button>
     <button type="button" data-st="Choisy-le-Roi" aria-pressed="false"><i></i>Choisy-le-Roi</button>
+    <button type="button" data-st="Noisy-le-Sec" aria-pressed="false"><i></i>Noisy-le-Sec</button>
+    <button type="button" data-st="Pontault-Combault" aria-pressed="false"><i></i>Pontault-Combault</button>
     <button type="button" data-st="Houilles" aria-pressed="false"><i></i>Houilles</button>
-    <button type="button" data-st="Meaux" aria-pressed="false"><i></i>Meaux</button>
    </div>
    <div class="panel" id="panel" aria-live="polite">
     <p class="empty">Touchez une station sur le plan : son adresse, ses prochains départs et la réservation s’affichent ici.</p>
@@ -376,11 +404,11 @@ footer a{color:var(--paper)}
   <header class="sign" data-arrive><span class="code c-amber">D</span><h2 id="h-dep">Prochains départs</h2><span class="dir">Inter · 21 h</span></header>
   <div class="split">
    <div data-arrive>
-    <div class="board" id="board" role="region" aria-label="Tableau des sessions" tabindex="0"><noscript><p style="padding:12px">Sessions confirmées à Palaiseau : 16→18 nov., 14→16 déc. et 28→30 déc. 2026. Autres stations : appelez le 07 80 91 23 35.</p></noscript></div>
-    <p class="board-note">Toutes les sessions confirmées se tiennent au 4 allée des Garays, 91120 Palaiseau. Pour les autres stations : prochaine date sur demande — on vous rappelle sous 48 h.</p>
+    <div class="board" id="board" role="region" aria-label="Tableau des sessions" tabindex="0"><noscript><p style="padding:12px">Le planning s’affiche avec JavaScript. Sessions à Palaiseau, Choisy-le-Roi, Noisy-le-Sec et Pontault-Combault : appelez le 07 80 91 23 35.</p></noscript></div>
+    <p class="board-note">Adresses : Palaiseau, 4 allée des Garays (91120) · Choisy-le-Roi, 16 avenue Jean Jaurès (94600) · Noisy-le-Sec, 9 rue Saint-Just (93130). Pontault-Combault : lieu précisé avec la convocation. Houilles : nous contacter.</p>
    </div>
    <div data-arrive>
-    <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires en mise en situation sur mannequin adulte" data-img="photo : binôme de stagiaires en compressions sur mannequin adulte, salle de Palaiseau" style="min-height:300px"></div>
+    <div class="img-ph" role="img" aria-label="Photo à venir : stagiaires en mise en situation sur mannequin adulte" data-file="media/photo-01.jpg" data-img="photo : binôme de stagiaires en compressions sur mannequin adulte, salle de Palaiseau" style="min-height:300px"></div>
    </div>
   </div>
  </div>
@@ -450,7 +478,7 @@ footer a{color:var(--paper)}
      <li>AES / AMP</li><li>Assistants de régulation médicale</li><li>Assistants médicaux</li><li>Préleveurs sanguins</li><li>Auxiliaires ambulanciers</li>
     </ul>
    </div>
-   <div class="img-ph" role="img" aria-label="Photo à venir : chariot d’urgence ouvert" data-img="photo : chariot d’urgence ouvert, tiroirs étiquetés, bouteille O2 fixée" style="min-height:260px" data-arrive></div>
+   <div class="img-ph" role="img" aria-label="Photo à venir : chariot d’urgence ouvert" data-file="media/photo-02.jpg" data-img="photo : chariot d’urgence ouvert, tiroirs étiquetés, bouteille O2 fixée" style="min-height:260px" data-arrive></div>
   </div>
   <div class="cols" style="margin-top:34px">
    <div class="card-plain" data-arrive><h3>Prérequis</h3><p>Faire partie du public visé, rien de plus. L’AFGSU 1 n’est pas une étape obligatoire avant le niveau 2.</p></div>
@@ -496,7 +524,7 @@ footer a{color:var(--paper)}
    </ul>
    <p class="warn" data-arrive>Côté CPF : l’AFGSU n’y est en principe pas éligible. Nous ne le promettons donc jamais.</p>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : défibrillateur et électrodes posés sur un mannequin" data-img="photo : DAE de formation, électrodes posées sur mannequin, gros plan" style="min-height:340px" data-arrive></div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : défibrillateur et électrodes posés sur un mannequin" data-file="media/photo-03.jpg" data-img="photo : DAE de formation, électrodes posées sur mannequin, gros plan" style="min-height:340px" data-arrive></div>
  </div>
 </section>
 
@@ -508,7 +536,7 @@ footer a{color:var(--paper)}
    <ul class="places" data-arrive><li>Hôpital</li><li>Clinique</li><li>EHPAD</li><li>Cabinet</li><li>Officine</li><li>Centre de santé</li></ul>
    <a class="btn alt" href="#guichet" data-formation="Intra" data-centre="Intra" data-arrive><span class="rd" aria-hidden="true">+</span>Affréter une session intra</a>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : formation dans un couloir de service" data-img="photo : formatrice et équipe de nuit en simulation dans un couloir de service" style="min-height:300px" data-arrive></div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : formation dans un couloir de service" data-file="media/photo-04.jpg" data-img="photo : formatrice et équipe de nuit en simulation dans un couloir de service" style="min-height:300px" data-arrive></div>
  </div>
 </section>
 
@@ -560,9 +588,9 @@ footer a{color:var(--paper)}
   <header class="sign" data-arrive><span class="code c-teal">?</span><h2 id="h-faq">Au guichet, on nous demande souvent…</h2></header>
   <div class="faq">
    <details class="q"><summary data-faq-q>Je travaille de nuit dans un service parisien : puis-je enchaîner les trois jours après une garde ?</summary><div data-faq-a><p>C’est déconseillé. La présence est exigée sur l’intégralité des 21 heures et l’évaluation est continue : vos gestes sont observés du premier au dernier jour. Posez les trois jours ou calez-les sur une période de repos, vous en tirerez bien davantage.</p></div></details>
-   <details class="q"><summary data-faq-q>J’habite en Essonne mais j’exerce dans le Val-de-Marne : quelle station choisir ?</summary><div data-faq-a><p>Palaiseau (91) propose les seules dates déjà fixées. Choisy-le-Roi (94) peut ouvrir une session sur demande : indiquez vos disponibilités dans le formulaire et nous revenons vers vous sous 48 h.</p></div></details>
-   <details class="q"><summary data-faq-q>Les dates de Palaiseau sont-elles définitives ?</summary><div data-faq-a><p>Oui : 16→18 novembre, 14→16 décembre et 28→30 décembre 2026, au 4 allée des Garays, 91120 Palaiseau. Ce sont les trois sessions inter confirmées à ce jour.</p></div></details>
-   <details class="q"><summary data-faq-q>Comment obtenir une date à Paris, Houilles, Meaux, Noisy-le-Sec ou Choisy-le-Roi ?</summary><div data-faq-a><p>Ces stations fonctionnent sur demande. Laissez votre profession et vos créneaux possibles : Wafa vous rappelle sous 48 h avec une proposition, ou vous oriente vers Palaiseau si c’est plus rapide pour vous.</p></div></details>
+   <details class="q"><summary data-faq-q>J’habite en Essonne mais j’exerce dans le Val-de-Marne : quelle station choisir ?</summary><div data-faq-a><p>Les deux départements ont leur station avec des dates programmées : Palaiseau (91), au 4 allée des Garays, et Choisy-le-Roi (94), au 16 avenue Jean Jaurès. Choisissez celle qui colle le mieux à votre planning.</p></div></details>
+   <details class="q"><summary data-faq-q>Combien de sessions sont programmées à Palaiseau ?</summary><div data-faq-a><p>Onze sessions inter, de novembre 2026 à mars 2027, au 4 allée des Garays, 91120 Palaiseau. Le tableau des départs les liste toutes, avec celles de Choisy-le-Roi, Noisy-le-Sec et Pontault-Combault.</p></div></details>
+   <details class="q"><summary data-faq-q>Et si je préfère me former à Houilles ?</summary><div data-faq-a><p>Houilles n’a pas encore de date au planning : contactez-nous au 07 80 91 23 35 ou via le formulaire. Nous étudions une session avec vous, ou vous orientons vers la station programmée la plus pratique.</p></div></details>
    <details class="q"><summary data-faq-q>Aide-soignante en EHPAD dans les Yvelines, suis-je concernée par le niveau 2 ?</summary><div data-faq-a><p>Oui. Les aides-soignants appartiennent au public de l’AFGSU 2, et vous pouvez y entrer directement : aucune AFGSU 1 préalable n’est demandée.</p></div></details>
    <details class="q"><summary data-faq-q>Notre clinique de Seine-Saint-Denis veut former un service entier : comment ça se passe ?</summary><div data-faq-a><p>En intra : nous intervenons dans vos locaux, par groupes de 10 à 12, sur un planning construit avec l’encadrement. Le tarif est établi sur devis selon le nombre de groupes et vos contraintes.</p></div></details>
    <details class="q"><summary data-faq-q>Mon attestation arrive à échéance au printemps : quand réserver le recyclage ?</summary><div data-faq-a><p>Dès l’automne précédent, idéalement. Nous conseillons de s’inscrire 3 à 6 mois avant l’échéance pour suivre les 7 heures de recyclage sans courir après une place.</p></div></details>
@@ -587,22 +615,27 @@ footer a{color:var(--paper)}
     <svg viewBox="0 0 300 120" width="300" aria-hidden="true" style="margin-top:20px;max-width:100%"><path d="M0 70h70l12-34 16 64 12-46 9 16h181" fill="none" stroke="var(--red)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="70" cy="70" r="9" fill="#fff" stroke="var(--ink)" stroke-width="4"/><circle cx="210" cy="70" r="9" fill="#fff" stroke="var(--ink)" stroke-width="4"/></svg>
    </div>
    <div data-arrive>
-    <!-- TODO : brancher l'envoi du formulaire (endpoint CRM / e-mail). action="#" volontairement neutre. -->
-    <form action="#" method="post" data-lead id="lead">
+    <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+    <form action="https://api.web3forms.com/submit" method="POST" data-lead id="lead">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Île-de-France">
+    <input type="hidden" name="from_name" value="Formation AFGSU Île-de-France">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
      <input type="hidden" name="formation" value="AFGSU 2">
      <div class="fg">
       <div class="full"><label for="f-nom">Nom &amp; prénom</label><input id="f-nom" name="nom" autocomplete="name" required aria-errormessage="e-nom"><p class="err" id="e-nom">Indiquez vos nom et prénom.</p></div>
       <div><label for="f-tel">Téléphone</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="e-tel"><p class="err" id="e-tel">Format attendu : 06 12 34 56 78.</p></div>
       <div><label for="f-mail">Email</label><input id="f-mail" name="email" type="email" autocomplete="email" required aria-errormessage="e-mail"><p class="err" id="e-mail">Adresse e-mail incomplète.</p></div>
       <div><label for="f-pro">Profession</label><select id="f-pro" name="profession" required aria-errormessage="e-pro"><option value="">Sélectionner…</option><option>Médecin</option><option>Infirmier·ère</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="e-pro">Choisissez votre profession.</p></div>
-      <div><label for="f-centre">Centre / ville</label><select id="f-centre" name="centre" required aria-errormessage="e-centre"><option value="">Sélectionner…</option><option value="Palaiseau">Palaiseau (91) · dates confirmées</option><option value="Paris">Paris (75)</option><option value="Noisy-le-Sec">Noisy-le-Sec (93)</option><option value="Choisy-le-Roi">Choisy-le-Roi (94)</option><option value="Houilles">Houilles (78)</option><option value="Meaux">Meaux (77)</option><option value="Intra">Intra · dans mon établissement</option></select><p class="err" id="e-centre">Choisissez une station.</p></div>
+      <div><label for="f-centre">Centre / ville</label><select id="f-centre" name="centre" required aria-errormessage="e-centre"><option value="">Sélectionner…</option><option value="Palaiseau">Palaiseau (91) · dates programmées</option><option value="Choisy-le-Roi">Choisy-le-Roi (94) · dates programmées</option><option value="Noisy-le-Sec">Noisy-le-Sec (93) · dates programmées</option><option value="Pontault-Combault">Pontault-Combault (77) · dates programmées</option><option value="Houilles">Houilles (78) · nous contacter</option><option value="Intra">Intra · dans mon établissement</option></select><p class="err" id="e-centre">Choisissez une station.</p></div>
       <div class="full"><label for="f-msg">Message (facultatif)</label><textarea id="f-msg" name="message" placeholder="Disponibilités, financement envisagé, nombre de collègues…"></textarea></div>
-      <div class="full chk"><input type="checkbox" id="f-rgpd" name="rgpd" required><label for="f-rgpd">J’autorise Ligne Vitale à utiliser ces coordonnées uniquement pour traiter ma demande de formation et me recontacter. <a href="#">Confidentialité</a></label></div>
+      <div class="full chk"><input type="checkbox" id="f-rgpd" name="rgpd" required><label for="f-rgpd">J’autorise Formation AFGSU Île-de-France à utiliser ces coordonnées uniquement pour traiter ma demande de formation et me recontacter. <a href="#">Confidentialité</a></label></div>
       <div class="full"><button class="btn" type="submit"><span class="rd" aria-hidden="true">OK</span>Envoyer ma demande au guichet</button></div>
      </div>
+     <p class="send-err" role="alert" data-send-err hidden>Le message n’est pas parti. Nouvel essai dans un instant, ou appelez la ligne AFGSU. 07 80 91 23 35.</p>
     </form>
     <div class="ok-box" data-success hidden tabindex="-1">
-     <p class="stub">Demande émise · Ligne Vitale</p>
+     <p class="stub">Demande émise · Formation AFGSU Île-de-France</p>
      <h3>C’est noté, votre trajet est en préparation.</h3>
      <p>Wafa vous recontacte pour confirmer la station, la date et les pièces à apporter. Besoin d’aller plus vite ? <a class="tel" href="tel:+33780912335">07 80 91 23 35</a></p>
     </div>
@@ -625,8 +658,8 @@ footer a{color:var(--paper)}
 
 <footer>
  <div class="wrap">
-  <span>© 2026 Ligne Vitale by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
-  <nav aria-label="Informations légales"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+  <span>© 2026 Formation AFGSU Île-de-France by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Informations légales"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
  </div>
 </footer>
 
@@ -638,16 +671,18 @@ footer a{color:var(--paper)}
 <script>
 /* ===== SESSIONS : seule source à modifier (dates ISO début/fin) ===== */
 const SESSIONS = [
-  { ville: "Palaiseau",     dept: "91", nom: "Essonne",           adresse: "4 allée des Garays, 91120 Palaiseau", lignes: "V2 · V3", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] },
-  { ville: "Paris",         dept: "75", nom: "Paris",             adresse: "", lignes: "V1 · V2", dates: [] },
-  { ville: "Noisy-le-Sec",  dept: "93", nom: "Seine-Saint-Denis", adresse: "", lignes: "V1 · V3", dates: [] },
-  { ville: "Choisy-le-Roi", dept: "94", nom: "Val-de-Marne",      adresse: "", lignes: "V3",      dates: [] },
-  { ville: "Houilles",      dept: "78", nom: "Yvelines",          adresse: "", lignes: "V1 · V3", dates: [] },
-  { ville: "Meaux",         dept: "77", nom: "Seine-et-Marne",    adresse: "", lignes: "V1",      dates: [] }
+  { ville: "Palaiseau",         dept: "91", nom: "Essonne",           adresse: "4 allée des Garays, 91120 Palaiseau",         lignes: "V2 · V3", dates: [["2026-11-18","2026-11-20"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"],["2027-01-11","2027-01-13"],["2027-01-18","2027-01-20"],["2027-02-01","2027-02-03"],["2027-02-22","2027-02-24"],["2027-03-03","2027-03-05"],["2027-03-08","2027-03-10"],["2027-03-17","2027-03-19"],["2027-03-22","2027-03-24"]] },
+  { ville: "Choisy-le-Roi",     dept: "94", nom: "Val-de-Marne",      adresse: "16 avenue Jean Jaurès, 94600 Choisy-le-Roi",  lignes: "V2",      dates: [["2027-02-01","2027-02-03"],["2027-02-22","2027-02-24"],["2027-03-03","2027-03-05"],["2027-03-17","2027-03-19"]] },
+  { ville: "Noisy-le-Sec",      dept: "93", nom: "Seine-Saint-Denis", adresse: "9 rue Saint-Just, 93130 Noisy-le-Sec",        lignes: "V1 · V3", dates: [["2027-01-11","2027-01-13"],["2027-02-15","2027-02-17"],["2027-03-15","2027-03-17"]] },
+  { ville: "Pontault-Combault", dept: "77", nom: "Seine-et-Marne",    adresse: "",                                            lignes: "V1 · V2", dates: [["2027-01-11","2027-01-13"],["2027-02-15","2027-02-17"],["2027-03-15","2027-03-17"]] },
+  { ville: "Houilles",          dept: "78", nom: "Yvelines",          adresse: "",                                            lignes: "V1 · V3", dates: [] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* ==================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const MOIS = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
   const today = new Date(); today.setHours(0,0,0,0);
@@ -670,8 +705,8 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   SESSIONS.forEach(s => futur(s).forEach(d => rows.push({ s, d, k: d[0] })));
   rows.sort((a, b) => a.k.localeCompare(b.k));
   let html = '<table><thead><tr><th scope="col">Dates</th><th scope="col">Station</th><th scope="col">Format</th><th scope="col">État</th><th scope="col"><span class="sr">Action</span></th></tr></thead><tbody>';
-  rows.forEach(r => { html += `<tr><td class="fl">${range(r.d)}</td><td class="fl">${r.s.ville.toUpperCase()} ${r.s.dept}</td><td>Inter · 21 h</td><td class="ok">Confirmé</td><td><a href="#guichet" data-centre="${r.s.ville}" data-formation="AFGSU 2">Réserver</a></td></tr>`; });
-  SESSIONS.filter(s => !futur(s).length).forEach(s => { html += `<tr><td>—</td><td class="fl">${s.ville.toUpperCase()} ${s.dept}</td><td>Inter · 21 h</td><td class="ask">Sur demande</td><td><a href="#guichet" data-centre="${s.ville}" data-formation="AFGSU 2">Demander</a></td></tr>`; });
+  rows.forEach(r => { html += `<tr><td class="fl">${range(r.d)}</td><td class="fl">${r.s.ville.toUpperCase()} ${r.s.dept}</td><td>Inter · 21 h</td><td class="ok">Programmé</td><td><a href="#guichet" data-centre="${r.s.ville}" data-formation="AFGSU 2">Réserver</a></td></tr>`; });
+  SESSIONS.filter(s => !futur(s).length).forEach(s => { html += `<tr><td>—</td><td class="fl">${s.ville.toUpperCase()} ${s.dept}</td><td>Inter · 21 h</td><td class="ask">Nous contacter</td><td><a href="#guichet" data-centre="${s.ville}" data-formation="AFGSU 2">Contacter</a></td></tr>`; });
   board.innerHTML = html + '</tbody></table>';
 
   /* panneau station */
@@ -682,8 +717,8 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
     $$('.stations button').forEach(b => b.setAttribute('aria-pressed', b.dataset.st === name));
     const f = futur(s);
     panel.innerHTML = `<h3>${s.ville} · ${s.nom} (${s.dept})</h3><p class="pl">Lignes ${s.lignes} — ${s.adresse || 'lieu exact précisé à la confirmation de la session'}</p>` +
-      (f.length ? `<ul>${f.map(d => `<li>${range(d)} · inter · 21 h</li>`).join('')}</ul>` : `<p class="empty" style="margin-bottom:14px">${SUR_DEMANDE}</p>`) +
-      `<a class="btn" href="#guichet" data-centre="${s.ville}" data-formation="AFGSU 2"><span class="rd" aria-hidden="true">V</span>Réserver à cette station</a>`;
+      (f.length ? `<ul>${f.map(d => `<li>${range(d)} · inter · 21 h</li>`).join('')}</ul>` : `<p class="empty" style="margin-bottom:14px">${SUR_DEMANDE} : <a href="tel:+33780912335">07 80 91 23 35</a> ou formulaire ci-dessous.</p>`) +
+      `<a class="btn" href="#guichet" data-centre="${s.ville}" data-formation="AFGSU 2"><span class="rd" aria-hidden="true">V</span>${f.length ? 'Réserver à cette station' : 'Contacter cette station'}</a>`;
   };
   $$('.st').forEach(g => g.addEventListener('click', () => pick(g.dataset.st)));
   $$('.stations button').forEach(b => b.addEventListener('click', () => pick(b.dataset.st)));
@@ -734,10 +769,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.matches && el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : envoyer les données (fetch POST vers l'endpoint retenu) avant d'afficher la confirmation.
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>

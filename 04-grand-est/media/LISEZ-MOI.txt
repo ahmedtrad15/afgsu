@@ -1,0 +1,8 @@
+Dossier médias — Formation AFGSU Grand Est
+
+Déposez ici les photos avec exactement ces noms : la page les affiche automatiquement à la place des emplacements prévus (format conseillé : JPG, 1600 px de large, < 250 Ko).
+
+photo-01.jpg  —  immobilisation du rachis sur plan dur, quatre stagiaires en binômes
+
+Déjà présents : logo.svg / logo.png (logo complet), logo-mark.svg (symbole seul), favicon.svg, favicon-32.png, apple-touch-icon.png.
+Pour une image de partage (og:image), ajoutez og-image.jpg (1200 × 630) et décommentez la ligne correspondante dans le <head>.

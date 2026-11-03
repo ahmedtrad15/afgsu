@@ -4,17 +4,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AFGSU 2 Grand Est — Strasbourg-Schiltigheim, Metz, Reims · 21 h | Planche 21</title>
+<title>AFGSU 2 Grand Est — Strasbourg-Schiltigheim, Metz, Reims · 21 h | Formation AFGSU Grand Est</title>
 <meta name="description" content="Formation AFGSU 2 en Grand Est pour professionnels de santé, libéraux et hospitaliers : 21 h en présentiel, 385 € TTC au lieu de 450 €, valable 4 ans. Centres de Strasbourg-Schiltigheim, Metz et Reims ; intra dans toute la région.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Planche 21">
-<meta property="og:title" content="Planche 21 · l’AFGSU 2 en Grand Est, planche par planche">
+<meta property="og:site_name" content="Formation AFGSU Grand Est">
+<meta property="og:title" content="Formation AFGSU Grand Est · l’AFGSU 2 en Grand Est, planche par planche">
 <meta property="og:description" content="Trois modules, 21 heures de pratique, attestation CESU valable 4 ans. Explorez le corps humain zone par zone pour voir ce que couvre chaque module.">
-<!-- TODO og:image : visuel 1200×630 (planche gravée) depuis la médiathèque -->
+<!-- Image de partage : déposez media/og-image.jpg (1200×630), puis activez la ligne ci-dessous avec l’URL complète du site. -->
+<!-- <meta property="og:image" content="https://VOTRE-DOMAINE/media/og-image.jpg"> -->
 <meta name="theme-color" content="#3B2A1E">
-<!-- PLACEHOLDER favicon : chiffre « 21 » gravé, 32×32 et 180×180 (médiathèque) -->
-<link rel="icon" href="data:,">
+<link rel="icon" href="media/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="media/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="media/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Sans+Condensed:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -36,8 +38,6 @@ p{margin:0 0 1em}
 .sc{font-variant:small-caps;letter-spacing:.06em}
 .img-ph{position:relative;min-height:220px;border:1px solid var(--sepia);outline:1px solid var(--sepia);outline-offset:4px;margin:5px;background:repeating-linear-gradient(-45deg,transparent 0 5px,rgba(59,42,30,.14) 5px 6px);display:flex;align-items:flex-end}
 .img-ph::after{content:attr(data-img);font:italic 500 1rem/1.3 var(--serif);background:var(--parch);padding:8px 12px;margin:12px;border:1px solid var(--sepia)}
-.logo-ph{width:36px;height:36px;min-height:0;margin:0;outline-offset:2px;flex:none;background:var(--parch2)}
-.logo-ph::after{display:none}
 /* header */
 .top{position:sticky;top:0;z-index:40;background:var(--parch);border-bottom:3px double var(--sepia)}
 .top .w{display:flex;align-items:center;gap:12px;height:60px}
@@ -237,21 +237,31 @@ footer nav{display:flex;gap:18px}
 .js [data-ink]{opacity:0;filter:blur(3px);transform:translateY(8px)}
 .js [data-ink].in{opacity:1;filter:none;transform:none;transition:opacity 1s ease,filter 1.1s ease,transform 1s ease}
 @media (prefers-reduced-motion:reduce){.js [data-ink],.js [data-ink].in{opacity:1;filter:none;transform:none;transition:none}.js .map.pre .draw{stroke-dashoffset:0}.js .map.pre .town,.js .map.pre .hat{opacity:1;transform:none}.map .draw,.map .town,.map .hat,.zone,.cl circle,.lab,.qa summary::after{transition:none}}
+
+/* logo + médias */
+.brand .mark{width:38px;height:38px;flex:none}.brand .bn{display:flex;flex-direction:column;line-height:1.05}.brand .bn b{font-weight:inherit}.brand .bn span{font-size:.68em;letter-spacing:.02em;opacity:.82;font-weight:500;text-transform:none}
+.img-ph.has-img{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important}.img-ph.has-img::after,.img-ph.has-img::before{display:none}
+.send-err{margin:0;font-weight:700;color:#B3261E;grid-column:1/-1}
+#palai:empty,#ext:empty,#elsewhere:empty{display:none}
+/* affinage typographique */
+.hero h1{font-size:clamp(1.9rem,3.9vw,3rem)}.sec-h h2{font-size:clamp(1.6rem,3.2vw,2.4rem)}
+.final h2{font-size:clamp(1.7rem,3.4vw,2.5rem)}.legend .pr b{font-size:1.9rem}.zpanel h3{font-size:1.6rem}.plates h3{font-size:1.45rem}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"EducationalOrganization","@id":"#org","name":"Planche 21","description":"Formations aux gestes et soins d’urgence en Grand Est : AFGSU 2, AFGSU 1 et recyclage, en inter ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Grand Est"},"location":[
-{"@type":"Place","name":"Planche 21 · Strasbourg-Schiltigheim","address":{"@type":"PostalAddress","addressLocality":"Schiltigheim","addressRegion":"Grand Est","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.61,"longitude":7.75}},
-{"@type":"Place","name":"Planche 21 · Metz","address":{"@type":"PostalAddress","addressLocality":"Metz","addressRegion":"Grand Est","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":49.12,"longitude":6.18}},
-{"@type":"Place","name":"Planche 21 · Reims","address":{"@type":"PostalAddress","addressLocality":"Reims","addressRegion":"Grand Est","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":49.26,"longitude":4.03}}]},
+{"@type":"EducationalOrganization","@id":"#org","name":"Formation AFGSU Grand Est","description":"Formations aux gestes et soins d’urgence en Grand Est : AFGSU 2, AFGSU 1 et recyclage, en inter ou en intra.","telephone":"+33780912335","areaServed":{"@type":"AdministrativeArea","name":"Grand Est"},"location":[
+{"@type":"Place","name":"Formation AFGSU Grand Est · Strasbourg-Schiltigheim","address":{"@type":"PostalAddress","addressLocality":"Schiltigheim","addressRegion":"Grand Est","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":48.61,"longitude":7.75}},
+{"@type":"Place","name":"Formation AFGSU Grand Est · Metz","address":{"@type":"PostalAddress","addressLocality":"Metz","addressRegion":"Grand Est","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":49.12,"longitude":6.18}},
+{"@type":"Place","name":"Formation AFGSU Grand Est · Reims","address":{"@type":"PostalAddress","addressLocality":"Reims","addressRegion":"Grand Est","addressCountry":"FR"},"geo":{"@type":"GeoCoordinates","latitude":49.26,"longitude":4.03}}]},
 {"@type":"Course","name":"AFGSU 2 · Grand Est","description":"Attestation de Formation aux Gestes et Soins d’Urgence de niveau 2 : 21 heures en présentiel sur 3 jours, trois modules (urgences vitales, potentielles, collectives et SSE), attestation délivrée par le CESU, valable 4 ans.","inLanguage":"fr-FR","timeRequired":"PT21H","provider":{"@id":"#org"},
 "offers":{"@type":"Offer","price":"385","priceCurrency":"EUR","category":"Inter-établissements"},
-"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Strasbourg-Schiltigheim, Metz ou Reims (dates sur demande)"}}}
+"hasCourseInstance":{"@type":"CourseInstance","courseMode":"onsite","courseWorkload":"PT21H","location":{"@type":"Place","name":"Strasbourg-Schiltigheim, Metz ou Reims (dates : nous contacter)"}}}
 ]}
 </script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Infirmière libérale à Metz, comment faire financer mon AFGSU 2 ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL peut prendre en charge tout ou partie de la formation, sous conditions. À défaut, le paiement peut s’étaler en 4 fois sans frais. Le CPF n’est en principe pas une option pour l’AFGSU."}},{"@type":"Question","name":"En libéral, je dois organiser un remplacement : les trois jours se suivent-ils ?","acceptedAnswer":{"@type":"Answer","text":"Oui, une session se déroule sur trois journées consécutives, et la présence doit être totale pour valider. Prévoyez votre remplacement sur l’ensemble de la période."}},{"@type":"Question","name":"Mon attestation remonte à 2022 : recyclage ou formation complète ?","acceptedAnswer":{"@type":"Answer","text":"Tout dépend de la date exacte. L’attestation expire quatre ans jour pour jour après sa délivrance : si cette date n’est pas encore passée, réservez sans attendre le recyclage de 7 h ; si elle l’est, ce sont les 21 heures qu’il faut reprendre."}},{"@type":"Question","name":"Le centre « Strasbourg-Schiltigheim » se trouve-t-il à Strasbourg ou à Schiltigheim ?","acceptedAnswer":{"@type":"Answer","text":"Le centre porte ce double nom ; l’adresse exacte vous est transmise avec la confirmation de votre session, en même temps que les horaires."}},{"@type":"Question","name":"Des dates sont-elles déjà programmées à Reims, Metz ou Strasbourg-Schiltigheim ?","acceptedAnswer":{"@type":"Answer","text":"Pas encore : ces trois centres fonctionnent sur demande. Prochaine date sur demande — on vous rappelle sous 48 h pour en convenir."}},{"@type":"Question","name":"Kiné libéral dans les Vosges : dois-je me rendre à Metz ?","acceptedAnswer":{"@type":"Answer","text":"C’est notre centre le plus proche des Vosges. Si vous réunissez des confrères ou une équipe, une session intra peut aussi être organisée plus près de chez vous."}},{"@type":"Question","name":"Pourquoi trois jours pour l’AFGSU 2 contre deux pour l’AFGSU 1 ?","acceptedAnswer":{"@type":"Answer","text":"Parce que les publics et les objectifs diffèrent : le niveau 2, destiné aux soignants, ajoute des gestes avancés, l’usage du matériel d’urgence et un module sur les situations sanitaires exceptionnelles, soit 21 heures au lieu de 14."}},{"@type":"Question","name":"Qu’observe le formateur pendant l’évaluation continue ?","acceptedAnswer":{"@type":"Answer","text":"Vos gestes et vos décisions au fil des mises en situation simulées, sur les trois jours. Il n’existe pas d’examen final distinct : c’est l’ensemble du parcours, suivi en totalité, qui fonde la validation."}},{"@type":"Question","name":"L’explorateur anatomique de cette page résume-t-il tout le programme ?","acceptedAnswer":{"@type":"Answer","text":"Non, il propose une porte d’entrée par zone du corps. Certains contenus, comme l’alerte, les plans blanc et bleu ou le soutien médico-psychologique, ne se rattachent à aucune zone : les trois planches du programme en donnent la liste complète."}},{"@type":"Question","name":"Notre centre de santé ardennais peut-il accueillir la formation dans ses locaux ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les centres de santé figurent parmi les lieux possibles d’une session intra, à partir d’un groupe de 10 à 12 professionnels. Le devis est établi selon votre projet."}},{"@type":"Question","name":"Sur quels textes repose l’AFGSU 2 ?","acceptedAnswer":{"@type":"Answer","text":"Sur l’arrêté du 30 décembre 2014, modifié en 2019 et 2021. L’arrêté du 23 août 2019 lui accorde l’équivalence PSC ; elle n’ouvre en revanche aucune équivalence SST."}},{"@type":"Question","name":"La formation prépare-t-elle à un afflux de blessés ?","acceptedAnswer":{"@type":"Answer","text":"Oui, c’est l’objet du troisième module (3 h 30) : dispositif ORSAN, plan blanc, plan bleu, afflux de victimes, risque NRBC-E, évacuation et confinement, soutien médico-psychologique."}},{"@type":"Question","name":"Ma secrétaire peut-elle suivre la même session que moi ?","acceptedAnswer":{"@type":"Answer","text":"Non, elle relève de l’AFGSU 1, une formation distincte de 14 heures à 290 € TTC, valable elle aussi quatre ans."}},{"@type":"Question","name":"Qu’est-ce qui change en 2026 pour les étudiants infirmiers de la région ?","acceptedAnswer":{"@type":"Answer","text":"Pour ceux qui ont fait leur rentrée en 2026, l’arrêté du 20 février 2026 conditionne le diplôme d’État infirmier à la détention d’une AFGSU 2 valide."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Infirmière libérale à Metz, comment faire financer mon AFGSU 2 ?","acceptedAnswer":{"@type":"Answer","text":"Le FIF-PL peut prendre en charge tout ou partie de la formation, sous conditions. À défaut, le paiement peut s’étaler en 4 fois sans frais. Le CPF n’est en principe pas une option pour l’AFGSU."}},{"@type":"Question","name":"En libéral, je dois organiser un remplacement : les trois jours se suivent-ils ?","acceptedAnswer":{"@type":"Answer","text":"Oui, une session se déroule sur trois journées consécutives, et la présence doit être totale pour valider. Prévoyez votre remplacement sur l’ensemble de la période."}},{"@type":"Question","name":"Mon attestation remonte à 2022 : recyclage ou formation complète ?","acceptedAnswer":{"@type":"Answer","text":"Tout dépend de la date exacte. L’attestation expire quatre ans jour pour jour après sa délivrance : si cette date n’est pas encore passée, réservez sans attendre le recyclage de 7 h ; si elle l’est, ce sont les 21 heures qu’il faut reprendre."}},{"@type":"Question","name":"Le centre « Strasbourg-Schiltigheim » se trouve-t-il à Strasbourg ou à Schiltigheim ?","acceptedAnswer":{"@type":"Answer","text":"Le centre porte ce double nom ; l’adresse exacte vous est transmise avec la confirmation de votre session, en même temps que les horaires."}},{"@type":"Question","name":"Des dates sont-elles déjà programmées à Reims, Metz ou Strasbourg-Schiltigheim ?","acceptedAnswer":{"@type":"Answer","text":"Pas encore : pour ces trois centres, il suffit de nous contacter, et une date se cale avec vous dans les 48 heures qui suivent."}},{"@type":"Question","name":"Kiné libéral dans les Vosges : dois-je me rendre à Metz ?","acceptedAnswer":{"@type":"Answer","text":"C’est notre centre le plus proche des Vosges. Si vous réunissez des confrères ou une équipe, une session intra peut aussi être organisée plus près de chez vous."}},{"@type":"Question","name":"Pourquoi trois jours pour l’AFGSU 2 contre deux pour l’AFGSU 1 ?","acceptedAnswer":{"@type":"Answer","text":"Parce que les publics et les objectifs diffèrent : le niveau 2, destiné aux soignants, ajoute des gestes avancés, l’usage du matériel d’urgence et un module sur les situations sanitaires exceptionnelles, soit 21 heures au lieu de 14."}},{"@type":"Question","name":"Qu’observe le formateur pendant l’évaluation continue ?","acceptedAnswer":{"@type":"Answer","text":"Vos gestes et vos décisions au fil des mises en situation simulées, sur les trois jours. Il n’existe pas d’examen final distinct : c’est l’ensemble du parcours, suivi en totalité, qui fonde la validation."}},{"@type":"Question","name":"L’explorateur anatomique de cette page résume-t-il tout le programme ?","acceptedAnswer":{"@type":"Answer","text":"Non, il propose une porte d’entrée par zone du corps. Certains contenus, comme l’alerte, les plans blanc et bleu ou le soutien médico-psychologique, ne se rattachent à aucune zone : les trois planches du programme en donnent la liste complète."}},{"@type":"Question","name":"Notre centre de santé ardennais peut-il accueillir la formation dans ses locaux ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Les centres de santé figurent parmi les lieux possibles d’une session intra, à partir d’un groupe de 10 à 12 professionnels. Le devis est établi selon votre projet."}},{"@type":"Question","name":"Sur quels textes repose l’AFGSU 2 ?","acceptedAnswer":{"@type":"Answer","text":"Sur l’arrêté du 30 décembre 2014, modifié en 2019 et 2021. L’arrêté du 23 août 2019 lui accorde l’équivalence PSC ; elle n’ouvre en revanche aucune équivalence SST."}},{"@type":"Question","name":"La formation prépare-t-elle à un afflux de blessés ?","acceptedAnswer":{"@type":"Answer","text":"Oui, c’est l’objet du troisième module (3 h 30) : dispositif ORSAN, plan blanc, plan bleu, afflux de victimes, risque NRBC-E, évacuation et confinement, soutien médico-psychologique."}},{"@type":"Question","name":"Ma secrétaire peut-elle suivre la même session que moi ?","acceptedAnswer":{"@type":"Answer","text":"Non, elle relève de l’AFGSU 1, une formation distincte de 14 heures à 290 € TTC, valable elle aussi quatre ans."}},{"@type":"Question","name":"Qu’est-ce qui change en 2026 pour les étudiants infirmiers de la région ?","acceptedAnswer":{"@type":"Answer","text":"Pour ceux qui ont fait leur rentrée en 2026, l’arrêté du 20 février 2026 conditionne le diplôme d’État infirmier à la détention d’une AFGSU 2 valide."}}]}</script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="logo-mark" viewBox="0 0 64 64"><rect x="3" y="3" width="58" height="58" fill="#F3EDE2" stroke="#3B2A1E" stroke-width="2.4"/><rect x="8.5" y="8.5" width="47" height="47" fill="none" stroke="#3B2A1E" stroke-width="1"/><path d="M32 48C20 40 15 34 15 27a8.5 8.5 0 0 1 17-3 8.5 8.5 0 0 1 17 3c0 7-5 13-17 21z" fill="#F3EDE2" stroke="#B23A2E" stroke-width="2.8"/><path d="M36 22 46 30M38 30 46 37M36 37 42 42" stroke="#3B2A1E" stroke-width="1"/><path d="M27 31h10M32 26v10" stroke="#B23A2E" stroke-width="2.8"/></symbol></svg>
 <a class="skip" href="#corps">Accéder au texte</a>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
  <defs>
@@ -274,7 +284,7 @@ footer nav{display:flex;gap:18px}
 
 <header class="top">
  <div class="w">
-  <a class="brand" href="#"><span class="img-ph logo-ph" role="img" aria-label="Logo Planche 21 (emplacement)" data-img="logo : monogramme gravé Planche 21"></span><span>Planche 21<small>Gestes &amp; soins d’urgence · Grand Est</small></span></a>
+  <a class="brand" href="./"><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><use href="#logo-mark"/></svg><span class="bn"><b>Formation AFGSU</b><span>Grand Est</span></span></a>
   <nav aria-label="Table des planches"><a href="#lieux">Lieux</a><a href="#explorateur">Explorateur</a><a href="#planches">Planches</a><a href="#recyclage">Recyclage</a><a href="#bulletin">Bulletin</a></nav>
   <a class="tel" href="tel:+33780912335">07 80 91 23 35</a>
  </div>
@@ -336,7 +346,7 @@ footer nav{display:flex;gap:18px}
    </figure>
    <aside class="marg" data-ink>
     <p style="font:600 1.4rem var(--serif);color:var(--sepia);margin-bottom:6px">Index des sessions</p>
-    <ul class="index" id="index"><noscript><li>Dates sur demande : 07 80 91 23 35</li></noscript></ul>
+    <ul class="index" id="index"><noscript><li>Dates : nous contacter au 07 80 91 23 35.</li></noscript></ul>
     <p class="ext" id="ext"></p>
     <p><b>†</b>Le lieu exact de chaque session est précisé dans la convocation.</p>
    </aside>
@@ -512,7 +522,7 @@ footer nav{display:flex;gap:18px}
    <p>Un hôpital à Nancy, une clinique à Mulhouse, un EHPAD près de Troyes, une officine à Colmar, un cabinet ou un centre de santé dans les Ardennes : la formation se tient chez vous, pour un groupe de 10 à 12, aux dates qui conviennent à vos plannings. Le tarif est établi sur devis, et l’intra reste possible partout en France.</p>
    <a class="lab" href="#bulletin" data-formation="Intra" data-centre="Intra">Solliciter un devis d’établissement</a>
   </div>
-  <div class="img-ph" role="img" aria-label="Photo à venir : immobilisation du rachis sur plan dur" data-img="photo : immobilisation du rachis sur plan dur, quatre stagiaires en binômes" data-ink></div>
+  <div class="img-ph" role="img" aria-label="Photo à venir : immobilisation du rachis sur plan dur" data-file="media/photo-01.jpg" data-img="photo : immobilisation du rachis sur plan dur, quatre stagiaires en binômes" data-ink></div>
  </div>
 </section>
 
@@ -534,7 +544,7 @@ footer nav{display:flex;gap:18px}
    <details><summary data-faq-q>En libéral, je dois organiser un remplacement : les trois jours se suivent-ils ?</summary><div data-faq-a><p>Oui, une session se déroule sur trois journées consécutives, et la présence doit être totale pour valider. Prévoyez votre remplacement sur l’ensemble de la période.</p></div></details>
    <details><summary data-faq-q>Mon attestation remonte à 2022 : recyclage ou formation complète ?</summary><div data-faq-a><p>Tout dépend de la date exacte. L’attestation expire quatre ans jour pour jour après sa délivrance : si cette date n’est pas encore passée, réservez sans attendre le recyclage de 7 h ; si elle l’est, ce sont les 21 heures qu’il faut reprendre.</p></div></details>
    <details><summary data-faq-q>Le centre « Strasbourg-Schiltigheim » se trouve-t-il à Strasbourg ou à Schiltigheim ?</summary><div data-faq-a><p>Le centre porte ce double nom ; l’adresse exacte vous est transmise avec la confirmation de votre session, en même temps que les horaires.</p></div></details>
-   <details><summary data-faq-q>Des dates sont-elles déjà programmées à Reims, Metz ou Strasbourg-Schiltigheim ?</summary><div data-faq-a><p>Pas encore : ces trois centres fonctionnent sur demande. Prochaine date sur demande — on vous rappelle sous 48 h pour en convenir.</p></div></details>
+   <details><summary data-faq-q>Des dates sont-elles déjà programmées à Reims, Metz ou Strasbourg-Schiltigheim ?</summary><div data-faq-a><p>Pas encore : pour ces trois centres, il suffit de nous contacter, et une date se cale avec vous dans les 48 heures qui suivent.</p></div></details>
    <details><summary data-faq-q>Kiné libéral dans les Vosges : dois-je me rendre à Metz ?</summary><div data-faq-a><p>C’est notre centre le plus proche des Vosges. Si vous réunissez des confrères ou une équipe, une session intra peut aussi être organisée plus près de chez vous.</p></div></details>
    <details><summary data-faq-q>Pourquoi trois jours pour l’AFGSU 2 contre deux pour l’AFGSU 1 ?</summary><div data-faq-a><p>Parce que les publics et les objectifs diffèrent : le niveau 2, destiné aux soignants, ajoute des gestes avancés, l’usage du matériel d’urgence et un module sur les situations sanitaires exceptionnelles, soit 21 heures au lieu de 14.</p></div></details>
    <details><summary data-faq-q>Qu’observe le formateur pendant l’évaluation continue ?</summary><div data-faq-a><p>Vos gestes et vos décisions au fil des mises en situation simulées, sur les trois jours. Il n’existe pas d’examen final distinct : c’est l’ensemble du parcours, suivi en totalité, qui fonde la validation.</p></div></details>
@@ -552,8 +562,12 @@ footer nav{display:flex;gap:18px}
  <div class="w folio">
   <div>
    <div class="sec-h" data-ink><span class="k">Bulletin d’inscription</span><h2 id="h-bul">À remplir à la plume, ou presque</h2><p>Wafa vous recontacte pour arrêter la date et le lieu, et vérifier avec vous les pièces et le financement.</p></div>
-   <!-- TODO : brancher l'envoi effectif du bulletin (endpoint CRM / service mail). action="#" en attendant. -->
-   <form class="plate bull" action="#" method="post" data-lead id="lead">
+   <!-- Envoi des demandes : Web3Forms (clé d’accès dans le champ access_key). -->
+   <form class="plate bull" action="https://api.web3forms.com/submit" method="POST" data-lead id="lead">
+    <input type="hidden" name="access_key" value="e4285b81-3704-4ac4-b5dc-411014b21fd4">
+    <input type="hidden" name="subject" value="Nouvelle demande · Formation AFGSU Grand Est">
+    <input type="hidden" name="from_name" value="Formation AFGSU Grand Est">
+    <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
     <input type="hidden" name="formation" value="AFGSU 2">
     <div class="full"><label for="b-nom">Nom &amp; prénom</label><input id="b-nom" name="nom" autocomplete="name" required aria-errormessage="b-nom-e"><p class="err" id="b-nom-e">Ce champ est requis.</p></div>
     <div><label for="b-tel">Téléphone</label><input id="b-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required pattern="(?:\+33\s?|0)[1-9](?:[\s.\-]?\d{2}){4}" aria-errormessage="b-tel-e"><p class="err" id="b-tel-e">Exemple de format : 03 87 00 00 00.</p></div>
@@ -561,8 +575,9 @@ footer nav{display:flex;gap:18px}
     <div><label for="b-pro">Profession</label><select id="b-pro" name="profession" required aria-errormessage="b-pro-e"><option value="">— choisir —</option><option>Médecin</option><option>Infirmier·ère libéral·e</option><option>Infirmier·ère salarié·e</option><option>Aide-soignant·e</option><option>Sage-femme</option><option>Masseur-kinésithérapeute</option><option>Pharmacien·ne</option><option>Préparateur·rice en pharmacie</option><option>Ambulancier·ère</option><option>Auxiliaire de puériculture</option><option>Manipulateur·rice radio</option><option>Chirurgien-dentiste</option><option>Étudiant·e en santé</option><option>AES / AMP</option><option>Assistant·e de régulation médicale</option><option>Assistant·e médical·e</option><option>Préleveur·se sanguin·e</option><option>Auxiliaire ambulancier·ère</option><option>Autre profession de santé (4e partie du CSP)</option><option>Personnel non soignant (AFGSU 1)</option></select><p class="err" id="b-pro-e">Profession à préciser.</p></div>
     <div><label for="b-centre">Centre / ville</label><select id="b-centre" name="centre" required aria-errormessage="b-centre-e"><option value="">— choisir —</option><option>Strasbourg-Schiltigheim</option><option>Metz</option><option>Reims</option><option value="Intra">Intra, dans notre structure</option></select><p class="err" id="b-centre-e">Centre à préciser.</p></div>
     <div class="full"><label for="b-msg">Message (facultatif)</label><textarea id="b-msg" name="message" placeholder="Disponibilités, remplacement à prévoir, financement…"></textarea></div>
-    <div class="full chk"><input type="checkbox" id="b-rgpd" name="rgpd" required><label for="b-rgpd">Je consens à ce que Planche 21 utilise ces données pour le seul suivi de mon inscription. <a href="#">Politique de confidentialité</a></label></div>
+    <div class="full chk"><input type="checkbox" id="b-rgpd" name="rgpd" required><label for="b-rgpd">Je consens à ce que Formation AFGSU Grand Est utilise ces données pour le seul suivi de mon inscription. <a href="#">Politique de confidentialité</a></label></div>
     <div class="full"><button class="lab" type="submit">Signer et envoyer le bulletin</button></div>
+    <p class="send-err" role="alert" data-send-err hidden>Le bulletin n’a pu être expédié. Renouvelez l’envoi, ou joignez-nous par téléphone. 07 80 91 23 35.</p>
    </form>
    <div class="plate seal" data-success hidden tabindex="-1">
     <svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="54" fill="var(--verm)"/><circle cx="60" cy="60" r="44" fill="none" stroke="var(--parch)" stroke-dasharray="3 4"/><text x="60" y="68" text-anchor="middle" style="font:700 26px var(--serif);fill:var(--parch)">Reçu</text></svg>
@@ -587,8 +602,8 @@ footer nav{display:flex;gap:18px}
 
 <footer>
  <div class="w">
-  <span>© 2026 Planche 21 by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
-  <nav aria-label="Mentions"><a href="#">Mentions légales</a><a href="#">CGV</a><a href="#">Accessibilité</a></nav>
+  <span>© 2026 Formation AFGSU Grand Est by DIGIVODA · <a href="mailto:contact@digivoda.com">contact@digivoda.com</a></span>
+  <nav aria-label="Mentions"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="#">Accessibilité</a></nav>
  </div>
 </footer>
 
@@ -603,12 +618,13 @@ const SESSIONS = [
   { ville: "Strasbourg-Schiltigheim", dept: "67", region: "Grand Est", n: 1, dates: [] },
   { ville: "Metz",                    dept: "57", region: "Grand Est", n: 2, dates: [] },
   { ville: "Reims",                   dept: "51", region: "Grand Est", n: 3, dates: [] },
-  // Référence : sessions confirmées hors région
-  { ville: "Palaiseau",               dept: "91", region: "Île-de-France", dates: [["2026-11-16","2026-11-18"],["2026-12-14","2026-12-16"],["2026-12-28","2026-12-30"]] }
 ];
-const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
+const SUR_DEMANDE = "Nous contacter";
 /* =========================================================================== */
 (() => {
+
+  /* médias : déposez les images dans /media avec le nom indiqué par data-file */
+  document.querySelectorAll('.img-ph[data-file]').forEach(el => { const im = new Image(); im.onload = () => { el.style.backgroundImage = `url("${el.dataset.file}")`; el.classList.add('has-img'); }; im.src = el.dataset.file; });
   const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const MOIS = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
@@ -616,7 +632,7 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const today = new Date(); today.setHours(0, 0, 0, 0);
   const fut = s => s.dates.filter(d => D(d[1]) >= today);
   const f = ([a, b]) => { const A = D(a), B = D(b); return `${A.getDate()}${A.getMonth() !== B.getMonth() ? ' ' + MOIS[A.getMonth()] : ''} – ${B.getDate()} ${MOIS[B.getMonth()]} ${B.getFullYear()}`; };
-  $('#index').innerHTML = SESSIONS.filter(s => s.region === 'Grand Est').map(s => { const u = fut(s); return `<li><span class="nm"><b>${s.n}</b>${s.ville}</span><span class="dots"></span><span class="st">${u.length ? u.map(f).join(' ; ') : 'sur demande'}</span><a href="#bulletin" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'réserver' : 'demander'}</a></li>`; }).join('') + `<li><span class="st" style="font-size:.95rem">${SUR_DEMANDE}</span></li>`;
+  $('#index').innerHTML = SESSIONS.filter(s => s.region === 'Grand Est').map(s => { const u = fut(s); return `<li><span class="nm"><b>${s.n}</b>${s.ville}</span><span class="dots"></span><span class="st">${u.length ? u.map(f).join(' ; ') : 'nous contacter'}</span><a href="#bulletin" data-centre="${s.ville}" data-formation="AFGSU 2">${u.length ? 'réserver' : 'contacter'}</a></li>`; }).join('') + `<li><span class="st" style="font-size:.95rem">${SUR_DEMANDE}</span></li>`;
   const ext = SESSIONS.filter(s => s.region !== 'Grand Est' && fut(s).length);
   if (ext.length) $('#ext').textContent = 'Hors région, sessions déjà arrêtées : ' + ext.map(s => `${s.ville} (${s.dept}), ${fut(s).map(f).join(' ; ')}`).join(' · ') + '.';
 
@@ -653,10 +669,16 @@ const SUR_DEMANDE = "Prochaine date sur demande — on vous rappelle sous 48 h";
   const sync = el => el.willValidate && el.setAttribute('aria-invalid', el.matches(':user-invalid'));
   form.addEventListener('blur', e => sync(e.target), true);
   form.addEventListener('input', e => { if (e.target.hasAttribute('aria-invalid')) sync(e.target); });
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    // TODO : envoyer le bulletin (fetch POST) puis afficher le sceau de confirmation.
-    form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    const btn = form.querySelector('[type=submit]'), err = form.querySelector('[data-send-err]');
+    err.hidden = true; btn.disabled = true;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok || !j.success) throw new Error(j.message || r.status);
+      form.hidden = true; const ok = $('[data-success]'); ok.hidden = false; ok.focus();
+    } catch (x) { err.hidden = false; btn.disabled = false; }
   });
 })();
 </script>
