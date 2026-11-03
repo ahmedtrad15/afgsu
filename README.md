@@ -3,7 +3,7 @@
 Each folder is a standalone site:
 
 - `index.html`: HTML, CSS and vanilla JS inline. Google Fonts is the only external dependency.
-- `mentions-legales.html` and `cgv.html`: the legal pages linked from the footer.
+- `mentions-legales.html` and `cgv.html`: the legal pages linked from the footer. They carry DIGIVODA's mentions légales and CGV word for word, styled like each site. The same text is in all 22 pages, so any change must be made in every folder.
 - `media/`: logos, favicons and the site's photos.
 
 The `photos-sources/` folder at the root holds the original uploaded photos. It is not part of any site: don't deploy it.
@@ -55,6 +55,7 @@ Each site shows 4 to 6 photos: its existing photo slots, plus a strip of 3 capti
 
 ## Still to do
 
-- **Mentions légales & CGV:** the pages exist and are linked from every footer, but **they don't contain DIGIVODA's text yet** (this environment couldn't reach digivoda.com). Once the texts are available they get inserted into all 22 pages at once.
+- **Legal pages, to check:** the « Hébergement » section names Hostinger (hosting) and OVHcloud (domain), as on digivoda.com. Adjust it if these sites are hosted elsewhere. The privacy section does not mention Web3Forms, which relays the form submissions.
+- **Payment in 4x:** every site advertises « paiement en 4x sans frais », but the CGV only lists card and bank transfer, paid before the course starts. Align one or the other.
 - `og:image`: add `media/og-image.jpg` (1200 × 630) and un-comment the line in each `<head>`.
 - National → regional links: replace the `.example` URLs in `11-france`.
