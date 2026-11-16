@@ -6,16 +6,13 @@
 <title>Formations AFGSU 2 - Étudiants en santé | 3 jours, 385 €</title>
 <meta name="description" content="AFGSU 2 pour étudiants en santé : validez l&#x27;attestation avant vos stages ou en rattrapage. 21 h sur 3 jours, 385 € TTC. Choisissez votre session.">
 <meta name="robots" content="index,follow">
-<!-- [À COMPLÉTER] : remplacer l’URL provisoire ci-dessous (canonical, Open Graph, JSON-LD) par l’adresse définitive du site -->
-<link rel="canonical" href="https://a-completer.example/afgsu-2-etudiants-sante/">
 <meta name="theme-color" content="#237256">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Formations AFGSU 2 - Étudiants en santé">
 <meta property="og:title" content="AFGSU 2 étudiant : l&#x27;attestation avant vos stages ou en rattrapage">
 <meta property="og:description" content="AFGSU 2 pour étudiants en santé : validez l&#x27;attestation avant vos stages ou en rattrapage. 21 h sur 3 jours, 385 € TTC. Choisissez votre session.">
-<meta property="og:url" content="https://a-completer.example/afgsu-2-etudiants-sante/">
-<meta property="og:image" content="https://a-completer.example/afgsu-2-etudiants-sante/media/formation-afgsu-2-etudiants-sante-stage-1200.jpg">
+<meta property="og:image" content="./media/formation-afgsu-2-etudiants-sante-stage-1200.jpg">
 <meta property="og:image:alt" content="Deux étudiants en santé en blouse qui consultent une tablette pendant leur stage">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AFGSU 2 étudiant : l&#x27;attestation avant vos stages ou en rattrapage">
@@ -71,6 +68,14 @@ dialog ul{padding-left:1.2em}
 .etu-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
 .etu-photo-hero .etu-hero-badge{max-width:calc(70% - 10px)}
 @media (max-width:640px){.etu-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.etu-ad-top{top:-24px;bottom:auto}.etu-ad-solo{width:150px}.etu-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.etu-hv{max-width:100%;margin:0 auto 34px;position:relative;isolation:isolate;width:clamp(250px,30vw,360px);align-self:center;justify-self:center;flex:0 0 auto}
+.etu-hv::before{content:"";position:absolute;inset:28px 28px -22px -22px;border-radius:40px;background:#237256;opacity:.18;z-index:-1}
+.etu-hv-frame{position:relative;aspect-ratio:9 / 16;border-radius:32px;overflow:hidden;background:#0d1117;border:8px solid #0d1117;box-shadow:0 40px 70px -30px rgba(12,22,38,.7),0 0 0 1px rgba(255,255,255,.06)}
+.etu-hv-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.etu-hv .etu-ad-sound{right:12px;bottom:12px;width:44px;height:44px}
+.etu-hv .etu-hero-badge{left:-34px;bottom:64px;max-width:calc(100% + 10px)}
+.etu-reel-frame{width:min(360px,80vw)!important}
+@media (max-width:640px){.etu-hv{width:min(310px,80vw)}.etu-hv::before{inset:18px 18px -10px -10px}.etu-hv .etu-hero-badge{left:-8px;bottom:58px}}
 .etu-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
 .etu-adband .etu-reel{justify-content:center}
 .etu-reel-frame{position:relative}
@@ -145,7 +150,8 @@ main{padding:20px 0 40px}
 .etu-tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--etu-gd);background:var(--etu-gl);border-radius:999px;padding:3px 10px;margin-bottom:10px}
 /* hero en cartes */
 .etu-hero{display:grid;gap:16px}
-@media (min-width:920px){.etu-hero{grid-template-columns:1.5fr 1fr}}
+@media (min-width:920px){.etu-hero{grid-template-columns:1.5fr auto;align-items:center}.etu-dates{grid-column:1 / -1}}
+.etu-hero .etu-hv{margin:10px 26px 34px}
 .etu-hero-main{padding:30px}
 .etu-lead{font-size:1.08rem;color:var(--etu-mut)}
 .etu-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0}
@@ -218,10 +224,10 @@ main{padding:20px 0 40px}
  "@graph": [
   {
    "@type": "Organization",
-   "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#organisation",
+   "@id": "./#organisation",
    "name": "Formations AFGSU 2 - Étudiants en santé",
-   "url": "https://a-completer.example/afgsu-2-etudiants-sante/",
-   "logo": "https://a-completer.example/afgsu-2-etudiants-sante/logo.svg",
+   "url": "./",
+   "logo": "./logo.svg",
    "telephone": "+33780912335",
    "contactPoint": {
     "@type": "ContactPoint",
@@ -248,63 +254,63 @@ main{padding:20px 0 40px}
   },
   {
    "@type": "WebSite",
-   "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#website",
-   "url": "https://a-completer.example/afgsu-2-etudiants-sante/",
+   "@id": "./#website",
+   "url": "./",
    "name": "Formations AFGSU 2 - Étudiants en santé",
    "inLanguage": "fr-FR",
    "publisher": {
-    "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#organisation"
+    "@id": "./#organisation"
    }
   },
   {
    "@type": "WebPage",
-   "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#webpage",
-   "url": "https://a-completer.example/afgsu-2-etudiants-sante/",
+   "@id": "./#webpage",
+   "url": "./",
    "name": "Formations AFGSU 2 - Étudiants en santé | 3 jours, 385 €",
    "description": "AFGSU 2 pour étudiants en santé : validez l'attestation avant vos stages ou en rattrapage. 21 h sur 3 jours, 385 € TTC. Choisissez votre session.",
    "inLanguage": "fr-FR",
    "isPartOf": {
-    "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#website"
+    "@id": "./#website"
    },
    "about": {
-    "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#formation"
+    "@id": "./#formation"
    },
    "breadcrumb": {
-    "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#fil-ariane"
+    "@id": "./#fil-ariane"
    },
-   "primaryImageOfPage": "https://a-completer.example/afgsu-2-etudiants-sante/media/formation-afgsu-2-etudiants-sante-stage-1200.jpg",
+   "primaryImageOfPage": "./media/formation-afgsu-2-etudiants-sante-stage-1200.jpg",
    "video": {
-    "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#video"
+    "@id": "./#video"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#fil-ariane",
+   "@id": "./#fil-ariane",
    "itemListElement": [
     {
      "@type": "ListItem",
      "position": 1,
      "name": "Accueil",
-     "item": "https://a-completer.example/afgsu-2-etudiants-sante/"
+     "item": "./"
     },
     {
      "@type": "ListItem",
      "position": 2,
      "name": "AFGSU 2 étudiants en santé",
-     "item": "https://a-completer.example/afgsu-2-etudiants-sante/#programme"
+     "item": "./#programme"
     }
    ]
   },
   {
    "@type": "Course",
-   "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#formation",
+   "@id": "./#formation",
    "name": "AFGSU 2 pour les étudiants en santé",
    "description": "Formation AFGSU de niveau 2 de 21 heures sur 3 jours pour les étudiants des filières de santé : avant les stages ou en rattrapage. Attestation délivrée par le CESU, valable 4 ans.",
    "provider": {
-    "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#organisation"
+    "@id": "./#organisation"
    },
    "inLanguage": "fr",
-   "image": "https://a-completer.example/afgsu-2-etudiants-sante/media/formation-afgsu-2-etudiants-sante-stage-1200.jpg",
+   "image": "./media/formation-afgsu-2-etudiants-sante-stage-1200.jpg",
    "timeRequired": "PT21H",
    "educationalCredentialAwarded": "Attestation de Formation aux Gestes et Soins d’Urgence de niveau 2, délivrée par le CESU",
    "audience": {
@@ -317,7 +323,7 @@ main{padding:20px 0 40px}
     "priceCurrency": "EUR",
     "category": "Paid",
     "availability": "https://schema.org/InStock",
-    "url": "https://a-completer.example/afgsu-2-etudiants-sante/#tarif"
+    "url": "./#tarif"
    },
    "hasCourseInstance": [
     {
@@ -344,7 +350,7 @@ main{padding:20px 0 40px}
   },
   {
    "@type": "FAQPage",
-   "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#faq",
+   "@id": "./#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -462,13 +468,13 @@ main{padding:20px 0 40px}
   },
   {
    "@type": "VideoObject",
-   "@id": "https://a-completer.example/afgsu-2-etudiants-sante/#video",
+   "@id": "./#video",
    "name": "Étudiant en santé : l'AFGSU 2 est obligatoire",
    "description": "Le rappel en vidéo courte : l'AFGSU 2 fait partie de votre cursus.",
-   "thumbnailUrl": "https://a-completer.example/afgsu-2-etudiants-sante/media/video-afgsu-2-etudiant-sante-poster.jpg",
+   "thumbnailUrl": "./media/video-afgsu-2-etudiant-sante-poster.jpg",
    "uploadDate": "2026-11-16",
    "duration": "PT7S",
-   "contentUrl": "https://a-completer.example/afgsu-2-etudiants-sante/media/video-afgsu-2-etudiant-sante.mp4",
+   "contentUrl": "./media/video-afgsu-2-etudiant-sante.mp4",
    "inLanguage": "fr"
   }
  ]
@@ -501,6 +507,7 @@ main{padding:20px 0 40px}
     <p class="etu-price"><span class="etu-sr">Prix : ancien tarif </span><del>450 €</del> <strong>385 € TTC</strong></p>
     <div class="etu-ctas"><a class="etu-btn" href="#inscription">Réserver ma session</a><a class="etu-btn etu-btn-line" href="#inscription" data-rappel>Être rappelé</a></div>
   </section>
+  <figure class="etu-hv" data-slot="hero"><div class="etu-hv-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-etudiant-sante-poster.jpg" width="720" height="1280" aria-label="Étudiant en santé : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-etudiant-sante.mp4" type="video/mp4"></video><button type="button" class="etu-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div><figcaption class="etu-hero-badge"><span class="etu-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
   <aside class="etu-card etu-dates" aria-labelledby="etu-dates-t">
     <h2 id="etu-dates-t">Quand la caser dans votre année&nbsp;?</h2>
     <ol>
@@ -512,16 +519,6 @@ main{padding:20px 0 40px}
     <p>Dates exactes par ville sur demande&nbsp;: <a href="#inscription">recevoir le calendrier</a>.</p>
   </aside>
 </div>
-
-<!-- ===== Vidéo (haut de page) ===== -->
-<section class="etu-adband" aria-label="Vidéo de présentation">
-<figure class="etu-reel">
-  <div class="etu-reel-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-etudiant-sante-poster.jpg" width="720" height="1280" aria-label="Étudiant en santé : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-etudiant-sante.mp4" type="video/mp4"></video><button type="button" class="etu-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
-  <figcaption><span class="etu-reel-title">Étudiant en santé : l&#x27;AFGSU 2 est obligatoire</span><span class="etu-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 fait partie de votre cursus.</span>
-    <span class="etu-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="etu-btn etu-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure>
-</section>
 
 <!-- ===== En bref ===== -->
 <section class="etu-card etu-brief etu-sec" aria-labelledby="etu-bref">
@@ -691,7 +688,7 @@ main{padding:20px 0 40px}
 </ul>
   <p>Directeur de la publication : le représentant légal de DIGIVODA.</p>
   <h3>Hébergeur</h3>
-  <p>[À COMPLÉTER : raison sociale, adresse et téléphone de l’hébergeur]</p>
+  <p>Hostinger International Ltd, 61 Lordou Vironos Street, 6023 Larnaca, Chypre. Site : <a href="https://www.hostinger.fr" rel="noopener">www.hostinger.fr</a></p>
   <h3>Propriété intellectuelle</h3>
   <p>Les textes, logos, pictogrammes, mises en page et contenus de ce site sont protégés par le droit de la propriété intellectuelle. Toute reproduction, représentation ou adaptation, totale ou partielle, sans l’autorisation écrite préalable de DIGIVODA est interdite et peut constituer une contrefaçon (articles L335-2 et suivants du Code de la propriété intellectuelle).</p>
   <h3>Données personnelles</h3>
@@ -746,7 +743,7 @@ main{padding:20px 0 40px}
   <h3>Article 14 — Réclamations</h3>
   <p>Toute réclamation est adressée par écrit à contact@digivoda.com. DIGIVODA en accuse réception sous 7 jours ouvrés et apporte une réponse motivée dans un délai de 30 jours.</p>
   <h3>Article 15 — Droit applicable et litiges</h3>
-  <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
+  <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
 (function () {

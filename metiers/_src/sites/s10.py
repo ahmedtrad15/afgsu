@@ -105,7 +105,7 @@ a{color:var(--sf-pd)}
 /* hero éditorial */
 .sf-hero{padding:48px 0 40px;border-bottom:1px solid var(--sf-line)}
 .sf-hero-in{display:grid;gap:34px}
-@media (min-width:960px){.sf-hero-in{grid-template-columns:1fr 1.1fr .8fr;align-items:start}}
+@media (min-width:960px){.sf-hero-in{grid-template-columns:.9fr 1.1fr auto;align-items:start}}
 .sf-quote{margin:0;padding:0 0 0 22px;border-left:3px solid var(--sf-p);font-family:"Libre Baskerville",serif;font-style:italic;font-size:clamp(1.25rem,1.05rem + .7vw,1.55rem);line-height:1.5;color:var(--sf-pd)}
 .sf-quote p{margin:0 0 .6em}
 .sf-quote footer{font-family:"Libre Franklin",sans-serif;font-style:normal;font-size:.85rem;color:var(--sf-mut);letter-spacing:.06em;text-transform:uppercase}
@@ -209,8 +209,8 @@ a{color:var(--sf-pd)}
       <div class="sf-ctas"><a class="sf-btn" href="#inscription">Réserver ma session</a><a class="sf-btn sf-btn-line" href="#inscription" data-rappel>Être rappelé</a></div>
     </div>
     <div>
-      <ul class="sf-facts" aria-label="Faits clés"><li><span>Durée</span><b>21 h</b></li><li><span>Format</span><b>3 jours</b></li><li><span>Renouvellement</span><b>tous les 4 ans</b></li><li><span>Groupe</span><b>6 à 12</b></li><li><span>Attestation</span><b>CESU</b></li></ul>
       [[img:hero]]
+      <ul class="sf-facts" aria-label="Faits clés"><li><span>Durée</span><b>21 h</b></li><li><span>Format</span><b>3 jours</b></li><li><span>Renouvellement</span><b>tous les 4 ans</b></li><li><span>Groupe</span><b>6 à 12</b></li><li><span>Attestation</span><b>CESU</b></li></ul>
     </div>
   </div>
 </section>

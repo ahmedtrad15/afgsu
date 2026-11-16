@@ -6,16 +6,13 @@
 <title>Formations AFGSU 2 - Ambulanciers | 21 h, 385 € TTC</title>
 <meta name="description" content="AFGSU 2 ambulancier : arrêt cardiaque en transport, DAE embarqué, relevage, accouchement inopiné. 3 jours, 385 € TTC. Renouvelez à temps.">
 <meta name="robots" content="index,follow">
-<!-- [À COMPLÉTER] : remplacer l’URL provisoire ci-dessous (canonical, Open Graph, JSON-LD) par l’adresse définitive du site -->
-<link rel="canonical" href="https://a-completer.example/afgsu-2-ambulanciers/">
 <meta name="theme-color" content="#142d4c">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Formations AFGSU 2 - Ambulanciers">
 <meta property="og:title" content="AFGSU 2 ambulancier : formation initiale et renouvellement">
 <meta property="og:description" content="AFGSU 2 ambulancier : arrêt cardiaque en transport, DAE embarqué, relevage, accouchement inopiné. 3 jours, 385 € TTC. Renouvelez à temps.">
-<meta property="og:url" content="https://a-completer.example/afgsu-2-ambulanciers/">
-<meta property="og:image" content="https://a-completer.example/afgsu-2-ambulanciers/media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg">
+<meta property="og:image" content="./media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg">
 <meta property="og:image:alt" content="Deux ambulanciers en gilet réfléchissant qui prennent en charge un patient sur un brancard, de nuit, devant l&#x27;ambulance">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AFGSU 2 ambulancier : formation initiale et renouvellement">
@@ -71,6 +68,14 @@ dialog ul{padding-left:1.2em}
 .amb-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
 .amb-photo-hero .amb-hero-badge{max-width:calc(70% - 10px)}
 @media (max-width:640px){.amb-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.amb-ad-top{top:-24px;bottom:auto}.amb-ad-solo{width:150px}.amb-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.amb-hv{max-width:100%;margin:0 auto 34px;position:relative;isolation:isolate;width:clamp(250px,30vw,360px);align-self:center;justify-self:center;flex:0 0 auto}
+.amb-hv::before{content:"";position:absolute;inset:28px 28px -22px -22px;border-radius:40px;background:#142d4c;opacity:.18;z-index:-1}
+.amb-hv-frame{position:relative;aspect-ratio:9 / 16;border-radius:32px;overflow:hidden;background:#0d1117;border:8px solid #0d1117;box-shadow:0 40px 70px -30px rgba(12,22,38,.7),0 0 0 1px rgba(255,255,255,.06)}
+.amb-hv-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.amb-hv .amb-ad-sound{right:12px;bottom:12px;width:44px;height:44px}
+.amb-hv .amb-hero-badge{left:-34px;bottom:64px;max-width:calc(100% + 10px)}
+.amb-reel-frame{width:min(360px,80vw)!important}
+@media (max-width:640px){.amb-hv{width:min(310px,80vw)}.amb-hv::before{inset:18px 18px -10px -10px}.amb-hv .amb-hero-badge{left:-8px;bottom:58px}}
 .amb-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
 .amb-adband .amb-reel{justify-content:center}
 .amb-reel-frame{position:relative}
@@ -232,10 +237,10 @@ a{color:var(--amb-navy)}
  "@graph": [
   {
    "@type": "Organization",
-   "@id": "https://a-completer.example/afgsu-2-ambulanciers/#organisation",
+   "@id": "./#organisation",
    "name": "Formations AFGSU 2 - Ambulanciers",
-   "url": "https://a-completer.example/afgsu-2-ambulanciers/",
-   "logo": "https://a-completer.example/afgsu-2-ambulanciers/logo.svg",
+   "url": "./",
+   "logo": "./logo.svg",
    "telephone": "+33780912335",
    "contactPoint": {
     "@type": "ContactPoint",
@@ -262,63 +267,63 @@ a{color:var(--amb-navy)}
   },
   {
    "@type": "WebSite",
-   "@id": "https://a-completer.example/afgsu-2-ambulanciers/#website",
-   "url": "https://a-completer.example/afgsu-2-ambulanciers/",
+   "@id": "./#website",
+   "url": "./",
    "name": "Formations AFGSU 2 - Ambulanciers",
    "inLanguage": "fr-FR",
    "publisher": {
-    "@id": "https://a-completer.example/afgsu-2-ambulanciers/#organisation"
+    "@id": "./#organisation"
    }
   },
   {
    "@type": "WebPage",
-   "@id": "https://a-completer.example/afgsu-2-ambulanciers/#webpage",
-   "url": "https://a-completer.example/afgsu-2-ambulanciers/",
+   "@id": "./#webpage",
+   "url": "./",
    "name": "Formations AFGSU 2 - Ambulanciers | 21 h, 385 € TTC",
    "description": "AFGSU 2 ambulancier : arrêt cardiaque en transport, DAE embarqué, relevage, accouchement inopiné. 3 jours, 385 € TTC. Renouvelez à temps.",
    "inLanguage": "fr-FR",
    "isPartOf": {
-    "@id": "https://a-completer.example/afgsu-2-ambulanciers/#website"
+    "@id": "./#website"
    },
    "about": {
-    "@id": "https://a-completer.example/afgsu-2-ambulanciers/#formation"
+    "@id": "./#formation"
    },
    "breadcrumb": {
-    "@id": "https://a-completer.example/afgsu-2-ambulanciers/#fil-ariane"
+    "@id": "./#fil-ariane"
    },
-   "primaryImageOfPage": "https://a-completer.example/afgsu-2-ambulanciers/media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg",
+   "primaryImageOfPage": "./media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg",
    "video": {
-    "@id": "https://a-completer.example/afgsu-2-ambulanciers/#video"
+    "@id": "./#video"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://a-completer.example/afgsu-2-ambulanciers/#fil-ariane",
+   "@id": "./#fil-ariane",
    "itemListElement": [
     {
      "@type": "ListItem",
      "position": 1,
      "name": "Accueil",
-     "item": "https://a-completer.example/afgsu-2-ambulanciers/"
+     "item": "./"
     },
     {
      "@type": "ListItem",
      "position": 2,
      "name": "AFGSU 2 ambulanciers",
-     "item": "https://a-completer.example/afgsu-2-ambulanciers/#programme"
+     "item": "./#programme"
     }
    ]
   },
   {
    "@type": "Course",
-   "@id": "https://a-completer.example/afgsu-2-ambulanciers/#formation",
+   "@id": "./#formation",
    "name": "AFGSU 2 pour les ambulanciers",
    "description": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour ambulanciers : arrêt cardiaque pendant un transport, DAE embarqué, relevage et brancardage, accouchement inopiné, accident de la route. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
    "provider": {
-    "@id": "https://a-completer.example/afgsu-2-ambulanciers/#organisation"
+    "@id": "./#organisation"
    },
    "inLanguage": "fr",
-   "image": "https://a-completer.example/afgsu-2-ambulanciers/media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg",
+   "image": "./media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg",
    "timeRequired": "PT21H",
    "educationalCredentialAwarded": "Attestation de Formation aux Gestes et Soins d’Urgence de niveau 2, délivrée par le CESU",
    "audience": {
@@ -331,7 +336,7 @@ a{color:var(--amb-navy)}
     "priceCurrency": "EUR",
     "category": "Paid",
     "availability": "https://schema.org/InStock",
-    "url": "https://a-completer.example/afgsu-2-ambulanciers/#tarif"
+    "url": "./#tarif"
    },
    "hasCourseInstance": [
     {
@@ -358,7 +363,7 @@ a{color:var(--amb-navy)}
   },
   {
    "@type": "FAQPage",
-   "@id": "https://a-completer.example/afgsu-2-ambulanciers/#faq",
+   "@id": "./#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -476,13 +481,13 @@ a{color:var(--amb-navy)}
   },
   {
    "@type": "VideoObject",
-   "@id": "https://a-completer.example/afgsu-2-ambulanciers/#video",
+   "@id": "./#video",
    "name": "Ambulancier : votre AFGSU 2 doit être à jour",
    "description": "Le rappel en vidéo courte : l'AFGSU 2 se renouvelle tous les 4 ans.",
-   "thumbnailUrl": "https://a-completer.example/afgsu-2-ambulanciers/media/video-afgsu-2-ambulancier-poster.jpg",
+   "thumbnailUrl": "./media/video-afgsu-2-ambulancier-poster.jpg",
    "uploadDate": "2026-11-16",
    "duration": "PT7S",
-   "contentUrl": "https://a-completer.example/afgsu-2-ambulanciers/media/video-afgsu-2-ambulancier.mp4",
+   "contentUrl": "./media/video-afgsu-2-ambulancier.mp4",
    "inLanguage": "fr"
   }
  ]
@@ -512,7 +517,7 @@ a{color:var(--amb-navy)}
       <p class="amb-lead">Un arrêt cardiaque entre deux sorties d'autoroute, un relevage dans un escalier en colimaçon, une naissance qui n'attend pas la maternité. Vous connaissez ces moments. Trois jours pour remettre les gestes à niveau et repartir avec une attestation valable 4 ans.</p>
       <div class="amb-ctas"><a class="amb-btn" href="#inscription">Réserver ma session</a><a class="amb-btn amb-btn-w" href="#inscription" data-rappel>Être rappelé</a></div>
     </div>
-    <figure class="amb-photo amb-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg" srcset="media/formation-afgsu-2-ambulanciers-intervention-nuit-640.jpg 640w, media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 600px" width="1200" height="800" alt="Deux ambulanciers en gilet réfléchissant qui prennent en charge un patient sur un brancard, de nuit, devant l&#x27;ambulance" loading="eager" fetchpriority="high" decoding="async"><figcaption class="amb-hero-badge"><span class="amb-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption><div class="amb-ad"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-ambulancier-poster.jpg" width="720" height="1280" aria-label="Ambulancier : votre AFGSU 2 doit être à jour"><source src="media/video-afgsu-2-ambulancier.mp4" type="video/mp4"></video><button type="button" class="amb-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></figure>
+    <figure class="amb-hv" data-slot="hero"><div class="amb-hv-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-ambulancier-poster.jpg" width="720" height="1280" aria-label="Ambulancier : votre AFGSU 2 doit être à jour"><source src="media/video-afgsu-2-ambulancier.mp4" type="video/mp4"></video><button type="button" class="amb-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div><figcaption class="amb-hero-badge"><span class="amb-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
   </div>
   <div class="amb-wrap">
     <div class="amb-bar" role="region" aria-label="Faits clés">
@@ -698,7 +703,7 @@ a{color:var(--amb-navy)}
 </ul>
   <p>Directeur de la publication : le représentant légal de DIGIVODA.</p>
   <h3>Hébergeur</h3>
-  <p>[À COMPLÉTER : raison sociale, adresse et téléphone de l’hébergeur]</p>
+  <p>Hostinger International Ltd, 61 Lordou Vironos Street, 6023 Larnaca, Chypre. Site : <a href="https://www.hostinger.fr" rel="noopener">www.hostinger.fr</a></p>
   <h3>Propriété intellectuelle</h3>
   <p>Les textes, logos, pictogrammes, mises en page et contenus de ce site sont protégés par le droit de la propriété intellectuelle. Toute reproduction, représentation ou adaptation, totale ou partielle, sans l’autorisation écrite préalable de DIGIVODA est interdite et peut constituer une contrefaçon (articles L335-2 et suivants du Code de la propriété intellectuelle).</p>
   <h3>Données personnelles</h3>
@@ -753,7 +758,7 @@ a{color:var(--amb-navy)}
   <h3>Article 14 — Réclamations</h3>
   <p>Toute réclamation est adressée par écrit à contact@digivoda.com. DIGIVODA en accuse réception sous 7 jours ouvrés et apporte une réponse motivée dans un délai de 30 jours.</p>
   <h3>Article 15 — Droit applicable et litiges</h3>
-  <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
+  <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
 (function () {

@@ -115,6 +115,7 @@ a{color:var(--ad-md)}
 .ad-price strong{font-size:1.55rem;color:#26302f}
 .ad-ctas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:6px}
 .ad-hero-img{max-width:1000px;margin:56px auto 0;padding:0 20px}
+@media (min-width:960px){.ad-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:40px;padding:64px max(20px,calc((100% - 1180px) / 2)) 40px}.ad-hero-in{margin:0}.ad-hero-img{margin:0;padding:0}}
 /* sections alternées */
 .ad-sec{padding:72px 0}
 .ad-sec-w{background:#fff}

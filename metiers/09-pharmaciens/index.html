@@ -6,16 +6,13 @@
 <title>Formations AFGSU 2 - Pharmaciens | Officine, 385 € TTC</title>
 <meta name="description" content="AFGSU 2 pharmacien : malaise au comptoir, anaphylaxie après vaccination, arrêt cardiaque devant l&#x27;officine. 3 jours, 385 € TTC. Inscription.">
 <meta name="robots" content="index,follow">
-<!-- [À COMPLÉTER] : remplacer l’URL provisoire ci-dessous (canonical, Open Graph, JSON-LD) par l’adresse définitive du site -->
-<link rel="canonical" href="https://a-completer.example/afgsu-2-pharmaciens/">
 <meta name="theme-color" content="#17703d">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Formations AFGSU 2 - Pharmaciens">
 <meta property="og:title" content="AFGSU 2 pharmacien : les urgences de l&#x27;officine">
 <meta property="og:description" content="AFGSU 2 pharmacien : malaise au comptoir, anaphylaxie après vaccination, arrêt cardiaque devant l&#x27;officine. 3 jours, 385 € TTC. Inscription.">
-<meta property="og:url" content="https://a-completer.example/afgsu-2-pharmaciens/">
-<meta property="og:image" content="https://a-completer.example/afgsu-2-pharmaciens/media/formation-afgsu-2-pharmacien-officine-patiente-1200.jpg">
+<meta property="og:image" content="./media/formation-afgsu-2-pharmacien-officine-patiente-1200.jpg">
 <meta property="og:image:alt" content="Pharmacien en blouse qui conseille une patiente au comptoir de l&#x27;officine">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AFGSU 2 pharmacien : les urgences de l&#x27;officine">
@@ -71,6 +68,14 @@ dialog ul{padding-left:1.2em}
 .phar-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
 .phar-photo-hero .phar-hero-badge{max-width:calc(70% - 10px)}
 @media (max-width:640px){.phar-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.phar-ad-top{top:-24px;bottom:auto}.phar-ad-solo{width:150px}.phar-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.phar-hv{max-width:100%;margin:0 auto 34px;position:relative;isolation:isolate;width:clamp(250px,30vw,360px);align-self:center;justify-self:center;flex:0 0 auto}
+.phar-hv::before{content:"";position:absolute;inset:28px 28px -22px -22px;border-radius:40px;background:#17703d;opacity:.18;z-index:-1}
+.phar-hv-frame{position:relative;aspect-ratio:9 / 16;border-radius:32px;overflow:hidden;background:#0d1117;border:8px solid #0d1117;box-shadow:0 40px 70px -30px rgba(12,22,38,.7),0 0 0 1px rgba(255,255,255,.06)}
+.phar-hv-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.phar-hv .phar-ad-sound{right:12px;bottom:12px;width:44px;height:44px}
+.phar-hv .phar-hero-badge{left:-34px;bottom:64px;max-width:calc(100% + 10px)}
+.phar-reel-frame{width:min(360px,80vw)!important}
+@media (max-width:640px){.phar-hv{width:min(310px,80vw)}.phar-hv::before{inset:18px 18px -10px -10px}.phar-hv .phar-hero-badge{left:-8px;bottom:58px}}
 .phar-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
 .phar-adband .phar-reel{justify-content:center}
 .phar-reel-frame{position:relative}
@@ -214,10 +219,10 @@ main{counter-reset:sec}
  "@graph": [
   {
    "@type": "Organization",
-   "@id": "https://a-completer.example/afgsu-2-pharmaciens/#organisation",
+   "@id": "./#organisation",
    "name": "Formations AFGSU 2 - Pharmaciens",
-   "url": "https://a-completer.example/afgsu-2-pharmaciens/",
-   "logo": "https://a-completer.example/afgsu-2-pharmaciens/logo.svg",
+   "url": "./",
+   "logo": "./logo.svg",
    "telephone": "+33780912335",
    "contactPoint": {
     "@type": "ContactPoint",
@@ -244,63 +249,63 @@ main{counter-reset:sec}
   },
   {
    "@type": "WebSite",
-   "@id": "https://a-completer.example/afgsu-2-pharmaciens/#website",
-   "url": "https://a-completer.example/afgsu-2-pharmaciens/",
+   "@id": "./#website",
+   "url": "./",
    "name": "Formations AFGSU 2 - Pharmaciens",
    "inLanguage": "fr-FR",
    "publisher": {
-    "@id": "https://a-completer.example/afgsu-2-pharmaciens/#organisation"
+    "@id": "./#organisation"
    }
   },
   {
    "@type": "WebPage",
-   "@id": "https://a-completer.example/afgsu-2-pharmaciens/#webpage",
-   "url": "https://a-completer.example/afgsu-2-pharmaciens/",
+   "@id": "./#webpage",
+   "url": "./",
    "name": "Formations AFGSU 2 - Pharmaciens | Officine, 385 € TTC",
    "description": "AFGSU 2 pharmacien : malaise au comptoir, anaphylaxie après vaccination, arrêt cardiaque devant l'officine. 3 jours, 385 € TTC. Inscription.",
    "inLanguage": "fr-FR",
    "isPartOf": {
-    "@id": "https://a-completer.example/afgsu-2-pharmaciens/#website"
+    "@id": "./#website"
    },
    "about": {
-    "@id": "https://a-completer.example/afgsu-2-pharmaciens/#formation"
+    "@id": "./#formation"
    },
    "breadcrumb": {
-    "@id": "https://a-completer.example/afgsu-2-pharmaciens/#fil-ariane"
+    "@id": "./#fil-ariane"
    },
-   "primaryImageOfPage": "https://a-completer.example/afgsu-2-pharmaciens/media/formation-afgsu-2-pharmacien-officine-patiente-1200.jpg",
+   "primaryImageOfPage": "./media/formation-afgsu-2-pharmacien-officine-patiente-1200.jpg",
    "video": {
-    "@id": "https://a-completer.example/afgsu-2-pharmaciens/#video"
+    "@id": "./#video"
    }
   },
   {
    "@type": "BreadcrumbList",
-   "@id": "https://a-completer.example/afgsu-2-pharmaciens/#fil-ariane",
+   "@id": "./#fil-ariane",
    "itemListElement": [
     {
      "@type": "ListItem",
      "position": 1,
      "name": "Accueil",
-     "item": "https://a-completer.example/afgsu-2-pharmaciens/"
+     "item": "./"
     },
     {
      "@type": "ListItem",
      "position": 2,
      "name": "AFGSU 2 pharmaciens",
-     "item": "https://a-completer.example/afgsu-2-pharmaciens/#programme"
+     "item": "./#programme"
     }
    ]
   },
   {
    "@type": "Course",
-   "@id": "https://a-completer.example/afgsu-2-pharmaciens/#formation",
+   "@id": "./#formation",
    "name": "AFGSU 2 pour les pharmaciens et équipes officinales",
    "description": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour pharmaciens et préparateurs : malaise au comptoir, anaphylaxie après vaccination, arrêt cardiaque devant l'officine, hémorragie. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
    "provider": {
-    "@id": "https://a-completer.example/afgsu-2-pharmaciens/#organisation"
+    "@id": "./#organisation"
    },
    "inLanguage": "fr",
-   "image": "https://a-completer.example/afgsu-2-pharmaciens/media/formation-afgsu-2-pharmacien-officine-patiente-1200.jpg",
+   "image": "./media/formation-afgsu-2-pharmacien-officine-patiente-1200.jpg",
    "timeRequired": "PT21H",
    "educationalCredentialAwarded": "Attestation de Formation aux Gestes et Soins d’Urgence de niveau 2, délivrée par le CESU",
    "audience": {
@@ -313,7 +318,7 @@ main{counter-reset:sec}
     "priceCurrency": "EUR",
     "category": "Paid",
     "availability": "https://schema.org/InStock",
-    "url": "https://a-completer.example/afgsu-2-pharmaciens/#tarif"
+    "url": "./#tarif"
    },
    "hasCourseInstance": [
     {
@@ -340,7 +345,7 @@ main{counter-reset:sec}
   },
   {
    "@type": "FAQPage",
-   "@id": "https://a-completer.example/afgsu-2-pharmaciens/#faq",
+   "@id": "./#faq",
    "mainEntity": [
     {
      "@type": "Question",
@@ -458,13 +463,13 @@ main{counter-reset:sec}
   },
   {
    "@type": "VideoObject",
-   "@id": "https://a-completer.example/afgsu-2-pharmaciens/#video",
+   "@id": "./#video",
    "name": "Pharmacien : l'AFGSU 2, c'est obligatoire",
    "description": "En quelques secondes : l'AFGSU 2 pour les pharmaciens d'officine.",
-   "thumbnailUrl": "https://a-completer.example/afgsu-2-pharmaciens/media/video-afgsu-2-pharmacien-poster.jpg",
+   "thumbnailUrl": "./media/video-afgsu-2-pharmacien-poster.jpg",
    "uploadDate": "2026-11-16",
    "duration": "PT7S",
-   "contentUrl": "https://a-completer.example/afgsu-2-pharmaciens/media/video-afgsu-2-pharmacien.mp4",
+   "contentUrl": "./media/video-afgsu-2-pharmacien.mp4",
    "inLanguage": "fr"
   }
  ]
@@ -497,7 +502,7 @@ main{counter-reset:sec}
         <p class="phar-price"><span class="phar-sr">Prix : ancien tarif </span><del>450 €</del> <strong>385 € TTC</strong></p>
         <div class="phar-ctas"><a class="phar-btn" href="#inscription">Réserver ma session</a><a class="phar-btn phar-btn-ghost" href="#inscription" data-rappel>Être rappelé</a></div>
       </div>
-      <figure class="phar-photo phar-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-pharmacien-officine-patiente-1200.jpg" srcset="media/formation-afgsu-2-pharmacien-officine-patiente-640.jpg 640w, media/formation-afgsu-2-pharmacien-officine-patiente-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="512" alt="Pharmacien en blouse qui conseille une patiente au comptoir de l&#x27;officine" loading="eager" fetchpriority="high" decoding="async"><figcaption class="phar-hero-badge"><span class="phar-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption><div class="phar-ad"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-pharmacien-poster.jpg" width="720" height="1280" aria-label="Pharmacien : l&#x27;AFGSU 2, c&#x27;est obligatoire"><source src="media/video-afgsu-2-pharmacien.mp4" type="video/mp4"></video><button type="button" class="phar-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></figure>
+      <figure class="phar-hv" data-slot="hero"><div class="phar-hv-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-pharmacien-poster.jpg" width="720" height="1280" aria-label="Pharmacien : l&#x27;AFGSU 2, c&#x27;est obligatoire"><source src="media/video-afgsu-2-pharmacien.mp4" type="video/mp4"></video><button type="button" class="phar-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div><figcaption class="phar-hero-badge"><span class="phar-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
     </div>
   </div>
 </section>
@@ -691,7 +696,7 @@ main{counter-reset:sec}
 </ul>
   <p>Directeur de la publication : le représentant légal de DIGIVODA.</p>
   <h3>Hébergeur</h3>
-  <p>[À COMPLÉTER : raison sociale, adresse et téléphone de l’hébergeur]</p>
+  <p>Hostinger International Ltd, 61 Lordou Vironos Street, 6023 Larnaca, Chypre. Site : <a href="https://www.hostinger.fr" rel="noopener">www.hostinger.fr</a></p>
   <h3>Propriété intellectuelle</h3>
   <p>Les textes, logos, pictogrammes, mises en page et contenus de ce site sont protégés par le droit de la propriété intellectuelle. Toute reproduction, représentation ou adaptation, totale ou partielle, sans l’autorisation écrite préalable de DIGIVODA est interdite et peut constituer une contrefaçon (articles L335-2 et suivants du Code de la propriété intellectuelle).</p>
   <h3>Données personnelles</h3>
@@ -746,7 +751,7 @@ main{counter-reset:sec}
   <h3>Article 14 — Réclamations</h3>
   <p>Toute réclamation est adressée par écrit à contact@digivoda.com. DIGIVODA en accuse réception sous 7 jours ouvrés et apporte une réponse motivée dans un délai de 30 jours.</p>
   <h3>Article 15 — Droit applicable et litiges</h3>
-  <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
+  <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
 (function () {
