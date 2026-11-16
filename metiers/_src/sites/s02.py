@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "page compacte en cartes, accent sur les fenêtres de session",
     "kw_main": "AFGSU 2 étudiant",
     "kw_secondary": ["formation AFGSU 2 étudiant infirmier", "AFGSU 2 étudiant en médecine", "AFGSU 2 rattrapage étudiant",
-                     "AFGSU 2 avant stage", "AFGSU 2 étudiant prix", "AFGSU 2 étudiant Toulouse / Bordeaux / Lille",
+                     "AFGSU 2 avant stage", "AFGSU 2 étudiant prix", "AFGSU 2 étudiant près de chez moi",
                      "AFGSU 2 obligatoire diplôme", "attestation gestes et soins d'urgence étudiant"],
     "kw_geo": ["Un étudiant en santé doit-il faire l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour un étudiant ?",
                "Peut-on rattraper l'AFGSU 2 hors de son école ?"],
     "breadcrumb": "AFGSU 2 étudiants en santé",
     "course_name": "AFGSU 2 pour les étudiants en santé",
     "course_desc": "Formation AFGSU de niveau 2 de 21 heures sur 3 jours pour les étudiants des filières de santé : avant les stages ou en rattrapage. Attestation délivrée par le CESU, valable 4 ans.",
-    "instances": ["Toulouse", "Bordeaux", "Lille", "Lyon"],
-    "city_hint": "Toulouse",
     "period_hint": "Ex. vacances de février, avant mon stage de mars",
     "msg_hint": "Votre filière, votre année, la date de votre prochain stage…",
     "form_submit": "Demander mes dates",
@@ -257,7 +255,7 @@ main{padding:20px 0 40px}
 <div class="etu-grid etu-g3 etu-sec">[[img:pratique-mannequin]][[img:groupe-formation]][[img:materiel]]</div>
 
 <!-- ===== Vidéo 1 ===== -->
-<section class="etu-card etu-sec" aria-labelledby="etu-v1"><h2 id="etu-v1">En vidéo : le malaise en stage</h2>[[video:video-1]]</section>
+<section class="etu-card etu-sec" aria-labelledby="etu-v1"><h2 id="etu-v1">En vidéo, avant votre prochain stage</h2>[[video:video-1]]</section>
 
 <!-- ===== Tarif ===== -->
 <section class="etu-card etu-sec" id="tarif" aria-labelledby="etu-tarif-t">
@@ -281,7 +279,7 @@ main{padding:20px 0 40px}
 <section class="etu-card etu-sec" id="sessions" aria-labelledby="etu-sess">
   <h2 id="etu-sess">Sessions partout en France, près de votre institut</h2>
   <p>Choisissez la ville la plus proche de votre IFSI, de votre faculté ou de votre lieu de stage.</p>
-  <ul class="etu-cities"><li>Toulouse</li><li>Bordeaux</li><li>Lille</li><li>Lyon</li><li>Paris</li><li>Marseille</li><li>Nantes</li><li>Rennes</li><li>Montpellier</li><li>Strasbourg</li><li>Nice</li><li>Reims</li><li>Grenoble</li><li>Tours</li></ul>
+  [[map]]
   <p><strong>Vous êtes un institut ?</strong> Nous formons vos promotions dans vos locaux, au rythme de votre calendrier d'alternance.</p>
 </section>
 
@@ -293,9 +291,6 @@ main{padding:20px 0 40px}
   <div class="etu-card etu-day"><h3><span>Jour 3</span>Se protéger et anticiper</h3><ul><li>Hygiène et accident d'exposition au sang</li><li>Accouchement inopiné</li><li>Plan blanc, NRBC-E, afflux de victimes</li><li>Évaluation des gestes, bilan</li></ul></div>
 </div>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="etu-card etu-sec" aria-labelledby="etu-v2"><h2 id="etu-v2">En vidéo : réagir à un AES</h2>[[video:video-2]]</section>
-
 <!-- ===== Réassurance ===== -->
 <h2 class="etu-sec-title" id="etu-garanties">Ce qui est garanti</h2>
 <div class="etu-grid etu-g4">
@@ -304,7 +299,6 @@ main{padding:20px 0 40px}
   <div class="etu-card etu-trust"><strong>Matériel pro</strong><p>Le même type de matériel que dans les services où vous ferez vos stages.</p></div>
   <div class="etu-card etu-trust"><strong>Attestation CESU</strong><p>Le document que votre institut attend.</p></div>
 </div>
-<div class="etu-card etu-reviews etu-sec" role="note">Avis stagiaires (à intégrer)</div>
 
 <!-- ===== FAQ ===== -->
 <h2 class="etu-sec-title" id="faq">Vos questions d'étudiant</h2>

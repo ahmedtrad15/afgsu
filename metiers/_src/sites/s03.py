@@ -15,14 +15,12 @@ SITE = {
     "kw_main": "formation AFGSU 2 technicien de laboratoire",
     "kw_secondary": ["AFGSU 2 technicien laboratoire prix", "AFGSU 2 préleveur", "AFGSU 2 prélèvement sanguin",
                      "AFGSU 2 laboratoire de biologie médicale", "renouvellement AFGSU 2 technicien de laboratoire",
-                     "AFGSU 2 technicien de laboratoire Lyon / Strasbourg", "attestation gestes et soins d'urgence technicien de laboratoire"],
+                     "AFGSU 2 technicien de laboratoire près de chez moi", "attestation gestes et soins d'urgence technicien de laboratoire"],
     "kw_geo": ["Un technicien de laboratoire doit-il faire l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour un technicien de laboratoire ?",
                "Que faire si un patient fait un malaise pendant une prise de sang ?"],
     "breadcrumb": "AFGSU 2 techniciens de laboratoire",
     "course_name": "AFGSU 2 pour les techniciens de laboratoire",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour techniciens de laboratoire de biologie médicale : malaise vagal, anaphylaxie, accident d'exposition au sang, chute en salle d'attente. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Lyon", "Strasbourg", "Nantes", "Paris"],
-    "city_hint": "Strasbourg",
     "msg_hint": "Prélèvements au laboratoire, à domicile, nombre de techniciens à former…",
     "form_submit": "Transmettre ma demande",
     "pict": '<path d="M12 3h8M13.5 3v9.5L6.4 25.2A2.6 2.6 0 0 0 8.7 29h14.6a2.6 2.6 0 0 0 2.3-3.8L18.5 12.5V3" fill="none" stroke="#5b4b8a" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/><path d="M9.6 20h12.8l2.4 4.6a1.4 1.4 0 0 1-1.2 2.1H8.4a1.4 1.4 0 0 1-1.2-2.1z" fill="#2fa3a3"/><circle cx="14" cy="16.5" r="1.1" fill="#2fa3a3"/>',
@@ -257,12 +255,12 @@ a{color:var(--lab-vd)}
       <div class="lab-mod"><h3>Module 3 · Risques collectifs et SSE <span>3 h 30</span></h3>
         <ul><li>Plan blanc</li><li>ORSAN</li><li>NRBC-E</li><li>Damage control</li><li>Attentats</li></ul>
         <p>Cas pratique : votre laboratoire est sollicité dans le cadre d'une situation sanitaire exceptionnelle. Vous situez votre rôle et les règles de protection face à un risque biologique.</p></div>
-      <div class="lab-duo">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
+      [[wide:pratique-mannequin]]
     </section>
 
     <section aria-labelledby="lab-v1t">
       <span class="lab-sec-n">04 · Démonstration</span>
-      <h2 id="lab-v1t">Vidéo : le malaise vagal pas à pas</h2>
+      <h2 id="lab-v1t">Prélèvements : le rappel en vidéo</h2>
       [[video:video-1]]
     </section>
 
@@ -286,7 +284,7 @@ a{color:var(--lab-vd)}
       <span class="lab-sec-n">06 · Lieux</span>
       <h2 id="lab-sess">Lieux de session, partout en France</h2>
       <p>Formations interlaboratoires dans les grandes villes, ou sur site pour votre équipe.</p>
-      <ul class="lab-cities"><li>Lyon</li><li>Strasbourg</li><li>Nantes</li><li>Paris</li><li>Lille</li><li>Marseille</li><li>Toulouse</li><li>Bordeaux</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li></ul>
+      [[map]]
       <p><strong>Dans votre laboratoire :</strong> nous intervenons sur votre plateau technique ou dans l'un de vos sites de prélèvement.</p>
     </section>
 
@@ -304,12 +302,6 @@ a{color:var(--lab-vd)}
       </table></div>
     </section>
 
-    <section aria-labelledby="lab-v2t">
-      <span class="lab-sec-n">08 · Démonstration</span>
-      <h2 id="lab-v2t">Vidéo : l'accident d'exposition au sang</h2>
-      [[video:video-2]]
-    </section>
-
     <section aria-labelledby="lab-garanties">
       <span class="lab-sec-n">09 · Garanties</span>
       <h2 id="lab-garanties">Encadrement et matériel</h2>
@@ -323,7 +315,6 @@ a{color:var(--lab-vd)}
         </tbody>
       </table></div>
       [[img:situation-metier]]
-      <div class="lab-reviews" role="note">Avis stagiaires (à intégrer)</div>
     </section>
 
     <section id="faq" aria-labelledby="lab-faq">

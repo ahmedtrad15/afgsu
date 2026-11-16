@@ -15,7 +15,8 @@
 <meta property="og:title" content="AFGSU 2 pour les professionnels de santé diplômés à l&#x27;étranger">
 <meta property="og:description" content="AFGSU 2 pour diplômés en santé à l&#x27;étranger : 3 jours pour maîtriser l&#x27;urgence à la française (15, 112, chariot). 385 € TTC. Demandez votre session.">
 <meta property="og:url" content="https://a-completer.example/afgsu-2-diplomes-sante-etranger/">
-<!-- [À COMPLÉTER] image de partage 1200×630 : <meta property="og:image" content="https://a-completer.example/afgsu-2-diplomes-sante-etranger/og-image.jpg"> -->
+<meta property="og:image" content="https://a-completer.example/afgsu-2-diplomes-sante-etranger/media/formation-afgsu-2-diplome-sante-etranger-medecin-1200.jpg">
+<meta property="og:image:alt" content="Médecin en blouse blanche, bras croisés, stéthoscope à la main, prêt à exercer en France">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AFGSU 2 pour les professionnels de santé diplômés à l&#x27;étranger">
 <meta name="twitter:description" content="AFGSU 2 pour diplômés en santé à l&#x27;étranger : 3 jours pour maîtriser l&#x27;urgence à la française (15, 112, chariot). 385 € TTC. Demandez votre session.">
@@ -44,14 +45,43 @@ dialog h3{font-size:1.05rem;margin-top:1.4em}
 dialog ul{padding-left:1.2em}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
-/* ---- Emplacements médias ---- */
-.dse-ph{margin:0;position:relative;overflow:hidden;background:#f6f0e4;border:1px dashed #c47f2c;border-radius:var(--dse-radius,8px);width:100%}
-.dse-ph-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:18px;text-align:center;background:repeating-linear-gradient(135deg,transparent 0 14px,#c47f2c22 14px 15px)}
-.dse-ph-txt{font-size:.85rem;line-height:1.45;color:#1f3a5f;max-width:34ch;background:#f6f0e4;padding:6px 10px;border-radius:4px}
-.dse-vid{margin:0}
-.dse-vid-frame{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;background:#1f3a5f;color:#f6f0e4;border-radius:var(--dse-radius,8px);width:100%;font-size:.9rem}
-.dse-vid-title{font-weight:600;margin:12px 0 4px}
-.dse-vid-desc{font-size:.92rem;margin:0;opacity:.9}
+/* ---- Photos, vidéo, carte ---- */
+.dse-photo{margin:0;position:relative;overflow:hidden;border-radius:var(--dse-radius,12px);background:#f6f0e4;box-shadow:0 22px 44px -26px rgba(12,22,38,.55),0 2px 6px rgba(12,22,38,.08);width:100%}
+.dse-photo img{display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.dse-photo:hover img{transform:scale(1.03)}
+.dse-photo-wide{margin-top:28px}
+.dse-photo-wide img{aspect-ratio:12 / 5}
+@media (max-width:640px){.dse-photo-wide img{aspect-ratio:3 / 2}}
+.dse-photo-hero{overflow:visible;background:none;box-shadow:none;isolation:isolate;align-self:center;height:auto}
+.dse-photo-hero::before{content:"";position:absolute;inset:22px -16px -16px 22px;border-radius:calc(var(--dse-radius,12px) + 6px);background:#1f3a5f;opacity:.16;z-index:-1}
+.dse-photo-hero img{aspect-ratio:4 / 3;border-radius:var(--dse-radius,12px);box-shadow:0 28px 56px -28px rgba(12,22,38,.6)}
+.dse-photo-hero:hover img{transform:none}
+.dse-hero-badge{position:absolute;left:-14px;bottom:26px;display:flex;gap:10px;align-items:center;background:#fff;color:#1a1f26;border-radius:12px;padding:10px 16px 10px 10px;box-shadow:0 14px 34px -14px rgba(12,22,38,.5);font-size:.84rem;line-height:1.3;max-width:calc(100% - 24px)}
+.dse-hero-badge b{display:block;font-weight:600}
+.dse-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#1f3a5f;color:#fff;display:flex;align-items:center;justify-content:center}
+@media (max-width:640px){.dse-hero-badge{left:10px;bottom:12px}.dse-photo-hero::before{inset:14px -8px -8px 14px}}
+.dse-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
+.dse-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
+.dse-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.dse-reel figcaption{display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:40ch;flex:1 1 240px}
+.dse-reel-title{font-weight:600;font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.3}
+.dse-reel-desc{font-size:1rem;opacity:.85}
+.dse-reel-pts{display:flex;flex-direction:column;gap:8px;margin:6px 0 8px}
+.dse-reel-pts span{display:flex;gap:10px;align-items:center;font-size:.97rem}
+.dse-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#1f3a5f;box-shadow:0 0 0 4px #1f3a5f22}
+.dse-reel-cta{margin-top:4px}
+@media (max-width:640px){.dse-reel{flex-direction:column;align-items:flex-start}}
+.dse-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
+.dse-map svg{display:block;width:100%;height:auto;overflow:visible}
+.dse-map-land{fill:#f6f0e4;stroke:#1f3a5f;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
+.dse-map-dot{fill:#1f3a5f;stroke:#fff;stroke-width:3}
+.dse-map-ring{fill:#1f3a5f;opacity:0;transform-box:fill-box;transform-origin:center;animation:dse-pulse 4s ease-out infinite}
+@keyframes dse-pulse{0%{opacity:.35;transform:scale(1)}70%{opacity:0;transform:scale(3.4)}100%{opacity:0;transform:scale(3.4)}}
+.dse-map figcaption{display:flex;flex-direction:column;gap:4px;font-size:.92rem;margin-top:12px;color:#3a414b}
+.dse-map-leg{display:flex;align-items:center;gap:8px;font-weight:600;color:#1a1f26}
+.dse-map-leg i{width:12px;height:12px;border-radius:50%;background:#1f3a5f;box-shadow:0 0 0 3px #fff,0 0 0 4px #1f3a5f}
+.dse-body .dse-btn{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.dse-body .dse-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -12px rgba(12,22,38,.55);filter:saturate(1.08)}
 .dse-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (max-width:520px){.dse-tel-num{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.dse-tel{width:46px;height:46px;justify-content:center;border:1px solid currentColor;border-radius:50%;padding:0!important}.dse-brand-txt{font-size:.9rem}.dse-brand{flex:1 1 0;min-width:0}}
 
@@ -254,6 +284,10 @@ a{color:var(--dse-blue)}
    },
    "breadcrumb": {
     "@id": "https://a-completer.example/afgsu-2-diplomes-sante-etranger/#fil-ariane"
+   },
+   "primaryImageOfPage": "https://a-completer.example/afgsu-2-diplomes-sante-etranger/media/formation-afgsu-2-diplome-sante-etranger-medecin-1200.jpg",
+   "video": {
+    "@id": "https://a-completer.example/afgsu-2-diplomes-sante-etranger/#video"
    }
   },
   {
@@ -283,6 +317,7 @@ a{color:var(--dse-blue)}
     "@id": "https://a-completer.example/afgsu-2-diplomes-sante-etranger/#organisation"
    },
    "inLanguage": "fr",
+   "image": "https://a-completer.example/afgsu-2-diplomes-sante-etranger/media/formation-afgsu-2-diplome-sante-etranger-medecin-1200.jpg",
    "timeRequired": "PT21H",
    "educationalCredentialAwarded": "Attestation de Formation aux Gestes et Soins d’Urgence de niveau 2, délivrée par le CESU",
    "audience": {
@@ -303,73 +338,9 @@ a{color:var(--dse-blue)}
      "courseMode": "onsite",
      "location": {
       "@type": "Place",
-      "name": "Session AFGSU 2 à Paris",
+      "name": "Sessions AFGSU 2 partout en France",
       "address": {
        "@type": "PostalAddress",
-       "addressLocality": "Paris",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Lyon",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Lyon",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Marseille",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Marseille",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Lille",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Lille",
        "addressCountry": "FR"
       }
      },
@@ -509,6 +480,17 @@ a{color:var(--dse-blue)}
      }
     }
    ]
+  },
+  {
+   "@type": "VideoObject",
+   "@id": "https://a-completer.example/afgsu-2-diplomes-sante-etranger/#video",
+   "name": "L'AFGSU 2, obligatoire pour exercer en France",
+   "description": "En quelques secondes : pourquoi un diplômé en santé à l'étranger doit valider l'AFGSU 2.",
+   "thumbnailUrl": "https://a-completer.example/afgsu-2-diplomes-sante-etranger/media/video-afgsu-2-diplome-sante-etranger-poster.jpg",
+   "uploadDate": "2026-11-16",
+   "duration": "PT9S",
+   "contentUrl": "https://a-completer.example/afgsu-2-diplomes-sante-etranger/media/video-afgsu-2-diplome-sante-etranger.mp4",
+   "inLanguage": "fr"
   }
  ]
 }
@@ -546,7 +528,7 @@ a{color:var(--dse-blue)}
         <a class="dse-btn dse-btn-ghost" href="#inscription" data-rappel>Être rappelé</a>
       </div>
     </div>
-    <figure class="media-placeholder dse-ph" data-slot="hero" style="aspect-ratio:4 / 3"><div class="dse-ph-in" role="img" aria-label="Professionnels de santé diplômés à l&#x27;étranger pratiquant un massage cardiaque sur mannequin pendant la formation AFGSU 2" data-alt="Professionnels de santé diplômés à l&#x27;étranger pratiquant un massage cardiaque sur mannequin pendant la formation AFGSU 2"><span class="dse-ph-txt">Image à remplacer — une médecin et un infirmier d&#x27;origines différentes, en tenue de service française, pendant un exercice de réanimation sur mannequin adulte avec défibrillateur.</span></div><!-- Remplacer par : <img src="..." alt="Professionnels de santé diplômés à l&#x27;étranger pratiquant un massage cardiaque sur mannequin pendant la formation AFGSU 2" loading="lazy" decoding="async" width="..." height="..."> --></figure>
+    <figure class="dse-photo dse-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-diplome-sante-etranger-medecin-1200.jpg" srcset="media/formation-afgsu-2-diplome-sante-etranger-medecin-640.jpg 640w, media/formation-afgsu-2-diplome-sante-etranger-medecin-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="360" alt="Médecin en blouse blanche, bras croisés, stéthoscope à la main, prêt à exercer en France" loading="eager" fetchpriority="high" decoding="async"><figcaption class="dse-hero-badge"><span class="dse-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
   </div>
 </section>
 
@@ -627,36 +609,19 @@ a{color:var(--dse-blue)}
         <p class="dse-case"><strong>Cas pratique&nbsp;:</strong> le plan blanc est déclenché. Vous identifiez votre rôle dans l'organisation française de crise et la chaîne de commandement.</p>
       </article>
     </div>
-    <div class="dse-gallery"><figure class="media-placeholder dse-ph" data-slot="pratique-mannequin" style="aspect-ratio:3 / 2"><div class="dse-ph-in" role="img" aria-label="Compressions thoraciques sur mannequin adulte corrigées par un formateur AFGSU 2" data-alt="Compressions thoraciques sur mannequin adulte corrigées par un formateur AFGSU 2"><span class="dse-ph-txt">Image à remplacer — gros plan sur les mains d&#x27;un stagiaire qui réalise des compressions thoraciques, le formateur corrige la position.</span></div><!-- Remplacer par : <img src="..." alt="Compressions thoraciques sur mannequin adulte corrigées par un formateur AFGSU 2" loading="lazy" decoding="async" width="..." height="..."> --></figure><figure class="media-placeholder dse-ph" data-slot="groupe-formation" style="aspect-ratio:3 / 2"><div class="dse-ph-in" role="img" aria-label="Groupe de soignants diplômés à l&#x27;étranger étudiant les numéros d&#x27;urgence français 15, 112 et 114" data-alt="Groupe de soignants diplômés à l&#x27;étranger étudiant les numéros d&#x27;urgence français 15, 112 et 114"><span class="dse-ph-txt">Image à remplacer — petit groupe de 8 stagiaires autour d&#x27;un formateur, carte des numéros d&#x27;urgence français (15, 112, 114) affichée au tableau.</span></div><!-- Remplacer par : <img src="..." alt="Groupe de soignants diplômés à l&#x27;étranger étudiant les numéros d&#x27;urgence français 15, 112 et 114" loading="lazy" decoding="async" width="..." height="..."> --></figure></div>
   </div>
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
 <section class="dse-sec dse-sec-alt" aria-labelledby="dse-v1">
   <div class="dse-wrap dse-video-wrap">
-    <h2 id="dse-v1">Voir comment se passe une alerte au 15</h2>
-    <div class="video-placeholder dse-vid" data-slot="video-1">
-  <div class="dse-vid-frame" style="aspect-ratio:16 / 9">
-    <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" focusable="false"><circle cx="28" cy="28" r="27" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 18v20l16-10z" fill="currentColor"/></svg>
-    <span>Vidéo à intégrer</span>
-  </div>
-  <p class="dse-vid-title">Appeler le 15 en France : le bilan en 60 secondes</p>
-  <p class="dse-vid-desc">Un formateur joue le médecin régulateur et une stagiaire passe l&#x27;alerte : qui appeler, dans quel ordre donner les informations, quels mots employer.</p>
-  <!-- Balisage VideoObject à compléter puis à déplacer dans une balise <script type="application/ld+json"> :
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "Appeler le 15 en France : le bilan en 60 secondes",
-  "description": "Un formateur joue le médecin régulateur et une stagiaire passe l'alerte : qui appeler, dans quel ordre donner les informations, quels mots employer.",
-  "thumbnailUrl": "[À COMPLÉTER]",
-  "uploadDate": "[À COMPLÉTER]",
-  "duration": "[À COMPLÉTER, ex. PT2M30S]",
-  "contentUrl": "[À COMPLÉTER]",
-  "embedUrl": "[À COMPLÉTER]",
-  "inLanguage": "fr"
-}
-  -->
-</div>
+    <h2 id="dse-v1">L'AFGSU 2 en quelques secondes, pour exercer en France</h2>
+    <figure class="dse-reel" data-slot="video-1">
+  <div class="dse-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-diplome-sante-etranger-poster.jpg" width="720" height="1280" aria-label="L&#x27;AFGSU 2, obligatoire pour exercer en France"><source src="media/video-afgsu-2-diplome-sante-etranger.mp4" type="video/mp4"></video></div>
+  <figcaption><span class="dse-reel-title">L&#x27;AFGSU 2, obligatoire pour exercer en France</span><span class="dse-reel-desc">En quelques secondes : pourquoi un diplômé en santé à l&#x27;étranger doit valider l&#x27;AFGSU 2.</span>
+    <span class="dse-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
+    <a class="dse-btn dse-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
+</figure>
   </div>
 </section>
 
@@ -675,7 +640,7 @@ a{color:var(--dse-blue)}
       </ul>
       <a class="dse-btn" href="#inscription">Bloquer ma place à ce tarif</a>
     </div>
-    <figure class="media-placeholder dse-ph" data-slot="materiel" style="aspect-ratio:1 / 1"><div class="dse-ph-in" role="img" aria-label="Chariot d&#x27;urgence aux tiroirs étiquetés en français et défibrillateur de formation" data-alt="Chariot d&#x27;urgence aux tiroirs étiquetés en français et défibrillateur de formation"><span class="dse-ph-txt">Image à remplacer — chariot d&#x27;urgence ouvert, tiroirs étiquetés en français, DAE de formation posé à côté.</span></div><!-- Remplacer par : <img src="..." alt="Chariot d&#x27;urgence aux tiroirs étiquetés en français et défibrillateur de formation" loading="lazy" decoding="async" width="..." height="..."> --></figure>
+    <figure class="dse-photo" data-slot="groupe-formation"><img src="media/afgsu-2-equipe-soignante-couloir-hopital-1200.jpg" srcset="media/afgsu-2-equipe-soignante-couloir-hopital-640.jpg 640w, media/afgsu-2-equipe-soignante-couloir-hopital-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="438" alt="Équipe soignante en tenue qui avance dans un couloir d&#x27;hôpital" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -684,9 +649,7 @@ a{color:var(--dse-blue)}
   <div class="dse-wrap">
     <h2 id="dse-sessions">Sessions partout en France</h2>
     <p class="dse-intro">Des sessions sont organisées dans les grandes villes. Indiquez votre ville et la période qui vous convient&nbsp;: nous vous proposons la date la plus proche.</p>
-    <ul class="dse-cities">
-      <li>Paris<span>Île-de-France</span></li><li>Lyon<span>Auvergne-Rhône-Alpes</span></li><li>Marseille<span>Provence-Alpes-Côte d'Azur</span></li><li>Lille<span>Hauts-de-France</span></li><li>Toulouse<span>Occitanie</span></li><li>Bordeaux<span>Nouvelle-Aquitaine</span></li><li>Strasbourg<span>Grand Est</span></li><li>Nantes<span>Pays de la Loire</span></li><li>Montpellier<span>Occitanie</span></li><li>Rennes<span>Bretagne</span></li><li>Nice<span>Provence-Alpes-Côte d'Azur</span></li><li>Reims<span>Grand Est</span></li>
-    </ul>
+    <figure class="dse-map"><svg viewBox="10 -10 1000 980" role="img" aria-label="Carte de France : sessions AFGSU 2 organisées dans les grandes villes, partout en France"><path class="dse-map-land" d="M523 1L547.3 40L570.9 31.2L595.9 58.6L633.1 81.1L631.8 109.4L675.7 92.8L680.4 92.8L677.7 126.9L716.2 144.5L750 156.2L781.1 159.2L806.1 188.5L831.1 190.4L864.9 200.2L905.4 208L878.4 244.1L863.5 293L864.2 342.8L834.5 356.4L820.9 359.4L787.2 405.3L763.5 454.1L766.9 478.5L790.5 454.1L810.8 457L827 504.9L814.9 514.6L831.1 556.6L799.3 584.9L824.3 625L820.9 649.4L871.6 683.6L860.1 714.8L842.6 722.6L832.4 736.3L819.6 749L800.7 764.6L781.1 781.2L752 781.2L716.2 770.5L689.2 753.9L662.2 750L637.2 746.1L614.9 740.2L601.4 751.9L584.5 763.6L560.8 781.2L556.8 810.5L556.1 830.1L565.5 845.7L533.8 849.6L483.1 844.7L467.6 839.8L449.3 830.1L398.6 805.6L344.6 820.3L304.1 802.7L256.8 786.1L231.1 754.9L245.9 744.1L253.4 712.9L266.9 644.5L266.9 629.9L272.3 595.7L279.1 540L270.3 537.1L280.4 535.1L270.3 483.4L250 459L229.7 449.2L220.3 429.7L206.1 405.3L212.8 390.6L202.7 374L179.1 371.1L162.2 351.6L140.5 353.5L123.6 329.1L87.8 315.4L56.1 322.3L31.8 298.8L43.9 278.3L28.4 270.5L29.1 249L43.9 242.2L82.4 231.4L118.2 221.7L148.6 226.6L164.2 249L194.6 236.3L216.2 239.3L248.6 242.2L243.2 220.7L226.4 166L219.6 134.8L241.9 141.6L266.2 139.6L273.6 170.9L310.8 170.9L334.5 176.8L371.6 163.1L358.1 157.2L364.9 136.7L376.4 130.9L424.3 114.3L444.6 101.6L459.5 87.9L457.4 68.4L459.5 36.1L458.1 22.5L476.4 13.7L511.5 5.9Z M983.8 791L991.9 810.5L995.3 839.8L996.6 878.9L986.5 917.9L974.3 950.2L945.9 932.6L932.4 898.4L933.8 869.1L942.6 834.9L966.2 820.3L979.7 795.9Z"/><circle class="dse-map-ring" cx="510" cy="218" r="9" style="animation-delay:0.00s"/><circle class="dse-map-dot" cx="510" cy="218" r="9"/><circle class="dse-map-ring" cx="678" cy="521" r="6.5" style="animation-delay:0.37s"/><circle class="dse-map-dot" cx="678" cy="521" r="6.5"/><circle class="dse-map-ring" cx="714" cy="762" r="6.5" style="animation-delay:0.74s"/><circle class="dse-map-dot" cx="714" cy="762" r="6.5"/><circle class="dse-map-ring" cx="449" cy="732" r="6.5" style="animation-delay:1.11s"/><circle class="dse-map-dot" cx="449" cy="732" r="6.5"/><circle class="dse-map-ring" cx="842" cy="722" r="6.5" style="animation-delay:1.48s"/><circle class="dse-map-dot" cx="842" cy="722" r="6.5"/><circle class="dse-map-ring" cx="247" cy="379" r="6.5" style="animation-delay:1.85s"/><circle class="dse-map-dot" cx="247" cy="379" r="6.5"/><circle class="dse-map-ring" cx="614" cy="731" r="6.5" style="animation-delay:2.22s"/><circle class="dse-map-dot" cx="614" cy="731" r="6.5"/><circle class="dse-map-ring" cx="875" cy="246" r="6.5" style="animation-delay:2.59s"/><circle class="dse-map-dot" cx="875" cy="246" r="6.5"/><circle class="dse-map-ring" cx="312" cy="611" r="6.5" style="animation-delay:2.96s"/><circle class="dse-map-dot" cx="312" cy="611" r="6.5"/><circle class="dse-map-ring" cx="558" cy="46" r="6.5" style="animation-delay:3.33s"/><circle class="dse-map-dot" cx="558" cy="46" r="6.5"/><circle class="dse-map-ring" cx="238" cy="292" r="6.5" style="animation-delay:3.70s"/><circle class="dse-map-dot" cx="238" cy="292" r="6.5"/><circle class="dse-map-ring" cx="624" cy="179" r="6.5" style="animation-delay:0.07s"/><circle class="dse-map-dot" cx="624" cy="179" r="6.5"/><circle class="dse-map-ring" cx="738" cy="577" r="6.5" style="animation-delay:0.44s"/><circle class="dse-map-dot" cx="738" cy="577" r="6.5"/><circle class="dse-map-ring" cx="692" cy="369" r="6.5" style="animation-delay:0.81s"/><circle class="dse-map-dot" cx="692" cy="369" r="6.5"/><circle class="dse-map-ring" cx="559" cy="519" r="6.5" style="animation-delay:1.18s"/><circle class="dse-map-dot" cx="559" cy="519" r="6.5"/><circle class="dse-map-ring" cx="426" cy="162" r="6.5" style="animation-delay:1.55s"/><circle class="dse-map-dot" cx="426" cy="162" r="6.5"/><circle class="dse-map-ring" cx="398" cy="362" r="6.5" style="animation-delay:1.92s"/><circle class="dse-map-dot" cx="398" cy="362" r="6.5"/><circle class="dse-map-ring" cx="48" cy="264" r="6.5" style="animation-delay:2.29s"/><circle class="dse-map-dot" cx="48" cy="264" r="6.5"/><circle class="dse-map-ring" cx="436" cy="515" r="6.5" style="animation-delay:2.66s"/><circle class="dse-map-dot" cx="436" cy="515" r="6.5"/><circle class="dse-map-ring" cx="769" cy="193" r="6.5" style="animation-delay:3.03s"/><circle class="dse-map-dot" cx="769" cy="193" r="6.5"/><circle class="dse-map-ring" cx="374" cy="441" r="6.5" style="animation-delay:3.40s"/><circle class="dse-map-dot" cx="374" cy="441" r="6.5"/><circle class="dse-map-ring" cx="752" cy="779" r="6.5" style="animation-delay:3.77s"/><circle class="dse-map-dot" cx="752" cy="779" r="6.5"/><circle class="dse-map-ring" cx="507" cy="118" r="6.5" style="animation-delay:0.14s"/><circle class="dse-map-dot" cx="507" cy="118" r="6.5"/><circle class="dse-map-ring" cx="326" cy="187" r="6.5" style="animation-delay:0.51s"/><circle class="dse-map-dot" cx="326" cy="187" r="6.5"/></svg><figcaption><span class="dse-map-leg"><i aria-hidden="true"></i>Grandes villes de session</span><span>Sessions partout en France, ou directement dans votre structure.</span></figcaption></figure>
     <div class="dse-onsite">
       <h3>Dans votre établissement</h3>
       <p>Vous accueillez plusieurs praticiens recrutés à l'étranger&nbsp;? La formation peut se tenir dans vos murs, avec votre chariot d'urgence et vos procédures internes.</p>
@@ -706,35 +669,6 @@ a{color:var(--dse-blue)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="dse-sec dse-sec-alt" aria-labelledby="dse-v2">
-  <div class="dse-wrap dse-video-wrap">
-    <h2 id="dse-v2">Les trois jours en images</h2>
-    <div class="video-placeholder dse-vid" data-slot="video-2">
-  <div class="dse-vid-frame" style="aspect-ratio:16 / 9">
-    <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" focusable="false"><circle cx="28" cy="28" r="27" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 18v20l16-10z" fill="currentColor"/></svg>
-    <span>Vidéo à intégrer</span>
-  </div>
-  <p class="dse-vid-title">Trois jours de formation AFGSU 2, du premier massage à l&#x27;exercice de crise</p>
-  <p class="dse-vid-desc">Montage court des temps forts : RCP sur mannequins, ouverture du chariot d&#x27;urgence, exercice d&#x27;afflux de victimes, remise de l&#x27;attestation.</p>
-  <!-- Balisage VideoObject à compléter puis à déplacer dans une balise <script type="application/ld+json"> :
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "Trois jours de formation AFGSU 2, du premier massage à l'exercice de crise",
-  "description": "Montage court des temps forts : RCP sur mannequins, ouverture du chariot d'urgence, exercice d'afflux de victimes, remise de l'attestation.",
-  "thumbnailUrl": "[À COMPLÉTER]",
-  "uploadDate": "[À COMPLÉTER]",
-  "duration": "[À COMPLÉTER, ex. PT2M30S]",
-  "contentUrl": "[À COMPLÉTER]",
-  "embedUrl": "[À COMPLÉTER]",
-  "inLanguage": "fr"
-}
-  -->
-</div>
-  </div>
-</section>
-
 <!-- ===== Réassurance ===== -->
 <section class="dse-sec" aria-labelledby="dse-confiance">
   <div class="dse-wrap">
@@ -745,10 +679,7 @@ a{color:var(--dse-blue)}
       <li><strong>Matériel professionnel</strong><br>Mannequins, DAE de formation, chariot d'urgence complet.</li>
       <li><strong>Attestation du CESU</strong><br>Le document officiel attendu par les établissements.</li>
     </ul>
-    <div class="dse-two">
-      <figure class="media-placeholder dse-ph" data-slot="situation-metier" style="aspect-ratio:3 / 2"><div class="dse-ph-in" role="img" aria-label="Soignante transmettant un bilan d&#x27;urgence au SAMU par téléphone dans un service hospitalier français" data-alt="Soignante transmettant un bilan d&#x27;urgence au SAMU par téléphone dans un service hospitalier français"><span class="dse-ph-txt">Image à remplacer — une soignante au téléphone dans un couloir de service, en train de passer un bilan au SAMU (15), fiche de bilan en main.</span></div><!-- Remplacer par : <img src="..." alt="Soignante transmettant un bilan d&#x27;urgence au SAMU par téléphone dans un service hospitalier français" loading="lazy" decoding="async" width="..." height="..."> --></figure>
-      <div class="dse-reviews" role="note">Avis stagiaires (à intégrer)</div>
-    </div>
+    <figure class="dse-photo dse-photo-wide" data-slot="situation-metier"><img src="media/afgsu-2-diplome-etranger-dossier-patient-tablette-1200.jpg" srcset="media/afgsu-2-diplome-etranger-dossier-patient-tablette-640.jpg 640w, media/afgsu-2-diplome-etranger-dossier-patient-tablette-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="427" alt="Soignant qui consulte un dossier patient sur tablette, stéthoscope posé sur le bureau" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -793,7 +724,7 @@ a{color:var(--dse-blue)}
     <div class="dse-field"><label for="f-email">E-mail <span aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
     <div class="dse-field"><label for="f-tel">Téléphone <span aria-hidden="true">*</span></label><input id="f-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required></div>
     <div class="dse-field"><label for="f-metier">Métier</label><input id="f-metier" name="metier" type="text" value="Professionnel de santé diplômé à l&#x27;étranger" autocomplete="organization-title"></div>
-    <div class="dse-field"><label for="f-ville">Ville souhaitée</label><input id="f-ville" name="ville" type="text" list="f-villes" autocomplete="address-level2" placeholder="Ex. Paris, ou dans votre structure"><datalist id="f-villes"><option value="Paris"><option value="Lyon"><option value="Marseille"><option value="Toulouse"><option value="Bordeaux"><option value="Lille"><option value="Nantes"><option value="Strasbourg"><option value="Rennes"><option value="Montpellier"><option value="Nice"><option value="Reims"><option value="Grenoble"><option value="Rouen"><option value="Tours"><option value="Dijon"><option value="Clermont-Ferrand"><option value="Metz"><option value="Caen"><option value="Angers"></datalist></div>
+    <div class="dse-field"><label for="f-ville">Ville souhaitée</label><input id="f-ville" name="ville" type="text" autocomplete="address-level2" placeholder="Votre ville, ou dans votre structure"></div>
     <div class="dse-field dse-field-full"><label for="f-periode">Date ou période souhaitée</label><input id="f-periode" name="periode" type="text" autocomplete="off" placeholder="Ex. dès que possible, ou en mars"></div>
     <div class="dse-field dse-field-full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="Votre question, le nombre de participants…"></textarea></div>
   </div>

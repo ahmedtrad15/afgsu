@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "page en sections numérotées (1, 2, 3…)",
     "kw_main": "AFGSU 2 pharmacien",
     "kw_secondary": ["formation AFGSU 2 pharmacien d'officine", "AFGSU 2 pharmacie vaccination", "AFGSU 2 préparateur en pharmacie",
-                     "AFGSU 2 pharmacien prix", "renouvellement AFGSU 2 pharmacien", "AFGSU 2 pharmacien Lyon / Paris / Nice",
+                     "AFGSU 2 pharmacien prix", "renouvellement AFGSU 2 pharmacien", "AFGSU 2 pharmacien près de chez moi",
                      "attestation gestes et soins d'urgence pharmacien"],
     "kw_geo": ["Un pharmacien doit-il faire l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour un pharmacien ?",
                "Que faire en cas de réaction allergique après une vaccination en pharmacie ?"],
     "breadcrumb": "AFGSU 2 pharmaciens",
     "course_name": "AFGSU 2 pour les pharmaciens et équipes officinales",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour pharmaciens et préparateurs : malaise au comptoir, anaphylaxie après vaccination, arrêt cardiaque devant l'officine, hémorragie. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Lyon", "Paris", "Nice", "Lille"],
-    "city_hint": "Lyon",
     "msg_hint": "Nombre de pharmaciens et préparateurs à former, horaires d'ouverture…",
     "form_submit": "Demander une session",
     "pict": '<path d="M11.5 3h9v8.5H29v9h-8.5V29h-9v-8.5H3v-9h8.5z" fill="#1e8a4c"/><path d="M16 9v14M9 16h14" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".9"/>',
@@ -239,14 +237,13 @@ main{counter-reset:sec}
         <article class="phar-card phar-mod"><p class="phar-tag">Module 2 · 7 h</p><h3>Urgences potentielles</h3><ol><li>Malaise, traumatismes, brûlures</li><li>Accouchement inopiné</li><li>Relevage, brancardage</li><li>Hygiène, AES</li><li>Matériel d'urgence</li></ol><p class="phar-ex">À l'officine : malaise et réaction cutanée après une vaccination antigrippale.</p></article>
         <article class="phar-card phar-mod"><p class="phar-tag">Module 3 · 3 h 30</p><h3>Risques collectifs</h3><ol><li>Situations sanitaires exceptionnelles</li><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control, attentats</li></ol><p class="phar-ex">À l'officine : rôle des pharmacies lors d'une crise sanitaire et d'une distribution de produits de santé.</p></article>
       </div>
-      <div class="phar-grid phar-g2" style="margin-top:16px">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
     </div>
   </div>
 </section>
 
 <!-- ===== 05 · Vidéo 1 ===== -->
 <section class="phar-s" aria-labelledby="phar-v1">
-  <div class="phar-wrap phar-s-in"><div class="phar-num" aria-hidden="true"></div><div><h2 id="phar-v1">Vidéo : anaphylaxie après vaccination</h2>[[video:video-1]]</div></div>
+  <div class="phar-wrap phar-s-in"><div class="phar-num" aria-hidden="true"></div><div><h2 id="phar-v1">Vidéo : l'AFGSU 2 à l'officine</h2>[[video:video-1]]</div></div>
 </section>
 
 <!-- ===== 06 · Tarif ===== -->
@@ -260,7 +257,7 @@ main{counter-reset:sec}
         <ul><li>21 heures de formation sur 3 jours</li><li>Mannequins, défibrillateurs, stylos d'adrénaline d'entraînement</li><li>Attestation AFGSU 2 délivrée par le CESU</li></ul>
         <a class="phar-btn" href="#inscription">Réserver ma place</a>
       </div>
-      [[img:materiel]]
+      [[img:pratique-mannequin]]
     </div>
   </div>
 </section>
@@ -270,8 +267,8 @@ main{counter-reset:sec}
   <div class="phar-wrap phar-s-in">
     <div class="phar-num" aria-hidden="true"></div>
     <div>
-      <h2 id="phar-sess">Villes de session partout en France</h2>
-      <ul class="phar-cities"><li>Lyon</li><li>Paris</li><li>Nice</li><li>Lille</li><li>Marseille</li><li>Toulouse</li><li>Bordeaux</li><li>Nantes</li><li>Strasbourg</li><li>Rennes</li><li>Montpellier</li><li>Reims</li></ul>
+      <h2 id="phar-sess">Sessions partout en France</h2>
+      [[map]]
       <p>Ou dans votre officine, pour toute l'équipe, à un horaire compatible avec votre ouverture.</p>
     </div>
   </div>
@@ -292,11 +289,6 @@ main{counter-reset:sec}
   </div>
 </section>
 
-<!-- ===== 09 · Vidéo 2 ===== -->
-<section class="phar-s" aria-labelledby="phar-v2">
-  <div class="phar-wrap phar-s-in"><div class="phar-num" aria-hidden="true"></div><div><h2 id="phar-v2">Vidéo : arrêt cardiaque devant l'officine</h2>[[video:video-2]]</div></div>
-</section>
-
 <!-- ===== 10 · Réassurance ===== -->
 <section class="phar-s" aria-labelledby="phar-trust">
   <div class="phar-wrap phar-s-in">
@@ -310,7 +302,6 @@ main{counter-reset:sec}
         <div class="phar-card"><h3>Attestation officielle</h3><p>Délivrée par le CESU, valable 4 ans.</p></div>
       </div>
       [[img:situation-metier]]
-      <div class="phar-reviews" role="note">Avis stagiaires (à intégrer)</div>
     </div>
   </div>
 </section>

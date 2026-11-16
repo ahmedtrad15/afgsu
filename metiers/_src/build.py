@@ -17,6 +17,11 @@ import urllib.parse
 from datetime import date
 from pathlib import Path
 
+from PIL import Image
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from media import MAP_CITIES, PHOTOS, VIDEOS  # noqa: E402
+
 SRC = Path(__file__).resolve().parent
 OUT = SRC.parent
 YEAR = date.today().year
@@ -26,9 +31,16 @@ TEL_HREF = "tel:+33780912335"
 TEL_TXT = "07 80 91 23 35"
 PRICE_HTML = "<del>450 €</del> <strong>385 € TTC</strong>"
 
-CITIES = ["Paris", "Lyon", "Marseille", "Toulouse", "Bordeaux", "Lille", "Nantes",
-          "Strasbourg", "Rennes", "Montpellier", "Nice", "Reims", "Grenoble",
-          "Rouen", "Tours", "Dijon", "Clermont-Ferrand", "Metz", "Caen", "Angers"]
+# Aucune ville n'est citée dans les pages : la carte de France montre les grandes villes sans les nommer.
+CITY_WORDS = ["Paris", "Lyon", "Marseille", "Toulouse", "Bordeaux", "Lille", "Nantes",
+              "Strasbourg", "Rennes", "Montpellier", "Nice", "Reims", "Grenoble",
+              "Rouen", "Tours", "Dijon", "Clermont-Ferrand", "Metz", "Caen", "Angers"]
+UPLOAD_DATE = "2026-11-16"
+
+# Contour de la France (métropole + Corse) repris de la carte du site 11-france, et projection lon/lat
+FR_PATH = (Path(__file__).resolve().parent / "france-path.txt").read_text().strip()
+def MAP_X(lon): return 67.567 * lon + 351.341
+def MAP_Y(lat): return -97.693 * lat + 4991.775
 
 FORBIDDEN = ["financ", "OPCO", "CPF", "DPC", "FIF-PL", "FIFPL", "France Travail",
              "Pôle emploi", "prise en charge financière"]
@@ -84,39 +96,85 @@ def price(site, cls="price"):
     return f'<p class="{p}{cls}"><span class="{p}sr">Prix : ancien tarif </span>{PRICE_HTML}</p>'
 
 
-def img(site, slot):
+def photo_for(site, slot):
+    for f, stem, alt, sl in PHOTOS[site["num"]]:
+        if sl == slot:
+            return stem, alt
+    return None
+
+
+def photo_size(site, stem, w):
+    with Image.open(OUT / site["folder"] / "media" / f"{stem}-{w}.jpg") as im:
+        return im.size
+
+
+def img(site, slot, wide=False):
+    """Photo réelle si l'emplacement en a une (media.py), sinon rien."""
     p = site["prefix"]
-    m = next(x for x in site["images"] if x["slot"] == slot)
-    ratio = m.get("ratio", "4 / 3")
-    return (f'<figure class="media-placeholder {p}ph" data-slot="{slot}" style="aspect-ratio:{ratio}">'
-            f'<div class="{p}ph-in" role="img" aria-label="{esc(m["alt"])}" data-alt="{esc(m["alt"])}">'
-            f'<span class="{p}ph-txt">Image à remplacer — {esc(m["desc"])}</span></div>'
-            f'<!-- Remplacer par : <img src="..." alt="{esc(m["alt"])}" loading="lazy" decoding="async" width="..." height="..."> -->'
-            f'</figure>')
+    ph = photo_for(site, slot)
+    if not ph:
+        return ""
+    stem, alt = ph
+    w1, h1 = photo_size(site, stem, 1200)
+    w0, _ = photo_size(site, stem, 640)
+    first = slot == "hero"
+    load = 'loading="eager" fetchpriority="high"' if first else 'loading="lazy"'
+    cls = f"{p}photo {p}photo-wide" if wide else f"{p}photo"
+    badge = ""
+    if slot == "hero":
+        cls += f" {p}photo-hero"
+        badge = (f'<figcaption class="{p}hero-badge"><span class="{p}hero-badge-ic" aria-hidden="true">'
+                 f'<svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
+                 f'<span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption>')
+    return (f'<figure class="{cls}" data-slot="{slot}">'
+            f'<img src="media/{stem}-1200.jpg" srcset="media/{stem}-640.jpg {w0}w, media/{stem}-1200.jpg {w1}w" '
+            f'sizes="(max-width: 760px) 100vw, 600px" width="{w1}" height="{h1}" alt="{esc(alt)}" {load} decoding="async">'
+            f'{badge}</figure>')
+
+
+def video_meta(site):
+    f, stem, title, desc = VIDEOS[site["num"]]
+    return stem, title, desc
+
+
+def video_ld(site):
+    stem, title, desc = video_meta(site)
+    import subprocess
+    dur = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+                                str(OUT / site["folder"] / "media" / f"{stem}.mp4")],
+                               capture_output=True, text=True).stdout.strip() or 0)
+    return {"@type": "VideoObject", "@id": site["url"] + "#video", "name": title, "description": desc,
+            "thumbnailUrl": site["url"] + f"media/{stem}-poster.jpg", "uploadDate": UPLOAD_DATE,
+            "duration": f"PT{round(dur)}S", "contentUrl": site["url"] + f"media/{stem}.mp4", "inLanguage": "fr"}
 
 
 def video(site, slot):
+    """Vidéo verticale du métier (une par site, dans l'emplacement video-1)."""
+    if slot != "video-1":
+        return ""
     p = site["prefix"]
-    v = next(x for x in site["videos"] if x["slot"] == slot)
-    ld = {
-        "@context": "https://schema.org", "@type": "VideoObject",
-        "name": v["title"], "description": v["desc"],
-        "thumbnailUrl": "[À COMPLÉTER]", "uploadDate": "[À COMPLÉTER]",
-        "duration": "[À COMPLÉTER, ex. PT2M30S]", "contentUrl": "[À COMPLÉTER]",
-        "embedUrl": "[À COMPLÉTER]", "inLanguage": "fr",
-    }
-    ld_txt = json.dumps(ld, ensure_ascii=False, indent=2).replace("--", "- -")
-    return f'''<div class="video-placeholder {p}vid" data-slot="{slot}">
-  <div class="{p}vid-frame" style="aspect-ratio:16 / 9">
-    <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" focusable="false"><circle cx="28" cy="28" r="27" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 18v20l16-10z" fill="currentColor"/></svg>
-    <span>Vidéo à intégrer</span>
-  </div>
-  <p class="{p}vid-title">{esc(v["title"])}</p>
-  <p class="{p}vid-desc">{esc(v["desc"])}</p>
-  <!-- Balisage VideoObject à compléter puis à déplacer dans une balise <script type="application/ld+json"> :
-{ld_txt}
-  -->
-</div>'''
+    stem, title, desc = video_meta(site)
+    return f'''<figure class="{p}reel" data-slot="{slot}">
+  <div class="{p}reel-frame"><video controls playsinline preload="none" poster="media/{stem}-poster.jpg" width="720" height="1280" aria-label="{esc(title)}"><source src="media/{stem}.mp4" type="video/mp4"></video></div>
+  <figcaption><span class="{p}reel-title">{esc(title)}</span><span class="{p}reel-desc">{esc(desc)}</span>
+    <span class="{p}reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
+    <a class="{p}btn {p}reel-cta" href="#inscription">Réserver ma session</a></figcaption>
+</figure>'''
+
+
+def france_map(site):
+    """Carte de France avec les grandes villes (points), sans les nommer."""
+    p = site["prefix"]
+    pts = []
+    for i, (lon, lat) in enumerate(MAP_CITIES):
+        x, y = MAP_X(lon), MAP_Y(lat)
+        r = 9 if i == 0 else 6.5
+        pts.append(f'<circle class="{p}map-ring" cx="{x:.0f}" cy="{y:.0f}" r="{r}" style="animation-delay:{(i * 0.37) % 4:.2f}s"/>'
+                   f'<circle class="{p}map-dot" cx="{x:.0f}" cy="{y:.0f}" r="{r}"/>')
+    return (f'<figure class="{p}map"><svg viewBox="10 -10 1000 980" role="img" aria-label="Carte de France : sessions AFGSU 2 organisées dans les grandes villes, partout en France">'
+            f'<path class="{p}map-land" d="{FR_PATH}"/>' + "".join(pts) + '</svg>'
+            f'<figcaption><span class="{p}map-leg"><i aria-hidden="true"></i>Grandes villes de session</span>'
+            f'<span>Sessions partout en France, ou directement dans votre structure.</span></figcaption></figure>')
 
 
 def faq(site):
@@ -131,7 +189,6 @@ def faq(site):
 def form(site):
     p = site["prefix"]
     name = esc(site["name"])
-    cities = "".join(f'<option value="{c}">' for c in CITIES)
     metier = esc(site["metier_form"])
     submit = esc(site.get("form_submit", "Envoyer ma demande"))
     return f'''<form class="{p}form" action="https://api.web3forms.com/submit" method="POST" data-w3f>
@@ -145,7 +202,7 @@ def form(site):
     <div class="{p}field"><label for="f-email">E-mail <span aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
     <div class="{p}field"><label for="f-tel">Téléphone <span aria-hidden="true">*</span></label><input id="f-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required></div>
     <div class="{p}field"><label for="f-metier">Métier</label><input id="f-metier" name="metier" type="text" value="{metier}" autocomplete="organization-title"></div>
-    <div class="{p}field"><label for="f-ville">Ville souhaitée</label><input id="f-ville" name="ville" type="text" list="f-villes" autocomplete="address-level2" placeholder="Ex. {esc(site.get("city_hint", "Lyon"))}, ou dans votre structure"><datalist id="f-villes">{cities}</datalist></div>
+    <div class="{p}field"><label for="f-ville">Ville souhaitée</label><input id="f-ville" name="ville" type="text" autocomplete="address-level2" placeholder="Votre ville, ou dans votre structure"></div>
     <div class="{p}field {p}field-full"><label for="f-periode">Date ou période souhaitée</label><input id="f-periode" name="periode" type="text" autocomplete="off" placeholder="{esc(site.get("period_hint", "Ex. dès que possible, ou en mars"))}"></div>
     <div class="{p}field {p}field-full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="{esc(site.get("msg_hint", "Votre question, le nombre de participants…"))}"></textarea></div>
   </div>
@@ -325,16 +382,46 @@ dialog ul{padding-left:1.2em}
 
 def placeholder_css(site):
     p = site["prefix"]
-    c = site["ph_colors"]  # (fond, motif, texte)
+    c = site["ph_colors"]  # (fond clair, ligne, texte foncé)
+    t = site["theme"]
     return f'''
-/* ---- Emplacements médias ---- */
-.{p}ph{{margin:0;position:relative;overflow:hidden;background:{c[0]};border:1px dashed {c[1]};border-radius:var(--{p}radius,8px);width:100%}}
-.{p}ph-in{{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:18px;text-align:center;background:repeating-linear-gradient(135deg,transparent 0 14px,{c[1]}22 14px 15px)}}
-.{p}ph-txt{{font-size:.85rem;line-height:1.45;color:{c[2]};max-width:34ch;background:{c[0]};padding:6px 10px;border-radius:4px}}
-.{p}vid{{margin:0}}
-.{p}vid-frame{{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;background:{c[2]};color:{c[0]};border-radius:var(--{p}radius,8px);width:100%;font-size:.9rem}}
-.{p}vid-title{{font-weight:600;margin:12px 0 4px}}
-.{p}vid-desc{{font-size:.92rem;margin:0;opacity:.9}}
+/* ---- Photos, vidéo, carte ---- */
+.{p}photo{{margin:0;position:relative;overflow:hidden;border-radius:var(--{p}radius,12px);background:{c[0]};box-shadow:0 22px 44px -26px rgba(12,22,38,.55),0 2px 6px rgba(12,22,38,.08);width:100%}}
+.{p}photo img{{display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}}
+.{p}photo:hover img{{transform:scale(1.03)}}
+.{p}photo-wide{{margin-top:28px}}
+.{p}photo-wide img{{aspect-ratio:12 / 5}}
+@media (max-width:640px){{.{p}photo-wide img{{aspect-ratio:3 / 2}}}}
+.{p}photo-hero{{overflow:visible;background:none;box-shadow:none;isolation:isolate;align-self:center;height:auto}}
+.{p}photo-hero::before{{content:"";position:absolute;inset:22px -16px -16px 22px;border-radius:calc(var(--{p}radius,12px) + 6px);background:{t};opacity:.16;z-index:-1}}
+.{p}photo-hero img{{aspect-ratio:4 / 3;border-radius:var(--{p}radius,12px);box-shadow:0 28px 56px -28px rgba(12,22,38,.6)}}
+.{p}photo-hero:hover img{{transform:none}}
+.{p}hero-badge{{position:absolute;left:-14px;bottom:26px;display:flex;gap:10px;align-items:center;background:#fff;color:#1a1f26;border-radius:12px;padding:10px 16px 10px 10px;box-shadow:0 14px 34px -14px rgba(12,22,38,.5);font-size:.84rem;line-height:1.3;max-width:calc(100% - 24px)}}
+.{p}hero-badge b{{display:block;font-weight:600}}
+.{p}hero-badge-ic{{flex:0 0 34px;height:34px;border-radius:50%;background:{t};color:#fff;display:flex;align-items:center;justify-content:center}}
+@media (max-width:640px){{.{p}hero-badge{{left:10px;bottom:12px}}.{p}photo-hero::before{{inset:14px -8px -8px 14px}}}}
+.{p}reel{{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}}
+.{p}reel-frame{{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}}
+.{p}reel-frame video{{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}}
+.{p}reel figcaption{{display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:40ch;flex:1 1 240px}}
+.{p}reel-title{{font-weight:600;font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.3}}
+.{p}reel-desc{{font-size:1rem;opacity:.85}}
+.{p}reel-pts{{display:flex;flex-direction:column;gap:8px;margin:6px 0 8px}}
+.{p}reel-pts span{{display:flex;gap:10px;align-items:center;font-size:.97rem}}
+.{p}reel-pts span::before{{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:{t};box-shadow:0 0 0 4px {t}22}}
+.{p}reel-cta{{margin-top:4px}}
+@media (max-width:640px){{.{p}reel{{flex-direction:column;align-items:flex-start}}}}
+.{p}map{{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}}
+.{p}map svg{{display:block;width:100%;height:auto;overflow:visible}}
+.{p}map-land{{fill:{c[0]};stroke:{t};stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}}
+.{p}map-dot{{fill:{t};stroke:#fff;stroke-width:3}}
+.{p}map-ring{{fill:{t};opacity:0;transform-box:fill-box;transform-origin:center;animation:{p}pulse 4s ease-out infinite}}
+@keyframes {p}pulse{{0%{{opacity:.35;transform:scale(1)}}70%{{opacity:0;transform:scale(3.4)}}100%{{opacity:0;transform:scale(3.4)}}}}
+.{p}map figcaption{{display:flex;flex-direction:column;gap:4px;font-size:.92rem;margin-top:12px;color:#3a414b}}
+.{p}map-leg{{display:flex;align-items:center;gap:8px;font-weight:600;color:#1a1f26}}
+.{p}map-leg i{{width:12px;height:12px;border-radius:50%;background:{t};box-shadow:0 0 0 3px #fff,0 0 0 4px {t}}}
+.{p}body .{p}btn{{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}}
+.{p}body .{p}btn:hover{{transform:translateY(-1px);box-shadow:0 10px 22px -12px rgba(12,22,38,.55);filter:saturate(1.08)}}
 .{p}sr{{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}
 @media (max-width:520px){{.{p}tel-num{{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}}.{p}tel{{width:46px;height:46px;justify-content:center;border:1px solid currentColor;border-radius:50%;padding:0!important}}.{p}brand-txt{{font-size:.9rem}}.{p}brand{{flex:1 1 0;min-width:0}}}}
 '''
@@ -347,17 +434,16 @@ def placeholder_css(site):
 def jsonld(site):
     url = site["url"]
     org_id = url + "#organisation"
-    instances = []
-    for city in site["instances"]:
-        instances.append({
-            "@type": "CourseInstance",
-            "courseMode": "onsite",
-            "location": {"@type": "Place", "name": f"Session AFGSU 2 à {city}",
-                         "address": {"@type": "PostalAddress", "addressLocality": city, "addressCountry": "FR"}},
-            "courseWorkload": "PT21H",
-            "courseSchedule": {"@type": "Schedule", "duration": "PT7H", "repeatCount": 3, "repeatFrequency": "Daily"},
-            "inLanguage": "fr",
-        })
+    instances = [{
+        "@type": "CourseInstance",
+        "courseMode": "onsite",
+        "location": {"@type": "Place", "name": "Sessions AFGSU 2 partout en France",
+                     "address": {"@type": "PostalAddress", "addressCountry": "FR"}},
+        "courseWorkload": "PT21H",
+        "courseSchedule": {"@type": "Schedule", "duration": "PT7H", "repeatCount": 3, "repeatFrequency": "Daily"},
+        "inLanguage": "fr",
+    }]
+    hero = PHOTOS[site["num"]][0][1]
     graph = [
         {"@type": "Organization", "@id": org_id, "name": site["name"], "url": url,
          "logo": url + "logo.svg", "telephone": "+33780912335",
@@ -371,12 +457,14 @@ def jsonld(site):
          "publisher": {"@id": org_id}},
         {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": site["title"],
          "description": site["description"], "inLanguage": "fr-FR", "isPartOf": {"@id": url + "#website"},
-         "about": {"@id": url + "#formation"}, "breadcrumb": {"@id": url + "#fil-ariane"}},
+         "about": {"@id": url + "#formation"}, "breadcrumb": {"@id": url + "#fil-ariane"},
+         "primaryImageOfPage": url + f"media/{hero}-1200.jpg", "video": {"@id": url + "#video"}},
         {"@type": "BreadcrumbList", "@id": url + "#fil-ariane", "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Accueil", "item": url},
             {"@type": "ListItem", "position": 2, "name": site["breadcrumb"], "item": url + "#programme"}]},
         {"@type": "Course", "@id": url + "#formation", "name": site["course_name"],
          "description": site["course_desc"], "provider": {"@id": org_id}, "inLanguage": "fr",
+         "image": url + f"media/{hero}-1200.jpg",
          "timeRequired": "PT21H", "educationalCredentialAwarded": "Attestation de Formation aux Gestes et Soins d’Urgence de niveau 2, délivrée par le CESU",
          "audience": {"@type": "EducationalAudience", "educationalRole": site["audience"]},
          "offers": {"@type": "Offer", "price": "385", "priceCurrency": "EUR", "category": "Paid",
@@ -385,6 +473,7 @@ def jsonld(site):
         {"@type": "FAQPage", "@id": url + "#faq", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
             for q, a in site["faq"]]},
+        video_ld(site),
     ]
     txt = json.dumps({"@context": "https://schema.org", "@graph": graph}, ensure_ascii=False, indent=1)
     return txt.replace("</", "<\\/")
@@ -410,7 +499,8 @@ def head(site):
 <meta property="og:title" content="{esc(site["og_title"])}">
 <meta property="og:description" content="{esc(site["description"])}">
 <meta property="og:url" content="{site["url"]}">
-<!-- [À COMPLÉTER] image de partage 1200×630 : <meta property="og:image" content="{site["url"]}og-image.jpg"> -->
+<meta property="og:image" content="{site["url"]}media/{PHOTOS[site["num"]][0][1]}-1200.jpg">
+<meta property="og:image:alt" content="{esc(PHOTOS[site["num"]][0][2])}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{esc(site["og_title"])}">
 <meta name="twitter:description" content="{esc(site["description"])}">
@@ -432,7 +522,9 @@ def render(site):
             "logo": lambda: svg_logo(site),
             "price": lambda: price(site, arg or "price"),
             "img": lambda: img(site, arg),
+            "wide": lambda: img(site, arg, wide=True),
             "video": lambda: video(site, arg),
+            "map": lambda: france_map(site),
             "faq": lambda: faq(site),
             "form": lambda: form(site),
             "footer": lambda: footer(site, site.get("footer_extra", "")),
@@ -485,12 +577,16 @@ def check(site, page):
         w = words(a)
         if not 40 <= w <= 90: errs.append(f"FAQ {w} mots : {q[:50]}")
         if esc(a) not in page: errs.append(f"FAQ absente du HTML : {q[:40]}")
-    nimg = page.count('class="media-placeholder')
-    nvid = page.count('class="video-placeholder')
-    if not 4 <= nimg <= 6: errs.append(f"{nimg} images")
-    if nvid != 2: errs.append(f"{nvid} vidéos")
-    for slot in ("video-1", "video-2"):
-        if f'data-slot="{slot}"' not in page: errs.append(f"slot {slot} manquant")
+    nimg = len(re.findall(r'<img src="media/', page))
+    if nimg != len(PHOTOS[site["num"]]): errs.append(f"{nimg} photos affichées sur {len(PHOTOS[site['num']])}")
+    if page.count("<video ") != 1: errs.append("vidéo manquante")
+    if "placeholder" in page.split("<body", 1)[1].split("<form", 1)[0]: errs.append("emplacement média vide")
+    if f'class="{site["prefix"]}map"' not in page: errs.append("carte de France manquante")
+    text = re.sub(r"<[^>]+>", " ", page.split("<body", 1)[1])
+    for c in CITY_WORDS:
+        if re.search(r"\b" + c + r"\b", text): errs.append(f"ville citée : {c}")
+    for m in re.findall(r'(?:src|poster|href)="(media/[^"]+)"', page) + re.findall(r'(media/[\w.-]+) \d+w', page):
+        if not (OUT / site["folder"] / m).exists(): errs.append(f"fichier absent : {m}")
     if ACCESS_KEY not in page: errs.append("clé Web3Forms")
     if PRICE_HTML not in page: errs.append("prix")
     low = page.lower()
@@ -540,6 +636,7 @@ def load_sites():
         s = mod.SITE
         s["url"] = f"https://a-completer.example/{s['slug']}/"
         s.setdefault("breadcrumb", "Formation AFGSU 2")
+        s["num"] = s["folder"][:2]
         sites.append(s)
     return sites
 
@@ -556,8 +653,8 @@ def readme(sites):
            "- **URL de chaque site** : remplacer `https://a-completer.example/<dossier>/` (canonical, Open Graph, JSON-LD). Le plus simple est de changer `s[\"url\"]` dans `build.py`, ou une URL par fiche.",
            "- **Hébergeur** dans les mentions légales : `[À COMPLÉTER]`.",
            "- **Médiateur de la consommation** dans l’article 15 des CGV : `[À COMPLÉTER]`.",
-           "- **Images, vidéos, image Open Graph** : remplacer les emplacements listés ci-dessous. Chaque `<figure class=\"media-placeholder\">` contient en commentaire la balise `<img>` à poser avec son `alt` déjà rédigé ; chaque vidéo contient en commentaire son balisage `VideoObject` à compléter.",
-           "- **Avis stagiaires** : un encart « Avis stagiaires (à intégrer) » est prévu sur chaque page. Ne publier que de vrais avis vérifiables.",
+           "- **Médias** : les photos et la vidéo de chaque métier viennent de l’archive fournie (`afgsu.zip`). Elles sont renommées pour le SEO et encodées dans `metiers/NN-…/media/` par `python3 metiers/_src/prepare_media.py <archive dézippée>` (photos en 640 et 1200 px, vidéo MP4 720p). La correspondance photo → emplacement et les textes `alt` sont dans `metiers/_src/media.py`. L’image Open Graph est la photo principale de chaque site.",
+           "- **Villes** : aucune ville n’est citée dans les pages. Une carte de France montre les grandes villes de session par des points, sans les nommer.",
            "- **Logo** : chaque dossier contient un `logo.svg` (le pictogramme du site), référencé dans le JSON-LD `Organization`. À déployer avec `index.html`.", "",
            "## Points à faire valider",
            "",
@@ -574,7 +671,8 @@ def readme(sites):
            "",
            "- `<title>` du site 13 : le nom complet (76 caractères) ne tient pas dans 60 caractères. Le titre garde le début exact du nom (« Formations AFGSU 2 - Masseurs-kinésithérapeutes, ergo, ortho »). Le nom complet figure dans le logo, le footer, le schema et `og:site_name`.",
            "- JSON-LD `Course` : `timeRequired` PT21H, et pour chaque `CourseInstance` un `courseWorkload` PT21H et un `courseSchedule` (3 × PT7H), forme attendue par Google pour les cours.",
-           "- Aucune date de session n'est inventée : les pages listent les villes et invitent à demander les dates.",
+           "- Aucune date de session n'est inventée : les pages montrent la carte de France et invitent à demander les dates.",
+           "- JSON-LD : un seul `CourseInstance` « partout en France », un `VideoObject` par site (durée réelle, poster) et l’image principale sur `Course` et `WebPage`.",
            "",
            "## Récapitulatif par site", ""]
     for s in sites:
@@ -586,11 +684,11 @@ def readme(sites):
                 f"- **Mots-clés secondaires** : " + " · ".join(s["kw_secondary"]),
                 f"- **Requêtes conversationnelles (GEO)** : " + " · ".join(s["kw_geo"]),
                 f"- **Design** : préfixe CSS `{s['prefix']}`, polices {s['fonts_label']}, structure : {s['layout_label']}",
-                "- **Placeholders médias** :"]
-        for m in s["images"]:
-            out.append(f"  - `{m['slot']}` (image, {m.get('ratio', '4 / 3')}) : {m['desc']}")
-        for v in s["videos"]:
-            out.append(f"  - `{v['slot']}` (vidéo 16/9) : **{v['title']}**. {v['desc']}")
+                "- **Médias** (`media/`) :"]
+        for f, stem, alt, slot in PHOTOS[s["num"]]:
+            out.append(f"  - `{stem}-640.jpg` / `-1200.jpg` ({slot}) : {alt}")
+        vf, vstem, vt, vd = VIDEOS[s["num"]]
+        out.append(f"  - `{vstem}.mp4` + `{vstem}-poster.jpg` (vidéo verticale) : **{vt}**")
         out.append("")
     return "\n".join(out)
 

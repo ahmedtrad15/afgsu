@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "hero avec barre de faits clés horizontale, sections courtes",
     "kw_main": "formation AFGSU 2 ambulancier",
     "kw_secondary": ["AFGSU 2 ambulancier prix", "renouvellement AFGSU 2 ambulancier", "AFGSU 2 ambulancier obligatoire",
-                     "recyclage AFGSU 2 ambulancier", "AFGSU 2 ambulancier Marseille / Lyon / Paris",
+                     "recyclage AFGSU 2 ambulancier", "AFGSU 2 ambulancier près de chez moi",
                      "AFGSU 2 transport sanitaire", "attestation gestes et soins d'urgence ambulancier"],
     "kw_geo": ["Un ambulancier doit-il avoir son AFGSU 2 à jour ?", "Combien coûte l'AFGSU 2 pour un ambulancier ?",
                "Que faire si l'AFGSU 2 d'un ambulancier a expiré ?"],
     "breadcrumb": "AFGSU 2 ambulanciers",
     "course_name": "AFGSU 2 pour les ambulanciers",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour ambulanciers : arrêt cardiaque pendant un transport, DAE embarqué, relevage et brancardage, accouchement inopiné, accident de la route. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Marseille", "Lyon", "Paris", "Bordeaux"],
-    "city_hint": "Marseille",
     "msg_hint": "Date d'expiration de votre AFGSU 2, nombre d'ambulanciers de votre société…",
     "form_submit": "Envoyer la demande",
     "nav": ["Programme", "Tarif", "Sessions", "FAQ"],
@@ -259,12 +257,12 @@ a{color:var(--amb-navy)}
       <article class="amb-mod"><h3><small>Module 2 · 7 h</small>Urgences potentielles</h3><ul><li>Malaise, traumatismes, brûlures</li><li>Accouchement inopiné</li><li>Relevage, brancardage</li><li>Hygiène, AES</li><li>Chariot et sac d'urgence</li></ul><p>Scénario : une personne âgée tombée dans sa salle de bain, suspicion de fracture du col. Bilan, immobilisation, relevage sans aggraver.</p></article>
       <article class="amb-mod"><h3><small>Module 3 · 3 h 30</small>Risques collectifs, SSE</h3><ul><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control</li><li>Attentats, afflux de victimes</li></ul><p>Scénario : accident collectif sur la rocade. Vous êtes sollicités en renfort : tri, garrot, évacuation coordonnée.</p></article>
     </div>
-    <div class="amb-row">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
+    [[wide:pratique-mannequin]]
   </div>
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
-<section class="amb-sec amb-alt" aria-labelledby="amb-v1"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v1">L'arrêt cardiaque en transport</h2>[[video:video-1]]</div></section>
+<section class="amb-sec amb-alt" aria-labelledby="amb-v1"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v1">Votre attestation est-elle à jour ?</h2>[[video:video-1]]</div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="amb-sec" id="tarif" aria-labelledby="amb-tarif-t">
@@ -285,7 +283,7 @@ a{color:var(--amb-navy)}
   <div class="amb-wrap">
     <span class="amb-label">Où</span>
     <h2 id="amb-sess">Sessions partout en France, près de votre secteur</h2>
-    <ul class="amb-cities"><li>Marseille</li><li>Lyon</li><li>Paris</li><li>Bordeaux</li><li>Toulouse</li><li>Lille</li><li>Nantes</li><li>Strasbourg</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li><li>Rouen</li><li>Dijon</li></ul>
+    [[map]]
     <p>Pour une société d'ambulances, la formation se tient aussi dans vos locaux, avec vos véhicules et votre matériel.</p>
   </div>
 </section>
@@ -303,9 +301,6 @@ a{color:var(--amb-navy)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="amb-sec amb-alt" aria-labelledby="amb-v2"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v2">Relevage et brancardage</h2>[[video:video-2]]</div></section>
-
 <!-- ===== Réassurance ===== -->
 <section class="amb-sec" aria-labelledby="amb-trust-t">
   <div class="amb-wrap">
@@ -317,7 +312,7 @@ a{color:var(--amb-navy)}
       <div><strong>Matériel pro</strong><br>DAE, sac d'urgence, matelas immobilisateur.</div>
       <div><strong>Attestation CESU</strong><br>Valable 4 ans.</div>
     </div>
-    <div class="amb-row">[[img:situation-metier]]<div class="amb-reviews" role="note">Avis stagiaires (à intégrer)</div></div>
+    [[wide:situation-metier]]
   </div>
 </section>
 

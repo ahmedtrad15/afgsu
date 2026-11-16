@@ -15,7 +15,8 @@
 <meta property="og:title" content="AFGSU 2 ambulancier : formation initiale et renouvellement">
 <meta property="og:description" content="AFGSU 2 ambulancier : arrêt cardiaque en transport, DAE embarqué, relevage, accouchement inopiné. 3 jours, 385 € TTC. Renouvelez à temps.">
 <meta property="og:url" content="https://a-completer.example/afgsu-2-ambulanciers/">
-<!-- [À COMPLÉTER] image de partage 1200×630 : <meta property="og:image" content="https://a-completer.example/afgsu-2-ambulanciers/og-image.jpg"> -->
+<meta property="og:image" content="https://a-completer.example/afgsu-2-ambulanciers/media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg">
+<meta property="og:image:alt" content="Deux ambulanciers en gilet réfléchissant qui prennent en charge un patient sur un brancard, de nuit, devant l&#x27;ambulance">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AFGSU 2 ambulancier : formation initiale et renouvellement">
 <meta name="twitter:description" content="AFGSU 2 ambulancier : arrêt cardiaque en transport, DAE embarqué, relevage, accouchement inopiné. 3 jours, 385 € TTC. Renouvelez à temps.">
@@ -44,14 +45,43 @@ dialog h3{font-size:1.05rem;margin-top:1.4em}
 dialog ul{padding-left:1.2em}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
-/* ---- Emplacements médias ---- */
-.amb-ph{margin:0;position:relative;overflow:hidden;background:#eef1f5;border:1px dashed #142d4c;border-radius:var(--amb-radius,8px);width:100%}
-.amb-ph-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:18px;text-align:center;background:repeating-linear-gradient(135deg,transparent 0 14px,#142d4c22 14px 15px)}
-.amb-ph-txt{font-size:.85rem;line-height:1.45;color:#142d4c;max-width:34ch;background:#eef1f5;padding:6px 10px;border-radius:4px}
-.amb-vid{margin:0}
-.amb-vid-frame{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;background:#142d4c;color:#eef1f5;border-radius:var(--amb-radius,8px);width:100%;font-size:.9rem}
-.amb-vid-title{font-weight:600;margin:12px 0 4px}
-.amb-vid-desc{font-size:.92rem;margin:0;opacity:.9}
+/* ---- Photos, vidéo, carte ---- */
+.amb-photo{margin:0;position:relative;overflow:hidden;border-radius:var(--amb-radius,12px);background:#eef1f5;box-shadow:0 22px 44px -26px rgba(12,22,38,.55),0 2px 6px rgba(12,22,38,.08);width:100%}
+.amb-photo img{display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.amb-photo:hover img{transform:scale(1.03)}
+.amb-photo-wide{margin-top:28px}
+.amb-photo-wide img{aspect-ratio:12 / 5}
+@media (max-width:640px){.amb-photo-wide img{aspect-ratio:3 / 2}}
+.amb-photo-hero{overflow:visible;background:none;box-shadow:none;isolation:isolate;align-self:center;height:auto}
+.amb-photo-hero::before{content:"";position:absolute;inset:22px -16px -16px 22px;border-radius:calc(var(--amb-radius,12px) + 6px);background:#142d4c;opacity:.16;z-index:-1}
+.amb-photo-hero img{aspect-ratio:4 / 3;border-radius:var(--amb-radius,12px);box-shadow:0 28px 56px -28px rgba(12,22,38,.6)}
+.amb-photo-hero:hover img{transform:none}
+.amb-hero-badge{position:absolute;left:-14px;bottom:26px;display:flex;gap:10px;align-items:center;background:#fff;color:#1a1f26;border-radius:12px;padding:10px 16px 10px 10px;box-shadow:0 14px 34px -14px rgba(12,22,38,.5);font-size:.84rem;line-height:1.3;max-width:calc(100% - 24px)}
+.amb-hero-badge b{display:block;font-weight:600}
+.amb-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#142d4c;color:#fff;display:flex;align-items:center;justify-content:center}
+@media (max-width:640px){.amb-hero-badge{left:10px;bottom:12px}.amb-photo-hero::before{inset:14px -8px -8px 14px}}
+.amb-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
+.amb-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
+.amb-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.amb-reel figcaption{display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:40ch;flex:1 1 240px}
+.amb-reel-title{font-weight:600;font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.3}
+.amb-reel-desc{font-size:1rem;opacity:.85}
+.amb-reel-pts{display:flex;flex-direction:column;gap:8px;margin:6px 0 8px}
+.amb-reel-pts span{display:flex;gap:10px;align-items:center;font-size:.97rem}
+.amb-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#142d4c;box-shadow:0 0 0 4px #142d4c22}
+.amb-reel-cta{margin-top:4px}
+@media (max-width:640px){.amb-reel{flex-direction:column;align-items:flex-start}}
+.amb-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
+.amb-map svg{display:block;width:100%;height:auto;overflow:visible}
+.amb-map-land{fill:#eef1f5;stroke:#142d4c;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
+.amb-map-dot{fill:#142d4c;stroke:#fff;stroke-width:3}
+.amb-map-ring{fill:#142d4c;opacity:0;transform-box:fill-box;transform-origin:center;animation:amb-pulse 4s ease-out infinite}
+@keyframes amb-pulse{0%{opacity:.35;transform:scale(1)}70%{opacity:0;transform:scale(3.4)}100%{opacity:0;transform:scale(3.4)}}
+.amb-map figcaption{display:flex;flex-direction:column;gap:4px;font-size:.92rem;margin-top:12px;color:#3a414b}
+.amb-map-leg{display:flex;align-items:center;gap:8px;font-weight:600;color:#1a1f26}
+.amb-map-leg i{width:12px;height:12px;border-radius:50%;background:#142d4c;box-shadow:0 0 0 3px #fff,0 0 0 4px #142d4c}
+.amb-body .amb-btn{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.amb-body .amb-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -12px rgba(12,22,38,.55);filter:saturate(1.08)}
 .amb-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (max-width:520px){.amb-tel-num{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.amb-tel{width:46px;height:46px;justify-content:center;border:1px solid currentColor;border-radius:50%;padding:0!important}.amb-brand-txt{font-size:.9rem}.amb-brand{flex:1 1 0;min-width:0}}
 
@@ -227,6 +257,10 @@ a{color:var(--amb-navy)}
    },
    "breadcrumb": {
     "@id": "https://a-completer.example/afgsu-2-ambulanciers/#fil-ariane"
+   },
+   "primaryImageOfPage": "https://a-completer.example/afgsu-2-ambulanciers/media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg",
+   "video": {
+    "@id": "https://a-completer.example/afgsu-2-ambulanciers/#video"
    }
   },
   {
@@ -256,6 +290,7 @@ a{color:var(--amb-navy)}
     "@id": "https://a-completer.example/afgsu-2-ambulanciers/#organisation"
    },
    "inLanguage": "fr",
+   "image": "https://a-completer.example/afgsu-2-ambulanciers/media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg",
    "timeRequired": "PT21H",
    "educationalCredentialAwarded": "Attestation de Formation aux Gestes et Soins d’Urgence de niveau 2, délivrée par le CESU",
    "audience": {
@@ -276,73 +311,9 @@ a{color:var(--amb-navy)}
      "courseMode": "onsite",
      "location": {
       "@type": "Place",
-      "name": "Session AFGSU 2 à Marseille",
+      "name": "Sessions AFGSU 2 partout en France",
       "address": {
        "@type": "PostalAddress",
-       "addressLocality": "Marseille",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Lyon",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Lyon",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Paris",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Paris",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Bordeaux",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Bordeaux",
        "addressCountry": "FR"
       }
      },
@@ -474,6 +445,17 @@ a{color:var(--amb-navy)}
      }
     }
    ]
+  },
+  {
+   "@type": "VideoObject",
+   "@id": "https://a-completer.example/afgsu-2-ambulanciers/#video",
+   "name": "Ambulancier : votre AFGSU 2 doit être à jour",
+   "description": "Le rappel en vidéo courte : l'AFGSU 2 se renouvelle tous les 4 ans.",
+   "thumbnailUrl": "https://a-completer.example/afgsu-2-ambulanciers/media/video-afgsu-2-ambulancier-poster.jpg",
+   "uploadDate": "2026-11-16",
+   "duration": "PT7S",
+   "contentUrl": "https://a-completer.example/afgsu-2-ambulanciers/media/video-afgsu-2-ambulancier.mp4",
+   "inLanguage": "fr"
   }
  ]
 }
@@ -502,7 +484,7 @@ a{color:var(--amb-navy)}
       <p class="amb-lead">Un arrêt cardiaque entre deux sorties d'autoroute, un relevage dans un escalier en colimaçon, une naissance qui n'attend pas la maternité. Vous connaissez ces moments. Trois jours pour remettre les gestes à niveau et repartir avec une attestation valable 4 ans.</p>
       <div class="amb-ctas"><a class="amb-btn" href="#inscription">Réserver ma session</a><a class="amb-btn amb-btn-w" href="#inscription" data-rappel>Être rappelé</a></div>
     </div>
-    <figure class="media-placeholder amb-ph" data-slot="hero" style="aspect-ratio:3 / 2"><div class="amb-ph-in" role="img" aria-label="Équipage ambulancier pratiquant massage cardiaque et défibrillation sur mannequin dans une cellule d&#x27;ambulance" data-alt="Équipage ambulancier pratiquant massage cardiaque et défibrillation sur mannequin dans une cellule d&#x27;ambulance"><span class="amb-ph-txt">Image à remplacer — cellule sanitaire d&#x27;une ambulance, porte arrière ouverte : un ambulancier masse un mannequin sur le brancard pendant que son équipier pose les électrodes du DAE.</span></div><!-- Remplacer par : <img src="..." alt="Équipage ambulancier pratiquant massage cardiaque et défibrillation sur mannequin dans une cellule d&#x27;ambulance" loading="lazy" decoding="async" width="..." height="..."> --></figure>
+    <figure class="amb-photo amb-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg" srcset="media/formation-afgsu-2-ambulanciers-intervention-nuit-640.jpg 640w, media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 600px" width="1200" height="800" alt="Deux ambulanciers en gilet réfléchissant qui prennent en charge un patient sur un brancard, de nuit, devant l&#x27;ambulance" loading="eager" fetchpriority="high" decoding="async"><figcaption class="amb-hero-badge"><span class="amb-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
   </div>
   <div class="amb-wrap">
     <div class="amb-bar" role="region" aria-label="Faits clés">
@@ -557,33 +539,17 @@ a{color:var(--amb-navy)}
       <article class="amb-mod"><h3><small>Module 2 · 7 h</small>Urgences potentielles</h3><ul><li>Malaise, traumatismes, brûlures</li><li>Accouchement inopiné</li><li>Relevage, brancardage</li><li>Hygiène, AES</li><li>Chariot et sac d'urgence</li></ul><p>Scénario&nbsp;: une personne âgée tombée dans sa salle de bain, suspicion de fracture du col. Bilan, immobilisation, relevage sans aggraver.</p></article>
       <article class="amb-mod"><h3><small>Module 3 · 3 h 30</small>Risques collectifs, SSE</h3><ul><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control</li><li>Attentats, afflux de victimes</li></ul><p>Scénario&nbsp;: accident collectif sur la rocade. Vous êtes sollicités en renfort&nbsp;: tri, garrot, évacuation coordonnée.</p></article>
     </div>
-    <div class="amb-row"><figure class="media-placeholder amb-ph" data-slot="pratique-mannequin" style="aspect-ratio:4 / 3"><div class="amb-ph-in" role="img" aria-label="Deux ambulanciers réalisant une réanimation cardio-pulmonaire à deux sauveteurs sur mannequin" data-alt="Deux ambulanciers réalisant une réanimation cardio-pulmonaire à deux sauveteurs sur mannequin"><span class="amb-ph-txt">Image à remplacer — deux ambulanciers en tenue réalisant une RCP à deux sauveteurs, relais toutes les deux minutes.</span></div><!-- Remplacer par : <img src="..." alt="Deux ambulanciers réalisant une réanimation cardio-pulmonaire à deux sauveteurs sur mannequin" loading="lazy" decoding="async" width="..." height="..."> --></figure><figure class="media-placeholder amb-ph" data-slot="groupe-formation" style="aspect-ratio:4 / 3"><div class="amb-ph-in" role="img" aria-label="Groupe d&#x27;ambulanciers s&#x27;exerçant au relevage avec un matelas immobilisateur" data-alt="Groupe d&#x27;ambulanciers s&#x27;exerçant au relevage avec un matelas immobilisateur"><span class="amb-ph-txt">Image à remplacer — groupe d&#x27;ambulanciers autour d&#x27;un brancard pendant un exercice de relevage avec matelas immobilisateur.</span></div><!-- Remplacer par : <img src="..." alt="Groupe d&#x27;ambulanciers s&#x27;exerçant au relevage avec un matelas immobilisateur" loading="lazy" decoding="async" width="..." height="..."> --></figure></div>
+    <figure class="amb-photo amb-photo-wide" data-slot="pratique-mannequin"><img src="media/afgsu-2-ambulanciers-cellule-sanitaire-1200.jpg" srcset="media/afgsu-2-ambulanciers-cellule-sanitaire-640.jpg 640w, media/afgsu-2-ambulanciers-cellule-sanitaire-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Deux ambulanciers en tenue rouge dans la cellule sanitaire de l&#x27;ambulance" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
-<section class="amb-sec amb-alt" aria-labelledby="amb-v1"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v1">L'arrêt cardiaque en transport</h2><div class="video-placeholder amb-vid" data-slot="video-1">
-  <div class="amb-vid-frame" style="aspect-ratio:16 / 9">
-    <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" focusable="false"><circle cx="28" cy="28" r="27" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 18v20l16-10z" fill="currentColor"/></svg>
-    <span>Vidéo à intégrer</span>
-  </div>
-  <p class="amb-vid-title">Arrêt cardiaque en plein transport : l&#x27;ambulance s&#x27;arrête, l&#x27;équipage enchaîne</p>
-  <p class="amb-vid-desc">Le patient décroche sur l&#x27;autoroute. Arrêt du véhicule, alerte du 15, RCP et DAE embarqué : la séquence à deux, filmée en cellule.</p>
-  <!-- Balisage VideoObject à compléter puis à déplacer dans une balise <script type="application/ld+json"> :
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "Arrêt cardiaque en plein transport : l'ambulance s'arrête, l'équipage enchaîne",
-  "description": "Le patient décroche sur l'autoroute. Arrêt du véhicule, alerte du 15, RCP et DAE embarqué : la séquence à deux, filmée en cellule.",
-  "thumbnailUrl": "[À COMPLÉTER]",
-  "uploadDate": "[À COMPLÉTER]",
-  "duration": "[À COMPLÉTER, ex. PT2M30S]",
-  "contentUrl": "[À COMPLÉTER]",
-  "embedUrl": "[À COMPLÉTER]",
-  "inLanguage": "fr"
-}
-  -->
-</div></div></section>
+<section class="amb-sec amb-alt" aria-labelledby="amb-v1"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v1">Votre attestation est-elle à jour&nbsp;?</h2><figure class="amb-reel" data-slot="video-1">
+  <div class="amb-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-ambulancier-poster.jpg" width="720" height="1280" aria-label="Ambulancier : votre AFGSU 2 doit être à jour"><source src="media/video-afgsu-2-ambulancier.mp4" type="video/mp4"></video></div>
+  <figcaption><span class="amb-reel-title">Ambulancier : votre AFGSU 2 doit être à jour</span><span class="amb-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 se renouvelle tous les 4 ans.</span>
+    <span class="amb-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
+    <a class="amb-btn amb-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
+</figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="amb-sec" id="tarif" aria-labelledby="amb-tarif-t">
@@ -595,7 +561,7 @@ a{color:var(--amb-navy)}
       <ul><li>3 jours, 21 heures de formation</li><li>Mannequins, DAE de formation, sac d'urgence, matériel d'immobilisation</li><li>Attestation AFGSU 2 délivrée par le CESU</li></ul>
       <a class="amb-btn amb-btn-n" href="#inscription">Je bloque ma date</a>
     </div>
-    <figure class="media-placeholder amb-ph" data-slot="materiel" style="aspect-ratio:4 / 3"><div class="amb-ph-in" role="img" aria-label="Sac d&#x27;urgence d&#x27;ambulance avec ballon de ventilation, aspirateur de mucosités, garrot et kit accouchement" data-alt="Sac d&#x27;urgence d&#x27;ambulance avec ballon de ventilation, aspirateur de mucosités, garrot et kit accouchement"><span class="amb-ph-txt">Image à remplacer — sac d&#x27;urgence ouvert : BAVU, canules, aspirateur de mucosités, garrot tourniquet, kit accouchement.</span></div><!-- Remplacer par : <img src="..." alt="Sac d&#x27;urgence d&#x27;ambulance avec ballon de ventilation, aspirateur de mucosités, garrot et kit accouchement" loading="lazy" decoding="async" width="..." height="..."> --></figure>
+    <figure class="amb-photo" data-slot="materiel"><img src="media/afgsu-2-ambulancier-sac-urgence-brancard-1200.jpg" srcset="media/afgsu-2-ambulancier-sac-urgence-brancard-640.jpg 640w, media/afgsu-2-ambulancier-sac-urgence-brancard-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Ambulancière gantée qui prépare le sac d&#x27;urgence posé sur le brancard" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -604,7 +570,7 @@ a{color:var(--amb-navy)}
   <div class="amb-wrap">
     <span class="amb-label">Où</span>
     <h2 id="amb-sess">Sessions partout en France, près de votre secteur</h2>
-    <ul class="amb-cities"><li>Marseille</li><li>Lyon</li><li>Paris</li><li>Bordeaux</li><li>Toulouse</li><li>Lille</li><li>Nantes</li><li>Strasbourg</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li><li>Rouen</li><li>Dijon</li></ul>
+    <figure class="amb-map"><svg viewBox="10 -10 1000 980" role="img" aria-label="Carte de France : sessions AFGSU 2 organisées dans les grandes villes, partout en France"><path class="amb-map-land" d="M523 1L547.3 40L570.9 31.2L595.9 58.6L633.1 81.1L631.8 109.4L675.7 92.8L680.4 92.8L677.7 126.9L716.2 144.5L750 156.2L781.1 159.2L806.1 188.5L831.1 190.4L864.9 200.2L905.4 208L878.4 244.1L863.5 293L864.2 342.8L834.5 356.4L820.9 359.4L787.2 405.3L763.5 454.1L766.9 478.5L790.5 454.1L810.8 457L827 504.9L814.9 514.6L831.1 556.6L799.3 584.9L824.3 625L820.9 649.4L871.6 683.6L860.1 714.8L842.6 722.6L832.4 736.3L819.6 749L800.7 764.6L781.1 781.2L752 781.2L716.2 770.5L689.2 753.9L662.2 750L637.2 746.1L614.9 740.2L601.4 751.9L584.5 763.6L560.8 781.2L556.8 810.5L556.1 830.1L565.5 845.7L533.8 849.6L483.1 844.7L467.6 839.8L449.3 830.1L398.6 805.6L344.6 820.3L304.1 802.7L256.8 786.1L231.1 754.9L245.9 744.1L253.4 712.9L266.9 644.5L266.9 629.9L272.3 595.7L279.1 540L270.3 537.1L280.4 535.1L270.3 483.4L250 459L229.7 449.2L220.3 429.7L206.1 405.3L212.8 390.6L202.7 374L179.1 371.1L162.2 351.6L140.5 353.5L123.6 329.1L87.8 315.4L56.1 322.3L31.8 298.8L43.9 278.3L28.4 270.5L29.1 249L43.9 242.2L82.4 231.4L118.2 221.7L148.6 226.6L164.2 249L194.6 236.3L216.2 239.3L248.6 242.2L243.2 220.7L226.4 166L219.6 134.8L241.9 141.6L266.2 139.6L273.6 170.9L310.8 170.9L334.5 176.8L371.6 163.1L358.1 157.2L364.9 136.7L376.4 130.9L424.3 114.3L444.6 101.6L459.5 87.9L457.4 68.4L459.5 36.1L458.1 22.5L476.4 13.7L511.5 5.9Z M983.8 791L991.9 810.5L995.3 839.8L996.6 878.9L986.5 917.9L974.3 950.2L945.9 932.6L932.4 898.4L933.8 869.1L942.6 834.9L966.2 820.3L979.7 795.9Z"/><circle class="amb-map-ring" cx="510" cy="218" r="9" style="animation-delay:0.00s"/><circle class="amb-map-dot" cx="510" cy="218" r="9"/><circle class="amb-map-ring" cx="678" cy="521" r="6.5" style="animation-delay:0.37s"/><circle class="amb-map-dot" cx="678" cy="521" r="6.5"/><circle class="amb-map-ring" cx="714" cy="762" r="6.5" style="animation-delay:0.74s"/><circle class="amb-map-dot" cx="714" cy="762" r="6.5"/><circle class="amb-map-ring" cx="449" cy="732" r="6.5" style="animation-delay:1.11s"/><circle class="amb-map-dot" cx="449" cy="732" r="6.5"/><circle class="amb-map-ring" cx="842" cy="722" r="6.5" style="animation-delay:1.48s"/><circle class="amb-map-dot" cx="842" cy="722" r="6.5"/><circle class="amb-map-ring" cx="247" cy="379" r="6.5" style="animation-delay:1.85s"/><circle class="amb-map-dot" cx="247" cy="379" r="6.5"/><circle class="amb-map-ring" cx="614" cy="731" r="6.5" style="animation-delay:2.22s"/><circle class="amb-map-dot" cx="614" cy="731" r="6.5"/><circle class="amb-map-ring" cx="875" cy="246" r="6.5" style="animation-delay:2.59s"/><circle class="amb-map-dot" cx="875" cy="246" r="6.5"/><circle class="amb-map-ring" cx="312" cy="611" r="6.5" style="animation-delay:2.96s"/><circle class="amb-map-dot" cx="312" cy="611" r="6.5"/><circle class="amb-map-ring" cx="558" cy="46" r="6.5" style="animation-delay:3.33s"/><circle class="amb-map-dot" cx="558" cy="46" r="6.5"/><circle class="amb-map-ring" cx="238" cy="292" r="6.5" style="animation-delay:3.70s"/><circle class="amb-map-dot" cx="238" cy="292" r="6.5"/><circle class="amb-map-ring" cx="624" cy="179" r="6.5" style="animation-delay:0.07s"/><circle class="amb-map-dot" cx="624" cy="179" r="6.5"/><circle class="amb-map-ring" cx="738" cy="577" r="6.5" style="animation-delay:0.44s"/><circle class="amb-map-dot" cx="738" cy="577" r="6.5"/><circle class="amb-map-ring" cx="692" cy="369" r="6.5" style="animation-delay:0.81s"/><circle class="amb-map-dot" cx="692" cy="369" r="6.5"/><circle class="amb-map-ring" cx="559" cy="519" r="6.5" style="animation-delay:1.18s"/><circle class="amb-map-dot" cx="559" cy="519" r="6.5"/><circle class="amb-map-ring" cx="426" cy="162" r="6.5" style="animation-delay:1.55s"/><circle class="amb-map-dot" cx="426" cy="162" r="6.5"/><circle class="amb-map-ring" cx="398" cy="362" r="6.5" style="animation-delay:1.92s"/><circle class="amb-map-dot" cx="398" cy="362" r="6.5"/><circle class="amb-map-ring" cx="48" cy="264" r="6.5" style="animation-delay:2.29s"/><circle class="amb-map-dot" cx="48" cy="264" r="6.5"/><circle class="amb-map-ring" cx="436" cy="515" r="6.5" style="animation-delay:2.66s"/><circle class="amb-map-dot" cx="436" cy="515" r="6.5"/><circle class="amb-map-ring" cx="769" cy="193" r="6.5" style="animation-delay:3.03s"/><circle class="amb-map-dot" cx="769" cy="193" r="6.5"/><circle class="amb-map-ring" cx="374" cy="441" r="6.5" style="animation-delay:3.40s"/><circle class="amb-map-dot" cx="374" cy="441" r="6.5"/><circle class="amb-map-ring" cx="752" cy="779" r="6.5" style="animation-delay:3.77s"/><circle class="amb-map-dot" cx="752" cy="779" r="6.5"/><circle class="amb-map-ring" cx="507" cy="118" r="6.5" style="animation-delay:0.14s"/><circle class="amb-map-dot" cx="507" cy="118" r="6.5"/><circle class="amb-map-ring" cx="326" cy="187" r="6.5" style="animation-delay:0.51s"/><circle class="amb-map-dot" cx="326" cy="187" r="6.5"/></svg><figcaption><span class="amb-map-leg"><i aria-hidden="true"></i>Grandes villes de session</span><span>Sessions partout en France, ou directement dans votre structure.</span></figcaption></figure>
     <p>Pour une société d'ambulances, la formation se tient aussi dans vos locaux, avec vos véhicules et votre matériel.</p>
   </div>
 </section>
@@ -622,30 +588,6 @@ a{color:var(--amb-navy)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="amb-sec amb-alt" aria-labelledby="amb-v2"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v2">Relevage et brancardage</h2><div class="video-placeholder amb-vid" data-slot="video-2">
-  <div class="amb-vid-frame" style="aspect-ratio:16 / 9">
-    <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" focusable="false"><circle cx="28" cy="28" r="27" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 18v20l16-10z" fill="currentColor"/></svg>
-    <span>Vidéo à intégrer</span>
-  </div>
-  <p class="amb-vid-title">Relevage et brancardage : les techniques revues en formation</p>
-  <p class="amb-vid-desc">Pont simplifié, cuillère, matelas immobilisateur, escaliers étroits : démonstration commentée des techniques travaillées pendant les trois jours.</p>
-  <!-- Balisage VideoObject à compléter puis à déplacer dans une balise <script type="application/ld+json"> :
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "Relevage et brancardage : les techniques revues en formation",
-  "description": "Pont simplifié, cuillère, matelas immobilisateur, escaliers étroits : démonstration commentée des techniques travaillées pendant les trois jours.",
-  "thumbnailUrl": "[À COMPLÉTER]",
-  "uploadDate": "[À COMPLÉTER]",
-  "duration": "[À COMPLÉTER, ex. PT2M30S]",
-  "contentUrl": "[À COMPLÉTER]",
-  "embedUrl": "[À COMPLÉTER]",
-  "inLanguage": "fr"
-}
-  -->
-</div></div></section>
-
 <!-- ===== Réassurance ===== -->
 <section class="amb-sec" aria-labelledby="amb-trust-t">
   <div class="amb-wrap">
@@ -657,7 +599,7 @@ a{color:var(--amb-navy)}
       <div><strong>Matériel pro</strong><br>DAE, sac d'urgence, matelas immobilisateur.</div>
       <div><strong>Attestation CESU</strong><br>Valable 4 ans.</div>
     </div>
-    <div class="amb-row"><figure class="media-placeholder amb-ph" data-slot="situation-metier" style="aspect-ratio:3 / 2"><div class="amb-ph-in" role="img" aria-label="Ambulanciers en exercice d&#x27;accident de la route maintenant la tête d&#x27;une victime dans un véhicule" data-alt="Ambulanciers en exercice d&#x27;accident de la route maintenant la tête d&#x27;une victime dans un véhicule"><span class="amb-ph-txt">Image à remplacer — accident de la route simulé sur parking : ambulanciers sécurisant la zone, l&#x27;un maintient la tête d&#x27;une victime assise dans un véhicule.</span></div><!-- Remplacer par : <img src="..." alt="Ambulanciers en exercice d&#x27;accident de la route maintenant la tête d&#x27;une victime dans un véhicule" loading="lazy" decoding="async" width="..." height="..."> --></figure><div class="amb-reviews" role="note">Avis stagiaires (à intégrer)</div></div>
+    <figure class="amb-photo amb-photo-wide" data-slot="situation-metier"><img src="media/afgsu-2-ambulancier-radio-alerte-1200.jpg" srcset="media/afgsu-2-ambulancier-radio-alerte-640.jpg 640w, media/afgsu-2-ambulancier-radio-alerte-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Ambulancier au volant qui transmet un bilan par radio" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
@@ -694,7 +636,7 @@ a{color:var(--amb-navy)}
     <div class="amb-field"><label for="f-email">E-mail <span aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
     <div class="amb-field"><label for="f-tel">Téléphone <span aria-hidden="true">*</span></label><input id="f-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required></div>
     <div class="amb-field"><label for="f-metier">Métier</label><input id="f-metier" name="metier" type="text" value="Ambulancier(ère)" autocomplete="organization-title"></div>
-    <div class="amb-field"><label for="f-ville">Ville souhaitée</label><input id="f-ville" name="ville" type="text" list="f-villes" autocomplete="address-level2" placeholder="Ex. Marseille, ou dans votre structure"><datalist id="f-villes"><option value="Paris"><option value="Lyon"><option value="Marseille"><option value="Toulouse"><option value="Bordeaux"><option value="Lille"><option value="Nantes"><option value="Strasbourg"><option value="Rennes"><option value="Montpellier"><option value="Nice"><option value="Reims"><option value="Grenoble"><option value="Rouen"><option value="Tours"><option value="Dijon"><option value="Clermont-Ferrand"><option value="Metz"><option value="Caen"><option value="Angers"></datalist></div>
+    <div class="amb-field"><label for="f-ville">Ville souhaitée</label><input id="f-ville" name="ville" type="text" autocomplete="address-level2" placeholder="Votre ville, ou dans votre structure"></div>
     <div class="amb-field amb-field-full"><label for="f-periode">Date ou période souhaitée</label><input id="f-periode" name="periode" type="text" autocomplete="off" placeholder="Ex. dès que possible, ou en mars"></div>
     <div class="amb-field amb-field-full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="Date d&#x27;expiration de votre AFGSU 2, nombre d&#x27;ambulanciers de votre société…"></textarea></div>
   </div>

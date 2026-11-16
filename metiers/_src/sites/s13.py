@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "onglets par profession (kiné / ergo / orthophoniste) + accordéons par module",
     "kw_main": "formation AFGSU 2 kinésithérapeute",
     "kw_secondary": ["AFGSU 2 kiné prix", "AFGSU 2 ergothérapeute", "AFGSU 2 orthophoniste", "renouvellement AFGSU 2 kinésithérapeute",
-                     "AFGSU 2 masseur-kinésithérapeute obligatoire", "AFGSU 2 kiné Nantes / Lyon / Marseille",
+                     "AFGSU 2 masseur-kinésithérapeute obligatoire", "AFGSU 2 kiné près de chez moi",
                      "attestation gestes et soins d'urgence ergothérapeute", "attestation gestes et soins d'urgence orthophoniste"],
     "kw_geo": ["Un kinésithérapeute doit-il faire l'AFGSU 2 ?", "Un ergothérapeute peut-il suivre l'AFGSU 2 ?",
                "Un orthophoniste est-il concerné par l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour un kiné ?"],
     "breadcrumb": "AFGSU 2 kinésithérapeutes, ergothérapeutes, orthophonistes",
     "course_name": "AFGSU 2 pour kinésithérapeutes, ergothérapeutes et orthophonistes",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour masseurs-kinésithérapeutes, ergothérapeutes et orthophonistes : malaise à l'effort, arrêt cardiaque en salle, chute, fausse route, traumatisme. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Nantes", "Lyon", "Marseille", "Bordeaux"],
-    "city_hint": "Nantes",
     "msg_hint": "Kiné, ergo ou orthophoniste ? Cabinet, centre de rééducation, domicile…",
     "form_submit": "Réserver ma place",
     "pict": '<circle cx="19" cy="5" r="3" fill="#3a6ea5"/><path d="M11 13.5 16.5 10l4 3.5 4.5 1M16.5 10l-2.5 8 5 3.5-1 7M14 18l-5.5 5.5" fill="none" stroke="#3a6ea5" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="21" y="19" width="10" height="10" rx="2.5" fill="#4caf7d"/><path d="M26 21.2v5.6M23.2 24h5.6" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M3 27.5c2.5-1.2 4.5-1.2 7 0" fill="none" stroke="#4caf7d" stroke-width="2.2" stroke-linecap="round"/>',
@@ -258,7 +256,7 @@ a{color:var(--reed-bd)}
         <ul><li>Fausse route pendant un essai alimentaire</li><li>Malaise chez un patient neurologique</li><li>Signes de récidive d'AVC en séance</li><li>Crise d'épilepsie chez l'enfant ou l'adulte</li><li>Étouffement d'un jeune enfant avec un petit objet</li></ul>
       </div>
     </div>
-    <div class="reed-pair">[[img:situation-metier]][[img:materiel]]</div>
+    [[wide:situation-metier]]
   </div>
 </section>
 
@@ -289,12 +287,12 @@ a{color:var(--reed-bd)}
         </div>
       </details>
     </div>
-    <div class="reed-pair">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
+    
   </div>
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
-<section class="reed-sec reed-alt" aria-labelledby="reed-v1"><div class="reed-wrap reed-vid"><h2 id="reed-v1">Vidéo : le malaise à l'effort</h2>[[video:video-1]]</div></section>
+<section class="reed-sec reed-alt" aria-labelledby="reed-v1"><div class="reed-wrap reed-vid"><h2 id="reed-v1">Vidéo : la rééducation face à l'urgence</h2>[[video:video-1]]</div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="reed-sec" id="tarif" aria-labelledby="reed-tarif-t">
@@ -316,7 +314,7 @@ a{color:var(--reed-bd)}
 <section class="reed-sec reed-alt" id="sessions" aria-labelledby="reed-sess">
   <div class="reed-wrap">
     <h2 id="reed-sess">Se former partout en France</h2>
-    <ul class="reed-cities"><li>Nantes</li><li>Lyon</li><li>Marseille</li><li>Bordeaux</li><li>Paris</li><li>Toulouse</li><li>Lille</li><li>Strasbourg</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li><li>Angers</li><li>Clermont-Ferrand</li></ul>
+    [[map]]
     <p>Également dans votre cabinet pluridisciplinaire, votre centre de rééducation ou votre maison de santé.</p>
   </div>
 </section>
@@ -333,9 +331,6 @@ a{color:var(--reed-bd)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="reed-sec reed-alt" aria-labelledby="reed-v2"><div class="reed-wrap reed-vid"><h2 id="reed-v2">Vidéo : la fausse route en séance</h2>[[video:video-2]]</div></section>
-
 <!-- ===== Réassurance ===== -->
 <section class="reed-sec" aria-labelledby="reed-trust-t">
   <div class="reed-wrap">
@@ -346,7 +341,6 @@ a{color:var(--reed-bd)}
       <div><strong>Matériel professionnel</strong><br>Mannequins, défibrillateur, matériel d'urgence.</div>
       <div><strong>Attestation CESU</strong><br>Valable 4 ans.</div>
     </div>
-    <div class="reed-reviews" role="note">Avis stagiaires (à intégrer)</div>
   </div>
 </section>
 

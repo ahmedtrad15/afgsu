@@ -14,16 +14,14 @@ SITE = {
     "layout_label": "hero sobre puis parcours en étapes (timeline « De votre diplôme étranger à l'exercice en France »)",
     "kw_main": "AFGSU 2 diplômé à l'étranger",
     "kw_secondary": ["formation AFGSU 2 PADHUE", "AFGSU 2 médecin diplômé hors UE", "AFGSU 2 infirmier diplômé à l'étranger",
-                     "AFGSU 2 diplôme étranger prix", "AFGSU 2 exercer en France", "AFGSU 2 diplômé étranger Paris",
-                     "AFGSU 2 diplômé étranger Lyon / Marseille", "attestation gestes et soins d'urgence diplômé étranger"],
+                     "AFGSU 2 diplôme étranger prix", "AFGSU 2 exercer en France", "AFGSU 2 diplômé étranger partout en France",
+                     "AFGSU 2 diplômé étranger près de chez moi", "attestation gestes et soins d'urgence diplômé étranger"],
     "kw_geo": ["Un professionnel de santé diplômé à l'étranger doit-il faire l'AFGSU 2 ?",
                "Combien coûte l'AFGSU 2 pour un diplômé à l'étranger ?",
                "Mon BLS ou ACLS étranger remplace-t-il l'AFGSU 2 ?"],
     "breadcrumb": "AFGSU 2 diplômés à l'étranger",
     "course_name": "AFGSU 2 pour les professionnels de santé diplômés à l'étranger",
     "course_desc": "Formation AFGSU de niveau 2 de 21 heures sur 3 jours, centrée sur l'organisation française de l'urgence (15, 112, 114), la chaîne de survie et le chariot d'urgence. Attestation délivrée par le CESU, à renouveler tous les 4 ans.",
-    "instances": ["Paris", "Lyon", "Marseille", "Lille"],
-    "city_hint": "Paris",
     "pict": '<circle cx="14" cy="17" r="11" fill="none" stroke="#1f3a5f" stroke-width="2.2"/><ellipse cx="14" cy="17" rx="4.6" ry="11" fill="none" stroke="#1f3a5f" stroke-width="1.8"/><path d="M3.5 13.5h21M3.5 20.5h21" stroke="#1f3a5f" stroke-width="1.8"/><rect x="21" y="1" width="10" height="10" rx="2" fill="#c47f2c"/><path d="M26 3.2v5.6M23.2 6h5.6" stroke="#fff" stroke-width="2"/>',
     "favicon_bg": '<rect width="32" height="32" rx="6" fill="#fff"/>',
     "ph_colors": ("#f6f0e4", "#c47f2c", "#1f3a5f"),
@@ -321,14 +319,13 @@ a{color:var(--dse-blue)}
         <p class="dse-case"><strong>Cas pratique :</strong> le plan blanc est déclenché. Vous identifiez votre rôle dans l'organisation française de crise et la chaîne de commandement.</p>
       </article>
     </div>
-    <div class="dse-gallery">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
   </div>
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
 <section class="dse-sec dse-sec-alt" aria-labelledby="dse-v1">
   <div class="dse-wrap dse-video-wrap">
-    <h2 id="dse-v1">Voir comment se passe une alerte au 15</h2>
+    <h2 id="dse-v1">L'AFGSU 2 en quelques secondes, pour exercer en France</h2>
     [[video:video-1]]
   </div>
 </section>
@@ -348,7 +345,7 @@ a{color:var(--dse-blue)}
       </ul>
       <a class="dse-btn" href="#inscription">Bloquer ma place à ce tarif</a>
     </div>
-    [[img:materiel]]
+    [[img:groupe-formation]]
   </div>
 </section>
 
@@ -357,9 +354,7 @@ a{color:var(--dse-blue)}
   <div class="dse-wrap">
     <h2 id="dse-sessions">Sessions partout en France</h2>
     <p class="dse-intro">Des sessions sont organisées dans les grandes villes. Indiquez votre ville et la période qui vous convient : nous vous proposons la date la plus proche.</p>
-    <ul class="dse-cities">
-      <li>Paris<span>Île-de-France</span></li><li>Lyon<span>Auvergne-Rhône-Alpes</span></li><li>Marseille<span>Provence-Alpes-Côte d'Azur</span></li><li>Lille<span>Hauts-de-France</span></li><li>Toulouse<span>Occitanie</span></li><li>Bordeaux<span>Nouvelle-Aquitaine</span></li><li>Strasbourg<span>Grand Est</span></li><li>Nantes<span>Pays de la Loire</span></li><li>Montpellier<span>Occitanie</span></li><li>Rennes<span>Bretagne</span></li><li>Nice<span>Provence-Alpes-Côte d'Azur</span></li><li>Reims<span>Grand Est</span></li>
-    </ul>
+    [[map]]
     <div class="dse-onsite">
       <h3>Dans votre établissement</h3>
       <p>Vous accueillez plusieurs praticiens recrutés à l'étranger ? La formation peut se tenir dans vos murs, avec votre chariot d'urgence et vos procédures internes.</p>
@@ -379,14 +374,6 @@ a{color:var(--dse-blue)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="dse-sec dse-sec-alt" aria-labelledby="dse-v2">
-  <div class="dse-wrap dse-video-wrap">
-    <h2 id="dse-v2">Les trois jours en images</h2>
-    [[video:video-2]]
-  </div>
-</section>
-
 <!-- ===== Réassurance ===== -->
 <section class="dse-sec" aria-labelledby="dse-confiance">
   <div class="dse-wrap">
@@ -397,10 +384,7 @@ a{color:var(--dse-blue)}
       <li><strong>Matériel professionnel</strong><br>Mannequins, DAE de formation, chariot d'urgence complet.</li>
       <li><strong>Attestation du CESU</strong><br>Le document officiel attendu par les établissements.</li>
     </ul>
-    <div class="dse-two">
-      [[img:situation-metier]]
-      <div class="dse-reviews" role="note">Avis stagiaires (à intégrer)</div>
-    </div>
+    [[wide:situation-metier]]
   </div>
 </section>
 

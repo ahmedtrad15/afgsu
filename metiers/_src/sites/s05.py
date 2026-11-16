@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "hero centré très aéré, sections alternées image / texte",
     "kw_main": "AFGSU 2 assistante dentaire",
     "kw_secondary": ["formation AFGSU 2 assistant dentaire", "AFGSU 2 assistante dentaire prix", "AFGSU 2 assistante dentaire obligatoire",
-                     "renouvellement AFGSU 2 assistante dentaire", "AFGSU 2 cabinet dentaire", "AFGSU 2 assistante dentaire Nantes / Rennes / Paris",
+                     "renouvellement AFGSU 2 assistante dentaire", "AFGSU 2 cabinet dentaire", "AFGSU 2 assistante dentaire près de chez moi",
                      "attestation gestes et soins d'urgence assistante dentaire"],
     "kw_geo": ["Une assistante dentaire doit-elle faire l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour une assistante dentaire ?",
                "Que faire si un patient fait un malaise au fauteuil dentaire ?"],
     "breadcrumb": "AFGSU 2 assistantes dentaires",
     "course_name": "AFGSU 2 pour les assistantes et assistants dentaires",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour assistantes dentaires : malaise au fauteuil, réaction allergique après anesthésie, inhalation de corps étranger, hémorragie post-extraction. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Nantes", "Rennes", "Paris", "Montpellier"],
-    "city_hint": "Nantes",
     "msg_hint": "Nombre d'assistantes au cabinet, contraintes d'horaires…",
     "form_submit": "Je m'inscris",
     "pict": '<path d="M9.5 4.5c-3.6 0-6 2.7-6 6.6 0 3 1 5.2 2 7.6 1 2.5 1.4 5.5 2.2 8.3.4 1.3 2.2 1.3 2.6 0l1.8-6c.5-1.6 2.9-1.6 3.4 0l1.8 6c.4 1.3 2.2 1.3 2.6 0 .8-2.8 1.2-5.8 2.2-8.3 1-2.4 2-4.6 2-7.6 0-3.9-2.4-6.6-6-6.6-2.4 0-3.6 1.2-6.5 1.2S11.9 4.5 9.5 4.5z" fill="none" stroke="#3d4a4f" stroke-width="2" stroke-linejoin="round"/><path d="M8 10.5c.4-1.6 1.6-2.4 3-2.4" fill="none" stroke="#3fb39b" stroke-width="2.2" stroke-linecap="round"/>',
@@ -247,7 +245,7 @@ a{color:var(--ad-md)}
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
-<section class="ad-sec" aria-labelledby="ad-v1"><div class="ad-wrap ad-vid"><h2 id="ad-v1" class="ad-center">Le malaise au fauteuil, en vidéo</h2>[[video:video-1]]</div></section>
+<section class="ad-sec" aria-labelledby="ad-v1"><div class="ad-wrap ad-vid"><h2 id="ad-v1" class="ad-center">L'AFGSU 2 au cabinet dentaire, en vidéo</h2>[[video:video-1]]</div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="ad-sec ad-sec-w" id="tarif" aria-labelledby="ad-tarif-t">
@@ -268,10 +266,9 @@ a{color:var(--ad-md)}
     <div>
       <h2 id="ad-sess">Des sessions partout en France</h2>
       <p>Choisissez une session dans une grande ville, ou faites venir la formation dans votre cabinet.</p>
-      <ul class="ad-cities"><li>Nantes</li><li>Rennes</li><li>Paris</li><li>Montpellier</li><li>Lyon</li><li>Marseille</li><li>Bordeaux</li><li>Toulouse</li><li>Lille</li><li>Strasbourg</li><li>Nice</li><li>Reims</li></ul>
       <p><strong>Dans votre cabinet :</strong> l'équipe se forme autour de ses propres fauteuils.</p>
     </div>
-    [[img:groupe-formation]]
+    [[map]]
   </div>
 </section>
 
@@ -287,9 +284,6 @@ a{color:var(--ad-md)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="ad-sec" aria-labelledby="ad-v2"><div class="ad-wrap ad-vid"><h2 id="ad-v2" class="ad-center">L'inhalation d'un instrument, en vidéo</h2>[[video:video-2]]</div></section>
-
 <!-- ===== Réassurance ===== -->
 <section class="ad-sec ad-sec-w" aria-labelledby="ad-trust">
   <div class="ad-wrap">
@@ -299,7 +293,6 @@ a{color:var(--ad-md)}
       <div class="ad-mod"><h3>Petits groupes, matériel pro</h3><p>6 à 12 stagiaires, des mannequins et un défibrillateur pour s'exercer vraiment.</p></div>
       <div class="ad-mod"><h3>Attestation du CESU</h3><p>L'attestation AFGSU 2 officielle, délivrée par le CESU.</p></div>
     </div>
-    <div class="ad-reviews" role="note">Avis stagiaires (à intégrer)</div>
   </div>
 </section>
 

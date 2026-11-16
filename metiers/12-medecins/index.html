@@ -15,7 +15,8 @@
 <meta property="og:title" content="AFGSU 2 médecin : urgences au cabinet et situations sanitaires exceptionnelles">
 <meta property="og:description" content="AFGSU 2 médecin : arrêt cardiaque au cabinet, douleur thoracique, détresse respiratoire, SSE et NRBC. 21 h, 385 € TTC. Programme détaillé ici.">
 <meta property="og:url" content="https://a-completer.example/afgsu-2-medecins/">
-<!-- [À COMPLÉTER] image de partage 1200×630 : <meta property="og:image" content="https://a-completer.example/afgsu-2-medecins/og-image.jpg"> -->
+<meta property="og:image" content="https://a-completer.example/afgsu-2-medecins/media/formation-afgsu-2-medecin-cabinet-1200.jpg">
+<meta property="og:image:alt" content="Médecin généraliste en blouse, bras croisés, dans son cabinet">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AFGSU 2 médecin : urgences au cabinet et situations sanitaires exceptionnelles">
 <meta name="twitter:description" content="AFGSU 2 médecin : arrêt cardiaque au cabinet, douleur thoracique, détresse respiratoire, SSE et NRBC. 21 h, 385 € TTC. Programme détaillé ici.">
@@ -44,14 +45,43 @@ dialog h3{font-size:1.05rem;margin-top:1.4em}
 dialog ul{padding-left:1.2em}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
-/* ---- Emplacements médias ---- */
-.med-ph{margin:0;position:relative;overflow:hidden;background:#f1f3f5;border:1px dashed #263442;border-radius:var(--med-radius,8px);width:100%}
-.med-ph-in{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:18px;text-align:center;background:repeating-linear-gradient(135deg,transparent 0 14px,#26344222 14px 15px)}
-.med-ph-txt{font-size:.85rem;line-height:1.45;color:#263442;max-width:34ch;background:#f1f3f5;padding:6px 10px;border-radius:4px}
-.med-vid{margin:0}
-.med-vid-frame{display:flex;flex-direction:column;gap:10px;align-items:center;justify-content:center;background:#263442;color:#f1f3f5;border-radius:var(--med-radius,8px);width:100%;font-size:.9rem}
-.med-vid-title{font-weight:600;margin:12px 0 4px}
-.med-vid-desc{font-size:.92rem;margin:0;opacity:.9}
+/* ---- Photos, vidéo, carte ---- */
+.med-photo{margin:0;position:relative;overflow:hidden;border-radius:var(--med-radius,12px);background:#f1f3f5;box-shadow:0 22px 44px -26px rgba(12,22,38,.55),0 2px 6px rgba(12,22,38,.08);width:100%}
+.med-photo img{display:block;width:100%;height:auto;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.med-photo:hover img{transform:scale(1.03)}
+.med-photo-wide{margin-top:28px}
+.med-photo-wide img{aspect-ratio:12 / 5}
+@media (max-width:640px){.med-photo-wide img{aspect-ratio:3 / 2}}
+.med-photo-hero{overflow:visible;background:none;box-shadow:none;isolation:isolate;align-self:center;height:auto}
+.med-photo-hero::before{content:"";position:absolute;inset:22px -16px -16px 22px;border-radius:calc(var(--med-radius,12px) + 6px);background:#263442;opacity:.16;z-index:-1}
+.med-photo-hero img{aspect-ratio:4 / 3;border-radius:var(--med-radius,12px);box-shadow:0 28px 56px -28px rgba(12,22,38,.6)}
+.med-photo-hero:hover img{transform:none}
+.med-hero-badge{position:absolute;left:-14px;bottom:26px;display:flex;gap:10px;align-items:center;background:#fff;color:#1a1f26;border-radius:12px;padding:10px 16px 10px 10px;box-shadow:0 14px 34px -14px rgba(12,22,38,.5);font-size:.84rem;line-height:1.3;max-width:calc(100% - 24px)}
+.med-hero-badge b{display:block;font-weight:600}
+.med-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#263442;color:#fff;display:flex;align-items:center;justify-content:center}
+@media (max-width:640px){.med-hero-badge{left:10px;bottom:12px}.med-photo-hero::before{inset:14px -8px -8px 14px}}
+.med-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
+.med-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
+.med-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.med-reel figcaption{display:flex;flex-direction:column;align-items:flex-start;gap:10px;max-width:40ch;flex:1 1 240px}
+.med-reel-title{font-weight:600;font-size:clamp(1.15rem,2.2vw,1.4rem);line-height:1.3}
+.med-reel-desc{font-size:1rem;opacity:.85}
+.med-reel-pts{display:flex;flex-direction:column;gap:8px;margin:6px 0 8px}
+.med-reel-pts span{display:flex;gap:10px;align-items:center;font-size:.97rem}
+.med-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#263442;box-shadow:0 0 0 4px #26344222}
+.med-reel-cta{margin-top:4px}
+@media (max-width:640px){.med-reel{flex-direction:column;align-items:flex-start}}
+.med-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
+.med-map svg{display:block;width:100%;height:auto;overflow:visible}
+.med-map-land{fill:#f1f3f5;stroke:#263442;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
+.med-map-dot{fill:#263442;stroke:#fff;stroke-width:3}
+.med-map-ring{fill:#263442;opacity:0;transform-box:fill-box;transform-origin:center;animation:med-pulse 4s ease-out infinite}
+@keyframes med-pulse{0%{opacity:.35;transform:scale(1)}70%{opacity:0;transform:scale(3.4)}100%{opacity:0;transform:scale(3.4)}}
+.med-map figcaption{display:flex;flex-direction:column;gap:4px;font-size:.92rem;margin-top:12px;color:#3a414b}
+.med-map-leg{display:flex;align-items:center;gap:8px;font-weight:600;color:#1a1f26}
+.med-map-leg i{width:12px;height:12px;border-radius:50%;background:#263442;box-shadow:0 0 0 3px #fff,0 0 0 4px #263442}
+.med-body .med-btn{transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.med-body .med-btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px -12px rgba(12,22,38,.55);filter:saturate(1.08)}
 .med-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (max-width:520px){.med-tel-num{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.med-tel{width:46px;height:46px;justify-content:center;border:1px solid currentColor;border-radius:50%;padding:0!important}.med-brand-txt{font-size:.9rem}.med-brand{flex:1 1 0;min-width:0}}
 
@@ -206,6 +236,10 @@ a{color:var(--med-s)}
    },
    "breadcrumb": {
     "@id": "https://a-completer.example/afgsu-2-medecins/#fil-ariane"
+   },
+   "primaryImageOfPage": "https://a-completer.example/afgsu-2-medecins/media/formation-afgsu-2-medecin-cabinet-1200.jpg",
+   "video": {
+    "@id": "https://a-completer.example/afgsu-2-medecins/#video"
    }
   },
   {
@@ -235,6 +269,7 @@ a{color:var(--med-s)}
     "@id": "https://a-completer.example/afgsu-2-medecins/#organisation"
    },
    "inLanguage": "fr",
+   "image": "https://a-completer.example/afgsu-2-medecins/media/formation-afgsu-2-medecin-cabinet-1200.jpg",
    "timeRequired": "PT21H",
    "educationalCredentialAwarded": "Attestation de Formation aux Gestes et Soins d’Urgence de niveau 2, délivrée par le CESU",
    "audience": {
@@ -255,73 +290,9 @@ a{color:var(--med-s)}
      "courseMode": "onsite",
      "location": {
       "@type": "Place",
-      "name": "Session AFGSU 2 à Paris",
+      "name": "Sessions AFGSU 2 partout en France",
       "address": {
        "@type": "PostalAddress",
-       "addressLocality": "Paris",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Lyon",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Lyon",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Toulouse",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Toulouse",
-       "addressCountry": "FR"
-      }
-     },
-     "courseWorkload": "PT21H",
-     "courseSchedule": {
-      "@type": "Schedule",
-      "duration": "PT7H",
-      "repeatCount": 3,
-      "repeatFrequency": "Daily"
-     },
-     "inLanguage": "fr"
-    },
-    {
-     "@type": "CourseInstance",
-     "courseMode": "onsite",
-     "location": {
-      "@type": "Place",
-      "name": "Session AFGSU 2 à Lille",
-      "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Lille",
        "addressCountry": "FR"
       }
      },
@@ -453,6 +424,17 @@ a{color:var(--med-s)}
      }
     }
    ]
+  },
+  {
+   "@type": "VideoObject",
+   "@id": "https://a-completer.example/afgsu-2-medecins/#video",
+   "name": "Médecin : l'AFGSU 2 est obligatoire",
+   "description": "Le rappel en vidéo courte : l'AFGSU 2 pour les médecins.",
+   "thumbnailUrl": "https://a-completer.example/afgsu-2-medecins/media/video-afgsu-2-medecin-poster.jpg",
+   "uploadDate": "2026-11-16",
+   "duration": "PT8S",
+   "contentUrl": "https://a-completer.example/afgsu-2-medecins/media/video-afgsu-2-medecin.mp4",
+   "inLanguage": "fr"
   }
  ]
 }
@@ -480,7 +462,7 @@ a{color:var(--med-s)}
       <p class="med-lead">Arrêt cardiaque en salle d'attente, douleur thoracique en consultation, détresse respiratoire chez un enfant, afflux de patients lors d'une crise&nbsp;: au cabinet ou en maison de santé, vous coordonnez la prise en charge jusqu'au relais. Programme conforme au référentiel national, 21 heures, contenu technique.</p>
       <p class="med-price"><span class="med-sr">Prix : ancien tarif </span><del>450 €</del> <strong>385 € TTC</strong></p>
       <div class="med-ctas"><a class="med-btn" href="#inscription">Réserver ma session</a><a class="med-btn med-btn-s" href="#inscription" data-rappel>Être rappelé</a></div>
-      <figure class="media-placeholder med-ph" data-slot="hero" style="aspect-ratio:16 / 9"><div class="med-ph-in" role="img" aria-label="Médecin réalisant une réanimation avec défibrillateur sur mannequin dans un cabinet de médecine générale" data-alt="Médecin réalisant une réanimation avec défibrillateur sur mannequin dans un cabinet de médecine générale"><span class="med-ph-txt">Image à remplacer — cabinet de médecine générale, médecin agenouillé auprès d&#x27;un mannequin au sol, défibrillateur ouvert, bureau et table d&#x27;examen en arrière-plan.</span></div><!-- Remplacer par : <img src="..." alt="Médecin réalisant une réanimation avec défibrillateur sur mannequin dans un cabinet de médecine générale" loading="lazy" decoding="async" width="..." height="..."> --></figure>
+      <figure class="med-photo med-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-medecin-cabinet-1200.jpg" srcset="media/formation-afgsu-2-medecin-cabinet-640.jpg 640w, media/formation-afgsu-2-medecin-cabinet-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="360" alt="Médecin généraliste en blouse, bras croisés, dans son cabinet" loading="eager" fetchpriority="high" decoding="async"><figcaption class="med-hero-badge"><span class="med-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
     </div>
     <div class="med-tw">
       <table class="med-recap">
@@ -549,29 +531,13 @@ a{color:var(--med-s)}
 <!-- ===== Images + vidéo 1 ===== -->
 <section class="med-sec" aria-labelledby="med-v1">
   <div class="med-wrap med-g2">
-    <div><h2 id="med-v1">Simulation&nbsp;: arrêt cardiaque au cabinet</h2><div class="video-placeholder med-vid" data-slot="video-1">
-  <div class="med-vid-frame" style="aspect-ratio:16 / 9">
-    <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" focusable="false"><circle cx="28" cy="28" r="27" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 18v20l16-10z" fill="currentColor"/></svg>
-    <span>Vidéo à intégrer</span>
-  </div>
-  <p class="med-vid-title">Arrêt cardiaque au cabinet : de la reconnaissance au relais SMUR</p>
-  <p class="med-vid-desc">Simulation en temps réel dans un cabinet : appel, RCP, analyse du DAE, voie d&#x27;abord, transmission structurée à l&#x27;équipe SMUR. Débriefing commenté.</p>
-  <!-- Balisage VideoObject à compléter puis à déplacer dans une balise <script type="application/ld+json"> :
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "Arrêt cardiaque au cabinet : de la reconnaissance au relais SMUR",
-  "description": "Simulation en temps réel dans un cabinet : appel, RCP, analyse du DAE, voie d'abord, transmission structurée à l'équipe SMUR. Débriefing commenté.",
-  "thumbnailUrl": "[À COMPLÉTER]",
-  "uploadDate": "[À COMPLÉTER]",
-  "duration": "[À COMPLÉTER, ex. PT2M30S]",
-  "contentUrl": "[À COMPLÉTER]",
-  "embedUrl": "[À COMPLÉTER]",
-  "inLanguage": "fr"
-}
-  -->
-</div></div>
-    <div class="med-g2"><figure class="media-placeholder med-ph" data-slot="pratique-mannequin" style="aspect-ratio:4 / 3"><div class="med-ph-in" role="img" aria-label="Médecins en simulation de réanimation, ventilation au ballon et lecture du défibrillateur" data-alt="Médecins en simulation de réanimation, ventilation au ballon et lecture du défibrillateur"><span class="med-ph-txt">Image à remplacer — deux médecins en simulation : l&#x27;un ventile au BAVU, l&#x27;autre lit le tracé du défibrillateur.</span></div><!-- Remplacer par : <img src="..." alt="Médecins en simulation de réanimation, ventilation au ballon et lecture du défibrillateur" loading="lazy" decoding="async" width="..." height="..."> --></figure><figure class="media-placeholder med-ph" data-slot="groupe-formation" style="aspect-ratio:4 / 3"><div class="med-ph-in" role="img" aria-label="Médecins en exercice de gestion de crise sur table autour du dispositif ORSAN" data-alt="Médecins en exercice de gestion de crise sur table autour du dispositif ORSAN"><span class="med-ph-txt">Image à remplacer — salle de formation, médecins autour d&#x27;une table avec un plan de crise ORSAN projeté, exercice de tabletop.</span></div><!-- Remplacer par : <img src="..." alt="Médecins en exercice de gestion de crise sur table autour du dispositif ORSAN" loading="lazy" decoding="async" width="..." height="..."> --></figure></div>
+    <div><h2 id="med-v1">La simulation en images</h2><figure class="med-reel" data-slot="video-1">
+  <div class="med-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-medecin-poster.jpg" width="720" height="1280" aria-label="Médecin : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-medecin.mp4" type="video/mp4"></video></div>
+  <figcaption><span class="med-reel-title">Médecin : l&#x27;AFGSU 2 est obligatoire</span><span class="med-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 pour les médecins.</span>
+    <span class="med-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
+    <a class="med-btn med-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
+</figure></div>
+    <div class="med-g2"><figure class="med-photo" data-slot="pratique-mannequin"><img src="media/afgsu-2-medecin-consultation-patient-1200.jpg" srcset="media/afgsu-2-medecin-consultation-patient-640.jpg 640w, media/afgsu-2-medecin-consultation-patient-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="360" alt="Médecin en consultation avec un patient, à son bureau" loading="lazy" decoding="async"></figure><figure class="med-photo" data-slot="groupe-formation"><img src="media/afgsu-2-medecin-ordonnance-1200.jpg" srcset="media/afgsu-2-medecin-ordonnance-640.jpg 640w, media/afgsu-2-medecin-ordonnance-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="360" alt="Médecin qui remplit un document sur un porte-bloc face à un patient" loading="lazy" decoding="async"></figure></div>
   </div>
 </section>
 
@@ -582,12 +548,11 @@ a{color:var(--med-s)}
       <h2>Coût de la formation</h2>
       <p class="med-price"><span class="med-sr">Prix : ancien tarif </span><del>450 €</del> <strong>385 € TTC</strong></p>
       <ul class="med-list med-small"><li>21 h d'enseignement sur 3 jours</li><li>Mannequins, défibrillateurs de formation, matériel de ventilation</li><li>Tenues de protection pour l'atelier NRBC</li><li>Attestation AFGSU 2 délivrée par le CESU</li></ul>
-      <figure class="media-placeholder med-ph" data-slot="materiel" style="aspect-ratio:4 / 3"><div class="med-ph-in" role="img" aria-label="Matériel d&#x27;urgence d&#x27;un cabinet médical avec défibrillateur, oxygène, ballon de ventilation et ECG portable" data-alt="Matériel d&#x27;urgence d&#x27;un cabinet médical avec défibrillateur, oxygène, ballon de ventilation et ECG portable"><span class="med-ph-txt">Image à remplacer — matériel d&#x27;urgence d&#x27;un cabinet : DAE, bouteille d&#x27;oxygène, BAVU adulte et enfant, adrénaline de démonstration, ECG portable.</span></div><!-- Remplacer par : <img src="..." alt="Matériel d&#x27;urgence d&#x27;un cabinet médical avec défibrillateur, oxygène, ballon de ventilation et ECG portable" loading="lazy" decoding="async" width="..." height="..."> --></figure>
     </div>
     <div id="sessions">
-      <h2>Villes et formats de session</h2>
+      <h2>Formats de session, partout en France</h2>
       <p class="med-small">Sessions interprofessionnelles partout en France, dans les grandes villes ; sessions intra en cabinet de groupe, MSP, centre de santé ou établissement.</p>
-      <ul class="med-cities"><li>Paris</li><li>Lyon</li><li>Toulouse</li><li>Lille</li><li>Marseille</li><li>Bordeaux</li><li>Nantes</li><li>Strasbourg</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li><li>Grenoble</li><li>Dijon</li><li>Rouen</li><li>Tours</li></ul>
+      <figure class="med-map"><svg viewBox="10 -10 1000 980" role="img" aria-label="Carte de France : sessions AFGSU 2 organisées dans les grandes villes, partout en France"><path class="med-map-land" d="M523 1L547.3 40L570.9 31.2L595.9 58.6L633.1 81.1L631.8 109.4L675.7 92.8L680.4 92.8L677.7 126.9L716.2 144.5L750 156.2L781.1 159.2L806.1 188.5L831.1 190.4L864.9 200.2L905.4 208L878.4 244.1L863.5 293L864.2 342.8L834.5 356.4L820.9 359.4L787.2 405.3L763.5 454.1L766.9 478.5L790.5 454.1L810.8 457L827 504.9L814.9 514.6L831.1 556.6L799.3 584.9L824.3 625L820.9 649.4L871.6 683.6L860.1 714.8L842.6 722.6L832.4 736.3L819.6 749L800.7 764.6L781.1 781.2L752 781.2L716.2 770.5L689.2 753.9L662.2 750L637.2 746.1L614.9 740.2L601.4 751.9L584.5 763.6L560.8 781.2L556.8 810.5L556.1 830.1L565.5 845.7L533.8 849.6L483.1 844.7L467.6 839.8L449.3 830.1L398.6 805.6L344.6 820.3L304.1 802.7L256.8 786.1L231.1 754.9L245.9 744.1L253.4 712.9L266.9 644.5L266.9 629.9L272.3 595.7L279.1 540L270.3 537.1L280.4 535.1L270.3 483.4L250 459L229.7 449.2L220.3 429.7L206.1 405.3L212.8 390.6L202.7 374L179.1 371.1L162.2 351.6L140.5 353.5L123.6 329.1L87.8 315.4L56.1 322.3L31.8 298.8L43.9 278.3L28.4 270.5L29.1 249L43.9 242.2L82.4 231.4L118.2 221.7L148.6 226.6L164.2 249L194.6 236.3L216.2 239.3L248.6 242.2L243.2 220.7L226.4 166L219.6 134.8L241.9 141.6L266.2 139.6L273.6 170.9L310.8 170.9L334.5 176.8L371.6 163.1L358.1 157.2L364.9 136.7L376.4 130.9L424.3 114.3L444.6 101.6L459.5 87.9L457.4 68.4L459.5 36.1L458.1 22.5L476.4 13.7L511.5 5.9Z M983.8 791L991.9 810.5L995.3 839.8L996.6 878.9L986.5 917.9L974.3 950.2L945.9 932.6L932.4 898.4L933.8 869.1L942.6 834.9L966.2 820.3L979.7 795.9Z"/><circle class="med-map-ring" cx="510" cy="218" r="9" style="animation-delay:0.00s"/><circle class="med-map-dot" cx="510" cy="218" r="9"/><circle class="med-map-ring" cx="678" cy="521" r="6.5" style="animation-delay:0.37s"/><circle class="med-map-dot" cx="678" cy="521" r="6.5"/><circle class="med-map-ring" cx="714" cy="762" r="6.5" style="animation-delay:0.74s"/><circle class="med-map-dot" cx="714" cy="762" r="6.5"/><circle class="med-map-ring" cx="449" cy="732" r="6.5" style="animation-delay:1.11s"/><circle class="med-map-dot" cx="449" cy="732" r="6.5"/><circle class="med-map-ring" cx="842" cy="722" r="6.5" style="animation-delay:1.48s"/><circle class="med-map-dot" cx="842" cy="722" r="6.5"/><circle class="med-map-ring" cx="247" cy="379" r="6.5" style="animation-delay:1.85s"/><circle class="med-map-dot" cx="247" cy="379" r="6.5"/><circle class="med-map-ring" cx="614" cy="731" r="6.5" style="animation-delay:2.22s"/><circle class="med-map-dot" cx="614" cy="731" r="6.5"/><circle class="med-map-ring" cx="875" cy="246" r="6.5" style="animation-delay:2.59s"/><circle class="med-map-dot" cx="875" cy="246" r="6.5"/><circle class="med-map-ring" cx="312" cy="611" r="6.5" style="animation-delay:2.96s"/><circle class="med-map-dot" cx="312" cy="611" r="6.5"/><circle class="med-map-ring" cx="558" cy="46" r="6.5" style="animation-delay:3.33s"/><circle class="med-map-dot" cx="558" cy="46" r="6.5"/><circle class="med-map-ring" cx="238" cy="292" r="6.5" style="animation-delay:3.70s"/><circle class="med-map-dot" cx="238" cy="292" r="6.5"/><circle class="med-map-ring" cx="624" cy="179" r="6.5" style="animation-delay:0.07s"/><circle class="med-map-dot" cx="624" cy="179" r="6.5"/><circle class="med-map-ring" cx="738" cy="577" r="6.5" style="animation-delay:0.44s"/><circle class="med-map-dot" cx="738" cy="577" r="6.5"/><circle class="med-map-ring" cx="692" cy="369" r="6.5" style="animation-delay:0.81s"/><circle class="med-map-dot" cx="692" cy="369" r="6.5"/><circle class="med-map-ring" cx="559" cy="519" r="6.5" style="animation-delay:1.18s"/><circle class="med-map-dot" cx="559" cy="519" r="6.5"/><circle class="med-map-ring" cx="426" cy="162" r="6.5" style="animation-delay:1.55s"/><circle class="med-map-dot" cx="426" cy="162" r="6.5"/><circle class="med-map-ring" cx="398" cy="362" r="6.5" style="animation-delay:1.92s"/><circle class="med-map-dot" cx="398" cy="362" r="6.5"/><circle class="med-map-ring" cx="48" cy="264" r="6.5" style="animation-delay:2.29s"/><circle class="med-map-dot" cx="48" cy="264" r="6.5"/><circle class="med-map-ring" cx="436" cy="515" r="6.5" style="animation-delay:2.66s"/><circle class="med-map-dot" cx="436" cy="515" r="6.5"/><circle class="med-map-ring" cx="769" cy="193" r="6.5" style="animation-delay:3.03s"/><circle class="med-map-dot" cx="769" cy="193" r="6.5"/><circle class="med-map-ring" cx="374" cy="441" r="6.5" style="animation-delay:3.40s"/><circle class="med-map-dot" cx="374" cy="441" r="6.5"/><circle class="med-map-ring" cx="752" cy="779" r="6.5" style="animation-delay:3.77s"/><circle class="med-map-dot" cx="752" cy="779" r="6.5"/><circle class="med-map-ring" cx="507" cy="118" r="6.5" style="animation-delay:0.14s"/><circle class="med-map-dot" cx="507" cy="118" r="6.5"/><circle class="med-map-ring" cx="326" cy="187" r="6.5" style="animation-delay:0.51s"/><circle class="med-map-dot" cx="326" cy="187" r="6.5"/></svg><figcaption><span class="med-map-leg"><i aria-hidden="true"></i>Grandes villes de session</span><span>Sessions partout en France, ou directement dans votre structure.</span></figcaption></figure>
       <h2>Déroulé par demi-journée</h2>
       <div class="med-tw"><table class="med-table">
         <caption class="med-sr">Déroulé par demi-journée</caption>
@@ -602,31 +567,10 @@ a{color:var(--med-s)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 + réassurance ===== -->
-<section class="med-sec" aria-labelledby="med-v2">
+<!-- ===== Réassurance ===== -->
+<section class="med-sec" aria-labelledby="med-trust">
   <div class="med-wrap med-g2">
-    <div><h2 id="med-v2">Exercice&nbsp;: la médecine de ville en crise</h2><div class="video-placeholder med-vid" data-slot="video-2">
-  <div class="med-vid-frame" style="aspect-ratio:16 / 9">
-    <svg width="56" height="56" viewBox="0 0 56 56" aria-hidden="true" focusable="false"><circle cx="28" cy="28" r="27" fill="none" stroke="currentColor" stroke-width="2"/><path d="M23 18v20l16-10z" fill="currentColor"/></svg>
-    <span>Vidéo à intégrer</span>
-  </div>
-  <p class="med-vid-title">Situations sanitaires exceptionnelles : la place du médecin de ville</p>
-  <p class="med-vid-desc">Exercice de crise sur table : déclenchement ORSAN, afflux de patients en MSP, suspicion de contamination chimique. Ce que l&#x27;on attend des soignants libéraux.</p>
-  <!-- Balisage VideoObject à compléter puis à déplacer dans une balise <script type="application/ld+json"> :
-{
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  "name": "Situations sanitaires exceptionnelles : la place du médecin de ville",
-  "description": "Exercice de crise sur table : déclenchement ORSAN, afflux de patients en MSP, suspicion de contamination chimique. Ce que l'on attend des soignants libéraux.",
-  "thumbnailUrl": "[À COMPLÉTER]",
-  "uploadDate": "[À COMPLÉTER]",
-  "duration": "[À COMPLÉTER, ex. PT2M30S]",
-  "contentUrl": "[À COMPLÉTER]",
-  "embedUrl": "[À COMPLÉTER]",
-  "inLanguage": "fr"
-}
-  -->
-</div></div>
+    <figure class="med-photo" data-slot="materiel"><img src="media/afgsu-2-medecin-stethoscope-coeur-1200.jpg" srcset="media/afgsu-2-medecin-stethoscope-coeur-640.jpg 640w, media/afgsu-2-medecin-stethoscope-coeur-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="427" alt="Soignante qui tient un stéthoscope formant un cœur" loading="lazy" decoding="async"></figure>
     <div>
       <h2 id="med-trust">Encadrement pédagogique</h2>
       <table class="med-table">
@@ -638,8 +582,7 @@ a{color:var(--med-s)}
           <tr><th scope="row">Attestation</th><td>Délivrée par le CESU</td></tr>
         </tbody>
       </table>
-      <div class="med-stack"><figure class="media-placeholder med-ph" data-slot="situation-metier" style="aspect-ratio:4 / 3"><div class="med-ph-in" role="img" aria-label="Médecins en tenue de protection lors d&#x27;un exercice de prise en charge NRBC" data-alt="Médecins en tenue de protection lors d&#x27;un exercice de prise en charge NRBC"><span class="med-ph-txt">Image à remplacer — stagiaires en tenue de protection NRBC pendant un exercice de décontamination simulée.</span></div><!-- Remplacer par : <img src="..." alt="Médecins en tenue de protection lors d&#x27;un exercice de prise en charge NRBC" loading="lazy" decoding="async" width="..." height="..."> --></figure>
-      <div class="med-reviews" role="note">Avis stagiaires (à intégrer)</div></div>
+      
     </div>
   </div>
 </section>
@@ -678,7 +621,7 @@ a{color:var(--med-s)}
     <div class="med-field"><label for="f-email">E-mail <span aria-hidden="true">*</span></label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required></div>
     <div class="med-field"><label for="f-tel">Téléphone <span aria-hidden="true">*</span></label><input id="f-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" required></div>
     <div class="med-field"><label for="f-metier">Métier</label><input id="f-metier" name="metier" type="text" value="Médecin" autocomplete="organization-title"></div>
-    <div class="med-field"><label for="f-ville">Ville souhaitée</label><input id="f-ville" name="ville" type="text" list="f-villes" autocomplete="address-level2" placeholder="Ex. Toulouse, ou dans votre structure"><datalist id="f-villes"><option value="Paris"><option value="Lyon"><option value="Marseille"><option value="Toulouse"><option value="Bordeaux"><option value="Lille"><option value="Nantes"><option value="Strasbourg"><option value="Rennes"><option value="Montpellier"><option value="Nice"><option value="Reims"><option value="Grenoble"><option value="Rouen"><option value="Tours"><option value="Dijon"><option value="Clermont-Ferrand"><option value="Metz"><option value="Caen"><option value="Angers"></datalist></div>
+    <div class="med-field"><label for="f-ville">Ville souhaitée</label><input id="f-ville" name="ville" type="text" autocomplete="address-level2" placeholder="Votre ville, ou dans votre structure"></div>
     <div class="med-field med-field-full"><label for="f-periode">Date ou période souhaitée</label><input id="f-periode" name="periode" type="text" autocomplete="off" placeholder="Ex. dès que possible, ou en mars"></div>
     <div class="med-field med-field-full"><label for="f-msg">Message</label><textarea id="f-msg" name="message" rows="4" placeholder="Mode d&#x27;exercice (cabinet, MSP, établissement), taille de l&#x27;équipe…"></textarea></div>
   </div>

@@ -15,14 +15,12 @@ SITE = {
     "kw_main": "AFGSU 2 auxiliaire de puériculture",
     "kw_secondary": ["formation AFGSU 2 auxiliaire de puériculture", "AFGSU 2 crèche", "AFGSU 2 auxiliaire de puériculture prix",
                      "renouvellement AFGSU 2 auxiliaire de puériculture", "gestes d'urgence nourrisson formation",
-                     "AFGSU 2 auxiliaire de puériculture Bordeaux / Lyon / Lille", "attestation gestes et soins d'urgence auxiliaire de puériculture"],
+                     "AFGSU 2 auxiliaire de puériculture près de chez moi", "attestation gestes et soins d'urgence auxiliaire de puériculture"],
     "kw_geo": ["Une auxiliaire de puériculture doit-elle faire l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour une auxiliaire de puériculture ?",
                "Que faire si un bébé s'étouffe à la crèche ?"],
     "breadcrumb": "AFGSU 2 auxiliaires de puériculture",
     "course_name": "AFGSU 2 pour les auxiliaires de puériculture",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour auxiliaires de puériculture : étouffement du nourrisson, convulsions fébriles, RCP pédiatrique, chute, allergie alimentaire. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Bordeaux", "Lyon", "Lille", "Nantes"],
-    "city_hint": "Bordeaux",
     "msg_hint": "Crèche, maternité, service de pédiatrie… et vos disponibilités",
     "form_submit": "Envoyer ma demande",
     "pict": '<circle cx="11" cy="11" r="8" fill="none" stroke="#2c3e50" stroke-width="2.2"/><circle cx="11" cy="11" r="3" fill="#e8836b"/><circle cx="6.8" cy="7.2" r="1.3" fill="#e8836b"/><circle cx="15.2" cy="14.8" r="1.3" fill="#e8836b"/><path d="M16.8 16.8 27 27" stroke="#2c3e50" stroke-width="3" stroke-linecap="round"/><circle cx="27.5" cy="27.5" r="2.6" fill="#e8836b"/>',
@@ -78,6 +76,7 @@ SITE = {
          "Remplissez le formulaire en indiquant votre lieu d'exercice, votre ville et vos disponibilités, ou appelez le 07 80 91 23 35. Nous vous proposons une date proche de chez vous, puis vous recevez le contrat de formation à signer. L'inscription devient définitive une fois le contrat retourné."),
     ],
     "css": r'''
+.ap-map{margin:12px auto 20px;text-align:left}
 :root{--ap-c:#e8836b;--ap-cd:#b44e37;--ap-cl:#fde4da;--ap-cream:#fff6ee;--ap-n:#2c3e50;--ap-mut:#55626f;--ap-line:#f1dccf;--ap-radius:22px}
 body{font-family:"Open Sans",system-ui,sans-serif;color:var(--ap-n);background:var(--ap-cream);font-size:1rem}
 h1,h2,h3{font-family:Quicksand,system-ui,sans-serif;font-weight:600;color:var(--ap-n)}
@@ -228,10 +227,7 @@ a{color:var(--ap-cd)}
   <article class="ap-blob ap-mod"><p class="ap-dur">Module 2 · 7 h</p><h3>Urgences potentielles</h3><ul><li>Malaise, traumatismes, brûlures</li><li>Accouchement inopiné</li><li>Relevage, brancardage</li><li>Hygiène, AES</li><li>Chariot d'urgence</li></ul><p class="ap-ex">En section : un grand renverse une boisson chaude sur son bras. Refroidissement, évaluation, appel.</p></article>
   <article class="ap-blob ap-mod"><p class="ap-dur">Module 3 · 3 h 30</p><h3>Risques collectifs</h3><ul><li>Situations sanitaires exceptionnelles</li><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control, attentats</li></ul><p class="ap-ex">En structure : confinement de la crèche lors d'une alerte. Qui fait quoi, et comment rassurer les enfants.</p></article>
 </div>
-<div class="ap-grid ap-g2 ap-sec">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="ap-blob ap-sec" aria-labelledby="ap-v1"><h2 id="ap-v1">En vidéo : l'étouffement du nourrisson</h2>[[video:video-1]]</section>
 
 <!-- ===== Tarif ===== -->
 <div class="ap-grid ap-g2 ap-sec">
@@ -241,14 +237,14 @@ a{color:var(--ap-cd)}
     <ul><li>3 jours de formation, 21 heures</li><li>Mannequins nourrisson, enfant, adulte</li><li>Défibrillateur avec mode pédiatrique</li><li>Attestation délivrée par le CESU</li></ul>
     <p><a class="ap-btn" href="#inscription">Je réserve ma place</a></p>
   </section>
-  [[img:materiel]]
+  <section class="ap-blob" aria-labelledby="ap-v1"><h2 id="ap-v1">En vidéo : les gestes sur mannequin</h2>[[video:video-1]]</section>
 </div>
 
 <!-- ===== Sessions ===== -->
 <section class="ap-blob ap-sec" id="sessions" aria-labelledby="ap-sess" style="text-align:center">
   <h2 id="ap-sess">Près de chez vous, partout en France</h2>
   <p>Des dates dans les grandes villes, et la possibilité de former votre équipe sur place.</p>
-  <ul class="ap-cities"><li>Bordeaux</li><li>Lyon</li><li>Lille</li><li>Nantes</li><li>Paris</li><li>Marseille</li><li>Toulouse</li><li>Strasbourg</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li></ul>
+  [[map]]
   <p><strong>Dans votre crèche, votre maternité ou votre service</strong>, avec votre matériel et vos locaux.</p>
 </section>
 
@@ -260,9 +256,6 @@ a{color:var(--ap-cd)}
   <div class="ap-blob ap-day" data-d="Jour 3"><h3>Prévenir et s'organiser</h3><ul><li>Brûlures, hygiène et AES</li><li>Accouchement inopiné, nouveau-né</li><li>Risques collectifs, confinement</li><li>Mises en situation et validation</li></ul></div>
 </div>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="ap-blob ap-sec" aria-labelledby="ap-v2"><h2 id="ap-v2">En vidéo : les convulsions fébriles</h2>[[video:video-2]]</section>
-
 <!-- ===== Réassurance ===== -->
 <h2 class="ap-title" id="ap-trust">Avec qui vous vous formez</h2>
 <div class="ap-grid ap-g3">
@@ -270,7 +263,6 @@ a{color:var(--ap-cd)}
   <div class="ap-blob"><h3>Des petits groupes</h3><p>6 à 12 personnes, pour que chacune passe sur les mannequins autant que nécessaire.</p></div>
   <div class="ap-blob"><h3>Du vrai matériel</h3><p>Mannequins pédiatriques, défibrillateur, attestation délivrée par le CESU.</p></div>
 </div>
-<div class="ap-blob ap-reviews ap-sec" role="note">Avis stagiaires (à intégrer)</div>
 
 <!-- ===== FAQ ===== -->
 <h2 class="ap-title" id="faq">Les questions des auxiliaires de puériculture</h2>

@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "hero premium discret, encart « formez tout votre cabinet »",
     "kw_main": "AFGSU 2 chirurgien-dentiste",
     "kw_secondary": ["formation AFGSU 2 dentiste", "AFGSU 2 chirurgien-dentiste prix", "urgences au cabinet dentaire formation",
-                     "trousse d'urgence cabinet dentaire", "renouvellement AFGSU 2 dentiste", "AFGSU 2 dentiste Paris / Lyon / Bordeaux",
+                     "trousse d'urgence cabinet dentaire", "renouvellement AFGSU 2 dentiste", "AFGSU 2 dentiste près de chez moi",
                      "attestation gestes et soins d'urgence chirurgien-dentiste"],
     "kw_geo": ["Un chirurgien-dentiste doit-il faire l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour un chirurgien-dentiste ?",
                "Que doit contenir la trousse d'urgence d'un cabinet dentaire ?"],
     "breadcrumb": "AFGSU 2 chirurgiens-dentistes",
     "course_name": "AFGSU 2 pour les chirurgiens-dentistes",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour chirurgiens-dentistes : syncope, crise d'angor, anaphylaxie, crise d'asthme, inhalation de corps étranger, hémorragie. Possibilité de former toute l'équipe du cabinet. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Paris", "Lyon", "Bordeaux", "Strasbourg"],
-    "city_hint": "Bordeaux",
     "msg_hint": "Nombre de praticiens et d'assistantes, formation au cabinet ou en session…",
     "form_submit": "Être recontacté",
     "header_cta": "Réserver ma place",
@@ -267,12 +265,9 @@ a{color:var(--cd-t)}
       <article class="cd-mod"><p class="cd-h">Module 2 · 7 h</p><h3>Urgences potentielles</h3><ul><li>Malaise, traumatismes, brûlures</li><li>Accouchement inopiné</li><li>Relevage, brancardage</li><li>Hygiène, AES</li><li>Matériel d'urgence</li></ul><p>Au cabinet : douleur thoracique pendant une anesthésie. Évaluation, dérivé nitré, décision d'alerte.</p></article>
       <article class="cd-mod"><p class="cd-h">Module 3 · 3 h 30</p><h3>Risques collectifs</h3><ul><li>Situations sanitaires exceptionnelles</li><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control, attentats</li></ul><p>Au cabinet : continuité des soins pendant une crise sanitaire, mesures de protection de l'équipe et des patients.</p></article>
     </div>
-    <div class="cd-pair">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
+    
   </div>
 </section>
-
-<!-- ===== Vidéo 1 ===== -->
-<section class="cd-sec cd-tint" aria-labelledby="cd-v1"><div class="cd-wrap cd-vid"><h2 id="cd-v1">Syncope ou angor : la vidéo</h2>[[video:video-1]]</div></section>
 
 <!-- ===== Encart : formez tout votre cabinet ===== -->
 <section class="cd-sec" aria-labelledby="cd-team-t">
@@ -288,7 +283,7 @@ a{color:var(--cd-t)}
         </ul>
         <a class="cd-btn" href="#inscription">Organiser une session au cabinet</a>
       </div>
-      <div>[[video:video-2]]</div>
+      <div>[[video:video-1]]</div>
     </div>
   </div>
 </section>
@@ -314,7 +309,7 @@ a{color:var(--cd-t)}
 <section class="cd-sec" id="sessions" aria-labelledby="cd-sess">
   <div class="cd-wrap">
     <div class="cd-head"><h2 id="cd-sess">Sessions inter-cabinets partout en France</h2><p>Des sessions inter-cabinets dans les grandes villes, ou une session privée dans votre cabinet.</p></div>
-    <ul class="cd-cities"><li>Paris</li><li>Lyon</li><li>Bordeaux</li><li>Strasbourg</li><li>Marseille</li><li>Toulouse</li><li>Lille</li><li>Nantes</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li></ul>
+    [[map]]
   </div>
 </section>
 
@@ -340,7 +335,6 @@ a{color:var(--cd-t)}
       <div><h3>Matériel de cabinet</h3><p>Le matériel attendu dans une trousse d'urgence dentaire.</p></div>
       <div><h3>Attestation délivrée par le CESU</h3><p>Délivrée par le CESU, valable 4 ans.</p></div>
     </div>
-    <div class="cd-reviews" role="note">Avis stagiaires (à intégrer)</div>
   </div>
 </section>
 

@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "hero éditorial (citation + texte), mise en page type magazine sobre",
     "kw_main": "AFGSU 2 sage-femme",
     "kw_secondary": ["formation AFGSU 2 sage-femme", "AFGSU 2 sage-femme libérale", "renouvellement AFGSU 2 sage-femme",
-                     "AFGSU 2 sage-femme prix", "urgences obstétricales formation", "AFGSU 2 sage-femme Lyon / Paris / Montpellier",
+                     "AFGSU 2 sage-femme prix", "urgences obstétricales formation", "AFGSU 2 sage-femme près de chez moi",
                      "attestation gestes et soins d'urgence sage-femme"],
     "kw_geo": ["Une sage-femme doit-elle faire l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour une sage-femme ?",
                "L'AFGSU 2 couvre-t-elle l'hémorragie du post-partum ?"],
     "breadcrumb": "AFGSU 2 sages-femmes",
     "course_name": "AFGSU 2 pour les sages-femmes",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour sages-femmes : accouchement inopiné, hémorragie du post-partum, réanimation du nouveau-né, éclampsie, arrêt cardiaque de la femme enceinte. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Lyon", "Paris", "Montpellier", "Rennes"],
-    "city_hint": "Montpellier",
     "msg_hint": "Exercice en maternité, en libéral, en PMI… vos disponibilités",
     "form_submit": "Envoyer ma demande",
     "pict": '<path d="M7 28c-2.5-4-3.5-8.5-2-13C7 7.5 14 3.5 21 5.5" fill="none" stroke="#7a3e65" stroke-width="2.6" stroke-linecap="round"/><path d="M11 28c-1.2-3.4-1-7 1-10" fill="none" stroke="#7a3e65" stroke-width="2.6" stroke-linecap="round"/><circle cx="22" cy="12" r="4.2" fill="#d58fb7"/><path d="M15 27c1.5-5 5-8.5 10.5-9" fill="none" stroke="#d58fb7" stroke-width="2.6" stroke-linecap="round"/>',
@@ -264,13 +262,13 @@ a{color:var(--sf-pd)}
         <div class="sf-mod"><h3><small>Module 2 · 7 h</small>Urgences potentielles</h3><ul><li>Malaise, traumatismes, brûlures</li><li>Accouchement inopiné</li><li>Relevage, brancardage</li><li>Hygiène, AES</li><li>Chariot d'urgence</li></ul><p>Cas : accouchement à domicile avant l'arrivée du SMUR, puis saignement abondant après la délivrance.</p></div>
         <div class="sf-mod"><h3><small>Module 3 · 3 h 30</small>Risques collectifs et SSE</h3><ul><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control</li><li>Attentats</li></ul><p>Cas : plan blanc déclenché, la maternité doit libérer des lits et organiser les transferts.</p></div>
       </div>
-      <aside class="sf-aside" aria-label="Illustrations">[[img:pratique-mannequin]][[img:groupe-formation]]</aside>
+      
     </div>
   </div>
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
-<section class="sf-sec sf-rose" aria-labelledby="sf-v1"><div class="sf-wrap sf-vid"><div class="sf-rubric"><span>Vidéo</span><h2 id="sf-v1">L'accouchement inopiné</h2></div>[[video:video-1]]</div></section>
+<section class="sf-sec sf-rose" aria-labelledby="sf-v1"><div class="sf-wrap sf-vid"><div class="sf-rubric"><span>Vidéo</span><h2 id="sf-v1">La formation en images</h2></div>[[video:video-1]]</div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="sf-sec" id="tarif" aria-labelledby="sf-tarif-t">
@@ -281,7 +279,7 @@ a{color:var(--sf-pd)}
       <ul><li>21 heures de formation sur 3 jours</li><li>Mannequins adulte, enfant, nouveau-né, simulateur d'accouchement</li><li>Défibrillateur de formation et matériel d'urgence</li><li>Attestation délivrée par le CESU</li></ul>
       <a class="sf-btn" href="#inscription">Retenir ma place</a>
     </div>
-    [[img:materiel]]
+    [[img:situation-metier]]
   </div>
 </section>
 
@@ -289,7 +287,7 @@ a{color:var(--sf-pd)}
 <section class="sf-sec sf-rose" id="sessions" aria-labelledby="sf-sess">
   <div class="sf-wrap">
     <div class="sf-rubric"><span>Où</span><h2 id="sf-sess">Partout en France, et dans votre maternité</h2></div>
-    <ul class="sf-cities"><li>Lyon</li><li>Paris</li><li>Montpellier</li><li>Rennes</li><li>Marseille</li><li>Toulouse</li><li>Bordeaux</li><li>Lille</li><li>Nantes</li><li>Strasbourg</li><li>Nice</li><li>Reims</li></ul>
+    [[map]]
     <p>Les sessions ont lieu partout en France. Pour une maternité, un réseau de périnatalité ou un service de PMI, la formation se déroule aussi dans vos locaux.</p>
   </div>
 </section>
@@ -306,9 +304,6 @@ a{color:var(--sf-pd)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="sf-sec sf-rose" aria-labelledby="sf-v2"><div class="sf-wrap sf-vid"><div class="sf-rubric"><span>Vidéo</span><h2 id="sf-v2">L'hémorragie du post-partum</h2></div>[[video:video-2]]</div></section>
-
 <!-- ===== Réassurance ===== -->
 <section class="sf-sec" aria-labelledby="sf-trust-t">
   <div class="sf-wrap">
@@ -319,7 +314,6 @@ a{color:var(--sf-pd)}
       <div><h3>Matériel professionnel</h3><p>Mannequins, simulateur, défibrillateur.</p></div>
       <div><h3>Attestation CESU</h3><p>Valable 4 ans.</p></div>
     </div>
-    <div class="sf-tarif" style="margin-top:22px">[[img:situation-metier]]<div class="sf-reviews" role="note">Avis stagiaires (à intégrer)</div></div>
   </div>
 </section>
 

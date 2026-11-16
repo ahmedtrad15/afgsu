@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "hero avec comparatif hôpital / libéral en onglets CSS",
     "kw_main": "formation AFGSU 2 infirmier",
     "kw_secondary": ["AFGSU 2 infirmier prix", "AFGSU 2 infirmier libéral", "renouvellement AFGSU 2 infirmier",
-                     "recyclage AFGSU 2 IDE", "AFGSU 2 infirmier obligatoire", "AFGSU 2 infirmier Paris / Lyon / Marseille",
+                     "recyclage AFGSU 2 IDE", "AFGSU 2 infirmier obligatoire", "AFGSU 2 infirmier près de chez moi",
                      "attestation gestes et soins d'urgence infirmier"],
     "kw_geo": ["Un infirmier doit-il renouveler son AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour un infirmier ?",
                "L'AFGSU 2 est-elle utile pour un infirmier libéral ?"],
     "breadcrumb": "AFGSU 2 infirmiers",
     "course_name": "AFGSU 2 pour les infirmiers",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour infirmiers hospitaliers, libéraux et de santé au travail : chariot d'urgence, arrêt cardiaque en service, choc anaphylactique, urgences à domicile. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Paris", "Lyon", "Marseille", "Toulouse"],
-    "city_hint": "Lyon",
     "msg_hint": "Service, exercice libéral, santé au travail… date de votre dernière attestation",
     "form_submit": "Envoyer",
     "pict": '<path d="M16 2.5C16 2.5 5.5 14 5.5 20.5a10.5 10.5 0 0 0 21 0C26.5 14 16 2.5 16 2.5z" fill="#2563a8"/><path d="M16 14.5v11M10.5 20h11" stroke="#fff" stroke-width="3" stroke-linecap="round"/>',
@@ -279,12 +277,12 @@ strong,b,th,summary,label{font-weight:500}
       <article class="ide-mod"><header><span>7 h</span><h3>Urgences potentielles</h3></header><ul><li>Malaise, traumatismes, brûlures</li><li>Accouchement inopiné</li><li>Relevage, brancardage</li><li>Hygiène, AES</li><li>Chariot d'urgence</li></ul><p>Cas : en tournée, une patiente diabétique est confuse et en sueur. Glycémie, resucrage, décision d'appel.</p></article>
       <article class="ide-mod"><header><span>3 h 30</span><h3>Risques collectifs et SSE</h3></header><ul><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control</li><li>Attentats, afflux de victimes</li></ul><p>Cas : plan blanc déclenché pendant votre garde. Rappel du personnel, ouverture des lits, rôle dans la cellule.</p></article>
     </div>
-    <div class="ide-pair">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
+    [[wide:pratique-mannequin]]
   </div>
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
-<section class="ide-sec ide-alt" aria-labelledby="ide-v1"><div class="ide-wrap ide-vid"><h2 id="ide-v1">Vidéo : arrêt cardiaque en service</h2>[[video:video-1]]</div></section>
+<section class="ide-sec ide-alt" aria-labelledby="ide-v1"><div class="ide-wrap ide-vid"><h2 id="ide-v1">Vidéo : l'infirmier face à l'urgence</h2>[[video:video-1]]</div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="ide-sec" id="tarif" aria-labelledby="ide-tarif-t">
@@ -303,7 +301,7 @@ strong,b,th,summary,label{font-weight:500}
 <section class="ide-sec ide-alt" id="sessions" aria-labelledby="ide-sess">
   <div class="ide-wrap">
     <h2 id="ide-sess">Où suivre la formation, partout en France</h2>
-    <ul class="ide-cities"><li>Paris</li><li>Lyon</li><li>Marseille</li><li>Toulouse</li><li>Bordeaux</li><li>Lille</li><li>Nantes</li><li>Strasbourg</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li></ul>
+    [[map]]
     <p>Pour un service, un pôle ou un centre de soins infirmiers, la formation peut se dérouler dans vos locaux.</p>
   </div>
 </section>
@@ -324,9 +322,6 @@ strong,b,th,summary,label{font-weight:500}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="ide-sec ide-alt" aria-labelledby="ide-v2"><div class="ide-wrap ide-vid"><h2 id="ide-v2">Vidéo : anaphylaxie au domicile</h2>[[video:video-2]]</div></section>
-
 <!-- ===== Réassurance ===== -->
 <section class="ide-sec" aria-labelledby="ide-trust-t">
   <div class="ide-wrap">
@@ -337,7 +332,6 @@ strong,b,th,summary,label{font-weight:500}
       <div><strong>Matériel pro</strong><br>Chariot d'urgence complet, défibrillateurs, mannequins.</div>
       <div><strong>Attestation CESU</strong><br>Valable 4 ans.</div>
     </div>
-    <div class="ide-reviews" role="note">Avis stagiaires (à intégrer)</div>
   </div>
 </section>
 
