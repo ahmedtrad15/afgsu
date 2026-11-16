@@ -291,6 +291,9 @@ a{color:var(--reed-bd)}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="reed-sec" id="tarif" aria-labelledby="reed-tarif-t">
   <div class="reed-wrap reed-tarif">

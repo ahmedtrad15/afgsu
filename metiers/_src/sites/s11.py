@@ -288,6 +288,9 @@ a{color:var(--cd-t)}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="cd-sec cd-tint" id="tarif" aria-labelledby="cd-tarif-t">
   <div class="cd-wrap cd-tarif">

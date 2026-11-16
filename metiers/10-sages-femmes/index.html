@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .sf-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#7a3e65;box-shadow:0 0 0 4px #7a3e6522}
 .sf-reel-cta{margin-top:4px}
 @media (max-width:640px){.sf-reel{flex-direction:column;align-items:flex-start}}
+.sf-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.sf-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.sf-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.sf-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#7a3e65}
+.sf-gal-head h2{margin:8px 0 8px}
+.sf-gal-head p{margin:0;opacity:.88}
+.sf-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.sf-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--sf-radius,12px);background:#f8eef3;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.sf-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.sf-gal-fig:hover img{transform:scale(1.04)}
+.sf-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.sf-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#7a3e65;color:#fff}
+@container (min-width:620px){.sf-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.sf-gal-fig:first-child{grid-row:span 2}.sf-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.sf-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.sf-gal-fig img{transition:none}.sf-gal-fig:hover img{transform:none}}
 .sf-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .sf-map svg{display:block;width:100%;height:auto;overflow:visible}
 .sf-map-land{fill:#f8eef3;stroke:#7a3e65;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -563,6 +577,9 @@ a{color:var(--sf-pd)}
     </div>
   </div>
 </section>
+
+<!-- ===== Galerie « en formation » ===== -->
+<section class="sf-gal" aria-labelledby="sf-gal-t"><div class="sf-gal-head"><span class="sf-gal-k">En formation</span><h2 id="sf-gal-t">Votre formation, du nouveau-né à l&#x27;adulte</h2><p>Mannequins nourrisson et adulte, ventilation et massage : vous pratiquez sur les deux.</p></div><div class="sf-gal-grid"><figure class="sf-gal-fig"><img src="media/afgsu-2-sage-femme-reanimation-nouveau-ne-1200.jpg" srcset="media/afgsu-2-sage-femme-reanimation-nouveau-ne-640.jpg 640w, media/afgsu-2-sage-femme-reanimation-nouveau-ne-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="667" alt="Groupe de soignants pratiquant la réanimation d&#x27;un nourrisson sur mannequin" loading="lazy" decoding="async"><figcaption><span class="sf-gal-n" aria-hidden="true">01</span>Réanimation du nouveau-né</figcaption></figure><figure class="sf-gal-fig"><img src="media/afgsu-2-sage-femme-massage-adulte-1200.jpg" srcset="media/afgsu-2-sage-femme-massage-adulte-640.jpg 640w, media/afgsu-2-sage-femme-massage-adulte-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="667" alt="Compressions thoraciques sur un mannequin adulte posé au sol" loading="lazy" decoding="async"><figcaption><span class="sf-gal-n" aria-hidden="true">02</span>Massage cardiaque chez l&#x27;adulte</figcaption></figure><figure class="sf-gal-fig"><img src="media/afgsu-2-sage-femme-atelier-formateur-1200.jpg" srcset="media/afgsu-2-sage-femme-atelier-formateur-640.jpg 640w, media/afgsu-2-sage-femme-atelier-formateur-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Formateur accompagnant des soignantes autour d&#x27;un mannequin" loading="lazy" decoding="async"><figcaption><span class="sf-gal-n" aria-hidden="true">03</span>Corrigées par le formateur</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="sf-sec" id="tarif" aria-labelledby="sf-tarif-t">

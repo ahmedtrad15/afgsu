@@ -261,6 +261,9 @@ a{color:var(--amb-navy)}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="amb-sec" id="tarif" aria-labelledby="amb-tarif-t">
   <div class="amb-wrap amb-tarif">

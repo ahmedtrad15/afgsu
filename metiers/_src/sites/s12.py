@@ -253,6 +253,9 @@ a{color:var(--med-s)}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif + sessions ===== -->
 <section class="med-sec" aria-label="Tarif et sessions">
   <div class="med-wrap med-g2">

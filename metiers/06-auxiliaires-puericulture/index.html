@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .ap-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#2c3e50;box-shadow:0 0 0 4px #2c3e5022}
 .ap-reel-cta{margin-top:4px}
 @media (max-width:640px){.ap-reel{flex-direction:column;align-items:flex-start}}
+.ap-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.ap-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.ap-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.ap-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#2c3e50}
+.ap-gal-head h2{margin:8px 0 8px}
+.ap-gal-head p{margin:0;opacity:.88}
+.ap-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.ap-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--ap-radius,12px);background:#fff1e6;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.ap-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.ap-gal-fig:hover img{transform:scale(1.04)}
+.ap-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.ap-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#2c3e50;color:#fff}
+@container (min-width:620px){.ap-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.ap-gal-fig:first-child{grid-row:span 2}.ap-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.ap-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.ap-gal-fig img{transition:none}.ap-gal-fig:hover img{transform:none}}
 .ap-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .ap-map svg{display:block;width:100%;height:auto;overflow:visible}
 .ap-map-land{fill:#fff1e6;stroke:#2c3e50;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -525,6 +539,9 @@ a{color:var(--ap-cd)}
   <article class="ap-blob ap-mod"><p class="ap-dur">Module 3 · 3 h 30</p><h3>Risques collectifs</h3><ul><li>Situations sanitaires exceptionnelles</li><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control, attentats</li></ul><p class="ap-ex">En structure&nbsp;: confinement de la crèche lors d'une alerte. Qui fait quoi, et comment rassurer les enfants.</p></article>
 </div>
 
+
+<!-- ===== Galerie « en formation » ===== -->
+<section class="ap-gal" aria-labelledby="ap-gal-t"><div class="ap-gal-head"><span class="ap-gal-k">En formation</span><h2 id="ap-gal-t">Les gestes sur nourrisson, en vrai</h2><p>Mannequins nourrisson et enfant, ventilation adaptée, désobstruction : la formation colle à votre quotidien.</p></div><div class="ap-gal-grid"><figure class="ap-gal-fig"><img src="media/afgsu-2-auxiliaire-puericulture-mannequin-nourrisson-1200.jpg" srcset="media/afgsu-2-auxiliaire-puericulture-mannequin-nourrisson-640.jpg 640w, media/afgsu-2-auxiliaire-puericulture-mannequin-nourrisson-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="665" alt="Soignants réunis autour d&#x27;un mannequin nourrisson pendant un exercice" loading="lazy" decoding="async"><figcaption><span class="ap-gal-n" aria-hidden="true">01</span>Exercice sur mannequin nourrisson</figcaption></figure><figure class="ap-gal-fig"><img src="media/afgsu-2-auxiliaire-puericulture-mannequins-enfant-bebe-1200.jpg" srcset="media/afgsu-2-auxiliaire-puericulture-mannequins-enfant-bebe-640.jpg 640w, media/afgsu-2-auxiliaire-puericulture-mannequins-enfant-bebe-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="667" alt="Formatrice montrant des mannequins enfant et nourrisson" loading="lazy" decoding="async"><figcaption><span class="ap-gal-n" aria-hidden="true">02</span>Enfant et nourrisson, deux techniques</figcaption></figure><figure class="ap-gal-fig"><img src="media/afgsu-2-auxiliaire-puericulture-ventilation-bebe-1200.jpg" srcset="media/afgsu-2-auxiliaire-puericulture-ventilation-bebe-640.jpg 640w, media/afgsu-2-auxiliaire-puericulture-ventilation-bebe-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="667" alt="Ventilation au masque sur un mannequin de bébé" loading="lazy" decoding="async"><figcaption><span class="ap-gal-n" aria-hidden="true">03</span>Ventiler un nourrisson</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <div class="ap-sec">

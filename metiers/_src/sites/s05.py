@@ -245,6 +245,9 @@ a{color:var(--ad-md)}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="ad-sec ad-sec-w" id="tarif" aria-labelledby="ad-tarif-t">
   <div class="ad-wrap ad-alt">

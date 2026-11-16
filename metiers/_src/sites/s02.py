@@ -257,6 +257,9 @@ main{padding:20px 0 40px}
 </div>
 <div class="etu-grid etu-g3 etu-sec">[[img:pratique-mannequin]][[img:groupe-formation]][[img:materiel]]</div>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="etu-card etu-sec" id="tarif" aria-labelledby="etu-tarif-t">
   <div class="etu-tarif">

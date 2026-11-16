@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .ad-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#22806d;box-shadow:0 0 0 4px #22806d22}
 .ad-reel-cta{margin-top:4px}
 @media (max-width:640px){.ad-reel{flex-direction:column;align-items:flex-start}}
+.ad-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.ad-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.ad-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.ad-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#22806d}
+.ad-gal-head h2{margin:8px 0 8px}
+.ad-gal-head p{margin:0;opacity:.88}
+.ad-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.ad-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--ad-radius,12px);background:#eef7f4;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.ad-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.ad-gal-fig:hover img{transform:scale(1.04)}
+.ad-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.ad-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#22806d;color:#fff}
+@container (min-width:620px){.ad-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.ad-gal-fig:first-child{grid-row:span 2}.ad-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.ad-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.ad-gal-fig img{transition:none}.ad-gal-fig:hover img{transform:none}}
 .ad-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .ad-map svg{display:block;width:100%;height:auto;overflow:visible}
 .ad-map-land{fill:#eef7f4;stroke:#22806d;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -540,6 +554,9 @@ a{color:var(--ad-md)}
     <figure class="ad-photo" data-slot="pratique-mannequin"><img src="media/afgsu-2-assistante-dentaire-soin-fauteuil-1200.jpg" srcset="media/afgsu-2-assistante-dentaire-soin-fauteuil-640.jpg 640w, media/afgsu-2-assistante-dentaire-soin-fauteuil-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Praticienne et assistante masquées autour d&#x27;un patient au fauteuil" loading="lazy" decoding="async"></figure>
   </div>
 </section>
+
+<!-- ===== Galerie « en formation » ===== -->
+<section class="ad-gal" aria-labelledby="ad-gal-t"><div class="ad-gal-head"><span class="ad-gal-k">En formation</span><h2 id="ad-gal-t">Ce que vous pratiquez pendant la formation</h2><p>Des gestes simples, répétés jusqu&#x27;à devenir des réflexes au fauteuil comme en salle d&#x27;attente.</p></div><div class="ad-gal-grid"><figure class="ad-gal-fig"><img src="media/afgsu-2-assistante-dentaire-defibrillateur-massage-1200.jpg" srcset="media/afgsu-2-assistante-dentaire-defibrillateur-massage-640.jpg 640w, media/afgsu-2-assistante-dentaire-defibrillateur-massage-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="1333" alt="Deux stagiaires utilisant un défibrillateur et pratiquant le massage cardiaque sur un mannequin" loading="lazy" decoding="async"><figcaption><span class="ad-gal-n" aria-hidden="true">01</span>Défibrillateur et massage à deux</figcaption></figure><figure class="ad-gal-fig"><img src="media/afgsu-2-assistante-dentaire-position-mains-1200.jpg" srcset="media/afgsu-2-assistante-dentaire-position-mains-640.jpg 640w, media/afgsu-2-assistante-dentaire-position-mains-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="1500" alt="Main d&#x27;une stagiaire posée sur le torse d&#x27;un mannequin de formation" loading="lazy" decoding="async"><figcaption><span class="ad-gal-n" aria-hidden="true">02</span>La bonne position des mains</figcaption></figure><figure class="ad-gal-fig"><img src="media/afgsu-2-assistante-dentaire-cours-theorie-1200.jpg" srcset="media/afgsu-2-assistante-dentaire-cours-theorie-640.jpg 640w, media/afgsu-2-assistante-dentaire-cours-theorie-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="667" alt="Formatrice présentant le matériel d&#x27;urgence à des stagiaires assis" loading="lazy" decoding="async"><figcaption><span class="ad-gal-n" aria-hidden="true">03</span>Le matériel d&#x27;urgence expliqué</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="ad-sec ad-sec-w" id="tarif" aria-labelledby="ad-tarif-t">

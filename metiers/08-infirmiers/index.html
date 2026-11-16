@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .ide-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#2563a8;box-shadow:0 0 0 4px #2563a822}
 .ide-reel-cta{margin-top:4px}
 @media (max-width:640px){.ide-reel{flex-direction:column;align-items:flex-start}}
+.ide-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.ide-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.ide-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.ide-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#2563a8}
+.ide-gal-head h2{margin:8px 0 8px}
+.ide-gal-head p{margin:0;opacity:.88}
+.ide-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.ide-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--ide-radius,12px);background:#eef4fc;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.ide-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.ide-gal-fig:hover img{transform:scale(1.04)}
+.ide-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.ide-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#2563a8;color:#fff}
+@container (min-width:620px){.ide-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.ide-gal-fig:first-child{grid-row:span 2}.ide-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.ide-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.ide-gal-fig img{transition:none}.ide-gal-fig:hover img{transform:none}}
 .ide-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .ide-map svg{display:block;width:100%;height:auto;overflow:visible}
 .ide-map-land{fill:#eef4fc;stroke:#2563a8;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -587,6 +601,9 @@ strong,b,th,summary,label{font-weight:500}
     <figure class="ide-photo ide-photo-wide" data-slot="pratique-mannequin"><img src="media/afgsu-2-infirmier-prise-tension-1200.jpg" srcset="media/afgsu-2-infirmier-prise-tension-640.jpg 640w, media/afgsu-2-infirmier-prise-tension-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Infirmière qui prend la tension artérielle d&#x27;un patient" loading="lazy" decoding="async"></figure>
   </div>
 </section>
+
+<!-- ===== Galerie « en formation » ===== -->
+<section class="ide-gal" aria-labelledby="ide-gal-t"><div class="ide-gal-head"><span class="ide-gal-k">En formation</span><h2 id="ide-gal-t">La formation en situation de soin</h2><p>Chariot d&#x27;urgence, ventilation, réanimation à plusieurs : on travaille comme dans votre service.</p></div><div class="ide-gal-grid"><figure class="ide-gal-fig"><img src="media/afgsu-2-infirmier-simulation-mannequin-masque-1200.jpg" srcset="media/afgsu-2-infirmier-simulation-mannequin-masque-640.jpg 640w, media/afgsu-2-infirmier-simulation-mannequin-masque-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="667" alt="Mannequin de simulation intubé, avec masque, pendant un exercice" loading="lazy" decoding="async"><figcaption><span class="ide-gal-n" aria-hidden="true">01</span>Simulation haute fidélité</figcaption></figure><figure class="ide-gal-fig"><img src="media/afgsu-2-infirmier-ventilation-bavu-1200.jpg" srcset="media/afgsu-2-infirmier-ventilation-bavu-640.jpg 640w, media/afgsu-2-infirmier-ventilation-bavu-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Équipe soignante ventilant un mannequin au ballon pendant une réanimation" loading="lazy" decoding="async"><figcaption><span class="ide-gal-n" aria-hidden="true">02</span>Ventilation au ballon en équipe</figcaption></figure><figure class="ide-gal-fig"><img src="media/afgsu-2-infirmier-reanimation-defibrillateur-1200.jpg" srcset="media/afgsu-2-infirmier-reanimation-defibrillateur-640.jpg 640w, media/afgsu-2-infirmier-reanimation-defibrillateur-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Trois soignants pratiquant la réanimation avec défibrillateur sur un mannequin" loading="lazy" decoding="async"><figcaption><span class="ide-gal-n" aria-hidden="true">03</span>Réanimation avec défibrillateur</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="ide-sec" id="tarif" aria-labelledby="ide-tarif-t">

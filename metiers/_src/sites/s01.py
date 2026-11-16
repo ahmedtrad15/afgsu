@@ -322,6 +322,9 @@ a{color:var(--dse-blue)}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="dse-sec" id="tarif" aria-labelledby="dse-tarif">
   <div class="dse-wrap dse-tarif">

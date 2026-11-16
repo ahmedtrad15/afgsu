@@ -269,6 +269,9 @@ a{color:var(--as-td)}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="as-sec" id="tarif" aria-labelledby="as-tarif-t">
   <div class="as-wrap as-tarif">

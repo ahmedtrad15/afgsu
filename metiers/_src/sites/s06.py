@@ -229,6 +229,9 @@ a{color:var(--ap-cd)}
 </div>
 
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <div class="ap-sec">
   <section class="ap-blob ap-tarif" id="tarif" aria-labelledby="ap-tarif-t">

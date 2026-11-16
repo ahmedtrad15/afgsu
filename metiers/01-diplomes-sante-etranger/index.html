@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .dse-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#1f3a5f;box-shadow:0 0 0 4px #1f3a5f22}
 .dse-reel-cta{margin-top:4px}
 @media (max-width:640px){.dse-reel{flex-direction:column;align-items:flex-start}}
+.dse-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.dse-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.dse-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.dse-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#1f3a5f}
+.dse-gal-head h2{margin:8px 0 8px}
+.dse-gal-head p{margin:0;opacity:.88}
+.dse-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.dse-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--dse-radius,12px);background:#f6f0e4;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.dse-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.dse-gal-fig:hover img{transform:scale(1.04)}
+.dse-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.dse-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#1f3a5f;color:#fff}
+@container (min-width:620px){.dse-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.dse-gal-fig:first-child{grid-row:span 2}.dse-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.dse-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.dse-gal-fig img{transition:none}.dse-gal-fig:hover img{transform:none}}
 .dse-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .dse-map svg{display:block;width:100%;height:auto;overflow:visible}
 .dse-map-land{fill:#f6f0e4;stroke:#1f3a5f;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -625,6 +639,9 @@ a{color:var(--dse-blue)}
     </div>
   </div>
 </section>
+
+<!-- ===== Galerie « en formation » ===== -->
+<section class="dse-gal" aria-labelledby="dse-gal-t"><div class="dse-gal-head"><span class="dse-gal-k">En formation</span><h2 id="dse-gal-t">Vos deux jours de formation, en images</h2><p>Théorie claire, puis pratique sur mannequin : chaque geste est montré, puis refait par vous, à votre rythme.</p></div><div class="dse-gal-grid"><figure class="dse-gal-fig"><img src="media/afgsu-2-diplome-etranger-cours-theorique-1200.jpg" srcset="media/afgsu-2-diplome-etranger-cours-theorique-640.jpg 640w, media/afgsu-2-diplome-etranger-cours-theorique-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="665" alt="Formatrice présentant un cours théorique AFGSU 2 à des médecins en blouse" loading="lazy" decoding="async"><figcaption><span class="dse-gal-n" aria-hidden="true">01</span>Les bases expliquées simplement</figcaption></figure><figure class="dse-gal-fig"><img src="media/afgsu-2-diplome-etranger-atelier-reanimation-1200.jpg" srcset="media/afgsu-2-diplome-etranger-atelier-reanimation-640.jpg 640w, media/afgsu-2-diplome-etranger-atelier-reanimation-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Groupe de soignants réunis autour d&#x27;un mannequin pendant un atelier de réanimation" loading="lazy" decoding="async"><figcaption><span class="dse-gal-n" aria-hidden="true">02</span>Atelier de réanimation en petit groupe</figcaption></figure><figure class="dse-gal-fig"><img src="media/afgsu-2-diplome-etranger-electrodes-defibrillateur-1200.jpg" srcset="media/afgsu-2-diplome-etranger-electrodes-defibrillateur-640.jpg 640w, media/afgsu-2-diplome-etranger-electrodes-defibrillateur-1200.jpg 1200w" sizes="(max-width: 640px) 100vw, 420px" width="1200" height="800" alt="Électrodes de défibrillateur posées sur le torse d&#x27;un mannequin de formation" loading="lazy" decoding="async"><figcaption><span class="dse-gal-n" aria-hidden="true">03</span>Le défibrillateur, pas à pas</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="dse-sec" id="tarif" aria-labelledby="dse-tarif">

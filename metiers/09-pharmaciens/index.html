@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .phar-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#17703d;box-shadow:0 0 0 4px #17703d22}
 .phar-reel-cta{margin-top:4px}
 @media (max-width:640px){.phar-reel{flex-direction:column;align-items:flex-start}}
+.phar-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.phar-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.phar-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.phar-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#17703d}
+.phar-gal-head h2{margin:8px 0 8px}
+.phar-gal-head p{margin:0;opacity:.88}
+.phar-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.phar-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--phar-radius,12px);background:#eef3f0;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.phar-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.phar-gal-fig:hover img{transform:scale(1.04)}
+.phar-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.phar-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#17703d;color:#fff}
+@container (min-width:620px){.phar-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.phar-gal-fig:first-child{grid-row:span 2}.phar-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.phar-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.phar-gal-fig img{transition:none}.phar-gal-fig:hover img{transform:none}}
 .phar-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .phar-map svg{display:block;width:100%;height:auto;overflow:visible}
 .phar-map-land{fill:#eef3f0;stroke:#17703d;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -537,6 +551,9 @@ main{counter-reset:sec}
     </div>
   </div>
 </section>
+
+<!-- ===== Galerie « en formation » ===== -->
+<section class="phar-gal" aria-labelledby="phar-gal-t"><div class="phar-gal-head"><span class="phar-gal-k">En formation</span><h2 id="phar-gal-t">L&#x27;officine se prépare aussi à l&#x27;urgence</h2><p>Malaise au comptoir ou arrêt cardiaque devant la pharmacie : vous répétez les gestes qui comptent.</p></div><div class="phar-gal-grid"><figure class="phar-gal-fig"><img src="media/afgsu-2-pharmacien-massage-cardiaque-1200.jpg" srcset="media/afgsu-2-pharmacien-massage-cardiaque-640.jpg 640w, media/afgsu-2-pharmacien-massage-cardiaque-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="667" alt="Compressions thoraciques sur un mannequin posé sur un tapis" loading="lazy" decoding="async"><figcaption><span class="phar-gal-n" aria-hidden="true">01</span>Le massage cardiaque en pratique</figcaption></figure><figure class="phar-gal-fig"><img src="media/afgsu-2-pharmacien-binome-reanimation-1200.jpg" srcset="media/afgsu-2-pharmacien-binome-reanimation-640.jpg 640w, media/afgsu-2-pharmacien-binome-reanimation-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="750" alt="Deux stagiaires agenouillés, l&#x27;un réalisant le massage cardiaque sur mannequin" loading="lazy" decoding="async"><figcaption><span class="phar-gal-n" aria-hidden="true">02</span>Travail en binôme</figcaption></figure><figure class="phar-gal-fig"><img src="media/afgsu-2-pharmacien-salle-formation-1200.jpg" srcset="media/afgsu-2-pharmacien-salle-formation-640.jpg 640w, media/afgsu-2-pharmacien-salle-formation-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Stagiaires en blouse assis en salle de cours, l&#x27;une levant la main pour poser une question" loading="lazy" decoding="async"><figcaption><span class="phar-gal-n" aria-hidden="true">03</span>Questions-réponses avec le formateur</figcaption></figure></div></section>
 
 <!-- ===== 06 · Tarif ===== -->
 <section class="phar-s phar-tarif" id="tarif" aria-labelledby="phar-tarif-t">

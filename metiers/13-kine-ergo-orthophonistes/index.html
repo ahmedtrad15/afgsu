@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .reed-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#3a6ea5;box-shadow:0 0 0 4px #3a6ea522}
 .reed-reel-cta{margin-top:4px}
 @media (max-width:640px){.reed-reel{flex-direction:column;align-items:flex-start}}
+.reed-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.reed-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.reed-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.reed-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#3a6ea5}
+.reed-gal-head h2{margin:8px 0 8px}
+.reed-gal-head p{margin:0;opacity:.88}
+.reed-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.reed-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--reed-radius,12px);background:#eef2f7;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.reed-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.reed-gal-fig:hover img{transform:scale(1.04)}
+.reed-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.reed-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#3a6ea5;color:#fff}
+@container (min-width:620px){.reed-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.reed-gal-fig:first-child{grid-row:span 2}.reed-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.reed-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.reed-gal-fig img{transition:none}.reed-gal-fig:hover img{transform:none}}
 .reed-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .reed-map svg{display:block;width:100%;height:auto;overflow:visible}
 .reed-map-land{fill:#eef2f7;stroke:#3a6ea5;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -587,6 +601,9 @@ a{color:var(--reed-bd)}
     
   </div>
 </section>
+
+<!-- ===== Galerie « en formation » ===== -->
+<section class="reed-gal" aria-labelledby="reed-gal-t"><div class="reed-gal-head"><span class="reed-gal-k">En formation</span><h2 id="reed-gal-t">Deux jours au plus près du geste</h2><p>Vous connaissez le corps en mouvement : ici, vous apprenez à réagir quand il s&#x27;arrête.</p></div><div class="reed-gal-grid"><figure class="reed-gal-fig"><img src="media/afgsu-2-kine-ergo-ortho-mannequin-gros-plan-1200.jpg" srcset="media/afgsu-2-kine-ergo-ortho-mannequin-gros-plan-640.jpg 640w, media/afgsu-2-kine-ergo-ortho-mannequin-gros-plan-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="1500" alt="Stagiaire agenouillé près d&#x27;un mannequin de formation posé sur un tapis, en extérieur" loading="lazy" decoding="async"><figcaption><span class="reed-gal-n" aria-hidden="true">01</span>Évaluer la conscience et la respiration</figcaption></figure><figure class="reed-gal-fig"><img src="media/afgsu-2-kine-ergo-ortho-salle-pratique-1200.jpg" srcset="media/afgsu-2-kine-ergo-ortho-salle-pratique-640.jpg 640w, media/afgsu-2-kine-ergo-ortho-salle-pratique-1200.jpg 1200w" sizes="(max-width: 640px) 100vw, 420px" width="1200" height="900" alt="Salle de formation où plusieurs binômes pratiquent la réanimation" loading="lazy" decoding="async"><figcaption><span class="reed-gal-n" aria-hidden="true">02</span>Pratique en binômes</figcaption></figure><figure class="reed-gal-fig"><img src="media/afgsu-2-kine-ergo-ortho-formateur-1200.jpg" srcset="media/afgsu-2-kine-ergo-ortho-formateur-640.jpg 640w, media/afgsu-2-kine-ergo-ortho-formateur-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Formateur montrant le massage cardiaque à un groupe de soignants" loading="lazy" decoding="async"><figcaption><span class="reed-gal-n" aria-hidden="true">03</span>Le formateur vous corrige</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="reed-sec" id="tarif" aria-labelledby="reed-tarif-t">

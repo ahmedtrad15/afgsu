@@ -241,6 +241,9 @@ main{counter-reset:sec}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== 06 · Tarif ===== -->
 <section class="phar-s phar-tarif" id="tarif" aria-labelledby="phar-tarif-t">
   <div class="phar-wrap phar-s-in">

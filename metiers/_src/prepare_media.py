@@ -2,6 +2,7 @@
 """Encode les photos et vidéos de l'archive dans metiers/NN-…/media/.
 
 Usage : python3 metiers/_src/prepare_media.py /chemin/vers/archive-dezippee
+        python3 metiers/_src/prepare_media.py --galerie /chemin/vers/afgsu-assets-dezippe
 
 Photos : JPEG progressif, deux largeurs (-640 et -1200, ou la largeur source si plus petite).
 Vidéos : MP4 H.264 720×1280, son AAC, démarrage rapide, plus une image d'aperçu (poster).
@@ -13,7 +14,7 @@ import sys
 from PIL import Image, ImageOps
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from media import FOLDERS, PHOTOS, VIDEOS  # noqa: E402
+from media import FOLDERS, GALLERY, PHOTOS, VIDEOS  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
@@ -53,5 +54,18 @@ def main(src_root):
         print("OK", out_dir.relative_to(ROOT), sum(p.stat().st_size for p in out_dir.iterdir()) // 1024, "Ko")
 
 
+def gallery(src_root):
+    src_root = pathlib.Path(src_root)
+    for num, (_t, _i, items) in GALLERY.items():
+        out_dir = site_dir(num) / "media"
+        out_dir.mkdir(exist_ok=True)
+        for f, stem, _alt, _cap in items:
+            photo(src_root / f, out_dir, stem)
+        print("OK galerie", out_dir.relative_to(ROOT))
+
+
 if __name__ == "__main__":
-    main(sys.argv[1])
+    if sys.argv[1] == "--galerie":
+        gallery(sys.argv[2])
+    else:
+        main(sys.argv[1])

@@ -267,6 +267,9 @@ a{color:var(--sf-pd)}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="sf-sec" id="tarif" aria-labelledby="sf-tarif-t">
   <div class="sf-wrap sf-tarif">

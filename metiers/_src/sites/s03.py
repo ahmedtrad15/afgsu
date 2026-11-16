@@ -262,6 +262,9 @@ a{color:var(--lab-vd)}
       [[wide:pratique-mannequin]]
     </section>
 
+    <!-- Galerie -->
+    [[gallery]]
+
     <section id="tarif" aria-labelledby="lab-tarif">
       <span class="lab-sec-n">05 · Tarif</span>
       <h2 id="lab-tarif">Tarif et contenu inclus</h2>

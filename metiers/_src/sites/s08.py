@@ -284,6 +284,9 @@ strong,b,th,summary,label{font-weight:500}
   </div>
 </section>
 
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
+
 <!-- ===== Tarif ===== -->
 <section class="ide-sec" id="tarif" aria-labelledby="ide-tarif-t">
   <div class="ide-wrap ide-tarif">

@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .lab-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#5b4b8a;box-shadow:0 0 0 4px #5b4b8a22}
 .lab-reel-cta{margin-top:4px}
 @media (max-width:640px){.lab-reel{flex-direction:column;align-items:flex-start}}
+.lab-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.lab-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.lab-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.lab-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#5b4b8a}
+.lab-gal-head h2{margin:8px 0 8px}
+.lab-gal-head p{margin:0;opacity:.88}
+.lab-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.lab-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--lab-radius,12px);background:#f4f3f8;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.lab-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.lab-gal-fig:hover img{transform:scale(1.04)}
+.lab-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.lab-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#5b4b8a;color:#fff}
+@container (min-width:620px){.lab-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.lab-gal-fig:first-child{grid-row:span 2}.lab-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.lab-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.lab-gal-fig img{transition:none}.lab-gal-fig:hover img{transform:none}}
 .lab-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .lab-map svg{display:block;width:100%;height:auto;overflow:visible}
 .lab-map-land{fill:#f4f3f8;stroke:#5b4b8a;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -557,6 +571,9 @@ a{color:var(--lab-vd)}
         <p>Cas pratique&nbsp;: votre laboratoire est sollicité dans le cadre d'une situation sanitaire exceptionnelle. Vous situez votre rôle et les règles de protection face à un risque biologique.</p></div>
       <figure class="lab-photo lab-photo-wide" data-slot="pratique-mannequin"><img src="media/afgsu-2-technicien-laboratoire-microscope-1200.jpg" srcset="media/afgsu-2-technicien-laboratoire-microscope-640.jpg 640w, media/afgsu-2-technicien-laboratoire-microscope-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Technicien de laboratoire en charlotte qui observe un échantillon au microscope" loading="lazy" decoding="async"></figure>
     </section>
+
+    <!-- Galerie -->
+    <section class="lab-gal" aria-labelledby="lab-gal-t"><div class="lab-gal-head"><span class="lab-gal-k">En formation</span><h2 id="lab-gal-t">La formation côté pratique</h2><p>Surveillance, gestes d&#x27;urgence et défibrillateur : ce que vous refaites pendant les deux jours.</p></div><div class="lab-gal-grid"><figure class="lab-gal-fig"><img src="media/afgsu-2-technicien-laboratoire-prise-tension-1200.jpg" srcset="media/afgsu-2-technicien-laboratoire-prise-tension-640.jpg 640w, media/afgsu-2-technicien-laboratoire-prise-tension-1200.jpg 800w" sizes="(max-width: 640px) 100vw, 640px" width="800" height="533" alt="Prise de tension artérielle pendant un exercice de formation aux gestes d&#x27;urgence" loading="lazy" decoding="async"><figcaption><span class="lab-gal-n" aria-hidden="true">01</span>Surveiller les signes vitaux</figcaption></figure><figure class="lab-gal-fig"><img src="media/afgsu-2-technicien-laboratoire-pose-electrodes-1200.jpg" srcset="media/afgsu-2-technicien-laboratoire-pose-electrodes-640.jpg 640w, media/afgsu-2-technicien-laboratoire-pose-electrodes-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="667" alt="Mains posant les électrodes d&#x27;un défibrillateur sur un mannequin" loading="lazy" decoding="async"><figcaption><span class="lab-gal-n" aria-hidden="true">02</span>Poser les électrodes au bon endroit</figcaption></figure><figure class="lab-gal-fig"><img src="media/afgsu-2-technicien-laboratoire-reanimation-equipe-1200.jpg" srcset="media/afgsu-2-technicien-laboratoire-reanimation-equipe-640.jpg 640w, media/afgsu-2-technicien-laboratoire-reanimation-equipe-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Formateur guidant des soignants agenouillés autour d&#x27;un mannequin de réanimation" loading="lazy" decoding="async"><figcaption><span class="lab-gal-n" aria-hidden="true">03</span>Réagir en équipe</figcaption></figure></div></section>
 
     <section id="tarif" aria-labelledby="lab-tarif">
       <span class="lab-sec-n">05 · Tarif</span>

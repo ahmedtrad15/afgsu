@@ -85,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .etu-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#237256;box-shadow:0 0 0 4px #23725622}
 .etu-reel-cta{margin-top:4px}
 @media (max-width:640px){.etu-reel{flex-direction:column;align-items:flex-start}}
+.etu-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.etu-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.etu-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.etu-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#237256}
+.etu-gal-head h2{margin:8px 0 8px}
+.etu-gal-head p{margin:0;opacity:.88}
+.etu-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.etu-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--etu-radius,12px);background:#eef2ee;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.etu-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.etu-gal-fig:hover img{transform:scale(1.04)}
+.etu-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.etu-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#237256;color:#fff}
+@container (min-width:620px){.etu-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.etu-gal-fig:first-child{grid-row:span 2}.etu-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.etu-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.etu-gal-fig img{transition:none}.etu-gal-fig:hover img{transform:none}}
 .etu-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .etu-map svg{display:block;width:100%;height:auto;overflow:visible}
 .etu-map-land{fill:#eef2ee;stroke:#237256;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -559,6 +573,9 @@ main{padding:20px 0 40px}
   </article>
 </div>
 <div class="etu-grid etu-g3 etu-sec"><figure class="etu-photo" data-slot="pratique-mannequin"><img src="media/afgsu-2-etudiante-infirmiere-tenue-stage-1200.jpg" srcset="media/afgsu-2-etudiante-infirmiere-tenue-stage-640.jpg 640w, media/afgsu-2-etudiante-infirmiere-tenue-stage-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="741" alt="Étudiante en tunique de stage, stéthoscope autour du cou, dans une chambre d&#x27;hôpital" loading="lazy" decoding="async"></figure><figure class="etu-photo" data-slot="groupe-formation"><img src="media/afgsu-2-etudiant-sante-consultation-patient-1200.jpg" srcset="media/afgsu-2-etudiant-sante-consultation-patient-640.jpg 640w, media/afgsu-2-etudiant-sante-consultation-patient-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="563" alt="Étudiante en médecine en consultation avec un patient âgé et un enfant" loading="lazy" decoding="async"></figure><figure class="etu-photo" data-slot="materiel"><img src="media/afgsu-2-etudiant-sante-revision-stethoscope-1200.jpg" srcset="media/afgsu-2-etudiant-sante-revision-stethoscope-640.jpg 640w, media/afgsu-2-etudiant-sante-revision-stethoscope-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="662" alt="Étudiant qui prend des notes, un stéthoscope posé sur son cahier" loading="lazy" decoding="async"></figure></div>
+
+<!-- ===== Galerie « en formation » ===== -->
+<section class="etu-gal" aria-labelledby="etu-gal-t"><div class="etu-gal-head"><span class="etu-gal-k">En formation</span><h2 id="etu-gal-t">À quoi ressemblent les deux jours</h2><p>Des mises en situation proches de vos stages, avec un formateur qui répond à toutes vos questions.</p></div><div class="etu-gal-grid"><figure class="etu-gal-fig"><img src="media/afgsu-2-etudiant-sante-massage-cardiaque-groupe-1200.jpg" srcset="media/afgsu-2-etudiant-sante-massage-cardiaque-groupe-640.jpg 640w, media/afgsu-2-etudiant-sante-massage-cardiaque-groupe-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="665" alt="Étudiants en blouse blanche pratiquant le massage cardiaque sur mannequin" loading="lazy" decoding="async"><figcaption><span class="etu-gal-n" aria-hidden="true">01</span>Massage cardiaque en binôme</figcaption></figure><figure class="etu-gal-fig"><img src="media/afgsu-2-etudiant-sante-defibrillateur-equipe-1200.jpg" srcset="media/afgsu-2-etudiant-sante-defibrillateur-equipe-640.jpg 640w, media/afgsu-2-etudiant-sante-defibrillateur-equipe-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Trois étudiants pratiquant la réanimation avec un défibrillateur sur un mannequin" loading="lazy" decoding="async"><figcaption><span class="etu-gal-n" aria-hidden="true">02</span>Réanimation à trois avec défibrillateur</figcaption></figure><figure class="etu-gal-fig"><img src="media/afgsu-2-etudiant-sante-questions-formateur-1200.jpg" srcset="media/afgsu-2-etudiant-sante-questions-formateur-640.jpg 640w, media/afgsu-2-etudiant-sante-questions-formateur-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Étudiante levant la main pour poser une question au formateur" loading="lazy" decoding="async"><figcaption><span class="etu-gal-n" aria-hidden="true">03</span>Toutes vos questions ont leur place</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="etu-card etu-sec" id="tarif" aria-labelledby="etu-tarif-t">
