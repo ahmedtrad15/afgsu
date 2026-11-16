@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "hero image à gauche / texte à droite, section « une journée type »",
     "kw_main": "formation AFGSU 2 aide-soignant",
     "kw_secondary": ["AFGSU 2 aide-soignant prix", "AFGSU 2 aide-soignant obligatoire", "renouvellement AFGSU 2 aide-soignant",
-                     "AFGSU 2 EHPAD", "AFGSU 2 aide-soignant Lille / Toulouse / Paris", "recyclage AFGSU 2 aide-soignante",
+                     "AFGSU 2 EHPAD", "AFGSU 2 aide-soignant près de chez moi", "recyclage AFGSU 2 aide-soignante",
                      "attestation gestes et soins d'urgence aide-soignant"],
     "kw_geo": ["Un aide-soignant doit-il faire l'AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour un aide-soignant ?",
                "Que faire en cas de fausse route en EHPAD ?"],
     "breadcrumb": "AFGSU 2 aides-soignants",
     "course_name": "AFGSU 2 pour les aides-soignants",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour aides-soignants en EHPAD, à l'hôpital ou à domicile : fausse route, chute de la personne âgée, malaise, arrêt cardiaque en chambre, hypoglycémie. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Lille", "Toulouse", "Paris", "Rennes"],
-    "city_hint": "Lille",
     "msg_hint": "EHPAD, hôpital, SSIAD… nombre de soignants à former, horaires de travail",
     "form_submit": "Valider ma demande",
     "pict": '<path d="M16 27.5 6.2 18.6a5.6 5.6 0 0 1 7.9-7.9L16 12.6l1.9-1.9a5.6 5.6 0 0 1 7.9 7.9z" fill="#d99a3e"/><path d="M2.5 21.5 8 27c1 1 2.4 1.5 3.8 1.5H18M29.5 21.5 24 27c-1 1-2.4 1.5-3.8 1.5H14" fill="none" stroke="#1c7c7d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>',
@@ -268,12 +266,11 @@ a{color:var(--as-td)}
       <article class="as-mod"><p class="as-dur">7 h</p><h3>Module 2 · Urgences potentielles</h3><ul><li>Malaise, traumatismes, brûlures</li><li>Accouchement inopiné</li><li>Relevage et brancardage</li><li>Hygiène, AES</li><li>Chariot d'urgence</li></ul><p class="as-cas">Cas : résidente au sol, suspicion de fracture du col du fémur, relevage refusé, attente des secours.</p></article>
       <article class="as-mod"><p class="as-dur">3 h 30</p><h3>Module 3 · Risques collectifs</h3><ul><li>Situations sanitaires exceptionnelles</li><li>Plan blanc, ORSAN</li><li>NRBC-E</li><li>Damage control, attentats</li></ul><p class="as-cas">Cas : épisode de canicule et plan bleu en EHPAD, organisation de la surveillance renforcée.</p></article>
     </div>
-    <div class="as-pair">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
   </div>
 </section>
 
 <!-- ===== Vidéo 1 ===== -->
-<section class="as-sec as-band" aria-labelledby="as-v1"><div class="as-wrap as-vid"><h2 id="as-v1">La fausse route en vidéo</h2>[[video:video-1]]</div></section>
+<section class="as-sec as-band" aria-labelledby="as-v1"><div class="as-wrap as-vid"><h2 id="as-v1">L'AFGSU 2 de l'aide-soignant, en images</h2>[[video:video-1]]</div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="as-sec" id="tarif" aria-labelledby="as-tarif-t">
@@ -284,7 +281,7 @@ a{color:var(--as-td)}
       <ul><li>21 heures, 3 jours en présentiel</li><li>Mannequins, défibrillateur de formation, aspiration</li><li>Supports de cours</li><li>Attestation délivrée par le CESU</li></ul>
       <a class="as-btn" href="#inscription">Je m'inscris</a>
     </div>
-    [[img:materiel]]
+    [[img:groupe-formation]]
   </div>
 </section>
 
@@ -293,7 +290,7 @@ a{color:var(--as-td)}
   <div class="as-wrap">
     <h2 id="as-sess">Sessions en région, partout en France</h2>
     <p>Des sessions sont organisées régulièrement dans les grandes villes. Dites-nous laquelle vous convient.</p>
-    <ul class="as-cities"><li>Lille</li><li>Toulouse</li><li>Paris</li><li>Rennes</li><li>Lyon</li><li>Marseille</li><li>Bordeaux</li><li>Nantes</li><li>Strasbourg</li><li>Montpellier</li><li>Nice</li><li>Reims</li><li>Clermont-Ferrand</li><li>Metz</li><li>Caen</li><li>Angers</li></ul>
+    [[map]]
     <p><strong>Dans votre EHPAD, votre hôpital ou votre service à domicile</strong> : nous venons former vos équipes sur place.</p>
   </div>
 </section>
@@ -310,9 +307,6 @@ a{color:var(--as-td)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 ===== -->
-<section class="as-sec as-band" aria-labelledby="as-v2"><div class="as-wrap as-vid"><h2 id="as-v2">La chute en vidéo</h2>[[video:video-2]]</div></section>
-
 <!-- ===== Réassurance ===== -->
 <section class="as-sec" aria-labelledby="as-trust-t">
   <div class="as-wrap">
@@ -323,7 +317,6 @@ a{color:var(--as-td)}
       <div><strong>Matériel professionnel</strong><br>Celui que vous trouvez en service.</div>
       <div><strong>Attestation du CESU</strong><br>Valable 4 ans.</div>
     </div>
-    <div class="as-reviews" role="note">Avis stagiaires (à intégrer)</div>
   </div>
 </section>
 

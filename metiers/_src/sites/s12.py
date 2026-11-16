@@ -14,15 +14,13 @@ SITE = {
     "layout_label": "page dense et factuelle, tableau récapitulatif en haut, FAQ technique",
     "kw_main": "AFGSU 2 médecin",
     "kw_secondary": ["formation AFGSU 2 médecin généraliste", "AFGSU 2 médecin prix", "renouvellement AFGSU 2 médecin",
-                     "urgences au cabinet médical formation", "AFGSU 2 maison de santé", "AFGSU 2 médecin Paris / Lyon / Toulouse",
+                     "urgences au cabinet médical formation", "AFGSU 2 maison de santé", "AFGSU 2 médecin près de chez moi",
                      "formation situations sanitaires exceptionnelles médecin", "attestation gestes et soins d'urgence médecin"],
     "kw_geo": ["Un médecin doit-il renouveler son AFGSU 2 ?", "Combien coûte l'AFGSU 2 pour un médecin ?",
                "Quel matériel d'urgence au cabinet médical ?"],
     "breadcrumb": "AFGSU 2 médecins",
     "course_name": "AFGSU 2 pour les médecins",
     "course_desc": "Formation AFGSU de niveau 2 (21 h, 3 jours) pour médecins en cabinet, maison de santé ou établissement : arrêt cardiaque, douleur thoracique, détresse respiratoire, situations sanitaires exceptionnelles, risque NRBC. Attestation délivrée par le CESU, renouvellement tous les 4 ans.",
-    "instances": ["Paris", "Lyon", "Toulouse", "Lille"],
-    "city_hint": "Toulouse",
     "msg_hint": "Mode d'exercice (cabinet, MSP, établissement), taille de l'équipe…",
     "form_submit": "Envoyer la demande",
     "pict": '<path d="M7 3v8a6 6 0 0 0 12 0V3" fill="none" stroke="#263442" stroke-width="2.4" stroke-linecap="round"/><path d="M13 17v4a6 6 0 0 0 12 0v-3" fill="none" stroke="#263442" stroke-width="2.4" stroke-linecap="round"/><circle cx="25" cy="15" r="3.4" fill="#c0392b"/><circle cx="7" cy="3" r="1.6" fill="#263442"/><circle cx="19" cy="3" r="1.6" fill="#263442"/>',
@@ -250,7 +248,7 @@ a{color:var(--med-s)}
 <!-- ===== Images + vidéo 1 ===== -->
 <section class="med-sec" aria-labelledby="med-v1">
   <div class="med-wrap med-g2">
-    <div><h2 id="med-v1">Simulation : arrêt cardiaque au cabinet</h2>[[video:video-1]]</div>
+    <div><h2 id="med-v1">La simulation en images</h2>[[video:video-1]]</div>
     <div class="med-g2">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
   </div>
 </section>
@@ -262,12 +260,11 @@ a{color:var(--med-s)}
       <h2>Coût de la formation</h2>
       [[price]]
       <ul class="med-list med-small"><li>21 h d'enseignement sur 3 jours</li><li>Mannequins, défibrillateurs de formation, matériel de ventilation</li><li>Tenues de protection pour l'atelier NRBC</li><li>Attestation AFGSU 2 délivrée par le CESU</li></ul>
-      [[img:materiel]]
     </div>
     <div id="sessions">
-      <h2>Villes et formats de session</h2>
+      <h2>Formats de session, partout en France</h2>
       <p class="med-small">Sessions interprofessionnelles partout en France, dans les grandes villes ; sessions intra en cabinet de groupe, MSP, centre de santé ou établissement.</p>
-      <ul class="med-cities"><li>Paris</li><li>Lyon</li><li>Toulouse</li><li>Lille</li><li>Marseille</li><li>Bordeaux</li><li>Nantes</li><li>Strasbourg</li><li>Rennes</li><li>Montpellier</li><li>Nice</li><li>Reims</li><li>Grenoble</li><li>Dijon</li><li>Rouen</li><li>Tours</li></ul>
+      [[map]]
       <h2>Déroulé par demi-journée</h2>
       <div class="med-tw"><table class="med-table">
         <caption class="med-sr">Déroulé par demi-journée</caption>
@@ -282,10 +279,10 @@ a{color:var(--med-s)}
   </div>
 </section>
 
-<!-- ===== Vidéo 2 + réassurance ===== -->
-<section class="med-sec" aria-labelledby="med-v2">
+<!-- ===== Réassurance ===== -->
+<section class="med-sec" aria-labelledby="med-trust">
   <div class="med-wrap med-g2">
-    <div><h2 id="med-v2">Exercice : la médecine de ville en crise</h2>[[video:video-2]]</div>
+    [[img:materiel]]
     <div>
       <h2 id="med-trust">Encadrement pédagogique</h2>
       <table class="med-table">
@@ -297,8 +294,7 @@ a{color:var(--med-s)}
           <tr><th scope="row">Attestation</th><td>Délivrée par le CESU</td></tr>
         </tbody>
       </table>
-      <div class="med-stack">[[img:situation-metier]]
-      <div class="med-reviews" role="note">Avis stagiaires (à intégrer)</div></div>
+      
     </div>
   </div>
 </section>
