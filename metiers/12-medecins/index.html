@@ -60,6 +60,20 @@ dialog ul{padding-left:1.2em}
 .med-hero-badge b{display:block;font-weight:600}
 .med-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#263442;color:#fff;display:flex;align-items:center;justify-content:center}
 @media (max-width:640px){.med-hero-badge{left:10px;bottom:12px}.med-photo-hero::before{inset:14px -8px -8px 14px}}
+.med-ad{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}
+.med-ad video,.med-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.med-ad-sound{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.med-ad-sound .snd-on{display:none}
+.med-ad-sound[aria-pressed="true"] .snd-on{display:inline}
+.med-ad-sound[aria-pressed="true"] .snd-off{display:none}
+.med-photo-hero{margin-bottom:30px}
+.med-ad-top{top:-30px;bottom:auto}
+.med-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
+.med-photo-hero .med-hero-badge{max-width:calc(70% - 10px)}
+@media (max-width:640px){.med-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.med-ad-top{top:-24px;bottom:auto}.med-ad-solo{width:150px}.med-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.med-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
+.med-adband .med-reel{justify-content:center}
+.med-reel-frame{position:relative}
 .med-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
 .med-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
 .med-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
@@ -462,7 +476,7 @@ a{color:var(--med-s)}
       <p class="med-lead">Arrêt cardiaque en salle d'attente, douleur thoracique en consultation, détresse respiratoire chez un enfant, afflux de patients lors d'une crise&nbsp;: au cabinet ou en maison de santé, vous coordonnez la prise en charge jusqu'au relais. Programme conforme au référentiel national, 21 heures, contenu technique.</p>
       <p class="med-price"><span class="med-sr">Prix : ancien tarif </span><del>450 €</del> <strong>385 € TTC</strong></p>
       <div class="med-ctas"><a class="med-btn" href="#inscription">Réserver ma session</a><a class="med-btn med-btn-s" href="#inscription" data-rappel>Être rappelé</a></div>
-      <figure class="med-photo med-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-medecin-cabinet-1200.jpg" srcset="media/formation-afgsu-2-medecin-cabinet-640.jpg 640w, media/formation-afgsu-2-medecin-cabinet-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="360" alt="Médecin généraliste en blouse, bras croisés, dans son cabinet" loading="eager" fetchpriority="high" decoding="async"><figcaption class="med-hero-badge"><span class="med-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
+      <figure class="med-photo med-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-medecin-cabinet-1200.jpg" srcset="media/formation-afgsu-2-medecin-cabinet-640.jpg 640w, media/formation-afgsu-2-medecin-cabinet-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="360" alt="Médecin généraliste en blouse, bras croisés, dans son cabinet" loading="eager" fetchpriority="high" decoding="async"><figcaption class="med-hero-badge"><span class="med-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption><div class="med-ad"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-medecin-poster.jpg" width="720" height="1280" aria-label="Médecin : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-medecin.mp4" type="video/mp4"></video><button type="button" class="med-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></figure>
     </div>
     <div class="med-tw">
       <table class="med-recap">
@@ -528,15 +542,10 @@ a{color:var(--med-s)}
   </div>
 </section>
 
-<!-- ===== Images + vidéo 1 ===== -->
+<!-- ===== Images ===== -->
 <section class="med-sec" aria-labelledby="med-v1">
-  <div class="med-wrap med-g2">
-    <div><h2 id="med-v1">La simulation en images</h2><figure class="med-reel" data-slot="video-1">
-  <div class="med-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-medecin-poster.jpg" width="720" height="1280" aria-label="Médecin : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-medecin.mp4" type="video/mp4"></video></div>
-  <figcaption><span class="med-reel-title">Médecin : l&#x27;AFGSU 2 est obligatoire</span><span class="med-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 pour les médecins.</span>
-    <span class="med-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="med-btn med-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure></div>
+  <div class="med-wrap">
+    <h2 id="med-v1">Au cabinet, en consultation, en formation</h2>
     <div class="med-g2"><figure class="med-photo" data-slot="pratique-mannequin"><img src="media/afgsu-2-medecin-consultation-patient-1200.jpg" srcset="media/afgsu-2-medecin-consultation-patient-640.jpg 640w, media/afgsu-2-medecin-consultation-patient-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="360" alt="Médecin en consultation avec un patient, à son bureau" loading="lazy" decoding="async"></figure><figure class="med-photo" data-slot="groupe-formation"><img src="media/afgsu-2-medecin-ordonnance-1200.jpg" srcset="media/afgsu-2-medecin-ordonnance-640.jpg 640w, media/afgsu-2-medecin-ordonnance-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="360" alt="Médecin qui remplit un document sur un porte-bloc face à un patient" loading="lazy" decoding="async"></figure></div>
   </div>
 </section>
@@ -718,6 +727,20 @@ a{color:var(--med-s)}
   <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });

@@ -60,6 +60,20 @@ dialog ul{padding-left:1.2em}
 .sf-hero-badge b{display:block;font-weight:600}
 .sf-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#7a3e65;color:#fff;display:flex;align-items:center;justify-content:center}
 @media (max-width:640px){.sf-hero-badge{left:10px;bottom:12px}.sf-photo-hero::before{inset:14px -8px -8px 14px}}
+.sf-ad{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}
+.sf-ad video,.sf-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.sf-ad-sound{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.sf-ad-sound .snd-on{display:none}
+.sf-ad-sound[aria-pressed="true"] .snd-on{display:inline}
+.sf-ad-sound[aria-pressed="true"] .snd-off{display:none}
+.sf-photo-hero{margin-bottom:30px}
+.sf-ad-top{top:-30px;bottom:auto}
+.sf-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
+.sf-photo-hero .sf-hero-badge{max-width:calc(70% - 10px)}
+@media (max-width:640px){.sf-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.sf-ad-top{top:-24px;bottom:auto}.sf-ad-solo{width:150px}.sf-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.sf-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
+.sf-adband .sf-reel{justify-content:center}
+.sf-reel-frame{position:relative}
 .sf-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
 .sf-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
 .sf-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
@@ -493,7 +507,7 @@ a{color:var(--sf-pd)}
     </div>
     <div>
       <ul class="sf-facts" aria-label="Faits clés"><li><span>Durée</span><b>21 h</b></li><li><span>Format</span><b>3 jours</b></li><li><span>Renouvellement</span><b>tous les 4 ans</b></li><li><span>Groupe</span><b>6 à 12</b></li><li><span>Attestation</span><b>CESU</b></li></ul>
-      <figure class="sf-photo sf-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-sage-femme-nouveau-ne-1200.jpg" srcset="media/formation-afgsu-2-sage-femme-nouveau-ne-640.jpg 640w, media/formation-afgsu-2-sage-femme-nouveau-ne-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="427" alt="Sage-femme qui tient un nouveau-né près du lit de la mère, en maternité" loading="eager" fetchpriority="high" decoding="async"><figcaption class="sf-hero-badge"><span class="sf-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
+      <figure class="sf-photo sf-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-sage-femme-nouveau-ne-1200.jpg" srcset="media/formation-afgsu-2-sage-femme-nouveau-ne-640.jpg 640w, media/formation-afgsu-2-sage-femme-nouveau-ne-1200.jpg 640w" sizes="(max-width: 760px) 100vw, 600px" width="640" height="427" alt="Sage-femme qui tient un nouveau-né près du lit de la mère, en maternité" loading="eager" fetchpriority="high" decoding="async"><figcaption class="sf-hero-badge"><span class="sf-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption><div class="sf-ad"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-sage-femme-poster.jpg" width="720" height="1280" aria-label="Sage-femme : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-sage-femme.mp4" type="video/mp4"></video><button type="button" class="sf-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></figure>
     </div>
   </div>
 </section>
@@ -549,14 +563,6 @@ a{color:var(--sf-pd)}
     </div>
   </div>
 </section>
-
-<!-- ===== Vidéo 1 ===== -->
-<section class="sf-sec sf-rose" aria-labelledby="sf-v1"><div class="sf-wrap sf-vid"><div class="sf-rubric"><span>Vidéo</span><h2 id="sf-v1">La formation en images</h2></div><figure class="sf-reel" data-slot="video-1">
-  <div class="sf-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-sage-femme-poster.jpg" width="720" height="1280" aria-label="Sage-femme : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-sage-femme.mp4" type="video/mp4"></video></div>
-  <figcaption><span class="sf-reel-title">Sage-femme : l&#x27;AFGSU 2 est obligatoire</span><span class="sf-reel-desc">Le rappel en vidéo courte, sur mannequin en formation.</span>
-    <span class="sf-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="sf-btn sf-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="sf-sec" id="tarif" aria-labelledby="sf-tarif-t">
@@ -735,6 +741,20 @@ a{color:var(--sf-pd)}
   <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });

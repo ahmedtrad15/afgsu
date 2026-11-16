@@ -60,6 +60,20 @@ dialog ul{padding-left:1.2em}
 .lab-hero-badge b{display:block;font-weight:600}
 .lab-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#5b4b8a;color:#fff;display:flex;align-items:center;justify-content:center}
 @media (max-width:640px){.lab-hero-badge{left:10px;bottom:12px}.lab-photo-hero::before{inset:14px -8px -8px 14px}}
+.lab-ad{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}
+.lab-ad video,.lab-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.lab-ad-sound{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.lab-ad-sound .snd-on{display:none}
+.lab-ad-sound[aria-pressed="true"] .snd-on{display:inline}
+.lab-ad-sound[aria-pressed="true"] .snd-off{display:none}
+.lab-photo-hero{margin-bottom:30px}
+.lab-ad-top{top:-30px;bottom:auto}
+.lab-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
+.lab-photo-hero .lab-hero-badge{max-width:calc(70% - 10px)}
+@media (max-width:640px){.lab-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.lab-ad-top{top:-24px;bottom:auto}.lab-ad-solo{width:150px}.lab-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.lab-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
+.lab-adband .lab-reel{justify-content:center}
+.lab-reel-frame{position:relative}
 .lab-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
 .lab-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
 .lab-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
@@ -85,6 +99,8 @@ dialog ul{padding-left:1.2em}
 .lab-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (max-width:520px){.lab-tel-num{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}.lab-tel{width:46px;height:46px;justify-content:center;border:1px solid currentColor;border-radius:50%;padding:0!important}.lab-brand-txt{font-size:.9rem}.lab-brand{flex:1 1 0;min-width:0}}
 
+.lab-top-in{display:flex;gap:40px;align-items:center;justify-content:space-between}
+@media (max-width:760px){.lab-top-in{flex-direction:column;align-items:flex-start}}
 :root{--lab-v:#5b4b8a;--lab-vd:#463a6c;--lab-p:#eceaf2;--lab-t:#2fa3a3;--lab-td:#1d7676;--lab-ink:#211d2e;--lab-mut:#555066;--lab-line:#d6d2e2;--lab-radius:4px}
 body{font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--lab-ink);background:#fff;font-size:1rem}
 h1,h2,h3{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;color:var(--lab-vd)}
@@ -464,12 +480,13 @@ a{color:var(--lab-vd)}
 <main id="contenu">
 <!-- ===== Bandeau titre ===== -->
 <section class="lab-top" aria-labelledby="lab-h1">
-  <div class="lab-wrap">
+  <div class="lab-wrap lab-top-in"><div>
     <p class="lab-ref"><span>Réf. AFGSU-2</span><span>Biologie médicale</span><span>Présentiel</span></p>
     <h1 id="lab-h1">Formation AFGSU 2 pour technicien de laboratoire</h1>
     <p class="lab-lead">Au poste de prélèvement, un patient sur le fauteuil peut basculer en quelques secondes&nbsp;: malaise vagal, réaction allergique, chute en se levant. Cette formation de 21 heures transforme ces scénarios en procédures que vous maîtrisez, aiguille en main.</p>
     <div class="lab-ctas"><a class="lab-btn" href="#inscription">Réserver ma session</a><a class="lab-btn lab-btn-alt" href="#inscription" data-rappel>Être rappelé</a></div>
   </div>
+  <div class="lab-ad lab-ad-solo"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-technicien-laboratoire-poster.jpg" width="720" height="1280" aria-label="Prises de sang : l&#x27;AFGSU 2 pour les techniciens de laboratoire"><source src="media/video-afgsu-2-technicien-laboratoire.mp4" type="video/mp4"></video><button type="button" class="lab-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></div>
 </section>
 
 <div class="lab-wrap lab-sheet">
@@ -539,17 +556,6 @@ a{color:var(--lab-vd)}
         <ul><li>Plan blanc</li><li>ORSAN</li><li>NRBC-E</li><li>Damage control</li><li>Attentats</li></ul>
         <p>Cas pratique&nbsp;: votre laboratoire est sollicité dans le cadre d'une situation sanitaire exceptionnelle. Vous situez votre rôle et les règles de protection face à un risque biologique.</p></div>
       <figure class="lab-photo lab-photo-wide" data-slot="pratique-mannequin"><img src="media/afgsu-2-technicien-laboratoire-microscope-1200.jpg" srcset="media/afgsu-2-technicien-laboratoire-microscope-640.jpg 640w, media/afgsu-2-technicien-laboratoire-microscope-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Technicien de laboratoire en charlotte qui observe un échantillon au microscope" loading="lazy" decoding="async"></figure>
-    </section>
-
-    <section aria-labelledby="lab-v1t">
-      <span class="lab-sec-n">04 · Démonstration</span>
-      <h2 id="lab-v1t">Prélèvements&nbsp;: le rappel en vidéo</h2>
-      <figure class="lab-reel" data-slot="video-1">
-  <div class="lab-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-technicien-laboratoire-poster.jpg" width="720" height="1280" aria-label="Prises de sang : l&#x27;AFGSU 2 pour les techniciens de laboratoire"><source src="media/video-afgsu-2-technicien-laboratoire.mp4" type="video/mp4"></video></div>
-  <figcaption><span class="lab-reel-title">Prises de sang : l&#x27;AFGSU 2 pour les techniciens de laboratoire</span><span class="lab-reel-desc">Pourquoi l&#x27;AFGSU 2 est exigée des techniciens qui réalisent des prélèvements.</span>
-    <span class="lab-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="lab-btn lab-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure>
     </section>
 
     <section id="tarif" aria-labelledby="lab-tarif">
@@ -737,6 +743,20 @@ a{color:var(--lab-vd)}
   <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });

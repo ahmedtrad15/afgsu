@@ -267,9 +267,6 @@ a{color:var(--sf-pd)}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="sf-sec sf-rose" aria-labelledby="sf-v1"><div class="sf-wrap sf-vid"><div class="sf-rubric"><span>Vidéo</span><h2 id="sf-v1">La formation en images</h2></div>[[video:video-1]]</div></section>
-
 <!-- ===== Tarif ===== -->
 <section class="sf-sec" id="tarif" aria-labelledby="sf-tarif-t">
   <div class="sf-wrap sf-tarif">

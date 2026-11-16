@@ -60,6 +60,20 @@ dialog ul{padding-left:1.2em}
 .ide-hero-badge b{display:block;font-weight:600}
 .ide-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#2563a8;color:#fff;display:flex;align-items:center;justify-content:center}
 @media (max-width:640px){.ide-hero-badge{left:10px;bottom:12px}.ide-photo-hero::before{inset:14px -8px -8px 14px}}
+.ide-ad{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}
+.ide-ad video,.ide-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.ide-ad-sound{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.ide-ad-sound .snd-on{display:none}
+.ide-ad-sound[aria-pressed="true"] .snd-on{display:inline}
+.ide-ad-sound[aria-pressed="true"] .snd-off{display:none}
+.ide-photo-hero{margin-bottom:30px}
+.ide-ad-top{top:-30px;bottom:auto}
+.ide-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
+.ide-photo-hero .ide-hero-badge{max-width:calc(70% - 10px)}
+@media (max-width:640px){.ide-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.ide-ad-top{top:-24px;bottom:auto}.ide-ad-solo{width:150px}.ide-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.ide-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
+.ide-adband .ide-reel{justify-content:center}
+.ide-reel-frame{position:relative}
 .ide-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
 .ide-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
 .ide-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
@@ -515,6 +529,16 @@ strong,b,th,summary,label{font-weight:500}
   </div>
 </section>
 
+<!-- ===== Vidéo (haut de page) ===== -->
+<section class="ide-adband" aria-label="Vidéo de présentation">
+<figure class="ide-reel">
+  <div class="ide-reel-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-infirmier-poster.jpg" width="720" height="1280" aria-label="Infirmier : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-infirmier.mp4" type="video/mp4"></video><button type="button" class="ide-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+  <figcaption><span class="ide-reel-title">Infirmier : l&#x27;AFGSU 2 est obligatoire</span><span class="ide-reel-desc">Le rappel en vidéo courte : ventilation et massage cardiaque en formation.</span>
+    <span class="ide-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
+    <a class="ide-btn ide-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
+</figure>
+</section>
+
 <!-- ===== En bref ===== -->
 <section class="ide-sec" aria-labelledby="ide-bref">
   <div class="ide-wrap">
@@ -563,14 +587,6 @@ strong,b,th,summary,label{font-weight:500}
     <figure class="ide-photo ide-photo-wide" data-slot="pratique-mannequin"><img src="media/afgsu-2-infirmier-prise-tension-1200.jpg" srcset="media/afgsu-2-infirmier-prise-tension-640.jpg 640w, media/afgsu-2-infirmier-prise-tension-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Infirmière qui prend la tension artérielle d&#x27;un patient" loading="lazy" decoding="async"></figure>
   </div>
 </section>
-
-<!-- ===== Vidéo 1 ===== -->
-<section class="ide-sec ide-alt" aria-labelledby="ide-v1"><div class="ide-wrap ide-vid"><h2 id="ide-v1">Vidéo&nbsp;: l'infirmier face à l'urgence</h2><figure class="ide-reel" data-slot="video-1">
-  <div class="ide-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-infirmier-poster.jpg" width="720" height="1280" aria-label="Infirmier : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-infirmier.mp4" type="video/mp4"></video></div>
-  <figcaption><span class="ide-reel-title">Infirmier : l&#x27;AFGSU 2 est obligatoire</span><span class="ide-reel-desc">Le rappel en vidéo courte : ventilation et massage cardiaque en formation.</span>
-    <span class="ide-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="ide-btn ide-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="ide-sec" id="tarif" aria-labelledby="ide-tarif-t">
@@ -753,6 +769,20 @@ strong,b,th,summary,label{font-weight:500}
   <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });

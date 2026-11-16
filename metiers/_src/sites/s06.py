@@ -230,14 +230,13 @@ a{color:var(--ap-cd)}
 
 
 <!-- ===== Tarif ===== -->
-<div class="ap-grid ap-g2 ap-sec">
+<div class="ap-sec">
   <section class="ap-blob ap-tarif" id="tarif" aria-labelledby="ap-tarif-t">
     <h2 id="ap-tarif-t">Combien ça coûte</h2>
     [[price]]
     <ul><li>3 jours de formation, 21 heures</li><li>Mannequins nourrisson, enfant, adulte</li><li>Défibrillateur avec mode pédiatrique</li><li>Attestation délivrée par le CESU</li></ul>
     <p><a class="ap-btn" href="#inscription">Je réserve ma place</a></p>
   </section>
-  <section class="ap-blob" aria-labelledby="ap-v1"><h2 id="ap-v1">En vidéo : les gestes sur mannequin</h2>[[video:video-1]]</section>
 </div>
 
 <!-- ===== Sessions ===== -->

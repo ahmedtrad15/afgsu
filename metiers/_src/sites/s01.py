@@ -322,14 +322,6 @@ a{color:var(--dse-blue)}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="dse-sec dse-sec-alt" aria-labelledby="dse-v1">
-  <div class="dse-wrap dse-video-wrap">
-    <h2 id="dse-v1">L'AFGSU 2 en quelques secondes, pour exercer en France</h2>
-    [[video:video-1]]
-  </div>
-</section>
-
 <!-- ===== Tarif ===== -->
 <section class="dse-sec" id="tarif" aria-labelledby="dse-tarif">
   <div class="dse-wrap dse-tarif">

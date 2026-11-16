@@ -60,6 +60,20 @@ dialog ul{padding-left:1.2em}
 .amb-hero-badge b{display:block;font-weight:600}
 .amb-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#142d4c;color:#fff;display:flex;align-items:center;justify-content:center}
 @media (max-width:640px){.amb-hero-badge{left:10px;bottom:12px}.amb-photo-hero::before{inset:14px -8px -8px 14px}}
+.amb-ad{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}
+.amb-ad video,.amb-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.amb-ad-sound{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.amb-ad-sound .snd-on{display:none}
+.amb-ad-sound[aria-pressed="true"] .snd-on{display:inline}
+.amb-ad-sound[aria-pressed="true"] .snd-off{display:none}
+.amb-photo-hero{margin-bottom:30px}
+.amb-ad-top{top:-30px;bottom:auto}
+.amb-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
+.amb-photo-hero .amb-hero-badge{max-width:calc(70% - 10px)}
+@media (max-width:640px){.amb-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.amb-ad-top{top:-24px;bottom:auto}.amb-ad-solo{width:150px}.amb-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.amb-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
+.amb-adband .amb-reel{justify-content:center}
+.amb-reel-frame{position:relative}
 .amb-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
 .amb-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
 .amb-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
@@ -484,7 +498,7 @@ a{color:var(--amb-navy)}
       <p class="amb-lead">Un arrêt cardiaque entre deux sorties d'autoroute, un relevage dans un escalier en colimaçon, une naissance qui n'attend pas la maternité. Vous connaissez ces moments. Trois jours pour remettre les gestes à niveau et repartir avec une attestation valable 4 ans.</p>
       <div class="amb-ctas"><a class="amb-btn" href="#inscription">Réserver ma session</a><a class="amb-btn amb-btn-w" href="#inscription" data-rappel>Être rappelé</a></div>
     </div>
-    <figure class="amb-photo amb-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg" srcset="media/formation-afgsu-2-ambulanciers-intervention-nuit-640.jpg 640w, media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 600px" width="1200" height="800" alt="Deux ambulanciers en gilet réfléchissant qui prennent en charge un patient sur un brancard, de nuit, devant l&#x27;ambulance" loading="eager" fetchpriority="high" decoding="async"><figcaption class="amb-hero-badge"><span class="amb-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
+    <figure class="amb-photo amb-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg" srcset="media/formation-afgsu-2-ambulanciers-intervention-nuit-640.jpg 640w, media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 600px" width="1200" height="800" alt="Deux ambulanciers en gilet réfléchissant qui prennent en charge un patient sur un brancard, de nuit, devant l&#x27;ambulance" loading="eager" fetchpriority="high" decoding="async"><figcaption class="amb-hero-badge"><span class="amb-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption><div class="amb-ad"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-ambulancier-poster.jpg" width="720" height="1280" aria-label="Ambulancier : votre AFGSU 2 doit être à jour"><source src="media/video-afgsu-2-ambulancier.mp4" type="video/mp4"></video><button type="button" class="amb-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></figure>
   </div>
   <div class="amb-wrap">
     <div class="amb-bar" role="region" aria-label="Faits clés">
@@ -542,14 +556,6 @@ a{color:var(--amb-navy)}
     <figure class="amb-photo amb-photo-wide" data-slot="pratique-mannequin"><img src="media/afgsu-2-ambulanciers-cellule-sanitaire-1200.jpg" srcset="media/afgsu-2-ambulanciers-cellule-sanitaire-640.jpg 640w, media/afgsu-2-ambulanciers-cellule-sanitaire-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Deux ambulanciers en tenue rouge dans la cellule sanitaire de l&#x27;ambulance" loading="lazy" decoding="async"></figure>
   </div>
 </section>
-
-<!-- ===== Vidéo 1 ===== -->
-<section class="amb-sec amb-alt" aria-labelledby="amb-v1"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v1">Votre attestation est-elle à jour&nbsp;?</h2><figure class="amb-reel" data-slot="video-1">
-  <div class="amb-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-ambulancier-poster.jpg" width="720" height="1280" aria-label="Ambulancier : votre AFGSU 2 doit être à jour"><source src="media/video-afgsu-2-ambulancier.mp4" type="video/mp4"></video></div>
-  <figcaption><span class="amb-reel-title">Ambulancier : votre AFGSU 2 doit être à jour</span><span class="amb-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 se renouvelle tous les 4 ans.</span>
-    <span class="amb-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="amb-btn amb-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="amb-sec" id="tarif" aria-labelledby="amb-tarif-t">
@@ -733,6 +739,20 @@ a{color:var(--amb-navy)}
   <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });

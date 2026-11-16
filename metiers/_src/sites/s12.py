@@ -245,10 +245,10 @@ a{color:var(--med-s)}
   </div>
 </section>
 
-<!-- ===== Images + vidéo 1 ===== -->
+<!-- ===== Images ===== -->
 <section class="med-sec" aria-labelledby="med-v1">
-  <div class="med-wrap med-g2">
-    <div><h2 id="med-v1">La simulation en images</h2>[[video:video-1]]</div>
+  <div class="med-wrap">
+    <h2 id="med-v1">Au cabinet, en consultation, en formation</h2>
     <div class="med-g2">[[img:pratique-mannequin]][[img:groupe-formation]]</div>
   </div>
 </section>

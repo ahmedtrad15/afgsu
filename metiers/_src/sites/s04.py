@@ -261,9 +261,6 @@ a{color:var(--amb-navy)}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="amb-sec amb-alt" aria-labelledby="amb-v1"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v1">Votre attestation est-elle à jour ?</h2>[[video:video-1]]</div></section>
-
 <!-- ===== Tarif ===== -->
 <section class="amb-sec" id="tarif" aria-labelledby="amb-tarif-t">
   <div class="amb-wrap amb-tarif">

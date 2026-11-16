@@ -203,6 +203,9 @@ main{padding:20px 0 40px}
   </aside>
 </div>
 
+<!-- ===== Vidéo (haut de page) ===== -->
+[[video:band]]
+
 <!-- ===== En bref ===== -->
 <section class="etu-card etu-brief etu-sec" aria-labelledby="etu-bref">
   <h2 id="etu-bref">En bref : l'AFGSU 2 pour un étudiant en santé</h2>
@@ -253,9 +256,6 @@ main{padding:20px 0 40px}
   </article>
 </div>
 <div class="etu-grid etu-g3 etu-sec">[[img:pratique-mannequin]][[img:groupe-formation]][[img:materiel]]</div>
-
-<!-- ===== Vidéo 1 ===== -->
-<section class="etu-card etu-sec" aria-labelledby="etu-v1"><h2 id="etu-v1">En vidéo, avant votre prochain stage</h2>[[video:video-1]]</section>
 
 <!-- ===== Tarif ===== -->
 <section class="etu-card etu-sec" id="tarif" aria-labelledby="etu-tarif-t">

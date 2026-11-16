@@ -126,6 +126,8 @@ def img(site, slot, wide=False):
         badge = (f'<figcaption class="{p}hero-badge"><span class="{p}hero-badge-ic" aria-hidden="true">'
                  f'<svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
                  f'<span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption>')
+    if slot == "hero" and site.get("ad", "overlay") != "none":
+        badge += ad_phone(site)
     return (f'<figure class="{cls}" data-slot="{slot}">'
             f'<img src="media/{stem}-1200.jpg" srcset="media/{stem}-640.jpg {w0}w, media/{stem}-1200.jpg {w1}w" '
             f'sizes="(max-width: 760px) 100vw, 600px" width="{w1}" height="{h1}" alt="{esc(alt)}" {load} decoding="async">'
@@ -148,18 +150,42 @@ def video_ld(site):
             "duration": f"PT{round(dur)}S", "contentUrl": site["url"] + f"media/{stem}.mp4", "inLanguage": "fr"}
 
 
-def video(site, slot):
-    """Vidéo verticale du métier (une par site, dans l'emplacement video-1)."""
-    if slot != "video-1":
-        return ""
+SOUND_ICON = ('<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/>'
+              '<path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+              '<path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>')
+
+
+def ad_video(site):
     p = site["prefix"]
     stem, title, desc = video_meta(site)
-    return f'''<figure class="{p}reel" data-slot="{slot}">
-  <div class="{p}reel-frame"><video controls playsinline preload="none" poster="media/{stem}-poster.jpg" width="720" height="1280" aria-label="{esc(title)}"><source src="media/{stem}.mp4" type="video/mp4"></video></div>
+    return (f'<video data-ad autoplay muted loop playsinline preload="metadata" poster="media/{stem}-poster.jpg" width="720" height="1280" '
+            f'aria-label="{esc(title)}"><source src="media/{stem}.mp4" type="video/mp4"></video>'
+            f'<button type="button" class="{p}ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo">{SOUND_ICON}</button>')
+
+
+def ad_phone(site):
+    """Vidéo publicitaire courte, en format téléphone, posée sur la photo du haut de page."""
+    p = site["prefix"]
+    extra = f" {p}ad-top" if site.get("ad") == "top" else ""
+    return f'<div class="{p}ad{extra}">{ad_video(site)}</div>'
+
+
+def video(site, slot):
+    """Vidéo en haut de page quand la photo principale n'y est pas : « band » (bandeau) ou « solo » (à côté du titre)."""
+    p = site["prefix"]
+    if slot == "solo":
+        return f'<div class="{p}ad {p}ad-solo">{ad_video(site)}</div>'
+    if slot != "band":
+        return ""
+    stem, title, desc = video_meta(site)
+    return f'''<section class="{p}adband" aria-label="Vidéo de présentation">
+<figure class="{p}reel">
+  <div class="{p}reel-frame">{ad_video(site)}</div>
   <figcaption><span class="{p}reel-title">{esc(title)}</span><span class="{p}reel-desc">{esc(desc)}</span>
     <span class="{p}reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
     <a class="{p}btn {p}reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure>'''
+</figure>
+</section>'''
 
 
 def france_map(site):
@@ -308,6 +334,20 @@ def legal(site):
 
 
 SCRIPT = r'''
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
@@ -400,6 +440,20 @@ def placeholder_css(site):
 .{p}hero-badge b{{display:block;font-weight:600}}
 .{p}hero-badge-ic{{flex:0 0 34px;height:34px;border-radius:50%;background:{t};color:#fff;display:flex;align-items:center;justify-content:center}}
 @media (max-width:640px){{.{p}hero-badge{{left:10px;bottom:12px}}.{p}photo-hero::before{{inset:14px -8px -8px 14px}}}}
+.{p}ad{{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}}
+.{p}ad video,.{p}reel-frame video{{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}}
+.{p}ad-sound{{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}}
+.{p}ad-sound .snd-on{{display:none}}
+.{p}ad-sound[aria-pressed="true"] .snd-on{{display:inline}}
+.{p}ad-sound[aria-pressed="true"] .snd-off{{display:none}}
+.{p}photo-hero{{margin-bottom:30px}}
+.{p}ad-top{{top:-30px;bottom:auto}}
+.{p}ad-solo{{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}}
+.{p}photo-hero .{p}hero-badge{{max-width:calc(70% - 10px)}}
+@media (max-width:640px){{.{p}ad{{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}}.{p}ad-top{{top:-24px;bottom:auto}}.{p}ad-solo{{width:150px}}.{p}ad-sound{{width:30px;height:30px;right:5px;bottom:5px}}}}
+.{p}adband{{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}}
+.{p}adband .{p}reel{{justify-content:center}}
+.{p}reel-frame{{position:relative}}
 .{p}reel{{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}}
 .{p}reel-frame{{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}}
 .{p}reel-frame video{{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}}
