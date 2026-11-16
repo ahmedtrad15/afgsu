@@ -2,6 +2,7 @@ SITE = {
     "folder": "03-techniciens-laboratoire",
     "slug": "afgsu-2-techniciens-laboratoire",
     "prefix": "lab-",
+    "ad": "none",
     "name": "Formations AFGSU 2 - Techniciens de laboratoire",
     "metier_form": "Technicien(ne) de laboratoire médical",
     "audience": "Techniciens de laboratoire de biologie médicale et préleveurs",
@@ -76,6 +77,8 @@ SITE = {
          "Oui, la formation peut avoir lieu dans votre laboratoire ou sur l'un de vos sites, pour un groupe de 6 à 12 personnes. Les exercices se font alors dans vos box de prélèvement, avec votre matériel d'urgence et votre procédure d'alerte. C'est aussi l'occasion d'harmoniser les réflexes entre sites. Demandez un devis en précisant l'effectif."),
     ],
     "css": r'''
+.lab-top-in{display:flex;gap:40px;align-items:center;justify-content:space-between}
+@media (max-width:760px){.lab-top-in{flex-direction:column;align-items:flex-start}}
 :root{--lab-v:#5b4b8a;--lab-vd:#463a6c;--lab-p:#eceaf2;--lab-t:#2fa3a3;--lab-td:#1d7676;--lab-ink:#211d2e;--lab-mut:#555066;--lab-line:#d6d2e2;--lab-radius:4px}
 body{font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--lab-ink);background:#fff;font-size:1rem}
 h1,h2,h3{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;color:var(--lab-vd)}
@@ -181,12 +184,13 @@ a{color:var(--lab-vd)}
 <main id="contenu">
 <!-- ===== Bandeau titre ===== -->
 <section class="lab-top" aria-labelledby="lab-h1">
-  <div class="lab-wrap">
+  <div class="lab-wrap lab-top-in"><div>
     <p class="lab-ref"><span>Réf. AFGSU-2</span><span>Biologie médicale</span><span>Présentiel</span></p>
     <h1 id="lab-h1">Formation AFGSU 2 pour technicien de laboratoire</h1>
     <p class="lab-lead">Au poste de prélèvement, un patient sur le fauteuil peut basculer en quelques secondes : malaise vagal, réaction allergique, chute en se levant. Cette formation de 21 heures transforme ces scénarios en procédures que vous maîtrisez, aiguille en main.</p>
     <div class="lab-ctas"><a class="lab-btn" href="#inscription">Réserver ma session</a><a class="lab-btn lab-btn-alt" href="#inscription" data-rappel>Être rappelé</a></div>
   </div>
+  [[video:solo]]</div>
 </section>
 
 <div class="lab-wrap lab-sheet">
@@ -258,11 +262,8 @@ a{color:var(--lab-vd)}
       [[wide:pratique-mannequin]]
     </section>
 
-    <section aria-labelledby="lab-v1t">
-      <span class="lab-sec-n">04 · Démonstration</span>
-      <h2 id="lab-v1t">Prélèvements : le rappel en vidéo</h2>
-      [[video:video-1]]
-    </section>
+    <!-- Galerie -->
+    [[gallery]]
 
     <section id="tarif" aria-labelledby="lab-tarif">
       <span class="lab-sec-n">05 · Tarif</span>

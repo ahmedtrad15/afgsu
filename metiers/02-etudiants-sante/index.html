@@ -60,6 +60,20 @@ dialog ul{padding-left:1.2em}
 .etu-hero-badge b{display:block;font-weight:600}
 .etu-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#237256;color:#fff;display:flex;align-items:center;justify-content:center}
 @media (max-width:640px){.etu-hero-badge{left:10px;bottom:12px}.etu-photo-hero::before{inset:14px -8px -8px 14px}}
+.etu-ad{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}
+.etu-ad video,.etu-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.etu-ad-sound{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.etu-ad-sound .snd-on{display:none}
+.etu-ad-sound[aria-pressed="true"] .snd-on{display:inline}
+.etu-ad-sound[aria-pressed="true"] .snd-off{display:none}
+.etu-photo-hero{margin-bottom:30px}
+.etu-ad-top{top:-30px;bottom:auto}
+.etu-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
+.etu-photo-hero .etu-hero-badge{max-width:calc(70% - 10px)}
+@media (max-width:640px){.etu-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.etu-ad-top{top:-24px;bottom:auto}.etu-ad-solo{width:150px}.etu-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.etu-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
+.etu-adband .etu-reel{justify-content:center}
+.etu-reel-frame{position:relative}
 .etu-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
 .etu-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
 .etu-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
@@ -71,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .etu-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#237256;box-shadow:0 0 0 4px #23725622}
 .etu-reel-cta{margin-top:4px}
 @media (max-width:640px){.etu-reel{flex-direction:column;align-items:flex-start}}
+.etu-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.etu-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.etu-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.etu-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#237256}
+.etu-gal-head h2{margin:8px 0 8px}
+.etu-gal-head p{margin:0;opacity:.88}
+.etu-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.etu-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--etu-radius,12px);background:#eef2ee;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.etu-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.etu-gal-fig:hover img{transform:scale(1.04)}
+.etu-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.etu-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#237256;color:#fff}
+@container (min-width:620px){.etu-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.etu-gal-fig:first-child{grid-row:span 2}.etu-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.etu-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.etu-gal-fig img{transition:none}.etu-gal-fig:hover img{transform:none}}
 .etu-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .etu-map svg{display:block;width:100%;height:auto;overflow:visible}
 .etu-map-land{fill:#eef2ee;stroke:#237256;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -485,6 +513,16 @@ main{padding:20px 0 40px}
   </aside>
 </div>
 
+<!-- ===== Vidéo (haut de page) ===== -->
+<section class="etu-adband" aria-label="Vidéo de présentation">
+<figure class="etu-reel">
+  <div class="etu-reel-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-etudiant-sante-poster.jpg" width="720" height="1280" aria-label="Étudiant en santé : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-etudiant-sante.mp4" type="video/mp4"></video><button type="button" class="etu-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
+  <figcaption><span class="etu-reel-title">Étudiant en santé : l&#x27;AFGSU 2 est obligatoire</span><span class="etu-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 fait partie de votre cursus.</span>
+    <span class="etu-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
+    <a class="etu-btn etu-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
+</figure>
+</section>
+
 <!-- ===== En bref ===== -->
 <section class="etu-card etu-brief etu-sec" aria-labelledby="etu-bref">
   <h2 id="etu-bref">En bref&nbsp;: l'AFGSU 2 pour un étudiant en santé</h2>
@@ -536,13 +574,8 @@ main{padding:20px 0 40px}
 </div>
 <div class="etu-grid etu-g3 etu-sec"><figure class="etu-photo" data-slot="pratique-mannequin"><img src="media/afgsu-2-etudiante-infirmiere-tenue-stage-1200.jpg" srcset="media/afgsu-2-etudiante-infirmiere-tenue-stage-640.jpg 640w, media/afgsu-2-etudiante-infirmiere-tenue-stage-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="741" alt="Étudiante en tunique de stage, stéthoscope autour du cou, dans une chambre d&#x27;hôpital" loading="lazy" decoding="async"></figure><figure class="etu-photo" data-slot="groupe-formation"><img src="media/afgsu-2-etudiant-sante-consultation-patient-1200.jpg" srcset="media/afgsu-2-etudiant-sante-consultation-patient-640.jpg 640w, media/afgsu-2-etudiant-sante-consultation-patient-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="563" alt="Étudiante en médecine en consultation avec un patient âgé et un enfant" loading="lazy" decoding="async"></figure><figure class="etu-photo" data-slot="materiel"><img src="media/afgsu-2-etudiant-sante-revision-stethoscope-1200.jpg" srcset="media/afgsu-2-etudiant-sante-revision-stethoscope-640.jpg 640w, media/afgsu-2-etudiant-sante-revision-stethoscope-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="662" alt="Étudiant qui prend des notes, un stéthoscope posé sur son cahier" loading="lazy" decoding="async"></figure></div>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="etu-card etu-sec" aria-labelledby="etu-v1"><h2 id="etu-v1">En vidéo, avant votre prochain stage</h2><figure class="etu-reel" data-slot="video-1">
-  <div class="etu-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-etudiant-sante-poster.jpg" width="720" height="1280" aria-label="Étudiant en santé : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-etudiant-sante.mp4" type="video/mp4"></video></div>
-  <figcaption><span class="etu-reel-title">Étudiant en santé : l&#x27;AFGSU 2 est obligatoire</span><span class="etu-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 fait partie de votre cursus.</span>
-    <span class="etu-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="etu-btn etu-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure></section>
+<!-- ===== Galerie « en formation » ===== -->
+<section class="etu-gal" aria-labelledby="etu-gal-t"><div class="etu-gal-head"><span class="etu-gal-k">En formation</span><h2 id="etu-gal-t">À quoi ressemblent les deux jours</h2><p>Des mises en situation proches de vos stages, avec un formateur qui répond à toutes vos questions.</p></div><div class="etu-gal-grid"><figure class="etu-gal-fig"><img src="media/afgsu-2-etudiant-sante-massage-cardiaque-groupe-1200.jpg" srcset="media/afgsu-2-etudiant-sante-massage-cardiaque-groupe-640.jpg 640w, media/afgsu-2-etudiant-sante-massage-cardiaque-groupe-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="665" alt="Étudiants en blouse blanche pratiquant le massage cardiaque sur mannequin" loading="lazy" decoding="async"><figcaption><span class="etu-gal-n" aria-hidden="true">01</span>Massage cardiaque en binôme</figcaption></figure><figure class="etu-gal-fig"><img src="media/afgsu-2-etudiant-sante-defibrillateur-equipe-1200.jpg" srcset="media/afgsu-2-etudiant-sante-defibrillateur-equipe-640.jpg 640w, media/afgsu-2-etudiant-sante-defibrillateur-equipe-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Trois étudiants pratiquant la réanimation avec un défibrillateur sur un mannequin" loading="lazy" decoding="async"><figcaption><span class="etu-gal-n" aria-hidden="true">02</span>Réanimation à trois avec défibrillateur</figcaption></figure><figure class="etu-gal-fig"><img src="media/afgsu-2-etudiant-sante-questions-formateur-1200.jpg" srcset="media/afgsu-2-etudiant-sante-questions-formateur-640.jpg 640w, media/afgsu-2-etudiant-sante-questions-formateur-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="665" alt="Étudiante levant la main pour poser une question au formateur" loading="lazy" decoding="async"><figcaption><span class="etu-gal-n" aria-hidden="true">03</span>Toutes vos questions ont leur place</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="etu-card etu-sec" id="tarif" aria-labelledby="etu-tarif-t">
@@ -716,6 +749,20 @@ main{padding:20px 0 40px}
   <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });

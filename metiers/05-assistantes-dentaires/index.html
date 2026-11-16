@@ -60,6 +60,20 @@ dialog ul{padding-left:1.2em}
 .ad-hero-badge b{display:block;font-weight:600}
 .ad-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#22806d;color:#fff;display:flex;align-items:center;justify-content:center}
 @media (max-width:640px){.ad-hero-badge{left:10px;bottom:12px}.ad-photo-hero::before{inset:14px -8px -8px 14px}}
+.ad-ad{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}
+.ad-ad video,.ad-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.ad-ad-sound{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.ad-ad-sound .snd-on{display:none}
+.ad-ad-sound[aria-pressed="true"] .snd-on{display:inline}
+.ad-ad-sound[aria-pressed="true"] .snd-off{display:none}
+.ad-photo-hero{margin-bottom:30px}
+.ad-ad-top{top:-30px;bottom:auto}
+.ad-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
+.ad-photo-hero .ad-hero-badge{max-width:calc(70% - 10px)}
+@media (max-width:640px){.ad-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.ad-ad-top{top:-24px;bottom:auto}.ad-ad-solo{width:150px}.ad-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.ad-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
+.ad-adband .ad-reel{justify-content:center}
+.ad-reel-frame{position:relative}
 .ad-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
 .ad-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
 .ad-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
@@ -71,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .ad-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#22806d;box-shadow:0 0 0 4px #22806d22}
 .ad-reel-cta{margin-top:4px}
 @media (max-width:640px){.ad-reel{flex-direction:column;align-items:flex-start}}
+.ad-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.ad-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.ad-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.ad-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#22806d}
+.ad-gal-head h2{margin:8px 0 8px}
+.ad-gal-head p{margin:0;opacity:.88}
+.ad-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.ad-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--ad-radius,12px);background:#eef7f4;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.ad-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.ad-gal-fig:hover img{transform:scale(1.04)}
+.ad-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.ad-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#22806d;color:#fff}
+@container (min-width:620px){.ad-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.ad-gal-fig:first-child{grid-row:span 2}.ad-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.ad-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.ad-gal-fig img{transition:none}.ad-gal-fig:hover img{transform:none}}
 .ad-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .ad-map svg{display:block;width:100%;height:auto;overflow:visible}
 .ad-map-land{fill:#eef7f4;stroke:#22806d;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -467,7 +495,7 @@ a{color:var(--ad-md)}
     <p class="ad-price"><span class="ad-sr">Prix : ancien tarif </span><del>450 €</del> <strong>385 € TTC</strong></p>
     <div class="ad-ctas"><a class="ad-btn" href="#inscription">Réserver ma session</a><a class="ad-btn ad-btn-soft" href="#inscription" data-rappel>Être rappelé</a></div>
   </div>
-  <div class="ad-hero-img"><figure class="ad-photo ad-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-assistante-dentaire-cabinet-1200.jpg" srcset="media/formation-afgsu-2-assistante-dentaire-cabinet-640.jpg 640w, media/formation-afgsu-2-assistante-dentaire-cabinet-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Assistante dentaire et praticienne au travail dans un cabinet dentaire lumineux" loading="eager" fetchpriority="high" decoding="async"><figcaption class="ad-hero-badge"><span class="ad-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure></div>
+  <div class="ad-hero-img"><figure class="ad-photo ad-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-assistante-dentaire-cabinet-1200.jpg" srcset="media/formation-afgsu-2-assistante-dentaire-cabinet-640.jpg 640w, media/formation-afgsu-2-assistante-dentaire-cabinet-1200.jpg 1000w" sizes="(max-width: 760px) 100vw, 600px" width="1000" height="667" alt="Assistante dentaire et praticienne au travail dans un cabinet dentaire lumineux" loading="eager" fetchpriority="high" decoding="async"><figcaption class="ad-hero-badge"><span class="ad-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption><div class="ad-ad ad-ad-top"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-assistante-dentaire-poster.jpg" width="720" height="1280" aria-label="Assistante dentaire : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-assistante-dentaire.mp4" type="video/mp4"></video><button type="button" class="ad-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></figure></div>
 </section>
 
 <!-- ===== En bref ===== -->
@@ -527,13 +555,8 @@ a{color:var(--ad-md)}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="ad-sec" aria-labelledby="ad-v1"><div class="ad-wrap ad-vid"><h2 id="ad-v1" class="ad-center">L'AFGSU 2 au cabinet dentaire, en vidéo</h2><figure class="ad-reel" data-slot="video-1">
-  <div class="ad-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-assistante-dentaire-poster.jpg" width="720" height="1280" aria-label="Assistante dentaire : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-assistante-dentaire.mp4" type="video/mp4"></video></div>
-  <figcaption><span class="ad-reel-title">Assistante dentaire : l&#x27;AFGSU 2 est obligatoire</span><span class="ad-reel-desc">En quelques secondes : l&#x27;AFGSU 2 au cabinet dentaire.</span>
-    <span class="ad-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="ad-btn ad-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure></div></section>
+<!-- ===== Galerie « en formation » ===== -->
+<section class="ad-gal" aria-labelledby="ad-gal-t"><div class="ad-gal-head"><span class="ad-gal-k">En formation</span><h2 id="ad-gal-t">Ce que vous pratiquez pendant la formation</h2><p>Des gestes simples, répétés jusqu&#x27;à devenir des réflexes au fauteuil comme en salle d&#x27;attente.</p></div><div class="ad-gal-grid"><figure class="ad-gal-fig"><img src="media/afgsu-2-assistante-dentaire-defibrillateur-massage-1200.jpg" srcset="media/afgsu-2-assistante-dentaire-defibrillateur-massage-640.jpg 640w, media/afgsu-2-assistante-dentaire-defibrillateur-massage-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 640px" width="1000" height="1333" alt="Deux stagiaires utilisant un défibrillateur et pratiquant le massage cardiaque sur un mannequin" loading="lazy" decoding="async"><figcaption><span class="ad-gal-n" aria-hidden="true">01</span>Défibrillateur et massage à deux</figcaption></figure><figure class="ad-gal-fig"><img src="media/afgsu-2-assistante-dentaire-position-mains-1200.jpg" srcset="media/afgsu-2-assistante-dentaire-position-mains-640.jpg 640w, media/afgsu-2-assistante-dentaire-position-mains-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="1500" alt="Main d&#x27;une stagiaire posée sur le torse d&#x27;un mannequin de formation" loading="lazy" decoding="async"><figcaption><span class="ad-gal-n" aria-hidden="true">02</span>La bonne position des mains</figcaption></figure><figure class="ad-gal-fig"><img src="media/afgsu-2-assistante-dentaire-cours-theorie-1200.jpg" srcset="media/afgsu-2-assistante-dentaire-cours-theorie-640.jpg 640w, media/afgsu-2-assistante-dentaire-cours-theorie-1200.jpg 1000w" sizes="(max-width: 640px) 100vw, 420px" width="1000" height="667" alt="Formatrice présentant le matériel d&#x27;urgence à des stagiaires assis" loading="lazy" decoding="async"><figcaption><span class="ad-gal-n" aria-hidden="true">03</span>Le matériel d&#x27;urgence expliqué</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="ad-sec ad-sec-w" id="tarif" aria-labelledby="ad-tarif-t">
@@ -714,6 +737,20 @@ a{color:var(--ad-md)}
   <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });

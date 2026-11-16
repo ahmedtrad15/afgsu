@@ -252,7 +252,7 @@ a{color:var(--cd-t)}
       <div><h3>Inhalation</h3><p>Lime, couronne, digue : toux, claques, compressions.</p></div>
       <div><h3>Hémorragie</h3><p>Compression, hémostase locale, patient sous anticoagulant.</p></div>
     </div>
-    <div class="cd-pair">[[img:situation-metier]][[img:materiel]]</div>
+    [[wide:situation-metier]]
   </div>
 </section>
 
@@ -283,10 +283,13 @@ a{color:var(--cd-t)}
         </ul>
         <a class="cd-btn" href="#inscription">Organiser une session au cabinet</a>
       </div>
-      <div>[[video:video-1]]</div>
+      <div>[[img:materiel]]</div>
     </div>
   </div>
 </section>
+
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
 
 <!-- ===== Tarif ===== -->
 <section class="cd-sec cd-tint" id="tarif" aria-labelledby="cd-tarif-t">

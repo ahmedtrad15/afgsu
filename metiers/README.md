@@ -46,6 +46,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `formation-afgsu-2-diplome-sante-etranger-medecin-640.jpg` / `-1200.jpg` (hero) : Médecin en blouse blanche, bras croisés, stéthoscope à la main, prêt à exercer en France
   - `afgsu-2-equipe-soignante-couloir-hopital-640.jpg` / `-1200.jpg` (groupe-formation) : Équipe soignante en tenue qui avance dans un couloir d'hôpital
   - `afgsu-2-diplome-etranger-dossier-patient-tablette-640.jpg` / `-1200.jpg` (situation-metier) : Soignant qui consulte un dossier patient sur tablette, stéthoscope posé sur le bureau
+  - `afgsu-2-diplome-etranger-cours-theorique-640.jpg` / `-1200.jpg` (galerie) : Formatrice présentant un cours théorique AFGSU 2 à des médecins en blouse
+  - `afgsu-2-diplome-etranger-atelier-reanimation-640.jpg` / `-1200.jpg` (galerie) : Groupe de soignants réunis autour d'un mannequin pendant un atelier de réanimation
+  - `afgsu-2-diplome-etranger-electrodes-defibrillateur-640.jpg` / `-1200.jpg` (galerie) : Électrodes de défibrillateur posées sur le torse d'un mannequin de formation
   - `video-afgsu-2-diplome-sante-etranger.mp4` + `video-afgsu-2-diplome-sante-etranger-poster.jpg` (vidéo verticale) : **L'AFGSU 2, obligatoire pour exercer en France**
 
 ### 02-etudiants-sante · Formations AFGSU 2 - Étudiants en santé
@@ -62,6 +65,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `afgsu-2-etudiante-infirmiere-tenue-stage-640.jpg` / `-1200.jpg` (pratique-mannequin) : Étudiante en tunique de stage, stéthoscope autour du cou, dans une chambre d'hôpital
   - `afgsu-2-etudiant-sante-consultation-patient-640.jpg` / `-1200.jpg` (groupe-formation) : Étudiante en médecine en consultation avec un patient âgé et un enfant
   - `afgsu-2-etudiant-sante-revision-stethoscope-640.jpg` / `-1200.jpg` (materiel) : Étudiant qui prend des notes, un stéthoscope posé sur son cahier
+  - `afgsu-2-etudiant-sante-massage-cardiaque-groupe-640.jpg` / `-1200.jpg` (galerie) : Étudiants en blouse blanche pratiquant le massage cardiaque sur mannequin
+  - `afgsu-2-etudiant-sante-defibrillateur-equipe-640.jpg` / `-1200.jpg` (galerie) : Trois étudiants pratiquant la réanimation avec un défibrillateur sur un mannequin
+  - `afgsu-2-etudiant-sante-questions-formateur-640.jpg` / `-1200.jpg` (galerie) : Étudiante levant la main pour poser une question au formateur
   - `video-afgsu-2-etudiant-sante.mp4` + `video-afgsu-2-etudiant-sante-poster.jpg` (vidéo verticale) : **Étudiant en santé : l'AFGSU 2 est obligatoire**
 
 ### 03-techniciens-laboratoire · Formations AFGSU 2 - Techniciens de laboratoire
@@ -78,6 +84,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `afgsu-2-technicien-laboratoire-microscope-640.jpg` / `-1200.jpg` (pratique-mannequin) : Technicien de laboratoire en charlotte qui observe un échantillon au microscope
   - `afgsu-2-laboratoire-pipette-echantillons-640.jpg` / `-1200.jpg` (materiel) : Mains gantées qui pipettent des échantillons dans un portoir de tubes
   - `afgsu-2-laboratoire-tubes-prelevement-640.jpg` / `-1200.jpg` (situation-metier) : Mains en gants violets qui manipulent des tubes de prélèvement sur un plan de travail
+  - `afgsu-2-technicien-laboratoire-prise-tension-640.jpg` / `-1200.jpg` (galerie) : Prise de tension artérielle pendant un exercice de formation aux gestes d'urgence
+  - `afgsu-2-technicien-laboratoire-pose-electrodes-640.jpg` / `-1200.jpg` (galerie) : Mains posant les électrodes d'un défibrillateur sur un mannequin
+  - `afgsu-2-technicien-laboratoire-reanimation-equipe-640.jpg` / `-1200.jpg` (galerie) : Formateur guidant des soignants agenouillés autour d'un mannequin de réanimation
   - `video-afgsu-2-technicien-laboratoire.mp4` + `video-afgsu-2-technicien-laboratoire-poster.jpg` (vidéo verticale) : **Prises de sang : l'AFGSU 2 pour les techniciens de laboratoire**
 
 ### 04-ambulanciers · Formations AFGSU 2 - Ambulanciers
@@ -94,6 +103,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `afgsu-2-ambulanciers-cellule-sanitaire-640.jpg` / `-1200.jpg` (pratique-mannequin) : Deux ambulanciers en tenue rouge dans la cellule sanitaire de l'ambulance
   - `afgsu-2-ambulancier-sac-urgence-brancard-640.jpg` / `-1200.jpg` (materiel) : Ambulancière gantée qui prépare le sac d'urgence posé sur le brancard
   - `afgsu-2-ambulancier-radio-alerte-640.jpg` / `-1200.jpg` (situation-metier) : Ambulancier au volant qui transmet un bilan par radio
+  - `afgsu-2-ambulancier-equipe-sac-urgence-640.jpg` / `-1200.jpg` (galerie) : Secouristes en tenue avec un sac d'urgence rouge pendant un exercice
+  - `afgsu-2-ambulancier-mannequin-intervention-640.jpg` / `-1200.jpg` (galerie) : Intervenant en gilet haute visibilité auprès d'un mannequin équipé d'un masque à oxygène
+  - `afgsu-2-ambulancier-massage-couverture-survie-640.jpg` / `-1200.jpg` (galerie) : Massage cardiaque sur mannequin posé sur une couverture de survie
   - `video-afgsu-2-ambulancier.mp4` + `video-afgsu-2-ambulancier-poster.jpg` (vidéo verticale) : **Ambulancier : votre AFGSU 2 doit être à jour**
 
 ### 05-assistantes-dentaires · Formations AFGSU 2 - Assistantes dentaires
@@ -110,6 +122,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `afgsu-2-assistante-dentaire-aspiration-640.jpg` / `-1200.jpg` (situation-metier) : Assistante dentaire qui tient l'aspiration pendant que le praticien soigne une patiente
   - `afgsu-2-assistante-dentaire-soin-fauteuil-640.jpg` / `-1200.jpg` (pratique-mannequin) : Praticienne et assistante masquées autour d'un patient au fauteuil
   - `afgsu-2-cabinet-dentaire-microscope-640.jpg` / `-1200.jpg` (materiel) : Deux professionnelles en tunique qui travaillent au microscope opératoire du cabinet
+  - `afgsu-2-assistante-dentaire-defibrillateur-massage-640.jpg` / `-1200.jpg` (galerie) : Deux stagiaires utilisant un défibrillateur et pratiquant le massage cardiaque sur un mannequin
+  - `afgsu-2-assistante-dentaire-position-mains-640.jpg` / `-1200.jpg` (galerie) : Main d'une stagiaire posée sur le torse d'un mannequin de formation
+  - `afgsu-2-assistante-dentaire-cours-theorie-640.jpg` / `-1200.jpg` (galerie) : Formatrice présentant le matériel d'urgence à des stagiaires assis
   - `video-afgsu-2-assistante-dentaire.mp4` + `video-afgsu-2-assistante-dentaire-poster.jpg` (vidéo verticale) : **Assistante dentaire : l'AFGSU 2 est obligatoire**
 
 ### 06-auxiliaires-puericulture · Formations AFGSU 2 - Auxiliaires de puériculture
@@ -124,6 +139,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
 - **Médias** (`media/`) :
   - `formation-afgsu-2-auxiliaire-puericulture-enfant-640.jpg` / `-1200.jpg` (hero) : Auxiliaire de puériculture qui accompagne une petite fille pendant une activité en crèche
   - `afgsu-2-auxiliaire-puericulture-activite-dessin-640.jpg` / `-1200.jpg` (situation-metier) : Adulte qui dessine avec un jeune enfant assis à une petite table
+  - `afgsu-2-auxiliaire-puericulture-mannequin-nourrisson-640.jpg` / `-1200.jpg` (galerie) : Soignants réunis autour d'un mannequin nourrisson pendant un exercice
+  - `afgsu-2-auxiliaire-puericulture-mannequins-enfant-bebe-640.jpg` / `-1200.jpg` (galerie) : Formatrice montrant des mannequins enfant et nourrisson
+  - `afgsu-2-auxiliaire-puericulture-ventilation-bebe-640.jpg` / `-1200.jpg` (galerie) : Ventilation au masque sur un mannequin de bébé
   - `video-afgsu-2-auxiliaire-puericulture.mp4` + `video-afgsu-2-auxiliaire-puericulture-poster.jpg` (vidéo verticale) : **Auxiliaire de puériculture : l'AFGSU 2 est obligatoire**
 
 ### 07-aides-soignants · Formations AFGSU 2 - Aides-soignants
@@ -139,6 +157,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `formation-afgsu-2-aide-soignante-residente-ehpad-640.jpg` / `-1200.jpg` (hero) : Aide-soignante souriante penchée vers une résidente âgée en EHPAD
   - `afgsu-2-aide-soignante-chambre-patient-640.jpg` / `-1200.jpg` (situation-metier) : Aide-soignante en tunique bleu marine qui se penche vers un patient alité
   - `afgsu-2-aide-soignant-tenue-service-640.jpg` / `-1200.jpg` (groupe-formation) : Soignante en tunique blanche, stéthoscope autour du cou, dans un service hospitalier
+  - `afgsu-2-aide-soignant-salle-formation-binomes-640.jpg` / `-1200.jpg` (galerie) : Salle de formation avec plusieurs binômes pratiquant la réanimation au sol
+  - `afgsu-2-aide-soignant-liberation-voies-aeriennes-640.jpg` / `-1200.jpg` (galerie) : Stagiaire libérant les voies aériennes d'un mannequin au sol
+  - `afgsu-2-aide-soignant-compressions-gants-640.jpg` / `-1200.jpg` (galerie) : Mains gantées de bleu réalisant des compressions thoraciques sur un mannequin
   - `video-afgsu-2-aide-soignant.mp4` + `video-afgsu-2-aide-soignant-poster.jpg` (vidéo verticale) : **Aide-soignant : l'AFGSU 2 est obligatoire**
 
 ### 08-infirmiers · Formations AFGSU 2 - Infirmiers
@@ -154,6 +175,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `formation-afgsu-2-infirmiere-couloir-hopital-640.jpg` / `-1200.jpg` (situation-metier) : Infirmière en tenue bleue qui pousse une couveuse dans un couloir d'hôpital
   - `afgsu-2-infirmier-prise-tension-640.jpg` / `-1200.jpg` (pratique-mannequin) : Infirmière qui prend la tension artérielle d'un patient
   - `afgsu-2-infirmier-tenue-stethoscope-640.jpg` / `-1200.jpg` (materiel) : Infirmier en tenue de soins bleue, stéthoscope autour du cou
+  - `afgsu-2-infirmier-simulation-mannequin-masque-640.jpg` / `-1200.jpg` (galerie) : Mannequin de simulation intubé, avec masque, pendant un exercice
+  - `afgsu-2-infirmier-ventilation-bavu-640.jpg` / `-1200.jpg` (galerie) : Équipe soignante ventilant un mannequin au ballon pendant une réanimation
+  - `afgsu-2-infirmier-reanimation-defibrillateur-640.jpg` / `-1200.jpg` (galerie) : Trois soignants pratiquant la réanimation avec défibrillateur sur un mannequin
   - `video-afgsu-2-infirmier.mp4` + `video-afgsu-2-infirmier-poster.jpg` (vidéo verticale) : **Infirmier : l'AFGSU 2 est obligatoire**
 
 ### 09-pharmaciens · Formations AFGSU 2 - Pharmaciens
@@ -169,6 +193,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `formation-afgsu-2-pharmacien-officine-patiente-640.jpg` / `-1200.jpg` (hero) : Pharmacien en blouse qui conseille une patiente au comptoir de l'officine
   - `afgsu-2-pharmacienne-rayonnage-officine-640.jpg` / `-1200.jpg` (pratique-mannequin) : Pharmacienne souriante qui attrape une boîte dans les rayonnages
   - `afgsu-2-pharmacien-reserve-medicaments-640.jpg` / `-1200.jpg` (situation-metier) : Pharmacien en blouse dans l'allée de la réserve de médicaments
+  - `afgsu-2-pharmacien-massage-cardiaque-640.jpg` / `-1200.jpg` (galerie) : Compressions thoraciques sur un mannequin posé sur un tapis
+  - `afgsu-2-pharmacien-binome-reanimation-640.jpg` / `-1200.jpg` (galerie) : Deux stagiaires agenouillés, l'un réalisant le massage cardiaque sur mannequin
+  - `afgsu-2-pharmacien-salle-formation-640.jpg` / `-1200.jpg` (galerie) : Stagiaires en blouse assis en salle de cours, l'une levant la main pour poser une question
   - `video-afgsu-2-pharmacien.mp4` + `video-afgsu-2-pharmacien-poster.jpg` (vidéo verticale) : **Pharmacien : l'AFGSU 2, c'est obligatoire**
 
 ### 10-sages-femmes · Formations AFGSU 2 - Sages-femmes
@@ -183,6 +210,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
 - **Médias** (`media/`) :
   - `formation-afgsu-2-sage-femme-nouveau-ne-640.jpg` / `-1200.jpg` (hero) : Sage-femme qui tient un nouveau-né près du lit de la mère, en maternité
   - `afgsu-2-sage-femme-tenue-stethoscope-640.jpg` / `-1200.jpg` (situation-metier) : Sage-femme en tenue verte, stéthoscope autour du cou
+  - `afgsu-2-sage-femme-reanimation-nouveau-ne-640.jpg` / `-1200.jpg` (galerie) : Groupe de soignants pratiquant la réanimation d'un nourrisson sur mannequin
+  - `afgsu-2-sage-femme-massage-adulte-640.jpg` / `-1200.jpg` (galerie) : Compressions thoraciques sur un mannequin adulte posé au sol
+  - `afgsu-2-sage-femme-atelier-formateur-640.jpg` / `-1200.jpg` (galerie) : Formateur accompagnant des soignantes autour d'un mannequin
   - `video-afgsu-2-sage-femme.mp4` + `video-afgsu-2-sage-femme-poster.jpg` (vidéo verticale) : **Sage-femme : l'AFGSU 2 est obligatoire**
 
 ### 11-chirurgiens-dentistes · Formations AFGSU 2 - Chirurgiens-dentistes
@@ -198,6 +228,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `formation-afgsu-2-chirurgien-dentiste-cabinet-640.jpg` / `-1200.jpg` (hero) : Chirurgienne-dentiste en tenue bleue qui règle l'éclairage au-dessus d'une patiente
   - `afgsu-2-chirurgien-dentiste-assistante-soin-640.jpg` / `-1200.jpg` (situation-metier) : Chirurgien-dentiste et assistante en tenue qui soignent ensemble un patient
   - `afgsu-2-chirurgien-dentiste-instruments-640.jpg` / `-1200.jpg` (materiel) : Gros plan sur des instruments dentaires pendant un soin au fauteuil
+  - `afgsu-2-chirurgien-dentiste-ventilation-ballon-640.jpg` / `-1200.jpg` (galerie) : Soignants ventilant un mannequin au ballon autoremplisseur
+  - `afgsu-2-chirurgien-dentiste-compressions-tapis-640.jpg` / `-1200.jpg` (galerie) : Stagiaire réalisant des compressions sur un mannequin posé sur un tapis
+  - `afgsu-2-chirurgien-dentiste-mannequin-reanimation-640.jpg` / `-1200.jpg` (galerie) : Mains positionnées sur le torse d'un mannequin de réanimation posé au sol
   - `video-afgsu-2-chirurgien-dentiste.mp4` + `video-afgsu-2-chirurgien-dentiste-poster.jpg` (vidéo verticale) : **Chirurgien-dentiste : l'AFGSU 2 est obligatoire pour vous**
 
 ### 12-medecins · Formations AFGSU 2 - Médecins
@@ -214,6 +247,9 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
   - `afgsu-2-medecin-consultation-patient-640.jpg` / `-1200.jpg` (pratique-mannequin) : Médecin en consultation avec un patient, à son bureau
   - `afgsu-2-medecin-ordonnance-640.jpg` / `-1200.jpg` (groupe-formation) : Médecin qui remplit un document sur un porte-bloc face à un patient
   - `afgsu-2-medecin-stethoscope-coeur-640.jpg` / `-1200.jpg` (materiel) : Soignante qui tient un stéthoscope formant un cœur
+  - `afgsu-2-medecin-compressions-thoraciques-640.jpg` / `-1200.jpg` (galerie) : Gros plan sur des mains réalisant des compressions thoraciques
+  - `afgsu-2-medecin-equipe-medicale-640.jpg` / `-1200.jpg` (galerie) : Médecin tenant un dossier devant une équipe médicale en réunion
+  - `afgsu-2-medecin-reanimation-sol-640.jpg` / `-1200.jpg` (galerie) : Réanimation sur mannequin adulte au sol
   - `video-afgsu-2-medecin.mp4` + `video-afgsu-2-medecin-poster.jpg` (vidéo verticale) : **Médecin : l'AFGSU 2 est obligatoire**
 
 ### 13-kine-ergo-orthophonistes · Formations AFGSU 2 - Masseurs-kinésithérapeutes (kiné, ergo, orthophoniste)
@@ -228,4 +264,7 @@ Les textes restent prudents sur les obligations, mais quelques affirmations mér
 - **Médias** (`media/`) :
   - `formation-afgsu-2-kinesitherapeute-seance-640.jpg` / `-1200.jpg` (hero) : Kinésithérapeute qui traite une patiente allongée sur la table de soin
   - `afgsu-2-kinesitherapeute-patient-640.jpg` / `-1200.jpg` (situation-metier) : Rééducatrice en tunique qui se penche vers un patient pendant une séance
+  - `afgsu-2-kine-ergo-ortho-mannequin-gros-plan-640.jpg` / `-1200.jpg` (galerie) : Stagiaire agenouillé près d'un mannequin de formation posé sur un tapis, en extérieur
+  - `afgsu-2-kine-ergo-ortho-salle-pratique-640.jpg` / `-1200.jpg` (galerie) : Salle de formation où plusieurs binômes pratiquent la réanimation
+  - `afgsu-2-kine-ergo-ortho-formateur-640.jpg` / `-1200.jpg` (galerie) : Formateur montrant le massage cardiaque à un groupe de soignants
   - `video-afgsu-2-kine-ergo-orthophoniste.mp4` + `video-afgsu-2-kine-ergo-orthophoniste-poster.jpg` (vidéo verticale) : **Kinés, ergos, orthophonistes : l'AFGSU 2 est obligatoire**

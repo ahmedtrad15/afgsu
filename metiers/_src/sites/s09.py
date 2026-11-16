@@ -241,10 +241,8 @@ main{counter-reset:sec}
   </div>
 </section>
 
-<!-- ===== 05 · Vidéo 1 ===== -->
-<section class="phar-s" aria-labelledby="phar-v1">
-  <div class="phar-wrap phar-s-in"><div class="phar-num" aria-hidden="true"></div><div><h2 id="phar-v1">Vidéo : l'AFGSU 2 à l'officine</h2>[[video:video-1]]</div></div>
-</section>
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
 
 <!-- ===== 06 · Tarif ===== -->
 <section class="phar-s phar-tarif" id="tarif" aria-labelledby="phar-tarif-t">

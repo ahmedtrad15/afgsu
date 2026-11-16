@@ -232,6 +232,9 @@ strong,b,th,summary,label{font-weight:500}
   </div>
 </section>
 
+<!-- ===== Vidéo (haut de page) ===== -->
+[[video:band]]
+
 <!-- ===== En bref ===== -->
 <section class="ide-sec" aria-labelledby="ide-bref">
   <div class="ide-wrap">
@@ -281,8 +284,8 @@ strong,b,th,summary,label{font-weight:500}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="ide-sec ide-alt" aria-labelledby="ide-v1"><div class="ide-wrap ide-vid"><h2 id="ide-v1">Vidéo : l'infirmier face à l'urgence</h2>[[video:video-1]]</div></section>
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
 
 <!-- ===== Tarif ===== -->
 <section class="ide-sec" id="tarif" aria-labelledby="ide-tarif-t">

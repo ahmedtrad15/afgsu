@@ -269,8 +269,8 @@ a{color:var(--as-td)}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="as-sec as-band" aria-labelledby="as-v1"><div class="as-wrap as-vid"><h2 id="as-v1">L'AFGSU 2 de l'aide-soignant, en images</h2>[[video:video-1]]</div></section>
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
 
 <!-- ===== Tarif ===== -->
 <section class="as-sec" id="tarif" aria-labelledby="as-tarif-t">

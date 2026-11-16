@@ -20,7 +20,7 @@ from pathlib import Path
 from PIL import Image
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from media import MAP_CITIES, PHOTOS, VIDEOS  # noqa: E402
+from media import GALLERY, MAP_CITIES, PHOTOS, VIDEOS  # noqa: E402
 
 SRC = Path(__file__).resolve().parent
 OUT = SRC.parent
@@ -126,10 +126,31 @@ def img(site, slot, wide=False):
         badge = (f'<figcaption class="{p}hero-badge"><span class="{p}hero-badge-ic" aria-hidden="true">'
                  f'<svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
                  f'<span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption>')
+    if slot == "hero" and site.get("ad", "overlay") != "none":
+        badge += ad_phone(site)
     return (f'<figure class="{cls}" data-slot="{slot}">'
             f'<img src="media/{stem}-1200.jpg" srcset="media/{stem}-640.jpg {w0}w, media/{stem}-1200.jpg {w1}w" '
             f'sizes="(max-width: 760px) 100vw, 600px" width="{w1}" height="{h1}" alt="{esc(alt)}" {load} decoding="async">'
             f'{badge}</figure>')
+
+
+def gallery(site):
+    """Galerie « en formation » : 3 photos en mosaïque, titre et légendes propres au site."""
+    p = site["prefix"]
+    title, intro, items = GALLERY[site["num"]]
+    figs = []
+    for i, (_f, stem, alt, cap) in enumerate(items):
+        w1, h1 = photo_size(site, stem, 1200)
+        w0, _ = photo_size(site, stem, 640)
+        sizes = "(max-width: 640px) 100vw, 640px" if i == 0 else "(max-width: 640px) 100vw, 420px"
+        figs.append(f'<figure class="{p}gal-fig">'
+                    f'<img src="media/{stem}-1200.jpg" srcset="media/{stem}-640.jpg {w0}w, media/{stem}-1200.jpg {w1}w" '
+                    f'sizes="{sizes}" width="{w1}" height="{h1}" alt="{esc(alt)}" loading="lazy" decoding="async">'
+                    f'<figcaption><span class="{p}gal-n" aria-hidden="true">{i + 1:02d}</span>{esc(cap)}</figcaption></figure>')
+    return (f'<section class="{p}gal" aria-labelledby="{p}gal-t">'
+            f'<div class="{p}gal-head"><span class="{p}gal-k">En formation</span>'
+            f'<h2 id="{p}gal-t">{esc(title)}</h2><p>{esc(intro)}</p></div>'
+            f'<div class="{p}gal-grid">{"".join(figs)}</div></section>')
 
 
 def video_meta(site):
@@ -148,18 +169,42 @@ def video_ld(site):
             "duration": f"PT{round(dur)}S", "contentUrl": site["url"] + f"media/{stem}.mp4", "inLanguage": "fr"}
 
 
-def video(site, slot):
-    """Vidéo verticale du métier (une par site, dans l'emplacement video-1)."""
-    if slot != "video-1":
-        return ""
+SOUND_ICON = ('<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/>'
+              '<path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
+              '<path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>')
+
+
+def ad_video(site):
     p = site["prefix"]
     stem, title, desc = video_meta(site)
-    return f'''<figure class="{p}reel" data-slot="{slot}">
-  <div class="{p}reel-frame"><video controls playsinline preload="none" poster="media/{stem}-poster.jpg" width="720" height="1280" aria-label="{esc(title)}"><source src="media/{stem}.mp4" type="video/mp4"></video></div>
+    return (f'<video data-ad autoplay muted loop playsinline preload="metadata" poster="media/{stem}-poster.jpg" width="720" height="1280" '
+            f'aria-label="{esc(title)}"><source src="media/{stem}.mp4" type="video/mp4"></video>'
+            f'<button type="button" class="{p}ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo">{SOUND_ICON}</button>')
+
+
+def ad_phone(site):
+    """Vidéo publicitaire courte, en format téléphone, posée sur la photo du haut de page."""
+    p = site["prefix"]
+    extra = f" {p}ad-top" if site.get("ad") == "top" else ""
+    return f'<div class="{p}ad{extra}">{ad_video(site)}</div>'
+
+
+def video(site, slot):
+    """Vidéo en haut de page quand la photo principale n'y est pas : « band » (bandeau) ou « solo » (à côté du titre)."""
+    p = site["prefix"]
+    if slot == "solo":
+        return f'<div class="{p}ad {p}ad-solo">{ad_video(site)}</div>'
+    if slot != "band":
+        return ""
+    stem, title, desc = video_meta(site)
+    return f'''<section class="{p}adband" aria-label="Vidéo de présentation">
+<figure class="{p}reel">
+  <div class="{p}reel-frame">{ad_video(site)}</div>
   <figcaption><span class="{p}reel-title">{esc(title)}</span><span class="{p}reel-desc">{esc(desc)}</span>
     <span class="{p}reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
     <a class="{p}btn {p}reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure>'''
+</figure>
+</section>'''
 
 
 def france_map(site):
@@ -308,6 +353,20 @@ def legal(site):
 
 
 SCRIPT = r'''
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
@@ -400,6 +459,20 @@ def placeholder_css(site):
 .{p}hero-badge b{{display:block;font-weight:600}}
 .{p}hero-badge-ic{{flex:0 0 34px;height:34px;border-radius:50%;background:{t};color:#fff;display:flex;align-items:center;justify-content:center}}
 @media (max-width:640px){{.{p}hero-badge{{left:10px;bottom:12px}}.{p}photo-hero::before{{inset:14px -8px -8px 14px}}}}
+.{p}ad{{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}}
+.{p}ad video,.{p}reel-frame video{{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}}
+.{p}ad-sound{{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}}
+.{p}ad-sound .snd-on{{display:none}}
+.{p}ad-sound[aria-pressed="true"] .snd-on{{display:inline}}
+.{p}ad-sound[aria-pressed="true"] .snd-off{{display:none}}
+.{p}photo-hero{{margin-bottom:30px}}
+.{p}ad-top{{top:-30px;bottom:auto}}
+.{p}ad-solo{{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}}
+.{p}photo-hero .{p}hero-badge{{max-width:calc(70% - 10px)}}
+@media (max-width:640px){{.{p}ad{{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}}.{p}ad-top{{top:-24px;bottom:auto}}.{p}ad-solo{{width:150px}}.{p}ad-sound{{width:30px;height:30px;right:5px;bottom:5px}}}}
+.{p}adband{{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}}
+.{p}adband .{p}reel{{justify-content:center}}
+.{p}reel-frame{{position:relative}}
 .{p}reel{{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}}
 .{p}reel-frame{{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}}
 .{p}reel-frame video{{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}}
@@ -411,6 +484,20 @@ def placeholder_css(site):
 .{p}reel-pts span::before{{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:{t};box-shadow:0 0 0 4px {t}22}}
 .{p}reel-cta{{margin-top:4px}}
 @media (max-width:640px){{.{p}reel{{flex-direction:column;align-items:flex-start}}}}
+.{p}gal{{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}}
+.{p}gal-head{{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}}
+.{p}gal-k{{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}}
+.{p}gal-k::before{{content:"";width:22px;height:3px;border-radius:2px;background:{t}}}
+.{p}gal-head h2{{margin:8px 0 8px}}
+.{p}gal-head p{{margin:0;opacity:.88}}
+.{p}gal-grid{{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}}
+.{p}gal-fig{{margin:0;position:relative;overflow:hidden;border-radius:var(--{p}radius,12px);background:{c[0]};box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}}
+.{p}gal-fig img{{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}}
+.{p}gal-fig:hover img{{transform:scale(1.04)}}
+.{p}gal-fig figcaption{{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}}
+.{p}gal-n{{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:{t};color:#fff}}
+@container (min-width:620px){{.{p}gal-grid{{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}}.{p}gal-fig:first-child{{grid-row:span 2}}.{p}gal-fig:first-child img{{position:absolute;inset:0;aspect-ratio:auto}}.{p}gal-fig:not(:first-child) img{{aspect-ratio:16 / 10}}}}
+@media (prefers-reduced-motion:reduce){{.{p}gal-fig img{{transition:none}}.{p}gal-fig:hover img{{transform:none}}}}
 .{p}map{{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}}
 .{p}map svg{{display:block;width:100%;height:auto;overflow:visible}}
 .{p}map-land{{fill:{c[0]};stroke:{t};stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}}
@@ -525,6 +612,7 @@ def render(site):
             "wide": lambda: img(site, arg, wide=True),
             "video": lambda: video(site, arg),
             "map": lambda: france_map(site),
+            "gallery": lambda: gallery(site),
             "faq": lambda: faq(site),
             "form": lambda: form(site),
             "footer": lambda: footer(site, site.get("footer_extra", "")),
@@ -578,7 +666,9 @@ def check(site, page):
         if not 40 <= w <= 90: errs.append(f"FAQ {w} mots : {q[:50]}")
         if esc(a) not in page: errs.append(f"FAQ absente du HTML : {q[:40]}")
     nimg = len(re.findall(r'<img src="media/', page))
-    if nimg != len(PHOTOS[site["num"]]): errs.append(f"{nimg} photos affichées sur {len(PHOTOS[site['num']])}")
+    nexp = len(PHOTOS[site["num"]]) + len(GALLERY[site["num"]][2])
+    if nimg != nexp: errs.append(f"{nimg} photos affichées sur {nexp}")
+    if f'class="{site["prefix"]}gal"' not in page: errs.append("galerie manquante")
     if page.count("<video ") != 1: errs.append("vidéo manquante")
     if "placeholder" in page.split("<body", 1)[1].split("<form", 1)[0]: errs.append("emplacement média vide")
     if f'class="{site["prefix"]}map"' not in page: errs.append("carte de France manquante")
@@ -687,6 +777,8 @@ def readme(sites):
                 "- **Médias** (`media/`) :"]
         for f, stem, alt, slot in PHOTOS[s["num"]]:
             out.append(f"  - `{stem}-640.jpg` / `-1200.jpg` ({slot}) : {alt}")
+        for f, stem, alt, cap in GALLERY[s["num"]][2]:
+            out.append(f"  - `{stem}-640.jpg` / `-1200.jpg` (galerie) : {alt}")
         vf, vstem, vt, vd = VIDEOS[s["num"]]
         out.append(f"  - `{vstem}.mp4` + `{vstem}-poster.jpg` (vidéo verticale) : **{vt}**")
         out.append("")

@@ -2,6 +2,7 @@ SITE = {
     "folder": "05-assistantes-dentaires",
     "slug": "afgsu-2-assistantes-dentaires",
     "prefix": "ad-",
+    "ad": "top",
     "name": "Formations AFGSU 2 - Assistantes dentaires",
     "metier_form": "Assistant(e) dentaire",
     "audience": "Assistantes et assistants dentaires",
@@ -244,8 +245,8 @@ a{color:var(--ad-md)}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="ad-sec" aria-labelledby="ad-v1"><div class="ad-wrap ad-vid"><h2 id="ad-v1" class="ad-center">L'AFGSU 2 au cabinet dentaire, en vidéo</h2>[[video:video-1]]</div></section>
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
 
 <!-- ===== Tarif ===== -->
 <section class="ad-sec ad-sec-w" id="tarif" aria-labelledby="ad-tarif-t">

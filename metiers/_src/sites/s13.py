@@ -291,8 +291,8 @@ a{color:var(--reed-bd)}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="reed-sec reed-alt" aria-labelledby="reed-v1"><div class="reed-wrap reed-vid"><h2 id="reed-v1">Vidéo : la rééducation face à l'urgence</h2>[[video:video-1]]</div></section>
+<!-- ===== Galerie « en formation » ===== -->
+[[gallery]]
 
 <!-- ===== Tarif ===== -->
 <section class="reed-sec" id="tarif" aria-labelledby="reed-tarif-t">

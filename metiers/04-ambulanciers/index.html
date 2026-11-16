@@ -60,6 +60,20 @@ dialog ul{padding-left:1.2em}
 .amb-hero-badge b{display:block;font-weight:600}
 .amb-hero-badge-ic{flex:0 0 34px;height:34px;border-radius:50%;background:#142d4c;color:#fff;display:flex;align-items:center;justify-content:center}
 @media (max-width:640px){.amb-hero-badge{left:10px;bottom:12px}.amb-photo-hero::before{inset:14px -8px -8px 14px}}
+.amb-ad{position:absolute;right:-18px;bottom:-30px;width:clamp(118px,30%,190px);aspect-ratio:9 / 16;border-radius:22px;overflow:hidden;background:#0d1117;border:5px solid #0d1117;box-shadow:0 26px 50px -18px rgba(12,22,38,.7);z-index:2}
+.amb-ad video,.amb-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.amb-ad-sound{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.92);color:#11161d;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.amb-ad-sound .snd-on{display:none}
+.amb-ad-sound[aria-pressed="true"] .snd-on{display:inline}
+.amb-ad-sound[aria-pressed="true"] .snd-off{display:none}
+.amb-photo-hero{margin-bottom:30px}
+.amb-ad-top{top:-30px;bottom:auto}
+.amb-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
+.amb-photo-hero .amb-hero-badge{max-width:calc(70% - 10px)}
+@media (max-width:640px){.amb-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.amb-ad-top{top:-24px;bottom:auto}.amb-ad-solo{width:150px}.amb-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.amb-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
+.amb-adband .amb-reel{justify-content:center}
+.amb-reel-frame{position:relative}
 .amb-reel{margin:0;display:flex;flex-wrap:wrap;gap:clamp(22px,5vw,56px);align-items:center;position:relative}
 .amb-reel-frame{position:relative;flex:0 0 auto;width:min(280px,64vw);aspect-ratio:9 / 16;border-radius:28px;overflow:hidden;background:#0d1117;border:7px solid #0d1117;box-shadow:0 30px 60px -26px rgba(12,22,38,.65),0 0 0 1px rgba(255,255,255,.08) inset}
 .amb-reel-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
@@ -71,6 +85,20 @@ dialog ul{padding-left:1.2em}
 .amb-reel-pts span::before{content:"";flex:0 0 10px;height:10px;border-radius:50%;background:#142d4c;box-shadow:0 0 0 4px #142d4c22}
 .amb-reel-cta{margin-top:4px}
 @media (max-width:640px){.amb-reel{flex-direction:column;align-items:flex-start}}
+.amb-gal{max-width:1180px;margin:0 auto;padding:clamp(36px,6vw,64px) 20px;container-type:inline-size}
+.amb-gal-head{max-width:62ch;margin-bottom:clamp(18px,3vw,28px)}
+.amb-gal-k{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:inherit;opacity:.8}
+.amb-gal-k::before{content:"";width:22px;height:3px;border-radius:2px;background:#142d4c}
+.amb-gal-head h2{margin:8px 0 8px}
+.amb-gal-head p{margin:0;opacity:.88}
+.amb-gal-grid{display:grid;gap:clamp(10px,1.6vw,16px);grid-template-columns:1fr}
+.amb-gal-fig{margin:0;position:relative;overflow:hidden;border-radius:var(--amb-radius,12px);background:#eef1f5;box-shadow:0 22px 44px -28px rgba(12,22,38,.55)}
+.amb-gal-fig img{display:block;width:100%;height:100%;aspect-ratio:3 / 2;object-fit:cover;transition:transform .6s ease}
+.amb-gal-fig:hover img{transform:scale(1.04)}
+.amb-gal-fig figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;gap:10px;align-items:center;padding:34px 16px 14px;color:#fff;font-weight:600;font-size:.95rem;line-height:1.3;background:linear-gradient(to top,rgba(8,12,20,.86),rgba(8,12,20,.55) 60%,rgba(8,12,20,0))}
+.amb-gal-n{flex:0 0 auto;font-size:.75rem;letter-spacing:.06em;padding:3px 7px;border-radius:6px;background:#142d4c;color:#fff}
+@container (min-width:620px){.amb-gal-grid{grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr}.amb-gal-fig:first-child{grid-row:span 2}.amb-gal-fig:first-child img{position:absolute;inset:0;aspect-ratio:auto}.amb-gal-fig:not(:first-child) img{aspect-ratio:16 / 10}}
+@media (prefers-reduced-motion:reduce){.amb-gal-fig img{transition:none}.amb-gal-fig:hover img{transform:none}}
 .amb-map{margin:12px 0 20px;max-width:560px;padding:clamp(14px,3vw,26px);background:#fff;color:#1a1f26;border-radius:18px;box-shadow:0 24px 48px -30px rgba(12,22,38,.45),0 0 0 1px rgba(12,22,38,.06)}
 .amb-map svg{display:block;width:100%;height:auto;overflow:visible}
 .amb-map-land{fill:#eef1f5;stroke:#142d4c;stroke-width:2.2;stroke-linejoin:round;filter:drop-shadow(0 10px 14px rgba(12,22,38,.12))}
@@ -484,7 +512,7 @@ a{color:var(--amb-navy)}
       <p class="amb-lead">Un arrêt cardiaque entre deux sorties d'autoroute, un relevage dans un escalier en colimaçon, une naissance qui n'attend pas la maternité. Vous connaissez ces moments. Trois jours pour remettre les gestes à niveau et repartir avec une attestation valable 4 ans.</p>
       <div class="amb-ctas"><a class="amb-btn" href="#inscription">Réserver ma session</a><a class="amb-btn amb-btn-w" href="#inscription" data-rappel>Être rappelé</a></div>
     </div>
-    <figure class="amb-photo amb-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg" srcset="media/formation-afgsu-2-ambulanciers-intervention-nuit-640.jpg 640w, media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 600px" width="1200" height="800" alt="Deux ambulanciers en gilet réfléchissant qui prennent en charge un patient sur un brancard, de nuit, devant l&#x27;ambulance" loading="eager" fetchpriority="high" decoding="async"><figcaption class="amb-hero-badge"><span class="amb-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
+    <figure class="amb-photo amb-photo-hero" data-slot="hero"><img src="media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg" srcset="media/formation-afgsu-2-ambulanciers-intervention-nuit-640.jpg 640w, media/formation-afgsu-2-ambulanciers-intervention-nuit-1200.jpg 1200w" sizes="(max-width: 760px) 100vw, 600px" width="1200" height="800" alt="Deux ambulanciers en gilet réfléchissant qui prennent en charge un patient sur un brancard, de nuit, devant l&#x27;ambulance" loading="eager" fetchpriority="high" decoding="async"><figcaption class="amb-hero-badge"><span class="amb-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption><div class="amb-ad"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-ambulancier-poster.jpg" width="720" height="1280" aria-label="Ambulancier : votre AFGSU 2 doit être à jour"><source src="media/video-afgsu-2-ambulancier.mp4" type="video/mp4"></video><button type="button" class="amb-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></figure>
   </div>
   <div class="amb-wrap">
     <div class="amb-bar" role="region" aria-label="Faits clés">
@@ -543,13 +571,8 @@ a{color:var(--amb-navy)}
   </div>
 </section>
 
-<!-- ===== Vidéo 1 ===== -->
-<section class="amb-sec amb-alt" aria-labelledby="amb-v1"><div class="amb-wrap amb-vid"><span class="amb-label">En images</span><h2 id="amb-v1">Votre attestation est-elle à jour&nbsp;?</h2><figure class="amb-reel" data-slot="video-1">
-  <div class="amb-reel-frame"><video controls playsinline preload="none" poster="media/video-afgsu-2-ambulancier-poster.jpg" width="720" height="1280" aria-label="Ambulancier : votre AFGSU 2 doit être à jour"><source src="media/video-afgsu-2-ambulancier.mp4" type="video/mp4"></video></div>
-  <figcaption><span class="amb-reel-title">Ambulancier : votre AFGSU 2 doit être à jour</span><span class="amb-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 se renouvelle tous les 4 ans.</span>
-    <span class="amb-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="amb-btn amb-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure></div></section>
+<!-- ===== Galerie « en formation » ===== -->
+<section class="amb-gal" aria-labelledby="amb-gal-t"><div class="amb-gal-head"><span class="amb-gal-k">En formation</span><h2 id="amb-gal-t">Sur le terrain, comme en intervention</h2><p>Les exercices reprennent vos conditions réelles : sol, matériel d&#x27;urgence, travail en équipe.</p></div><div class="amb-gal-grid"><figure class="amb-gal-fig"><img src="media/afgsu-2-ambulancier-equipe-sac-urgence-1200.jpg" srcset="media/afgsu-2-ambulancier-equipe-sac-urgence-640.jpg 640w, media/afgsu-2-ambulancier-equipe-sac-urgence-1200.jpg 800w" sizes="(max-width: 640px) 100vw, 640px" width="800" height="1200" alt="Secouristes en tenue avec un sac d&#x27;urgence rouge pendant un exercice" loading="lazy" decoding="async"><figcaption><span class="amb-gal-n" aria-hidden="true">01</span>Le sac d&#x27;urgence en main</figcaption></figure><figure class="amb-gal-fig"><img src="media/afgsu-2-ambulancier-mannequin-intervention-1200.jpg" srcset="media/afgsu-2-ambulancier-mannequin-intervention-640.jpg 640w, media/afgsu-2-ambulancier-mannequin-intervention-1200.jpg 700w" sizes="(max-width: 640px) 100vw, 420px" width="700" height="1243" alt="Intervenant en gilet haute visibilité auprès d&#x27;un mannequin équipé d&#x27;un masque à oxygène" loading="lazy" decoding="async"><figcaption><span class="amb-gal-n" aria-hidden="true">02</span>Mise en situation réaliste</figcaption></figure><figure class="amb-gal-fig"><img src="media/afgsu-2-ambulancier-massage-couverture-survie-1200.jpg" srcset="media/afgsu-2-ambulancier-massage-couverture-survie-640.jpg 640w, media/afgsu-2-ambulancier-massage-couverture-survie-1200.jpg 1200w" sizes="(max-width: 640px) 100vw, 420px" width="1200" height="799" alt="Massage cardiaque sur mannequin posé sur une couverture de survie" loading="lazy" decoding="async"><figcaption><span class="amb-gal-n" aria-hidden="true">03</span>Compressions sur couverture de survie</figcaption></figure></div></section>
 
 <!-- ===== Tarif ===== -->
 <section class="amb-sec" id="tarif" aria-labelledby="amb-tarif-t">
@@ -733,6 +756,20 @@ a{color:var(--amb-navy)}
   <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>
 <script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('video[data-ad]').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.setAttribute('controls', ''); }
+    var b = v.parentNode.querySelector('[data-ad-sound]');
+    if (!b) return;
+    b.addEventListener('click', function () {
+      v.muted = !v.muted;
+      if (!v.muted) { v.play(); }
+      b.setAttribute('aria-pressed', v.muted ? 'false' : 'true');
+      b.setAttribute('aria-label', v.muted ? 'Activer le son de la vidéo' : 'Couper le son de la vidéo');
+    });
+  });
+})();
 /* ---- Script commun : année, modales légales, envoi du formulaire ---- */
 (function () {
   document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = new Date().getFullYear(); });
