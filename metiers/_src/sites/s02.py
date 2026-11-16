@@ -109,7 +109,8 @@ main{padding:20px 0 40px}
 .etu-tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--etu-gd);background:var(--etu-gl);border-radius:999px;padding:3px 10px;margin-bottom:10px}
 /* hero en cartes */
 .etu-hero{display:grid;gap:16px}
-@media (min-width:920px){.etu-hero{grid-template-columns:1.5fr 1fr}}
+@media (min-width:920px){.etu-hero{grid-template-columns:1.5fr auto;align-items:center}.etu-dates{grid-column:1 / -1}}
+.etu-hero .etu-hv{margin:10px 26px 34px}
 .etu-hero-main{padding:30px}
 .etu-lead{font-size:1.08rem;color:var(--etu-mut)}
 .etu-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0}
@@ -191,6 +192,7 @@ main{padding:20px 0 40px}
     [[price]]
     <div class="etu-ctas"><a class="etu-btn" href="#inscription">Réserver ma session</a><a class="etu-btn etu-btn-line" href="#inscription" data-rappel>Être rappelé</a></div>
   </section>
+  [[video:solo]]
   <aside class="etu-card etu-dates" aria-labelledby="etu-dates-t">
     <h2 id="etu-dates-t">Quand la caser dans votre année ?</h2>
     <ol>
@@ -202,9 +204,6 @@ main{padding:20px 0 40px}
     <p>Dates exactes par ville sur demande : <a href="#inscription">recevoir le calendrier</a>.</p>
   </aside>
 </div>
-
-<!-- ===== Vidéo (haut de page) ===== -->
-[[video:band]]
 
 <!-- ===== En bref ===== -->
 <section class="etu-card etu-brief etu-sec" aria-labelledby="etu-bref">

@@ -114,6 +114,8 @@ def img(site, slot, wide=False):
     ph = photo_for(site, slot)
     if not ph:
         return ""
+    if slot == "hero" and hero_is_video(site):
+        return hero_video(site)
     stem, alt = ph
     w1, h1 = photo_size(site, stem, 1200)
     w0, _ = photo_size(site, stem, 640)
@@ -126,8 +128,6 @@ def img(site, slot, wide=False):
         badge = (f'<figcaption class="{p}hero-badge"><span class="{p}hero-badge-ic" aria-hidden="true">'
                  f'<svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
                  f'<span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption>')
-    if slot == "hero" and site.get("ad", "overlay") != "none":
-        badge += ad_phone(site)
     return (f'<figure class="{cls}" data-slot="{slot}">'
             f'<img src="media/{stem}-1200.jpg" srcset="media/{stem}-640.jpg {w0}w, media/{stem}-1200.jpg {w1}w" '
             f'sizes="(max-width: 760px) 100vw, 600px" width="{w1}" height="{h1}" alt="{esc(alt)}" {load} decoding="async">'
@@ -182,6 +182,24 @@ def ad_video(site):
             f'<button type="button" class="{p}ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo">{SOUND_ICON}</button>')
 
 
+def hero_is_video(site):
+    """La vidéo remplace la photo du haut de page, sauf sur les sites où elle est placée à côté du titre."""
+    return site.get("ad", "overlay") != "none"
+
+
+def hero_badge(p):
+    return (f'<figcaption class="{p}hero-badge"><span class="{p}hero-badge-ic" aria-hidden="true">'
+            f'<svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>'
+            f'<span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption>')
+
+
+def hero_video(site):
+    """Grande vidéo verticale en haut de page, à la place de la photo principale."""
+    p = site["prefix"]
+    return (f'<figure class="{p}hv" data-slot="hero"><div class="{p}hv-frame">{ad_video(site)}</div>'
+            f'{hero_badge(p)}</figure>')
+
+
 def ad_phone(site):
     """Vidéo publicitaire courte, en format téléphone, posée sur la photo du haut de page."""
     p = site["prefix"]
@@ -193,7 +211,7 @@ def video(site, slot):
     """Vidéo en haut de page quand la photo principale n'y est pas : « band » (bandeau) ou « solo » (à côté du titre)."""
     p = site["prefix"]
     if slot == "solo":
-        return f'<div class="{p}ad {p}ad-solo">{ad_video(site)}</div>'
+        return hero_video(site)
     if slot != "band":
         return ""
     stem, title, desc = video_meta(site)
@@ -470,6 +488,14 @@ def placeholder_css(site):
 .{p}ad-solo{{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}}
 .{p}photo-hero .{p}hero-badge{{max-width:calc(70% - 10px)}}
 @media (max-width:640px){{.{p}ad{{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}}.{p}ad-top{{top:-24px;bottom:auto}}.{p}ad-solo{{width:150px}}.{p}ad-sound{{width:30px;height:30px;right:5px;bottom:5px}}}}
+.{p}hv{{max-width:100%;margin:0 auto 34px;position:relative;isolation:isolate;width:clamp(250px,30vw,360px);align-self:center;justify-self:center;flex:0 0 auto}}
+.{p}hv::before{{content:"";position:absolute;inset:28px 28px -22px -22px;border-radius:40px;background:{t};opacity:.18;z-index:-1}}
+.{p}hv-frame{{position:relative;aspect-ratio:9 / 16;border-radius:32px;overflow:hidden;background:#0d1117;border:8px solid #0d1117;box-shadow:0 40px 70px -30px rgba(12,22,38,.7),0 0 0 1px rgba(255,255,255,.06)}}
+.{p}hv-frame video{{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}}
+.{p}hv .{p}ad-sound{{right:12px;bottom:12px;width:44px;height:44px}}
+.{p}hv .{p}hero-badge{{left:-34px;bottom:64px;max-width:calc(100% + 10px)}}
+.{p}reel-frame{{width:min(360px,80vw)!important}}
+@media (max-width:640px){{.{p}hv{{width:min(310px,80vw)}}.{p}hv::before{{inset:18px 18px -10px -10px}}.{p}hv .{p}hero-badge{{left:-8px;bottom:58px}}}}
 .{p}adband{{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}}
 .{p}adband .{p}reel{{justify-content:center}}
 .{p}reel-frame{{position:relative}}
@@ -667,6 +693,7 @@ def check(site, page):
         if esc(a) not in page: errs.append(f"FAQ absente du HTML : {q[:40]}")
     nimg = len(re.findall(r'<img src="media/', page))
     nexp = len(PHOTOS[site["num"]]) + len(GALLERY[site["num"]][2])
+    if hero_is_video(site) and any(sl == "hero" for *_x, sl in PHOTOS[site["num"]]): nexp -= 1
     if nimg != nexp: errs.append(f"{nimg} photos affichées sur {nexp}")
     if f'class="{site["prefix"]}gal"' not in page: errs.append("galerie manquante")
     if page.count("<video ") != 1: errs.append("vidéo manquante")

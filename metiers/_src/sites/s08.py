@@ -107,7 +107,7 @@ strong,b,th,summary,label{font-weight:500}
 /* hero + onglets */
 .ide-hero{background:var(--ide-sky);padding:44px 0}
 .ide-hero-in{display:grid;gap:32px}
-@media (min-width:960px){.ide-hero-in{grid-template-columns:1fr 1fr;align-items:start}}
+@media (min-width:960px){.ide-hero-in{grid-template-columns:1fr auto;align-items:center;column-gap:56px}.ide-tabs{grid-column:1 / -1}}
 .ide-lead{font-size:1.1rem;color:var(--ide-mut)}
 .ide-keys{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0}
 .ide-keys li{background:#fff;border:1px solid var(--ide-line);border-radius:999px;padding:6px 14px;font-weight:500}
@@ -206,6 +206,7 @@ strong,b,th,summary,label{font-weight:500}
       [[price]]
       <div class="ide-ctas"><a class="ide-btn ide-btn-r" href="#inscription">Réserver ma session</a><a class="ide-btn ide-btn-l" href="#inscription" data-rappel>Être rappelé</a></div>
     </div>
+    [[video:solo]]
     <div class="ide-tabs">
       <input type="radio" name="ide-ctx" id="ide-tab-h" checked>
       <input type="radio" name="ide-ctx" id="ide-tab-l">
@@ -231,9 +232,6 @@ strong,b,th,summary,label{font-weight:500}
     </div>
   </div>
 </section>
-
-<!-- ===== Vidéo (haut de page) ===== -->
-[[video:band]]
 
 <!-- ===== En bref ===== -->
 <section class="ide-sec" aria-labelledby="ide-bref">

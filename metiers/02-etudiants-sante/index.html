@@ -71,6 +71,14 @@ dialog ul{padding-left:1.2em}
 .etu-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
 .etu-photo-hero .etu-hero-badge{max-width:calc(70% - 10px)}
 @media (max-width:640px){.etu-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.etu-ad-top{top:-24px;bottom:auto}.etu-ad-solo{width:150px}.etu-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.etu-hv{max-width:100%;margin:0 auto 34px;position:relative;isolation:isolate;width:clamp(250px,30vw,360px);align-self:center;justify-self:center;flex:0 0 auto}
+.etu-hv::before{content:"";position:absolute;inset:28px 28px -22px -22px;border-radius:40px;background:#237256;opacity:.18;z-index:-1}
+.etu-hv-frame{position:relative;aspect-ratio:9 / 16;border-radius:32px;overflow:hidden;background:#0d1117;border:8px solid #0d1117;box-shadow:0 40px 70px -30px rgba(12,22,38,.7),0 0 0 1px rgba(255,255,255,.06)}
+.etu-hv-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.etu-hv .etu-ad-sound{right:12px;bottom:12px;width:44px;height:44px}
+.etu-hv .etu-hero-badge{left:-34px;bottom:64px;max-width:calc(100% + 10px)}
+.etu-reel-frame{width:min(360px,80vw)!important}
+@media (max-width:640px){.etu-hv{width:min(310px,80vw)}.etu-hv::before{inset:18px 18px -10px -10px}.etu-hv .etu-hero-badge{left:-8px;bottom:58px}}
 .etu-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
 .etu-adband .etu-reel{justify-content:center}
 .etu-reel-frame{position:relative}
@@ -145,7 +153,8 @@ main{padding:20px 0 40px}
 .etu-tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--etu-gd);background:var(--etu-gl);border-radius:999px;padding:3px 10px;margin-bottom:10px}
 /* hero en cartes */
 .etu-hero{display:grid;gap:16px}
-@media (min-width:920px){.etu-hero{grid-template-columns:1.5fr 1fr}}
+@media (min-width:920px){.etu-hero{grid-template-columns:1.5fr auto;align-items:center}.etu-dates{grid-column:1 / -1}}
+.etu-hero .etu-hv{margin:10px 26px 34px}
 .etu-hero-main{padding:30px}
 .etu-lead{font-size:1.08rem;color:var(--etu-mut)}
 .etu-chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0}
@@ -501,6 +510,7 @@ main{padding:20px 0 40px}
     <p class="etu-price"><span class="etu-sr">Prix : ancien tarif </span><del>450 €</del> <strong>385 € TTC</strong></p>
     <div class="etu-ctas"><a class="etu-btn" href="#inscription">Réserver ma session</a><a class="etu-btn etu-btn-line" href="#inscription" data-rappel>Être rappelé</a></div>
   </section>
+  <figure class="etu-hv" data-slot="hero"><div class="etu-hv-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-etudiant-sante-poster.jpg" width="720" height="1280" aria-label="Étudiant en santé : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-etudiant-sante.mp4" type="video/mp4"></video><button type="button" class="etu-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div><figcaption class="etu-hero-badge"><span class="etu-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
   <aside class="etu-card etu-dates" aria-labelledby="etu-dates-t">
     <h2 id="etu-dates-t">Quand la caser dans votre année&nbsp;?</h2>
     <ol>
@@ -512,16 +522,6 @@ main{padding:20px 0 40px}
     <p>Dates exactes par ville sur demande&nbsp;: <a href="#inscription">recevoir le calendrier</a>.</p>
   </aside>
 </div>
-
-<!-- ===== Vidéo (haut de page) ===== -->
-<section class="etu-adband" aria-label="Vidéo de présentation">
-<figure class="etu-reel">
-  <div class="etu-reel-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-etudiant-sante-poster.jpg" width="720" height="1280" aria-label="Étudiant en santé : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-etudiant-sante.mp4" type="video/mp4"></video><button type="button" class="etu-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
-  <figcaption><span class="etu-reel-title">Étudiant en santé : l&#x27;AFGSU 2 est obligatoire</span><span class="etu-reel-desc">Le rappel en vidéo courte : l&#x27;AFGSU 2 fait partie de votre cursus.</span>
-    <span class="etu-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="etu-btn etu-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure>
-</section>
 
 <!-- ===== En bref ===== -->
 <section class="etu-card etu-brief etu-sec" aria-labelledby="etu-bref">

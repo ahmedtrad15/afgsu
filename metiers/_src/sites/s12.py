@@ -104,7 +104,7 @@ a{color:var(--med-s)}
 /* en-tête dense + tableau récap */
 .med-top{padding:32px 0 24px;border-bottom:1px solid var(--med-line)}
 .med-top-grid{display:grid;gap:22px 32px}
-@media (min-width:960px){.med-top-grid{grid-template-columns:1.1fr 1fr}}
+@media (min-width:960px){.med-top-grid{grid-template-columns:1fr auto;align-items:center;column-gap:56px}.med-tw{grid-column:1 / -1}}
 .med-lead{color:var(--med-mut);margin-bottom:14px}
 .med-ctas{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .med-price{margin:0;font-size:1.05rem}
@@ -179,8 +179,8 @@ a{color:var(--med-s)}
       <p class="med-lead">Arrêt cardiaque en salle d'attente, douleur thoracique en consultation, détresse respiratoire chez un enfant, afflux de patients lors d'une crise : au cabinet ou en maison de santé, vous coordonnez la prise en charge jusqu'au relais. Programme conforme au référentiel national, 21 heures, contenu technique.</p>
       [[price]]
       <div class="med-ctas"><a class="med-btn" href="#inscription">Réserver ma session</a><a class="med-btn med-btn-s" href="#inscription" data-rappel>Être rappelé</a></div>
-      [[img:hero]]
     </div>
+    [[img:hero]]
     <div class="med-tw">
       <table class="med-recap">
         <caption>Récapitulatif de la formation</caption>

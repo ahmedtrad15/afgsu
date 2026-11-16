@@ -71,6 +71,14 @@ dialog ul{padding-left:1.2em}
 .ide-ad-solo{position:relative;right:auto;bottom:auto;top:auto;width:170px;flex:0 0 auto}
 .ide-photo-hero .ide-hero-badge{max-width:calc(70% - 10px)}
 @media (max-width:640px){.ide-ad{right:6px;bottom:-24px;width:112px;border-width:4px;border-radius:16px}.ide-ad-top{top:-24px;bottom:auto}.ide-ad-solo{width:150px}.ide-ad-sound{width:30px;height:30px;right:5px;bottom:5px}}
+.ide-hv{max-width:100%;margin:0 auto 34px;position:relative;isolation:isolate;width:clamp(250px,30vw,360px);align-self:center;justify-self:center;flex:0 0 auto}
+.ide-hv::before{content:"";position:absolute;inset:28px 28px -22px -22px;border-radius:40px;background:#2563a8;opacity:.18;z-index:-1}
+.ide-hv-frame{position:relative;aspect-ratio:9 / 16;border-radius:32px;overflow:hidden;background:#0d1117;border:8px solid #0d1117;box-shadow:0 40px 70px -30px rgba(12,22,38,.7),0 0 0 1px rgba(255,255,255,.06)}
+.ide-hv-frame video{display:block;width:100%;height:100%;object-fit:cover;background:#0d1117}
+.ide-hv .ide-ad-sound{right:12px;bottom:12px;width:44px;height:44px}
+.ide-hv .ide-hero-badge{left:-34px;bottom:64px;max-width:calc(100% + 10px)}
+.ide-reel-frame{width:min(360px,80vw)!important}
+@media (max-width:640px){.ide-hv{width:min(310px,80vw)}.ide-hv::before{inset:18px 18px -10px -10px}.ide-hv .ide-hero-badge{left:-8px;bottom:58px}}
 .ide-adband{max-width:1180px;margin:0 auto;padding:clamp(28px,5vw,48px) 20px}
 .ide-adband .ide-reel{justify-content:center}
 .ide-reel-frame{position:relative}
@@ -144,7 +152,7 @@ strong,b,th,summary,label{font-weight:500}
 /* hero + onglets */
 .ide-hero{background:var(--ide-sky);padding:44px 0}
 .ide-hero-in{display:grid;gap:32px}
-@media (min-width:960px){.ide-hero-in{grid-template-columns:1fr 1fr;align-items:start}}
+@media (min-width:960px){.ide-hero-in{grid-template-columns:1fr auto;align-items:center;column-gap:56px}.ide-tabs{grid-column:1 / -1}}
 .ide-lead{font-size:1.1rem;color:var(--ide-mut)}
 .ide-keys{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:18px 0}
 .ide-keys li{background:#fff;border:1px solid var(--ide-line);border-radius:999px;padding:6px 14px;font-weight:500}
@@ -517,6 +525,7 @@ strong,b,th,summary,label{font-weight:500}
       <p class="ide-price"><span class="ide-sr">Prix : ancien tarif </span><del>450 €</del> <strong>385 € TTC</strong></p>
       <div class="ide-ctas"><a class="ide-btn ide-btn-r" href="#inscription">Réserver ma session</a><a class="ide-btn ide-btn-l" href="#inscription" data-rappel>Être rappelé</a></div>
     </div>
+    <figure class="ide-hv" data-slot="hero"><div class="ide-hv-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-infirmier-poster.jpg" width="720" height="1280" aria-label="Infirmier : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-infirmier.mp4" type="video/mp4"></video><button type="button" class="ide-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div><figcaption class="ide-hero-badge"><span class="ide-hero-badge-ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Attestation délivrée par le CESU</b>valable 4 ans</span></figcaption></figure>
     <div class="ide-tabs">
       <input type="radio" name="ide-ctx" id="ide-tab-h" checked>
       <input type="radio" name="ide-ctx" id="ide-tab-l">
@@ -541,16 +550,6 @@ strong,b,th,summary,label{font-weight:500}
       </div>
     </div>
   </div>
-</section>
-
-<!-- ===== Vidéo (haut de page) ===== -->
-<section class="ide-adband" aria-label="Vidéo de présentation">
-<figure class="ide-reel">
-  <div class="ide-reel-frame"><video data-ad autoplay muted loop playsinline preload="metadata" poster="media/video-afgsu-2-infirmier-poster.jpg" width="720" height="1280" aria-label="Infirmier : l&#x27;AFGSU 2 est obligatoire"><source src="media/video-afgsu-2-infirmier.mp4" type="video/mp4"></video><button type="button" class="ide-ad-sound" data-ad-sound aria-pressed="false" aria-label="Activer le son de la vidéo"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="snd-on" d="M16 9a4 4 0 0 1 0 6M18.5 6.5a7.5 7.5 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="snd-off" d="M16.5 9.5l5 5M21.5 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div>
-  <figcaption><span class="ide-reel-title">Infirmier : l&#x27;AFGSU 2 est obligatoire</span><span class="ide-reel-desc">Le rappel en vidéo courte : ventilation et massage cardiaque en formation.</span>
-    <span class="ide-reel-pts"><span>21 h de pratique sur 3 jours</span><span>6 à 12 stagiaires par session</span><span>Attestation valable 4 ans</span></span>
-    <a class="ide-btn ide-reel-cta" href="#inscription">Réserver ma session</a></figcaption>
-</figure>
 </section>
 
 <!-- ===== En bref ===== -->
