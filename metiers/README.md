@@ -4,11 +4,9 @@ Chaque dossier contient un `index.html` autonome (CSS et JS inline, Google Fonts
 
 Les pages sont générées par `metiers/_src/build.py` à partir des fiches `metiers/_src/sites/sNN.py`. Pour modifier un texte, éditez la fiche puis relancez `python3 metiers/_src/build.py` : le script régénère les 13 pages, vérifie la checklist du cahier des charges (titre ≤ 60, description ≤ 155, 12 à 15 FAQ de 40 à 90 mots identiques au JSON-LD, aucune mention de financement, graisses ≤ 600, clé Web3Forms, prix, médias…) et réécrit ce README.
 
-## À compléter avant la mise en ligne
+## Notes de mise en ligne
 
-- **URL de chaque site** : remplacer `https://a-completer.example/<dossier>/` (canonical, Open Graph, JSON-LD). Le plus simple est de changer `s["url"]` dans `build.py`, ou une URL par fiche.
-- **Hébergeur** dans les mentions légales : `[À COMPLÉTER]`.
-- **Médiateur de la consommation** dans l’article 15 des CGV : `[À COMPLÉTER]`.
+- **Adresses** : les pages utilisent des adresses relatives (JSON-LD, images), elles fonctionnent sur n’importe quel domaine. Une fois le domaine connu, on peut renseigner `s["url"]` dans `build.py` pour ajouter les URL absolues.
 - **Médias** : les photos et la vidéo de chaque métier viennent de l’archive fournie (`afgsu.zip`). Elles sont renommées pour le SEO et encodées dans `metiers/NN-…/media/` par `python3 metiers/_src/prepare_media.py <archive dézippée>` (photos en 640 et 1200 px, vidéo MP4 720p). La correspondance photo → emplacement et les textes `alt` sont dans `metiers/_src/media.py`. L’image Open Graph est la photo principale de chaque site.
 - **Villes** : aucune ville n’est citée dans les pages. Une carte de France montre les grandes villes de session par des points, sans les nommer.
 - **Logo** : chaque dossier contient un `logo.svg` (le pictogramme du site), référencé dans le JSON-LD `Organization`. À déployer avec `index.html`.

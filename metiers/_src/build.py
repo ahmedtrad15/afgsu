@@ -318,8 +318,6 @@ def legal(site):
   <p>Le présent site, « {n} », est édité par :</p>
   {DIGIVODA_BLOCK}
   <p>Directeur de la publication : le représentant légal de DIGIVODA.</p>
-  <h3>Hébergeur</h3>
-  <p>[À COMPLÉTER : raison sociale, adresse et téléphone de l’hébergeur]</p>
   <h3>Propriété intellectuelle</h3>
   <p>Les textes, logos, pictogrammes, mises en page et contenus de ce site sont protégés par le droit de la propriété intellectuelle. Toute reproduction, représentation ou adaptation, totale ou partielle, sans l’autorisation écrite préalable de DIGIVODA est interdite et peut constituer une contrefaçon (articles L335-2 et suivants du Code de la propriété intellectuelle).</p>
   <h3>Données personnelles</h3>
@@ -365,7 +363,7 @@ def legal(site):
   <h3>Article 14 — Réclamations</h3>
   <p>Toute réclamation est adressée par écrit à contact@digivoda.com. DIGIVODA en accuse réception sous 7 jours ouvrés et apporte une réponse motivée dans un délai de 30 jours.</p>
   <h3>Article 15 — Droit applicable et litiges</h3>
-  <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation [coordonnées du médiateur À COMPLÉTER]. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
+  <p>Les CGV sont soumises au droit français. En cas de litige, les parties recherchent d’abord une solution amiable. Le consommateur peut recourir gratuitement à un médiateur de la consommation. À défaut d’accord, le litige est porté devant les juridictions compétentes ; entre professionnels, le tribunal compétent est celui du ressort du siège social de DIGIVODA.</p>
 </dialog>'''
     return mentions + "\n" + cgv
 
@@ -603,15 +601,12 @@ def head(site):
 <title>{esc(site["title"])}</title>
 <meta name="description" content="{esc(site["description"])}">
 <meta name="robots" content="index,follow">
-<!-- [À COMPLÉTER] : remplacer l’URL provisoire ci-dessous (canonical, Open Graph, JSON-LD) par l’adresse définitive du site -->
-<link rel="canonical" href="{site["url"]}">
 <meta name="theme-color" content="{site["theme"]}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="{esc(site["name"])}">
 <meta property="og:title" content="{esc(site["og_title"])}">
 <meta property="og:description" content="{esc(site["description"])}">
-<meta property="og:url" content="{site["url"]}">
 <meta property="og:image" content="{site["url"]}media/{PHOTOS[site["num"]][0][1]}-1200.jpg">
 <meta property="og:image:alt" content="{esc(PHOTOS[site["num"]][0][2])}">
 <meta name="twitter:card" content="summary_large_image">
@@ -751,7 +746,7 @@ def load_sites():
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         s = mod.SITE
-        s["url"] = f"https://a-completer.example/{s['slug']}/"
+        s["url"] = "./"  # adresses relatives : la page fonctionne quel que soit le domaine
         s.setdefault("breadcrumb", "Formation AFGSU 2")
         s["num"] = s["folder"][:2]
         sites.append(s)
@@ -766,10 +761,8 @@ def readme(sites):
            "Pour modifier un texte, éditez la fiche puis relancez `python3 metiers/_src/build.py` : le script régénère les 13 pages, "
            "vérifie la checklist du cahier des charges (titre ≤ 60, description ≤ 155, 12 à 15 FAQ de 40 à 90 mots identiques au JSON-LD, "
            "aucune mention de financement, graisses ≤ 600, clé Web3Forms, prix, médias…) et réécrit ce README.", "",
-           "## À compléter avant la mise en ligne", "",
-           "- **URL de chaque site** : remplacer `https://a-completer.example/<dossier>/` (canonical, Open Graph, JSON-LD). Le plus simple est de changer `s[\"url\"]` dans `build.py`, ou une URL par fiche.",
-           "- **Hébergeur** dans les mentions légales : `[À COMPLÉTER]`.",
-           "- **Médiateur de la consommation** dans l’article 15 des CGV : `[À COMPLÉTER]`.",
+           "## Notes de mise en ligne", "",
+           "- **Adresses** : les pages utilisent des adresses relatives (JSON-LD, images), elles fonctionnent sur n’importe quel domaine. Une fois le domaine connu, on peut renseigner `s[\"url\"]` dans `build.py` pour ajouter les URL absolues.",
            "- **Médias** : les photos et la vidéo de chaque métier viennent de l’archive fournie (`afgsu.zip`). Elles sont renommées pour le SEO et encodées dans `metiers/NN-…/media/` par `python3 metiers/_src/prepare_media.py <archive dézippée>` (photos en 640 et 1200 px, vidéo MP4 720p). La correspondance photo → emplacement et les textes `alt` sont dans `metiers/_src/media.py`. L’image Open Graph est la photo principale de chaque site.",
            "- **Villes** : aucune ville n’est citée dans les pages. Une carte de France montre les grandes villes de session par des points, sans les nommer.",
            "- **Logo** : chaque dossier contient un `logo.svg` (le pictogramme du site), référencé dans le JSON-LD `Organization`. À déployer avec `index.html`.", "",
